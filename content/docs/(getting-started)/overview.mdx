@@ -1,0 +1,186 @@
+---
+title: Overview
+description: Introduction to Polotno - a JavaScript library for creating canvas editors
+slug: overview
+---
+
+# Polotno Overview
+
+**Polotno** is an opinionated JavaScript library and set of React components designed to create canvas editors tailored for various business applications.
+
+There are many powerful JavaScript frameworks and tools that can help you make a canvas editor. But almost all of them are 'low-level' in nature. Take [Konva.js](https://konvajs.org/) for example – it's a great 2d canvas framework; but you'd need to write **a lot of code** to make a full canvas editor app.
+
+Polotno is a simple tool that solves a focused set of business problems. It is fast and we are committed to keeping the API as light as possible. So you can just drop it on the page and get a full featured visual design suite.
+
+## Quick Start (React)
+
+### 1. Install polotno package
+
+```bash
+npm install polotno
+```
+
+### 2. Create Editor component
+
+```tsx
+import React from 'react';
+import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Toolbar } from 'polotno/toolbar/toolbar';
+import { PagesTimeline } from 'polotno/pages-timeline';
+import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+import { SidePanel } from 'polotno/side-panel';
+import { Workspace } from 'polotno/canvas/workspace';
+
+import '@blueprintjs/core/lib/css/blueprint.css';
+
+import { createStore } from 'polotno/model/store';
+
+const store = createStore({
+  key: 'YOUR_API_KEY', // you can create it here: https://polotno.com/cabinet/
+  // you can hide back-link on a paid license
+  // but it will be good if you can keep it for Polotno project support
+  showCredit: true,
+});
+const page = store.addPage();
+
+export const Editor = () => {
+  return (
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+      <SidePanelWrap>
+        <SidePanel store={store} />
+      </SidePanelWrap>
+      <WorkspaceWrap>
+        <Toolbar store={store} downloadButtonEnabled />
+        <Workspace store={store} />
+        <ZoomButtons store={store} />
+        <PagesTimeline store={store} />
+      </WorkspaceWrap>
+    </PolotnoContainer>
+  );
+};
+```
+
+### 3. Use the component in your app
+
+```tsx
+import { Editor } from './editor';
+
+const App = () => {
+  return <Editor />
+}
+```
+
+## Quick Start (No Frameworks)
+
+```javascript
+import { createDemoApp } from 'polotno/polotno-app';
+
+// import css styles from blueprint framework (used by polotno)
+// if you bundler doesn't support such import you can use css from CDN (see below)
+import '@blueprintjs/core/lib/css/blueprint.css';
+
+const { store } = createDemoApp({
+  container: document.getElementById('root'),
+  key: 'YOUR_API_KEY', // you can create it here: https://polotno.com/cabinet/
+  // you can hide back-link on a paid license
+  // but it will be good if you can keep it for Polotno project support
+  showCredit: true,
+});
+```
+
+Optionally, you can import CSS styles from CDN:
+
+```html
+<link
+  href="https://unpkg.com/@blueprintjs/core@5/lib/css/blueprint.css"
+  rel="stylesheet"
+/>
+```
+
+## Core Concepts
+
+### Store
+
+Store is the main object to control data and elements of canvas. It provides API for adding/updating/removing canvas objects, undo/redo, selection changes, zooming.
+
+```javascript
+import { createStore } from 'polotno/model/store';
+
+const store = createStore();
+const page = store.addPage();
+
+page.addElement({
+  x: 50,
+  y: 50,
+  type: 'text',
+  fill: 'black',
+  text: 'hello',
+});
+```
+
+### Workspace React Canvas Component
+
+React component for drawing canvas app on the page; comes with basic functionality for common edits: selection, resize, actual drawing of objects, snapping, etc.
+
+```tsx
+import Workspace from 'polotno/canvas/workspace';
+
+const App = () => {
+  return <Workspace store={store} />;
+};
+```
+
+### UI Components
+
+Set of React components for general canvas editor app.
+
+- a toolbar for basic objects manipulations actions (such as align, remove, change objects styles, etc)
+- side panels for adding new objects
+- zooming buttons
+- etc
+
+```tsx
+import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Toolbar } from 'polotno/toolbar/toolbar';
+import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+import { SidePanel } from 'polotno/side-panel';
+import { Workspace } from 'polotno/canvas/workspace';
+
+export const App = ({ store }) => {
+  return (
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+      <SidePanelWrap>
+        <SidePanel store={store} />
+      </SidePanelWrap>
+      <WorkspaceWrap>
+        <Toolbar store={store} downloadButtonEnabled />
+        <Workspace store={store} />
+        <ZoomButtons store={store} />
+      </WorkspaceWrap>
+    </PolotnoContainer>
+  );
+};
+```
+
+### Styles
+
+Most of Polotno UI is made with [Blueprint](https://blueprintjs.com/) framework. If you are making your own custom UI interface or additional components we recommend to rely on Blueprint whenever it is possible. However, you can always use your own custom solutions or other style frameworks.
+
+Polotno is using [Blueprint Icons](https://blueprintjs.com/docs/#icons) and [Meronex Icons](https://icons.meronex.com/).
+
+### Reactivity
+
+The core of Polotno is built using the [MobX](https://mobx.js.org/) library. You can leverage MobX API to add reactivity to your own application. The foundation of Polotno is built with the [MobX](https://mobx.js.org/) library. To incorporate reactivity into your application, you can utilize the MobX API along with the [mobx-state-tree](https://mobx-state-tree.js.org/intro/welcome) library. Within the React framework, the `observer()` function is essential.
+
+```tsx
+import { observer } from 'mobx-react-lite';
+
+const App = observer(({ store }) => {
+  return (
+    <div>
+      <p>Here we will define our own custom tab.</p>
+      <p>Elements on the current page: {store.activePage?.children.length}</p>
+    </div>
+  );
+});
+```

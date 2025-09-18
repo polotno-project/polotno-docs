@@ -1,0 +1,2025 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "Animation": {
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "description": "Animation-specific data."
+        },
+        "delay": {
+          "description": "Delay before animation starts in milliseconds.",
+          "type": "number"
+        },
+        "duration": {
+          "description": "Animation duration in milliseconds.",
+          "type": "number"
+        },
+        "enabled": {
+          "description": "Whether the animation is enabled.",
+          "type": "boolean"
+        },
+        "name": {
+          "description": "Animation name identifier.",
+          "type": "string"
+        },
+        "type": {
+          "description": "Type of animation: enter, exit, or loop.",
+          "enum": ["enter", "exit", "loop"],
+          "type": "string"
+        }
+      },
+      "required": ["delay", "duration", "enabled", "type", "name", "data"],
+      "type": "object"
+    },
+    "Audio": {
+      "additionalProperties": false,
+      "properties": {
+        "delay": {
+          "description": "Delay before playing audio in milliseconds.",
+          "type": "number"
+        },
+        "duration": {
+          "description": "Duration of the audio in milliseconds.",
+          "type": "number"
+        },
+        "endTime": {
+          "description": "End time offset in seconds (0-1).",
+          "type": "number"
+        },
+        "id": {
+          "description": "Unique identifier for the audio track.",
+          "type": "string"
+        },
+        "src": {
+          "description": "URL or data URI of the audio file.",
+          "type": "string"
+        },
+        "startTime": {
+          "description": "Start time offset in seconds (0-1).",
+          "type": "number"
+        },
+        "volume": {
+          "description": "Volume level (0-1).",
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "src",
+        "duration",
+        "startTime",
+        "endTime",
+        "volume",
+        "delay"
+      ],
+      "type": "object"
+    },
+    "Element": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/TextElement"
+        },
+        {
+          "$ref": "#/definitions/ImageElement"
+        },
+        {
+          "$ref": "#/definitions/SVGElement"
+        },
+        {
+          "$ref": "#/definitions/LineElement"
+        },
+        {
+          "$ref": "#/definitions/VideoElement"
+        },
+        {
+          "$ref": "#/definitions/FigureElement"
+        },
+        {
+          "$ref": "#/definitions/GifElement"
+        },
+        {
+          "$ref": "#/definitions/GroupElement"
+        }
+      ]
+    },
+    "FigureElement": {
+      "additionalProperties": false,
+      "properties": {
+        "alwaysOnTop": {
+          "description": "Whether element stays on top of others.",
+          "type": "boolean"
+        },
+        "animations": {
+          "description": "Animation configurations.",
+          "items": {
+            "$ref": "#/definitions/Animation"
+          },
+          "type": "array"
+        },
+        "blurEnabled": {
+          "description": "Whether blur effect is enabled.",
+          "type": "boolean"
+        },
+        "blurRadius": {
+          "description": "Blur radius in pixels.",
+          "type": "number"
+        },
+        "brightness": {
+          "description": "Brightness level (-1 to 1).",
+          "type": "number"
+        },
+        "brightnessEnabled": {
+          "description": "Whether brightness effect is enabled.",
+          "type": "boolean"
+        },
+        "contentEditable": {
+          "description": "Whether element content can be edited.",
+          "type": "boolean"
+        },
+        "cornerRadius": {
+          "description": "Corner radius in pixels.",
+          "type": "number"
+        },
+        "custom": {
+          "description": "Custom data attached to the element."
+        },
+        "dash": {
+          "description": "Dash pattern array for dashed strokes.",
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        },
+        "draggable": {
+          "description": "Whether element can be dragged.",
+          "type": "boolean"
+        },
+        "fill": {
+          "description": "Fill color.",
+          "type": "string"
+        },
+        "filters": {
+          "additionalProperties": {
+            "additionalProperties": false,
+            "properties": {
+              "intensity": {
+                "description": "Filter intensity value (-1 to 1).",
+                "type": "number"
+              }
+            },
+            "required": ["intensity"],
+            "type": "object"
+          },
+          "description": "Applied image filters.",
+          "type": "object"
+        },
+        "grayscaleEnabled": {
+          "description": "Whether grayscale effect is enabled.",
+          "type": "boolean"
+        },
+        "height": {
+          "description": "Height in pixels.",
+          "type": "number"
+        },
+        "id": {
+          "description": "Unique identifier for the element.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Display name for the element.",
+          "type": "string"
+        },
+        "opacity": {
+          "description": "Opacity level (0-1).",
+          "type": "number"
+        },
+        "resizable": {
+          "description": "Whether element can be resized.",
+          "type": "boolean"
+        },
+        "rotation": {
+          "description": "Rotation angle in degrees.",
+          "type": "number"
+        },
+        "selectable": {
+          "description": "Whether element can be selected.",
+          "type": "boolean"
+        },
+        "sepiaEnabled": {
+          "description": "Whether sepia effect is enabled.",
+          "type": "boolean"
+        },
+        "shadowBlur": {
+          "description": "Shadow blur radius in pixels.",
+          "type": "number"
+        },
+        "shadowColor": {
+          "description": "Shadow color.",
+          "type": "string"
+        },
+        "shadowEnabled": {
+          "description": "Whether shadow is enabled.",
+          "type": "boolean"
+        },
+        "shadowOffsetX": {
+          "description": "Shadow horizontal offset in pixels.",
+          "type": "number"
+        },
+        "shadowOffsetY": {
+          "description": "Shadow vertical offset in pixels.",
+          "type": "number"
+        },
+        "shadowOpacity": {
+          "description": "Shadow opacity (0-1).",
+          "type": "number"
+        },
+        "showInExport": {
+          "description": "Whether element appears in exports.",
+          "type": "boolean"
+        },
+        "stroke": {
+          "description": "Stroke color.",
+          "type": "string"
+        },
+        "strokeWidth": {
+          "description": "Stroke width in pixels.",
+          "type": "number"
+        },
+        "styleEditable": {
+          "description": "Whether element style can be edited.",
+          "type": "boolean"
+        },
+        "subType": {
+          "description": "Figure subtype: rect, ellipse, triangle, etc.",
+          "type": "string"
+        },
+        "type": {
+          "const": "figure",
+          "description": "Element type identifier.",
+          "type": "string"
+        },
+        "visible": {
+          "description": "Whether element is visible.",
+          "type": "boolean"
+        },
+        "width": {
+          "description": "Width in pixels.",
+          "type": "number"
+        },
+        "x": {
+          "description": "X position in pixels.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Y position in pixels.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "alwaysOnTop",
+        "animations",
+        "blurEnabled",
+        "blurRadius",
+        "brightness",
+        "brightnessEnabled",
+        "contentEditable",
+        "cornerRadius",
+        "dash",
+        "draggable",
+        "fill",
+        "filters",
+        "grayscaleEnabled",
+        "height",
+        "id",
+        "opacity",
+        "resizable",
+        "rotation",
+        "selectable",
+        "sepiaEnabled",
+        "shadowBlur",
+        "shadowColor",
+        "shadowEnabled",
+        "shadowOffsetX",
+        "shadowOffsetY",
+        "shadowOpacity",
+        "showInExport",
+        "stroke",
+        "strokeWidth",
+        "styleEditable",
+        "subType",
+        "type",
+        "visible",
+        "width",
+        "x",
+        "y"
+      ],
+      "type": "object"
+    },
+    "Font": {
+      "additionalProperties": false,
+      "properties": {
+        "fontFamily": {
+          "description": "Font family name.",
+          "type": "string"
+        },
+        "styles": {
+          "description": "Font style variants (weight, style, etc.)."
+        },
+        "url": {
+          "description": "URL to load the font from.",
+          "type": "string"
+        }
+      },
+      "required": ["fontFamily"],
+      "type": "object"
+    },
+    "GifElement": {
+      "additionalProperties": false,
+      "properties": {
+        "alwaysOnTop": {
+          "description": "Whether element stays on top of others.",
+          "type": "boolean"
+        },
+        "animations": {
+          "description": "Animation configurations.",
+          "items": {
+            "$ref": "#/definitions/Animation"
+          },
+          "type": "array"
+        },
+        "blurEnabled": {
+          "description": "Whether blur effect is enabled.",
+          "type": "boolean"
+        },
+        "blurRadius": {
+          "description": "Blur radius in pixels.",
+          "type": "number"
+        },
+        "borderColor": {
+          "description": "Border color.",
+          "type": "string"
+        },
+        "borderSize": {
+          "description": "Border width in pixels.",
+          "type": "number"
+        },
+        "brightness": {
+          "description": "Brightness level (-1 to 1).",
+          "type": "number"
+        },
+        "brightnessEnabled": {
+          "description": "Whether brightness effect is enabled.",
+          "type": "boolean"
+        },
+        "clipSrc": {
+          "description": "URL or data URI for clipping mask.",
+          "type": "string"
+        },
+        "contentEditable": {
+          "description": "Whether element content can be edited.",
+          "type": "boolean"
+        },
+        "cornerRadius": {
+          "description": "Corner radius in pixels.",
+          "type": "number"
+        },
+        "cropHeight": {
+          "description": "Crop height as percentage (0-1).",
+          "type": "number"
+        },
+        "cropWidth": {
+          "description": "Crop width as percentage (0-1).",
+          "type": "number"
+        },
+        "cropX": {
+          "description": "Crop X offset as percentage (0-1).",
+          "type": "number"
+        },
+        "cropY": {
+          "description": "Crop Y offset as percentage (0-1).",
+          "type": "number"
+        },
+        "custom": {
+          "description": "Custom data attached to the element."
+        },
+        "draggable": {
+          "description": "Whether element can be dragged.",
+          "type": "boolean"
+        },
+        "duration": {
+          "description": "GIF duration in milliseconds.",
+          "type": "number"
+        },
+        "filters": {
+          "additionalProperties": {
+            "additionalProperties": false,
+            "properties": {
+              "intensity": {
+                "description": "Filter intensity value (-1 to 1).",
+                "type": "number"
+              }
+            },
+            "required": ["intensity"],
+            "type": "object"
+          },
+          "description": "Applied image filters.",
+          "type": "object"
+        },
+        "flipX": {
+          "description": "Whether image is flipped horizontally.",
+          "type": "boolean"
+        },
+        "flipY": {
+          "description": "Whether image is flipped vertically.",
+          "type": "boolean"
+        },
+        "grayscaleEnabled": {
+          "description": "Whether grayscale effect is enabled.",
+          "type": "boolean"
+        },
+        "height": {
+          "description": "Height in pixels.",
+          "type": "number"
+        },
+        "id": {
+          "description": "Unique identifier for the element.",
+          "type": "string"
+        },
+        "keepRatio": {
+          "description": "Whether to maintain aspect ratio when resizing.",
+          "type": "boolean"
+        },
+        "name": {
+          "description": "Display name for the element.",
+          "type": "string"
+        },
+        "opacity": {
+          "description": "Opacity level (0-1).",
+          "type": "number"
+        },
+        "resizable": {
+          "description": "Whether element can be resized.",
+          "type": "boolean"
+        },
+        "rotation": {
+          "description": "Rotation angle in degrees.",
+          "type": "number"
+        },
+        "selectable": {
+          "description": "Whether element can be selected.",
+          "type": "boolean"
+        },
+        "sepiaEnabled": {
+          "description": "Whether sepia effect is enabled.",
+          "type": "boolean"
+        },
+        "shadowBlur": {
+          "description": "Shadow blur radius in pixels.",
+          "type": "number"
+        },
+        "shadowColor": {
+          "description": "Shadow color.",
+          "type": "string"
+        },
+        "shadowEnabled": {
+          "description": "Whether shadow is enabled.",
+          "type": "boolean"
+        },
+        "shadowOffsetX": {
+          "description": "Shadow horizontal offset in pixels.",
+          "type": "number"
+        },
+        "shadowOffsetY": {
+          "description": "Shadow vertical offset in pixels.",
+          "type": "number"
+        },
+        "shadowOpacity": {
+          "description": "Shadow opacity (0-1).",
+          "type": "number"
+        },
+        "showInExport": {
+          "description": "Whether element appears in exports.",
+          "type": "boolean"
+        },
+        "src": {
+          "description": "URL or data URI of the image file.",
+          "type": "string"
+        },
+        "stretchEnabled": {
+          "description": "Whether stretch mode is enabled.",
+          "type": "boolean"
+        },
+        "styleEditable": {
+          "description": "Whether element style can be edited.",
+          "type": "boolean"
+        },
+        "type": {
+          "const": "gif",
+          "description": "Element type identifier.",
+          "type": "string"
+        },
+        "visible": {
+          "description": "Whether element is visible.",
+          "type": "boolean"
+        },
+        "width": {
+          "description": "Width in pixels.",
+          "type": "number"
+        },
+        "x": {
+          "description": "X position in pixels.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Y position in pixels.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "alwaysOnTop",
+        "animations",
+        "blurEnabled",
+        "blurRadius",
+        "borderColor",
+        "borderSize",
+        "brightness",
+        "brightnessEnabled",
+        "clipSrc",
+        "contentEditable",
+        "cornerRadius",
+        "cropHeight",
+        "cropWidth",
+        "cropX",
+        "cropY",
+        "draggable",
+        "duration",
+        "filters",
+        "flipX",
+        "flipY",
+        "grayscaleEnabled",
+        "height",
+        "id",
+        "keepRatio",
+        "opacity",
+        "resizable",
+        "rotation",
+        "selectable",
+        "sepiaEnabled",
+        "shadowBlur",
+        "shadowColor",
+        "shadowEnabled",
+        "shadowOffsetX",
+        "shadowOffsetY",
+        "shadowOpacity",
+        "showInExport",
+        "src",
+        "stretchEnabled",
+        "styleEditable",
+        "type",
+        "visible",
+        "width",
+        "x",
+        "y"
+      ],
+      "type": "object"
+    },
+    "GroupElement": {
+      "additionalProperties": false,
+      "properties": {
+        "alwaysOnTop": {
+          "description": "Whether group stays on top of others.",
+          "type": "boolean"
+        },
+        "children": {
+          "description": "Child elements in this group.",
+          "items": {
+            "$ref": "#/definitions/Element"
+          },
+          "type": "array"
+        },
+        "custom": {
+          "description": "Custom data attached to the group."
+        },
+        "id": {
+          "description": "Unique identifier for the group.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Display name for the group.",
+          "type": "string"
+        },
+        "opacity": {
+          "description": "Opacity level (0-1).",
+          "type": "number"
+        },
+        "removable": {
+          "description": "Whether group can be removed.",
+          "type": "boolean"
+        },
+        "selectable": {
+          "description": "Whether group can be selected.",
+          "type": "boolean"
+        },
+        "showInExport": {
+          "description": "Whether group appears in exports.",
+          "type": "boolean"
+        },
+        "type": {
+          "const": "group",
+          "description": "Element type identifier.",
+          "type": "string"
+        },
+        "visible": {
+          "description": "Whether group is visible.",
+          "type": "boolean"
+        }
+      },
+      "required": ["id", "type", "children"],
+      "type": "object"
+    },
+    "ImageElement": {
+      "additionalProperties": false,
+      "properties": {
+        "alwaysOnTop": {
+          "description": "Whether element stays on top of others.",
+          "type": "boolean"
+        },
+        "animations": {
+          "description": "Animation configurations.",
+          "items": {
+            "$ref": "#/definitions/Animation"
+          },
+          "type": "array"
+        },
+        "blurEnabled": {
+          "description": "Whether blur effect is enabled.",
+          "type": "boolean"
+        },
+        "blurRadius": {
+          "description": "Blur radius in pixels.",
+          "type": "number"
+        },
+        "borderColor": {
+          "description": "Border color.",
+          "type": "string"
+        },
+        "borderSize": {
+          "description": "Border width in pixels.",
+          "type": "number"
+        },
+        "brightness": {
+          "description": "Brightness level (-1 to 1).",
+          "type": "number"
+        },
+        "brightnessEnabled": {
+          "description": "Whether brightness effect is enabled.",
+          "type": "boolean"
+        },
+        "clipSrc": {
+          "description": "URL or data URI for clipping mask.",
+          "type": "string"
+        },
+        "contentEditable": {
+          "description": "Whether element content can be edited.",
+          "type": "boolean"
+        },
+        "cornerRadius": {
+          "description": "Corner radius in pixels.",
+          "type": "number"
+        },
+        "cropHeight": {
+          "description": "Crop height as percentage (0-1).",
+          "type": "number"
+        },
+        "cropWidth": {
+          "description": "Crop width as percentage (0-1).",
+          "type": "number"
+        },
+        "cropX": {
+          "description": "Crop X offset as percentage (0-1).",
+          "type": "number"
+        },
+        "cropY": {
+          "description": "Crop Y offset as percentage (0-1).",
+          "type": "number"
+        },
+        "custom": {
+          "description": "Custom data attached to the element."
+        },
+        "draggable": {
+          "description": "Whether element can be dragged.",
+          "type": "boolean"
+        },
+        "filters": {
+          "additionalProperties": {
+            "additionalProperties": false,
+            "properties": {
+              "intensity": {
+                "description": "Filter intensity value (-1 to 1).",
+                "type": "number"
+              }
+            },
+            "required": ["intensity"],
+            "type": "object"
+          },
+          "description": "Applied image filters.",
+          "type": "object"
+        },
+        "flipX": {
+          "description": "Whether image is flipped horizontally.",
+          "type": "boolean"
+        },
+        "flipY": {
+          "description": "Whether image is flipped vertically.",
+          "type": "boolean"
+        },
+        "grayscaleEnabled": {
+          "description": "Whether grayscale effect is enabled.",
+          "type": "boolean"
+        },
+        "height": {
+          "description": "Height in pixels.",
+          "type": "number"
+        },
+        "id": {
+          "description": "Unique identifier for the element.",
+          "type": "string"
+        },
+        "keepRatio": {
+          "description": "Whether to maintain aspect ratio when resizing.",
+          "type": "boolean"
+        },
+        "name": {
+          "description": "Display name for the element.",
+          "type": "string"
+        },
+        "opacity": {
+          "description": "Opacity level (0-1).",
+          "type": "number"
+        },
+        "resizable": {
+          "description": "Whether element can be resized.",
+          "type": "boolean"
+        },
+        "rotation": {
+          "description": "Rotation angle in degrees.",
+          "type": "number"
+        },
+        "selectable": {
+          "description": "Whether element can be selected.",
+          "type": "boolean"
+        },
+        "sepiaEnabled": {
+          "description": "Whether sepia effect is enabled.",
+          "type": "boolean"
+        },
+        "shadowBlur": {
+          "description": "Shadow blur radius in pixels.",
+          "type": "number"
+        },
+        "shadowColor": {
+          "description": "Shadow color.",
+          "type": "string"
+        },
+        "shadowEnabled": {
+          "description": "Whether shadow is enabled.",
+          "type": "boolean"
+        },
+        "shadowOffsetX": {
+          "description": "Shadow horizontal offset in pixels.",
+          "type": "number"
+        },
+        "shadowOffsetY": {
+          "description": "Shadow vertical offset in pixels.",
+          "type": "number"
+        },
+        "shadowOpacity": {
+          "description": "Shadow opacity (0-1).",
+          "type": "number"
+        },
+        "showInExport": {
+          "description": "Whether element appears in exports.",
+          "type": "boolean"
+        },
+        "src": {
+          "description": "URL or data URI of the image file.",
+          "type": "string"
+        },
+        "stretchEnabled": {
+          "description": "Whether stretch mode is enabled.",
+          "type": "boolean"
+        },
+        "styleEditable": {
+          "description": "Whether element style can be edited.",
+          "type": "boolean"
+        },
+        "type": {
+          "const": "image",
+          "description": "Element type identifier.",
+          "type": "string"
+        },
+        "visible": {
+          "description": "Whether element is visible.",
+          "type": "boolean"
+        },
+        "width": {
+          "description": "Width in pixels.",
+          "type": "number"
+        },
+        "x": {
+          "description": "X position in pixels.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Y position in pixels.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "alwaysOnTop",
+        "animations",
+        "blurEnabled",
+        "blurRadius",
+        "borderColor",
+        "borderSize",
+        "brightness",
+        "brightnessEnabled",
+        "clipSrc",
+        "contentEditable",
+        "cornerRadius",
+        "cropHeight",
+        "cropWidth",
+        "cropX",
+        "cropY",
+        "draggable",
+        "filters",
+        "flipX",
+        "flipY",
+        "grayscaleEnabled",
+        "height",
+        "id",
+        "keepRatio",
+        "opacity",
+        "resizable",
+        "rotation",
+        "selectable",
+        "sepiaEnabled",
+        "shadowBlur",
+        "shadowColor",
+        "shadowEnabled",
+        "shadowOffsetX",
+        "shadowOffsetY",
+        "shadowOpacity",
+        "showInExport",
+        "src",
+        "stretchEnabled",
+        "styleEditable",
+        "type",
+        "visible",
+        "width",
+        "x",
+        "y"
+      ],
+      "type": "object"
+    },
+    "LineElement": {
+      "additionalProperties": false,
+      "properties": {
+        "alwaysOnTop": {
+          "description": "Whether element stays on top of others.",
+          "type": "boolean"
+        },
+        "animations": {
+          "description": "Animation configurations.",
+          "items": {
+            "$ref": "#/definitions/Animation"
+          },
+          "type": "array"
+        },
+        "blurEnabled": {
+          "description": "Whether blur effect is enabled.",
+          "type": "boolean"
+        },
+        "blurRadius": {
+          "description": "Blur radius in pixels.",
+          "type": "number"
+        },
+        "brightness": {
+          "description": "Brightness level (-1 to 1).",
+          "type": "number"
+        },
+        "brightnessEnabled": {
+          "description": "Whether brightness effect is enabled.",
+          "type": "boolean"
+        },
+        "color": {
+          "description": "Line color.",
+          "type": "string"
+        },
+        "contentEditable": {
+          "description": "Whether element content can be edited.",
+          "type": "boolean"
+        },
+        "custom": {
+          "description": "Custom data attached to the element."
+        },
+        "dash": {
+          "description": "Dash pattern array for dashed lines.",
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        },
+        "draggable": {
+          "description": "Whether element can be dragged.",
+          "type": "boolean"
+        },
+        "endHead": {
+          "description": "End arrow head type: empty, arrow, circle, square, bar.",
+          "type": "string"
+        },
+        "filters": {
+          "additionalProperties": {
+            "additionalProperties": false,
+            "properties": {
+              "intensity": {
+                "description": "Filter intensity value (-1 to 1).",
+                "type": "number"
+              }
+            },
+            "required": ["intensity"],
+            "type": "object"
+          },
+          "description": "Applied image filters.",
+          "type": "object"
+        },
+        "grayscaleEnabled": {
+          "description": "Whether grayscale effect is enabled.",
+          "type": "boolean"
+        },
+        "height": {
+          "description": "Height in pixels.",
+          "type": "number"
+        },
+        "id": {
+          "description": "Unique identifier for the element.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Display name for the element.",
+          "type": "string"
+        },
+        "opacity": {
+          "description": "Opacity level (0-1).",
+          "type": "number"
+        },
+        "resizable": {
+          "description": "Whether element can be resized.",
+          "type": "boolean"
+        },
+        "rotation": {
+          "description": "Rotation angle in degrees.",
+          "type": "number"
+        },
+        "selectable": {
+          "description": "Whether element can be selected.",
+          "type": "boolean"
+        },
+        "sepiaEnabled": {
+          "description": "Whether sepia effect is enabled.",
+          "type": "boolean"
+        },
+        "shadowBlur": {
+          "description": "Shadow blur radius in pixels.",
+          "type": "number"
+        },
+        "shadowColor": {
+          "description": "Shadow color.",
+          "type": "string"
+        },
+        "shadowEnabled": {
+          "description": "Whether shadow is enabled.",
+          "type": "boolean"
+        },
+        "shadowOffsetX": {
+          "description": "Shadow horizontal offset in pixels.",
+          "type": "number"
+        },
+        "shadowOffsetY": {
+          "description": "Shadow vertical offset in pixels.",
+          "type": "number"
+        },
+        "shadowOpacity": {
+          "description": "Shadow opacity (0-1).",
+          "type": "number"
+        },
+        "showInExport": {
+          "description": "Whether element appears in exports.",
+          "type": "boolean"
+        },
+        "startHead": {
+          "description": "Start arrow head type: empty, arrow, circle, square, bar.",
+          "type": "string"
+        },
+        "styleEditable": {
+          "description": "Whether element style can be edited.",
+          "type": "boolean"
+        },
+        "type": {
+          "const": "line",
+          "description": "Element type identifier.",
+          "type": "string"
+        },
+        "visible": {
+          "description": "Whether element is visible.",
+          "type": "boolean"
+        },
+        "width": {
+          "description": "Width in pixels.",
+          "type": "number"
+        },
+        "x": {
+          "description": "X position in pixels.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Y position in pixels.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "alwaysOnTop",
+        "animations",
+        "blurEnabled",
+        "blurRadius",
+        "brightness",
+        "brightnessEnabled",
+        "color",
+        "contentEditable",
+        "dash",
+        "draggable",
+        "endHead",
+        "filters",
+        "grayscaleEnabled",
+        "height",
+        "id",
+        "opacity",
+        "resizable",
+        "rotation",
+        "selectable",
+        "sepiaEnabled",
+        "shadowBlur",
+        "shadowColor",
+        "shadowEnabled",
+        "shadowOffsetX",
+        "shadowOffsetY",
+        "shadowOpacity",
+        "showInExport",
+        "startHead",
+        "styleEditable",
+        "type",
+        "visible",
+        "width",
+        "x",
+        "y"
+      ],
+      "type": "object"
+    },
+    "Page": {
+      "additionalProperties": false,
+      "properties": {
+        "background": {
+          "description": "Background color or image.",
+          "type": "string"
+        },
+        "bleed": {
+          "description": "Bleed area in pixels for print.",
+          "type": "number"
+        },
+        "children": {
+          "description": "Elements on this page.",
+          "items": {
+            "$ref": "#/definitions/Element"
+          },
+          "type": "array"
+        },
+        "custom": {
+          "description": "Custom data attached to the page."
+        },
+        "duration": {
+          "description": "Page duration in milliseconds for animations.",
+          "type": "number"
+        },
+        "height": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "const": "auto",
+              "type": "string"
+            }
+          ],
+          "description": "Page height in pixels or 'auto' to inherit from store."
+        },
+        "id": {
+          "description": "Unique identifier for the page.",
+          "type": "string"
+        },
+        "width": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "const": "auto",
+              "type": "string"
+            }
+          ],
+          "description": "Page width in pixels or 'auto' to inherit from store."
+        }
+      },
+      "required": [
+        "id",
+        "width",
+        "height",
+        "background",
+        "bleed",
+        "duration",
+        "children"
+      ],
+      "type": "object"
+    },
+    "SVGElement": {
+      "additionalProperties": false,
+      "properties": {
+        "alwaysOnTop": {
+          "description": "Whether element stays on top of others.",
+          "type": "boolean"
+        },
+        "animations": {
+          "description": "Animation configurations.",
+          "items": {
+            "$ref": "#/definitions/Animation"
+          },
+          "type": "array"
+        },
+        "blurEnabled": {
+          "description": "Whether blur effect is enabled.",
+          "type": "boolean"
+        },
+        "blurRadius": {
+          "description": "Blur radius in pixels.",
+          "type": "number"
+        },
+        "borderColor": {
+          "description": "Border color.",
+          "type": "string"
+        },
+        "borderSize": {
+          "description": "Border width in pixels.",
+          "type": "number"
+        },
+        "brightness": {
+          "description": "Brightness level (-1 to 1).",
+          "type": "number"
+        },
+        "brightnessEnabled": {
+          "description": "Whether brightness effect is enabled.",
+          "type": "boolean"
+        },
+        "colorsReplace": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Color replacement mappings.",
+          "type": "object"
+        },
+        "contentEditable": {
+          "description": "Whether element content can be edited.",
+          "type": "boolean"
+        },
+        "cornerRadius": {
+          "description": "Corner radius in pixels.",
+          "type": "number"
+        },
+        "cropHeight": {
+          "description": "Crop height as percentage (0-1).",
+          "type": "number"
+        },
+        "cropWidth": {
+          "description": "Crop width as percentage (0-1).",
+          "type": "number"
+        },
+        "cropX": {
+          "description": "Crop X offset as percentage (0-1).",
+          "type": "number"
+        },
+        "cropY": {
+          "description": "Crop Y offset as percentage (0-1).",
+          "type": "number"
+        },
+        "custom": {
+          "description": "Custom data attached to the element."
+        },
+        "draggable": {
+          "description": "Whether element can be dragged.",
+          "type": "boolean"
+        },
+        "filters": {
+          "additionalProperties": {
+            "additionalProperties": false,
+            "properties": {
+              "intensity": {
+                "description": "Filter intensity value (-1 to 1).",
+                "type": "number"
+              }
+            },
+            "required": ["intensity"],
+            "type": "object"
+          },
+          "description": "Applied image filters.",
+          "type": "object"
+        },
+        "flipX": {
+          "description": "Whether SVG is flipped horizontally.",
+          "type": "boolean"
+        },
+        "flipY": {
+          "description": "Whether SVG is flipped vertically.",
+          "type": "boolean"
+        },
+        "grayscaleEnabled": {
+          "description": "Whether grayscale effect is enabled.",
+          "type": "boolean"
+        },
+        "height": {
+          "description": "Height in pixels.",
+          "type": "number"
+        },
+        "id": {
+          "description": "Unique identifier for the element.",
+          "type": "string"
+        },
+        "keepRatio": {
+          "description": "Whether to maintain aspect ratio when resizing.",
+          "type": "boolean"
+        },
+        "maskSrc": {
+          "description": "URL or data URI for SVG mask.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Display name for the element.",
+          "type": "string"
+        },
+        "opacity": {
+          "description": "Opacity level (0-1).",
+          "type": "number"
+        },
+        "resizable": {
+          "description": "Whether element can be resized.",
+          "type": "boolean"
+        },
+        "rotation": {
+          "description": "Rotation angle in degrees.",
+          "type": "number"
+        },
+        "selectable": {
+          "description": "Whether element can be selected.",
+          "type": "boolean"
+        },
+        "sepiaEnabled": {
+          "description": "Whether sepia effect is enabled.",
+          "type": "boolean"
+        },
+        "shadowBlur": {
+          "description": "Shadow blur radius in pixels.",
+          "type": "number"
+        },
+        "shadowColor": {
+          "description": "Shadow color.",
+          "type": "string"
+        },
+        "shadowEnabled": {
+          "description": "Whether shadow is enabled.",
+          "type": "boolean"
+        },
+        "shadowOffsetX": {
+          "description": "Shadow horizontal offset in pixels.",
+          "type": "number"
+        },
+        "shadowOffsetY": {
+          "description": "Shadow vertical offset in pixels.",
+          "type": "number"
+        },
+        "shadowOpacity": {
+          "description": "Shadow opacity (0-1).",
+          "type": "number"
+        },
+        "showInExport": {
+          "description": "Whether element appears in exports.",
+          "type": "boolean"
+        },
+        "src": {
+          "description": "URL or data URI of the SVG file.",
+          "type": "string"
+        },
+        "stretchEnabled": {
+          "description": "Whether stretch mode is enabled.",
+          "type": "boolean"
+        },
+        "styleEditable": {
+          "description": "Whether element style can be edited.",
+          "type": "boolean"
+        },
+        "type": {
+          "const": "svg",
+          "description": "Element type identifier.",
+          "type": "string"
+        },
+        "visible": {
+          "description": "Whether element is visible.",
+          "type": "boolean"
+        },
+        "width": {
+          "description": "Width in pixels.",
+          "type": "number"
+        },
+        "x": {
+          "description": "X position in pixels.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Y position in pixels.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "alwaysOnTop",
+        "animations",
+        "blurEnabled",
+        "blurRadius",
+        "borderColor",
+        "borderSize",
+        "brightness",
+        "brightnessEnabled",
+        "colorsReplace",
+        "contentEditable",
+        "cornerRadius",
+        "cropHeight",
+        "cropWidth",
+        "cropX",
+        "cropY",
+        "draggable",
+        "filters",
+        "flipX",
+        "flipY",
+        "grayscaleEnabled",
+        "height",
+        "id",
+        "keepRatio",
+        "maskSrc",
+        "opacity",
+        "resizable",
+        "rotation",
+        "selectable",
+        "sepiaEnabled",
+        "shadowBlur",
+        "shadowColor",
+        "shadowEnabled",
+        "shadowOffsetX",
+        "shadowOffsetY",
+        "shadowOpacity",
+        "showInExport",
+        "src",
+        "stretchEnabled",
+        "styleEditable",
+        "type",
+        "visible",
+        "width",
+        "x",
+        "y"
+      ],
+      "type": "object"
+    },
+    "Store": {
+      "additionalProperties": false,
+      "properties": {
+        "audios": {
+          "description": "Audio tracks in the design.",
+          "items": {
+            "$ref": "#/definitions/Audio"
+          },
+          "type": "array"
+        },
+        "custom": {
+          "description": "Custom data attached to the design."
+        },
+        "dpi": {
+          "description": "Dots per inch for print calculations.",
+          "type": "number"
+        },
+        "fonts": {
+          "description": "Fonts used in the design.",
+          "items": {
+            "$ref": "#/definitions/Font"
+          },
+          "type": "array"
+        },
+        "height": {
+          "description": "Canvas height in pixels.",
+          "type": "number"
+        },
+        "pages": {
+          "description": "Pages in the design.",
+          "items": {
+            "$ref": "#/definitions/Page"
+          },
+          "type": "array"
+        },
+        "schemaVersion": {
+          "description": "Schema version for compatibility checking.",
+          "type": "number"
+        },
+        "unit": {
+          "description": "Unit type for measurements.",
+          "enum": ["px", "pt", "mm", "in"],
+          "type": "string"
+        },
+        "width": {
+          "description": "Canvas width in pixels.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "width",
+        "height",
+        "unit",
+        "dpi",
+        "fonts",
+        "pages",
+        "audios"
+      ],
+      "type": "object"
+    },
+    "TextElement": {
+      "additionalProperties": false,
+      "properties": {
+        "align": {
+          "description": "Text alignment: left, center, right, justify.",
+          "enum": ["left", "center", "right", "justify"],
+          "type": "string"
+        },
+        "alwaysOnTop": {
+          "description": "Whether element stays on top of others.",
+          "type": "boolean"
+        },
+        "animations": {
+          "description": "Animation configurations.",
+          "items": {
+            "$ref": "#/definitions/Animation"
+          },
+          "type": "array"
+        },
+        "backgroundColor": {
+          "description": "Text background color.",
+          "type": "string"
+        },
+        "backgroundCornerRadius": {
+          "description": "Text background corner radius as percentage of half line height.",
+          "type": "number"
+        },
+        "backgroundEnabled": {
+          "description": "Whether text background is enabled.",
+          "type": "boolean"
+        },
+        "backgroundOpacity": {
+          "description": "Text background opacity (0-1).",
+          "type": "number"
+        },
+        "backgroundPadding": {
+          "description": "Text background padding as percentage of half line height.",
+          "type": "number"
+        },
+        "blurEnabled": {
+          "description": "Whether blur effect is enabled.",
+          "type": "boolean"
+        },
+        "blurRadius": {
+          "description": "Blur radius in pixels.",
+          "type": "number"
+        },
+        "brightness": {
+          "description": "Brightness level (-1 to 1).",
+          "type": "number"
+        },
+        "brightnessEnabled": {
+          "description": "Whether brightness effect is enabled.",
+          "type": "boolean"
+        },
+        "contentEditable": {
+          "description": "Whether element content can be edited.",
+          "type": "boolean"
+        },
+        "curveEnabled": {
+          "description": "Whether text curve effect is enabled.",
+          "type": "boolean"
+        },
+        "curvePower": {
+          "description": "Text curve power (-1 to 1, 0 = straight).",
+          "type": "number"
+        },
+        "custom": {
+          "description": "Custom data attached to the element."
+        },
+        "draggable": {
+          "description": "Whether element can be dragged.",
+          "type": "boolean"
+        },
+        "fill": {
+          "description": "Text color.",
+          "type": "string"
+        },
+        "filters": {
+          "additionalProperties": {
+            "additionalProperties": false,
+            "properties": {
+              "intensity": {
+                "description": "Filter intensity value (-1 to 1).",
+                "type": "number"
+              }
+            },
+            "required": ["intensity"],
+            "type": "object"
+          },
+          "description": "Applied image filters.",
+          "type": "object"
+        },
+        "fontFamily": {
+          "description": "Font family name.",
+          "type": "string"
+        },
+        "fontSize": {
+          "description": "Font size in pixels.",
+          "type": "number"
+        },
+        "fontStyle": {
+          "description": "Font style: 'normal' or 'italic'.",
+          "type": "string"
+        },
+        "fontWeight": {
+          "description": "Font weight: 'normal', 'bold', or numeric string.",
+          "type": "string"
+        },
+        "grayscaleEnabled": {
+          "description": "Whether grayscale effect is enabled.",
+          "type": "boolean"
+        },
+        "height": {
+          "description": "Height in pixels (auto-calculated at runtime).",
+          "type": "number"
+        },
+        "id": {
+          "description": "Unique identifier for the element.",
+          "type": "string"
+        },
+        "letterSpacing": {
+          "description": "Letter spacing as percentage of font size.",
+          "type": "number"
+        },
+        "lineHeight": {
+          "description": "Line height as number or string.",
+          "type": ["number", "string"]
+        },
+        "name": {
+          "description": "Display name for the element.",
+          "type": "string"
+        },
+        "opacity": {
+          "description": "Opacity level (0-1).",
+          "type": "number"
+        },
+        "placeholder": {
+          "description": "Placeholder text when content is empty.",
+          "type": "string"
+        },
+        "resizable": {
+          "description": "Whether element can be resized.",
+          "type": "boolean"
+        },
+        "rotation": {
+          "description": "Rotation angle in degrees.",
+          "type": "number"
+        },
+        "selectable": {
+          "description": "Whether element can be selected.",
+          "type": "boolean"
+        },
+        "sepiaEnabled": {
+          "description": "Whether sepia effect is enabled.",
+          "type": "boolean"
+        },
+        "shadowBlur": {
+          "description": "Shadow blur radius in pixels.",
+          "type": "number"
+        },
+        "shadowColor": {
+          "description": "Shadow color.",
+          "type": "string"
+        },
+        "shadowEnabled": {
+          "description": "Whether shadow is enabled.",
+          "type": "boolean"
+        },
+        "shadowOffsetX": {
+          "description": "Shadow horizontal offset in pixels.",
+          "type": "number"
+        },
+        "shadowOffsetY": {
+          "description": "Shadow vertical offset in pixels.",
+          "type": "number"
+        },
+        "shadowOpacity": {
+          "description": "Shadow opacity (0-1).",
+          "type": "number"
+        },
+        "showInExport": {
+          "description": "Whether element appears in exports.",
+          "type": "boolean"
+        },
+        "stroke": {
+          "description": "Stroke color.",
+          "type": "string"
+        },
+        "strokeWidth": {
+          "description": "Stroke width in pixels.",
+          "type": "number"
+        },
+        "styleEditable": {
+          "description": "Whether element style can be edited.",
+          "type": "boolean"
+        },
+        "text": {
+          "description": "Visible label text shown on canvas.",
+          "type": "string"
+        },
+        "textDecoration": {
+          "description": "Text decoration: underline, overline, line-through, etc.",
+          "type": "string"
+        },
+        "textTransform": {
+          "description": "Text transform: uppercase, lowercase, capitalize, none.",
+          "type": "string"
+        },
+        "type": {
+          "const": "text",
+          "description": "Element type identifier.",
+          "type": "string"
+        },
+        "verticalAlign": {
+          "description": "Vertical alignment: top, middle, bottom.",
+          "type": "string"
+        },
+        "visible": {
+          "description": "Whether element is visible.",
+          "type": "boolean"
+        },
+        "width": {
+          "description": "Width in pixels.",
+          "type": "number"
+        },
+        "x": {
+          "description": "X position in pixels.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Y position in pixels.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "align",
+        "alwaysOnTop",
+        "animations",
+        "backgroundColor",
+        "backgroundCornerRadius",
+        "backgroundEnabled",
+        "backgroundOpacity",
+        "backgroundPadding",
+        "blurEnabled",
+        "blurRadius",
+        "brightness",
+        "brightnessEnabled",
+        "contentEditable",
+        "curveEnabled",
+        "curvePower",
+        "draggable",
+        "fill",
+        "filters",
+        "fontFamily",
+        "fontSize",
+        "fontStyle",
+        "fontWeight",
+        "grayscaleEnabled",
+        "height",
+        "id",
+        "letterSpacing",
+        "lineHeight",
+        "opacity",
+        "placeholder",
+        "resizable",
+        "rotation",
+        "selectable",
+        "sepiaEnabled",
+        "shadowBlur",
+        "shadowColor",
+        "shadowEnabled",
+        "shadowOffsetX",
+        "shadowOffsetY",
+        "shadowOpacity",
+        "showInExport",
+        "stroke",
+        "strokeWidth",
+        "styleEditable",
+        "text",
+        "textDecoration",
+        "textTransform",
+        "type",
+        "verticalAlign",
+        "visible",
+        "width",
+        "x",
+        "y"
+      ],
+      "type": "object"
+    },
+    "VideoElement": {
+      "additionalProperties": false,
+      "properties": {
+        "alwaysOnTop": {
+          "description": "Whether element stays on top of others.",
+          "type": "boolean"
+        },
+        "animations": {
+          "description": "Animation configurations.",
+          "items": {
+            "$ref": "#/definitions/Animation"
+          },
+          "type": "array"
+        },
+        "blurEnabled": {
+          "description": "Whether blur effect is enabled.",
+          "type": "boolean"
+        },
+        "blurRadius": {
+          "description": "Blur radius in pixels.",
+          "type": "number"
+        },
+        "borderColor": {
+          "description": "Border color.",
+          "type": "string"
+        },
+        "borderSize": {
+          "description": "Border width in pixels.",
+          "type": "number"
+        },
+        "brightness": {
+          "description": "Brightness level (-1 to 1).",
+          "type": "number"
+        },
+        "brightnessEnabled": {
+          "description": "Whether brightness effect is enabled.",
+          "type": "boolean"
+        },
+        "clipSrc": {
+          "description": "URL or data URI for clipping mask.",
+          "type": "string"
+        },
+        "contentEditable": {
+          "description": "Whether element content can be edited.",
+          "type": "boolean"
+        },
+        "cornerRadius": {
+          "description": "Corner radius in pixels.",
+          "type": "number"
+        },
+        "cropHeight": {
+          "description": "Crop height as percentage (0-1).",
+          "type": "number"
+        },
+        "cropWidth": {
+          "description": "Crop width as percentage (0-1).",
+          "type": "number"
+        },
+        "cropX": {
+          "description": "Crop X offset as percentage (0-1).",
+          "type": "number"
+        },
+        "cropY": {
+          "description": "Crop Y offset as percentage (0-1).",
+          "type": "number"
+        },
+        "custom": {
+          "description": "Custom data attached to the element."
+        },
+        "draggable": {
+          "description": "Whether element can be dragged.",
+          "type": "boolean"
+        },
+        "duration": {
+          "description": "Video duration in milliseconds.",
+          "type": "number"
+        },
+        "endTime": {
+          "description": "End time offset in seconds (0-1).",
+          "type": "number"
+        },
+        "filters": {
+          "additionalProperties": {
+            "additionalProperties": false,
+            "properties": {
+              "intensity": {
+                "description": "Filter intensity value (-1 to 1).",
+                "type": "number"
+              }
+            },
+            "required": ["intensity"],
+            "type": "object"
+          },
+          "description": "Applied image filters.",
+          "type": "object"
+        },
+        "flipX": {
+          "description": "Whether image is flipped horizontally.",
+          "type": "boolean"
+        },
+        "flipY": {
+          "description": "Whether image is flipped vertically.",
+          "type": "boolean"
+        },
+        "grayscaleEnabled": {
+          "description": "Whether grayscale effect is enabled.",
+          "type": "boolean"
+        },
+        "height": {
+          "description": "Height in pixels.",
+          "type": "number"
+        },
+        "id": {
+          "description": "Unique identifier for the element.",
+          "type": "string"
+        },
+        "keepRatio": {
+          "description": "Whether to maintain aspect ratio when resizing.",
+          "type": "boolean"
+        },
+        "name": {
+          "description": "Display name for the element.",
+          "type": "string"
+        },
+        "opacity": {
+          "description": "Opacity level (0-1).",
+          "type": "number"
+        },
+        "resizable": {
+          "description": "Whether element can be resized.",
+          "type": "boolean"
+        },
+        "rotation": {
+          "description": "Rotation angle in degrees.",
+          "type": "number"
+        },
+        "selectable": {
+          "description": "Whether element can be selected.",
+          "type": "boolean"
+        },
+        "sepiaEnabled": {
+          "description": "Whether sepia effect is enabled.",
+          "type": "boolean"
+        },
+        "shadowBlur": {
+          "description": "Shadow blur radius in pixels.",
+          "type": "number"
+        },
+        "shadowColor": {
+          "description": "Shadow color.",
+          "type": "string"
+        },
+        "shadowEnabled": {
+          "description": "Whether shadow is enabled.",
+          "type": "boolean"
+        },
+        "shadowOffsetX": {
+          "description": "Shadow horizontal offset in pixels.",
+          "type": "number"
+        },
+        "shadowOffsetY": {
+          "description": "Shadow vertical offset in pixels.",
+          "type": "number"
+        },
+        "shadowOpacity": {
+          "description": "Shadow opacity (0-1).",
+          "type": "number"
+        },
+        "showInExport": {
+          "description": "Whether element appears in exports.",
+          "type": "boolean"
+        },
+        "src": {
+          "description": "URL or data URI of the image file.",
+          "type": "string"
+        },
+        "startTime": {
+          "description": "Start time offset in seconds (0-1).",
+          "type": "number"
+        },
+        "stretchEnabled": {
+          "description": "Whether stretch mode is enabled.",
+          "type": "boolean"
+        },
+        "styleEditable": {
+          "description": "Whether element style can be edited.",
+          "type": "boolean"
+        },
+        "type": {
+          "const": "video",
+          "description": "Element type identifier.",
+          "type": "string"
+        },
+        "visible": {
+          "description": "Whether element is visible.",
+          "type": "boolean"
+        },
+        "volume": {
+          "description": "Volume level (0-1).",
+          "type": "number"
+        },
+        "width": {
+          "description": "Width in pixels.",
+          "type": "number"
+        },
+        "x": {
+          "description": "X position in pixels.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Y position in pixels.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "alwaysOnTop",
+        "animations",
+        "blurEnabled",
+        "blurRadius",
+        "borderColor",
+        "borderSize",
+        "brightness",
+        "brightnessEnabled",
+        "clipSrc",
+        "contentEditable",
+        "cornerRadius",
+        "cropHeight",
+        "cropWidth",
+        "cropX",
+        "cropY",
+        "draggable",
+        "duration",
+        "endTime",
+        "filters",
+        "flipX",
+        "flipY",
+        "grayscaleEnabled",
+        "height",
+        "id",
+        "keepRatio",
+        "opacity",
+        "resizable",
+        "rotation",
+        "selectable",
+        "sepiaEnabled",
+        "shadowBlur",
+        "shadowColor",
+        "shadowEnabled",
+        "shadowOffsetX",
+        "shadowOffsetY",
+        "shadowOpacity",
+        "showInExport",
+        "src",
+        "startTime",
+        "stretchEnabled",
+        "styleEditable",
+        "type",
+        "visible",
+        "volume",
+        "width",
+        "x",
+        "y"
+      ],
+      "type": "object"
+    }
+  }
+}

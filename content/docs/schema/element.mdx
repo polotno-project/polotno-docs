@@ -1,0 +1,65 @@
+---
+title: Element
+description: Documentation for the Element schema definition in the Polotno Design JSON Schema.
+keywords: ["Element", "JSON Schema", "Polotno", "Design", "API", "Documentation"]
+---
+
+# Element
+
+
+
+## Type Information
+
+**Base Type:** `object`
+
+
+
+## Properties
+
+
+*No properties defined.*
+
+
+## JSON Schema
+
+```json
+{
+  "anyOf": [
+    {
+      "$ref": "#/definitions/TextElement"
+    },
+    {
+      "$ref": "#/definitions/ImageElement"
+    },
+    {
+      "$ref": "#/definitions/SVGElement"
+    },
+    {
+      "$ref": "#/definitions/LineElement"
+    },
+    {
+      "$ref": "#/definitions/VideoElement"
+    },
+    {
+      "$ref": "#/definitions/FigureElement"
+    },
+    {
+      "$ref": "#/definitions/GifElement"
+    },
+    {
+      "$ref": "#/definitions/GroupElement"
+    }
+  ]
+}
+```
+
+## Related Definitions
+
+- [TextElement](text-element)
+- [ImageElement](image-element)
+- [SVGElement](svgelement)
+- [LineElement](line-element)
+- [VideoElement](video-element)
+- [FigureElement](figure-element)
+- [GifElement](gif-element)
+- [GroupElement](group-element)
