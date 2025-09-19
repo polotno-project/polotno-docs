@@ -1,0 +1,169 @@
+---
+title: Sandpack Demo Component
+description: Interactive code sandbox for Polotno examples
+---
+
+## Sandpack Demo Component
+
+The `SandpackDemo` component allows you to create interactive code sandboxes with Polotno pre-configured. It's perfect for demonstrating code examples in your documentation.
+
+## Basic Usage
+
+Here's a basic Polotno editor:
+
+<SandpackDemo />
+
+## Custom Dependencies
+
+You can add custom dependencies beyond the default ones:
+
+<SandpackDemo 
+  dependencies={{
+    "lodash": "^4.17.21",
+    "date-fns": "^2.29.3"
+  }}
+/>
+
+## Custom Code Example
+
+You can provide custom files to show specific examples:
+
+<SandpackDemo 
+  files={{
+    "/App.js": `import React from 'react';
+import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Workspace } from 'polotno/canvas/workspace';
+import { SidePanel } from 'polotno/side-panel';
+import { Toolbar } from 'polotno/toolbar/toolbar';
+import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+import { createStore } from 'polotno/model/store';
+
+const store = createStore({
+  key: 'nFA5H9elEytDyPyvKL7T',
+});
+
+// Add a default template
+store.addPage();
+
+export default function App() {
+  return (
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+      <SidePanelWrap>
+        <SidePanel store={store} />
+      </SidePanelWrap>
+      <WorkspaceWrap>
+        <Toolbar store={store} downloadButtonEnabled />
+        <Workspace store={store} />
+        <ZoomButtons store={store} />
+      </WorkspaceWrap>
+    </PolotnoContainer>
+  );
+}`
+  }}
+/>
+
+## Component Props
+
+The `SandpackDemo` component accepts the following props:
+
+### `dependencies`
+- **Type**: `Record<string, string>`
+- **Default**: `{}`
+- **Description**: Custom dependencies to include alongside the default ones (polotno, react, react-dom, react-scripts)
+
+### `files`
+- **Type**: `Record<string, string>`
+- **Default**: `{}`
+- **Description**: Custom files to include in the sandbox. If not provided, uses a default App.js with basic Polotno setup
+
+### `options`
+- **Type**: `object`
+- **Default**: `{}`
+- **Description**: Custom options for the Sandpack instance (showNavigator, showTabs, etc.)
+
+### `height`
+- **Type**: `number | string`
+- **Default**: `400`
+- **Description**: Height of the sandbox editor
+
+### `theme`
+- **Type**: `'light' | 'dark' | 'auto'`
+- **Default**: `'light'`
+- **Description**: Theme for the sandbox
+
+## Advanced Example
+
+<SandpackDemo 
+  height={500}
+  theme="light"
+  dependencies={{
+    "mobx": "^6.6.0",
+    "mobx-react-lite": "^3.4.0"
+  }}
+  options={{
+    showLineNumbers: true,
+    showInlineErrors: true,
+    wrapContent: true
+  }}
+  files={{
+    "/App.js": `import React from 'react';
+import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Workspace } from 'polotno/canvas/workspace';
+import { SidePanel } from 'polotno/side-panel';
+import { Toolbar } from 'polotno/toolbar/toolbar';
+import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+import { createStore } from 'polotno/model/store';
+
+const store = createStore({
+  key: 'nFA5H9elEytDyPyvKL7T',
+});
+
+// Create a custom page with some elements
+store.addPage();
+store.activePage.addElement({
+  type: 'text',
+  text: 'Welcome to Polotno!',
+  x: 50,
+  y: 50,
+  fontSize: 32,
+  fill: '#2563eb',
+  fontWeight: 'bold',
+});
+
+store.activePage.addElement({
+  type: 'text',
+  text: 'This is an interactive demo',
+  x: 50,
+  y: 100,
+  fontSize: 16,
+  fill: '#64748b',
+});
+
+export default function App() {
+  return (
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+      <SidePanelWrap>
+        <SidePanel store={store} />
+      </SidePanelWrap>
+      <WorkspaceWrap>
+        <Toolbar store={store} downloadButtonEnabled />
+        <Workspace store={store} />
+        <ZoomButtons store={store} />
+      </WorkspaceWrap>
+    </PolotnoContainer>
+  );
+}`,
+    "/styles.css": `body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}`
+  }}
+/>

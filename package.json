@@ -12,6 +12,7 @@
   "dependencies": {
     "@adobe/jsonschema2md": "^8.0.5",
     "@apidevtools/json-schema-ref-parser": "^14.2.1",
+    "@codesandbox/sandpack-react": "^2.20.0",
     "fumadocs-core": "15.7.12",
     "fumadocs-mdx": "11.10.0",
     "fumadocs-ui": "15.7.12",
@@ -28,6 +29,7 @@
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "postcss": "^8.5.6",
+    "raw-loader": "^4.0.2",
     "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2"
   }
