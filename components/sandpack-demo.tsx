@@ -1,3 +1,4 @@
+'use client';
 import { SandpackProvider, SandpackPreview } from '@codesandbox/sandpack-react';
 import React from 'react';
 
