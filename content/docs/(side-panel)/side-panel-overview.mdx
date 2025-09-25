@@ -1,0 +1,84 @@
+---
+title: Side Panel overview
+description: Default tabs for adding elements and how to customize side panel
+---
+
+**SidePanel** provides a default set of components for adding new elements to the canvas, changing page sizes, and more.
+
+```tsx
+import { SidePanel } from 'polotno/side-panel';
+
+const MyPanel = () => {
+  return (
+    <div>
+      <SidePanel store={store} />
+    </div>
+  );
+};
+```
+
+The `SidePanel` will automatically use the full width and height of its parent; you don't have to manually adjust its size. Set the size of the parent `div` with CSS.
+
+## How to customize side panel tabs?
+
+You can pass the `sections` property to the `<SidePanel />` component to specify all available tabs manually.
+
+Default UI:
+
+```tsx
+import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
+
+const MyPanel = () => {
+  return (
+    <div>
+      <SidePanel store={store} sections={DEFAULT_SECTIONS} />
+    </div>
+  );
+};
+```
+
+Define sections manually:
+
+```tsx
+import { observer } from 'mobx-react-lite';
+import { SidePanel } from 'polotno/side-panel';
+// import existing section
+import { TextSection } from 'polotno/side-panel';
+
+// import default tab component
+import { SectionTab } from 'polotno/side-panel';
+// import our own icon
+import FaShapes from '@meronex/icons/fa/FaShapes';
+
+// define the new custom section
+const CustomSection = {
+  name: 'custom',
+  Tab: (props) => (
+    <SectionTab name="Custom" {...props}>
+      <FaShapes />
+    </SectionTab>
+  ),
+  // we need observer to update component automatically on any store changes
+  Panel: observer(({ store }) => {
+    return (
+      <div>
+        <p>Here we will define our own custom tab.</p>
+        <p>Elements on the current page: {store.activePage?.children.length}</p>
+      </div>
+    );
+  }),
+};
+
+// we will have just two sections
+const sections = [CustomSection, TextSection];
+
+const CustomSidePanel = () => {
+  return <SidePanel store={store} sections={sections} defaultSection="custom" />;
+};
+```
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-custom-side-panel" />
+
+

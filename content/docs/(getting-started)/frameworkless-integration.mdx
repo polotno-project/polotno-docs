@@ -1,0 +1,62 @@
+---
+title: Frameworkless Integration
+description: Use Polotno without React by embedding a single script bundle
+---
+
+**Polotno** is optimized for integration with the React framework.
+
+However, for scenarios requiring no customization, a “frameworkless” version of Polotno is available. This version can be easily included on a page with simple script tags.
+
+```html
+<!-- add styles -->
+<link
+  href="https://unpkg.com/@blueprintjs/core@5/lib/css/blueprint.css"
+  rel="stylesheet"
+/>
+
+<!-- add polotno bundle -->
+<!-- (!) important: make sure it is added into body of document (not <head>) -->
+<script src="https://unpkg.com/polotno@2/polotno.bundle.js"></script>
+
+<!-- set styles for the editor -->
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  #container {
+    width: 100vw;
+    height: 100vh;
+  }
+  /* optionally enable dark theme */
+  /* body.bp5-dark { background: #1e1e1e; } */
+  /* <body class="bp5-dark"> */
+</style>
+
+<!-- create container for editor -->
+<div id="container"></div>
+
+<!-- init the editor -->
+<script>
+  const { store } = createPolotnoApp({
+    // this is a demo key just for that project
+    // (!) please don't use it in your projects
+    // to create your own API key please go here: https://polotno.com/cabinet
+    key: 'nFA5H9elEytDyPyvKL7T',
+    // you can hide back-link on a paid license
+    // but it will be good if you can keep it for Polotno project support
+    showCredit: true,
+    container: document.getElementById('container'),
+    // also optionally you can specify which side panels you want to show
+    // by default all panels are shown
+    // sections: ['photos', 'text', 'elements', 'upload', 'background', 'layers']
+  });
+
+  // you can use full store API available here: https://polotno.com/docs/store-overview
+  // for any configurations you can use window.polotnoConfig object
+  // it gives you full configs available in: import { something } from 'polotno/config'
+  window.polotnoConfig.unstable_setAnimationsEnabled(true);
+</script>
+```
+
+

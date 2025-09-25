@@ -1,0 +1,179 @@
+---
+title: Pexels photos
+description: Integrate Pexels photos into a custom Side Panel section
+---
+
+You can use customization of Polotno's Side Panel to add your own panels with your own assets.
+
+## How to integrate photos from Pexels.com API?
+
+First, set up your own backend proxy to the Pexels API. See the official docs: https://www.pexels.com/api
+
+Example using Node.js:
+
+```js
+module.exports = async (req, res) => {
+  var i = req.url.indexOf('?');
+  var query = req.url.substr(i + 1);
+
+  // if no query provided, let's return a list of curated photos
+  const searchPrefix = req.query.query ? 'search/' : '/curated';
+
+  const r = await fetch(
+    `https://api.pexels.com/v1/${searchPrefix}?query=${encodeURIComponent(
+      req.query.query
+    )}&page=${req.query.page}&per_page=${req.query.per_page}`,
+    {
+      headers: {
+        Authorization: 'YOUR_API_KEY_FROM_PEXELS',
+      },
+    }
+  );
+
+  if (r.status !== 200) {
+    return res.status(r.status).send(await r.text());
+  }
+
+  let result = await r.json();
+
+  res.status(r.status).json(result);
+};
+```
+
+After creating your API endpoint, create a new Side Panel section and show it in Polotno Editor. Example section using the proxy:
+
+```tsx
+import React from 'react';
+import { InputGroup } from '@blueprintjs/core';
+import { ImagesGrid } from 'polotno/side-panel/images-grid';
+import { getImageSize, getCrop } from 'polotno/utils/image';
+import { SectionTab } from 'polotno/side-panel';
+import { useInfiniteAPI } from 'polotno/utils/use-api';
+import { t } from 'polotno/utils/l10n';
+import SiPexels from '@meronex/icons/si/SiPexels';
+
+// this is a demo key just for that project
+// (!) please don't use it in your projects
+// to create your own API key please go here: https://polotno.com/login
+const key = 'nFA5H9elEytDyPyvKL7T';
+
+// use Polotno API proxy into Pexels
+// WARNING: don't use on production! Use your own proxy and Pexels API key
+const API = 'https://api.polotno.com/api';
+const getPexelsAPI = ({ query, page }: { query: string; page: number }) =>
+  `${API}/get-pexels?query=${query}&per_page=20&page=${page}&KEY=${key}`;
+
+export const PexelsPanel = ({ store }: { store: any }) => {
+  const { setQuery, loadMore, isReachingEnd, data, isLoading, error } =
+    useInfiniteAPI({
+      defaultQuery: '',
+      getAPI: ({ page, query }) => getPexelsAPI({ page, query }),
+      getSize: (lastResponse) => lastResponse.total_results / lastResponse.per_page,
+    });
+
+  return (
+    <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <InputGroup
+        leftIcon="search"
+        placeholder={t('sidePanel.searchPlaceholder')}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+          setQuery(e.target.value);
+        }}
+        type="search"
+        style={{ marginBottom: '20px' }}
+      />
+      <p style={{ textAlign: 'center' }}>
+        Photos by{' '}
+        <a href="https://www.pexels.com/" target="_blank" rel="noreferrer">
+          Pexels
+        </a>
+      </p>
+      <ImagesGrid
+        images={data?.map((item: any) => item.photos).flat().filter(Boolean)}
+        getPreview={(image: any) => image.src.medium}
+        onSelect={async (image: any, pos?: { x: number; y: number }, element?: any) => {
+          // get url of image
+          const src = image.src.large;
+
+          // if we dropped image into svg element, apply mask for it
+          if (element && element.type === 'svg' && element.contentEditable) {
+            element.set({ maskSrc: src });
+            return;
+          }
+
+          // get image size
+          const { width, height } = await getImageSize(src);
+
+          // if dropped into another image, recalculate crop and apply new image
+          if (element && element.type === 'image' && element.contentEditable) {
+            const crop = getCrop(element, { width, height });
+            element.set({ src, ...crop });
+            return;
+          }
+
+          // otherwise create new image
+          const x = (pos?.x || store.width / 2) - width / 2;
+          const y = (pos?.y || store.height / 2) - height / 2;
+          store.activePage?.addElement({
+            type: 'image',
+            src,
+            width,
+            height,
+            x,
+            y,
+          });
+        }}
+        isLoading={isLoading}
+        error={error}
+        loadMore={!isReachingEnd && loadMore}
+        getCredit={(image: any) => (
+          <span>
+            Photo by{' '}
+            <a href={image.photographer_url} target="_blank" rel="noreferrer">
+              {image.photographer}
+            </a>{' '}
+            on{' '}
+            <a
+              href="https://pexels.com/?utm_source=polotno&utm_medium=referral"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Pexels
+            </a>
+          </span>
+        )}
+      />
+    </div>
+  );
+};
+
+// define the new custom section
+export const PexelsSection = {
+  name: 'pexels',
+  Tab: (props: any) => (
+    <SectionTab name="Pexels" {...props}>
+      <SiPexels />
+    </SectionTab>
+  ),
+  // we need observer to update component automatically on any store changes
+  Panel: PexelsPanel,
+};
+```
+
+When you created a new section in the side panel, pass it into `<SidePanel />`:
+
+```tsx
+import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
+import { PexelsSection } from './pexels-section';
+
+const sections = [PexelsSection, ...DEFAULT_SECTIONS];
+
+// in render:
+<SidePanel store={store} sections={sections} defaultSection="pexels" />
+```
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-pexels" />
+
+

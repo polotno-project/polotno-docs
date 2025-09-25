@@ -1,0 +1,73 @@
+---
+title: Hidden panels
+description: Implement a side panel that doesn’t appear in tabs and opens programmatically
+---
+
+## How to implement a "hidden" side panel?
+
+It is possible to implement a side panel that will not be visible in the list of panels, but you can still open it based on user actions. Polotno itself has several such panels that are visible only on specific button clicks, for example “clip image”.
+
+To implement a hidden panel you can do this:
+
+```tsx
+// define the new custom section
+const CustomSection = {
+  name: 'custom-text',
+  // use "empty" tab that will render nothing
+  Tab: () => null,
+  // we need observer to update component automatically on any store changes
+  Panel: observer(({ store }) => {
+    const text = store.selectedElements[0]?.text;
+    return (
+      <div>
+        <InputGroup
+          value={text}
+          onChange={() => {
+            store.selectedElements[0].set({ text: e.target.value });
+          }}
+        />
+      </div>
+    );
+  }),
+};
+
+// add new section to side bar
+const sections = [...DEFAULT_SECTIONS, CustomSection];
+
+// use mobx reaction to react to selection changes
+reaction(
+  () => {
+    const textSelected = store.selectedElements[0]?.type === 'text';
+    return textSelected;
+  },
+  // we can use result returned from reaction
+  (textSelected) => {
+    if (textSelected) {
+      store.openSidePanel('custom-text');
+    }
+  }
+);
+
+export const App = () => {
+  return (
+    <PolotnoContainer className="polotno-app-container">
+      <SidePanelWrap>
+        <SidePanel store={store} sections={sections} />
+      </SidePanelWrap>
+      <WorkspaceWrap>
+        <Toolbar store={store} downloadButtonEnabled />
+        <Workspace store={store} />
+        <ZoomButtons store={store} />
+      </WorkspaceWrap>
+    </PolotnoContainer>
+  );
+};
+```
+
+For the demo, try to create a text element. As soon as it is selected, you will see a new side panel opened.
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-hidden-panel" />
+
+

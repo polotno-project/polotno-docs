@@ -1,0 +1,29 @@
+---
+title: Print for T‑shirts
+description: Build a white‑label shirt designer and export print‑ready files
+---
+
+A lot of merch platforms need a simple, white‑label canvas where customers can drop graphics on a shirt, then download a print‑ready file. Polotno lets you ship that in a day. Below is the approach we used in the live demo.
+
+For t‑shirt background, we use image elements like this:
+
+```ts
+frontPage.addElement({
+  type: 'svg',
+  src: '/front.svg',
+  width: 2500,
+  height: 2500,
+  x: -750,
+  y: -400,
+  showInExport: false,
+  selectable: false,
+});
+```
+
+That way, the background image is not selectable and will be excluded from the final export.
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-t-shirt" />
+
+

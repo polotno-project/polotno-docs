@@ -1,0 +1,141 @@
+---
+title: Angular
+description: Integrate Polotno Design Editor into an Angular application
+---
+
+## How to integrate Polotno editor into an Angular app?
+
+Polotno is a React-based editor. You can embed it inside an Angular application by rendering a small React component into an Angular host element.
+
+### 1) Install dependencies
+
+```bash
+npm install react react-dom polotno
+```
+
+Optionally, install MobX bindings for Angular to react to Polotno store changes from Angular templates:
+
+```bash
+npm install mobx-angular
+```
+
+### 2) Create the Polotno Editor as a React component
+
+Create `polotno/editor.tsx` and bootstrap the editor. Replace `YOUR_API_KEY` with your actual key from the Polotno cabinet.
+
+```tsx
+// polotno/editor.tsx
+import React from 'react';
+import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Toolbar } from 'polotno/toolbar/toolbar';
+import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+import { SidePanel } from 'polotno/side-panel';
+import { Workspace } from 'polotno/canvas/workspace';
+import { createStore } from 'polotno/model/store';
+
+// Blueprint styles for Polotno UI
+import '@blueprintjs/core/lib/css/blueprint.css';
+
+export const store = createStore({
+  key: 'YOUR_API_KEY',
+  showCredit: true,
+});
+store.addPage();
+
+export const App = () => {
+  return (
+    <PolotnoContainer style={{ height: '90vh' }}>
+      <SidePanelWrap>
+        <SidePanel store={store} />
+      </SidePanelWrap>
+      <WorkspaceWrap>
+        <Toolbar store={store} />
+        <Workspace store={store} />
+        <ZoomButtons store={store} />
+      </WorkspaceWrap>
+    </PolotnoContainer>
+  );
+};
+```
+
+### 3) Mount the React editor from an Angular component
+
+Use Angular lifecycle hooks to create and unmount a React root. Expose the Polotno `store` to the template if you want to show reactive data.
+
+```ts
+// app.component.ts
+import { Component, OnDestroy, AfterViewInit } from '@angular/core';
+import * as ReactDOM from 'react-dom/client';
+import * as React from 'react';
+import { App as ReactEditor, store } from './polotno/editor';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  standalone: true,
+})
+export class AppComponent implements AfterViewInit, OnDestroy {
+  root: ReactDOM.Root | undefined;
+  store = store; // make store available in template
+
+  ngAfterViewInit() {
+    const container = document.getElementById('editor')!;
+    this.root = ReactDOM.createRoot(container);
+    this.renderComponent();
+  }
+
+  private renderComponent() {
+    this.root!.render(React.createElement(ReactEditor));
+  }
+
+  ngOnDestroy() {
+    this.root?.unmount();
+  }
+}
+```
+
+Make sure the component template has a container for the editor:
+
+```html
+<!-- app.component.html -->
+<div id="editor"></div>
+```
+
+### 4) (Optional) Setup MobX reactions
+
+The `mobx-angular` library can automatically bind Polotno store updates to Angular templates. Add the module to your component (or app module) and use `*mobxAutorun`.
+
+```ts
+// app.component.ts (standalone component example)
+import { Component } from '@angular/core';
+import { MobxAngularModule } from 'mobx-angular';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  standalone: true,
+  imports: [MobxAngularModule],
+})
+export class AppComponent {}
+```
+
+```html
+<!-- app.component.html -->
+<div *mobxAutorun class="header">
+  Number of pages: {{ store.pages.length }}
+  <button (click)="store.addPage()">Add page</button>
+  <!-- the React editor mounts below -->
+  <div id="editor"></div>
+  
+</div>
+```
+
+### Customization
+
+From `polotno/editor.tsx` you can customize panels, toolbar, and canvas. From Angular, interact with the exported `store` to load a design, modify pages/elements, and export results (images/PDF). See other guides in this section for theming and configuration.
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-angular" />
+
+

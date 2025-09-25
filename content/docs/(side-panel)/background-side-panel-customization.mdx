@@ -1,0 +1,27 @@
+---
+title: Background side panel customization
+description: Change default search query and colors for the Background panel
+---
+
+You can change the default search query used in the background side panel:
+
+```ts
+import { setDefaultQuery } from 'polotno/side-panel/background-panel';
+
+setDefaultQuery('city');
+```
+
+You can't change other aspects of the default background side panel. If you need more customizations, remove the default panel and implement your own version for full control.
+
+You can change the default color preset using this:
+
+```ts
+import { setBackgroundColorsPreset } from 'polotno/side-panel/background-panel';
+
+setBackgroundColorsPreset(['red', 'green']);
+```
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-background-sidepanel" />
+

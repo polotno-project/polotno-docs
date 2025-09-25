@@ -1,0 +1,21 @@
+---
+title: Upload panel
+description: Implement a persistent, backend-powered Upload section for user images
+---
+
+**Important:** the default upload panel has the most basic setup. It can't keep uploaded images across user sessions, and it doesn't return images to the backend. Instead it injects images as base64 string directly into the design, which may affect performance. It is highly recommended to use your own version of an upload panel.
+
+## How to implement upload section?
+
+Upload section may work very similar to the [Images Section](https://developer.polotno.com/docs/side-panel-images). You just need to implement several API endpoints on your backend to allow:
+
+1. Loading list of user images
+2. Uploading new image
+3. Deleting image
+
+The example below doesn't use a real server to implement this function. It just uses local storage to store images. But you can use it as a starting point.
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-upload-section" />
+

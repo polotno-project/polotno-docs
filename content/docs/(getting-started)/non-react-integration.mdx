@@ -1,0 +1,201 @@
+---
+title: Non-React integration
+description: Build a standalone Polotno editor bundle and use it in non-React apps
+---
+
+**Polotno** is designed for use with the React framework, requiring a React environment for customization. However, you can still integrate Polotno with other frameworks, such as Vue, Angular, and Svelte. Here is how:
+
+1. Start by creating an isolated project for the editor component.
+2. Use Polotno to build and customize the editor as needed.
+3. Develop a set of API methods to facilitate communication with the primary project.
+4. Compile the project into basic source files, eliminating the need for JSX or transpilers.
+5. Incorporate the compiled bundle into the main project.
+
+It is important to note that React proficiency remains essential for customizing the Polotno editor. For demonstration purposes, this guide uses the Parcel bundler.
+
+- Example repository: [polotno-non-react-integration](https://github.com/polotno-project/polotno-site/tree/source/examples/polotno-non-react-integration)
+- Parcel: [parceljs.org](https://parceljs.org/)
+
+### 1. Installations
+
+First install Parcel, Polotno and React:
+
+```bash
+npm install parcel polotno react react-dom
+```
+
+### 2. Create project
+
+Create a new folder for the editor inside your project root, for example `editor`:
+
+```bash
+mkdir editor
+```
+
+### 3. Create index.html
+
+Create `editor/index.html`. It will be a template for your editor during isolated development.
+
+Note: this HTML file is not used by your main app; it is only for local development of the editor bundle.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <link
+      href="https://unpkg.com/@blueprintjs/core@5/lib/css/blueprint.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      #root {
+        width: 100vw;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="./index.js" type="module"></script>
+    <script>
+      window.onload = () => {
+        window.createEditor({ container: document.getElementById('root') });
+      };
+    </script>
+  </body>
+  </html>
+```
+
+### 4. Create index.js
+
+Create `editor/index.js`. It is the main entry point for your editor.
+
+```js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Toolbar } from 'polotno/toolbar/toolbar';
+import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+import { SidePanel } from 'polotno/side-panel';
+import { Workspace } from 'polotno/canvas/workspace';
+
+import { createStore } from 'polotno/model/store';
+
+const store = createStore({
+  key: 'nFA5H9elEytDyPyvKL7T', // you can create it here: https://polotno.com/cabinet/
+  // you can hide back-link on a paid license
+  // but it will be good if you can keep it for Polotno project support
+  showCredit: true,
+});
+const page = store.addPage();
+
+export const App = ({ store }) => {
+  return (
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+      <SidePanelWrap>
+        <SidePanel store={store} />
+      </SidePanelWrap>
+      <WorkspaceWrap>
+        <Toolbar store={store} />
+        <Workspace store={store} />
+        <ZoomButtons store={store} />
+      </WorkspaceWrap>
+    </PolotnoContainer>
+  );
+};
+
+// default API of your editor
+export const createEditor = ({ container }) => {
+  const root = ReactDOM.createRoot(container);
+  root.render(<App store={store} />);
+};
+
+// make API global for simple start in development
+window.createEditor = createEditor;
+```
+
+### 5. Start development server
+
+```bash
+parcel ./editor/index.html
+```
+
+Tip: you can also add this command to your `package.json`:
+
+```json
+{
+  "scripts": {
+    "dev": "parcel ./editor/index.html"
+  }
+}
+```
+
+### 6. Open editor in browser
+
+Open `http://localhost:1234` in your browser. That URL is default for Parcel, but it may use a different port—check your terminal output.
+
+### 7. Compile editor
+
+First tell Parcel where to put the compiled code. Add this line to your `package.json`:
+
+```json
+{
+  "main": "editor.js"
+}
+```
+
+When you are happy with your editor, compile it into plain JS files:
+
+```bash
+parcel build ./editor/index.js --no-source-maps
+```
+
+You can also add a build script to `package.json`:
+
+```json
+{
+  "scripts": {
+    "build:editor": "parcel build ./editor/index.js --no-source-maps"
+  }
+}
+```
+
+### 8. Use editor in your project
+
+Now you can use your editor in your project. Add the generated `editor.js` file into your app and import its API:
+
+```js
+import { createEditor } from './editor.js';
+
+// somewhere in your code
+createEditor({ container: document.getElementById('editor') });
+```
+
+Remember to include Blueprint CSS styles in your host app:
+
+```html
+<link
+  href="https://unpkg.com/@blueprintjs/core@5/lib/css/blueprint.css"
+  rel="stylesheet"
+/>
+```
+
+### 9. API
+
+The `createEditor` method shown here is just a simple example. You can extend it with methods to communicate with your main project, pass initial data, and define callbacks.
+
+### Vue example
+
+[Open Vite + Vue + Polotno example](https://codesandbox.io/s/github/polotno-project/polotno-site/tree/source/examples/polotno-and-vue-custom?file=/src/components/Editor.vue)
+
+### 10. Pitfalls
+
+Installing all editor dependencies may conflict with your main project. If that happens, move the whole editor workflow into its own `package.json` inside the `editor` folder and install dependencies there.
+
+

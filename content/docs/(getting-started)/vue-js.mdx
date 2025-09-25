@@ -1,0 +1,113 @@
+---
+title: Vue.js
+description: Integrate Polotno Design Editor into a Vue application
+---
+
+## How to integrate Polotno editor into a Vue app?
+
+Polotno is a React-based editor. You can embed it inside a Vue application by rendering a small React component into a Vue container.
+
+### 1) Install dependencies
+
+```bash
+npm install react react-dom polotno
+```
+
+Optionally, install MobX bindings for Vue to react to Polotno store changes in Vue templates:
+
+```bash
+npm install mobx-vue-lite
+```
+
+### 2) Create the Polotno Editor as a React component
+
+Create `components/editor.tsx` and bootstrap the editor. You can customize this file later (side panels, toolbar, etc.). Replace `YOUR_API_KEY` with your actual key from the Polotno cabinet.
+
+```tsx
+// components/editor.tsx
+import React from 'react';
+import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Toolbar } from 'polotno/toolbar/toolbar';
+import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+import { SidePanel } from 'polotno/side-panel';
+import { Workspace } from 'polotno/canvas/workspace';
+import { createStore } from 'polotno/model/store';
+
+// Blueprint styles for Polotno UI
+import '@blueprintjs/core/lib/css/blueprint.css';
+
+export const store = createStore({
+  key: 'YOUR_API_KEY',
+  showCredit: true,
+});
+store.addPage();
+
+export const App = () => {
+  return (
+    <PolotnoContainer style={{ height: '90vh' }}>
+      <SidePanelWrap>
+        <SidePanel store={store} />
+      </SidePanelWrap>
+      <WorkspaceWrap>
+        <Toolbar store={store} />
+        <Workspace store={store} />
+        <ZoomButtons store={store} />
+      </WorkspaceWrap>
+    </PolotnoContainer>
+  );
+};
+```
+
+### 3) Mount the React editor from a Vue component
+
+In a Vue SFC (e.g., `App.vue`), render the React editor into a div. If you installed `mobx-vue-lite`, you can wrap your template with `Observer` to react to store updates.
+
+```vue
+<template>
+  <Observer>
+    <div class="header">
+      <div>
+        This header is controlled by Vue. Pages: {{ store.pages.length }}
+      </div>
+      <button @click="store.addPage()">Add page</button>
+    </div>
+    <div id="editor"></div>
+  </Observer>
+  <!-- If you didn't install mobx-vue-lite, remove <Observer> and </Observer> wrappers -->
+  <!-- <div id="editor"></div> -->
+  <!-- <div class="header">Pages: {{ store.pages.length }}</div> will not auto-react without Observer -->
+.</template>
+
+<script setup lang="ts">
+import * as ReactDOM from 'react-dom/client';
+import * as React from 'react';
+import { App as ReactEditor, store } from './components/editor';
+import { Observer } from 'mobx-vue-lite';
+import { onMounted, onUnmounted } from 'vue';
+
+let root: ReactDOM.Root | undefined;
+
+onMounted(() => {
+  const container = document.getElementById('editor')!;
+  root = ReactDOM.createRoot(container);
+  root.render(React.createElement(ReactEditor));
+});
+
+onUnmounted(() => {
+  root?.unmount();
+});
+
+// expose store to the template
+defineExpose({ store });
+</script>
+```
+
+### 4) Customization
+
+From `components/editor.tsx` you can customize panels, toolbar, and canvas. From Vue, you can interact with the exported `store` to load a design, modify pages/elements, and export results (images/PDF). See other guides in this section for theming and configuration.
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-vue" />
+
+

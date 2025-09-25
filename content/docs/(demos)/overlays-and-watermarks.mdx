@@ -1,0 +1,38 @@
+---
+title: Overlays and watermarks
+description: Control element behavior with selectable, alwaysOnTop, and showInExport
+---
+
+In graphic design, controlling the behavior of elements is crucial for creating professional and efficient designs. Special properties like `selectable: false`, `alwaysOnTop: true`, and `showInExport: false` provide flexibility to manage overlays, watermarks, and guides seamlessly within your projects.
+
+Common use cases:
+
+- **Watermarks**: Protect designs while keeping them non-interactive.
+- **Overlays**: Display information or graphics that stay visible without interfering with design interaction.
+- **User Tips**: Provide guidance within the design that doesn't export with the final product.
+- **Cutting Edges**: Keep guide marks visible only during the design process.
+
+Here is how you can create such elements:
+
+```ts
+store.activePage.addElement({
+  type: 'image',
+  src: 'path-to-your-watermark-or-overlay.png',
+  // make it non-selectable
+  selectable: false,
+  // keep it always on top
+  alwaysOnTop: true,
+  // hide it in export
+  showInExport: false,
+});
+```
+
+## Example
+
+In the demo we add a dashed red shape on top of the design and make it non-selectable, always on top, and not visible in export. A regular user can't change it, but it is visible on the screen. You can use a special "admin" role to allow users to interact with such elements. See [Roles](https://polotno.com/docs/user-roles) for more details.
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-overlay" />
+
+
