@@ -1,0 +1,24 @@
+---
+title: Canvas Rulers
+description: Show and toggle rulers to improve alignment and precision
+---
+
+Rulers in Polotno SDK's canvas editor ensure consistent alignment and precision, enhancing design cohesion. By defining guidelines and constraints, they streamline the design process, enabling users to create polished compositions efficiently.
+
+### How to enable rulers?
+
+To control rulers from code, use the [Store API](https://polotno.com/docs/store-overview).
+
+```ts
+// hide/show rulers
+store.toggleRulers();
+
+// check if rulers are currently visible
+console.log(store.rulersVisible);
+```
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-rulers" />
+
+
