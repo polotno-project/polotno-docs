@@ -19,7 +19,8 @@ You can move that file to any other location you want and customize it per your 
 ## Usage
 
 ```tsx
-import { BrandKitSection } from './side-panel/brand-kit'; // make sure to change the path to the correct location
+// make sure to change the path to the correct location
+import { BrandKitSection } from './components/side-panel/brand-kit/brand-kit-panel';
 import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
 
 
@@ -38,14 +39,14 @@ const sections = [...DEFAULT_SECTIONS, BrandKitSection];
     "mobx-react-lite": "^3"
   }}
   fileSrc={[
-    { path: 'src/components/side-panel/brand-kit/brand-kit-panel.tsx', as: '/side-panel/brand-kit/brand-kit-panel.tsx' },
-    { path: 'src/components/side-panel/brand-kit/assets-panel.tsx', as: '/side-panel/brand-kit/assets-panel.tsx' },
-    { path: 'src/components/side-panel/brand-kit/colors-panel.tsx', as: '/side-panel/brand-kit/colors-panel.tsx' },
-    { path: 'src/components/side-panel/brand-kit/context.ts', as: '/side-panel/brand-kit/context.ts' },
-    { path: 'src/components/side-panel/brand-kit/font-panel.tsx', as: '/side-panel/brand-kit/font-panel.tsx' },
-    { path: 'src/components/side-panel/brand-kit/grid.tsx', as: '/side-panel/brand-kit/grid.tsx' },
-    { path: 'src/components/side-panel/brand-kit/indexeddb-storage.ts', as: '/side-panel/brand-kit/indexeddb-storage.ts' },
-    { path: 'src/components/side-panel/brand-kit/shared-components.tsx', as: '/side-panel/brand-kit/shared-components.tsx' }
+    { path: 'src/components/side-panel/brand-kit/brand-kit-panel.tsx', as: '/components/side-panel/brand-kit/brand-kit-panel.tsx' },
+    { path: 'src/components/side-panel/brand-kit/assets-panel.tsx', as: '/components/side-panel/brand-kit/assets-panel.tsx' },
+    { path: 'src/components/side-panel/brand-kit/colors-panel.tsx', as: '/components/side-panel/brand-kit/colors-panel.tsx' },
+    { path: 'src/components/side-panel/brand-kit/context.ts', as: '/components/side-panel/brand-kit/context.ts' },
+    { path: 'src/components/side-panel/brand-kit/font-panel.tsx', as: '/components/side-panel/brand-kit/font-panel.tsx' },
+    { path: 'src/components/side-panel/brand-kit/grid.tsx', as: '/components/side-panel/brand-kit/grid.tsx' },
+    { path: 'src/components/side-panel/brand-kit/indexeddb-storage.ts', as: '/components/side-panel/brand-kit/indexeddb-storage.ts' },
+    { path: 'src/components/side-panel/brand-kit/shared-components.tsx', as: '/components/side-panel/brand-kit/shared-components.tsx' }
   ]}
   files={{
     "/App.js": `import React from 'react';
