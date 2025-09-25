@@ -1,0 +1,62 @@
+---
+title: Store Observer and Reactions
+description: React to canvas changes using observer components, store events, and MobX reactions
+---
+
+Polotno has a rich [store API](https://polotno.com/docs/store-overview) that you can use to observe and control canvas content. The store object is created using the MobX library. You can use MobX utilities to build reactive components.
+
+## Observable component
+
+To create a component that updates automatically when the canvas changes, use the `observer` API from `mobx-react-lite`:
+
+```tsx
+import { observer } from 'mobx-react-lite';
+import { createStore } from 'polotno/model/store';
+
+const store = createStore({
+  key: 'YOUR_API_KEY', // you can create it here: https://polotno.com/cabinet/
+});
+
+// this react component is wrapped into observer
+// it will be automatically updated when number of elements on active page changes
+const App = observer(() => {
+  return (
+    <div>
+      <p>Elements on the current page: {store.activePage?.children.length}</p>
+    </div>
+  );
+});
+```
+
+## Store reaction
+
+The `store` object has a `change` event triggered when canvas content is modified. Selecting/deselecting elements will NOT trigger the `change` event.
+
+```ts
+store.on('change', () => {
+  console.log('something is changed');
+});
+```
+
+In some cases, you may want to react to selection or other data changes in the store. Use MobX `reaction` or `autorun`:
+
+```ts
+import { reaction } from 'mobx';
+
+const dispose = reaction(
+  () => {
+    const firstElement = store.selectedElements[0];
+    const isTextSelected = firstElement?.type === 'text';
+    return isTextSelected;
+  },
+  (isTextSelected) => {
+    // here we can do something when text is selected
+    console.log('text is selected', isTextSelected);
+  }
+);
+
+// later when no longer needed
+dispose();
+```
+
+

@@ -1,0 +1,28 @@
+---
+title: How to Resolve CORS Issues
+description: Configure servers and image tags to avoid CORS errors when loading images into Polotno
+---
+
+In order to load images into the canvas element, Polotno sets the `crossOrigin` attribute to `anonymous` by default. In some configurations you may see an error like this:
+
+_Access to image at 'http://example.com/image.jpg' from origin 'http://your-domain.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource._
+
+Here's the fix:
+
+## 1. Make sure assets are served with CORS headers
+
+First, ensure that the server hosting your images allows CORS requests. If you control the server, add the header `Access-Control-Allow-Origin: *` to the response.
+
+If you use an S3 bucket, enable CORS in the bucket settings. See AWS docs: https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html
+
+## 2. Make sure all images have `crossOrigin` attribute
+
+Before adding images into the canvas, you may want to display them somewhere else in your application UI (e.g., a side panel or pre‑editor step). Make sure that all images have the `crossOrigin` attribute set to `anonymous`. For example, if you use an `img` tag:
+
+```html
+<img src="http://example.com/image.jpg" crossOrigin="anonymous" />
+```
+
+Explanation: if you load the same image in the same browsing session without the `crossOrigin` attribute, and later load it with `crossOrigin`, the browser will enforce CORS because it was initially fetched without the expected setting. Always include `crossOrigin="anonymous"` consistently.
+
+

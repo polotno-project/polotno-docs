@@ -1,0 +1,247 @@
+---
+title: Advanced Syncing Design Elements
+description: Keep multiple elements in sync across pages using custom syncId, reactions, and cleanup
+---
+
+Sometimes you want multiple elements in your design to stay perfectly in sync. For example, repeating headers, labels, or dynamic fields (like `{pageNumber}`) that should update automatically across multiple pages or locations.
+
+This guide explains how to implement real-time syncing between elements based on a shared `custom.syncId` property. When one element is edited or removed, all others with the same syncId will update or be deleted accordingly.
+
+## Key Concepts & Tips
+
+1. **Assign a `custom.syncId`** to every element that should be linked.
+2. Use **MobX reactions** to detect when editing starts and ends.
+3. When editing ends, **propagate updated props** to all other synced elements.
+4. Use a **throttled change handler** to avoid unnecessary sync calls.
+5. When a synced element is deleted, **automatically remove all its peers**.
+
+## Custom Metadata for Syncing
+
+In this guide, we use the `custom` property of Polotno elements to store metadata for syncing and variables replacement.
+
+> The `custom` field is not used internally by Polotno. It’s reserved for your own purposes and is safe to use for attaching any extra information (like flags, references, or identifiers).
+
+### 1. Syncing element properties by syncId
+
+This function scans the store for elements with the same syncId as the currently selected one. It then copies over all properties (except the id) from the source to the others.
+
+```ts
+function syncElements(store: any) {
+  const syncElement = store.selectedElements.find((el: any) => el.custom?.syncId);
+  if (!syncElement) return;
+
+  store.find((item: any) => {
+    if (item !== syncElement && item.custom?.syncId === syncElement.custom.syncId) {
+      const props = { ...syncElement.toJSON() };
+      delete props.id; // Never copy over unique IDs
+
+      const currentProps = item.toJSON();
+      Object.keys(props).forEach((key) => {
+        const from = currentProps[key];
+        const to = props[key];
+
+        // Only update if values are different
+        if (JSON.stringify(from) !== JSON.stringify(to)) {
+          item.set({ [key]: to });
+        }
+      });
+    }
+  });
+}
+```
+
+> Place this logic inside a reaction or a throttled change listener to keep synced elements updated after user edits.
+
+### Handling Page Number Placeholders
+
+Polotno does **not** update `{pageNumber}` automatically.
+
+To support dynamic text like `Page {pageNumber}`, you need to explicitly store the template string and update it when needed.
+
+The logic below shows how to:
+
+- Save the original text into `custom.text` when editing ends.
+- Use `custom.text` as a template to insert the correct page number.
+
+#### 1. Track Editing and Store Template
+
+This function sets up a MobX reaction to watch when editing starts and ends.
+
+When editing ends, it saves the current text into `custom.text`, which acts as a template for future updates.
+
+```ts
+// Watch for changes in edit mode and trigger sync when edit ends
+const setupEditReaction = (store: any) => {
+  let lastEditElement: any = null;
+
+  reaction(
+    () => store.find((item: any) => item._editModeEnabled === true),
+    (editElement: any) => {
+      if (editElement) {
+        // Restore original template if available
+        editElement.set({
+          text: editElement.custom?.text || editElement.text,
+        });
+        lastEditElement = editElement;
+      } else {
+        // Save the current text as template
+        if (lastEditElement) {
+          lastEditElement.set({
+            custom: {
+              ...lastEditElement.custom,
+              text: lastEditElement.text,
+            },
+          });
+        }
+        syncElements(store); // Also triggers page number update
+      }
+    }
+  );
+};
+```
+
+#### 2. Replace `{pageNumber}` with Real Value
+
+Call this function to replace `{pageNumber}` in the visible text using the current page index. It uses `custom.text` (if available) as the source of truth.
+
+```ts
+// Replace {pageNumber} in text elements with their actual page index
+const updatePageNumber = (element: any) => {
+  const store = element.store;
+  const page = element.page;
+  const index = store.pages.indexOf(page);
+  const baseText = element.custom?.text || element.text;
+
+  element.set({
+    text: baseText.replaceAll('{pageNumber}', index + 1 as any),
+  });
+};
+```
+
+We can call `updatePageNumber` inside the `change` event to keep all in sync.
+
+### Deleting all synced elements when one is removed
+
+This function ensures cleanup: if a user deletes one synced element, all others with the same `syncId` will also be deleted. This prevents orphaned elements that were meant to be linked.
+
+```ts
+// Observe element removals and notify callback
+const onElementRemove = (store: any, callback: (el: any) => void) => {
+  let lastIds: Record<string, any> = {};
+
+  store.on(
+    'change',
+    throttle(() => {
+      const newIds: Record<string, any> = {};
+      store.find((item: any) => {
+        newIds[item.id] = item;
+      });
+
+      Object.keys(lastIds).forEach((id) => {
+        if (!newIds[id]) {
+          callback(lastIds[id]);
+        }
+      });
+
+      lastIds = newIds;
+    })
+  );
+};
+
+// Remove all elements with the same syncId as the deleted one
+const setupSyncDeletion = (store: any) => {
+  onElementRemove(store, (element) => {
+    const syncId = element.custom?.syncId;
+    if (!syncId) return;
+
+    const idsToDelete: string[] = [];
+    store.find((item: any) => {
+      if (item.custom?.syncId === syncId) {
+        idsToDelete.push(item.id);
+      }
+    });
+
+    store.deleteElements(idsToDelete);
+  });
+};
+```
+
+## Cloning and Syncing Elements Across All Pages
+
+You can add a custom button (e.g., inside your editor’s toolbar) to let users **duplicate an element across all pages** while keeping those copies in sync.
+
+Each cloned element will receive the same `custom.syncId`, so changes to one will be automatically applied to the rest.
+
+```tsx
+const ApplyToAllPages = ({ store, element, elements }: any) => {
+  return (
+    <Button
+      onClick={() => {
+        elements.forEach((element: any) => {
+          // First, remove existing synced copies (if any)
+          if (element.custom?.syncId) {
+            const idsToDelete: string[] = [];
+            store.find((item: any) => {
+              if (item.custom?.syncId === element.custom.syncId && item !== element) {
+                idsToDelete.push(item.id);
+              }
+            });
+            store.deleteElements(idsToDelete);
+          }
+
+          // Assign a new syncId
+          const syncId = nanoid();
+          element.set({
+            custom: {
+              ...element.custom,
+              syncId,
+            },
+          });
+
+          // Copy the element to every other page
+          const props = { ...element.toJSON() };
+          delete props.id;
+
+          store.pages.forEach((page: any) => {
+            if (page !== element.page) {
+              page.addElement(props, { skipSelect: true });
+            }
+          });
+        });
+      }}
+    >
+      Apply to all pages
+    </Button>
+  );
+};
+```
+
+Then add it into the toolbar:
+
+```tsx
+<Toolbar
+  store={store}
+  components={{
+    TextApplyToAllPages: ApplyToAllPages,
+    ImageApplyToAllPages: ApplyToAllPages,
+    VideoApplyToAllPages: ApplyToAllPages,
+    FigureApplyToAllPages: ApplyToAllPages,
+    GifApplyToAllPages: ApplyToAllPages,
+    LineApplyToAllPages: ApplyToAllPages,
+  }}
+/>
+```
+
+## Demo
+
+1. Select a text element on the canvas.
+2. Click **“Apply to all pages”** to clone the element to every page. All copies will be linked.
+3. Type `{pageNumber}` in the text. Each copy will show the correct page number.
+4. Edit the element. All copies will update automatically.
+5. Delete the element. All linked copies will also be removed.
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-advanced-sync-elements" />
+
+

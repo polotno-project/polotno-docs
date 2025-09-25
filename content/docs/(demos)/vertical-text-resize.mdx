@@ -1,0 +1,24 @@
+---
+title: Vertical Text Resize
+description: Enable vertical resizing for text elements and control vertical alignment
+---
+
+**Important:** this is an experimental feature, please proceed with caution. We're kindly asking you to report any bugs and follow the [changelog](https://developer.polotno.com/changelog) for the most recent updates.
+
+By default, you can't change **height** of **text** elements. Texts are always updating their own height to fit content. To modify it, consider setting a bounding box for text elements and replacing text content dynamically on the backend later on.
+
+When vertical resize is enabled you can also set vertical align from the text toolbar.
+
+### How to enable vertical text resize?
+
+```ts
+import { unstable_setTextVerticalResizeEnabled } from 'polotno/config';
+
+unstable_setTextVerticalResizeEnabled(true);
+```
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-vertical-text-resize" />
+
+

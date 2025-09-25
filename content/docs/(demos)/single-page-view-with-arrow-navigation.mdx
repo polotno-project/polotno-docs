@@ -1,0 +1,66 @@
+---
+title: Single-page view with arrow navigation
+description: Show only the active page and add left/right arrows to navigate
+---
+
+By default, Polotno shows a tall stack of pages that you scroll through vertically. For some products (pitch‑deck builder, kiosk app), you may want a cleaner workflow: keep one page in view and let the user flip with arrows.
+
+Use the `renderOnlyActivePage` property on `<Workspace />`, and extend default page controls to show arrows for navigation:
+
+```tsx
+import { observer } from 'mobx-react-lite';
+import { PageControls as DefaultPageControls } from 'polotno/canvas/page-controls';
+import { Workspace } from 'polotno/canvas/workspace';
+
+const PageControls = observer((props) => {
+  const activeIndex = store.pages.indexOf(store.activePage);
+  const canGoBack = activeIndex > 0;
+  const canGoForward = activeIndex < store.pages.length - 1;
+  const height = store.scale * props.page.computedHeight;
+
+  return (
+    <>
+      <DefaultPageControls {...props} />
+      <Button
+        disabled={!canGoBack}
+        style={{
+          position: 'absolute',
+          top: props.yPadding + height / 2 + 'px',
+          left: 5 + 'px',
+        }}
+        onClick={() => {
+          store.selectPage(store.pages[activeIndex - 1].id);
+        }}
+      >
+        {'<'}
+      </Button>
+      <Button
+        disabled={!canGoForward}
+        style={{
+          position: 'absolute',
+          top: props.yPadding + height / 2 + 'px',
+          right: 5 + 'px',
+        }}
+        onClick={() => {
+          store.selectPage(store.pages[activeIndex + 1].id);
+        }}
+      >
+        {'>'}
+      </Button>
+    </>
+  );
+});
+
+// in render
+<Workspace store={store} renderOnlyActivePage components={{ PageControls }} />
+```
+
+## Demo
+
+- Use arrow navigation near page content to switch between pages
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-pages-navigation" />
+
+

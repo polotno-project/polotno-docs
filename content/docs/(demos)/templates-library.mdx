@@ -1,0 +1,143 @@
+---
+title: Templates Library
+description: Build a templates library, generate previews, and load designs via a custom side panel
+---
+
+You can use **Polotno** tools and side panel customization to make your own library of templates.
+
+In order to make a templates library you will need:
+
+1. Create a design in the **Polotno** Editor
+2. Use `store.toJSON()` to save the design state on computer as `.json` file
+3. (Optional) Use `store.saveAsImage()` to save a preview image of a design
+4. Repeat steps 1–3 as many times as you need in order to make a library of templates
+5. If you skipped step 3 you can use [Cloud Render API](https://polotno.com/cloud-render) to generate previews automatically
+6. Make a server‑side API to access a list of templates
+7. Create a custom side panel to display a list of templates from that API
+8. Use `store.loadJSON()` to import design into canvas
+
+## (1–4) Making designs library
+
+You will need to use Polotno editor to create designs. Importing designs from other software is not directly supported.
+
+Note: if you need to import from SVG files, please [contact us](https://polotno.com/contact).
+
+## (5) Generating previews
+
+You can use the [Polotno Cloud API](https://developer.polotno.com/docs/cloud-render) to generate previews with your own backend language.
+
+```ts
+import fs from 'fs';
+import path from 'path';
+import { createInstance } from 'polotno-node';
+
+// we will look for local directory for templates
+const FOLDER_NAME = 'templates';
+
+async function run() {
+  // create working instance
+  const instance = await createInstance({
+    // this is a demo key just for that project
+    // (!) please don't use it in your projects
+    // to create your own API key please go here: https://polotno.com/cabinet
+    key: 'nFA5H9elEytDyPyvKL7T',
+  });
+
+  // read all files in the directory
+  const files = fs.readdirSync(FOLDER_NAME);
+  for (const file of files) {
+    // if it is not a json file - skip it
+    if (!file.endsWith('.json')) continue;
+
+    // load file
+    const data = fs.readFileSync(path.join(FOLDER_NAME, file)).toString();
+    const json = JSON.parse(data);
+
+    // convert JSON into image preview
+    const imageBase64 = await instance.run(async (json) => {
+      store.loadJSON(json);
+      await store.waitLoading();
+      // set width of previews (we usually don't need original size)
+      const maxWidth = 200;
+      const scale = maxWidth / store.width;
+      const url = await store.toDataURL({ pixelRatio: scale });
+      return url.split('base64,')[1];
+    }, json);
+
+    // save images locally into the same folder
+    fs.writeFileSync(
+      path.join(FOLDER_NAME, file.split('.')[0] + '.png'),
+      imageBase64,
+      'base64'
+    );
+    console.log(`Finished ${FOLDER_NAME} ${file}`);
+  }
+  // close instance
+  instance.close();
+}
+
+run();
+```
+
+## (6) Making backend API to load templates
+
+This step is out of **Polotno** scope. You can use any backend stack you like. Most likely, you will need an API to get a list of available templates. For every design, you will have to share a public path to **json** file and **png** preview.
+
+## (7 and 8) Displaying templates on side panel
+
+As soon as you have a backend API to get a list of templates, you can use [Side Panel Customization](https://developer.polotno.com/docs/side-panel) to display that list on the page. In the demo we will use `<ImagesGrid />` and the `useInfiniteAPI` hook ([docs](https://developer.polotno.com/docs/side-panel-utils)). You don't have to use them in your app, but they can save time for this use case.
+
+```tsx
+import React from 'react';
+import { observer } from 'mobx-react-lite';
+import { useInfiniteAPI } from 'polotno/utils/use-api';
+
+import { SectionTab } from 'polotno/side-panel';
+import MdPhotoLibrary from '@meronex/icons/md/MdPhotoLibrary';
+
+import { ImagesGrid } from 'polotno/side-panel/images-grid';
+
+export const TemplatesPanel = observer(({ store }) => {
+  // load data
+  const { data, isLoading } = useInfiniteAPI({
+    getAPI: ({ page }) => `templates/page${page}.json`,
+  });
+
+  return (
+    <div style={{ height: '100%' }}>
+      <ImagesGrid
+        shadowEnabled={false}
+        images={data?.map((d) => d.items).flat()}
+        getPreview={(item) => `/templates/${item.preview}`}
+        isLoading={isLoading}
+        onSelect={async (item) => {
+          // download selected json
+          const req = await fetch(`/templates/${item.json}`);
+          const json = await req.json();
+          // inject it into store
+          store.loadJSON(json);
+        }}
+        rowsNumber={1}
+      />
+    </div>
+  );
+});
+
+// define the new custom section
+export const TemplatesSection = {
+  name: 'custom-templates',
+  Tab: (props) => (
+    <SectionTab name="Custom templates" {...props}>
+      <MdPhotoLibrary />
+    </SectionTab>
+  ),
+  // we need observer to update component automatically on any store changes
+  Panel: TemplatesPanel,
+};
+```
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-templates-library" />
+
+

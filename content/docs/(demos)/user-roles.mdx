@@ -1,0 +1,28 @@
+---
+title: User Roles
+description: Switch between admin and user modes to control editing capabilities
+---
+
+Different user roles in **Polotno Editor** will change UI and behavior of the application for specific use cases.
+
+Currently Polotno has two roles — **admin** and **user**.
+
+```ts
+store.setRole('admin');
+```
+
+When **admin** mode is enabled a user will be able to select any element on the canvas (even if it is marked as `selectable: false`). There are also extra settings available for every element on the canvas:
+
+![](./user-roles.png)
+
+You can use admin mode to set restrictions on elements, for example:
+
+1. Put an element on top and turn `selectable` off. Regular users will not be able to move/delete such elements.
+2. Toggle off `showInExport` for some elements. They will not be visible in image or PDF exports.
+3. Fine‑tune locking of elements. For example toggle off “can change style” on a text element, so users can't change its font, color, etc.
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-admin-role" />
+
+

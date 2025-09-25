@@ -1,0 +1,240 @@
+---
+title: Rich Text
+description: Enable and control rich text rendering and formatting in Polotno
+---
+
+Out of the box, **Polotno** does not support the rendering of rich text elements, meaning you cannot apply different styles, colors, fonts, etc., to parts of the text. The entire `text` element must maintain a uniform style. However, Polotno offers support for rich text elements, which must be explicitly activated.
+
+## How to enable rich text support?
+
+```ts
+import { unstable_useHtmlTextRender } from 'polotno/config';
+
+unstable_useHtmlTextRender(true);
+
+// later in store
+store.activePage.addElement({
+  type: 'text',
+  text: 'Hello <strong>from rich</strong> <u>text</u> <span style="color: red;">support</span>!',
+  y: 300,
+  x: store.width / 2 - 200,
+  fontSize: 80,
+  width: 400,
+});
+```
+
+When "html renderer" is enabled, **Polotno** will use very different rendering logic for text elements. Rich text may drop the performance of your application if you have many text elements. Please report any issues you may come across.
+
+**Polotno has many clients who use these settings in production. The feature is considered stable and supported. The "unstable" prefix will be removed soon.**
+
+If you use Cloud Render API, please make sure to pass `htmlTextRenderEnabled: true` to enable rich mode.
+
+## Controlling rich text from external UI
+
+Internally, rich text is represented as an HTML string. You can modify it with any tools to apply changes. There are some built‑in methods that you can use to change formats.
+
+Internally, Polotno is using https://quilljs.com/ to manipulate text. When a text element is in "edit mode" (user double‑clicks it) you can use these methods:
+
+```ts
+import { quillRef } from 'polotno/canvas/html-element';
+
+// will log observable object with format of current selection
+console.log(quillRef.currentFormat);
+
+// will log current Quill editor instance. if text is not in edit mode, it will return null
+console.log(quillRef.editor.intance);
+
+<Button
+  // (!) IMPORTANT to prevent default behaviour
+  // so the quill editor doesn't lose the focus!
+  onMouseDown={(e) => {
+    e.preventDefault();
+  }}
+  onClick={() => {
+    // if you want to change format to bold of current selection:
+    const quill = quillRef.editor.intance;
+    const selection = quill.getSelection();
+    // toggle bold for selection
+    quill.formatText(
+      selection.index,
+      selection.length,
+      'bold',
+      !quillRef.currentFormat.bold,
+      'user'
+    );
+  }}
+/>
+```
+
+In many cases, you may want to change format while a text element is not in edit mode. In that case you can create a Quill instance temporarily in memory → apply changes → save resulted HTML into the element.
+
+```ts
+import { createQuill, setQuillContent } from 'polotno/canvas/html-element';
+
+// function to create quill instance in memory
+const createTempQuill = ({ html }: { html: string }) => {
+  const el = document.createElement('div');
+  document.body.appendChild(el);
+  el.style.display = 'none';
+  el.style.whiteSpace = 'pre-wrap';
+  const quill = createQuill(el);
+  // use setQuillContent function to preserve some history edge cases
+  setQuillContent(quill, html);
+  return quill;
+};
+
+// remove quill when finished
+const removeTempQuill = (quill: any) => {
+  quill.root.parentElement.remove();
+};
+
+// example usage
+const quill = createTempQuill({ html: element.text });
+quill.setSelection(0, quill.getLength(), 'api');
+// remove bold from text
+quill.format('bold', false);
+const innerHtml = quill.root.innerHTML;
+// remove quill from memory
+removeTempQuill(quill);
+// save HTML back to element
+element.set({ text: innerHtml });
+```
+
+Here is a full real‑world example of a "bold" format button:
+
+```tsx
+const ToggleButton = observer(
+  ({
+    active,
+    globalActive,
+    // name of the format
+    format,
+    element,
+    disableGlobal,
+    enableGlobal,
+    icon,
+  }: {
+    active: boolean;
+    globalActive: boolean;
+    format: string;
+    element: TextElementType;
+    disableGlobal: () => void;
+    enableGlobal: () => void;
+    icon: any;
+  }) => {
+    return (
+      <Button
+        minimal
+        icon={icon}
+        active={active}
+        onMouseDown={(e) => {
+          e.preventDefault();
+        }}
+        onClick={(e) => {
+          let quill = (window as any).__polotnoQuill;
+
+          if (quill) {
+            const selection = quill.getSelection();
+            quill.formatText(
+              selection.index,
+              selection.length,
+              format,
+              !quillRef.currentFormat[format],
+              'user'
+            );
+            if (globalActive) {
+              disableGlobal();
+            }
+            return;
+          }
+
+          // if whole text selected, let's remove bold from inner
+          quill = createTempQuill({ html: element.text });
+          quill.setSelection(0, quill.getLength(), 'api');
+          quill.format(format, false);
+          const innerHtml = quill.root.innerHTML;
+          removeTempQuill(quill);
+          element.set({ text: innerHtml });
+
+          if (globalActive) {
+            disableGlobal();
+          } else {
+            enableGlobal();
+          }
+        }}
+      />
+    );
+  }
+);
+
+export const TextBold = observer(({ element, store }: any) => {
+  return (
+    <ToggleButton
+      format="bold"
+      active={
+        quillRef.currentFormat.bold ||
+        element.fontWeight === 'bold' ||
+        element.fontWeight === '700'
+      }
+      globalActive={
+        element.fontWeight === 'bold' || element.fontWeight === '700'
+      }
+      element={element}
+      disableGlobal={() => element.set({ fontWeight: 'normal' })}
+      enableGlobal={() => element.set({ fontWeight: 'bold' })}
+      icon={<Bold />}
+    />
+  );
+});
+```
+
+## Define quill editor formats
+
+You can hook into the quill editor to change the list of available formats or define your own:
+
+```ts
+import { unstable_setQuillFormats } from 'polotno/config';
+
+unstable_setQuillFormats([
+  // default list of formats
+  'bold',
+  'color',
+  'font',
+  'italic',
+  'size',
+  'strike',
+  'underline',
+  'indent',
+  'list',
+  'direction',
+  // add additional format
+  'font-weight'
+]);
+
+// implement a new format with quill API
+import Quill from 'quill';
+const Inline = Quill.import('blots/inline');
+
+class FontWeightBlot extends Inline {
+  static create(value: any) {
+    const node = super.create();
+    node.style.fontWeight = value;
+    return node;
+  }
+
+  static formats(node: HTMLElement) {
+    return node.style.fontWeight;
+  }
+}
+
+FontWeightBlot.blotName = 'font-weight';
+FontWeightBlot.tagName = 'span';
+
+Quill.register(FontWeightBlot);
+```
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-rich-text" />
+
+

@@ -1,0 +1,29 @@
+---
+title: Remove Background API
+description: Programmatically remove image backgrounds using Polotno Cloud API
+---
+
+## How to use the Remove Background feature programmatically?
+
+As part of the Business plan, you can use the API to remove backgrounds from images. To call the API from your app:
+
+```ts
+const req = await fetch(
+  'https://api.polotno.com/api/remove-image-background?KEY=YOUR_API_KEY',
+  {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ url: 'path-to-image-or-base64-dataurl' }),
+  }
+);
+if (req.status !== 200) {
+  throw new Error('Error while removing background');
+}
+const res = await req.json();
+// returns base64 data URL
+return res.url;
+```
+
+

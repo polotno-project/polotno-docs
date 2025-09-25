@@ -1,0 +1,30 @@
+---
+title: Animations and Videos
+description: Enable animations, preview on canvas, export as GIF, and render MP4 via Cloud API
+---
+
+## How to enable animation support?
+
+```ts
+import { unstable_setAnimationsEnabled } from 'polotno/config';
+
+unstable_setAnimationsEnabled(true);
+```
+
+When you enable animations, Polotno will add additional UI in the toolbar to change animation properties of the selected object, show a “Videos” side panel with a library of stock videos, and adapt the Pages component with scene preview.
+
+You can preview animations and export an animated scene as a GIF on the client side programmatically:
+
+```ts
+store.play();
+store.stop();
+await store.saveAsGIF();
+```
+
+To export the design into a final MP4 video, use the [Cloud Render API](https://polotno.com/docs/cloud-render).
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-animations" />
+
+

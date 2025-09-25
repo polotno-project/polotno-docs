@@ -1,0 +1,59 @@
+---
+title: One-click page rotation
+description: Swap canvas width/height and rotate all elements by 90° with one button
+---
+
+Need to flip a design from portrait to landscape (or back) without redrawing everything? The snippet below adds a single **Rotate** button that swaps the canvas width/height and spins every element by 90° so the layout stays intact.
+
+```tsx
+const PageRotate = ({ store }) => (
+  <Button
+    onClick={() => {
+      // 1. swap page dimensions
+      const [oldW, oldH] = [store.width, store.height];
+      const [newW, newH] = [oldH, oldW];
+      const [cx, cy] = [oldW / 2, oldH / 2];
+      store.setSize(newW, newH);
+
+      // 2. move + rotate every element
+      const [ncx, ncy] = [newW / 2, newH / 2];
+      store.pages.forEach((page) => {
+        page.children.forEach((el) => {
+          const [dx, dy] = [el.x - cx, el.y - cy];
+          const [rx, ry] = [-dy, dx]; // 90° rotation matrix
+          el.set({
+            x: ncx + rx,
+            y: ncy + ry,
+            rotation: (el.rotation || 0) + 90,
+          });
+        });
+      });
+    }}
+  >
+    Rotate
+  </Button>
+);
+```
+
+## How it works
+
+- **Swap the canvas size.** `store.setSize(newW, newH)` turns portrait into landscape.
+- **Translate each object to the old center, rotate it, then translate to the new center.** That keeps relative positions unchanged.
+- **Add 90° to each element’s rotation** so arrows, text, etc. remain upright.
+
+### When is this handy?
+
+- Quickly test both orientations of a social graphic.
+- Offer users an instant “make it landscape” button in a print template.
+
+Drop `PageRotate` into your toolbar:
+
+```tsx
+<Toolbar store={store} components={{ PageRotate }} />
+```
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-rotate-page" />
+
+

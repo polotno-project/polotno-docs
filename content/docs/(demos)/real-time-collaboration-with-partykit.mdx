@@ -1,0 +1,71 @@
+---
+title: Real-time Collaboration with PartyKit
+description: Stream and replay MobX patches to sync Polotno stores across clients
+---
+
+Polotno’s SDK is single‑user by design, but because the document state lives in a MobX‑State‑Tree store you can stream patches and replay them elsewhere. That’s exactly what [PartyKit](https://www.partykit.io/) does in the demo below: every user who joins the same room sees edits appear in under a second.
+
+Sample code: https://github.com/polotno-project/polotno-partykit
+
+Demo page: https://polotno-partykit.lavrton.partykit.dev/
+
+## How it works
+
+1. **Each client** joins a PartyKit room (example-room).
+2. On first load it asks the room for the current state: `{ type: 'request-state' }`.
+3. The first peer to answer sends back a full snapshot: `{ type: 'reset-state', state: … }`.
+4. After that we only ship incremental MobX patches: `{ type: 'patch', patch: … }`.
+5. Every receiver applies the patch with `applyPatch(store.pages, patch)` and the canvas updates instantly.
+
+The tiny guard `ignorePathRef` prevents echo loops while a patch is replaying.
+
+```ts
+const socket = usePartySocket({
+  room: 'example-room',
+  onMessage(evt) {
+    const event = JSON.parse(evt.data);
+    if (event.type === 'patch') {
+      console.log('patch received');
+      ignorePathRef.current = true;
+      applyPatch(store.pages, event.patch);
+      ignorePathRef.current = false;
+    }
+    if (event.type === 'reset-state') {
+      console.log('reset-state received');
+      ignorePathRef.current = true;
+      store.loadJSON(event.state);
+      ignorePathRef.current = false;
+    }
+    if (event.type === 'request-state') {
+      console.log('request-state received');
+      socket.send(
+        JSON.stringify({
+          type: 'reset-state',
+          state: store.toJSON(),
+        })
+      );
+    }
+  },
+});
+
+React.useEffect(() => {
+  // ask for the current state
+  socket.send(JSON.stringify({ type: 'request-state' }));
+
+  // stream local edits
+  onPatch(store.pages, (patch) => {
+    if (ignorePathRef.current) return;
+    socket.send(JSON.stringify({ type: 'patch', patch }));
+  });
+}, []);
+```
+
+---
+
+### A few notes
+
+- **Not part of core SDK** – Polotno doesn’t ship server code or conflict resolution; we simply forward MobX patches.
+- **Latency‑tolerant** – patches are small JSON objects, so even high‑latency networks feel snappy.
+- **Conflict strategy** – the demo is last‑write‑wins. For richer docs you might add per‑element locks or OT/CRDT.
+
+

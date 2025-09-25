@@ -1,0 +1,54 @@
+---
+title: Text Overflow
+description: Control how text behaves when it exceeds its bounding box
+---
+
+By default, text objects in Polotno expand their height whenever:
+
+- You type additional text
+- You change the text programmatically (via API)
+- You set a larger font size
+
+This behavior can be modified using the `unstable_setTextOverflow` method. It can be applied globally (once for all objects) or dynamically toggled when specific elements are selected.
+
+```ts
+import { unstable_setTextOverflow } from 'polotno/config';
+
+// default, change height of the text object when it overflow defined width/height
+unstable_setTextOverflow('resize');
+
+// add ... at the end of the text when it overflow defined width/height
+unstable_setTextOverflow('ellipsis');
+
+// reduce font size to fit text in the defined width/height
+// note, it will NOT increase font size back when there is more space
+unstable_setTextOverflow('change-font-size');
+```
+
+You can use these settings in combination with
+[unstable_setTextVerticalResizeEnabled](https://developer.polotno.com/docs/vertical-text-resize).
+
+## Client-Side Default: resize overflow
+
+- Behavior: If the text exceeds its defined width or height, Polotno automatically increases the bounding box height to accommodate the content.
+- Use Case: Interactive editing on the client, where resizing is more intuitive and immediate for users.
+
+## Server-Side Default: change-font-size overflow
+
+- Behavior: If the text exceeds its defined width or height during server-side rendering (e.g., using polotno-node or
+  [Cloud Render API](https://polotno.com/docs/cloud-render)), Polotno reduces the fontSize to ensure the text fits within the specified size.
+- Use Case: Non-interactive scenarios where preserving a strict layout (width and height constraints) is important, and automatically shrinking text is preferable to resizing the layout.
+
+## Motivation
+
+Polotno automatically expands text on the client side because it feels more natural when you’re actively editing and want to see changes right away. This way, if you type more or increase the font size, the text box grows automatically to fit what you see on your screen.
+
+On the server side, Polotno usually handles tasks like generating images or PDF documents where layouts need to stay consistent. Instead of enlarging the text box, it reduces the font size to fit the specified space. This approach avoids unexpected layout shifts and ensures your final output looks as intended without further adjustments.
+
+In both scenarios, you can change the default behavior to fit your specific use case.
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-text-overflow" />
+
+

@@ -1,0 +1,102 @@
+---
+title: Highlight headings with a full-width banner
+description: Toggle a full-width background under text using a custom flag and a change listener
+---
+
+A client recently asked: “Can we drop a stripe behind a heading that always stretches the full width of the design? Even when the text moves or resizes?” The answer is yes, and it takes only a tiny helper component and one change listener.
+
+## How it works
+
+- **Button** – When a text element is selected, the **Background Fill** button toggles a custom flag on that element.
+
+```tsx
+const TextFullWidthBackground = observer(({ element }) => (
+  <Button
+    active={element.custom?.fullWidthBackground}
+    minimal
+    onClick={() => {
+      element.set({
+        custom: {
+          ...element.custom,
+          fullWidthBackground: !element.custom?.fullWidthBackground,
+        },
+      });
+    }}
+  >
+    Background Fill
+  </Button>
+));
+```
+
+- **Listener** – A debounced `store.on('change')` handler checks every flagged text element, creates (or removes) a rectangle beneath it, and keeps the rectangle in sync with any edits.
+
+```ts
+const checkBackground = () => {
+  // first make sure we remove unrelated backgrounds
+  const idsToDelete: string[] = [];
+  store.find((element) => {
+    const attachedTo = element.custom?.attachedTo;
+    if (!attachedTo) return;
+    const el = store.getElementById(attachedTo);
+    const noBack = !el?.custom?.fullWidthBackground;
+    if (!el || noBack) {
+      idsToDelete.push(element.id);
+    }
+  });
+  store.deleteElements(idsToDelete);
+
+  store.find((element) => {
+    if (!element.custom?.fullWidthBackground) return;
+
+    let backgroundEl = store.find((el) => el.custom?.attachedTo === element.id);
+    if (!backgroundEl) {
+      backgroundEl = element.page.addElement({
+        type: 'figure',
+        subType: 'rect',
+        fill: 'grey',
+        selectable: false,
+        draggable: false,
+        resizable: false,
+        custom: { attachedTo: element.id },
+      });
+    }
+
+    const elementIndex = element.parent.children.indexOf(element);
+    const backgroundIndex = backgroundEl.parent.children.indexOf(backgroundEl);
+    if (elementIndex !== backgroundIndex + 1) {
+      backgroundEl.page.setElementZIndex(backgroundEl.id, elementIndex);
+    }
+
+    backgroundEl.set({
+      x: 0,
+      y: element.y,
+      width: store.width,
+      height: element.height,
+    });
+  });
+};
+
+let timeout: any = null;
+const requestChange = () => {
+  if (timeout) return;
+  timeout = setTimeout(() => {
+    checkBackground();
+    timeout = null;
+  }, 10);
+};
+
+store.on('change', () => {
+  requestChange();
+});
+```
+
+## Demo
+
+- Click “Background Fill” on a selected text element
+- See how the background rectangle reacts to text changes
+
+## Live demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-full-width-background-for-text" />
+
+

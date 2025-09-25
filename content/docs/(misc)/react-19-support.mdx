@@ -1,0 +1,88 @@
+---
+title: React 19 Support
+description: How to use Polotno with React 19 using package overrides/resolutions
+---
+
+At the current moment, Polotno is based on React version 18. There are extra steps required to make it work with React version 19.
+
+When you install polotno in a project with React 19 you may see an error like this
+
+npm:
+
+> Could not resolve dependency:
+>
+> npm error peer react@"^18.2.0" from polotno@2.25.1
+
+Also, you may see this error in the console:
+
+> Uncaught TypeError: Cannot read properties of undefined (reading 'ReactCurrentOwner')
+
+To resolve the issue, you need to override react, react-dom and react-konva dependencies of polotno package.
+
+## npm
+
+```bash
+npm pkg set "overrides.polotno.react=^19" \
+  "overrides.polotno.react-dom=^19" \
+  "overrides.polotno.react-konva=^19.0.3" \
+  && npm install polotno
+```
+
+## yarn
+
+one line solution:
+
+```bash
+npm pkg set 'resolutions[polotno/react]=^19' \
+            'resolutions[polotno/react-dom]=^19' \
+            'resolutions[polotno/react-konva]=^19' \
+  && yarn add polotno
+```
+
+Or you can add resolutions manually into package.json:
+
+```json
+"resolutions": {
+  "polotno/react": "^19",
+  "polotno/react-dom": "^19",
+  "polotno/react-konva": "^19.0.3"
+}
+```
+
+And then re-install polotno:
+
+```bash
+yarn add polotno
+```
+
+## pnpm
+
+One line:
+
+```bash
+npm pkg set \
+  'pnpm.overrides.polotno>react=^19' \
+  'pnpm.overrides.polotno>react-dom=^19' \
+  'pnpm.overrides.polotno>react-konva=19.0.3' \
+  && pnpm add polotno
+```
+
+Or you can add overrides in package.json:
+
+```json
+"pnpm": {
+  "overrides": {
+    "polotno>react": "^19",
+    "polotno>react-dom": "^19",
+    "polotno>react-konva": ""19.0.3""
+  }
+}
+```
+
+And then reinstall polotno
+
+```bash
+pnpm install polotno
+```
+
+
