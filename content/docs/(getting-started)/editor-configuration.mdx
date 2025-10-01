@@ -5,7 +5,7 @@ description: Configure uploads, translations, fonts, and color presets in Polotn
 
 ## How to change image upload behavior?
 
-The default [Side Panel](https://developer.polotno.com/docs/side-panel) has an Upload tab to import local images into the project. By default, **Polotno** converts a local file into a Base64 string. These strings are then used by `image` elements. Using Base64 may produce large project JSON because images are fully encoded inside it.
+The default [Side Panel](/docs/side-panel-overview) has an Upload tab to import local images into the project. By default, **Polotno** converts a local file into a Base64 string. These strings are then used by `image` elements. Using Base64 may produce large project JSON because images are fully encoded inside it.
 
 **It is highly recommended to upload images to your server.** This will keep JSON smaller, easier to read, and significantly improve editor performance.
 
@@ -136,7 +136,7 @@ setGoogleFontsVariants('400,100');
 
 ### 2) User fonts
 
-If you want to add/remove fonts specific to the user, use the [Store Fonts API](https://developer.polotno.com/docs/store-overview#working-with-fonts).
+If you want to add/remove fonts specific to the user, use the [Store Fonts API](/docs/store#working-with-fonts).
 
 Fonts added directly into the `store` will be included in JSON export via `store.toJSON()`.
 

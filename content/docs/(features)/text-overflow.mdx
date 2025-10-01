@@ -26,7 +26,7 @@ unstable_setTextOverflow('change-font-size');
 ```
 
 You can use these settings in combination with
-[unstable_setTextVerticalResizeEnabled](https://developer.polotno.com/docs/vertical-text-resize).
+[unstable_setTextVerticalResizeEnabled](/docs/vertical-text-resize).
 
 ## Client-Side Default: resize overflow
 
@@ -36,7 +36,7 @@ You can use these settings in combination with
 ## Server-Side Default: change-font-size overflow
 
 - Behavior: If the text exceeds its defined width or height during server-side rendering (e.g., using polotno-node or
-  [Cloud Render API](https://polotno.com/docs/cloud-render)), Polotno reduces the fontSize to ensure the text fits within the specified size.
+  [Cloud Render API](/docs/cloud-render-api)), Polotno reduces the fontSize to ensure the text fits within the specified size.
 - Use Case: Non-interactive scenarios where preserving a strict layout (width and height constraints) is important, and automatically shrinking text is preferable to resizing the layout.
 
 ## Motivation

@@ -3,7 +3,7 @@ title: Store
 description: Root data model to control canvas, pages, elements, export, and more
 ---
 
-Store is a **root data model** object that you can use to read and control canvas content, check selection, export into different formats and a lot more! It will also provide you with access to [Pages](https://polotno.com/docs/page-overview) and [Elements](https://polotno.com/docs/element-overview).
+Store is a **root data model** object that you can use to read and control canvas content, check selection, export into different formats and a lot more! It will also provide you with access to [Pages](/docs/page) and [Elements](/docs/element).
 
 ```ts
 import { createStore } from 'polotno/model/store';
@@ -180,7 +180,7 @@ Getter for current state of rulers visibility.
 
 ### store.setRole(role)
 
-Set role of the current user. Possible values are: `user` and `admin`. For more information see [Roles Documentation](https://developer.polotno.com/docs/user-roles).
+Set role of the current user. Possible values are: `user` and `admin`. For more information see [Roles Documentation](/docs/user-roles).
 
 ```ts
 store.setRole('admin');
@@ -699,7 +699,7 @@ store.audios.map((audio) => {
 
 ### `store.addFont({ fontFamily, url })`
 
-The function to add a new custom font to the user project. Added fonts will be saved into exported JSON. If you want to add fonts available globally (ignored in JSON export), take a look into [Fonts Tutorial](https://developer.polotno.com/docs/config#how-to-change-available-fonts).
+The function to add a new custom font to the user project. Added fonts will be saved into exported JSON. If you want to add fonts available globally (ignored in JSON export), take a look into [Fonts Tutorial](/docs/editor-configuration#how-to-change-available-fonts).
 
 ```ts
 store.addFont({
