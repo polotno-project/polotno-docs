@@ -15,7 +15,16 @@ export default function Layout({ children }: LayoutProps<'/'>) {
       style={{ colorScheme: 'dark' }}
     >
       <body className="flex flex-col min-h-screen">
-        <RootProvider theme={{ defaultTheme: 'dark' }}>{children}</RootProvider>
+        <RootProvider
+          theme={{ defaultTheme: 'dark' }}
+          search={{
+            options: {
+              api: '/docs/api/search',
+            },
+          }}
+        >
+          {children}
+        </RootProvider>
       </body>
     </html>
   );
