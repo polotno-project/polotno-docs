@@ -15,12 +15,13 @@ export function baseOptions(): BaseLayoutProps {
           <svg
             width="24"
             height="24"
+            viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
             aria-label="Logo"
           >
-            <circle cx={12} cy={12} r={12} fill="currentColor" />
+            <rect x={0} y={0} width={24} height={24} fill="currentColor" />
           </svg>
-          Polotno docs
+          Polotno Docs
         </>
       ),
     },

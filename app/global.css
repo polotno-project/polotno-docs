@@ -1,3 +1,9 @@
 @import 'tailwindcss';
 @import 'fumadocs-ui/css/black.css';
 @import 'fumadocs-ui/css/preset.css';
+
+
+.dark {
+    --color-fd-background: #161616;
+    --color-fd-card: #161616;
+}
