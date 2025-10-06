@@ -1,0 +1,187 @@
+---
+title: Reactivity and Events
+description: How to observe and react to changes in Polotno store using MobX and event listeners
+---
+
+Polotno's state is an [**mobx-state-tree store**](https://mobx-state-tree.js.org/), so every change is observable through [MobX](https://mobx.js.org/).
+
+In React, you get automatic UI updates by wrapping your components in `observer()`:
+
+```tsx
+import { observer } from 'mobx-react-lite';
+
+// the component will be automatically updated when number of children is changed
+export const App = observer(({ store }) => (
+  <div>
+    <p>Elements on the current page: {store.activePage?.children.length}</p>
+  </div>
+));
+```
+
+You can also use any data from the store as dependency to react hooks:
+
+```tsx
+const App = observer(({ store }) => {
+  React.useEffect(() => {
+    console.log('width of the store is changed');
+  }, [store.width]);
+  return <></>;
+})
+```
+
+### React hooks + MobX reactions
+
+If you want logic that runs outside the render cycle, you can combine `useEffect` with `mobx.reaction` (or `autorun`):
+
+```tsx
+import { reaction } from 'mobx';
+import { useEffect } from 'react';
+
+export function useElementCounter(store) {
+  useEffect(() => {
+    // fires every time the number of elements on the active page changes
+    const dispose = reaction(
+      () => store.activePage?.children.length,
+      (length) => {
+        console.log('Element count changed:', length);
+      }
+    );
+    return dispose;          // clean-up on unmount
+  }, [store]);               // deps
+}
+```
+
+Under the hood, MobX tracks exactly what you read inside the first function and re-runs the second function only when that value changes—no manual listeners, no polling.
+
+## Events
+
+`store.on('change', handler)` is the only event we fire. It triggers on any mutation: add, remove, move, resize, undo, redo, you name it.
+
+```tsx
+const unsubscribe = store.on('change', () => {
+  console.log('Something in the store changed');
+});
+```
+
+### Detecting specific actions
+
+Because every action funnels through the same event, you filter manually.
+
+**Example: Simple tracking of adding/removing elements**
+
+```tsx
+let prevCount = store.activePage?.children.length ?? 0;
+
+const unsub = store.on('change', () => {
+  const newCount = store.activePage?.children.length ?? 0;
+
+  if (newCount > prevCount) {
+    console.log('Element added');
+  } else if (newCount < prevCount) {
+    console.log('Element removed');
+  }
+
+  prevCount = newCount;
+});
+```
+
+**Example: deeper tracking of adding/removing elements**
+
+If you need more gradual control, you can save more references to previous data to have a deeper diff.
+
+```tsx
+let lastIds = {};
+
+store.on('change', () => {
+   const newIds = {};
+   store.find(item => {
+     newIds[item.id] = item;
+   })
+   for (const id in lastIds) {
+      const deleted = !newIds[id];
+      if (deleted) {
+         console.log(id, 'deleted');
+      }
+   }
+   for (const id in newIds) {
+      const added = !lastIds[id];
+      if (added) {
+         console.log(id, 'added');
+      }
+   }
+   lastIds = newIds;
+});
+```
+
+**Example: Changes on one element**
+
+```tsx
+import { reaction } from 'mobx';
+
+function watchElement(element) {
+  return reaction(
+    () => ({
+      x: element.x,
+      y: element.y,
+      width: element.width,
+      height: element.height,
+      rotation: element.rotation,
+    }),
+    (coords) => {
+      console.log('Element changed', coords);
+    }
+  );
+}
+
+// later
+const dispose = watchElement(store.activePage.children[0]);
+```
+
+**Example: Page-level changes (title, background, etc.)**
+
+```tsx
+reaction(
+  () => ({
+    title: store.activePage?.name,
+    bg: store.activePage?.background,
+  }),
+  (data) => console.log('Page updated', data)
+);
+```
+
+### Performance
+
+`change` event can fire **dozens of times per second** during drag/resize. Avoid heavy work inside the handler - wrap it in throttle, or debounce.
+
+```tsx
+// define function to save design to backend
+const saveDesign = async () => {
+  // export the design
+  const json = store.toJSON();
+  // save it to the backend
+  await fetch('https://example.com/designs', {
+    method: 'POST',
+    body: JSON.stringify(json),
+  });
+}
+
+// write a function for throttle saving
+// it will call save no more then 1 time per second
+let timeout = null;
+const requestSave = () => {
+  // if save is already requested - do nothing
+  if (timeout) {
+    return;
+  }
+  // schedule saving to the backend
+  timeout = setTimeout(() => {
+    // reset timeout
+    timeout = null;
+    saveDesign();
+  }, 1000);
+};
+
+// request saving operation on any changes
+store.on('change', requestSave);
+```
+

@@ -1,0 +1,44 @@
+---
+title: Lightweight SVG Preview
+description: Generate preview images from Polotno JSON without mounting an interactive editor
+---
+
+## Use case
+
+You need a small preview (e.g., in a templates list) for a json, but you don't want to mount an interactive Polotno editor in the DOM.
+
+## Why store.toDataURL() fails head-less
+
+`store.toDataURL()` is using mounted `<Workspace />` component for rendering. While it is perfect for high-quality export or preview generation of the current store, it is hard to use such an approach if you want to generate a preview of a design, that is not loaded inside the editor.
+
+## Lightweight alternative: JSON ➜ SVG ➜ Data URL
+
+Polotno ships a utility that walks the JSON tree and serializes it directly to SVG. While SVG render is in beta stage and may produce inconsistent result comparing to canvas rendering, it may still give ideal result for preview.
+
+```tsx
+import { jsonToSVG } from 'polotno/utils/to-svg';
+import { svgToURL } from 'polotno/utils/svg';
+
+// templateJSON is your saved Polotno design
+async function getThumbnailURL(templateJSON) {
+  const svgString = await jsonToSVG({ json: templateJSON });
+  return svgToURL(svgString); // returns data:image/svg+xml;utf8,…
+}
+
+// Example React component
+function TemplateThumb({ json }) {
+  const [url, setUrl] = React.useState<string | null>(null);
+
+  React.useEffect(() => {
+    getThumbnailURL(json).then(setUrl);
+  }, [json]);
+
+  return url ? <img src={url} alt="preview" /> : '…';
+}
+```
+
+## Demo
+
+Take a look into Variations side panel. You can click "Generate variations" to create many svg images using changed svg export of a design.
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-svg-preview" />
