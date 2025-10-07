@@ -79,6 +79,20 @@ const handleExport = () => {
 - Text elements remain editable in PowerPoint
 - Images are embedded in the presentation file
 
+## Limitations
+
+<Callout type="warn" title="Missing Effects and Features">
+The PPTX export may not support all Polotno effects and features. Some advanced styling, animations, or custom elements might not be fully preserved in the exported PowerPoint file. 
+
+If you encounter any issues or have feedback about missing features, please share your experience in the [Polotno Community](https://community.polotno.com/c/ask).
+</Callout>
+
+<Callout type="info" title="Font Embedding">
+PPTX files do **not** embed fonts inside the file. If you use custom fonts in your design, they will be displayed using system fallback fonts when the presentation is opened on another computer, unless those custom fonts are already installed on that system. 
+
+For consistent typography across different devices, consider using common system fonts like Arial, Helvetica, Times New Roman, or Georgia.
+</Callout>
+
 ## Live Demo
 
 Try out the PPTX export feature in this interactive demo:
