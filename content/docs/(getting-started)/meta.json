@@ -1,3 +1,10 @@
 {
-  "pages": ["overview", "getting-started", "..."]
+  "pages": [
+    "overview",
+    "customizations",
+    "editor-configuration",
+    "theme-and-ui-styles",
+    "next-js",
+    "..."
+  ]
 }

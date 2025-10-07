@@ -1,0 +1,158 @@
+---
+title: PPTX Export
+description: Export Polotno designs to PowerPoint format
+---
+
+## Overview
+
+Polotno supports exporting designs to PowerPoint (PPTX) format, allowing you to create presentation files from your designs. This feature is available through the `@polotno/pptx-export` package.
+
+## Installation
+
+First, install the PPTX export package:
+
+```bash
+npm install @polotno/pptx-export
+```
+
+## Basic Usage
+
+Import the package and use the `jsonToPPTX` function to export your design:
+
+```ts
+import { jsonToPPTX } from '@polotno/pptx-export';
+
+// Export the current design to PPTX
+jsonToPPTX({
+  json: store.toJSON(),
+  output: 'my-design.pptx',
+});
+```
+
+### Dynamic Import
+
+If you prefer to load the package dynamically (e.g., to reduce initial bundle size), you can use dynamic imports:
+
+```ts
+import('@polotno/pptx-export').then((module) => {
+  module.jsonToPPTX({
+    json: store.toJSON(),
+    output: 'my-design.pptx',
+  });
+});
+```
+
+## API Reference
+
+### `jsonToPPTX(options)`
+
+Exports a Polotno design to PowerPoint format.
+
+**Parameters:**
+
+- `json` (required): The design JSON from `store.toJSON()`
+- `output` (required): The output filename (e.g., `'presentation.pptx'`)
+
+**Example:**
+
+```ts
+import { jsonToPPTX } from '@polotno/pptx-export';
+
+const handleExport = () => {
+  jsonToPPTX({
+    json: store.toJSON(),
+    output: 'my-presentation.pptx',
+  });
+};
+```
+
+## Use Cases
+
+- Convert designs into editable PowerPoint presentations
+- Share designs with users who prefer working in PowerPoint
+- Create templates that can be further edited in presentation software
+- Export multi-page designs as presentation slides
+
+## Notes
+
+- Each Polotno page becomes a slide in the PowerPoint presentation
+- Text elements remain editable in PowerPoint
+- Images are embedded in the presentation file
+
+## Live Demo
+
+Try out the PPTX export feature in this interactive demo:
+
+<SandpackDemo 
+  dependencies={{
+    "@polotno/pptx-export": "latest"
+  }}
+  height={600}
+  files={{
+    "/App.js": `import React from 'react';
+import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Toolbar } from 'polotno/toolbar/toolbar';
+import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+import { SidePanel } from 'polotno/side-panel';
+import { Workspace } from 'polotno/canvas/workspace';
+import { createStore } from 'polotno/model/store';
+import { jsonToPPTX } from '@polotno/pptx-export';
+import '@blueprintjs/core/lib/css/blueprint.css';
+
+const store = createStore({
+  key: 'nFA5H9elEytDyPyvKL7T',
+  showCredit: true,
+});
+
+const page = store.addPage();
+page.addElement({
+  type: 'text',
+  x: store.width / 2 - 200,
+  width: 400,
+  y: 400,
+  fontSize: 60,
+  fontFamily: 'Arial',
+  text: 'Try to add a template and export it to PPTX',
+});
+
+
+async function exportToPPTX() {
+  const json = store.toJSON();
+  await jsonToPPTX({ json, output: 'design.pptx' });
+}
+
+function App() {
+  return (
+    <div style={{ width: '100vw', height: '100vh' }}>
+      <PolotnoContainer style={{ width: '100%', height: '100%' }}>
+        <SidePanelWrap>
+          <SidePanel store={store} />
+        </SidePanelWrap>
+        <WorkspaceWrap>
+          <Toolbar
+            store={store}
+            downloadButtonEnabled
+            components={{
+              ActionControls: () => (
+                <button
+                  className="bp5-button bp5-minimal"
+                  onClick={exportToPPTX}
+                  style={{ marginLeft: 'auto' }}
+                >
+                  Export to PPTX
+                </button>
+              ),
+            }}
+          />
+          <Workspace store={store} />
+          <ZoomButtons store={store} />
+        </WorkspaceWrap>
+      </PolotnoContainer>
+    </div>
+  );
+}
+
+export default App;`
+  }}
+/>
+
