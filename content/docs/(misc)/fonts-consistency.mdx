@@ -1,0 +1,129 @@
+---
+title: Fonts & Text Consistency
+description: Keep text layout consistent across browsers, operating systems, and server-side exports
+---
+
+<Callout type="info">
+**Important**: Polotno renders text using the browser's native text rendering engine. This means different browsers and operating systems may produce slightly different results. This guide focuses on best practices to minimize these differences.
+</Callout>
+
+## The Problem
+
+Ever seen text look different between browsers? Or your server-side export doesn't match what users see? Common causes:
+
+- Font files with incorrect metadata (weight class, vertical metrics)
+- Mismatched family names or weight declarations
+- Browsers synthesizing missing bold/italic faces differently
+
+---
+
+## How to Declare Fonts
+
+How you declare fonts depends on whether your font file includes multiple variations:
+
+### Single file with all variations
+
+If your font file includes **all variations** (normal, bold, italic, bold+italic)—such as variable fonts:
+
+```json
+{
+  "fontFamily": "FiraSans",
+  "url": "url('/fonts/FiraSans-VariableFont.ttf')"
+}
+```
+
+### Separate files for each weight/style
+
+If you have **separate files** (most common), register them as one family:
+
+```json
+{
+  "fontFamily": "FiraSans",
+  "styles": [
+    {
+      "src": "url('/fonts/FiraSans-Regular.ttf')",
+      "fontStyle": "normal",
+      "fontWeight": 400
+    },
+    {
+      "src": "url('/fonts/FiraSans-Bold.ttf')",
+      "fontStyle": "normal",
+      "fontWeight": 700
+    },
+    {
+      "src": "url('/fonts/FiraSans-Italic.ttf')",
+      "fontStyle": "italic",
+      "fontWeight": 400
+    }
+  ]
+}
+```
+
+**❌ Don't do this:**
+
+```json
+// Don't register bold as a separate family!
+{
+  "fontFamily": "FiraSans-Bold",  // Wrong
+  "styles": [...]
+}
+```
+
+---
+
+## Font File Quality
+
+For consistent rendering, font files need proper metadata:
+
+**Weight class matches declaration**
+- Internal `usWeightClass` should match your `fontWeight` value
+- Example: Bold file should have `usWeightClass=700` and `fontWeight: 700`
+
+**Consistent vertical metrics**
+- All faces in a family (Regular, Bold, Italic) must share the same ascender, descender, and line-gap
+- Mismatched metrics cause baseline shifts and spacing differences
+
+**Aligned naming tables**
+- Use consistent family/subfamily names across all faces
+- Example: "Fira Sans" and "FiraSans" might be treated as different families
+
+**Web-ready format**
+- Use TTF, WOFF, or WOFF2 formats
+- Keep identical metrics across all format conversions
+
+---
+
+## When to Normalize
+
+Normalize fonts if you see:
+
+- Different line spacing on macOS vs Windows
+- Bold weight looks different across browsers  
+- Server exports don't match preview
+- Inconsistent third-party fonts
+
+**Font normalization** fixes the metadata issues above. You'll need to build your own server-side process using tools like:
+
+- **gftools + fonttools** (Python-based, good for automation)
+- **FontForge** (GUI or scriptable)
+- **Online converters** like [Transfonter](https://transfonter.org/) (for testing)
+
+<Callout type="warn">
+Font normalization requires server-side implementation. All faces in a family must share identical vertical metrics.
+</Callout>
+
+---
+
+## Validate Uploaded Fonts
+
+If users can upload custom fonts, validate them to catch issues early:
+
+**Check on upload:**
+- Weight class matches user selection
+- Vertical metrics are consistent across font faces
+- No duplicate or conflicting family names
+
+**Handle issues:**
+- Warn if metadata doesn't match declarations
+- Optionally auto-normalize and store processed versions
+- Use font parsing libraries to extract metadata
