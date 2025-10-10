@@ -1,0 +1,263 @@
+---
+title: Video Export
+description: Convert Polotno designs to video files using browser-based encoding
+---
+
+## Overview
+
+Polotno supports exporting designs to video (MP4) format using **client-side rendering**. This means all video encoding happens directly in the browser without requiring a server. This feature is available through the `@polotno/video-export` package.
+
+## Installation
+
+First, install the video export package:
+
+```bash
+npm install @polotno/video-export
+```
+
+## Basic Usage
+
+Import the package and use the `storeToVideo` function to export your design:
+
+```ts
+import { storeToVideo } from '@polotno/video-export';
+import { createStore } from 'polotno/model/store';
+
+const store = createStore({ key: 'YOUR_KEY' });
+
+// Export video
+const videoBlob = await storeToVideo({
+  store,
+  fps: 30, // Frames per second (default: 30)
+  pixelRatio: 2, // Pixel ratio for quality (default: 1)
+  onProgress: (progress, frameTime) => {
+    console.log(`Progress: ${Math.round(progress * 100)}%`);
+    console.log(`Frame render time: ${frameTime}ms`);
+  },
+});
+
+// Download the video
+const url = URL.createObjectURL(videoBlob);
+const link = document.createElement('a');
+link.href = url;
+link.download = 'video.mp4';
+link.click();
+```
+## API Reference
+
+### `storeToVideo(options)`
+
+Exports a Polotno design to video format.
+
+**Parameters:**
+
+- `store` (required): The Polotno store instance
+- `fps` (optional): Frames per second for the video (default: `30`)
+- `pixelRatio` (optional): Pixel ratio for quality control (default: `1`)
+- `onProgress` (optional): Callback function for progress tracking
+  - `progress`: Number between 0 and 1 representing export progress
+  - `frameTime`: Time in milliseconds to render the current frame
+
+**Returns:** Promise that resolves to a Blob containing the video file
+
+## Use Cases
+
+- Create video content from animated designs
+- Export presentations as video files
+- Generate social media videos
+- Create video templates with animations
+- Export multi-page designs as video sequences
+
+## Notes
+
+<Callout type="info" title="Client-Side Rendering">
+All video encoding happens **directly in the browser** using client-side rendering. This means:
+- No server required for video processing
+- All processing happens on the user's device
+- Export speed depends on the user's hardware capabilities
+- Large videos or high FPS may take longer to process
+</Callout>
+
+
+## Live Demo
+
+Try out the video export feature in this interactive demo:
+
+<SandpackDemo 
+  dependencies={{
+    "@polotno/video-export": "latest"
+  }}
+  height={600}
+  files={{
+    "/App.js": `import React from 'react';
+import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Toolbar } from 'polotno/toolbar/toolbar';
+import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+import { SidePanel } from 'polotno/side-panel';
+import { Workspace } from 'polotno/canvas/workspace';
+import { PagesTimeline } from 'polotno/pages-timeline';
+import { createStore } from 'polotno/model/store';
+import { storeToVideo } from '@polotno/video-export';
+import '@blueprintjs/core/lib/css/blueprint.css';
+
+import { unstable_setAnimationsEnabled } from 'polotno/config';
+unstable_setAnimationsEnabled(true);
+
+const store = createStore({
+  key: 'nFA5H9elEytDyPyvKL7T',
+  showCredit: true,
+});
+
+store.loadJSON({
+    "width": 1080,
+    "height": 1080,
+    "fonts": [],
+    "pages": [
+        {
+            "id": "4DIU4ekVti",
+            "children": [
+                {
+                    "id": "D0aUQUvNic",
+                    "type": "text",
+                    "name": "text-1",
+                    "opacity": 1,
+                    "visible": true,
+                    "selectable": true,
+                    "removable": true,
+                    "alwaysOnTop": false,
+                    "showInExport": true,
+                    "x": 270,
+                    "y": 502,
+                    "width": 540,
+                    "height": 93,
+                    "rotation": 0,
+                    "animations": [
+                        {
+                            "delay": 0,
+                            "duration": 1000,
+                            "enabled": true,
+                            "type": "enter",
+                            "name": "fade",
+                            "data": {}
+                        },
+                        {
+                            "delay": 0,
+                            "duration": 1000,
+                            "enabled": true,
+                            "type": "exit",
+                            "name": "fade",
+                            "data": {}
+                        }
+                    ],
+                    "blurEnabled": false,
+                    "blurRadius": 10,
+                    "brightnessEnabled": false,
+                    "brightness": 0,
+                    "sepiaEnabled": false,
+                    "grayscaleEnabled": false,
+                    "filters": {},
+                    "shadowEnabled": false,
+                    "shadowBlur": 5,
+                    "shadowOffsetX": 0,
+                    "shadowOffsetY": 0,
+                    "shadowColor": "black",
+                    "shadowOpacity": 1,
+                    "draggable": true,
+                    "resizable": true,
+                    "contentEditable": true,
+                    "styleEditable": true,
+                    "text": "I am animated",
+                    "placeholder": "",
+                    "fontSize": 76,
+                    "fontFamily": "Roboto",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "textDecoration": "",
+                    "textTransform": "none",
+                    "fill": "black",
+                    "align": "center",
+                    "verticalAlign": "top",
+                    "strokeWidth": 0,
+                    "stroke": "black",
+                    "lineHeight": 1.2,
+                    "letterSpacing": 0,
+                    "backgroundEnabled": false,
+                    "backgroundColor": "#7ED321",
+                    "backgroundOpacity": 1,
+                    "backgroundCornerRadius": 0.5,
+                    "backgroundPadding": 0.5,
+                    "curveEnabled": false,
+                    "curvePower": 0.5
+                }
+            ],
+            "width": "auto",
+            "height": "auto",
+            "background": "white",
+            "bleed": 0,
+            "duration": 3000
+        }
+    ],
+    "audios": [],
+    "unit": "px",
+    "dpi": 72,
+    "schemaVersion": 2
+})
+
+async function exportToVideo() {
+  try {
+    const videoBlob = await storeToVideo({
+      store,
+      fps: 30,
+      pixelRatio: 1,
+      onProgress: (progress) => {
+        console.log(\`Export progress: \${Math.round(progress * 100)}%\`);
+      },
+    });
+    
+    // Download the video
+    const url = URL.createObjectURL(videoBlob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'design-video.mp4';
+    link.click();
+  } catch (error) {
+    console.error('Export failed:', error);
+    alert('Video export failed. Please try again.');
+  }
+}
+
+function App() {
+  return (
+    <div style={{ width: '100vw', height: '100vh' }}>
+      <PolotnoContainer style={{ width: '100%', height: '100%' }}>
+        <SidePanelWrap>
+          <SidePanel store={store} />
+        </SidePanelWrap>
+        <WorkspaceWrap>
+          <Toolbar
+            store={store}
+            downloadButtonEnabled
+            components={{
+              ActionControls: () => (
+                <button
+                  className="bp5-button bp5-minimal"
+                  onClick={exportToVideo}
+                  style={{ marginLeft: 'auto' }}
+                >
+                  Export to Video
+                </button>
+              ),
+            }}
+          />
+          <Workspace store={store} />
+          <ZoomButtons store={store} />
+          <PagesTimeline store={store} />
+        </WorkspaceWrap>
+      </PolotnoContainer>
+    </div>
+  );
+}
+
+export default App;`
+  }}
+/>
