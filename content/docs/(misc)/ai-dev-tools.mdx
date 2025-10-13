@@ -1,0 +1,53 @@
+---
+title: AI Documentation Assistant
+description: AI-powered search and IDE integration for Polotno docs and community knowledge
+---
+
+## Overview
+
+Polotno documentation and community forums are indexed by [Crawlchat](https://crawlchat.com), providing AI-powered search with source citations. Available as a web widget and IDE integration via Model Context Protocol (MCP).
+
+## Web Widget
+
+Find the AI assistant on [polotno.com/docs](https://polotno.com/docs) and [community.polotno.com](https://community.polotno.com). Ask questions like "How do I resize a page?" to get instant answers with links to source docs or forum threads.
+
+## IDE Integration
+
+Add Polotno documentation directly to Cursor, Cline, or any MCP-compatible editor.
+
+### Cursor
+
+Add to `~/.cursor/config/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "polotno-documentation": {
+      "command": "npx",
+      "args": [
+        "crawl-chat-mcp",
+        "--id=67e312247a822a2303f2b8a7",
+        "--name=polotno_documentation"
+      ]
+    }
+  }
+}
+```
+
+Restart Cursor. Requires Node.js 18+.
+
+### Other Editors
+
+Run the MCP server directly:
+
+```bash
+npx crawl-chat-mcp --id=67e312247a822a2303f2b8a7 --name=polotno_documentation
+```
+
+The server uses stdio transport. Check your editor's MCP documentation for connection setup.
+
+## What You Can Ask
+
+- **API questions** – "What properties does TextElement have?"
+- **Code examples** – "How to add a rounded rectangle?"
+- **Troubleshooting** – "Why isn't my custom font loading?"
