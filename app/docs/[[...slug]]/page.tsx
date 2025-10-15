@@ -50,8 +50,13 @@ export async function generateMetadata(
   const page = source.getPage(params.slug);
   if (!page) notFound();
 
+  const url = `https://polotno.com/docs/${params.slug.join('/')}`;
+
   return {
     title: page.data.title,
     description: page.data.description,
+    alternates: {
+      canonical: url,
+    },
   };
 }
