@@ -152,7 +152,6 @@ const store = createStore({
 
 store.addPage();
 
-// Add sample audio from a free source
 function addSampleAudio() {
   // Using a royalty-free sound effect from Pixabay
   store.addAudio({
@@ -160,7 +159,6 @@ function addSampleAudio() {
     volume: 0.5,
     delay: 0,
   });
-  alert('Audio added! Check the timeline below.');
 }
 
 function removeAllAudio() {
@@ -168,38 +166,47 @@ function removeAllAudio() {
   audioIds.forEach(id => store.removeAudio(id));
 }
 
+const AudioControls = observer(() => {
+  const hasAudio = store.audios.length > 0;
+  
+  return (
+    <div style={{ display: 'flex', gap: '8px', marginLeft: 'auto' }}>
+      {!hasAudio ? (
+        <button
+          className="bp5-button bp5-minimal"
+          onClick={addSampleAudio}
+        >
+          Add Audio
+        </button>
+      ) : (
+        <button
+          className="bp5-button bp5-minimal"
+          onClick={removeAllAudio}
+        >
+          Remove Audio
+        </button>
+      )}
+    </div>
+  );
+});
+
 function App() {
   return (
     <div style={{ width: '100vw', height: '100vh' }}>
       <PolotnoContainer style={{ width: '100%', height: '100%' }}>
         <SidePanelWrap>
-          <SidePanel store={store} />
+          <SidePanel store={store} defaultSection="none" />
         </SidePanelWrap>
         <WorkspaceWrap>
           <Toolbar
             store={store}
             components={{
-              ActionControls: () => (
-                <div style={{ display: 'flex', gap: '8px', marginLeft: 'auto', alignItems: 'center' }}>
-                  <button
-                    className="bp5-button bp5-minimal"
-                    onClick={addSampleAudio}
-                  >
-                    Add Sample Audio
-                  </button>
-                  <button
-                    className="bp5-button bp5-minimal"
-                    onClick={removeAllAudio}
-                  >
-                    Remove Audio
-                  </button>
-                </div>
-              ),
+              ActionControls: AudioControls,
             }}
           />
           <Workspace store={store} />
           <ZoomButtons store={store} />
-          <PagesTimeline store={store} />
+          <PagesTimeline store={store} defaultOpened />
         </WorkspaceWrap>
       </PolotnoContainer>
     </div>
