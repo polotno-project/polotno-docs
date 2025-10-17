@@ -21,7 +21,51 @@ store.stop();
 await store.saveAsGIF();
 ```
 
-To export the design into a final MP4 video, use the [Cloud Render API](/docs/cloud-render-api).
+## Video Export Options
+
+Polotno supports two methods for exporting animated designs to MP4 video:
+
+### Client-Side Video Export
+
+For browser-based video generation without a server, use the `@polotno/video-export` package. All encoding happens directly in the user's browser:
+
+```bash
+npm install @polotno/video-export
+```
+
+```ts
+import { storeToVideo } from '@polotno/video-export';
+
+const videoBlob = await storeToVideo({
+  store,
+  fps: 30,
+  pixelRatio: 2,
+  onProgress: (progress) => {
+    console.log(`Progress: ${Math.round(progress * 100)}%`);
+  },
+});
+
+// Download the video
+const url = URL.createObjectURL(videoBlob);
+const link = document.createElement('a');
+link.href = url;
+link.download = 'video.mp4';
+link.click();
+```
+
+Export speed depends on user hardware. High FPS or complex designs may take longer to process.
+
+See the full [Video Export documentation](/docs/video-export) for complete API reference and live demo.
+
+### Server-Side Video Export
+
+For production-grade video rendering with consistent performance, use the [Cloud Render API](/docs/cloud-render-api). This option provides faster rendering and doesn't depend on client device capabilities.
+
+## Audio Support
+
+Add background music or sound effects to your animated designs. Audio tracks sync with the video timeline and export together with animations.
+
+See the [Audio documentation](/docs/audio) for complete details on adding and managing audio tracks.
 
 ## Live demo
 

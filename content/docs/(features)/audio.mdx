@@ -1,0 +1,222 @@
+---
+title: Audio Support
+description: Add background music and sound effects to designs, manage via timeline, export with video
+---
+
+## Overview
+
+Polotno supports adding audio tracks to designs for video export. Audio files play during video rendering and can be trimmed, delayed, and volume-adjusted. Multiple audio tracks can be added to a single design.
+
+Audio is stored at the **store level**, not per page. All pages/scenes share the same audio timeline when exporting to video. Combine audio with [animations](/docs/animations-and-videos) for complete multimedia designs.
+
+## Adding Audio from the UI
+
+Users can upload audio files through the default **Upload** side panel:
+
+1. Click the "Upload" section in the side panel
+2. Select an audio file (MP3, WAV, OGG, etc.)
+3. Click on added audio file or drag it to the workspace to add it to the design
+4. The audio track appears in the **PagesTimeline** component at the bottom
+5. Click the audio track in the timeline to trim, or remove it
+
+## Programmatic API
+
+Add audio tracks programmatically using the Store API:
+
+```ts
+import { createStore } from 'polotno/model/store';
+
+const store = createStore({ key: 'YOUR_KEY' });
+
+// Add audio with default settings
+store.addAudio({
+  src: 'https://example.com/audio.mp3',
+});
+
+// Add audio with custom properties
+store.addAudio({
+  src: 'https://example.com/background-music.mp3',
+  volume: 0.5,        // 50% volume (0 to 1)
+  delay: 2000,        // Start after 2 seconds of video
+  startTime: 0.25,    // Start from 25% into the audio file (0 to 1)
+  endTime: 0.75,      // End at 75% into the audio file (0 to 1)
+});
+```
+
+### Accessing and Removing Audio
+
+```ts
+// List all audio tracks
+store.audios.forEach((audio) => {
+  console.log(audio.id, audio.src, audio.volume);
+});
+
+// Remove audio by ID
+const audioId = store.audios[0].id;
+store.removeAudio(audioId);
+```
+
+See the full [Store API documentation](/docs/store#working-with-audio) for complete reference.
+
+## Audio Properties
+
+| Property | Type | Range | Description |
+|----------|------|-------|-------------|
+| `src` | string | - | URL or data URI of the audio file |
+| `volume` | number | 0-1 | Volume level (0 = mute, 1 = full) |
+| `delay` | number | 0+ | Milliseconds before audio starts in video timeline |
+| `startTime` | number | 0-1 | Relative start point in source file (0.5 = middle) |
+| `endTime` | number | 0-1 | Relative end point in source file |
+| `duration` | number | - | Duration of source audio in milliseconds (read-only) |
+
+### Use Cases for Audio Properties
+
+**Background music with fade-in timing:**
+```ts
+store.addAudio({
+  src: '/music.mp3',
+  delay: 1000,      // Start 1 second into video
+  volume: 0.3,      // Lower volume to not overpower content
+});
+```
+
+**Use only the middle section of a long audio file:**
+```ts
+store.addAudio({
+  src: '/podcast.mp3',
+  startTime: 0.4,   // Skip first 40% of the file
+  endTime: 0.6,     // End at 60% mark
+});
+```
+
+**Sync audio to specific page timing:**
+```ts
+const pageDuration = store.pages[0].duration; // in ms
+store.addAudio({
+  src: '/narration.mp3',
+  delay: pageDuration, // Start when page 2 begins
+});
+```
+
+## Export with Audio
+
+Audio tracks are included when exporting to video formats. The audio mixes down to the final video output.
+
+For client-side video generation in the browser, use the [Video Export](/docs/video-export) package. For server-side rendering with consistent performance, use the [Cloud Render API](/docs/cloud-render-api). Both methods process all audio tracks and mix them into the final video.
+
+## Audio Schema
+
+Audio tracks are serialized in the design JSON. See the [Audio schema reference](/docs/schema/audio) for the complete data structure.
+
+```json
+{
+  "audios": [
+    {
+      "id": "audio_1",
+      "src": "https://example.com/audio.mp3",
+      "duration": 180000,
+      "startTime": 0,
+      "endTime": 1,
+      "volume": 1,
+      "delay": 0
+    }
+  ]
+}
+```
+
+## Live Demo
+
+Try adding audio to a design with this interactive example:
+
+<SandpackDemo 
+  height={600}
+  files={{
+    "/App.js": `import React from 'react';
+import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Toolbar } from 'polotno/toolbar/toolbar';
+import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+import { SidePanel } from 'polotno/side-panel';
+import { Workspace } from 'polotno/canvas/workspace';
+import { PagesTimeline } from 'polotno/pages-timeline';
+import { createStore } from 'polotno/model/store';
+import { observer } from 'mobx-react-lite';
+import '@blueprintjs/core/lib/css/blueprint.css';
+
+import { unstable_setAnimationsEnabled } from 'polotno/config';
+unstable_setAnimationsEnabled(true);
+
+const store = createStore({
+  key: 'nFA5H9elEytDyPyvKL7T',
+  showCredit: true,
+});
+
+store.addPage();
+
+// Add sample audio from a free source
+function addSampleAudio() {
+  // Using a royalty-free sound effect from Pixabay
+  store.addAudio({
+    src: 'https://cdn.pixabay.com/download/audio/2023/08/26/audio_a6ee15a317.mp3?filename=sunflower-street-drumloop-85bpm-163900.mp3',
+    volume: 0.5,
+    delay: 0,
+  });
+  alert('Audio added! Check the timeline below.');
+}
+
+function removeAllAudio() {
+  const audioIds = store.audios.map(a => a.id);
+  audioIds.forEach(id => store.removeAudio(id));
+}
+
+function App() {
+  return (
+    <div style={{ width: '100vw', height: '100vh' }}>
+      <PolotnoContainer style={{ width: '100%', height: '100%' }}>
+        <SidePanelWrap>
+          <SidePanel store={store} />
+        </SidePanelWrap>
+        <WorkspaceWrap>
+          <Toolbar
+            store={store}
+            components={{
+              ActionControls: () => (
+                <div style={{ display: 'flex', gap: '8px', marginLeft: 'auto', alignItems: 'center' }}>
+                  <button
+                    className="bp5-button bp5-minimal"
+                    onClick={addSampleAudio}
+                  >
+                    Add Sample Audio
+                  </button>
+                  <button
+                    className="bp5-button bp5-minimal"
+                    onClick={removeAllAudio}
+                  >
+                    Remove Audio
+                  </button>
+                </div>
+              ),
+            }}
+          />
+          <Workspace store={store} />
+          <ZoomButtons store={store} />
+          <PagesTimeline store={store} />
+        </WorkspaceWrap>
+      </PolotnoContainer>
+    </div>
+  );
+}
+
+export default App;`
+  }}
+/>
+
+## Notes
+
+<Callout type="info" title="Browser Audio Limits">
+Most browsers require **user interaction** (click, tap) before playing audio. Programmatic `store.play()` calls may be silent until the user interacts with the page.
+</Callout>
+
+<Callout type="warning" title="File Size Considerations">
+Audio files uploaded via the Upload panel are embedded as **base64 data URIs** by default. For production, implement a custom upload panel that stores files on your server and references them by URL. See [Upload Panel documentation](/docs/upload-panel).
+</Callout>
+
