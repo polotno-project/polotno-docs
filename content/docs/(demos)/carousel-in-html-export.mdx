@@ -1,0 +1,60 @@
+---
+title: Carousel in HTML Export
+description: Use custom properties and elementHook to add carousel animations to HTML exports
+---
+
+Polotno's HTML export is fully customizable via the `elementHook` callback. This demo shows how to transform image elements into animated carousels during export.
+
+## Key Concepts
+
+1. **Custom Properties**: Store carousel images and timing in `element.custom` object
+2. **Element Hook**: Transform elements during export using `store.toHTML({ elementHook })`
+3. **Virtual DOM**: Return modified DOM structure from the hook to change export output
+
+The element hook receives `{ dom, element }` and returns a modified DOM structure. You can inject custom HTML, add JavaScript for interactivity, and alter element rendering completely.
+
+## Example: Transform Image to Carousel
+
+```tsx
+const html = await store.toHTML({
+  elementHook: ({ dom, element }) => {
+    // Check if element has carousel images
+    if (element.custom?.images && Array.isArray(element.custom.images)) {
+      // Remove original children
+      dom.children = [];
+      
+      // Create carousel container with slides
+      return {
+        type: 'div',
+        props: {
+          class: 'polotno-carousel-container',
+          'data-carousel': 'true',
+          'data-timeout': element.custom.carouselTimeout || 3000,
+          style: { ...dom.props.style, overflow: 'hidden' }
+        },
+        children: element.custom.images.map((src, i) => ({
+          type: 'img',
+          props: {
+            src,
+            class: 'carousel-slide',
+            style: {
+              position: 'absolute',
+              width: '100%',
+              height: '100%',
+              display: i === 0 ? 'block' : 'none'
+            }
+          }
+        }))
+      };
+    }
+    return dom;
+  }
+});
+```
+
+The exported HTML includes carousel JavaScript that rotates images at the specified interval. A custom side panel lets users configure carousel images and timing before export.
+
+## Live Demo
+
+<Sandbox github="polotno-project/polotno-site/tree/source/examples/polotno-carousel-in-html" />
+
