@@ -1,0 +1,61 @@
+---
+title: Removing "Powered by Polotno"
+description: How to remove the Polotno credit with a paid license
+---
+
+## Requirements
+
+**Trial keys always show the "Powered by Polotno" credit.** This branding cannot be removed with trial keys, regardless of configuration.
+
+To remove the credit, you must have a **paid license**.
+
+## How to Remove
+
+Follow all three steps:
+
+### 1. Purchase a Paid License
+
+Get a paid license from [polotno.com/cabinet](https://polotno.com/cabinet/). Trial keys will not work.
+
+### 2. Register Your Domain
+
+Add your domain in the developer dashboard at [polotno.com/cabinet](https://polotno.com/cabinet/). The API key validates against registered domains.
+
+**Important:** Register the exact domain including subdomain (e.g., `app.example.com` vs `example.com`).
+
+### 3. Use the Correct API Key and Configuration
+
+This is **critical**. You must use the API key from your paid license and set `showCredit: false`:
+
+```ts
+import { createStore } from 'polotno/model/store';
+
+const store = createStore({
+  key: 'YOUR_API_KEY', // Must be from your paid license, not a trial key
+  showCredit: false,
+});
+```
+
+For frameworkless integrations:
+
+```ts
+import { createDemoApp } from 'polotno/polotno-app';
+
+const { store } = createDemoApp({
+  container: document.getElementById('root'),
+  key: 'YOUR_API_KEY',
+  showCredit: false,
+});
+```
+
+## Troubleshooting
+
+If the credit still appears:
+
+- **Verify your API key** - Confirm you're using the key from your paid license (check in [Polotno Cabinet](https://polotno.com/cabinet/))
+- **Check domain registration** - Ensure your exact domain is listed in the dashboard
+- **Confirm `showCredit: false`** - Make sure it's explicitly set in your configuration
+- **Clear cache** - Hard refresh your browser (Cmd+Shift+R or Ctrl+Shift+R)
+
+The most common issue is using a trial API key instead of a paid license key.
+
