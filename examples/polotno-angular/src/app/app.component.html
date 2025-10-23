@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <div *mobxAutorun class="header">
+    <div>
+      This header is controlled by Angular. It can be used to display the number
+      of pages: {{ store.pages.length }}
+    </div>
+    <div>
+      <button (click)="store.addPage()">Add Page</button>
+    </div>
+  </div>
+  <div id="editor"></div>
+
+  
+<!--   this style may not be required, if it already correctly loaded from editor.tsx -->
+<!--   I added it here just for website demo -->
+  <link
+  href="https://unpkg.com/@blueprintjs/core@5/lib/css/blueprint.css"
+  rel="stylesheet"
+/>
+</div>
