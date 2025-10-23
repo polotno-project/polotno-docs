@@ -1,0 +1,218 @@
+---
+title: Element Locking
+description: Fine-grained control over element interactions and editing capabilities
+---
+
+Element locking provides granular control over which aspects of an element users can modify. Polotno offers **6 independent locking properties** for precise interaction control.
+
+**Quick start:** Use [User Roles](/docs/user-roles) with `store.setRole('admin')` for built-in locking UI. If you need custom controls, this page shows how to build your own.
+
+## Locking properties
+
+| Property | Controls |
+|----------|----------|
+| `selectable` | Can element be selected and clicked? |
+| `draggable` | Can element be moved or rotated? |
+| `resizable` | Can element be resized? |
+| `removable` | Can element be deleted? |
+| `contentEditable` | Can element's content be changed? |
+| `styleEditable` | Can element's style be changed? |
+
+All properties default to `true`.
+
+## Basic usage
+
+Lock an element programmatically:
+
+```ts
+element.set({
+  draggable: false,      // Cannot move
+  resizable: false,      // Cannot resize
+  removable: false,      // Cannot delete
+  contentEditable: false, // Cannot edit content
+  styleEditable: false,  // Cannot change style
+});
+
+console.log(element.locked); // true
+```
+
+## Common patterns
+
+**Template placeholder** — Users edit text, designer controls style:
+```ts
+element.set({
+  contentEditable: true,  // Can edit text
+  styleEditable: false,   // Cannot change appearance
+  draggable: false,
+  resizable: false,
+});
+```
+
+**Non-interactive overlay** — Watermark, guide, or decoration:
+```ts
+element.set({
+  selectable: false,  // Clicks pass through
+  draggable: false,
+  removable: false,
+  alwaysOnTop: true,
+});
+```
+
+**Fixed background** — Cannot move or delete, but can replace:
+```ts
+element.set({
+  draggable: false,
+  removable: false,
+  contentEditable: true,  // Can change image
+});
+```
+
+## Custom locking UI demo
+
+This example demonstrates how to build custom lock controls without using admin mode. Select elements and use the 🔒 Locks tab to control their properties:
+
+<SandpackDemo 
+  height={600}
+  dependencies={{
+    'mobx-react-lite': '^4.0.5'
+  }}
+  files={{
+    "/App.js": `import React from 'react';
+import { observer } from 'mobx-react-lite';
+import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Toolbar } from 'polotno/toolbar/toolbar';
+import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+import { SidePanel, SectionTab, DEFAULT_SECTIONS } from 'polotno/side-panel';
+import { Workspace } from 'polotno/canvas/workspace';
+import { Button, Checkbox } from '@blueprintjs/core';
+import { createStore } from 'polotno/model/store';
+import '@blueprintjs/core/lib/css/blueprint.css';
+
+const store = createStore({
+  key: 'nFA5H9elEytDyPyvKL7T',
+  showCredit: true,
+});
+
+// Add demo elements
+const page = store.addPage();
+page.addElement({
+  type: 'text',
+  text: 'Locked Title',
+  fontSize: 50,
+  x: store.width / 2 - 150,
+  y: 50,
+  width: 300,
+  draggable: false,
+  removable: false,
+});
+
+page.addElement({
+  type: 'text',
+  text: 'Editable text',
+  fontSize: 60,
+  x: store.width / 2 - 150,
+  y: 150,
+  width: 300,
+  contentEditable: true,
+  styleEditable: false,
+});
+
+// Lock Controls Panel
+const LockPanel = observer(({ store }) => {
+  const el = store.selectedElements[0];
+
+  if (!el) {
+    return <div style={{ padding: 20 }}>Select an element</div>;
+  }
+
+  const toggle = (prop) => el.set({ [prop]: !el[prop] });
+
+  return (
+    <div style={{ padding: 10 }}>
+      <Checkbox 
+        checked={el.selectable} 
+        onChange={() => toggle('selectable')}
+        label="Selectable"
+      />
+      <Checkbox 
+        checked={el.draggable} 
+        onChange={() => toggle('draggable')}
+        label="Draggable"
+      />
+      <Checkbox 
+        checked={el.resizable} 
+        onChange={() => toggle('resizable')}
+        label="Resizable"
+      />
+      <Checkbox 
+        checked={el.removable} 
+        onChange={() => toggle('removable')}
+        label="Removable"
+      />
+      <Checkbox 
+        checked={el.contentEditable} 
+        onChange={() => toggle('contentEditable')}
+        label="Content Editable"
+      />
+      <Checkbox 
+        checked={el.styleEditable} 
+        onChange={() => toggle('styleEditable')}
+        label="Style Editable"
+      />
+
+      <Button
+        style={{ marginTop: 10 }}
+        icon={el.locked ? 'unlock' : 'lock'}
+        text={el.locked ? 'Unlock All' : 'Lock All'}
+        intent={el.locked ? 'warning' : 'success'}
+        onClick={() => {
+          const state = !el.locked;
+          el.set({
+            draggable: state,
+            resizable: state,
+            removable: state,
+            contentEditable: state,
+            styleEditable: state,
+          });
+        }}
+        fill
+      />
+    </div>
+  );
+});
+
+// Custom Lock Section
+const LockSection = {
+  name: 'locks',
+  Tab: (props) => (
+    <SectionTab name="Locks" {...props}>
+      🔒
+    </SectionTab>
+  ),
+  Panel: LockPanel,
+};
+
+export default observer(function App() {
+  return (
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+      <SidePanelWrap>
+        <SidePanel store={store} sections={[LockSection, ...DEFAULT_SECTIONS]} />
+      </SidePanelWrap>
+      <WorkspaceWrap>
+        <Toolbar store={store} />
+        <Workspace store={store} />
+        <ZoomButtons store={store} />
+      </WorkspaceWrap>
+    </PolotnoContainer>
+  );
+});`
+  }}
+/>
+
+## Related
+
+- [User Roles](/docs/user-roles) — Admin mode for accessing locked elements
+- [Overlays and Watermarks](/docs/overlays-and-watermarks) — Using `selectable`, `alwaysOnTop`, and `showInExport`
+- [Element API](/docs/element) — Complete element property reference
+
+

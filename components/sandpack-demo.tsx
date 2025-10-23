@@ -1,6 +1,11 @@
 'use client';
-import { SandpackProvider, SandpackPreview } from '@codesandbox/sandpack-react';
-import React from 'react';
+import {
+  SandpackProvider,
+  SandpackPreview,
+  SandpackCodeEditor,
+  SandpackLayout,
+} from '@codesandbox/sandpack-react';
+import React, { useState } from 'react';
 
 interface SandpackDemoProps {
   /** Custom dependencies to include alongside polotno */
@@ -17,6 +22,12 @@ interface SandpackDemoProps {
   height?: number | string;
   /** Theme for the sandbox */
   theme?: 'light' | 'dark' | 'auto';
+  /** Whether to enable code viewing. If true, shows a toggle button to show/hide code. Can be 'always' to always show code, or 'editor-only' to only show editor without preview */
+  showCode?: boolean | 'always' | 'editor-only';
+  /** Which file to show in the editor by default */
+  activeFile?: string;
+  /** Whether code should be visible by default when showCode is true */
+  defaultCodeOpen?: boolean;
 }
 
 export function SandpackDemo({
@@ -25,7 +36,11 @@ export function SandpackDemo({
   options = {},
   height = 600,
   theme = 'light',
+  showCode = true,
+  activeFile = '/App.js',
+  defaultCodeOpen = false,
 }: SandpackDemoProps) {
+  const [isCodeVisible, setIsCodeVisible] = useState(defaultCodeOpen);
   // Default dependencies - always include polotno and common React dependencies
   const defaultDependencies = {
     polotno: 'latest',
@@ -91,26 +106,96 @@ root.render(
     ...options,
   };
 
+  // Determine what to render based on showCode mode and visibility state
+  const shouldShowEditor =
+    showCode === 'editor-only' ||
+    showCode === 'always' ||
+    (showCode && isCodeVisible);
+  const shouldShowPreview = showCode !== 'editor-only';
+  const showToggleButton = showCode === true;
+
   return (
-    <div style={{ margin: '20px 0' }}>
+    <div className="my-6">
       <SandpackProvider
         template="react"
         files={defaultFiles}
         customSetup={{
           dependencies: defaultDependencies,
         }}
-        options={sandpackOptions}
+        options={{
+          ...sandpackOptions,
+          activeFile: activeFile,
+        }}
         theme={theme}
       >
-        <SandpackPreview
-          style={{
-            height: typeof height === 'number' ? `${height}px` : height,
-            border: '1px solid #e5e7eb',
-            borderRadius: '8px',
-          }}
-          showOpenInCodeSandbox={false}
-          showRefreshButton={true}
-        />
+        <div className="relative">
+          {showToggleButton && (
+            <button
+              onClick={() => setIsCodeVisible(!isCodeVisible)}
+              className="mb-3 inline-flex items-center gap-2 rounded-lg border border-fd-border bg-fd-secondary px-3 py-1.5 text-sm font-medium text-fd-foreground transition-colors hover:bg-fd-accent hover:text-fd-accent-foreground"
+            >
+              <svg
+                className="size-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                />
+              </svg>
+              {isCodeVisible ? 'Hide Code' : 'Show Code'}
+            </button>
+          )}
+          {shouldShowEditor && shouldShowPreview ? (
+            <SandpackLayout
+              style={{
+                border: '1px solid var(--fd-border)',
+                borderRadius: '8px',
+              }}
+            >
+              <SandpackCodeEditor
+                style={{
+                  height: typeof height === 'number' ? `${height}px` : height,
+                }}
+                showTabs
+                showLineNumbers
+                showInlineErrors
+              />
+              <SandpackPreview
+                style={{
+                  height: typeof height === 'number' ? `${height}px` : height,
+                }}
+                showOpenInCodeSandbox={false}
+                showRefreshButton={true}
+              />
+            </SandpackLayout>
+          ) : shouldShowEditor ? (
+            <SandpackCodeEditor
+              style={{
+                height: typeof height === 'number' ? `${height}px` : height,
+                border: '1px solid var(--fd-border)',
+                borderRadius: '8px',
+              }}
+              showTabs
+              showLineNumbers
+              showInlineErrors
+            />
+          ) : (
+            <SandpackPreview
+              style={{
+                height: typeof height === 'number' ? `${height}px` : height,
+                border: '1px solid var(--fd-border)',
+                borderRadius: '8px',
+              }}
+              showOpenInCodeSandbox={false}
+              showRefreshButton={true}
+            />
+          )}
+        </div>
       </SandpackProvider>
     </div>
   );

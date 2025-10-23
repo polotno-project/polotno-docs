@@ -20,8 +20,7 @@ alwaysApply: true
 
 - Direct, second-person voice; developer-first tone.
 - Replace adjectives with **numbers, versions, limits, defaults**.
-- State **platform support** explicitly (Browser/Node). Pin versions when behavior differs.
-- When claiming performance or limits, include the **conditions** (env, flags, dataset).
+- When useful, state **platform support** explicitly (Browser/Node). Pin versions when behavior differs.
 - Increase Fact Density
 
 ## Code Examples
