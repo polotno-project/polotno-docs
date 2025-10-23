@@ -19,6 +19,14 @@ interface SandpackDemoServerProps {
   height?: number | string;
   /** Theme forwarded to Sandpack */
   theme?: 'light' | 'dark' | 'auto';
+  /** Whether to enable code viewing */
+  showCode?: boolean | 'always' | 'editor-only';
+  /** Which file to show in the editor by default */
+  activeFile?: string;
+  /** Whether code should be visible by default when showCode is true */
+  defaultCodeOpen?: boolean;
+  /** Enable SSR fallback - renders code as plain text before JS loads for SEO */
+  enableSSR?: boolean;
 }
 
 async function readOneFile(spec: FileSpec): Promise<[string, string]> {
@@ -41,7 +49,18 @@ async function readOneFile(spec: FileSpec): Promise<[string, string]> {
 export default async function SandpackDemoServer(
   props: SandpackDemoServerProps
 ) {
-  const { dependencies, files, fileSrc, options, height, theme } = props;
+  const {
+    dependencies,
+    files,
+    fileSrc,
+    options,
+    height,
+    theme,
+    showCode,
+    activeFile,
+    defaultCodeOpen,
+    enableSSR,
+  } = props;
 
   let loadedFiles: Record<string, string> = {};
   if (fileSrc) {
@@ -61,6 +80,10 @@ export default async function SandpackDemoServer(
       options={options}
       height={height}
       theme={theme}
+      showCode={showCode}
+      activeFile={activeFile}
+      defaultCodeOpen={defaultCodeOpen}
+      enableSSR={enableSSR}
     />
   );
 }

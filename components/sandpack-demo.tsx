@@ -5,7 +5,7 @@ import {
   SandpackCodeEditor,
   SandpackLayout,
 } from '@codesandbox/sandpack-react';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface SandpackDemoProps {
   /** Custom dependencies to include alongside polotno */
@@ -28,6 +28,8 @@ interface SandpackDemoProps {
   activeFile?: string;
   /** Whether code should be visible by default when showCode is true */
   defaultCodeOpen?: boolean;
+  /** Enable SSR fallback - renders code as plain text before JS loads for SEO */
+  enableSSR?: boolean;
 }
 
 export function SandpackDemo({
@@ -39,8 +41,14 @@ export function SandpackDemo({
   showCode = true,
   activeFile = '/App.js',
   defaultCodeOpen = false,
+  enableSSR = true,
 }: SandpackDemoProps) {
   const [isCodeVisible, setIsCodeVisible] = useState(defaultCodeOpen);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   // Default dependencies - always include polotno and common React dependencies
   const defaultDependencies = {
     polotno: 'latest',
@@ -113,6 +121,38 @@ root.render(
     (showCode && isCodeVisible);
   const shouldShowPreview = showCode !== 'editor-only';
   const showToggleButton = showCode === true;
+
+  // Get the code content for SSR fallback
+  const getCodeContent = () => {
+    const allFiles: Record<
+      string,
+      string | { code: string; [key: string]: any }
+    > = {
+      ...defaultFiles,
+      ...files,
+    };
+    const targetFile = allFiles[activeFile];
+    if (!targetFile) return '';
+    // Handle both string and object format
+    return typeof targetFile === 'string' ? targetFile : targetFile.code || '';
+  };
+
+  // SSR fallback: show static code before JS loads
+  if (enableSSR && !isMounted) {
+    const codeContent = getCodeContent();
+    return (
+      <div className="my-6">
+        <div className="rounded-lg border border-fd-border bg-fd-secondary/50 p-4">
+          <div className="mb-2 text-xs font-medium text-fd-muted-foreground">
+            {activeFile}
+          </div>
+          <pre className="overflow-x-auto">
+            <code className="text-sm">{codeContent}</code>
+          </pre>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="my-6">
