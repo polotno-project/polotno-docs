@@ -1,11 +1,11 @@
 ---
 title: Page Bleed
-description: Show and export bleed area around pages for print-ready designs
+description: Show and export bleed area around pages
 ---
 
 In printing, bleed is printing that goes beyond the edge of where the sheet will be trimmed.
 
-Polotno has native support for bleed. Every page has its own `bleed` property. By default bleeds are not visible on the workspace and export. Also bleed doesn't affect the inner part of the page. To show bleed on the canvas you can do this:
+Polotno has native support for bleed. Every page has its own `bleed` property. By default bleeds are not visible on the workspace and export. To show bleed on the canvas:
 
 ```ts
 store.activePage.set({ bleed: 20 }); // set bleed in pixels
@@ -14,7 +14,24 @@ store.activePage.set({ bleed: 20 }); // set bleed in pixels
 store.toggleBleed(true);
 ```
 
-The canvas will have special space around the page.
+The canvas will have special space around the page where elements can extend beyond the trim line.
+
+## Exporting with Bleed
+
+By default, exports do not include the bleed area. Use `includeBleed` option to export with bleed:
+
+```ts
+// export PDF with bleed
+await store.saveAsPDF({ includeBleed: true });
+
+// export image with bleed
+await store.saveAsImage({ includeBleed: true });
+
+// as data URL
+await store.toDataURL({ includeBleed: true });
+```
+
+For detailed information on PDF exports with bleed and crop marks, see [PDF Export](/docs/pdf-export).
 
 ## Live demo
 

@@ -1,75 +1,154 @@
 ---
 title: Import and Export
-description: Overview of Polotno’s import (JSON) and export (PNG, JPEG, PDF, HTML, SVG, GIF, MP4) options
+description: Overview of Polotno's import (JSON) and export (PNG, JPEG, PDF, PPTX, HTML, SVG, GIF, MP4) options
 ---
 
-Polotno offers a comprehensive suite of tools for importing and exporting designs, catering to a wide range of needs from simple JSON file handling to high-quality image and video exports. This page outlines the various import and export capabilities of Polotno with typical use cases.
+Polotno offers comprehensive import and export capabilities for designs, from open JSON format to high-quality images, PDFs, and video exports.
 
-**Use Cases**
+**Import:** JSON (open, developer-friendly format)
 
-1. **JSON Import and Export**: Save and load design states, share templates, or integrate with other systems that utilize JSON.
-2. **Image Exports (PNG, JPEG)**: Create high‑quality images for digital use, social media, or printing.
-3. **PDF Export**: Produce high‑quality prints, useful for marketing materials, books, and documentation.
-4. **HTML and SVG Export**: Embed designs into websites (experimental).
-5. **GIF Export**: Create animated designs for web use.
-6. **MP4 Video Export**: Create video content for digital marketing and social media (via Cloud Render API).
+**Export:** JSON, PNG, JPEG, PDF, PPTX, GIF, MP4, HTML, SVG
 
-## Importing Designs
+**Key use cases:** Template systems, programmatic generation, print production, digital graphics, animations, web embedding.
 
-Polotno allows you to import a design from a JSON file. This functionality is ideal for loading saved design states or templates into the Polotno editor. Whether you're resuming a previous project or sharing templates with team members, importing JSON files ensures a seamless workflow.
+## JSON Import and Export
 
-The JSON must follow Polotno's [store structure](/docs/store).
+Polotno uses an **open JSON format** designed for developer flexibility. You can export, read, modify, and re-import designs programmatically.
 
-Polotno doesn't support importing of other formats like PDF, PPT, PSD. But you can write your own tools to convert other formats into Polotno's JSON. If you plan to do that, please [contact us](https://polotno.com/contact) to collaborate on it.
+**Key features:**
+- **Simple, readable format** — JSON structure is straightforward and documented
+- **Fully modifiable** — export, modify properties, and re-import
+- **Programmatic generation** — create or modify designs in code
+- **Template system** — save and load templates, generate variations dynamically
 
-## Exporting Designs
-
-For a deep dive into available options for each export, see the [store documentation](/docs/store).
-
-### JSON Export
-
-Save the current design state to JSON for storage, sharing, or integration.
+### Export to JSON
 
 ```ts
-store.toJSON();
+const json = store.toJSON();
+console.log(json); // readable JSON structure
+
+// modify programmatically
+json.pages[0].children[0].text = 'Updated text';
+
+// save or send to backend
+localStorage.setItem('design', JSON.stringify(json));
 ```
 
-### PNG and JPEG Export
-
-Export designs to PNG or JPEG with configurable quality. Do it client‑side or server‑side depending on your workflow.
+### Import from JSON
 
 ```ts
+// load previously saved design
+const json = JSON.parse(localStorage.getItem('design'));
+store.loadJSON(json);
+
+// import template or generated design
+store.loadJSON({
+  width: 800,
+  height: 600,
+  pages: [/* ... */]
+});
+```
+
+The JSON must follow Polotno's [store structure](/docs/store). See [JSON Schema](/docs/schema) for complete reference.
+
+**Note**: Polotno doesn't import other formats (PDF, PPT, PSD) directly, but you can build converters to transform them into Polotno JSON. [Contact us](https://polotno.com/contact) to collaborate.
+
+## Image Export (PNG, JPEG)
+
+Export designs as PNG or JPEG images. Available client-side and server-side.
+
+```ts
+// basic export
 await store.saveAsImage();
-await store.toDataURL();
+
+// with quality control
+await store.saveAsImage({ 
+  pixelRatio: 2,
+  mimeType: 'image/png'
+});
+
+// as data URL or blob
+const dataURL = await store.toDataURL();
+const blob = await store.toBlob();
 ```
 
-### PDF Export
+## PDF Export
 
-Export designs into PDF files. Currently, PDFs contain raster images (JPEGs), but can be exported in very high quality and are suitable for printing. Both client‑side and server‑side are supported.
+Export designs as PDF files. Client-side exports contain raster images (flattened per page), but produce high quality suitable for print. For vector PDFs, use the [Cloud Render API](/docs/cloud-render-api).
 
 ```ts
-store.saveAsPDF();
+// basic export
+await store.saveAsPDF();
+
+// with bleed and crop marks
+await store.saveAsPDF({ 
+  includeBleed: true, 
+  cropMarkSize: 20,
+  pixelRatio: 2 
+});
 ```
 
-### HTML and SVG Export (Experimental)
+See [PDF Export](/docs/pdf-export) for details on bleed, crop marks, and quality settings.
 
-Export designs into HTML and SVG. These formats are experimental and may not fully support all features or produce consistent results. Useful for embedding designs into websites.
+## GIF Export
+
+Export animated designs as GIF files. Available client-side and server-side.
 
 ```ts
-store.saveAsHTML();
-store.saveAsSVG();
+await store.saveAsGIF();
+
+// with custom settings
+await store.saveAsGIF({
+  fps: 30,
+  pixelRatio: 2
+});
 ```
 
-### GIF Export
+## Video Export (MP4)
 
-Export animated designs as GIFs for use in banners, ads, and social posts. Available client‑side and server‑side.
+Export animated designs as MP4 video files.
+
+**Client-side:** Use `@polotno/video-export` package for browser-based video encoding. See [Video Export](/docs/video-export) for details.
+
+**Server-side:** Use [Cloud Render API](/docs/cloud-render-api).
+
+## HTML and SVG Export
+
+Export designs as HTML or SVG for embedding in websites or further processing.
 
 ```ts
-store.saveAsGIF();
+// export as HTML
+const html = await store.toHTML();
+await store.saveAsHTML();
+
+// export as SVG
+const svg = await store.toSVG();
+await store.saveAsSVG();
 ```
 
-### MP4 Video Export (Cloud Render API)
+**Note:** May not support all elements or features. For pixel-perfect exports, use PNG/JPEG or PDF.
 
-Export to MP4 is available via the [Cloud Render API](/docs/cloud-render-api) (not in the browser). Use MP4 for video content in marketing, social, and more.
+## PPTX Export (PowerPoint)
+
+Export designs as PowerPoint presentations. Multi-page designs become multi-slide presentations.
+
+```ts
+await store.saveAsPPTX();
+```
+
+See [PPTX Export](/docs/pptx-export) for details.
+
+## Server-Side Rendering
+
+All export formats can be generated server-side for high-volume or automated workflows.
+
+**Options:**
+
+1. **Node.js with Polotno SDK** — run Polotno in Node.js environment. See [Server-Side Image Generation](/docs/server-side-image-generation-with-node-js).
+2. **Cloud Render API** — fully managed rendering service, no infrastructure needed. See [Cloud Render API](/docs/cloud-render-api).
+
+## Complete API Reference
+
+For all export options and parameters, see [Store API](/docs/store).
 
 

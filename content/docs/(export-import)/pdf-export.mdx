@@ -1,0 +1,128 @@
+---
+title: PDF Export
+description: Export PDF files with bleed areas and crop marks for printing
+---
+
+Polotno's client-side PDF export supports bleed areas and crop marks. This guide covers how to export PDFs with these features.
+
+## Raster vs Vector PDFs
+
+Client-side PDF exports (`saveAsPDF()`, `toPDFDataURL()`) generate **raster PDFs** — each page contains a flattened JPEG/PNG image embedded in the PDF file.
+
+**Advantages of raster PDFs:**
+- **Most consistent results** — exported PDF looks identical to what users see on the canvas
+- **High quality with `pixelRatio`** — suitable even for print-ready workflows when quality is critical
+- **Client-side rendering** — no server required, instant results
+
+For **vector PDFs** (resolution-independent, smaller file sizes), use the [Cloud Render API](/docs/cloud-render-api).
+
+## Quick Start
+
+Export PDF with bleed and crop marks:
+
+```ts
+store.activePage.set({ bleed: 35 }); // 35px
+
+// export with bleed and crop marks
+await store.saveAsPDF({ 
+  includeBleed: true,
+  cropMarkSize: 20,
+  pixelRatio: 2  // higher quality
+});
+```
+
+## Bleed Area
+
+Bleed is the area beyond the trim edge where design elements extend. Standard bleed is 20 pixels beyond each edge.
+
+```ts
+// set bleed
+store.activePage.set({ bleed: 20 });
+
+// show bleed area on canvas
+store.toggleBleed(true);
+```
+
+See [Page Bleed](/docs/page-bleed) for details on working with bleed in the editor.
+
+## Crop Marks
+
+Crop marks (trim marks) show where to cut. They appear as small lines at each corner of the trim box.
+
+```ts
+// add crop marks to PDF export
+await store.saveAsPDF({ 
+  cropMarkSize: 20  // length of crop marks in pixels
+});
+```
+
+**Requirements**: 
+- Crop marks only work with PDF exports (not PNG/JPEG)
+
+## Export Quality
+
+Use `pixelRatio` to control resolution. Higher values produce print-ready quality suitable for professional workflows:
+
+```ts
+// standard quality
+await store.saveAsPDF({ pixelRatio: 1 });
+
+// high quality (recommended for print)
+await store.saveAsPDF({ pixelRatio: 2 });
+
+// ultra-high quality (for critical print work)
+await store.saveAsPDF({ pixelRatio: 4 });
+```
+
+**Note**: The `dpi` parameter affects PDF page dimensions, **not image quality**. Use `pixelRatio` to increase quality.
+
+See [Units and Measures](/docs/units-and-measures) for DPI details.
+
+## Complete Example
+
+```ts
+// setup design with bleed
+store.setSize(2480, 3508); // A4 at 300 DPI
+store.activePage.set({ bleed: 35 }); // 3mm bleed
+
+// export high-quality PDF with bleed and crop marks
+await store.saveAsPDF({ 
+  fileName: 'design.pdf',
+  includeBleed: true,
+  cropMarkSize: 20,
+});
+```
+
+## Export Options
+
+```ts
+await store.saveAsPDF({
+  fileName: 'design.pdf',
+  includeBleed: true,      // include bleed area
+  cropMarkSize: 20,        // crop mark length in pixels
+  pixelRatio: 2,           // resolution multiplier
+  onProgress: (progress) => console.log(progress)
+});
+```
+
+See [Store API](/docs/store) for complete reference.
+
+## Vector PDF Export
+
+For vector PDFs (resolution-independent, smaller file sizes), use the [Cloud Render API](/docs/cloud-render-api) with `vector: true` option.
+
+## Troubleshooting
+
+**Bleed not visible on canvas?** Use `store.toggleBleed(true)`.
+
+**Low quality?** Increase `pixelRatio` to 2 or 4.
+
+**Wrong page size?** Adjust `dpi` parameter (controls PDF page dimensions, not quality).
+
+## Related
+
+- [Page Bleed](/docs/page-bleed) — working with bleed in the editor
+- [Cloud Render API](/docs/cloud-render-api) — vector PDF export
+- [Units and Measures](/docs/units-and-measures) — DPI and unit conversion
+- [Store API](/docs/store) — complete export API reference
+
