@@ -20,7 +20,9 @@ function loadSchema() {
 function generateSlug(name) {
   return (
     name
-      // Convert camelCase to kebab-case
+      // Handle sequences of uppercase letters followed by lowercase (e.g., "SVGElement" -> "SVG-Element")
+      .replace(/([A-Z]+)([A-Z][a-z])/g, '$1-$2')
+      // Convert camelCase to kebab-case (e.g., "camelCase" -> "camel-Case")
       .replace(/([a-z])([A-Z])/g, '$1-$2')
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, '-')
@@ -40,7 +42,7 @@ function getTypeDisplay(property) {
       ? property.$ref.split('#/definitions/')[1]
       : property.$ref.replace('#/definitions/', '');
     const refSlug = generateSlug(refName);
-    return `[\`${refName}\`](${refSlug})`;
+    return `[\`${refName}\`](./${refSlug})`;
   }
   if (property.anyOf) return property.anyOf.map(getTypeDisplay).join(' \\| ');
   if (property.allOf) return property.allOf.map(getTypeDisplay).join(' & ');
@@ -133,7 +135,7 @@ ${JSON.stringify(definition, null, 2)}
     relatedRefs.forEach((ref) => {
       const refName = ref.replace('#/definitions/', '');
       const refSlug = generateSlug(refName);
-      content += `- [${refName}](${refSlug})\n`;
+      content += `- [${refName}](./${refSlug})\n`;
     });
   } else {
     content += '*No related definitions found.*\n';
