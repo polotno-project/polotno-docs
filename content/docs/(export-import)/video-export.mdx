@@ -5,7 +5,9 @@ description: Convert Polotno designs to video files using browser-based encoding
 
 ## Overview
 
-Polotno supports exporting designs to video (MP4) format using **client-side rendering**. This means all video encoding happens directly in the browser without requiring a server. This feature is available through the `@polotno/video-export` package.
+Polotno supports exporting animated designs to video (MP4) format using **client-side rendering**. This means all video encoding happens directly in the browser without requiring a server. This feature is available through the `@polotno/video-export` package.
+
+For server-side video generation at scale, see [Cloud Render API](/docs/cloud-render-api).
 
 ## Installation
 
@@ -78,6 +80,20 @@ All video encoding happens **directly in the browser** using client-side renderi
 - Large videos or high FPS may take longer to process
 </Callout>
 
+
+## Common Questions
+
+### How long does video export take?
+
+Export time depends on video length, complexity, and user hardware. Higher FPS and pixel ratios increase render time.
+
+### Can I export videos server-side?
+
+Yes. Use the [Cloud Render API](/docs/cloud-render-api) for server-side video generation with consistent performance.
+
+### Does this work with animations?
+
+Yes. Enable animations first with `unstable_setAnimationsEnabled(true)`. See [Animations and Videos](/docs/animations-and-videos) for details.
 
 ## Live Demo
 

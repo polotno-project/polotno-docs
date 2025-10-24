@@ -5,11 +5,11 @@ description: Introduction to Polotno - a JavaScript library for creating canvas 
 
 # Polotno Overview
 
-**Polotno** is an opinionated JavaScript library and set of React components designed to create canvas editors tailored for various business applications.
+**Polotno** is an opinionated JavaScript library and set of React components designed to create canvas editors tailored for various business applications. The SDK provides a complete visual editor framework for building white-label design tools, template systems, and programmatic image generation.
 
 There are many powerful JavaScript frameworks and tools that can help you make a canvas editor. But almost all of them are 'low-level' in nature. Take [Konva.js](https://konvajs.org/) for example – it's a great 2d canvas framework; but you'd need to write **a lot of code** to make a full canvas editor app.
 
-Polotno is a simple tool that solves a focused set of business problems. It is fast and we are committed to keeping the API as light as possible. So you can just drop it on the page and get a full featured visual design suite.
+Polotno is a simple tool that solves a focused set of business problems. It is fast and we are committed to keeping the API as light as possible. So you can just drop it on the page and get a full featured design suite.
 
 ## Quick Start (React)
 
@@ -100,7 +100,7 @@ Optionally, you can import CSS styles from CDN:
 
 ### Store
 
-Store is the main object to control data and elements of canvas. It provides API for adding/updating/removing canvas objects, undo/redo, selection changes, zooming.
+The [Store](/docs/store) is the main object to control data and elements of the canvas. It provides API for adding/updating/removing canvas objects, undo/redo, selection changes, zooming, and [export/import operations](/docs/import-and-export).
 
 ```javascript
 import { createStore } from 'polotno/model/store';

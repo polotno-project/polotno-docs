@@ -237,4 +237,18 @@ Quill.register(FontWeightBlot);
 
 <Sandbox github="polotno-project/polotno-docs/tree/main/examples/polotno-rich-text" />
 
+## Common Questions
+
+### Does rich text affect performance?
+
+Rich text uses a different rendering engine that may impact performance with many text elements. Test with your specific use case.
+
+### Can I use rich text with server-side rendering?
+
+Yes. When using [Cloud Render API](/docs/cloud-render-api) or [polotno-node](/docs/server-side-image-generation-with-node-js), pass `htmlTextRenderEnabled: true` in export options.
+
+### What HTML tags are supported?
+
+Standard formatting tags: `<strong>`, `<em>`, `<u>`, `<span>`, and inline styles. See [Quill documentation](https://quilljs.com/) for complete details.
+
 

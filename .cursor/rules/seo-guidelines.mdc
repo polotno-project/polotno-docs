@@ -1,0 +1,115 @@
+---
+alwaysApply: false
+---
+
+# SEO & Discoverability Guidelines
+
+## Objectives
+
+Improve search engine and LLM discoverability without sacrificing the technical, developer-first tone.
+
+## Subtle Synonym Usage
+
+Use alternate terminology naturally, 1-2 times per page where relevant:
+
+- **"Polotno SDK"** → also: "canvas editor", "design SDK", "visual editor"
+- **"Template"** → also: "design template", "layout"
+- **"Export"** → also: "render", "generate"
+- **"White-label"** → occasionally mention to capture that search intent
+- **"Programmatic generation"** → also: "automated design", "dynamic content"
+
+**Rules:**
+- Don't force it—only where natural
+- First mention should be the official term
+- Maximum 2 alternate terms per page
+- Keep technical precision; avoid marketing fluff
+
+## Internal Linking
+
+Add contextual links throughout content:
+
+- **First mention rule**: Link the first mention of a key concept to its main page
+- **Cross-link features**: When mentioning a feature, link to its docs
+- **API references**: Link to API docs from feature pages
+- **Related pages**: Add "See also" or "Related" sections at the end
+
+Example:
+```markdown
+The [Store API](/docs/store) manages all design state. You can export designs
+using `store.toJSON()` or [render them to images](/docs/import-and-export).
+```
+
+## FAQ Sections
+
+Add small FAQ sections to high-traffic pages when natural:
+
+**When to add:**
+- Pages with common user questions
+- Complex topics that need clarification
+- Getting started / overview pages
+
+**Format:**
+```markdown
+## Common Questions
+
+### Can I use Polotno server-side?
+
+Yes. See [Server-Side Rendering](/docs/server-side-image-generation-with-node-js).
+
+### What export formats are supported?
+
+PNG, JPEG, PDF, PPTX, GIF, MP4, HTML, SVG. See [Export options](/docs/import-and-export).
+```
+
+**Rules:**
+- Keep answers 1-3 sentences
+- Link to detailed docs for more info
+- Use H3 for questions (improves snippet extraction)
+- Limit to 3-5 questions per page
+
+## Question-Based Headings
+
+Use question format for H2/H3 where it flows naturally:
+
+**Good candidates:**
+- "How do I export to PDF?" → becomes H2/H3
+- "What's the difference between X and Y?"
+- "Can I customize the toolbar?"
+
+**Avoid forcing it:**
+- Technical API sections → keep standard headings
+- Lists of methods/properties → keep concise names
+- When it feels awkward or verbose
+
+## Related Pages Sections
+
+Add at end of most pages:
+
+```markdown
+## Related Pages
+
+- [Export and Import](/docs/import-and-export) - Overview of all export formats
+- [Store API](/docs/store) - Complete API reference
+- [Cloud Render API](/docs/cloud-render-api) - Server-side rendering service
+```
+
+**Rules:**
+- 3-5 most relevant pages
+- One-line description per link
+- Order by relevance, not alphabetically
+
+## Schema Markup
+
+Infrastructure handles structured data automatically (JSON-LD):
+- BreadcrumbList for navigation
+- TechArticle for documentation pages
+- FAQPage for pages with FAQ sections (when appropriate)
+
+## Anti-Patterns
+
+Don't do these:
+- ❌ Marketing language ("best-in-class", "revolutionary")
+- ❌ Keyword stuffing ("Polotno SDK canvas editor design tool")
+- ❌ Rewriting existing good prose just to add synonyms
+- ❌ Adding FAQs that duplicate page content
+- ❌ Creating fake questions users don't actually ask

@@ -48,9 +48,23 @@ var pixels = unitToPx({
 
 ## Exports and DPI
 
-When you export your design into PDF, Polotno will use 72 DPI to determine the size of the exported pages. If you increase just the dpi, it will not change quality of the exported PDF. It will just produce a PDF file with smaller page sizes. You have two options to increase quality of your exported designs:
+When you [export your design to PDF](/docs/pdf-export), Polotno will use 72 DPI to determine the size of the exported pages. If you increase just the dpi, it will not change quality of the exported PDF. It will just produce a PDF file with smaller page sizes. You have two options to increase quality of your exported designs:
 
 1. Use high **pixelRatio** attribute when you do the export. `store.saveAsPDF({ pixelRatio: 2 })`
 2. Change DPI and change ALL pixels values in the store.
+
+## Common Questions
+
+### How do I create print-ready designs?
+
+Use `store.setUnit({ unit: 'mm', dpi: 300 })` to work in print units. For export quality, increase `pixelRatio` in [PDF export](/docs/pdf-export).
+
+### Why doesn't changing DPI improve export quality?
+
+DPI only affects UI display and page dimensions, not render quality. Use `pixelRatio` in [export functions](/docs/import-and-export) to increase quality.
+
+### Can I mix units in a design?
+
+The canvas editor internally uses pixels. Units are for display only. Use conversion functions to work with different units programmatically.
 
 

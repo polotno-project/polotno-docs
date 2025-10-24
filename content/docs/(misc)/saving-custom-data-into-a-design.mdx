@@ -47,4 +47,13 @@ store.set({
 
 `custom` must be an object `{}`. You can write any data into that object. Polotno never uses it for rendering, so it is under your control. By default, `custom` will be `null`, so when you read some data from `custom`, make sure it is defined.
 
+The `custom` attribute is included in [JSON export](/docs/import-and-export) via `store.toJSON()`, making it perfect for saving metadata that travels with your design templates.
+
+## Use Cases
+
+- **Template variables**: Store variable names for [dynamic template generation](/docs/dynamic-template-variables)
+- **Design metadata**: Save author, version, or creation date
+- **Element IDs**: Track external database references
+- **QR code data**: Store encoded content for [QR code elements](/docs/qr-codes)
+
 

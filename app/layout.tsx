@@ -2,12 +2,38 @@ import '@/app/global.css';
 import { RootProvider } from 'fumadocs-ui/provider';
 import { IBM_Plex_Sans } from 'next/font/google';
 import Script from 'next/script';
+import type { Metadata } from 'next';
 
 const ibmPlexSans = IBM_Plex_Sans({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700'],
   style: ['normal', 'italic'],
 });
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://polotno.com'),
+  title: {
+    template: '%s | Polotno SDK Documentation',
+    default: 'Polotno SDK Documentation',
+  },
+  description:
+    'Complete documentation for Polotno SDK - a JavaScript canvas editor and design tool for building white-label design applications.',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://polotno.com/docs',
+    siteName: 'Polotno SDK Documentation',
+    title: 'Polotno SDK Documentation',
+    description:
+      'Complete documentation for Polotno SDK - a JavaScript canvas editor and design tool for building white-label design applications.',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Polotno SDK Documentation',
+    description:
+      'Complete documentation for Polotno SDK - a JavaScript canvas editor and design tool.',
+  },
+};
 
 export default function Layout({ children }: LayoutProps<'/'>) {
   return (
