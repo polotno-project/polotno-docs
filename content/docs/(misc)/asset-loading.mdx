@@ -1,0 +1,100 @@
+---
+title: Asset Loading Configuration
+description: Customize loading behavior, timeouts, and error handling for images and fonts
+---
+
+Polotno provides methods to control how assets (images, fonts) are loaded, including timeout settings and error handlers.
+
+## Asset Load Timeout
+
+Configure how long Polotno waits before timing out asset loads (images, SVGs). Default: 30 seconds.
+
+```ts
+import { setAssetLoadTimeout } from 'polotno/config';
+
+// set timeout to 10 seconds
+setAssetLoadTimeout(10000);
+```
+
+## Font Load Timeout
+
+Configure timeout specifically for font loading. Default: 30 seconds.
+
+```ts
+import { setFontLoadTimeout } from 'polotno/config';
+
+// set font timeout to 15 seconds
+setFontLoadTimeout(15000);
+```
+
+## Error Handling
+
+Register a global error handler for asset loading failures:
+
+```ts
+import { onLoadError } from 'polotno/config';
+
+onLoadError((error) => {
+  console.error('Failed to load asset:', error);
+});
+```
+
+## Custom Image Loader (Advanced)
+
+<Callout type="warn">
+**Advanced Feature**: This is an experimental API for complex scenarios. Not supported in [Cloud Render API](/docs/cloud-render-api) or [polotno-node](/docs/server-side-image-generation-with-node-js).
+</Callout>
+
+Override the default image loading mechanism with a custom React hook. The hook must follow the [react-konva useImage hook](https://konvajs.org/docs/react/Images.html) pattern, returning `[image, status]`.
+
+```tsx
+import React from 'react';
+import { unstable_setImageLoaderHook } from 'polotno/config';
+
+function useCustomImageLoader(url, crossOrigin) {
+  const [image, setImage] = React.useState(null);
+  const [status, setStatus] = React.useState('loading');
+
+  React.useEffect(() => {
+    if (!url) return;
+    
+    setStatus('loading');
+    const img = document.createElement('img');
+    
+    const onLoad = () => {
+      setStatus('loaded');
+      setImage(img);
+    };
+    
+    const onError = () => {
+      setStatus('failed');
+      setImage(null);
+    };
+    
+    img.addEventListener('load', onLoad);
+    img.addEventListener('error', onError);
+    
+    if (crossOrigin) {
+      img.crossOrigin = crossOrigin;
+    }
+    img.src = url;
+    
+    return () => {
+      img.removeEventListener('load', onLoad);
+      img.removeEventListener('error', onError);
+    };
+  }, [url, crossOrigin]);
+  
+  return [image, status];
+}
+
+// register the custom hook
+unstable_setImageLoaderHook(useCustomImageLoader);
+```
+
+### Use Cases
+
+- **Authentication**: Modify URLs or add auth tokens before loading
+- **S3 Link Revalidation**: Refresh expired pre-signed URLs
+- **Custom CDN Logic**: Route requests through specific endpoints
+- **Retry Logic**: Implement automatic retries on failure

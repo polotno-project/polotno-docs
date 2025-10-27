@@ -189,6 +189,25 @@ window.polotnoConfig.addGlobalFont({
 });
 ```
 
+To remove a specific global font:
+
+```ts
+import { removeGlobalFont } from 'polotno/config';
+
+removeGlobalFont('MyCustomFont');
+```
+
+To replace all global fonts at once:
+
+```ts
+import { replaceGlobalFonts } from 'polotno/config';
+
+replaceGlobalFonts([
+  { fontFamily: 'Font1', url: 'https://example.com/font1.ttf' },
+  { fontFamily: 'Font2', url: 'https://example.com/font2.ttf' },
+]);
+```
+
 ## How to get API endpoints for Google Fonts list and previews
 
 ```ts

@@ -1,0 +1,47 @@
+---
+title: Image Downscaling
+description: Improve image quality when scaling down with enhanced algorithms
+---
+
+By default, Polotno uses an enhanced downscaling algorithm when images are scaled down on the canvas. This prevents common rendering artifacts that occur with the browser's default image scaling.
+
+## The Problem
+
+When you scale down high-resolution images using the HTML5 canvas element, browsers use simple bilinear interpolation by default. This can produce visual artifacts like:
+
+- Pixelation and jagged edges
+- Moiré patterns on detailed images
+- Loss of sharpness and clarity
+
+This is especially noticeable when scaling images down significantly (e.g., displaying a 2000×2000px image at 200×200px).
+
+## The Solution
+
+Polotno applies a multi-step downscaling algorithm that progressively reduces image size, producing smoother and higher-quality results. This technique is widely recommended for canvas-based image manipulation.
+
+## Configuration
+
+The downscaling feature is **enabled by default**. You can disable it if needed:
+
+```ts
+import { useDownScaling } from 'polotno/config';
+
+// disable enhanced downscaling (use browser default)
+useDownScaling(false);
+
+// re-enable enhanced downscaling (default)
+useDownScaling(true);
+```
+
+## When to Disable
+
+Consider disabling downscaling if:
+
+- Performance is critical and you need faster rendering
+- You're working with small images that don't benefit from the algorithm
+- You prefer the browser's native rendering behavior
+
+## Performance Impact
+
+Enhanced downscaling uses additional CPU time during image rendering. For most use cases, the quality improvement outweighs the performance cost. On slower devices with many large images, disabling this feature may improve responsiveness.
+

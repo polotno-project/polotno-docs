@@ -28,6 +28,22 @@ unstable_setTextOverflow('change-font-size');
 You can use these settings in combination with
 [unstable_setTextVerticalResizeEnabled](/docs/vertical-text-resize).
 
+## Text Line Splitting
+
+Control whether long text can split into multiple lines when it exceeds the width. Default is `false`.
+
+```ts
+import { unstable_setTextSplitAllowed } from 'polotno/config';
+
+// allow text to split into multiple lines when width is exceeded
+unstable_setTextSplitAllowed(true);
+
+// disable text splitting (default)
+unstable_setTextSplitAllowed(false);
+```
+
+When disabled (default), text remains on a single line and overflows according to the `unstable_setTextOverflow` setting. When enabled, text wraps to new lines automatically.
+
 ## Client-Side Default: resize overflow
 
 - Behavior: If the text exceeds its defined width or height, Polotno automatically increases the bounding box height to accommodate the content.

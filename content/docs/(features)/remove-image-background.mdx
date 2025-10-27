@@ -1,0 +1,96 @@
+---
+title: Remove Image Background
+description: Enable AI-powered background removal in the Polotno editor UI
+---
+
+Polotno provides built-in UI for removing image backgrounds using AI. This feature integrates with the [Remove Background API](/docs/remove-background-api) and appears in the image toolbar.
+
+## Availability
+
+- **Business plan**: Enabled by default
+- **Team plan**: Available on request (contact support)
+- **Pricing**: Additional usage charges apply. See [pricing details](https://polotno.com/sdk/pricing) for rates
+
+## Disable the Feature
+
+If you want to hide the "Remove Background" button from the toolbar (even on Business plan):
+
+```tsx
+import { Toolbar } from 'polotno/toolbar/toolbar';
+
+<Toolbar
+  store={store}
+  components={{
+    ImageRemoveBackground: () => null,
+  }}
+/>
+```
+
+## Requirements
+
+1. **API Key**: Valid Polotno API key with Business plan (or Team plan with feature enabled)
+2. **Network Access**: Internet connectivity required to call the cloud API
+
+## How It Works
+
+Once enabled, users will see a "Remove Background" button in the image element toolbar. Clicking it:
+
+1. Sends the image to Polotno's cloud API
+2. Processes the image with AI background removal
+3. Returns a transparent PNG
+4. Updates the canvas element with the result
+
+For programmatic background removal without the UI, use the [Remove Background API](/docs/remove-background-api) directly:
+
+```ts
+const req = await fetch(
+  'https://api.polotno.com/api/remove-image-background?KEY=YOUR_API_KEY',
+  {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ url: 'path-to-image' }),
+  }
+);
+const res = await req.json();
+// returns base64 data URL with transparent background
+const newImageURL = res.url;
+```
+
+<Callout type="warn">
+**Image Storage**: By default, the API returns a base64-encoded image which is saved directly into your design JSON. This increases JSON size significantly. **It is strongly recommended** to upload the processed image to your own cloud storage and store only the URL in the design JSON.
+</Callout>
+
+Example with cloud upload:
+
+```ts
+// after getting the base64 result
+const res = await req.json();
+const base64Image = res.url;
+
+// upload to your cloud storage
+const uploadedURL = await uploadToYourCloud(base64Image);
+
+// update the element with the cloud URL instead of base64
+element.set({ src: uploadedURL });
+```
+
+## Limitations
+
+- Internet connection required
+- Processing time varies based on image size and complexity
+- Works best with clear subject separation from background
+
+## Error Handling
+
+If the API call fails (network error, quota exceeded, invalid key), users will see an error message in the UI. Ensure your API key is valid and your subscription is active.
+
+## Security & Privacy
+
+**Data Storage**: Polotno does not store processed images. All images are processed transiently and deleted immediately after processing.
+
+**Third-Party Service**: Background removal uses [Replicate](https://replicate.com/) as the processing provider. By using this feature, processed images are sent to Replicate's infrastructure.
+
+**Terms**: Review [Replicate's Terms of Service](https://replicate.com/terms) if you have compliance requirements about where image data is processed.
+
