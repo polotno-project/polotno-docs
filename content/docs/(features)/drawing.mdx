@@ -1,0 +1,89 @@
+---
+title: Drawing Tool
+description: Enable freehand drawing on canvas with customizable stroke and color
+---
+
+The drawing tool allows users to create freehand drawings directly on the canvas. Drawings are automatically converted into SVG elements that can be edited, styled, and manipulated like any other element.
+
+## How it works
+
+**Default mode**: Polotno operates in `selection` mode, where users can click and select elements on the canvas.
+
+**Drawing mode**: When activated, the canvas becomes a drawing area:
+- All objects become non-clickable
+- The entire canvas acts as a drawing surface
+- Each stroke creates a new SVG element
+- Users can change colors and properties after creation
+
+## Activating drawing mode
+
+Use the [Store API](/docs/store) to control the drawing tool programmatically.
+
+```ts
+// enable drawing mode
+store.setTool('draw');
+
+// return to selection mode
+store.setTool('selection');
+```
+
+## Configuring drawing options
+
+Before or during drawing mode, configure stroke properties:
+
+```ts
+store.setToolOptions({
+  strokeWidth: 50,  // brush size in pixels
+  stroke: 'red',    // stroke color (any CSS color)
+  opacity: 0.4      // opacity from 0 to 1
+});
+```
+
+## Full example
+
+```ts
+import { createStore } from 'polotno/model/store';
+
+const store = createStore({ key: 'YOUR_API_KEY' });
+
+// configure drawing options
+store.setToolOptions({
+  strokeWidth: 10,
+  stroke: '#0066ff',
+  opacity: 1
+});
+
+// enable drawing
+store.setTool('draw');
+
+// later, return to selection mode
+store.setTool('selection');
+```
+
+## Editing drawn elements
+
+After drawing, each stroke becomes an SVG element that users can:
+- Select and move
+- Resize and rotate
+- Change fill color via properties panel
+- Delete or duplicate
+- Apply filters and effects
+
+## Checking current tool
+
+```ts
+// check which tool is currently active
+console.log(store.tool); // 'draw' or 'selection'
+
+// check current tool options
+console.log(store.toolOptions);
+```
+
+## Use cases
+
+- **Annotations**: Mark up designs with freehand notes
+- **Signatures**: Capture digital signatures
+- **Sketching**: Quick concept sketches over designs
+- **Highlighting**: Draw attention to specific areas
+- **Creative effects**: Add hand-drawn elements to designs
+

@@ -186,6 +186,51 @@ Set role of the current user. Possible values are: `user` and `admin`. For more 
 store.setRole('admin');
 ```
 
+## Tools
+
+### store.setTool(toolName)
+
+Switch between different canvas tools. Available values: `selection`, `draw`.
+
+```ts
+// enable drawing mode
+store.setTool('draw');
+
+// return to default selection mode
+store.setTool('selection');
+```
+
+### store.tool
+
+Getter for current active tool. Returns `selection` or `draw`.
+
+```ts
+console.log(store.tool); // 'selection'
+```
+
+### store.setToolOptions(options)
+
+Configure options for the drawing tool. Sets stroke properties for freehand drawing.
+
+```ts
+store.setToolOptions({
+  strokeWidth: 50,  // brush size in pixels
+  stroke: 'red',    // stroke color (any CSS color)
+  opacity: 0.4      // opacity from 0 to 1
+});
+```
+
+### store.toolOptions
+
+Getter for current tool options.
+
+```ts
+console.log(store.toolOptions);
+// { strokeWidth: 50, stroke: 'red', opacity: 0.4 }
+```
+
+For more details, see [Drawing Tool Documentation](/docs/drawing).
+
 ## Working with elements
 
 ### store.selectedElements
