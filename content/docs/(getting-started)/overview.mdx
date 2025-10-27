@@ -167,6 +167,42 @@ Most of Polotno UI is made with [Blueprint](https://blueprintjs.com/) framework.
 
 Polotno is using [Blueprint Icons](https://blueprintjs.com/docs/#icons) and [Meronex Icons](https://icons.meronex.com/).
 
+<Accordions type="single">
+  <Accordion title="CSS Scoping (Optional)">
+
+If you need to isolate Polotno styles from your application's global CSS, use the scoped CSS variant.
+
+**Step 1**: Replace regular Blueprint CSS with the scoped version:
+
+```html
+<link
+  href="https://unpkg.com/polotno@^2/blueprint.polotno.css"
+  rel="stylesheet"
+/>
+```
+
+**Step 2**: Add `bp5-scope` class to any Polotno container:
+
+```tsx
+<PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+  <SidePanelWrap>
+    <SidePanel store={store} />
+  </SidePanelWrap>
+  <WorkspaceWrap>
+    <Toolbar store={store} downloadButtonEnabled />
+    <Workspace store={store} />
+    <ZoomButtons store={store} />
+  </WorkspaceWrap>
+</PolotnoContainer>
+```
+
+**Live example**: [CSS Scoping Demo](https://codesandbox.io/p/sandbox/serene-water-x4ztyl)
+
+This approach prevents Polotno's Blueprint styles from affecting your application's UI and vice versa. Useful when integrating Polotno into existing applications with their own design systems.
+
+  </Accordion>
+</Accordions>
+
 ### Reactivity
 
 The core of Polotno is built using the [MobX](https://mobx.js.org/) library. You can leverage MobX API to add reactivity to your own application. The foundation of Polotno is built with the [MobX](https://mobx.js.org/) library. To incorporate reactivity into your application, you can utilize the MobX API along with the [mobx-state-tree](https://mobx-state-tree.js.org/intro/welcome) library. Within the React framework, the `observer()` function is essential.
