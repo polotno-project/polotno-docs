@@ -27,6 +27,22 @@ const App = () => {
 
 The `Workspace` will automatically take the full width and height of its parent, so you don't have to adjust its size manually. Set the size of the parent `div` with CSS.
 
+## Layout orientation
+
+Control whether pages are stacked vertically (default) or horizontally in the workspace:
+
+```tsx
+// Default vertical layout (pages stack top to bottom)
+<Workspace store={store} layout="vertical" />
+
+// Horizontal layout (pages arranged left to right)
+<Workspace store={store} layout="horizontal" />
+```
+
+**Use cases:**
+- `vertical` (default): Standard multi-page documents, presentations, social media carousels
+- `horizontal`: Timeline-based designs, panoramic layouts, storyboards
+
 ## Customize page controls
 
 You can customize page controls of your `<Workspace />` component. Remove buttons, add your own, etc. You are in complete control over what is shown around the page.

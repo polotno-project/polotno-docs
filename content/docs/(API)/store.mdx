@@ -178,6 +178,20 @@ store.toggleRulers(false);
 
 Getter for current state of rulers visibility.
 
+### store.toggleDistanceGuides()
+
+Show or hide distance guides on workspace. Distance guides appear when a user selects element and hold ALT to show distances to nearby elements.
+The property allows to force show distance even if user didn't hold ALT.
+
+```ts
+store.toggleDistanceGuides();
+store.toggleDistanceGuides(false);
+```
+
+### store.distanceGuidesVisible
+
+Getter for current state of distance guides visibility.
+
 ### store.setRole(role)
 
 Set role of the current user. Possible values are: `user` and `admin`. For more information see [Roles Documentation](/docs/user-roles).
