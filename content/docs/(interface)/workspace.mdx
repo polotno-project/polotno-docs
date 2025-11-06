@@ -52,8 +52,8 @@ Switch between vertical and horizontal orientation in this live editor. The stor
   files={{
     "/App.js": `import React from 'react';
 import { Workspace } from 'polotno/canvas/workspace';
-import { PagesTimeline } from 'polotno/pages-timeline';
 import { createStore } from 'polotno/model/store';
+import { Button, ButtonGroup, Navbar, NavbarGroup, NavbarHeading } from '@blueprintjs/core';
 import '@blueprintjs/core/lib/css/blueprint.css';
 
 const store = createStore({
@@ -99,25 +99,23 @@ summary.addElement({
 export default function App() {
   const [layout, setLayout] = React.useState('horizontal');
 
-  const buttonStyle = (active) => ({
-    padding: '6px 12px',
-    borderRadius: '6px',
-    border: '1px solid #0f172a',
-    background: active ? '#0f172a' : '#ffffff',
-    color: active ? '#ffffff' : '#0f172a',
-    cursor: 'pointer',
-  });
-
   return (
-    <div style={{ width: '100vw', height: '100vh', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-      <div style={{ padding: '12px', display: 'flex', gap: '12px' }}>
-        <button style={buttonStyle(layout === 'vertical')} onClick={() => setLayout('vertical')}>
-          Vertical
-        </button>
-        <button style={buttonStyle(layout === 'horizontal')} onClick={() => setLayout('horizontal')}>
-          Horizontal
-        </button>
-      </div>
+    <div style={{ width: '100vw', height: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <Navbar>
+        <NavbarGroup>
+          <NavbarHeading>Workspace layout</NavbarHeading>
+        </NavbarGroup>
+        <NavbarGroup align="right">
+          <ButtonGroup>
+            <Button active={layout === 'vertical'} onClick={() => setLayout('vertical')}>
+              Vertical
+            </Button>
+            <Button active={layout === 'horizontal'} onClick={() => setLayout('horizontal')}>
+              Horizontal
+            </Button>
+          </ButtonGroup>
+        </NavbarGroup>
+      </Navbar>
       <div style={{ flex: 1, minHeight: 0 }}>
         <Workspace store={store} layout={layout} />
       </div>
