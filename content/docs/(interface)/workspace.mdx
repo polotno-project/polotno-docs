@@ -54,6 +54,7 @@ Switch between vertical and horizontal orientation in this live editor. The stor
 import { Workspace } from 'polotno/canvas/workspace';
 import { PagesTimeline } from 'polotno/pages-timeline';
 import { createStore } from 'polotno/model/store';
+import '@blueprintjs/core/lib/css/blueprint.css';
 
 const store = createStore({
   key: 'nFA5H9elEytDyPyvKL7T',
@@ -120,7 +121,6 @@ export default function App() {
       <div style={{ flex: 1, minHeight: 0 }}>
         <Workspace store={store} layout={layout} />
       </div>
-      <PagesTimeline store={store} defaultOpened />
     </div>
   );
 }
