@@ -43,6 +43,91 @@ Control whether pages are stacked vertically (default) or horizontally in the wo
 - `vertical` (default): Standard multi-page documents, presentations, social media carousels
 - `horizontal`: Timeline-based designs, panoramic layouts, storyboards
 
+**Demo:**
+
+Switch between vertical and horizontal orientation in this live editor. The store renders three pages so you can evaluate the timeline spacing.
+
+<SandpackDemo 
+  height={560}
+  files={{
+    "/App.js": `import React from 'react';
+import { Workspace } from 'polotno/canvas/workspace';
+import { PagesTimeline } from 'polotno/pages-timeline';
+import { createStore } from 'polotno/model/store';
+
+const store = createStore({
+  key: 'nFA5H9elEytDyPyvKL7T',
+  showCredit: true,
+});
+const intro = store.addPage();
+
+// Prepare sample pages
+intro.set({ name: 'Intro' });
+intro.addElement({
+  type: 'text',
+  text: 'Intro page',
+  x: store.width / 2 - 200,
+  y: 220,
+  width: 400,
+  fontSize: 48,
+  align: 'center',
+});
+
+const gallery = store.addPage({ name: 'Gallery' });
+gallery.addElement({
+  type: 'text',
+  text: 'Gallery page',
+  x: store.width / 2 - 200,
+  y: 220,
+  width: 400,
+  fontSize: 48,
+  align: 'center',
+});
+
+const summary = store.addPage({ name: 'Summary' });
+summary.addElement({
+  type: 'text',
+  text: 'Summary page',
+  x: store.width / 2 - 200,
+  y: 220,
+  width: 400,
+  fontSize: 48,
+  align: 'center',
+});
+
+export default function App() {
+  const [layout, setLayout] = React.useState('horizontal');
+
+  const buttonStyle = (active) => ({
+    padding: '6px 12px',
+    borderRadius: '6px',
+    border: '1px solid #0f172a',
+    background: active ? '#0f172a' : '#ffffff',
+    color: active ? '#ffffff' : '#0f172a',
+    cursor: 'pointer',
+  });
+
+  return (
+    <div style={{ width: '100vw', height: '100vh', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+      <div style={{ padding: '12px', display: 'flex', gap: '12px' }}>
+        <button style={buttonStyle(layout === 'vertical')} onClick={() => setLayout('vertical')}>
+          Vertical
+        </button>
+        <button style={buttonStyle(layout === 'horizontal')} onClick={() => setLayout('horizontal')}>
+          Horizontal
+        </button>
+      </div>
+      <div style={{ flex: 1, minHeight: 0 }}>
+        <Workspace store={store} layout={layout} />
+      </div>
+      <PagesTimeline store={store} defaultOpened />
+    </div>
+  );
+}
+`
+  }}
+/>
+
 ## Customize page controls
 
 You can customize page controls of your `<Workspace />` component. Remove buttons, add your own, etc. You are in complete control over what is shown around the page.
