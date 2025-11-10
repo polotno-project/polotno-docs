@@ -484,12 +484,17 @@ await store.toDataURL({ ignoreBackground: true });
 // export as jpg
 await store.toDataURL({ mimeType: 'image/jpeg' });
 
+// control jpg compression (0-1 range, defaults to browser value)
+await store.toDataURL({ mimeType: 'image/jpeg', quality: 0.85 });
+
 // export only required page
 await store.toDataURL({ pageId: store.pages[1].id });
 
 // export with page bleed
 await store.toDataURL({ includeBleed: true });
 ```
+
+Use `quality` to control JPEG compression (0-1) whenever you switch `mimeType` to `image/jpeg`. Lower values produce smaller files; keep it above `0.8` for print previews.
 
 ### await store.saveAsImage()
 
@@ -501,6 +506,9 @@ store.saveAsImage({ fileName: 'polotno.png' });
 
 // export as jpg
 store.saveAsImage({ mimeType: 'image/jpeg' });
+
+// control jpg compression (0-1 range, defaults to browser value)
+store.saveAsImage({ mimeType: 'image/jpeg', quality: 0.85 });
 
 // make exported image 2x bigger (higher quality)
 store.saveAsImage({ pixelRatio: 2 });
@@ -514,6 +522,8 @@ store.saveAsImage({ pageId: store.pages[1].id });
 // export with page bleed
 store.saveAsImage({ includeBleed: true });
 ```
+
+Tune `quality` for JPEG downloads when you need a balance between file size and preview fidelity. The option ranges from `0` (smallest) to `1` (best quality).
 
 ### async store.toPDFDataURL()
 
@@ -532,12 +542,20 @@ await store.toPDFDataURL({ ignoreBackground: true });
 // export only sub set of pages
 await store.toPDFDataURL({ pageIds: [store.pages[0].id, store.pages[2].id] });
 
+// export with custom measurement units for trim boxes
+await store.toPDFDataURL({ unit: 'mm' });
+
 // export with page bleed and crop marks
 await store.toPDFDataURL({ includeBleed: true, cropMarkSize: 20 });
 
 // track progress
 await store.toPDFDataURL({ onProgress: (progress) => console.log(progress) });
+
+// render several pages concurrently while assets load
+await store.toPDFDataURL({ parallel: 8 });
 ```
+
+Set `unit` to align PDF geometry with print-ready specs (`pt`, `mm`, `cm`, or `in`). Increase `parallel` to process multiple pages simultaneously so images and fonts load sooner across large documents; lower it if bandwidth or memory is limited.
 
 ### await store.saveAsPDF()
 
@@ -563,12 +581,20 @@ await store.saveAsPDF({ includeBleed: true });
 // export with page bleed and crop marks
 await store.saveAsPDF({ includeBleed: true, cropMarkSize: 20 });
 
+// export using millimeters for bleed and crop mark values
+await store.saveAsPDF({ unit: 'cm' });
+
 // export only sub set of pages
 await store.saveAsPDF({ pageIds: [store.pages[0].id, store.pages[2].id] });
 
 // track progress
 await store.saveAsPDF({ onProgress: (progress) => console.log(progress) });
+
+// render several pages concurrently while assets load
+await store.saveAsPDF({ parallel: 8 });
 ```
+
+Use `unit` when your workflow requires trim boxes in `mm`, `cm`, or `in` instead of the default `pt`. Adjust `parallel` to balance how many pages load assets at once versus overall memory usage.
 
 ### await store.toBlob()
 
@@ -587,12 +613,17 @@ await store.toBlob({ ignoreBackground: true });
 // export as jpg
 await store.toBlob({ mimeType: 'image/jpeg' });
 
+// control jpg compression (0-1 range, defaults to browser value)
+await store.toBlob({ mimeType: 'image/jpeg', quality: 0.85 });
+
 // export only required page
 await store.toBlob({ pageId: store.pages[1].id });
 
 // export with page bleed
 await store.toBlob({ includeBleed: true });
 ```
+
+When exporting JPEG blobs, pass `quality` (0-1) to match asset pipelines that expect specific compression levels.
 
 ### await store.toHTML()
 
