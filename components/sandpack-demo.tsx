@@ -51,7 +51,7 @@ export function SandpackDemo({
   }, []);
   // Default dependencies - always include polotno and common React dependencies
   const defaultDependencies = {
-    polotno: '2.31.0',
+    polotno: 'latest',
     react: '^18.2.0',
     'react-dom': '^18.2.0',
     'react-scripts': '^5.0.0',

@@ -14,7 +14,7 @@ Client-side PDF exports (`saveAsPDF()`, `toPDFDataURL()`) generate **raster PDFs
 - **High quality with `pixelRatio`** — suitable even for print-ready workflows when quality is critical
 - **Client-side rendering** — no server required, instant results
 
-For **vector PDFs** (resolution-independent, smaller file sizes), use the [Cloud Render API](/docs/cloud-render-api).
+For **vector PDFs** (resolution-independent, smaller file sizes), use the [Cloud Render API](/docs/cloud-render-api) or the Node package [`@polotno/pdf-export`](https://www.npmjs.com/package/@polotno/pdf-export) based on your deployment needs.
 
 ## Quick Start
 
@@ -109,7 +109,62 @@ See [Store API](/docs/store) for complete reference.
 
 ## Vector PDF Export
 
-For vector PDFs (resolution-independent, smaller file sizes), use the [Cloud Render API](/docs/cloud-render-api) with `vector: true` option.
+Polotno supports vector output via two options. Choose the option that matches your hosting model and compliance requirements.
+
+- **Cloud Render API** — request hosted rendering with `vector: true` for Browser or Node workloads that can call HTTP services.
+- **`@polotno/pdf-export`** — run fully offline conversion inside Node 18+ processes.
+
+### Node Package `@polotno/pdf-export`
+
+Install the package and generate a vector PDF directly from Polotno JSON in your build or automation pipeline. This approach fits CI jobs, backend services, and desktop tools that already run in Node.
+
+```bash
+npm install @polotno/pdf-export
+```
+
+```ts
+import fs from 'fs/promises';
+import { jsonToPDF } from '@polotno/pdf-export';
+
+const data = JSON.parse(await fs.readFile('./polotno.json', 'utf-8'));
+
+await jsonToPDF(data, './output.pdf');
+```
+
+Use `pdfx1a: true` when you need print-ready files with CMYK conversion, transparency flattening, and font outlining. The option ensures compatibility with print vendors that expect PDF/X-1a-compliant assets.
+
+```ts
+await jsonToPDF(data, './print-ready.pdf', {
+  pdfx1a: true,
+  metadata: {
+    title: 'Catalog Cover',
+    author: 'Marketing Team',
+    application: 'Polotno Automation 1.0',
+  },
+});
+```
+
+Spot colors map specific fills or strokes in your design to separation inks for foil or Pantone workflows. You can define multiple inks and reuse the same configuration across batch exports.
+
+```ts
+await jsonToPDF(data, './foil-cover.pdf', {
+  pdfx1a: true,
+  spotColors: {
+    '#FFD700': {
+      name: 'Gold Foil',
+      type: 'pantone',
+      pantoneCode: 'Pantone 871 C',
+      cmyk: [0, 0.15, 0.5, 0],
+    },
+  },
+});
+```
+
+Any element that uses the mapped color is exported with the correct separation ink, and CMYK fallbacks ensure predictable previews. Validations in Adobe Acrobat's Output Preview confirm the separations.
+
+> **Tip**: Verify spot colors in Adobe Acrobat by checking `Output Preview > Separations`.
+
+> **Note**: Install GhostScript on the host machine (`brew install ghostscript`, `apt-get install ghostscript`, or download from ghostscript.com) to enable PDF/X-1a conversion. Without GhostScript the conversion falls back to standard PDF output.
 
 ## Troubleshooting
 
