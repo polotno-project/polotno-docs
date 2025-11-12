@@ -3,17 +3,25 @@ title: Remove Image Background
 description: Enable AI-powered background removal in the Polotno editor UI
 ---
 
-Polotno provides built-in UI for removing image backgrounds using AI. This feature integrates with the [Remove Background API](/docs/remove-background-api) and appears in the image toolbar.
+Polotno provides built-in UI for removing image backgrounds using AI. This feature integrates with the [Remove Background API](/docs/remove-background-api) and appears in the image toolbar once enabled.
 
-## Availability
+## Enable the toolbar button
 
-- **Business plan**: Enabled by default
-- **Team plan**: Available on request (contact support)
+```ts
+import { setRemoveBackgroundEnabled } from 'polotno/config';
+
+setRemoveBackgroundEnabled(true);
+```
+
+<Callout type="warn">
+The "Remove Background" button is **disabled by default** for all plans. Call `setRemoveBackgroundEnabled(true)` during app initialization to expose it.
+</Callout>
+
 - **Pricing**: Additional usage charges apply. See [pricing details](https://polotno.com/sdk/pricing) for rates
 
 ## Disable the Feature
 
-If you want to hide the "Remove Background" button from the toolbar (even on Business plan):
+If you want to hide the "Remove Background" button later:
 
 ```tsx
 import { Toolbar } from 'polotno/toolbar/toolbar';

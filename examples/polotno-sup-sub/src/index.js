@@ -1,60 +1,60 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from "polotno";
-import { Toolbar } from "polotno/toolbar/toolbar";
-import { PagesTimeline } from "polotno/pages-timeline";
-import { ZoomButtons } from "polotno/toolbar/zoom-buttons";
-import { SidePanel } from "polotno/side-panel";
-import { Workspace } from "polotno/canvas/workspace";
-import { unstable_useHtmlTextRender } from "polotno/config";
-import "@blueprintjs/core/lib/css/blueprint.css";
-import { createStore } from "polotno/model/store";
-import { observer } from "mobx-react-lite";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Toolbar } from 'polotno/toolbar/toolbar';
+import { PagesTimeline } from 'polotno/pages-timeline';
+import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+import { SidePanel } from 'polotno/side-panel';
+import { Workspace } from 'polotno/canvas/workspace';
+import { setRichTextEnabled } from 'polotno/config';
+import '@blueprintjs/core/lib/css/blueprint.css';
+import { createStore } from 'polotno/model/store';
+import { observer } from 'mobx-react-lite';
 import {
   quillRef,
   createQuill,
   setQuillContent,
-} from "polotno/canvas/html-element";
-import { Button } from "@blueprintjs/core";
+} from 'polotno/canvas/html-element';
+import { Button } from '@blueprintjs/core';
 
-import { unstable_setQuillFormats } from "polotno/config";
+import { unstable_setQuillFormats } from 'polotno/config';
 
 unstable_setQuillFormats([
   // default list of formats
-  "bold",
-  "color",
-  "font",
-  "italic",
-  "size",
-  "strike",
-  "underline",
-  "indent",
-  "list",
-  "direction",
+  'bold',
+  'color',
+  'font',
+  'italic',
+  'size',
+  'strike',
+  'underline',
+  'indent',
+  'list',
+  'direction',
   // add additional format
-  "sub",
-  "sup",
+  'sub',
+  'sup',
 ]);
 
-import Quill from "quill";
-const Inline = Quill.import("blots/inline");
+import Quill from 'quill';
+const Inline = Quill.import('blots/inline');
 
 // Subscript blot
 class Sub extends Inline {}
-Sub.blotName = "sub";
-Sub.tagName = "sub";
+Sub.blotName = 'sub';
+Sub.tagName = 'sub';
 Quill.register(Sub);
 
 // Superscript blot
 class Sup extends Inline {}
-Sup.blotName = "sup";
-Sup.tagName = "sup";
+Sup.blotName = 'sup';
+Sup.tagName = 'sup';
 Quill.register(Sup);
 
-unstable_useHtmlTextRender(true);
+setRichTextEnabled(true);
 
 const store = createStore({
-  key: "nFA5H9elEytDyPyvKL7T", // you can create it here: https://polotno.com/cabinet/
+  key: 'nFA5H9elEytDyPyvKL7T', // you can create it here: https://polotno.com/cabinet/
   // you can hide back-link on a paid license
   // but it will be good if you can keep it for Polotno project support
   showCredit: true,
@@ -62,7 +62,7 @@ const store = createStore({
 const page = store.addPage();
 
 store.activePage.addElement({
-  type: "text",
+  type: 'text',
   text: 'Hello <strong>from rich</strong> <u>text</u> <span style="color: red;">support</span>!',
   y: 300,
   x: store.width / 2 - 200,
@@ -71,11 +71,11 @@ store.activePage.addElement({
 });
 
 const createTempQuill = ({ html }) => {
-  const el = document.createElement("div");
+  const el = document.createElement('div');
   document.body.appendChild(el);
   // el.innerHTML = html;
-  el.style.display = "none";
-  el.style.whiteSpace = "pre-wrap";
+  el.style.display = 'none';
+  el.style.whiteSpace = 'pre-wrap';
   const quill = createQuill(el);
   setQuillContent(quill, html);
   return quill;
@@ -115,14 +115,14 @@ const ToggleButton = observer(
               selection.length,
               format,
               !quillRef.currentFormat[format],
-              "user"
+              'user'
             );
             return;
           }
 
           // if whole text selected, let's remove bold from inner
           quill = createTempQuill({ html: element.text });
-          quill.setSelection(0, quill.getLength(), "api");
+          quill.setSelection(0, quill.getLength(), 'api');
           const formatData = quill.getFormat();
           quill.format(format, !formatData[format]);
           const innerHtml = quill.root.innerHTML;
@@ -158,7 +158,7 @@ export const TextSup = observer(({ element, store }) => {
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer style={{ width: "100vw", height: "100vh" }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>
@@ -178,5 +178,5 @@ export const App = ({ store }) => {
   );
 };
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App store={store} />);

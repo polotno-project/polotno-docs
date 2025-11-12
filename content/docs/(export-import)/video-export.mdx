@@ -93,7 +93,7 @@ Yes. Use the [Cloud Render API](/docs/cloud-render-api) for server-side video ge
 
 ### Does this work with animations?
 
-Yes. Enable animations first with `unstable_setAnimationsEnabled(true)`. See [Animations and Videos](/docs/animations-and-videos) for details.
+Yes. Enable animations first with `setAnimationsEnabled(true)`. See [Animations and Videos](/docs/animations-and-videos) for details.
 
 ## Live Demo
 
@@ -116,8 +116,8 @@ import { createStore } from 'polotno/model/store';
 import { storeToVideo } from '@polotno/video-export';
 import '@blueprintjs/core/lib/css/blueprint.css';
 
-import { unstable_setAnimationsEnabled } from 'polotno/config';
-unstable_setAnimationsEnabled(true);
+import { setAnimationsEnabled } from 'polotno/config';
+setAnimationsEnabled(true);
 
 const store = createStore({
   key: 'nFA5H9elEytDyPyvKL7T',

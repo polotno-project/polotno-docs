@@ -6,7 +6,7 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
-import { unstable_useHtmlTextRender } from 'polotno/config';
+import { setRichTextEnabled } from 'polotno/config';
 import '@blueprintjs/core/lib/css/blueprint.css';
 import { createStore } from 'polotno/model/store';
 import { observer } from 'mobx-react-lite';
@@ -17,7 +17,7 @@ import {
 } from 'polotno/canvas/html-element';
 import { Button } from '@blueprintjs/core';
 
-unstable_useHtmlTextRender(true);
+setRichTextEnabled(true);
 
 const store = createStore({
   key: 'nFA5H9elEytDyPyvKL7T', // you can create it here: https://polotno.com/cabinet/

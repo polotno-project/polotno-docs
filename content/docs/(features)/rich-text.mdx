@@ -8,9 +8,9 @@ Out of the box, **Polotno** does not support the rendering of rich text elements
 ## How to enable rich text support?
 
 ```ts
-import { unstable_useHtmlTextRender } from 'polotno/config';
+import { setRichTextEnabled } from 'polotno/config';
 
-unstable_useHtmlTextRender(true);
+setRichTextEnabled(true);
 
 // later in store
 store.activePage.addElement({
@@ -25,7 +25,9 @@ store.activePage.addElement({
 
 When "html renderer" is enabled, **Polotno** will use very different rendering logic for text elements. Rich text may drop the performance of your application if you have many text elements. Please report any issues you may come across.
 
-**Polotno has many clients who use these settings in production. The feature is considered stable and supported. The "unstable" prefix will be removed soon.**
+<Callout type="note">
+`unstable_useHtmlTextRender` is deprecated. Always enable rich text with `setRichTextEnabled`.
+</Callout>
 
 If you use Cloud Render API, please make sure to pass `htmlTextRenderEnabled: true` to enable rich mode.
 

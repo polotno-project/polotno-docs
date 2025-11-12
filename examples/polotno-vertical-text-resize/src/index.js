@@ -1,9 +1,9 @@
 import '@blueprintjs/core/lib/css/blueprint.css';
 
 import { createDemoApp } from 'polotno/polotno-app';
-import { unstable_setTextVerticalResizeEnabled } from 'polotno/config';
+import { setTextVerticalResizeEnabled } from 'polotno/config';
 
-unstable_setTextVerticalResizeEnabled(true);
+setTextVerticalResizeEnabled(true);
 
 const { store } = createDemoApp({
   container: document.getElementById('root'),

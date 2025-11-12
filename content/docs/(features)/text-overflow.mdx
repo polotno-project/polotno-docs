@@ -9,24 +9,24 @@ By default, text objects in Polotno expand their height whenever:
 - You change the text programmatically (via API)
 - You set a larger font size
 
-This behavior can be modified using the `unstable_setTextOverflow` method. It can be applied globally (once for all objects) or dynamically toggled when specific elements are selected.
+This behavior can be modified using the `setTextOverflow` method. It can be applied globally (once for all objects) or dynamically toggled when specific elements are selected.
 
 ```ts
-import { unstable_setTextOverflow } from 'polotno/config';
+import { setTextOverflow } from 'polotno/config';
 
 // default, change height of the text object when it overflow defined width/height
-unstable_setTextOverflow('resize');
+setTextOverflow('resize');
 
 // add ... at the end of the text when it overflow defined width/height
-unstable_setTextOverflow('ellipsis');
+setTextOverflow('ellipsis');
 
 // reduce font size to fit text in the defined width/height
 // note, it will NOT increase font size back when there is more space
-unstable_setTextOverflow('change-font-size');
+setTextOverflow('change-font-size');
 ```
 
 You can use these settings in combination with
-[unstable_setTextVerticalResizeEnabled](/docs/vertical-text-resize).
+[setTextVerticalResizeEnabled](/docs/vertical-text-resize).
 
 ## Text Line Splitting
 
@@ -42,7 +42,7 @@ unstable_setTextSplitAllowed(true);
 unstable_setTextSplitAllowed(false);
 ```
 
-When disabled (default), text remains on a single line and overflows according to the `unstable_setTextOverflow` setting. When enabled, text wraps to new lines automatically.
+When disabled (default), text remains on a single line and overflows according to the `setTextOverflow` setting. When enabled, text wraps to new lines automatically.
 
 ## Client-Side Default: resize overflow
 

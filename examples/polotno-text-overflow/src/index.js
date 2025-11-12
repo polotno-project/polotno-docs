@@ -3,7 +3,7 @@ import '@blueprintjs/core/lib/css/blueprint.css';
 import { reaction } from 'mobx';
 
 import { createDemoApp } from 'polotno/polotno-app';
-import { unstable_setTextOverflow } from 'polotno/config';
+import { setTextOverflow } from 'polotno/config';
 
 const { store } = createDemoApp({
   container: document.getElementById('root'),
@@ -51,9 +51,9 @@ reaction(
       return;
     }
     if (el.name === 'overflow-default') {
-      unstable_setTextOverflow('resize');
+      setTextOverflow('resize');
     } else if (el.name === 'overflow-reduce-font') {
-      unstable_setTextOverflow('change-font-size');
+      setTextOverflow('change-font-size');
     }
   }
 );

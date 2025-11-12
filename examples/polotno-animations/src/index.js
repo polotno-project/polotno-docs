@@ -9,9 +9,9 @@ import { Workspace } from 'polotno/canvas/workspace';
 import '@blueprintjs/core/lib/css/blueprint.css';
 import { createStore } from 'polotno/model/store';
 
-import { unstable_setAnimationsEnabled } from 'polotno/config';
+import { setAnimationsEnabled } from 'polotno/config';
 
-unstable_setAnimationsEnabled(true);
+setAnimationsEnabled(true);
 
 const store = createStore({
   key: 'nFA5H9elEytDyPyvKL7T', // you can create it here: https://polotno.com/cabinet/
