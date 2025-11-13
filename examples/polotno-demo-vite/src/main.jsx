@@ -1,18 +1,3 @@
----
-title: Full Canvas Editor
-description: Ready-to-ship editor with workspace, side panel, toolbar, zoom, and timeline
----
-
-This is the default starting point for integrating Polotno.
-
-It mounts the core **Workspace** together with all standard UI blocks—side panel, toolbar (with download), zoom buttons and pages timeline—giving you a ready-to-ship editor in one component tree.
-
-Copy the snippet, add your own API key, and you can:
-
-- keep the layout as-is for a quick launch, or
-- swap, hide, or extend any of the UI components while the canvas engine stays untouched.
-
-```tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
@@ -27,12 +12,10 @@ import '@blueprintjs/core/lib/css/blueprint.css';
 import { createStore } from 'polotno/model/store';
 
 const store = createStore({
-  key: 'nFA5H9elEytDyPyvKL7T', // you can create it here: https://polotno.com/cabinet/
-  // you can hide back-link on a paid license
-  // but it will be good if you can keep it for Polotno project support
+  key: 'nFA5H9elEytDyPyvKL7T',
   showCredit: true,
 });
-const page = store.addPage();
+store.addPage();
 
 export const App = ({ store }) => {
   return (
@@ -52,12 +35,4 @@ export const App = ({ store }) => {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App store={store} />);
-```
-
-Use this demo as your boilerplate and build up from here.
-
-## Live demo
-
-<Sandbox github="polotno-project/polotno-docs/tree/main/examples/polotno-demo"  />
-
 

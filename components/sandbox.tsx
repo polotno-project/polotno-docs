@@ -2,6 +2,7 @@ import React from 'react';
 
 type SandboxTheme = 'light' | 'dark';
 type SandboxView = 'preview' | 'editor' | 'split';
+type SandboxProvider = 'codesandbox' | 'stackblitz';
 
 export interface SandboxProps {
   /**
@@ -30,6 +31,8 @@ export interface SandboxProps {
   id?: string;
   /** Additional styles for the wrapper */
   style?: React.CSSProperties;
+  /** Provider for the playground embed */
+  provider?: SandboxProvider;
 }
 
 function toEmbedPath(github: string): string {
@@ -58,15 +61,31 @@ export default function Sandbox({
   sandbox = 'allow-modals allow-forms allow-popups allow-scripts allow-same-origin allow-downloads',
   id,
   style,
+  provider = 'codesandbox',
 }: SandboxProps) {
   const path = toEmbedPath(github);
-  const params = new URLSearchParams({
-    fontsize: String(fontSize),
-    hidenavigation: hideNavigation ? '1' : '0',
-    theme,
-    view,
-  });
-  const src = `https://codesandbox.io/embed/github/${path}?${params.toString()}`;
+  let src: string;
+
+  if (provider === 'stackblitz') {
+    const params = new URLSearchParams({
+      embed: '1',
+      hideNavigation: hideNavigation ? '1' : '0',
+      theme,
+    });
+
+    if (view) {
+      params.set('view', view);
+    }
+    src = `https://stackblitz.com/github/${path}?${params.toString()}`;
+  } else {
+    const params = new URLSearchParams({
+      fontsize: String(fontSize),
+      hidenavigation: hideNavigation ? '1' : '0',
+      theme,
+      view,
+    });
+    src = `https://codesandbox.io/embed/github/${path}?${params.toString()}`;
+  }
 
   const wrapperHeight = typeof height === 'number' ? `${height}px` : height;
 
