@@ -275,6 +275,25 @@ async function cleanAllBuildArtifacts() {
   }
 }
 
+async function cleanAllNodeModules() {
+  console.log('\n↳ cleaning node_modules in examples...');
+  const entries = await readdir(EXAMPLES_DIR, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    const demoDir = path.join(EXAMPLES_DIR, entry.name);
+    const nodeModulesPath = path.join(demoDir, 'node_modules');
+    if (await pathExists(nodeModulesPath)) {
+      await rm(nodeModulesPath, { recursive: true, force: true });
+    }
+  }
+  // Also clean root examples node_modules if it exists
+  const rootNodeModules = path.join(EXAMPLES_DIR, 'node_modules');
+  if (await pathExists(rootNodeModules)) {
+    await rm(rootNodeModules, { recursive: true, force: true });
+  }
+  console.log('   ↳ node_modules cleanup completed');
+}
+
 async function installDependencies(demoDir, demoName) {
   if (workspaceMode) {
     return { skipped: true, reason: 'workspace-managed' };
@@ -566,6 +585,9 @@ async function main() {
   const successes = results.filter((result) => result.status === 'success');
   const failures = results.filter((result) => result.status === 'failed');
   const skipped = results.filter((result) => result.status === 'skipped');
+
+  // Clean up node_modules from all examples after building
+  await cleanAllNodeModules();
 
   console.log('\nSummary:');
   console.log(`   Success: ${successes.length}`);
