@@ -19,7 +19,7 @@ const page = store.addPage();
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer style={{ width: '100%', height: '100%' }}>
+    <PolotnoContainer className="bp5-scope" style={{ width: '100%', height: '100%' }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

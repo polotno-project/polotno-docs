@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { autorun } from 'mobx';
 import { observer } from 'mobx-react-lite';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 import { InputGroup } from '@blueprintjs/core';
 
@@ -73,7 +71,7 @@ export const App = () => {
     });
   }, []);
   return (
-    <PolotnoContainer className="polotno-app-container">
+    <PolotnoContainer className="polotno-app-container bp5-scope">
       <SidePanelWrap>
         <SidePanel store={store} sections={sections} />
       </SidePanelWrap>

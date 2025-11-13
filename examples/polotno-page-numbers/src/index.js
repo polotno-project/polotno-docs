@@ -60,7 +60,7 @@ store.on('change', checkPageNumbers);
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container">
+    <PolotnoContainer className="polotno-app-container bp5-scope">
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

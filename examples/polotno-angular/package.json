@@ -1,6 +1,6 @@
 {
-  "name": "polotno-angular",
-  "description": "Using Polotno in Angular",
+  "name": "@polotno-docs/polotno-angular",
+  "description": "Demo showing how to integrate Polotno with Angular framework",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -22,9 +22,9 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/router": "^18.2.7",
     "mobx-angular": "^4.8.0",
-    "polotno": "2.32.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "polotno": "2.32.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "rxjs": "7.8.1"
   },
   "devDependencies": {

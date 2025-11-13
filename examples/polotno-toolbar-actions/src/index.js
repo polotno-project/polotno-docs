@@ -9,8 +9,6 @@ import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { DownloadButton } from 'polotno/toolbar/download-button';
 import { createStore } from 'polotno/model/store';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 const store = createStore({
   // this is a demo key just for that project
   // (!) please don't use it in your projects
@@ -64,7 +62,7 @@ const ActionControls2 = ({ store }) => {
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container">
+    <PolotnoContainer className="polotno-app-container bp5-scope">
       <WorkspaceWrap>
         {/* by default no action controls */}
         <Toolbar store={store} />

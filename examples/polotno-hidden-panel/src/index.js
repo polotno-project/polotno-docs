@@ -12,8 +12,6 @@ import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
 import { InputGroup } from '@blueprintjs/core';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 const store = createStore({
   // this is a demo key just for that project
   // (!) please don't use it in your projects
@@ -65,7 +63,7 @@ reaction(
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container">
+    <PolotnoContainer className="polotno-app-container bp5-scope">
       <SidePanelWrap>
         <SidePanel store={store} sections={sections} />
       </SidePanelWrap>

@@ -1,11 +1,12 @@
 {
-  "name": "polotno-qr-codes",
+  "name": "@polotno-docs/polotno-qr-codes",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo showing how to add QR code generation functionality to Polotno editor",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "polotno": "2.32.1",
+    "mobx-react-lite": "^4.0.0",
+    "polotno": "2.32.2",
     "qrcode": "1.5.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",

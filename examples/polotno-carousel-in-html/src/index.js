@@ -9,8 +9,6 @@ import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 import { Button } from '@blueprintjs/core';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import { createStore } from 'polotno/model/store';
 import { CarouselSection } from './CarouselPanel';
 import { downloadAsHTML } from './exportHTML';
@@ -58,7 +56,7 @@ export const App = ({ store }) => {
   const sections = [CarouselSection, ...DEFAULT_SECTIONS];
 
   return (
-    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel
           store={store}

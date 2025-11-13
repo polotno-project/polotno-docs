@@ -1,0 +1,17 @@
+{
+  "name": "polotno-examples-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "*"
+  ],
+  "description": "Workspace for Polotno example demos",
+  "dependencies": {
+    "polotno": "2.32.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "mobx-react-lite": "^4.0.0",
+    "escodegen": "^1.8.1"
+  }
+}

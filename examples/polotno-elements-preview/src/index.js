@@ -7,8 +7,6 @@ import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import { createStore } from 'polotno/model/store';
 import { SaveTemplateButton } from './save-template-button';
 import { TemplatesSection } from './templates-panel';
@@ -26,7 +24,7 @@ const sections = [TemplatesSection, ...DEFAULT_SECTIONS];
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel
           store={store}

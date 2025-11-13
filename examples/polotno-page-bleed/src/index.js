@@ -73,7 +73,7 @@ export const App = () => {
     >
       <Topbar store={store} />
       <div style={{ height: 'calc(100% - 50px)' }}>
-        <PolotnoContainer className="polotno-app-container">
+        <PolotnoContainer className="polotno-app-container bp5-scope">
           <SidePanelWrap>
             <SidePanel store={store} />
           </SidePanelWrap>

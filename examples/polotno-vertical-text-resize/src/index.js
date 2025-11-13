@@ -1,5 +1,3 @@
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import { createDemoApp } from 'polotno/polotno-app';
 import { setTextVerticalResizeEnabled } from 'polotno/config';
 

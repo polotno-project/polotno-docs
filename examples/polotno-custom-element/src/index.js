@@ -1,7 +1,5 @@
 import { createDemoApp } from 'polotno/polotno-app';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import './star-element';
 
 const { store } = createDemoApp({

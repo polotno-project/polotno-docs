@@ -7,7 +7,6 @@ import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 import { setRichTextEnabled } from 'polotno/config';
-import '@blueprintjs/core/lib/css/blueprint.css';
 import { createStore } from 'polotno/model/store';
 import { observer } from 'mobx-react-lite';
 import {
@@ -158,7 +157,7 @@ export const TextSup = observer(({ element, store }) => {
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

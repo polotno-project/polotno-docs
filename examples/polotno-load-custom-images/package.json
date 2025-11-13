@@ -1,11 +1,12 @@
 {
-  "name": "polotno-load-custom-images",
+  "name": "@polotno-docs/polotno-load-custom-images",
   "version": "1.0.0",
-  "description": "A Polotno editor demo",
+  "description": "Demo showing how to load custom images from your own source into Polotno editor",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "polotno": "2.32.1",
+    "mobx-react-lite": "^4.0.0",
+    "polotno": "2.32.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1"

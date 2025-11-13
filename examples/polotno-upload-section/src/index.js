@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 
 import { Workspace } from 'polotno/canvas/workspace';
@@ -34,7 +32,7 @@ const store = createStore({
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container">
+    <PolotnoContainer className="polotno-app-container bp5-scope">
       <SidePanelWrap>
         <SidePanel
           store={store}

@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 
 import { Toolbar } from 'polotno/toolbar/toolbar';
@@ -53,7 +51,7 @@ store.activePage.addElement({
 
 const App = ({ store }) => {
   return (
-    <PolotnoContainer className="polotno-app-container">
+    <PolotnoContainer className="polotno-app-container bp5-scope">
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

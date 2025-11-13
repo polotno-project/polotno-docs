@@ -203,7 +203,7 @@ const sections = [GridSection, ...DEFAULT_SECTIONS];
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container">
+    <PolotnoContainer className="polotno-app-container bp5-scope">
       <SidePanelWrap>
         <SidePanel store={store} sections={sections} defaultSection="grid" />
       </SidePanelWrap>

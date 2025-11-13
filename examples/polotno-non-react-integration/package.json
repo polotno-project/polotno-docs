@@ -1,7 +1,7 @@
 {
-  "name": "polotno-editor",
+  "name": "@polotno-docs/polotno-non-react-integration",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo showing how to integrate Polotno without React using Parcel bundler",
   "scripts": {
     "dev": "parcel ./editor/index.html",
     "build": "parcel build ./editor/index.js --no-source-maps"
@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "parcel": "^2.7.0",
-    "polotno": "2.32.1",
+    "polotno": "2.32.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

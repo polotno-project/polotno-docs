@@ -1,11 +1,11 @@
 {
-  "name": "polotno-simple-t-shirt-demo",
+  "name": "@polotno-docs/polotno-simple-t-shirt-demo",
   "version": "1.0.0",
-  "description": "T-shirt customization demo",
+  "description": "Simple t-shirt customization demo showing basic Polotno integration with custom canvas size",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "polotno": "2.32.1",
+    "polotno": "2.32.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1"

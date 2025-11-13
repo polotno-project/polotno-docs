@@ -1,12 +1,12 @@
 {
-  "name": "polotno-demo",
+  "name": "@polotno-docs/polotno-carousel-in-html",
   "version": "1.0.0",
-  "description": "Basic demo of canvas editor framework",
+  "description": "Demo showing how to export Polotno designs as interactive HTML carousels",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "mobx-react-lite": "^4.1.1",
-    "polotno": "2.32.1",
+    "polotno": "2.32.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1"

@@ -1,5 +1,5 @@
 {
-  "name": "vite-vue-polotno-starter",
+  "name": "@polotno-docs/polotno-and-vue-custom",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,7 +13,7 @@
   "main": "editor.js",
   "dependencies": {
     "parcel": "^2.8.3",
-    "polotno": "2.32.1",
+    "polotno": "2.32.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vue": "^3.2.47"

@@ -1,7 +1,7 @@
 {
-  "name": "polotno-cloud-render",
+  "name": "@polotno-docs/polotno-cloud-render",
   "version": "1.0.0",
-  "description": "Cloud Render for Polotno",
+  "description": "Demo showing how to use Polotno cloud rendering API with various export options",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

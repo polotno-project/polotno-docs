@@ -10,7 +10,6 @@ import { Toolbar } from 'polotno/toolbar/toolbar';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
 // Be sure to include styles at some point, probably during your bootstrapping
-import '@blueprintjs/core/lib/css/blueprint.css';
 import { SvgEditTableButton, tableToSvg } from './edit-table';
 
 const store = createStore({
@@ -49,7 +48,7 @@ store.activePage.addElement({
 
 export const App = observer(() => {
   return (
-    <PolotnoContainer className="polotno-app-container">
+    <PolotnoContainer className="polotno-app-container bp5-scope">
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

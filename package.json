@@ -6,6 +6,7 @@
     "build": "next build",
     "dev": "next dev --turbo",
     "start": "next start",
+    "build:demos": "node scripts/build-demos.mjs",
     "postinstall": "fumadocs-mdx",
     "generate-schema-docs": "rm -rf content/docs/schema && node scripts/generate-schema-docs.mjs"
   },

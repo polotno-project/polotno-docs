@@ -1,7 +1,7 @@
 {
-  "name": "polotno-frameworkless",
+  "name": "@polotno-docs/polotno-frameworkless",
   "version": "1.0.0",
-  "description": "Use polotno without a framework",
+  "description": "Demo showing how to use Polotno without a framework using Parcel bundler",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
@@ -12,9 +12,6 @@
   "devDependencies": {
     "@babel/core": "7.2.0",
     "typescript": "4.4.4"
-  },
-  "resolutions": {
-    "@babel/preset-env": "7.13.8"
   },
   "browserslist": [
     ">0.2%",

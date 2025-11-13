@@ -1,11 +1,11 @@
 {
-  "name": "polotno-page-numbers",
+  "name": "@polotno-docs/polotno-page-numbers",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo showing how to automatically add and update page numbers in Polotno editor",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "polotno": "2.32.1",
+    "polotno": "2.32.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1"

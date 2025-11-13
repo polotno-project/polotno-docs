@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { observer } from 'mobx-react-lite';
 import { InputGroup } from '@blueprintjs/core';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 
 import { Workspace } from 'polotno/canvas/workspace';
@@ -91,7 +89,7 @@ const sections = [PexelsSection, ...DEFAULT_SECTIONS];
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container">
+    <PolotnoContainer className="polotno-app-container bp5-scope">
       <SidePanelWrap>
         <SidePanel store={store} sections={sections} defaultSection="pexels" />
       </SidePanelWrap>

@@ -1,11 +1,12 @@
 {
-  "name": "polotno-pexels",
+  "name": "@polotno-docs/polotno-pexels",
   "version": "1.0.0",
-  "description": "Load Pexels images in Polotno",
+  "description": "Demo showing how to integrate Pexels image search into Polotno editor",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "polotno": "2.32.1",
+    "mobx-react-lite": "^4.0.0",
+    "polotno": "2.32.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1"

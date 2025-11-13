@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import Workspace from 'polotno/canvas/workspace';
 import { createStore } from 'polotno/model/store';
 

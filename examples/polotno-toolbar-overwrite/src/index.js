@@ -9,8 +9,6 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 const store = createStore({
   // this is a demo key just for that project
   // (!) please don't use it in your projects
@@ -72,7 +70,7 @@ const History = () => null;
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container">
+    <PolotnoContainer className="polotno-app-container bp5-scope">
       <WorkspaceWrap>
         <Toolbar
           store={store}

@@ -8,8 +8,6 @@ import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 import { PreviewButton } from './preview-button';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import { createStore } from 'polotno/model/store';
 import { json } from './sample';
 
@@ -23,7 +21,7 @@ store.loadJSON(json);
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

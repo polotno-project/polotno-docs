@@ -1,5 +1,3 @@
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import { reaction } from 'mobx';
 
 import { createDemoApp } from 'polotno/polotno-app';

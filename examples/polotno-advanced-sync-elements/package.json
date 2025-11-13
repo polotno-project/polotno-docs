@@ -1,11 +1,11 @@
 {
-  "name": "polotno-demo",
+  "name": "@polotno-docs/polotno-advanced-sync-elements",
   "version": "1.0.0",
-  "description": "Basic demo of canvas editor framework",
+  "description": "Advanced example showing how to sync elements across multiple pages with custom controls",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "polotno": "2.32.1",
+    "polotno": "2.32.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1"

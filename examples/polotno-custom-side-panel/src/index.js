@@ -11,8 +11,6 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 // import all default sections
 // we will not use all of them in the demo
 // just to show what we have
@@ -69,7 +67,7 @@ const sections = [CustomSection, TextSection];
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container">
+    <PolotnoContainer className="polotno-app-container bp5-scope">
       <SidePanelWrap>
         <SidePanel store={store} sections={sections} defaultSection="custom" />
       </SidePanelWrap>

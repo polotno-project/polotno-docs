@@ -6,8 +6,6 @@ import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import { createStore } from 'polotno/model/store';
 
 const store = createStore({
@@ -20,7 +18,7 @@ const page = store.addPage();
 
 export const Editor = () => {
   return (
-    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

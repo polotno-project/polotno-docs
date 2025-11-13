@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
-
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 import { Workspace } from 'polotno/canvas/workspace';
 import { SidePanel } from 'polotno/side-panel';
@@ -30,7 +28,7 @@ const sections = [TemplatesSection, ...DEFAULT_SECTIONS];
 
 export const App = () => {
   return (
-    <PolotnoContainer>
+    <PolotnoContainer className="bp5-scope">
       <SidePanelWrap>
         <SidePanel
           store={store}

@@ -1,11 +1,11 @@
 {
-  "name": "polotno-admin-role",
+  "name": "@polotno-docs/polotno-admin-role",
   "version": "1.0.0",
-  "description": "Polotno Rich Text",
+  "description": "Demo showing admin role with extra toolbar settings and permissions",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "polotno": "2.32.1",
+    "polotno": "2.32.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1"
