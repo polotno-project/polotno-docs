@@ -24,13 +24,13 @@ Polotno applies a multi-step downscaling algorithm that progressively reduces im
 The downscaling feature is **enabled by default**. You can disable it if needed:
 
 ```ts
-import { useDownScaling } from 'polotno/config';
+import { setDownScalingEnabled } from 'polotno/config';
 
 // disable enhanced downscaling (use browser default)
-useDownScaling(false);
+setDownScalingEnabled(false);
 
 // re-enable enhanced downscaling (default)
-useDownScaling(true);
+setDownScalingEnabled(true);
 ```
 
 ## When to Disable
