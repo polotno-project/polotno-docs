@@ -31,6 +31,7 @@ export const TemplatesPanel = ({ store }) => (
   <ImagesGrid
     images={images}
     getPreview={(item) => item.url}
+    getAlt={(item) => item.alt}
     onSelect={(image, pos, element) => {
       const width = 200;
       const height = 200;
@@ -70,6 +71,7 @@ const images = data?.flatMap((page) => page.results) ?? [];
 <ImagesGrid
   images={images}
   getPreview={(item) => item.src}
+  getAlt={(item) => item.alt} // optional
   onSelect={(image) => addImageToStore(image)}
   isLoading={isLoading}
   loadMore={loadMore}
@@ -97,6 +99,7 @@ Control the layout with `rowsNumber` (columns), explicit `itemHeight`, and the `
 | --- | --- | --- | --- |
 | `images` | `ImageType[] | undefined` | `[]` | Collection rendered as thumbnails; pass an empty array while loading to keep layout stable. |
 | `getPreview` | `(image: ImageType) => string` | — | Returns the image URL used for the thumbnail and drag payload. |
+| `getAlt` | `(image: ImageType) => string` | `undefined` | Returns the image alt text used for the thumbnail. |
 | `onSelect` | `(image: ImageType, pos?, element?, event?) => void` | — | Handles both click and drop; receive drop coordinates and target element when available. |
 | `isLoading` | `boolean` | `false` | Shows the spinner at the end of each column and blocks automatic `loadMore` triggers. |
 | `loadMore` | `() => void | false | null | undefined` | `undefined` | Called near the bottom of the scroll area or when the grid cannot fill the viewport. |
