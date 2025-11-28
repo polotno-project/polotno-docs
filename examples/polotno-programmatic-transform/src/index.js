@@ -34,17 +34,15 @@ page.addElement({
   y: 100,
   fontSize: 40,
   width: 300,
-  id: 'text-1',
 });
 
 page.addElement({
-  type: 'figure',
+  type: 'text',
+  text: 'Another element',
   x: 600,
   y: 500,
-  width: 150,
-  height: 150,
-  fill: '#4A90D9',
-  id: 'figure-1',
+  fontSize: 40,
+  width: 300,
 });
 
 // Get all leaf shapes (non-group elements) from selection
