@@ -5,7 +5,7 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
-
+import 'polotno/polotno.blueprint.css';
 import { createStore } from 'polotno/model/store';
 
 const store = createStore({
@@ -18,7 +18,7 @@ const page = store.addPage();
 
 export const Editor = () => {
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>
