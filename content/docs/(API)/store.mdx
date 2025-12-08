@@ -789,9 +789,13 @@ store.audios.map((audio) => {
 
 ## Working with fonts
 
+For a complete guide on font types and when to use each, see the [Fonts guide](/docs/fonts).
+
 ### `store.addFont({ fontFamily, url })`
 
-The function to add a new custom font to the user project. Added fonts will be saved into exported JSON. If you want to add fonts available globally (ignored in JSON export), take a look into [Fonts Tutorial](/docs/editor-configuration#how-to-change-available-fonts).
+Add a custom font to the current design. These "design fonts" are saved into exported JSON via `store.toJSON()`. Users can see and remove them from the Text side panel.
+
+For app-wide fonts that shouldn't be stored in JSON, use [Global Fonts](/docs/fonts#global-fonts) instead.
 
 ```ts
 store.addFont({
