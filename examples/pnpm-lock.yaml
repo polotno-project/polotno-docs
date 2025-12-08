@@ -782,7 +782,7 @@ importers:
         specifier: ^4
         version: 4.4.4
 
-  polotno-programatic-transform:
+  polotno-programmatic-transform:
     dependencies:
       '@meronex/icons':
         specifier: ^4.0.0

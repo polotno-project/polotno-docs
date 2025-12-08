@@ -11,29 +11,29 @@
     "generate-schema-docs": "rm -rf content/docs/schema && node scripts/generate-schema-docs.mjs"
   },
   "dependencies": {
-    "@adobe/jsonschema2md": "^8.0.7",
-    "@apidevtools/json-schema-ref-parser": "^14.2.1",
+    "@adobe/jsonschema2md": "^8.0.8",
+    "@apidevtools/json-schema-ref-parser": "^15.1.3",
     "@codesandbox/sandpack-react": "^2.20.0",
-    "fumadocs-core": "16.0.2",
-    "fumadocs-mdx": "13.0.0",
-    "fumadocs-ui": "16.0.2",
+    "fumadocs-core": "16.2.3",
+    "fumadocs-mdx": "14.1.0",
+    "fumadocs-ui": "16.2.3",
     "json-schema-static-docs": "^0.28.1",
-    "next": "16.0.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "next": "16.0.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
     "react-json-schema-viewer": "^1.0.2",
-    "react-window": "^2.2.1",
-    "swr": "^2.3.6"
+    "react-window": "^2.2.3",
+    "swr": "^2.3.7"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.16",
+    "@tailwindcss/postcss": "^4.1.17",
     "@types/mdx": "^2.0.13",
-    "@types/node": "24.9.1",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
+    "@types/node": "24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "postcss": "^8.5.6",
     "raw-loader": "^4.0.2",
-    "tailwindcss": "^4.1.16",
+    "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3"
   }
 }

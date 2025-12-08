@@ -1,5 +1,5 @@
 import '@/app/global.css';
-import { RootProvider } from 'fumadocs-ui/provider';
+import { RootProvider } from 'fumadocs-ui/provider/next';
 import { IBM_Plex_Sans } from 'next/font/google';
 import Script from 'next/script';
 import type { Metadata } from 'next';
