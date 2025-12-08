@@ -49,6 +49,7 @@ Below is a minimal React-based implementation. The key points are:
 ```tsx
 import React from 'react';
 import { reaction } from 'mobx';
+import { getImageSize, getCrop } from 'polotno/utils/image';
 
 export function usePlaceholderSelection(store: any) {
   const fileInputRef = React.useRef<HTMLInputElement | null>(null);
@@ -72,13 +73,12 @@ export function usePlaceholderSelection(store: any) {
     return () => dispose();
   }, [store]);
 
-  // handle file change
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
 
     const reader = new FileReader();
-    reader.onload = (loadEvent) => {
+    reader.onload = async (loadEvent) => {
       // we will use dataURL to set the image
       // but it is recommended to upload image to the server first
       // for better performance and smaller JSON export
@@ -87,12 +87,17 @@ export function usePlaceholderSelection(store: any) {
       const placeholder = store.selectedElements.find(
         (el: any) => el.custom?.isPlaceholder
       );
-      if (placeholder) {
-        placeholder.set({
-          src: dataURL,
-          custom: { isPlaceholder: false },
-        });
-      }
+      if (!placeholder) return;
+
+      // Get new image dimensions and calculate crop to fill placeholder (cover)
+      const { width, height } = await getImageSize(dataURL);
+      const crop = getCrop(placeholder, { width, height });
+
+      placeholder.set({
+        src: dataURL,
+        ...crop,
+        custom: { isPlaceholder: false },
+      });
     };
     reader.readAsDataURL(file);
     // Reset the file input so selecting the same file triggers onChange again
@@ -112,7 +117,7 @@ export function usePlaceholderSelection(store: any) {
 }
 ```
 
-Then we can use such hook in the app:
+### 3. Use the Hook in Your App
 
 ```tsx
 import React from 'react';
@@ -143,19 +148,40 @@ export const App = ({ store }: { store: any }) => {
 };
 ```
 
+### Optional: Control How New Images Fit
+
+<Callout type="tip">
+If aspect ratios differ and you want predictable results, use `getImageSize` and `getCrop` from `polotno/utils/image`. `getCrop` gives a CSS-like **cover** behavior (fills the placeholder and may crop edges).
+</Callout>
+
+For a **contain** effect, resize the element itself using `scale = Math.min(boxW / imgW, boxH / imgH)` and center the result (keep `cropX = cropY = 0`).
+
+```ts
+import { getImageSize, getCrop } from 'polotno/utils/image';
+
+// After you get the uploaded file as dataURL
+const { width, height } = await getImageSize(dataURL);
+const crop = getCrop(placeholder, { width, height });
+
+placeholder.set({
+  src: dataURL,
+  ...crop,
+  custom: { isPlaceholder: false },
+});
+```
+
 ### Alternative UI Approaches
 
-- Manual Button: Instead of automatically triggering the file input, you can display a button in the [Toolbar](/docs/toolbar) or [Tooltip](/docs/tooltip). Clicking it would open the same file dialog.
-- Side Panel Section: Create a custom side panel tab that appears only when a placeholder is selected, displaying an “Upload Image” button inside the panel.
+- **Manual Button**: Display a button in the [Toolbar](/docs/toolbar) or [Tooltip](/docs/tooltip) that opens the file dialog.
+- **Side Panel Section**: Create a custom side panel tab that appears only when a placeholder is selected.
 
 ### Tips
 
-- Use a custom property (`custom.isPlaceholder`) or any property you prefer to mark which images can be replaced.
-- Provide instructions or hints to the end user so they know where and how to upload.
-- When the user’s image is loaded, consider adjusting its bounding box or aspect ratio if needed.
+- Use `custom.isPlaceholder` or any custom property to mark replaceable images.
+- `getCrop` provides "cover" behavior (fills the placeholder, may crop edges).
+- Crop values (`cropX`, `cropY`, `cropWidth`, `cropHeight`) are normalized 0–1 values.
+- For best results, upload images to a server first instead of using data URLs.
 
 ## Live demo
 
 <Sandbox github="polotno-project/polotno-docs/tree/main/examples/polotno-select-image-placeholder" />
-
-

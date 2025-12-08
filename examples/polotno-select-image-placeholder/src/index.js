@@ -7,6 +7,7 @@ import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 import { reaction } from 'mobx';
+import { getImageSize, getCrop } from 'polotno/utils/image';
 
 import { createStore } from 'polotno/model/store';
 
@@ -63,15 +64,15 @@ export function usePlaceholderSelection(store) {
   }, [store]);
 
   // handle file change
-  const handleFileChange = (e) => {
+  const handleFileChange = async (e) => {
     const file = e.target.files?.[0];
     if (!file) {
       return;
     }
     const reader = new FileReader();
-    reader.onload = (loadEvent) => {
+    reader.onload = async (loadEvent) => {
       // we will use dataURL to set the image
-      // but it is recommented to upload image to the server first
+      // but it is recommended to upload image to the server first
       // for better performance and smaller JSON export
       const dataURL = loadEvent.target.result;
       // Find the currently selected placeholder element
@@ -79,8 +80,15 @@ export function usePlaceholderSelection(store) {
         (el) => el.custom?.isPlaceholder
       );
       if (placeholder) {
+        // Get the new image dimensions
+        const { width, height } = await getImageSize(dataURL);
+        // Calculate proper crop to center the image within placeholder bounds
+        // This provides "cover" behavior - fills the placeholder, may crop edges
+        const crop = getCrop(placeholder, { width, height });
+
         placeholder.set({
           src: dataURL,
+          ...crop,
           custom: { isPlaceholder: false },
         });
       }
@@ -106,7 +114,10 @@ export const App = ({ store }) => {
   const fileInput = usePlaceholderSelection(store);
 
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer
+      className="bp5-scope"
+      style={{ width: '100vw', height: '100vh' }}
+    >
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>
