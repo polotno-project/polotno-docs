@@ -10,7 +10,9 @@ Large format printing requires high-resolution exports that can exceed browser r
 - Decide rendering: **Client** (desktop, ≤8k px/side) or **Server/Vector** (>8k or mobile).
 - Client path: set `pixelRatio` 2–4; test on target hardware.
 - Print checks: source images must meet `physical inches × target DPI` on each side.
-- Vector path: use **Cloud Render API** with `vector: true` for resolution-independent PDF or PDF/SVG/HTML vector exports.
+- Vector output options:
+  - **Client-side**: export **SVG/HTML** (resolution-independent, feature-dependent).
+  - **Server-side**: export **vector PDF** via **Cloud Render API** (`format: 'pdf'`, `vector: true`) or `@polotno/pdf-export`.
 - Swap to high-res assets just before export; keep previews in the editor.
 
 ## The Challenge
@@ -43,7 +45,7 @@ Select a rendering strategy based on your use case, target audience, and design 
 ### Decision Cheatsheet
 
 - **Client (desktop, ≤8k px/side)**: real-time, fast; use `pixelRatio` 2–4.
-- **Server/Vector (>8k, mobile, or critical print)**: Cloud Render API or Node.
+- **Server/Vector (>8k, mobile, or critical print)**: Cloud Render API, `@polotno/pdf-export`, or SVG/HTML (when supported).
 - **Hybrid**: detect device + design complexity; fall back to server/vector when near limits.
 
 ### Client-Side Rendering
@@ -108,7 +110,7 @@ Use `pixelRatio` to increase export resolution without changing canvas dimension
 await store.saveAsImage({ pixelRatio: 2 });
 ```
 
-**Important**: `pixelRatio` controls export quality. The `dpi` parameter only affects PDF page dimensions and DPI metadata, not render quality. See [Units and Measures](/docs/units-and-measures) for details.
+**Important**: `pixelRatio` increases rendered pixels (quality). `dpi` changes physical sizing (PDF page size and ruler units) and DPI metadata for PNG/JPEG. See [Units and Measures](/docs/units-and-measures) for details.
 
 ### Practical Limits
 
@@ -171,9 +173,50 @@ store.setUnit({
 
 At export time, use the real target DPI (e.g., 200) via `pixelRatio` or server/vector rendering. More on units and DPI: [Units and Measures](/docs/units-and-measures).
 
-### Client-Side PDF Fallback
+### Bitmap PDF export: page size vs quality
 
-For client-side **bitmap PDF** export, Polotno will automatically retry at a lower quality if the browser fails at the requested quality. This improves success rates on constrained devices, but may reduce output resolution.
+Client-side PDF export is a **bitmap PDF** (each page is a raster image inside a PDF container). Two parameters matter:
+
+- **Page size (real-world inches)** comes from `dpi`: \( inches = pixels / dpi \)
+- **Render quality** comes from `pixelRatio`: \( effectiveDPI \approx dpi \times pixelRatio \)
+
+#### Simple: export a print-ready bitmap PDF
+
+```ts
+await store.saveAsPDF({
+  fileName: 'design.pdf',
+  pixelRatio: 2,
+});
+```
+
+#### Large PDF from a proxy canvas (scale edit → scale export)
+
+If you edit a 10ft × 10ft banner as a 1:10 proxy (864 × 864 px), export a 120-inch PDF page by using the same scaled DPI, then compensate quality via `pixelRatio`:
+
+```ts
+const scale = 0.1;
+const targetInches = 120;
+const editorDPI = 72;
+
+// Proxy canvas: 864 × 864 px
+store.setSize(targetInches * scale * editorDPI, targetInches * scale * editorDPI);
+store.setUnit({ unit: 'in', dpi: editorDPI * scale });
+
+const targetDPI = 200;
+const exportDPI = editorDPI * scale; // 7.2 → 864px/7.2 = 120 inches page size
+
+await store.saveAsPDF({
+  fileName: 'banner.pdf',
+  dpi: exportDPI, // controls PDF page size
+  pixelRatio: targetDPI / exportDPI, // effectiveDPI ≈ 200
+});
+```
+
+> **Warning**: For large formats this may require a very large `pixelRatio` (and lots of memory). Prefer server-side rendering or vector PDF for reliability.
+
+> **Note**: If the browser fails at the requested quality, Polotno will automatically retry bitmap PDF export at a lower quality to improve success rates.
+
+See [PDF Export](/docs/pdf-export) for bleed, crop marks, and more options.
 
 ## Asset Swapping Strategy
 
@@ -228,16 +271,17 @@ Use `getImageSize` to check if an image meets the target DPI and physical size:
 ```ts
 import { getImageSize } from 'polotno/utils/image';
 
-const validateImageResolution = async (src, targetDPI, physicalSizeInches) => {
-  const requiredPixels = physicalSizeInches * targetDPI;
+const validateImageResolution = async (src, targetDPI, widthInches, heightInches) => {
+  const requiredWidth = widthInches * targetDPI;
+  const requiredHeight = heightInches * targetDPI;
   const { width, height } = await getImageSize(src);
 
-  const isSufficient = width >= requiredPixels && height >= requiredPixels;
+  const isSufficient = width >= requiredWidth && height >= requiredHeight;
   if (!isSufficient) {
     console.warn(
       `Image resolution (${width}×${height}) may be insufficient ` +
-      `for ${physicalSizeInches}" at ${targetDPI} DPI ` +
-      `(requires ${requiredPixels}×${requiredPixels}px)`
+      `for ${widthInches}"×${heightInches}" at ${targetDPI} DPI ` +
+      `(requires at least ${requiredWidth}×${requiredHeight}px)`
     );
   }
   return isSufficient;
