@@ -53,6 +53,28 @@ When you [export your design to PDF](/docs/pdf-export), Polotno will use 72 DPI 
 1. Use high **pixelRatio** attribute when you do the export. `store.saveAsPDF({ pixelRatio: 2 })`
 2. Change DPI and change ALL pixels values in the store.
 
+### DPI Metadata in PNG and JPEG Exports
+
+For PNG and JPEG exports, Polotno can embed DPI resolution metadata directly into the image file. This is useful for print workflows where downstream software needs to know the intended print resolution.
+
+```ts
+// Embed 300 DPI metadata
+await store.saveAsImage({ dpi: 300 });
+
+// Control when metadata is embedded
+await store.toDataURL({ 
+  dpi: 300, 
+  dpiMetadata: 'auto' // 'auto' | 'always' | 'never'
+});
+```
+
+**Behavior:**
+- `dpiMetadata: 'auto'` (default) — Embeds DPI only when it differs from 72
+- `dpiMetadata: 'always'` — Always embeds DPI metadata
+- `dpiMetadata: 'never'` — Never embeds DPI metadata
+
+The `dpi` parameter defaults to `store.dpi` if not specified. DPI metadata embedding only works with PNG and JPEG formats, not PDF or other formats.
+
 ## Common Questions
 
 ### How do I create print-ready designs?

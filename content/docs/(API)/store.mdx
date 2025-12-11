@@ -492,9 +492,18 @@ await store.toDataURL({ pageId: store.pages[1].id });
 
 // export with page bleed
 await store.toDataURL({ includeBleed: true });
+
+// embed custom DPI metadata (for PNG/JPEG only)
+await store.toDataURL({ dpi: 300 });
+
+// control DPI metadata embedding behavior
+await store.toDataURL({ dpi: 300, dpiMetadata: 'always' });
+await store.toDataURL({ dpiMetadata: 'never' }); // skip DPI embedding
 ```
 
 Use `quality` to control JPEG compression (0-1) whenever you switch `mimeType` to `image/jpeg`. Lower values produce smaller files; keep it above `0.8` for print previews.
+
+**DPI Metadata:** By default (`dpiMetadata: 'auto'`), DPI metadata is embedded into PNG and JPEG images only when DPI differs from 72. Use `dpi` to override the store's DPI value for this export. Set `dpiMetadata: 'never'` to skip embedding entirely, or `dpiMetadata: 'always'` to force embedding even at 72 DPI. DPI metadata is only supported for raster formats (PNG/JPEG).
 
 ### await store.saveAsImage()
 
@@ -521,9 +530,17 @@ store.saveAsImage({ pageId: store.pages[1].id });
 
 // export with page bleed
 store.saveAsImage({ includeBleed: true });
+
+// embed custom DPI metadata for print workflows
+store.saveAsImage({ dpi: 300 });
+
+// control DPI metadata embedding
+store.saveAsImage({ dpi: 300, dpiMetadata: 'always' });
 ```
 
 Tune `quality` for JPEG downloads when you need a balance between file size and preview fidelity. The option ranges from `0` (smallest) to `1` (best quality).
+
+**DPI Metadata:** Use `dpi` to embed resolution metadata for print workflows. By default (`dpiMetadata: 'auto'`), DPI is embedded only when it differs from 72. Set `dpiMetadata: 'never'` to skip embedding, or `dpiMetadata: 'always'` to force it. Applies only to PNG and JPEG formats.
 
 ### async store.toPDFDataURL()
 
@@ -621,9 +638,17 @@ await store.toBlob({ pageId: store.pages[1].id });
 
 // export with page bleed
 await store.toBlob({ includeBleed: true });
+
+// embed DPI metadata for print workflows
+await store.toBlob({ dpi: 300 });
+
+// control DPI metadata embedding
+await store.toBlob({ dpi: 300, dpiMetadata: 'always' });
 ```
 
 When exporting JPEG blobs, pass `quality` (0-1) to match asset pipelines that expect specific compression levels.
+
+**DPI Metadata:** Use `dpi` and `dpiMetadata` to control resolution metadata embedding. By default, DPI is embedded only when it differs from 72. Applies only to PNG and JPEG formats.
 
 ### await store.toHTML()
 

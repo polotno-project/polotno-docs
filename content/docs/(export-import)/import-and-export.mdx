@@ -67,10 +67,18 @@ await store.saveAsImage({
   mimeType: 'image/png'
 });
 
+// with DPI metadata for print workflows
+await store.saveAsImage({
+  dpi: 300,
+  dpiMetadata: 'auto' // 'auto' | 'always' | 'never'
+});
+
 // as data URL or blob
 const dataURL = await store.toDataURL();
 const blob = await store.toBlob();
 ```
+
+**DPI Metadata:** PNG and JPEG exports support embedding resolution metadata via the `dpi` parameter (defaults to `store.dpi` value). By default (`dpiMetadata: 'auto'`), metadata is embedded only when DPI differs from 72. Use `dpiMetadata: 'always'` to force embedding or `'never'` to skip it.
 
 ## PDF Export
 

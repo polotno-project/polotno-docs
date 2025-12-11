@@ -190,10 +190,14 @@ URLs generated with `url` format expire in 24 hours. Set up your own storage if 
     "htmlTextRenderEnabled": false,
     "textVerticalResizeEnabled": false,
     "skipFontError": true,
-    "textOverflow": "change-font-size"
+    "textOverflow": "change-font-size",
+    "dpi": 72,
+    "dpiMetadata": "auto"
   }
 }
 ```
+
+For PNG and JPEG exports, use `dpi` to embed resolution metadata and `dpiMetadata` to control embedding behavior (`'auto'`, `'always'`, or `'never'`).
 
 ## Live demo
 
