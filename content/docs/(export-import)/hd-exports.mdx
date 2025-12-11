@@ -1,0 +1,370 @@
+---
+title: Large Format & High-Resolution Exports
+description: Export print-ready designs for large format printing (banners, posters) with resolutions up to 24,000px using client-side and server-side approaches
+---
+
+Large format printing requires high-resolution exports that can exceed browser rendering capabilities. This guide covers strategies for exporting designs at print-ready quality for banners, posters, and other large format applications.
+
+## Quick Start (TL;DR)
+
+- Decide rendering: **Client** (desktop, ≤8k px/side) or **Server/Vector** (>8k or mobile).
+- Client path: set `pixelRatio` 2–4; test on target hardware.
+- Print checks: source images must meet `physical inches × target DPI` on each side.
+- Vector path: use **Cloud Render API** with `vector: true` for resolution-independent PDF or PDF/SVG/HTML vector exports.
+- Swap to high-res assets just before export; keep previews in the editor.
+
+## The Challenge
+
+Large format designs often require resolutions that browsers cannot render directly. For example:
+
+- **5 × 10 feet banner at 200 DPI** = 12,000 × 24,000 pixels
+- **10 × 10 feet banner at 200 DPI** = 24,000 × 24,000 pixels
+
+Browsers cap canvas size by browser/OS/hardware, typically **4,000–16,000 pixels** per dimension. Polotno doesn’t cap exports; failures come from browser and hardware limits.
+
+## Browser Rendering Limits
+
+Canvas rendering limits depend on:
+
+- **Browser**: Chrome, Firefox, Safari have different maximum canvas sizes
+- **Operating system**: macOS, Windows, Linux handle memory differently
+- **Hardware**: GPU memory and available RAM affect practical limits
+- **Typical range**: 4,000–16,000 pixels per dimension
+
+When exports exceed these limits, browsers may:
+- Fail to render the canvas
+- Crash the tab or browser
+- Produce corrupted or incomplete exports
+
+## Choosing Your Approach
+
+Select a rendering strategy based on your use case, target audience, and design complexity.
+
+### Decision Cheatsheet
+
+- **Client (desktop, ≤8k px/side)**: real-time, fast; use `pixelRatio` 2–4.
+- **Server/Vector (>8k, mobile, or critical print)**: Cloud Render API or Node; prefer vector PDF.
+- **Hybrid**: detect device + design complexity; fall back to server/vector when near limits.
+
+### Client-Side Rendering
+
+**Best for:**
+- Designs up to ~8,000 pixels per dimension
+- Users with powerful desktop computers
+- Smaller print formats (business cards, flyers, small posters)
+- Real-time preview and instant exports
+
+**Limitations:**
+- May fail on mobile devices or low-end hardware
+- Memory-intensive for very large exports
+- Export time increases with size
+
+### Server-Side Rendering
+
+**Best for:**
+- Designs exceeding 8,000 pixels per dimension
+- Mobile or low-end device users
+- Guaranteed consistency across devices
+- High-volume automated workflows
+- Vector PDF exports (resolution-independent)
+
+**Options:**
+1. **Cloud Render API** — managed service, no infrastructure
+2. **Node.js with Polotno SDK** — full control, requires server setup
+
+### Hybrid Approach
+
+Detect device capabilities and route exports accordingly:
+
+```ts
+const isHighEndDevice = navigator.hardwareConcurrency >= 8 && 
+                       navigator.deviceMemory >= 8;
+
+const exportDesign = async (store, pixelRatio = 2) => {
+  const maxSide = Math.max(store.width, store.height) * pixelRatio;
+  
+  if (maxSide > 8000 || !isHighEndDevice) {
+    // Use server-side rendering
+    return await exportViaCloudAPI(store);
+  } else {
+    // Use client-side rendering
+    return await store.saveAsImage({ pixelRatio });
+  }
+};
+```
+
+## Client-Side High-Quality Export
+
+Use `pixelRatio` to increase export resolution without changing canvas dimensions. Higher values produce larger output files with better quality.
+
+### Understanding pixelRatio
+
+`pixelRatio` multiplies the canvas dimensions for export:
+
+```ts
+// Canvas: 1200 × 1200 px
+// Export with pixelRatio: 2 → Output: 2400 × 2400 px
+// Export with pixelRatio: 4 → Output: 4800 × 4800 px
+await store.saveAsImage({ pixelRatio: 2 });
+```
+
+**Important**: `pixelRatio` controls export quality. The `dpi` parameter only affects PDF page dimensions and DPI metadata, not render quality. See [Units and Measures](/docs/units-and-measures) for details.
+
+### Practical Limits
+
+Start with `pixelRatio: 2` for high quality. Increase to `4` or `8` for very large formats, but test on target devices:
+
+```ts
+// 4ft × 4ft banner at 200 DPI = 9,600 × 9,600 pixels
+// Editor canvas: 1,200 × 1,200 px (manageable size)
+store.setSize(1200, 1200);
+
+// Export at 8× quality to reach 9,600px output
+await store.saveAsImage({ pixelRatio: 8 });
+```
+
+**Warning**: Very high `pixelRatio` values (8+) may cause browser crashes on some devices. Test thoroughly and consider server-side rendering for critical workflows.
+
+### Complete Client-Side Example
+
+```ts
+// Setup: 4ft × 4ft banner at 200 DPI
+const widthInches = 48; // 4 feet
+const heightInches = 48;
+const targetDPI = 200;
+
+// Calculate manageable editor size (use 72 DPI for editor)
+const editorWidth = widthInches * 72;  // 3,456 px
+const editorHeight = heightInches * 72; // 3,456 px
+
+store.setSize(editorWidth, editorHeight);
+
+// Calculate pixelRatio for 200 DPI export
+// PDF uses 72 DPI internally, so: pixelRatio = targetDPI / 72
+const pixelRatio = targetDPI / 72; // ≈ 2.78
+
+// Export high-quality image
+await store.saveAsImage({ 
+  pixelRatio: pixelRatio,
+});
+```
+
+## Editing at Scale (rulers and DPI in the editor)
+
+Use a smaller canvas for stability, but keep rulers showing the real physical size:
+
+```ts
+// Target: 10ft × 10ft (120in × 120in), edit at 1:10 scale
+const scale = 0.1;
+const targetInches = 120;
+const editorDPI = 72; // screen DPI
+
+// Proxy canvas: 12in × 12in → 864 × 864 px
+store.setSize(targetInches * scale * editorDPI, targetInches * scale * editorDPI);
+
+// Make rulers read 120 inches while canvas is 12 inches
+store.setUnit({
+  unit: 'in',
+  dpi: editorDPI * scale, // 72 * 0.1 = 7.2; 864px/7.2 ≈ 120in on rulers
+});
+```
+
+At export time, use the real target DPI (e.g., 200) via `pixelRatio` or server/vector rendering. More on units and DPI: [Units and Measures](/docs/units-and-measures).
+
+### Client-Side PDF Fallback
+
+For client-side **bitmap PDF** export, Polotno will automatically retry at a lower quality if the browser fails at the requested quality. This improves success rates on constrained devices, but may reduce output resolution.
+
+## Asset Swapping Strategy
+
+Use low-resolution preview images in the editor for performance, then swap to high-resolution versions before export.
+
+### Store High-Resolution References
+
+Store high-res URLs in element `custom` metadata:
+
+```ts
+// When adding images, store both preview and high-res URLs
+element.set({ 
+  src: 'https://example.com/preview-800px.jpg', // Fast loading for editor
+  custom: { 
+    highResSrc: 'https://example.com/original-5000px.jpg' // Full resolution for export
+  }
+});
+```
+
+### Swap Before Export
+
+Replace preview images with high-resolution versions before exporting:
+
+```ts
+// Collect all image elements with high-res sources
+const originalSrcs = [];
+
+store.pages.forEach(page => {
+  page.children.forEach(el => {
+    if (el.type === 'image' && el.custom?.highResSrc) {
+      // Store original preview URL
+      originalSrcs.push({ el, src: el.src });
+      // Swap to high-resolution
+      el.set({ src: el.custom.highResSrc });
+    }
+  });
+});
+
+// Export with high-quality assets
+await store.saveAsImage({ pixelRatio: 4 });
+
+// Revert to preview images for editor performance
+originalSrcs.forEach(({ el, src }) => {
+  el.set({ src });
+});
+```
+
+### Validate Image Resolution
+
+Warn users if uploaded images are insufficient for target export size:
+
+```ts
+const validateImageResolution = (imageElement, targetDPI, physicalSizeInches) => {
+  const requiredPixels = physicalSizeInches * targetDPI;
+  const image = new Image();
+  
+  return new Promise((resolve) => {
+    image.onload = () => {
+      const isSufficient = image.width >= requiredPixels && 
+                          image.height >= requiredPixels;
+      
+      if (!isSufficient) {
+        console.warn(
+          `Image resolution (${image.width}×${image.height}) may be insufficient ` +
+          `for ${physicalSizeInches}" at ${targetDPI} DPI ` +
+          `(requires ${requiredPixels}×${requiredPixels}px)`
+        );
+      }
+      resolve(isSufficient);
+    };
+    image.src = imageElement.src;
+  });
+};
+```
+
+## Vector PDF Export
+
+Vector PDFs are resolution-independent and avoid pixel limits. Use Cloud Render API (hosted) or the Node package (self-hosted).
+
+### Cloud Render API
+
+```ts
+// 10ft × 10ft banner - no pixel limits with vector PDF
+const json = store.toJSON();
+
+const response = await fetch('https://api.polotno.com/api/renders?KEY=YOUR_API_KEY', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    design: json,
+    format: 'pdf',
+    vector: true, // Enable vector output
+  }),
+});
+
+const job = await response.json();
+
+// Poll for completion
+const checkStatus = async () => {
+  const statusRes = await fetch(
+    `https://api.polotno.com/api/renders/${job.id}?KEY=YOUR_API_KEY`
+  );
+  const status = await statusRes.json();
+  
+  if (status.status === 'done') {
+    console.log('Download:', status.output);
+  } else if (status.status === 'error') {
+    console.error('Export failed:', status.error);
+  } else {
+    // Still processing, check again
+    setTimeout(checkStatus, 2000);
+  }
+};
+
+checkStatus();
+```
+
+See [Cloud Render API](/docs/cloud-render-api) for complete API reference.
+
+### Node Package (@polotno/pdf-export)
+
+```ts
+import { jsonToPDF } from '@polotno/pdf-export';
+
+const json = store.toJSON();
+await jsonToPDF(json, './output.pdf');
+```
+
+## SVG and HTML Export Alternatives
+
+See dedicated docs for details: [SVG Export](/docs/import-and-export#html-and-svg-export) and [HTML Export](/docs/import-and-export#html-and-svg-export). Use PNG/JPEG or PDF for pixel-perfect fidelity.
+
+## Example: 10ft × 10ft Banner (120 × 120 inches @ 200 DPI)
+
+**Recommended (vector PDF, server):**
+- Set JSON `width/height` to `120 * 72` (PDF points) and call Cloud Render API with `vector: true`.
+- Source images must be ~24,000 px per side to stay sharp at 200 DPI.
+
+**Client attempt (use only for testing on strong desktops):**
+- Edit at a reduced canvas (e.g., 1,200 × 1,200 px), then export with high `pixelRatio` (e.g., 20). Expect failures/crashes; prefer server/vector.
+
+## Best Practices
+
+### Editor Performance
+
+- **Use smallest images possible** in the editor for fast loading and smooth interaction
+- Store high-resolution references in `custom` metadata
+- Swap to high-res only during export
+- Polotno automatically optimizes images, but smaller source images improve performance
+
+### Asset Management
+
+- **Store high-res URLs separately** — don't load full-resolution images in the editor
+- **Validate resolution** — check image dimensions against target export requirements
+- **Warn users early** — notify if uploaded images are insufficient for target DPI
+- **Use CDN** — serve high-resolution assets from a content delivery network
+
+### Export Strategy
+
+- **Test on target devices** — verify client-side exports work on your users' hardware
+- **Set appropriate timeouts** — server exports may take 5+ minutes for very large files
+- **Monitor memory usage** — large exports consume significant RAM
+- **Provide progress feedback** — show export progress for long-running operations
+
+## Troubleshooting
+
+### Canvas Exceeds Browser Limits
+
+**Symptom**: Export fails, browser crashes, or produces corrupted output.
+
+**Solutions**:
+- Reduce canvas dimensions or `pixelRatio`
+- Use server-side rendering (Cloud Render API or Node.js)
+- Use vector PDF/SVG/HTML export (no pixel limits)
+
+### Server Export Timeout
+
+**Symptom**: Server export requests timeout before completion.
+
+**Solutions**:
+- Increase HTTP timeout limits (5+ minutes for very large exports)
+- Use async job polling instead of synchronous requests
+- Optimize design complexity
+- Consider Cloud Render API with webhook notifications
+
+## Related
+
+- [PDF Export](/docs/pdf-export) — client-side PDF export with quality settings
+- [Cloud Render API](/docs/cloud-render-api) — server-side vector PDF export
+- [Units and Measures](/docs/units-and-measures) — DPI, pixelRatio, and unit conversion
+- [Import and Export](/docs/import-and-export) — overview of all export formats
+- [Store API](/docs/store) — complete export API reference
