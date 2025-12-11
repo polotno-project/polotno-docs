@@ -20,7 +20,7 @@ const KEY = 'nFA5H9elEytDyPyvKL7T';
 const App = () => {
   const [pixelRatio, setPixelRatio] = React.useState(1);
   const [type, setType] = React.useState('png');
-  const [dpi, setDPI] = React.useState(72);
+  const [dpi, setDPI] = React.useState('auto'); // 'auto' uses value from design JSON
   const [fps, setFps] = React.useState(24);
   const [loading, setLoading] = React.useState(false);
   const [image, setImage] = React.useState(null);
@@ -74,7 +74,8 @@ const App = () => {
             design: json,
             // use pixelRatio < 1 to have much smaller image at the result
             pixelRatio,
-            dpi,
+            // only include dpi if not 'auto' (auto uses value from design JSON)
+            ...(dpi !== 'auto' && { dpi: parseInt(dpi) }),
             fps,
             format: type,
             outputFormat: 'url',
@@ -183,7 +184,11 @@ const App = () => {
               }}
             />
           ) : (
-            <div className="preview-placeholder"></div>
+            <div className="preview-placeholder">
+              <span style={{ color: '#999', fontSize: '14px' }}>
+                Click "Render" to see preview
+              </span>
+            </div>
           )}
         </div>
       </div>
@@ -191,13 +196,13 @@ const App = () => {
       {/* Primary visible options */}
       <div className="primary-options">
         <div className="option">
-          <label>File type:</label>
+          <label>Format:</label>
           <select value={type} onChange={(e) => setType(e.target.value)}>
             <option value="png">PNG</option>
             <option value="jpeg">JPEG</option>
             <option value="gif">GIF</option>
             <option value="pdf">PDF</option>
-            <option value="mp4">mp4</option>
+            <option value="mp4">MP4</option>
           </select>
         </div>
         <div className="option">
@@ -217,28 +222,27 @@ const App = () => {
       <details className="advanced-options">
         <summary>Advanced options</summary>
         <div className="options-grid">
+          {(type === 'png' || type === 'jpeg' || type === 'pdf') && (
+            <div className="option">
+              <label>DPI:</label>
+              <select value={dpi} onChange={(e) => setDPI(e.target.value)}>
+                <option value="auto">Auto (from design)</option>
+                <option value="72">72</option>
+                <option value="150">150</option>
+                <option value="300">300</option>
+              </select>
+            </div>
+          )}
+
           {type === 'pdf' && (
-            <>
-              <div className="option">
-                <label>DPI: {dpi}</label>
-                <input
-                  type="range"
-                  min="72"
-                  max="300"
-                  step="1"
-                  value={dpi}
-                  onChange={(e) => setDPI(parseFloat(e.target.value))}
-                />
-              </div>
-              <div className="option">
-                <label>Vector:</label>
-                <input
-                  type="checkbox"
-                  checked={vector}
-                  onChange={(e) => setVector(e.target.checked)}
-                />
-              </div>
-            </>
+            <div className="option">
+              <label>Vector:</label>
+              <input
+                type="checkbox"
+                checked={vector}
+                onChange={(e) => setVector(e.target.checked)}
+              />
+            </div>
           )}
 
           {type === 'mp4' && (
@@ -256,7 +260,7 @@ const App = () => {
           )}
 
           <div className="option">
-            <label>Rich Text Enabled:</label>
+            <label>Rich Text:</label>
             <input
               type="checkbox"
               checked={richTextEnabled}
@@ -274,20 +278,11 @@ const App = () => {
           </div>
 
           <div className="option">
-            <label>Text Vertical Resize:</label>
+            <label>Auto Text Height:</label>
             <input
               type="checkbox"
               checked={textVerticalResizeEnabled}
               onChange={(e) => setTextVerticalResizeEnabled(e.target.checked)}
-            />
-          </div>
-
-          <div className="option">
-            <label>Webhook URL:</label>
-            <input
-              type="text"
-              value={webhook}
-              onChange={(e) => setWebhook(e.target.value)}
             />
           </div>
 
@@ -301,7 +296,7 @@ const App = () => {
           </div>
 
           <div className="option">
-            <label>Skip Font Error:</label>
+            <label>Skip Font Errors:</label>
             <input
               type="checkbox"
               checked={skipFontError}
@@ -310,11 +305,21 @@ const App = () => {
           </div>
 
           <div className="option">
-            <label>Skip Image Error:</label>
+            <label>Skip Image Errors:</label>
             <input
               type="checkbox"
               checked={skipImageError}
               onChange={(e) => setSkipImageError(e.target.checked)}
+            />
+          </div>
+
+          <div className="option">
+            <label>Webhook URL:</label>
+            <input
+              type="text"
+              placeholder="https://..."
+              value={webhook}
+              onChange={(e) => setWebhook(e.target.value)}
             />
           </div>
 
@@ -360,6 +365,11 @@ const App = () => {
 
       {/* Sticky action bar */}
       <div className="action-bar">
+        {loading && progress > 0 && (
+          <div className="progress-bar">
+            <div className="progress-fill" style={{ width: `${progress}%` }} />
+          </div>
+        )}
         <button
           id="generate-button"
           className="button button--primary"
