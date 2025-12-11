@@ -43,7 +43,7 @@ Select a rendering strategy based on your use case, target audience, and design 
 ### Decision Cheatsheet
 
 - **Client (desktop, ≤8k px/side)**: real-time, fast; use `pixelRatio` 2–4.
-- **Server/Vector (>8k, mobile, or critical print)**: Cloud Render API or Node; prefer vector PDF.
+- **Server/Vector (>8k, mobile, or critical print)**: Cloud Render API or Node.
 - **Hybrid**: detect device + design complexity; fall back to server/vector when near limits.
 
 ### Client-Side Rendering
@@ -223,29 +223,24 @@ originalSrcs.forEach(({ el, src }) => {
 
 ### Validate Image Resolution
 
-Warn users if uploaded images are insufficient for target export size:
+Use `getImageSize` to check if an image meets the target DPI and physical size:
 
 ```ts
-const validateImageResolution = (imageElement, targetDPI, physicalSizeInches) => {
+import { getImageSize } from 'polotno/utils/image';
+
+const validateImageResolution = async (src, targetDPI, physicalSizeInches) => {
   const requiredPixels = physicalSizeInches * targetDPI;
-  const image = new Image();
-  
-  return new Promise((resolve) => {
-    image.onload = () => {
-      const isSufficient = image.width >= requiredPixels && 
-                          image.height >= requiredPixels;
-      
-      if (!isSufficient) {
-        console.warn(
-          `Image resolution (${image.width}×${image.height}) may be insufficient ` +
-          `for ${physicalSizeInches}" at ${targetDPI} DPI ` +
-          `(requires ${requiredPixels}×${requiredPixels}px)`
-        );
-      }
-      resolve(isSufficient);
-    };
-    image.src = imageElement.src;
-  });
+  const { width, height } = await getImageSize(src);
+
+  const isSufficient = width >= requiredPixels && height >= requiredPixels;
+  if (!isSufficient) {
+    console.warn(
+      `Image resolution (${width}×${height}) may be insufficient ` +
+      `for ${physicalSizeInches}" at ${targetDPI} DPI ` +
+      `(requires ${requiredPixels}×${requiredPixels}px)`
+    );
+  }
+  return isSufficient;
 };
 ```
 
@@ -303,6 +298,8 @@ import { jsonToPDF } from '@polotno/pdf-export';
 const json = store.toJSON();
 await jsonToPDF(json, './output.pdf');
 ```
+
+See [Node Package](/docs/pdf-export) for complete API reference.
 
 ## SVG and HTML Export Alternatives
 
