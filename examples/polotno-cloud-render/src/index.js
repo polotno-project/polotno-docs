@@ -24,8 +24,7 @@ const App = () => {
   const [fps, setFps] = React.useState(24);
   const [loading, setLoading] = React.useState(false);
   const [image, setImage] = React.useState(null);
-  const [htmlTextRenderEnabled, setHtmlTextRenderEnabled] =
-    React.useState(false);
+  const [richTextEnabled, setRichTextEnabled] = React.useState(false);
   const [includeBleed, setIncludeBleed] = React.useState(false);
   const [textVerticalResizeEnabled, setTextVerticalResizeEnabled] =
     React.useState(false);
@@ -79,7 +78,7 @@ const App = () => {
             fps,
             format: type,
             outputFormat: 'url',
-            htmlTextRenderEnabled,
+            richTextEnabled,
             includeBleed,
             textVerticalResizeEnabled,
             webhook,
@@ -257,11 +256,11 @@ const App = () => {
           )}
 
           <div className="option">
-            <label>HTML Text Render:</label>
+            <label>Rich Text Enabled:</label>
             <input
               type="checkbox"
-              checked={htmlTextRenderEnabled}
-              onChange={(e) => setHtmlTextRenderEnabled(e.target.checked)}
+              checked={richTextEnabled}
+              onChange={(e) => setRichTextEnabled(e.target.checked)}
             />
           </div>
 

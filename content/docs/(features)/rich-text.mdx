@@ -29,7 +29,11 @@ When "html renderer" is enabled, **Polotno** will use very different rendering l
 `unstable_useHtmlTextRender` is deprecated. Always enable rich text with `setRichTextEnabled`.
 </Callout>
 
-If you use Cloud Render API, please make sure to pass `htmlTextRenderEnabled: true` to enable rich mode.
+If you use Cloud Render API, please make sure to pass `richTextEnabled: true` to enable rich mode.
+
+<Callout type="warning">
+**Deprecated:** The parameter `htmlTextRenderEnabled` is deprecated in favor of `richTextEnabled`. Both parameters are currently supported for backward compatibility, but `htmlTextRenderEnabled` will be removed in a future version.
+</Callout>
 
 ## Controlling rich text from external UI
 
@@ -247,7 +251,7 @@ Rich text uses a different rendering engine that may impact performance with man
 
 ### Can I use rich text with server-side rendering?
 
-Yes. When using [Cloud Render API](/docs/cloud-render-api) or [polotno-node](/docs/server-side-image-generation-with-node-js), pass `htmlTextRenderEnabled: true` in export options.
+Yes. When using [Cloud Render API](/docs/cloud-render-api) or [polotno-node](/docs/server-side-image-generation-with-node-js), pass `richTextEnabled: true` in export options. (The legacy parameter `htmlTextRenderEnabled` is also supported but deprecated.)
 
 ### What HTML tags are supported?
 

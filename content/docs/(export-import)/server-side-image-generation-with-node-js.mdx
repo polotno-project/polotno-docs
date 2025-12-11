@@ -39,6 +39,12 @@ async function run() {
   });
   fs.writeFileSync('out.jpg', jpegImage, 'base64');
 
+  // enable rich text rendering if your design uses it
+  const richTextImage = await instance.jsonToImageBase64(json, {
+    richTextEnabled: true, // enable rich text support
+  });
+  fs.writeFileSync('out-rich.png', richTextImage, 'base64');
+
   // close instance
   instance.close();
 }
