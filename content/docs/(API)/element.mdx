@@ -307,7 +307,6 @@ warm
 
 temperature
 contrast
-highlights
 shadows
 white
 black
@@ -343,7 +342,7 @@ shape.set({
 shape.setFilter('warm', null);
 
 // Clear all combined filters
-['temperature', 'contrast', 'highlights', 'shadows', 'white', 'black', 'saturation', 'vibrance']
+['temperature', 'contrast', 'shadows', 'white', 'black', 'saturation', 'vibrance']
   .forEach((f) => shape.setFilter(f, null));
 ```
 
