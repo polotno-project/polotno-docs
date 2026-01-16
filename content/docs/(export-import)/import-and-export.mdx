@@ -1,11 +1,11 @@
 ---
 title: Import and Export
-description: Overview of Polotno's import (JSON) and export (PNG, JPEG, PDF, PPTX, HTML, SVG, GIF, MP4) options
+description: Overview of Polotno's import (JSON, SVG) and export (PNG, JPEG, PDF, PPTX, HTML, SVG, GIF, MP4) options
 ---
 
 Polotno offers comprehensive import and export capabilities for designs, from open JSON format to high-quality images, PDFs, and video exports. The SDK supports both client-side and [server-side rendering](/docs/server-side-image-generation-with-node-js) for automated design generation.
 
-**Import:** JSON (open, developer-friendly format)
+**Import:** JSON (open, developer-friendly format), [SVG](/docs/svg-import)
 
 **Export:** JSON, PNG, JPEG, PDF, PPTX, GIF, MP4, HTML, SVG
 
@@ -52,6 +52,23 @@ store.loadJSON({
 The JSON must follow Polotno's [store structure](/docs/store). See [JSON Schema](/docs/schema) for complete reference.
 
 **Note**: Polotno doesn't import other formats (PDF, PPT, PSD) directly, but you can build converters to transform them into Polotno JSON. [Contact us](https://polotno.com/contact) to collaborate.
+
+## SVG Import
+
+Import SVG files into Polotno using the `@polotno/svg-import` package.
+
+```bash
+npm install @polotno/svg-import
+```
+
+```ts
+import { svgToJson } from '@polotno/svg-import';
+
+const json = await svgToJson({ svg: svgContent });
+store.loadJSON(json);
+```
+
+**Note:** Text converted to paths cannot be restored as editable text. See [SVG Import](/docs/svg-import) for full details and workflow recommendations.
 
 ## Image Export (PNG, JPEG)
 
