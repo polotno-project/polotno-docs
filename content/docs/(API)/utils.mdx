@@ -233,14 +233,18 @@ const dataURL = canvas.toDataURL();
 |--------|------|---------|-------------|
 | `pixelRatio` | number | 1 | Output resolution multiplier. Use `2` for retina-quality exports. |
 
-Use `pixelRatio` to control the output resolution. This is useful when the workspace is small on screen but you need a high-resolution preview:
+Use `pixelRatio` to control the output resolution. This is useful when the workspace is small on screen but you need a higher-resolution preview:
 
 ```ts
-// High-resolution render at 2x
+// Higher-resolution render at 2x
 const canvas = await unstable_elementToCanvas(store.selectedElements[0].id, {
   pixelRatio: 2,
 });
 ```
+
+<Callout type="warning" title="Resolution not guaranteed">
+Higher `pixelRatio` does not guarantee higher quality for all elements. The function renders from the current workspace state, so if the workspace is scaled down, some elements may still use low-resolution or cached textures. For reliable high-resolution output, use the store-level export methods (`store.toDataURL`, `store.saveAsImage`) instead.
+</Callout>
 
 > **Note**: This function is experimental and marked as `unstable_`. It may change in future versions. Use with caution in production code.
 
