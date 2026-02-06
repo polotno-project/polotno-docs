@@ -17,7 +17,7 @@ Users can upload audio files through the default **Upload** side panel:
 2. Select an audio file (MP3, WAV, OGG, etc.)
 3. Click on added audio file or drag it to the workspace to add it to the design
 4. The audio track appears in the **PagesTimeline** component at the bottom
-5. Click the audio track in the timeline to trim, or remove it
+5. Click the audio track in the timeline to trim, adjust volume, mute, duplicate, or remove it
 
 ## Programmatic API
 
@@ -97,6 +97,18 @@ store.addAudio({
   delay: pageDuration, // Start when page 2 begins
 });
 ```
+
+## Timeline Controls
+
+When you click an audio track in the **PagesTimeline**, the following controls are available:
+
+- **Volume slider** -- adjust the playback volume of the track (0-100%)
+- **Mute/unmute** -- quickly toggle audio on or off without changing the volume setting
+- **Duplicate** -- create a copy of the audio track with the same settings
+- **Trim** -- drag the edges of the track to set start and end points
+- **Remove** -- delete the audio track from the design
+
+These controls work the same way for programmatically added tracks and user-uploaded tracks.
 
 ## Export with Audio
 

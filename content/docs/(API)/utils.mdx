@@ -216,7 +216,7 @@ Returns a Promise resolving to an SVG string. SVG rendering is in beta and may p
 
 Render individual elements to canvas elements for custom export or processing.
 
-### `unstable_elementToCanvas(elementId)`
+### `unstable_elementToCanvas(elementId, options?)`
 
 Renders a single element to an HTML canvas element. Returns a Promise resolving to a canvas.
 
@@ -225,6 +225,21 @@ import { unstable_elementToCanvas } from 'polotno/utils/to-canvas';
 
 const canvas = await unstable_elementToCanvas(store.selectedElements[0].id);
 const dataURL = canvas.toDataURL();
+```
+
+**Options:**
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `pixelRatio` | number | 1 | Output resolution multiplier. Use `2` for retina-quality exports. |
+
+Use `pixelRatio` to control the output resolution. This is useful when the workspace is small on screen but you need a high-resolution preview:
+
+```ts
+// High-resolution render at 2x
+const canvas = await unstable_elementToCanvas(store.selectedElements[0].id, {
+  pixelRatio: 2,
+});
 ```
 
 > **Note**: This function is experimental and marked as `unstable_`. It may change in future versions. Use with caution in production code.
