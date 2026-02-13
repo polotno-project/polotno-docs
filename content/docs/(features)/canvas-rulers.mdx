@@ -17,6 +17,24 @@ store.toggleRulers();
 console.log(store.rulersVisible);
 ```
 
+## Ruler styling
+
+Customize the ruler appearance through [Workspace](/docs/workspace) props:
+
+```tsx
+<Workspace
+  store={store}
+  rulerBackgroundColor="#1e1e2e"  // ruler track background
+  rulerTextColor="#cdd6f4"        // measurement labels
+  rulerBorderColor="#585b70"      // border between ruler and canvas
+  rulerBorderSize={1}             // border thickness in px
+  rulerTickColor="#7f849c"        // tick marks along the ruler
+  rulerTickSize={8}               // tick mark length in px
+/>
+```
+
+All six props are optional and fall back to the built-in theme when omitted.
+
 ## Live demo
 
 <Sandbox github="polotno-project/polotno-docs/tree/main/examples/polotno-rulers" />
