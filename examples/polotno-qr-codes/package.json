@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "dependencies": {
     "mobx-react-lite": "^4.0.0",
-    "polotno": "2.36.1",
+    "polotno": "2.36.2",
     "qrcode": "1.5.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
