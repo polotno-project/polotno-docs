@@ -123,11 +123,13 @@ Name of the side-panel that was opened before the current one. Useful if you wan
 
 ### store.openSidePanel(panelName)
 
-Change open side panel manually.
+Change open side panel manually. The `panelName` corresponds to the `name` property of a section.
 
 ```ts
 store.openSidePanel('templates');
 ```
+
+In addition to the visible tab sections, Polotno has several built-in hidden panels: `effects`, `animation`, and `image-clip`. See [Hidden Panels](/docs/hidden-panels) for details.
 
 ### `store.setUnit({ unit, dpi })`
 

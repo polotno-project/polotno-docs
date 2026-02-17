@@ -1,13 +1,34 @@
 ---
 title: Hidden panels
-description: Implement a side panel that doesn’t appear in tabs and opens programmatically
+description: Implement a side panel that doesn't appear in tabs and opens programmatically
 ---
 
-## How to implement a "hidden" side panel?
+## Built-in hidden panels
 
-It is possible to implement a side panel that will not be visible in the list of panels, but you can still open it based on user actions. Polotno itself has several such panels that are visible only on specific button clicks, for example “clip image”.
+Polotno includes several internal hidden panels that are not shown in the tab bar but open programmatically via `store.openSidePanel(name)`. These panels are triggered by toolbar buttons (e.g. clicking "Effects" in the image toolbar opens the `effects` panel).
 
-To implement a hidden panel you can do this:
+| Panel name    | Description                              | Triggered by          |
+|---------------|------------------------------------------|-----------------------|
+| `effects`     | Image/element filters and effects editor | Toolbar "Effects"     |
+| `animation`   | Animation settings for selected element  | Toolbar "Animate"     |
+| `image-clip`  | Image clipping / mask editor             | Toolbar "Apply mask"  |
+
+```ts
+// Open the built-in effects panel for the selected element
+store.openSidePanel('effects');
+
+// Open the animation panel
+store.openSidePanel('animation');
+
+// Open the image clip/mask panel
+store.openSidePanel('image-clip');
+```
+
+## How to implement your own hidden panel?
+
+You can create custom hidden panels that don't appear in the tab bar but open based on user actions, similar to the built-in ones above.
+
+To implement a hidden panel:
 
 ```tsx
 // define the new custom section
@@ -69,5 +90,3 @@ For the demo, try to create a text element. As soon as it is selected, you will 
 ## Live demo
 
 <Sandbox github="polotno-project/polotno-docs/tree/main/examples/polotno-hidden-panel" />
-
-

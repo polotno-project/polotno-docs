@@ -1,0 +1,473 @@
+import React from 'react';
+import { observer } from 'mobx-react-lite';
+import { Button, HTMLSelect, Spinner, TextArea } from '@blueprintjs/core';
+import { SectionTab } from 'polotno/side-panel';
+import { getKey } from 'polotno/utils/validate-key';
+
+const LISTING_TOOLS = [
+  {
+    id: 'declutter-interior',
+    label: 'Declutter interior',
+    prompt:
+      'Clean up and declutter this interior room photo. Remove clutter, mess, and personal items. Make the room look tidy, spacious, and presentable for a real estate listing.',
+  },
+  {
+    id: 'declutter-exterior',
+    label: 'Declutter exterior',
+    prompt:
+      'Clean up the exterior of this property photo. Remove clutter, debris, and distracting items from the yard and surroundings. Make the exterior look clean and well-maintained for a real estate listing.',
+  },
+  {
+    id: 'empty-room',
+    label: 'Empty room',
+    prompt:
+      'Remove all furniture and items from this room. Show the room completely empty with clean walls, floors, and windows. Keep the room structure, lighting, and architectural features intact.',
+  },
+  {
+    id: 'virtual-stage',
+    label: 'Virtual stage',
+    prompt:
+      'Virtually stage this room with modern, appealing furniture and decor. Add tasteful furniture, rugs, artwork, and plants. Make it look like a professionally staged home for a real estate listing.',
+  },
+  {
+    id: 'replace-sky',
+    label: 'Replace sky',
+    prompt:
+      'Replace the sky in this photo with a beautiful blue sky with some white clouds. Keep the rest of the image the same. Make it look natural and appealing for a real estate listing.',
+  },
+  {
+    id: 'improve-lighting',
+    label: 'Improve lighting',
+    prompt:
+      'Improve the lighting in this photo. Make it brighter, more natural, and more inviting. Fix any dark areas or harsh shadows. Make the space look warm and welcoming for a real estate listing.',
+  },
+];
+
+const INTENSITY_PROMPTS = {
+  Strong:
+    ' Apply strong, dramatic changes. Make the transformation very noticeable.',
+  Medium: ' Apply moderate changes. Keep a natural balance.',
+  Low: ' Apply subtle, minimal changes. Keep the image mostly the same.',
+};
+
+const LLM_MODELS = [
+  { value: 'gpt-image-1.5', label: 'GPT Image 1.5' },
+  { value: 'gpt-image-1', label: 'GPT Image 1' },
+];
+
+const DrillDownPanel = observer(
+  ({ store, tool, onBack, onClose }) => {
+    const [model, setModel] = React.useState('gpt-image-1.5');
+    const [intensity, setIntensity] = React.useState('Strong');
+    const [showCustomPrompt, setShowCustomPrompt] = React.useState(false);
+    const [customPrompt, setCustomPrompt] = React.useState('');
+    const [loading, setLoading] = React.useState(false);
+    const [progress, setProgress] = React.useState(0);
+
+    const handleRun = async () => {
+      const element = store.selectedElements[0];
+      if (!element || element.type !== 'image') return;
+
+      setLoading(true);
+      setProgress(0);
+
+      const progressInterval = setInterval(() => {
+        setProgress((prev) => {
+          if (prev >= 95) {
+            clearInterval(progressInterval);
+            return 95;
+          }
+          return prev + 2;
+        });
+      }, 600);
+
+      try {
+        const imageUrl = element.src;
+        const finalPrompt =
+          (customPrompt || tool.prompt) + INTENSITY_PROMPTS[intensity];
+
+        const response = await fetch(
+          'https://api.polotno.com/api/ai/image-to-image?KEY=' + getKey(),
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              url: imageUrl,
+              prompt: finalPrompt,
+              provider: 'openai',
+            }),
+          }
+        );
+
+        if (!response.ok) {
+          const errorText = await response.text();
+          throw new Error(`API request failed: ${errorText}`);
+        }
+
+        const data = await response.json();
+        setProgress(100);
+
+        element.set({ src: data.url });
+      } catch (error) {
+        console.error('Error processing image:', error);
+        alert('Error processing image: ' + error.message);
+      } finally {
+        setLoading(false);
+        clearInterval(progressInterval);
+      }
+    };
+
+    return (
+      <div className="drill-down-panel">
+        <div className="drill-down-header">
+          <button className="back-button" onClick={onBack}>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="white">
+              <path d="M10.5 13l-5-5 5-5" stroke="white" strokeWidth="2" fill="none" />
+            </svg>
+          </button>
+          <span className="title">{tool.label}</span>
+          <button className="close-button" onClick={onClose}>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="white">
+              <path
+                d="M1 1l12 12M13 1L1 13"
+                stroke="white"
+                strokeWidth="2"
+              />
+            </svg>
+          </button>
+        </div>
+        <div className="drill-down-body">
+          <label>LLM model</label>
+          <HTMLSelect
+            fill
+            value={model}
+            onChange={(e) => setModel(e.target.value)}
+            style={{ marginBottom: '20px' }}
+          >
+            {LLM_MODELS.map((m) => (
+              <option key={m.value} value={m.value}>
+                {m.label}
+              </option>
+            ))}
+          </HTMLSelect>
+
+          <label>Intensity</label>
+          <div className="intensity-group">
+            {['Strong', 'Medium', 'Low'].map((level) => (
+              <button
+                key={level}
+                className={`intensity-button${intensity === level ? ' active' : ''}`}
+                onClick={() => setIntensity(level)}
+              >
+                {level}
+              </button>
+            ))}
+          </div>
+
+          {!showCustomPrompt ? (
+            <button
+              className="custom-prompt-toggle"
+              onClick={() => setShowCustomPrompt(true)}
+            >
+              + Add a custom prompt
+            </button>
+          ) : (
+            <div style={{ marginBottom: '12px' }}>
+              <label>Custom prompt</label>
+              <TextArea
+                fill
+                rows={3}
+                value={customPrompt}
+                onChange={(e) => setCustomPrompt(e.target.value)}
+                placeholder="Describe what you want to change..."
+                style={{
+                  backgroundColor: '#262626',
+                  border: '1px solid #393939',
+                  color: 'white',
+                  resize: 'vertical',
+                }}
+              />
+            </div>
+          )}
+
+          {loading && (
+            <div
+              style={{
+                textAlign: 'center',
+                padding: '10px 0',
+                marginBottom: '8px',
+              }}
+            >
+              <Spinner size={24} />
+              <div
+                style={{
+                  marginTop: '6px',
+                  fontSize: '12px',
+                  color: '#a8a8a8',
+                }}
+              >
+                Processing... {progress}%
+              </div>
+            </div>
+          )}
+
+          <Button
+            className="run-button"
+            onClick={handleRun}
+            loading={loading}
+            disabled={loading}
+          >
+            Run
+          </Button>
+        </div>
+      </div>
+    );
+  }
+);
+
+const EditImageMainPanel = observer(({ store, onSelectTool }) => {
+  const element = store.selectedElements[0];
+  const [processingAction, setProcessingAction] = React.useState(null);
+
+  if (!element || element.type !== 'image') {
+    return (
+      <div className="edit-image-panel">
+        <p style={{ color: '#a8a8a8' }}>Select an image to edit it.</p>
+      </div>
+    );
+  }
+
+  const handleAiTool = async (action) => {
+    setProcessingAction(action);
+    try {
+      const imageUrl = element.src;
+      let prompt = '';
+
+      switch (action) {
+        case 'remove-background':
+          prompt = 'Remove the background from this image completely. Keep only the main subject.';
+          break;
+        case 'remove-object':
+          prompt = 'Remove unwanted objects and distractions from this image. Keep the main composition clean.';
+          break;
+        case 'extend':
+          prompt = 'Extend this image outward, generating natural content beyond the current borders. Keep the style consistent.';
+          break;
+        case 'upscale':
+          prompt = 'Upscale and enhance the resolution of this image. Make it sharper and more detailed.';
+          break;
+        case 'enhance':
+          prompt = 'Enhance this image quality. Improve colors, contrast, sharpness and overall visual appeal.';
+          break;
+        case 'image-to-video':
+          prompt = 'Create a smooth cinematic camera movement from this image.';
+          break;
+        default:
+          return;
+      }
+
+      const response = await fetch(
+        'https://api.polotno.com/api/ai/image-to-image?KEY=' + getKey(),
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            url: imageUrl,
+            prompt,
+            provider: 'openai',
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`API request failed: ${errorText}`);
+      }
+
+      const data = await response.json();
+      element.set({ src: data.url });
+    } catch (error) {
+      console.error('Error with AI tool:', error);
+      alert('Error: ' + error.message);
+    } finally {
+      setProcessingAction(null);
+    }
+  };
+
+  return (
+    <div className="edit-image-panel">
+      <h3>Edit image</h3>
+
+      <div className="button-row">
+        <Button
+          className="tool-button"
+          small
+          onClick={() => store.openSidePanel('effects')}
+        >
+          Effects
+        </Button>
+        <Button
+          className="tool-button"
+          small
+          onClick={() => store.openSidePanel('animation')}
+        >
+          Animate
+        </Button>
+        <Button
+          className="tool-button"
+          small
+          onClick={() => store.openSidePanel('image-clip')}
+        >
+          Apply mask
+        </Button>
+      </div>
+
+      <div className="section-header">AI Tools</div>
+
+      <div className="button-row">
+        <Button
+          className="tool-button"
+          small
+          loading={processingAction === 'remove-background'}
+          onClick={() => handleAiTool('remove-background')}
+        >
+          Remove background
+        </Button>
+        <Button
+          className="tool-button"
+          small
+          loading={processingAction === 'remove-object'}
+          onClick={() => handleAiTool('remove-object')}
+        >
+          Remove object
+        </Button>
+      </div>
+      <div className="button-row">
+        <Button
+          className="tool-button"
+          small
+          loading={processingAction === 'extend'}
+          onClick={() => handleAiTool('extend')}
+        >
+          Extend
+        </Button>
+        <Button
+          className="tool-button"
+          small
+          loading={processingAction === 'upscale'}
+          onClick={() => handleAiTool('upscale')}
+        >
+          Upscale
+        </Button>
+        <Button
+          className="tool-button"
+          small
+          loading={processingAction === 'enhance'}
+          onClick={() => handleAiTool('enhance')}
+        >
+          Enhance
+        </Button>
+      </div>
+      <div className="button-row">
+        <Button
+          className="tool-button"
+          small
+          loading={processingAction === 'image-to-video'}
+          onClick={() => handleAiTool('image-to-video')}
+        >
+          Image to video
+        </Button>
+      </div>
+
+      <div className="section-header">Listing Tools</div>
+
+      <div className="button-row">
+        {LISTING_TOOLS.slice(0, 2).map((tool) => (
+          <Button
+            key={tool.id}
+            className="tool-button"
+            small
+            onClick={() => onSelectTool(tool)}
+          >
+            {tool.label}
+          </Button>
+        ))}
+      </div>
+      <div className="button-row">
+        {LISTING_TOOLS.slice(2, 4).map((tool) => (
+          <Button
+            key={tool.id}
+            className="tool-button"
+            small
+            onClick={() => onSelectTool(tool)}
+          >
+            {tool.label}
+          </Button>
+        ))}
+      </div>
+      <div className="button-row">
+        {LISTING_TOOLS.slice(4, 6).map((tool) => (
+          <Button
+            key={tool.id}
+            className="tool-button"
+            small
+            onClick={() => onSelectTool(tool)}
+          >
+            {tool.label}
+          </Button>
+        ))}
+      </div>
+    </div>
+  );
+});
+
+const EditImagePanel = observer(({ store }) => {
+  const [selectedTool, setSelectedTool] = React.useState(null);
+
+  const handleBack = () => setSelectedTool(null);
+
+  const handleClose = () => {
+    setSelectedTool(null);
+    store.selectElements([]);
+  };
+
+  if (selectedTool) {
+    return (
+      <DrillDownPanel
+        store={store}
+        tool={selectedTool}
+        onBack={handleBack}
+        onClose={handleClose}
+      />
+    );
+  }
+
+  return (
+    <EditImageMainPanel store={store} onSelectTool={setSelectedTool} />
+  );
+});
+
+export const EditImageSection = {
+  name: 'edit-image',
+  Tab: (props) => (
+    <SectionTab name="Edit image" {...props}>
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.5 2.5L17.5 4.5L15 7L13 5L15.5 2.5ZM6 12L12 6L14 8L8 14H6V12Z"
+          fill="white"
+        />
+        <path
+          d="M16 16H4V4H10L12 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H16C17.1 18 18 17.1 18 16V8L16 10V16Z"
+          fill="white"
+        />
+      </svg>
+    </SectionTab>
+  ),
+  Panel: EditImagePanel,
+};
