@@ -81,7 +81,7 @@ const DownloadButton = observer(({ store }) => {
       position={Position.BOTTOM_RIGHT}
     >
       <Button
-        endIcon={<ChevronDown />}
+        endIcon={<ChevronDown color="white" />}
         text="Download"
         intent="primary"
         loading={saving}

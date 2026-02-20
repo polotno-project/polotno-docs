@@ -1,0 +1,200 @@
+{
+  "width": 1080,
+  "height": 1080,
+  "fonts": [],
+  "pages": [
+    {
+      "id": "page-1",
+      "background": "#0B192C",
+      "children": [
+        {
+          "id": "hero-image",
+          "type": "image",
+          "x": 0,
+          "y": 0,
+          "width": 540,
+          "height": 1080,
+          "src": "https://images.unsplash.com/photo-1663756915301-2ba688e078cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTY5OTZ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTc3MTYwNjA0OHww&ixlib=rb-4.1.0&q=80&w=1080"
+        },
+        {
+          "id": "address-text",
+          "type": "text",
+          "x": 600,
+          "y": 120,
+          "width": 420,
+          "height": 120,
+          "text": "1234 OAKWOOD\nAVENUE",
+          "fontFamily": "Montserrat",
+          "fontSize": 48,
+          "fontWeight": "bold",
+          "fill": "#FFFFFF",
+          "lineHeight": 1.2
+        },
+        {
+          "id": "price-text",
+          "type": "text",
+          "x": 600,
+          "y": 260,
+          "width": 420,
+          "height": 80,
+          "text": "$850,000",
+          "fontFamily": "Montserrat",
+          "fontSize": 64,
+          "fontWeight": "bold",
+          "fill": "#D4AF37",
+          "lineHeight": 1.1
+        },
+        {
+          "id": "divider-line",
+          "type": "line",
+          "x": 600,
+          "y": 360,
+          "width": 100,
+          "height": 0,
+          "color": "#D4AF37",
+          "strokeWidth": 4
+        },
+        {
+          "id": "icon-bed",
+          "type": "svg",
+          "x": 600,
+          "y": 420,
+          "width": 32,
+          "height": 32,
+          "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTTk2LjQxNCwzOWgtMy4yNjFDOTEuMjYxLDM5LDkwLDQwLjc4Niw5MCw0Mi43OFY1N0gyNC45NDZjMCwwLTYuMjcxLDAuNzM1LTEwLjU2Ny0yLjk3NCAgQzkuNzYyLDUwLjA0LDEwLDQ0LjQzNCwxMCw0NC40MzRWMjUuMzNDMTAsMjMuMzM2LDguOTQsMjIsNy4wNDcsMjJIMy40ODZDMS41OTMsMjIsMCwyMy4zMzYsMCwyNS4zM1Y3OGg5LjA4NGwyLjQwNy0xMWg3Ny4wMTggIGwyLjQwNywxMUgxMDBWNDIuNzhDMTAwLDQwLjc4Niw5OC4zMDcsMzksOTYuNDE0LDM5eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik04My43MTMsNDYuMzhjLTAuNzc3LTEuNzM1LTMuMDQtMy4xNjUtNS41MTMtMy43M2MtNC44NjUtMS4xMTMtNi4wOTEtMS45MDItMTcuODA0LTEuOTAyICBjLTkuMDEyLDAtMTUuNDI4LDIuMTM0LTE5LjMwMiwzLjYxOUMzOC43Miw0NS4yNzYsMzcsNDcuMjg5LDM3LDQ4LjgyYzAsMC4wMjcsMCwwLjAzNywwLDAuMDU5YzAsMC4wMDUsMCwwLjA2LDAsMC4xNjEgIGMwLDAuMDIxLDAsMC4wMzEsMCwwLjA1OUMzNyw1MS43MDgsMzkuMTQxLDUzLDQxLjY3NSw1M2gzNy44NDNjMi41MzMsMCw0LjU5Mi0xLjE1LDQuNTkyLTMuNzYgIEM4NC4xMDksNDguNjEzLDg0LjAzMyw0Ny4wOTQsODMuNzEzLDQ2LjM4eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0zMC43MTMsNDQuOTIzYy0yLjExNy0xLjc0Ni00LjAwMS0zLjI3NC03LjI2LTUuMjIzYy0yLjkyOC0xLjc1MS02LjMxNS0xLjgwNy03LjgwMiwwLjI3NiAgYy0xLjQxNywxLjk4NS0wLjA3MSw2LjM3MiwxLjkwNCw4LjU2NWMyLjQyMywyLjY5MSw2LjA0MSw0LjA1Miw4Ljc2Miw0LjEzNWMyLjI3OSwwLjA2OSw1LjIzOCwwLjU5OCw2LjY3My0xLjgyMSAgQzM0LjAzNCw0OS4wOTksMzIuNjU1LDQ2LjUyNCwzMC43MTMsNDQuOTIzeiI+PC9wYXRoPjwvc3ZnPg==",
+          "colorsReplace": {
+            "#000000": "#FFFFFF"
+          }
+        },
+        {
+          "id": "text-bed",
+          "type": "text",
+          "x": 648,
+          "y": 424,
+          "width": 372,
+          "height": 32,
+          "text": "3 Bedrooms",
+          "fontFamily": "Montserrat",
+          "fontSize": 24,
+          "fontWeight": "normal",
+          "fill": "#FFFFFF",
+          "lineHeight": 1.2
+        },
+        {
+          "id": "icon-bath",
+          "type": "svg",
+          "x": 600,
+          "y": 480,
+          "width": 32,
+          "height": 32,
+          "src": "data:image/svg+xml;base64,PHN2ZyB4bWxuczp4PSJodHRwOi8vbnMuYWRvYmUuY29tL0V4dGVuc2liaWxpdHkvMS4wLyIgeG1sbnM6aT0iaHR0cDovL25zLmFkb2JlLmNvbS9BZG9iZUlsbHVzdHJhdG9yLzEwLjAvIiB4bWxuczpncmFwaD0iaHR0cDovL25zLmFkb2JlLmNvbS9HcmFwaHMvMS4wLyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMCAxMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzd2l0Y2g+PGZvcmVpZ25PYmplY3QgcmVxdWlyZWRFeHRlbnNpb25zPSJodHRwOi8vbnMuYWRvYmUuY29tL0Fkb2JlSWxsdXN0cmF0b3IvMTAuMC8iIHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPjwvZm9yZWlnbk9iamVjdD48ZyBpOmV4dHJhbmVvdXM9InNlbGYiPjxwYXRoIGQ9Ik02MS4yOTEsNC4zNDVjMC0wLjcxOS0wLjU4MS0xLjI5OS0xLjI5Ni0xLjI5OWMtMC43MTYsMC0xLjI5NywwLjU4MS0xLjI5NywxLjI5OWMwLDAuNzE0LDAuNTgxLDEuMjk1LDEuMjk3LDEuMjk1ICAgIEM2MC43MSw1LjY0LDYxLjI5MSw1LjA1OSw2MS4yOTEsNC4zNDV6Ij48L3BhdGg+PHBhdGggZD0iTTUxLjM5NCwyMC40NzVjMC0wLjk5MS0wLjc5OS0xLjc4OC0xLjc4NC0xLjc4OGMtMC45ODUsMC0xLjc4NCwwLjc5Ni0xLjc4NCwxLjc4OGMwLDAuOTgyLDAuOCwxLjc3OSwxLjc4NCwxLjc3OSAgICBDNTAuNTk2LDIyLjI1NCw1MS4zOTQsMjEuNDU3LDUxLjM5NCwyMC40NzV6Ij48L3BhdGg+PHBhdGggZD0iTTQ4Ljc0LDMyLjUyOWMtMy4zMjksMC02LjAzOCwyLjcwOS02LjAzOCw2LjAzOWMwLDMuMzI0LDIuNzA5LDYuMDI4LDYuMDM4LDYuMDI4czYuMDM4LTIuNzA0LDYuMDM4LTYuMDI4ICAgIEM1NC43NzcsMzUuMjM3LDUyLjA2OSwzMi41MjksNDguNzQsMzIuNTI5eiBNNDguNzQsNDAuNjkyYy0xLjE3NiwwLTIuMTMxLTAuOTUxLTIuMTMxLTIuMTI0YzAtMS4xODQsMC45NTUtMi4xMzUsMi4xMzEtMi4xMzUgICAgYzEuMTc3LDAsMi4xMzEsMC45NTEsMi4xMzEsMi4xMzVDNTAuODcxLDM5Ljc0MSw0OS45MTcsNDAuNjkyLDQ4Ljc0LDQwLjY5MnoiPjwvcGF0aD48cGF0aCBkPSJNMzYuMDU5LDMwLjIwMmMwLTEuNTU5LTEuMjYxLTIuODE2LTIuODE0LTIuODE2Yy0xLjU1MywwLTIuODE0LDEuMjU3LTIuODE0LDIuODE2YzAsMS41NTEsMS4yNjEsMi44MDgsMi44MTQsMi44MDggICAgQzM0Ljc5OCwzMy4wMSwzNi4wNTksMzEuNzUzLDM2LjA1OSwzMC4yMDJ6Ij48L3BhdGg+PHBhdGggZD0iTTk3LjgzNiw2Mi4xODdoLTguNzEzVjYwaDAuMDA1YzAtNS4zMjctNC42MzEtOS43NjEtMTAuNzEzLTEwLjY3OGMyLjUyNi0xLjk2NSw0LjE5LTUuMjExLDQuMTktOC44OSAgICBjMC01Ljk5LTQuMzg0LTEwLjg2Mi05Ljc3NC0xMC44NjJzLTkuNzc0LDQuODcyLTkuNzc0LDEwLjg2MmMwLDMuNjc5LDEuNjY0LDYuOTI0LDQuMTksOC44OSAgICBjLTYuMDcxLDAuOTE1LTEwLjY5NCw1LjMzNi0xMC43MSwxMC42NWgtMC4wMDJ2Mi4yMTRoLTUuMzQ5YzAuNjA1LTEuMzM2LDAuOTc5LTIuNzk2LDAuOTc5LTQuMzU3ICAgIGMwLTUuOTktNC44NzItMTAuODYyLTEwLjg2MS0xMC44NjJjLTEuODUyLDAtMy41ODQsMC40ODgtNS4xMDksMS4zMWMtMi4wMzMtMi4xODEtNC44OTktMy40ODItNy45MzktMy40ODIgICAgYy00LjU3MSwwLTguNDcyLDIuODQ2LTEwLjA3Myw2Ljg1M2MtNS40NzksMS4wNzMtOC45MSw0Ljk1My05LjAzNCwxMC41MzhIMi4xNjRDMC45NjksNjIuMTg3LDAsNjMuMTU1LDAsNjQuMzUxdjIxLjc0NCAgICBjMCw1Ljk4OCwzLjg5NywxMC44Niw4LjY4NywxMC44Nmg4Mi42MjZjNC43OSwwLDguNjg3LTQuODcyLDguNjg3LTEwLjg2VjY0LjM1MUMxMDAsNjMuMTU1LDk5LjAzMSw2Mi4xODcsOTcuODM2LDYyLjE4N3ogICAgIE03Mi44MzEsMzMuODk4YzMuMDAzLDAsNS40NDcsMi45MzMsNS40NDcsNi41MzVzLTIuNDQ0LDYuNTMzLTUuNDQ3LDYuNTMzYy0zLjAwMywwLTUuNDQ3LTIuOTMxLTUuNDQ3LTYuNTMzICAgIFM2OS44MjcsMzMuODk4LDcyLjgzMSwzMy44OTh6IE02MC44NjEsNjBjMC0zLjYwMiwzLjkwNy02LjUzMyw4LjcwOC02LjUzM2g2LjUyM2M0Ljc4OSwwLDguNjg0LDIuOTE2LDguNzA0LDYuNTA2aC0wLjAwMnYyLjIxNCAgICBINjAuODYxVjYweiBNMjEuMTY3LDU1LjY1OGgwLjU1NGMwLTMuNjAyLDIuOTMyLTYuNTM1LDYuNTM0LTYuNTM1YzEuNzQ2LDAsMy40MDQsMC43MDgsNC42MTYsMS45MTUgICAgYy0xLjA4OSwxLjM1My0xLjg3OCwyLjk1OC0yLjIyLDQuNzI4bDQuMTE4LDIuMDZjMC4wMDMtMy42LDIuOTM0LTYuNTMxLDYuNTM0LTYuNTMxYzMuNjAyLDAsNi41MzQsMi45MzMsNi41MzQsNi41MzUgICAgYzAsMS42ODEtMC42NTQsMy4yLTEuNzAyLDQuMzU3SDEzLjQ3N0MxMy42MTMsNTguMDkzLDE2LjM4OCw1NS43MjQsMjEuMTY3LDU1LjY1OHogTTk1LjY3Myw4Ni4wOTQgICAgYzAsMy41NDEtMS45OTcsNi41MzMtNC4zNiw2LjUzM0g4LjY4N2MtMi4zNjMsMC00LjM2LTIuOTkyLTQuMzYtNi41MzN2LTE5LjU4aDUwLjA2N2MwLjE4MiwyLjIyNywyLjAzLDMuOTg5LDQuMzAyLDMuOTl2MCAgICBjMCwwLDAsMCwwLjAwMSwwczAsMCwwLjAwMSwwdjBjMi4yNzItMC4wMDEsNC4xMjEtMS43NjIsNC4zMDItMy45OWgxOS42NTdjMC4xODIsMi4yMjcsMi4wMywzLjk4OSw0LjMwMiwzLjk5djBjMCwwLDAsMCwwLjAwMSwwICAgIGMwLDAsMCwwLDAuMDAxLDB2MGMyLjI3Mi0wLjAwMSw0LjEyMS0xLjc2Miw0LjMwMi0zLjk5aDQuNDFWODYuMDk0eiI+PC9wYXRoPjwvZz48L3N3aXRjaD48L3N2Zz4=",
+          "colorsReplace": {
+            "#000000": "#FFFFFF"
+          }
+        },
+        {
+          "id": "text-bath",
+          "type": "text",
+          "x": 648,
+          "y": 484,
+          "width": 372,
+          "height": 32,
+          "text": "2 Bathrooms",
+          "fontFamily": "Montserrat",
+          "fontSize": 24,
+          "fontWeight": "normal",
+          "fill": "#FFFFFF",
+          "lineHeight": 1.2
+        },
+        {
+          "id": "icon-sqft",
+          "type": "svg",
+          "x": 600,
+          "y": 540,
+          "width": 32,
+          "height": 32,
+          "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZD0iTTkwLDEwdjgwSDEwVjEwSDkwIE0xMDAsMEg5MEgxMEgwdjEwdjgwdjEwaDEwaDgwaDEwVjkwVjEwVjBMMTAwLDB6Ij48L3BhdGg+PC9nPjwvc3ZnPg==",
+          "colorsReplace": {
+            "#000000": "#FFFFFF"
+          }
+        },
+        {
+          "id": "text-sqft",
+          "type": "text",
+          "x": 648,
+          "y": 544,
+          "width": 372,
+          "height": 32,
+          "text": "2,150 Sq Ft",
+          "fontFamily": "Montserrat",
+          "fontSize": 24,
+          "fontWeight": "normal",
+          "fill": "#FFFFFF",
+          "lineHeight": 1.2
+        },
+        {
+          "id": "agent-name",
+          "type": "text",
+          "x": 600,
+          "y": 860,
+          "width": 200,
+          "height": 32,
+          "text": "JANE DOE",
+          "fontFamily": "Montserrat",
+          "fontSize": 24,
+          "fontWeight": "bold",
+          "fill": "#FFFFFF",
+          "align": "right",
+          "lineHeight": 1.2
+        },
+        {
+          "id": "agent-title",
+          "type": "text",
+          "x": 600,
+          "y": 896,
+          "width": 200,
+          "height": 24,
+          "text": "Listing Agent",
+          "fontFamily": "Montserrat",
+          "fontSize": 18,
+          "fontWeight": "normal",
+          "fill": "#D4AF37",
+          "align": "right",
+          "lineHeight": 1.2
+        },
+        {
+          "id": "agent-phone",
+          "type": "text",
+          "x": 600,
+          "y": 924,
+          "width": 200,
+          "height": 24,
+          "text": "555-0198",
+          "fontFamily": "Montserrat",
+          "fontSize": 18,
+          "fontWeight": "normal",
+          "fill": "#FFFFFF",
+          "align": "right",
+          "lineHeight": 1.2
+        },
+        {
+          "id": "agent-photo",
+          "type": "image",
+          "x": 820,
+          "y": 820,
+          "width": 200,
+          "height": 200,
+          "src": "https://images.unsplash.com/photo-1770199105714-a5a349546346?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTY5OTZ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjByZWFsJTIwZXN0YXRlJTIwYWdlbnR8ZW58MHx8fHwxNzcxNjA2MDUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "cornerRadius": 100,
+          "borderColor": "#FFFFFF",
+          "borderSize": 3,
+          "shadowEnabled": true,
+          "shadowBlur": 16,
+          "shadowOffsetY": 8,
+          "shadowOpacity": 0.2
+        }
+      ]
+    }
+  ],
+  "audios": []
+}

@@ -55,175 +55,177 @@ const LLM_MODELS = [
   { value: 'gpt-image-1', label: 'GPT Image 1' },
 ];
 
-const DrillDownPanel = observer(
-  ({ store, tool, onBack, onClose }) => {
-    const [model, setModel] = React.useState('gpt-image-1.5');
-    const [intensity, setIntensity] = React.useState('Strong');
-    const [showCustomPrompt, setShowCustomPrompt] = React.useState(false);
-    const [customPrompt, setCustomPrompt] = React.useState('');
-    const [loading, setLoading] = React.useState(false);
-    const [progress, setProgress] = React.useState(0);
+const DrillDownPanel = observer(({ store, tool, onBack, onClose }) => {
+  const [model, setModel] = React.useState('gpt-image-1.5');
+  const [intensity, setIntensity] = React.useState('Strong');
+  const [showCustomPrompt, setShowCustomPrompt] = React.useState(false);
+  const [customPrompt, setCustomPrompt] = React.useState('');
+  const [loading, setLoading] = React.useState(false);
+  const [progress, setProgress] = React.useState(0);
 
-    const handleRun = async () => {
-      const element = store.selectedElements[0];
-      if (!element || element.type !== 'image') return;
+  const handleRun = async () => {
+    const element = store.selectedElements[0];
+    if (!element || element.type !== 'image') return;
 
-      setLoading(true);
-      setProgress(0);
+    setLoading(true);
+    setProgress(0);
 
-      const progressInterval = setInterval(() => {
-        setProgress((prev) => {
-          if (prev >= 95) {
-            clearInterval(progressInterval);
-            return 95;
-          }
-          return prev + 2;
-        });
-      }, 600);
-
-      try {
-        const imageUrl = element.src;
-        const finalPrompt =
-          (customPrompt || tool.prompt) + INTENSITY_PROMPTS[intensity];
-
-        const response = await fetch(
-          'https://api.polotno.com/api/ai/image-to-image?KEY=' + getKey(),
-          {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              url: imageUrl,
-              prompt: finalPrompt,
-              provider: 'openai',
-            }),
-          }
-        );
-
-        if (!response.ok) {
-          const errorText = await response.text();
-          throw new Error(`API request failed: ${errorText}`);
+    const progressInterval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 95) {
+          clearInterval(progressInterval);
+          return 95;
         }
+        return prev + 2;
+      });
+    }, 600);
 
-        const data = await response.json();
-        setProgress(100);
+    try {
+      const imageUrl = element.src;
+      const finalPrompt =
+        (customPrompt || tool.prompt) + INTENSITY_PROMPTS[intensity];
 
-        element.set({ src: data.url });
-      } catch (error) {
-        console.error('Error processing image:', error);
-        alert('Error processing image: ' + error.message);
-      } finally {
-        setLoading(false);
-        clearInterval(progressInterval);
+      const response = await fetch(
+        'https://api.polotno.com/api/ai/image-to-image?KEY=' + getKey(),
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            url: imageUrl,
+            prompt: finalPrompt,
+            model: 'nano-banana',
+          }),
+        },
+      );
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`API request failed: ${errorText}`);
       }
-    };
 
-    return (
-      <div className="drill-down-panel">
-        <div className="drill-down-header">
-          <button className="back-button" onClick={onBack}>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="white">
-              <path d="M10.5 13l-5-5 5-5" stroke="white" strokeWidth="2" fill="none" />
-            </svg>
-          </button>
-          <span className="title">{tool.label}</span>
-          <button className="close-button" onClick={onClose}>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="white">
-              <path
-                d="M1 1l12 12M13 1L1 13"
-                stroke="white"
-                strokeWidth="2"
-              />
-            </svg>
-          </button>
-        </div>
-        <div className="drill-down-body">
-          <label>LLM model</label>
-          <HTMLSelect
-            fill
-            value={model}
-            onChange={(e) => setModel(e.target.value)}
-            style={{ marginBottom: '20px' }}
-          >
-            {LLM_MODELS.map((m) => (
-              <option key={m.value} value={m.value}>
-                {m.label}
-              </option>
-            ))}
-          </HTMLSelect>
+      const data = await response.json();
+      setProgress(100);
 
-          <label>Intensity</label>
-          <div className="intensity-group">
-            {['Strong', 'Medium', 'Low'].map((level) => (
-              <button
-                key={level}
-                className={`intensity-button${intensity === level ? ' active' : ''}`}
-                onClick={() => setIntensity(level)}
-              >
-                {level}
-              </button>
-            ))}
-          </div>
+      element.set({ src: data.url });
+    } catch (error) {
+      console.error('Error processing image:', error);
+      alert('Error processing image: ' + error.message);
+    } finally {
+      setLoading(false);
+      clearInterval(progressInterval);
+    }
+  };
 
-          {!showCustomPrompt ? (
+  return (
+    <div className="drill-down-panel">
+      <div className="drill-down-header">
+        <button className="back-button" onClick={onBack}>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path
+              d="M15 9H3M3 9L8 4M3 9L8 14"
+              stroke="white"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </button>
+        <span className="title">{tool.label}</span>
+        <button className="close-button" onClick={onClose}>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="white">
+            <path d="M1 1l12 12M13 1L1 13" stroke="white" strokeWidth="2" />
+          </svg>
+        </button>
+      </div>
+      <div className="drill-down-body">
+        <label>LLM model</label>
+        <HTMLSelect
+          fill
+          value={model}
+          onChange={(e) => setModel(e.target.value)}
+          style={{ marginBottom: '20px' }}
+        >
+          {LLM_MODELS.map((m) => (
+            <option key={m.value} value={m.value}>
+              {m.label}
+            </option>
+          ))}
+        </HTMLSelect>
+
+        <label>Intensity</label>
+        <div className="intensity-group">
+          {['Strong', 'Medium', 'Low'].map((level) => (
             <button
-              className="custom-prompt-toggle"
-              onClick={() => setShowCustomPrompt(true)}
+              key={level}
+              className={`intensity-button${
+                intensity === level ? ' active' : ''
+              }`}
+              onClick={() => setIntensity(level)}
             >
-              + Add a custom prompt
+              {level}
             </button>
-          ) : (
-            <div style={{ marginBottom: '12px' }}>
-              <label>Custom prompt</label>
-              <TextArea
-                fill
-                rows={3}
-                value={customPrompt}
-                onChange={(e) => setCustomPrompt(e.target.value)}
-                placeholder="Describe what you want to change..."
-                style={{
-                  backgroundColor: '#262626',
-                  border: '1px solid #393939',
-                  color: 'white',
-                  resize: 'vertical',
-                }}
-              />
-            </div>
-          )}
+          ))}
+        </div>
 
-          {loading && (
+        {!showCustomPrompt ? (
+          <button
+            className="custom-prompt-toggle"
+            onClick={() => setShowCustomPrompt(true)}
+          >
+            + Add a custom prompt
+          </button>
+        ) : (
+          <div style={{ marginBottom: '12px' }}>
+            <label>Custom prompt</label>
+            <TextArea
+              fill
+              rows={3}
+              value={customPrompt}
+              onChange={(e) => setCustomPrompt(e.target.value)}
+              placeholder="Describe what you want to change..."
+              style={{
+                backgroundColor: '#262626',
+                border: '1px solid #393939',
+                color: 'white',
+                resize: 'vertical',
+              }}
+            />
+          </div>
+        )}
+
+        {loading && (
+          <div
+            style={{
+              textAlign: 'center',
+              padding: '10px 0',
+              marginBottom: '8px',
+            }}
+          >
+            <Spinner size={24} />
             <div
               style={{
-                textAlign: 'center',
-                padding: '10px 0',
-                marginBottom: '8px',
+                marginTop: '6px',
+                fontSize: '12px',
+                color: '#a8a8a8',
               }}
             >
-              <Spinner size={24} />
-              <div
-                style={{
-                  marginTop: '6px',
-                  fontSize: '12px',
-                  color: '#a8a8a8',
-                }}
-              >
-                Processing... {progress}%
-              </div>
+              Processing... {progress}%
             </div>
-          )}
+          </div>
+        )}
 
-          <Button
-            className="run-button"
-            onClick={handleRun}
-            loading={loading}
-            disabled={loading}
-          >
-            Run
-          </Button>
-        </div>
+        <Button
+          className="run-button"
+          onClick={handleRun}
+          loading={loading}
+          disabled={loading}
+        >
+          Run
+        </Button>
       </div>
-    );
-  }
-);
+    </div>
+  );
+});
 
 const EditImageMainPanel = observer(({ store, onSelectTool }) => {
   const element = store.selectedElements[0];
@@ -245,19 +247,24 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
 
       switch (action) {
         case 'remove-background':
-          prompt = 'Remove the background from this image completely. Keep only the main subject.';
+          prompt =
+            'Remove the background from this image completely. Keep only the main subject.';
           break;
         case 'remove-object':
-          prompt = 'Remove unwanted objects and distractions from this image. Keep the main composition clean.';
+          prompt =
+            'Remove unwanted objects and distractions from this image. Keep the main composition clean.';
           break;
         case 'extend':
-          prompt = 'Extend this image outward, generating natural content beyond the current borders. Keep the style consistent.';
+          prompt =
+            'Extend this image outward, generating natural content beyond the current borders. Keep the style consistent.';
           break;
         case 'upscale':
-          prompt = 'Upscale and enhance the resolution of this image. Make it sharper and more detailed.';
+          prompt =
+            'Upscale and enhance the resolution of this image. Make it sharper and more detailed.';
           break;
         case 'enhance':
-          prompt = 'Enhance this image quality. Improve colors, contrast, sharpness and overall visual appeal.';
+          prompt =
+            'Enhance this image quality. Improve colors, contrast, sharpness and overall visual appeal.';
           break;
         case 'image-to-video':
           prompt = 'Create a smooth cinematic camera movement from this image.';
@@ -276,7 +283,7 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
             prompt,
             provider: 'openai',
           }),
-        }
+        },
       );
 
       if (!response.ok) {
@@ -442,32 +449,11 @@ const EditImagePanel = observer(({ store }) => {
     );
   }
 
-  return (
-    <EditImageMainPanel store={store} onSelectTool={setSelectedTool} />
-  );
+  return <EditImageMainPanel store={store} onSelectTool={setSelectedTool} />;
 });
 
 export const EditImageSection = {
   name: 'edit-image',
-  Tab: (props) => (
-    <SectionTab name="Edit image" {...props}>
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 20 20"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M15.5 2.5L17.5 4.5L15 7L13 5L15.5 2.5ZM6 12L12 6L14 8L8 14H6V12Z"
-          fill="white"
-        />
-        <path
-          d="M16 16H4V4H10L12 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H16C17.1 18 18 17.1 18 16V8L16 10V16Z"
-          fill="white"
-        />
-      </svg>
-    </SectionTab>
-  ),
+  Tab: (props) => null,
   Panel: EditImagePanel,
 };

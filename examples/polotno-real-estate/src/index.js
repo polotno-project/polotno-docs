@@ -7,12 +7,11 @@ import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 import { Toolbar } from 'polotno/toolbar/toolbar';
 import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
-import {
-  SidePanel,
-  DEFAULT_SECTIONS,
-  SectionTab,
-} from 'polotno/side-panel';
+import { SidePanel, DEFAULT_SECTIONS, SectionTab } from 'polotno/side-panel';
+import { ImagesGrid } from 'polotno/side-panel/images-grid';
 import { Workspace } from 'polotno/canvas/workspace';
+import { Tooltip } from 'polotno/canvas/tooltip';
+import { Button } from '@blueprintjs/core';
 import { createStore } from 'polotno/model/store';
 
 import Topbar from './topbar';
@@ -121,18 +120,67 @@ const IconsIcon = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-      fill="white"
-    />
+    <g>
+      <path
+        d="M3.75 12H2.25V20.25C2.25 21.0784 2.92155 21.75 3.75 21.75H9.75V20.25H3.75V12Z"
+        fill="white"
+      />
+      <path
+        d="M21 21.75H12.75C12.4849 21.75 12.2393 21.6101 12.1044 21.3817C12.0349 21.2641 12 21.1321 12 21C12 20.8757 12.0309 20.7512 12.0929 20.6386L16.2179 13.1386C16.3602 12.8798 16.6178 12.7502 16.875 12.75C17.1326 12.7498 17.3896 12.8793 17.5321 13.1386L21.6572 20.6386C21.7191 20.7512 21.75 20.8757 21.75 21C21.75 21.1321 21.7151 21.2641 21.6456 21.3817C21.5107 21.61 21.2651 21.75 21 21.75ZM14.0184 20.25H19.7317L16.8751 15.0563L14.0184 20.25Z"
+        fill="white"
+      />
+      <path
+        d="M20.25 2.25H12V3.75H20.25V14.2442H21.75V3.75C21.75 2.92162 21.0785 2.25 20.25 2.25Z"
+        fill="white"
+      />
+      <path
+        d="M8.25 2.25H3.75C2.92155 2.25 2.25 2.92162 2.25 3.75V8.25C2.25 9.07837 2.92155 9.75 3.75 9.75H8.25C9.07845 9.75 9.75 9.07837 9.75 8.25V3.75C9.75 2.92162 9.07845 2.25 8.25 2.25ZM8.25 8.25H3.75V3.75H8.25V8.25Z"
+        fill="white"
+      />
+    </g>
   </svg>
 );
 
-DEFAULT_SECTIONS.find((s) => s.name === 'templates').Tab = (props) => (
-  <SectionTab name="Templates" {...props}>
-    <TemplatesIcon />
-  </SectionTab>
-);
+const TemplatesPanel = observer(({ store }) => {
+  const [templates, setTemplates] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    fetch('./templates/index.json')
+      .then((res) => res.json())
+      .then((data) => {
+        setTemplates(data);
+        setLoading(false);
+      });
+  }, []);
+
+  return (
+    <div style={{ height: '100%' }}>
+      <ImagesGrid
+        shadowEnabled={false}
+        images={templates}
+        getPreview={(item) => `./templates/${item.preview}`}
+        isLoading={loading}
+        onSelect={async (item) => {
+          const req = await fetch(`./templates/${item.json}`);
+          const json = await req.json();
+          store.loadJSON(json);
+        }}
+        rowsNumber={2}
+      />
+    </div>
+  );
+});
+
+const TemplatesSection = {
+  name: 'templates',
+  Tab: (props) => (
+    <SectionTab name="Templates" {...props}>
+      <TemplatesIcon />
+    </SectionTab>
+  ),
+  Panel: TemplatesPanel,
+};
 
 DEFAULT_SECTIONS.find((s) => s.name === 'text').Tab = (props) => (
   <SectionTab name="Text" {...props}>
@@ -147,7 +195,7 @@ DEFAULT_SECTIONS.find((s) => s.name === 'photos').Tab = (props) => (
 );
 
 const sections = [
-  DEFAULT_SECTIONS.find((s) => s.name === 'templates'),
+  TemplatesSection,
   DEFAULT_SECTIONS.find((s) => s.name === 'text'),
   DEFAULT_SECTIONS.find((s) => s.name === 'photos'),
   {
@@ -190,8 +238,46 @@ reaction(
         store.openSidePanel(previousSection || 'templates');
       }
     }
-  }
+  },
 );
+
+const EditIcon = () => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M16.474 5.408l2.118 2.117m-.756-3.982L12.109 9.27a2.118 2.118 0 00-.58 1.082L11 13l2.648-.53c.41-.082.786-.283 1.082-.579l5.727-5.727a1.853 1.853 0 10-2.621-2.621z"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M5 21h14"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+const ImageEditButton = observer(({ store }) => {
+  return (
+    <Button
+      small
+      minimal
+      onClick={() => store.openSidePanel('edit-image')}
+      icon={<EditIcon />}
+    >
+      Edit Image
+    </Button>
+  );
+});
 
 export const App = observer(({ store }) => {
   return (
@@ -214,8 +300,14 @@ export const App = observer(({ store }) => {
             />
           </SidePanelWrap>
           <WorkspaceWrap>
-            <Toolbar store={store} />
-            <Workspace store={store} />
+            <Toolbar store={store} components={{ ImageEditButton }} />
+            <Workspace
+              store={store}
+              components={{
+                Tooltip,
+                ImageEditButton,
+              }}
+            />
             <ZoomButtons store={store} />
             <PagesTimeline store={store} />
           </WorkspaceWrap>

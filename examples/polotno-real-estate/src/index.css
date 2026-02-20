@@ -61,9 +61,9 @@ body .bp5-dark .bp5-menu {
 body .bp5-dark .bp5-html-select select,
 body .bp5-dark .bp5-select select {
   background-color: #262626;
-  border: 1px solid #6f6f6f;
-  border-radius: 4px;
-  height: 36px;
+  border: 1px solid #525252;
+  border-radius: 8px;
+  height: 40px;
   font-size: 14px;
   box-shadow: none;
 }
@@ -170,7 +170,7 @@ body .bp5-dark .bp5-html-select .bp5-icon {
   background-color: #393939 !important;
   color: white !important;
   border: none !important;
-  border-radius: 4px !important;
+  border-radius: 8px !important;
   padding: 8px 14px !important;
   font-size: 13px !important;
   box-shadow: none !important;
@@ -193,9 +193,9 @@ body .bp5-dark .bp5-html-select .bp5-icon {
 .drill-down-header {
   display: flex;
   align-items: center;
-  padding: 16px 16px 12px 16px;
+  padding: 5px 5px;
   border-bottom: 1px solid #393939;
-  gap: 8px;
+  gap: 10px;
 }
 
 .drill-down-header .back-button {
@@ -233,8 +233,8 @@ body .bp5-dark .bp5-html-select .bp5-icon {
 
 .drill-down-body label {
   display: block;
-  font-size: 13px;
-  color: #a8a8a8;
+  font-size: 12px;
+  color: #8d8d8d;
   margin-bottom: 8px;
 }
 
@@ -242,34 +242,36 @@ body .bp5-dark .bp5-html-select .bp5-icon {
   display: flex;
   gap: 0;
   margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #525252;
 }
 
 .drill-down-body .intensity-button {
   flex: 1;
   border-radius: 0 !important;
   background-color: #393939 !important;
-  color: white !important;
+  color: #c6c6c6 !important;
   box-shadow: none !important;
-  border: 1px solid #555 !important;
-  padding: 8px 12px !important;
+  border: none !important;
+  border-right: 1px solid #525252 !important;
+  padding: 9px 12px !important;
   font-size: 13px !important;
   cursor: pointer;
-}
-
-.drill-down-body .intensity-button:first-child {
-  border-radius: 4px 0 0 4px !important;
+  font-weight: 500;
 }
 
 .drill-down-body .intensity-button:last-child {
-  border-radius: 0 4px 4px 0 !important;
+  border-right: none !important;
 }
 
 .drill-down-body .intensity-button.active {
-  background-color: #555 !important;
+  background-color: #525252 !important;
+  color: white !important;
 }
 
 .drill-down-body .custom-prompt-toggle {
-  color: #a8a8a8;
+  color: #8d8d8d;
   font-size: 13px;
   cursor: pointer;
   margin-bottom: 12px;
@@ -281,24 +283,25 @@ body .bp5-dark .bp5-html-select .bp5-icon {
 }
 
 .drill-down-body .custom-prompt-toggle:hover {
-  color: white;
+  color: #c6c6c6;
 }
 
 .drill-down-body .run-button {
   width: 100%;
   margin-top: 16px;
-  background-color: #393939 !important;
+  background-color: transparent !important;
   color: white !important;
   box-shadow: none !important;
-  border: 1px solid #555 !important;
-  border-radius: 4px !important;
-  padding: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  border-radius: 8px !important;
+  padding: 11px !important;
   font-size: 14px !important;
+  font-weight: 500;
   cursor: pointer;
 }
 
 .drill-down-body .run-button:hover {
-  background-color: #4a4a4a !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
 }
 
 /* Hide the edit-image tab from the sidebar */
