@@ -59,8 +59,32 @@ Exports a Polotno design to video format.
 - `onProgress` (optional): Callback function for progress tracking
   - `progress`: Number between 0 and 1 representing export progress
   - `frameTime`: Time in milliseconds to render the current frame
+- `includeAudio` (optional): Include audio tracks from the design in the exported video
+- `signal` (optional): An `AbortSignal` to cancel video generation. When aborted, `storeToVideo` rejects with an `AbortError`.
 
 **Returns:** Promise that resolves to a Blob containing the video file
+
+### Cancelling an Export
+
+Use an `AbortController` to cancel a long-running export:
+
+```ts
+const controller = new AbortController();
+
+// Cancel after 10 seconds
+setTimeout(() => controller.abort(), 10_000);
+
+try {
+  const videoBlob = await storeToVideo({
+    store,
+    signal: controller.signal,
+  });
+} catch (err) {
+  if (err.name === 'AbortError') {
+    console.log('Export was cancelled');
+  }
+}
+```
 
 ## Use Cases
 
