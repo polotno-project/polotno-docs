@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "npm run build:demos && next build",
+    "build": "npm run generate-schema-docs && npm run build:demos && next build",
     "dev": "next dev --turbo",
     "start": "next start",
     "build:demos": "node scripts/build-demos.mjs",
