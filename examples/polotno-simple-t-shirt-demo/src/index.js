@@ -17,7 +17,7 @@ store.setSize(500, 500);
 const page = store.addPage();
 
 page.set({
-  background: '/tshirt.png',
+  background: './tshirt.png',
 });
 
 const text = page.addElement({

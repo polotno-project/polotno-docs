@@ -23,7 +23,7 @@ const frontPage = store.addPage();
 
 frontPage.addElement({
   type: "svg",
-  src: "/front.svg",
+  src: "./front.svg",
   width: 2500,
   height: 2500,
   x: -750,
@@ -36,7 +36,7 @@ const backPage = store.addPage();
 
 backPage.addElement({
   type: "svg",
-  src: "/back.svg",
+  src: "./back.svg",
   width: 2500,
   height: 2500,
   x: -750,
