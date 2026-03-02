@@ -1,0 +1,170 @@
+---
+title: TableCell
+description: Documentation for the TableCell schema definition in the Polotno Design JSON Schema.
+keywords: ["TableCell", "JSON Schema", "Polotno", "Design", "API", "Documentation"]
+---
+
+# TableCell
+
+
+
+## Type Information
+
+**Base Type:** `object`
+
+
+
+## Properties
+
+
+| Property | Type | Description |
+|----------|------|----------|
+| `align` | `string` | Text alignment. Inherits from table align. |
+| `borders` | [`CellBorders`](./cell-borders) | Per-side border overrides. Absent sides inherit from the table's border properties. |
+| `cellBackground` | `string` | Cell background color (CSS color string). Inherits from table cellBackground. |
+| `cellPadding` | `number` | Cell inner padding in pixels. Inherits from table cellPadding. |
+| `colSpan` | `number` | Number of columns this cell spans. Defaults to 1. |
+| `custom` | `unknown` | Custom data attached to the cell. |
+| `fill` | `string` | Text color (CSS color string). Inherits from table fill. |
+| `fontFamily` | `string` | Font family name. Inherits from table fontFamily. |
+| `fontSize` | `number` | Font size in pixels. Inherits from table fontSize. |
+| `fontStyle` | `string` | Font style: 'normal' or 'italic'. Inherits from table fontStyle. |
+| `fontWeight` | `string` | Font weight: 'normal', 'bold', or numeric string. Inherits from table fontWeight. |
+| `id` | `string` | Unique identifier for the cell. |
+| `letterSpacing` | `number` | Letter spacing as percentage of font size. Inherits from table letterSpacing. |
+| `lineHeight` | `number` \| `string` | Line height multiplier or string value. Inherits from table lineHeight. |
+| `mergedInto` | `string` | ID of the cell this cell is merged into. When set, this cell is hidden and its space is consumed by the target cell. |
+| `name` | `string` | Display name for the cell. |
+| `opacity` | `number` | Cell opacity (0-1). Defaults to 1. |
+| `rowSpan` | `number` | Number of rows this cell spans. Defaults to 1. |
+| `stroke` | `string` | Text stroke color. Inherits from table stroke. |
+| `strokeWidth` | `number` | Text stroke width in pixels. Inherits from table strokeWidth. |
+| `text` | `string` | Cell text content. |
+| `textDecoration` | `string` | Text decoration: 'underline', 'line-through', or empty string. Inherits from table textDecoration. |
+| `textTransform` | `string` | Text transform: 'uppercase', 'lowercase', 'capitalize', 'none'. Inherits from table textTransform. |
+| `type` | `"tablecell"` | Element type identifier. |
+| `verticalAlign` | `string` | Vertical text alignment. Inherits from table verticalAlign. |
+
+
+
+## JSON Schema
+
+```json
+{
+  "additionalProperties": false,
+  "properties": {
+    "align": {
+      "description": "Text alignment. Inherits from table align.",
+      "type": "string"
+    },
+    "borders": {
+      "$ref": "#/definitions/CellBorders",
+      "description": "Per-side border overrides. Absent sides inherit from the table's border properties."
+    },
+    "cellBackground": {
+      "description": "Cell background color (CSS color string). Inherits from table cellBackground.",
+      "type": "string"
+    },
+    "cellPadding": {
+      "description": "Cell inner padding in pixels. Inherits from table cellPadding.",
+      "type": "number"
+    },
+    "colSpan": {
+      "description": "Number of columns this cell spans. Defaults to 1.",
+      "type": "number"
+    },
+    "custom": {
+      "description": "Custom data attached to the cell."
+    },
+    "fill": {
+      "description": "Text color (CSS color string). Inherits from table fill.",
+      "type": "string"
+    },
+    "fontFamily": {
+      "description": "Font family name. Inherits from table fontFamily.",
+      "type": "string"
+    },
+    "fontSize": {
+      "description": "Font size in pixels. Inherits from table fontSize.",
+      "type": "number"
+    },
+    "fontStyle": {
+      "description": "Font style: 'normal' or 'italic'. Inherits from table fontStyle.",
+      "type": "string"
+    },
+    "fontWeight": {
+      "description": "Font weight: 'normal', 'bold', or numeric string. Inherits from table fontWeight.",
+      "type": "string"
+    },
+    "id": {
+      "description": "Unique identifier for the cell.",
+      "type": "string"
+    },
+    "letterSpacing": {
+      "description": "Letter spacing as percentage of font size. Inherits from table letterSpacing.",
+      "type": "number"
+    },
+    "lineHeight": {
+      "description": "Line height multiplier or string value. Inherits from table lineHeight.",
+      "type": [
+        "number",
+        "string"
+      ]
+    },
+    "mergedInto": {
+      "description": "ID of the cell this cell is merged into. When set, this cell is hidden and its space is consumed by the target cell.",
+      "type": "string"
+    },
+    "name": {
+      "description": "Display name for the cell.",
+      "type": "string"
+    },
+    "opacity": {
+      "description": "Cell opacity (0-1). Defaults to 1.",
+      "type": "number"
+    },
+    "rowSpan": {
+      "description": "Number of rows this cell spans. Defaults to 1.",
+      "type": "number"
+    },
+    "stroke": {
+      "description": "Text stroke color. Inherits from table stroke.",
+      "type": "string"
+    },
+    "strokeWidth": {
+      "description": "Text stroke width in pixels. Inherits from table strokeWidth.",
+      "type": "number"
+    },
+    "text": {
+      "description": "Cell text content.",
+      "type": "string"
+    },
+    "textDecoration": {
+      "description": "Text decoration: 'underline', 'line-through', or empty string. Inherits from table textDecoration.",
+      "type": "string"
+    },
+    "textTransform": {
+      "description": "Text transform: 'uppercase', 'lowercase', 'capitalize', 'none'. Inherits from table textTransform.",
+      "type": "string"
+    },
+    "type": {
+      "const": "tablecell",
+      "description": "Element type identifier.",
+      "type": "string"
+    },
+    "verticalAlign": {
+      "description": "Vertical text alignment. Inherits from table verticalAlign.",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "type"
+  ],
+  "type": "object"
+}
+```
+
+## Related Definitions
+
+- [CellBorders](./cell-borders)

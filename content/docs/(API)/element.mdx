@@ -11,6 +11,7 @@ description: Elements represent graphical objects in a page or group
 - **line**
 - **figure**
 - **video**
+- **table**
 - **group**
 
 ```ts
@@ -575,4 +576,200 @@ group.set({
 store.ungroupElements([group.id]);
 ```
 
+## Table element
+
+A table element renders a grid of editable text cells on the canvas. Tables support configurable rows and columns, per-cell text styling, cell merging, per-side border customization, keyboard navigation, and auto-growing rows that expand to fit content.
+
+Tables do **not** support shadow, blur, brightness, sepia, grayscale, or filter effects.
+
+```ts
+const table = page.addElement({
+  type: 'table',
+  x: 50,
+  y: 50,
+  width: 400,
+  height: 250,
+  rows: 3,
+  cols: 4,
+
+  // text styling defaults (inherited by all cells)
+  fontSize: 30,
+  fontFamily: 'Roboto',
+  fontWeight: 'normal',
+  fontStyle: 'normal',
+  textDecoration: '',
+  textTransform: 'none',
+  fill: 'black',
+  align: 'left',
+  verticalAlign: 'top',
+  lineHeight: 1.2,
+  letterSpacing: 0,
+  strokeWidth: 0,
+  stroke: 'black',
+
+  // border defaults
+  borderColor: '#000000',
+  borderWidth: 1,
+  borderStyle: 'solid', // 'solid', 'dashed', 'dotted', 'none'
+
+  // cell defaults
+  cellBackground: 'transparent',
+  cellPadding: 4,
+
+  name: '',
+  selectable: true,
+  alwaysOnTop: false,
+  showInExport: true,
+  draggable: true,
+  contentEditable: true,
+  removable: true,
+  resizable: true,
+  styleEditable: true,
+});
+```
+
+Cells, `colWidths`, and `rowHeights` are generated automatically when omitted. Each column and row starts with equal width/height.
+
+### Pre-populating cells
+
+You can pass cell data when creating a table. Cells are stored in **row-major order** (left-to-right, top-to-bottom). Only properties that differ from the table defaults need to be specified.
+
+```ts
+page.addElement({
+  type: 'table',
+  x: 50,
+  y: 50,
+  width: 400,
+  height: 200,
+  rows: 2,
+  cols: 3,
+  cells: [
+    { id: 'h1', text: 'Name' },
+    { id: 'h2', text: 'Role' },
+    { id: 'h3', text: 'Email' },
+    { id: 'r1', text: 'Alice' },
+    { id: 'r2', text: 'Engineer' },
+    { id: 'r3', text: 'alice@example.com' },
+  ],
+});
+```
+
+### Cell access
+
+```ts
+// Get a specific cell by row/column index (0-based)
+const cell = table.getCell(0, 2); // row 0, column 2
+
+// All visible (non-merged) cells
+const visible = table.visibleCells;
+
+// Currently focused cells
+const focused = table.focusedCells;
+
+// Cell currently being edited (or undefined)
+const editing = table.editingCell;
+```
+
+### Row operations
+
+```ts
+// Add a row at index (pushes existing rows down)
+table.addRow(1);
+
+// Remove a row by index
+table.removeRow(2);
+
+// Resize a row border between row[index] and row[index+1]
+// delta is a fraction of total height
+table.resizeRow(0, 0.05);
+
+// Make all rows the same height
+table.distributeRowsEvenly();
+```
+
+### Column operations
+
+```ts
+// Add a column at index (pushes existing columns right)
+table.addColumn(2);
+
+// Remove a column by index
+table.removeColumn(0);
+
+// Resize a column border between col[index] and col[index+1]
+// delta is a fraction of total width
+table.resizeColumn(1, -0.03);
+
+// Make all columns the same width
+table.distributeColumnsEvenly();
+```
+
+### Cell focus and editing
+
+```ts
+// Focus a single cell
+table.focusCell(cell.id);
+
+// Add a cell to the current selection
+table.focusCell(cell.id, true);
+
+// Focus a rectangular range from the anchor cell to (row, col)
+table.focusCellRange(2, 3);
+
+// Clear all cell focus and exit editing
+table.clearCellFocus();
+
+// Enter text editing mode for a cell
+table.enterCellEdit(cell.id);
+
+// Exit text editing mode
+table.exitCellEdit();
+```
+
+### Cell styling
+
+Each cell can override any of the table's text styling defaults. When a property is `null` or `undefined`, the cell inherits the table-level value.
+
+```ts
+// Update cell properties
+cell.set({
+  text: 'Hello',
+  fontSize: 24,
+  fill: 'red',
+  fontWeight: 'bold',
+  cellBackground: '#f0f0f0',
+});
+
+// Reset a cell property to inherit from the table
+cell.set({ fontSize: null });
+```
+
+### Borders
+
+Each cell has four border sides (`top`, `right`, `bottom`, `left`). Border properties follow a three-level resolution: cell override → table default → hardcoded fallback.
+
+```ts
+// Set borders on multiple cells at once
+// Automatically syncs adjacent cells
+table.setCellBorders(
+  [cell1.id, cell2.id],
+  ['top', 'bottom'],
+  { color: 'red', width: 2, style: 'dashed' },
+);
+
+// Set a single border on one cell (does NOT sync adjacent cells)
+cell.setBorder('top', { color: 'blue', width: 1 });
+
+// Read the effective border for a side
+const border = cell.getEffectiveBorder('top');
+// => { color: string, width: number, style: string }
+```
+
+### table.clone()
+
+Clone a table (generates new IDs for the table and all cells, remaps `mergedInto` references).
+
+```ts
+const copy = table.clone({ x: table.x + 50 });
+```
 

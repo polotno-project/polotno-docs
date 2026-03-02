@@ -20,8 +20,8 @@ keywords: ["Font", "JSON Schema", "Polotno", "Design", "API", "Documentation"]
 | Property | Type | Description |
 |----------|------|----------|
 | `fontFamily` | `string` | Font family name. |
-| `styles` | `unknown` | Font style variants (weight, style, etc.). |
-| `url` | `string` | URL to load the font from. |
+| `styles` | Array\<[`FontStyleVariant`](./font-style-variant)\> | Font style variants for multi-weight/style font families. Each entry generates a separate |
+| `url` | `string` | URL to load the font from. Used when the font has a single style variant. |
 
 
 
@@ -36,10 +36,14 @@ keywords: ["Font", "JSON Schema", "Polotno", "Design", "API", "Documentation"]
       "type": "string"
     },
     "styles": {
-      "description": "Font style variants (weight, style, etc.)."
+      "description": "Font style variants for multi-weight/style font families. Each entry generates a separate",
+      "items": {
+        "$ref": "#/definitions/FontStyleVariant"
+      },
+      "type": "array"
     },
     "url": {
-      "description": "URL to load the font from.",
+      "description": "URL to load the font from. Used when the font has a single style variant.",
       "type": "string"
     }
   },
@@ -52,4 +56,4 @@ keywords: ["Font", "JSON Schema", "Polotno", "Design", "API", "Documentation"]
 
 ## Related Definitions
 
-*No related definitions found.*
+- [FontStyleVariant](./font-style-variant)

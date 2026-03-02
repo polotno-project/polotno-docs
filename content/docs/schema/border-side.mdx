@@ -1,0 +1,59 @@
+---
+title: BorderSide
+description: Documentation for the BorderSide schema definition in the Polotno Design JSON Schema.
+keywords: ["BorderSide", "JSON Schema", "Polotno", "Design", "API", "Documentation"]
+---
+
+# BorderSide
+
+
+
+## Type Information
+
+**Base Type:** `object`
+
+
+
+## Properties
+
+
+| Property | Type | Description |
+|----------|------|----------|
+| `color` | `string` | Border color (CSS color string). Inherits from table borderColor if omitted. |
+| `style` | `"solid"` \| `"dashed"` \| `"dotted"` \| `"none"` | Border line style. Inherits from table borderStyle if omitted. |
+| `width` | `number` | Border width in pixels. Inherits from table borderWidth if omitted. |
+
+
+
+## JSON Schema
+
+```json
+{
+  "additionalProperties": false,
+  "properties": {
+    "color": {
+      "description": "Border color (CSS color string). Inherits from table borderColor if omitted.",
+      "type": "string"
+    },
+    "style": {
+      "description": "Border line style. Inherits from table borderStyle if omitted.",
+      "enum": [
+        "solid",
+        "dashed",
+        "dotted",
+        "none"
+      ],
+      "type": "string"
+    },
+    "width": {
+      "description": "Border width in pixels. Inherits from table borderWidth if omitted.",
+      "type": "number"
+    }
+  },
+  "type": "object"
+}
+```
+
+## Related Definitions
+
+*No related definitions found.*

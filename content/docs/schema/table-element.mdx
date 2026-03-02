@@ -1,0 +1,315 @@
+---
+title: TableElement
+description: Table element. Extends ShapeAttributes but shadow, blur, brightness, sepia, grayscale, and filter properties are stripped from serialized output.
+keywords: ["TableElement", "JSON Schema", "Polotno", "Design", "API", "Documentation"]
+---
+
+# TableElement
+
+
+Table element. Extends ShapeAttributes but shadow, blur, brightness, sepia, grayscale, and filter properties are stripped from serialized output.
+
+
+## Type Information
+
+**Base Type:** `object`
+
+
+
+## Properties
+
+
+| Property | Type | Description |
+|----------|------|----------|
+| `align` | `string` | Default text alignment for cell text: 'left', 'center', 'right', 'justify'. |
+| `alwaysOnTop` | `boolean` | Whether element stays on top of others. |
+| `animations` | Array\<[`Animation`](./animation)\> | Animation configurations. |
+| `borderColor` | `string` | Default border color for all cell borders. |
+| `borderStyle` | `"solid"` \| `"dashed"` \| `"dotted"` \| `"none"` | Default border line style for all cell borders. |
+| `borderWidth` | `number` | Default border width in pixels for all cell borders. |
+| `cellBackground` | `string` | Default cell background color. |
+| `cellPadding` | `number` | Default cell inner padding in pixels. |
+| `cells` | Array\<[`TableCell`](./table-cell)\> | Flat array of cells in row-major order (length = rows * cols). |
+| `colWidths` | Array\<`number`\> | Column width fractions (sum to 1). Each value represents the fraction of total table width for that column. |
+| `cols` | `number` | Number of columns. |
+| `contentEditable` | `boolean` | Whether element content can be edited. |
+| `custom` | `unknown` | Custom data attached to the element. |
+| `draggable` | `boolean` | Whether element can be dragged. |
+| `fill` | `string` | Default text color for cell text. |
+| `fontFamily` | `string` | Default font family for cell text. |
+| `fontSize` | `number` | Default font size in pixels for cell text. |
+| `fontStyle` | `string` | Default font style for cell text: 'normal' or 'italic'. |
+| `fontWeight` | `string` | Default font weight for cell text: 'normal', 'bold', or numeric string. |
+| `height` | `number` | Height in pixels. |
+| `id` | `string` | Unique identifier for the element. |
+| `letterSpacing` | `number` | Default letter spacing for cell text as percentage of font size. |
+| `lineHeight` | `number` \| `string` | Default line height for cell text. |
+| `name` | `string` | Display name for the element. |
+| `opacity` | `number` | Opacity level (0-1). |
+| `resizable` | `boolean` | Whether element can be resized. |
+| `rotation` | `number` | Rotation angle in degrees. |
+| `rowHeights` | Array\<`number`\> | Row height fractions (sum to 1). Each value represents the fraction of total table height for that row. |
+| `rows` | `number` | Number of rows. |
+| `selectable` | `boolean` | Whether element can be selected. |
+| `showInExport` | `boolean` | Whether element appears in exports. |
+| `stroke` | `string` | Default text stroke color for cell text. |
+| `strokeWidth` | `number` | Default text stroke width in pixels for cell text. |
+| `styleEditable` | `boolean` | Whether element style can be edited. |
+| `textDecoration` | `string` | Default text decoration for cell text. |
+| `textTransform` | `string` | Default text transform for cell text: 'uppercase', 'lowercase', 'capitalize', 'none'. |
+| `type` | `"table"` | Element type identifier. |
+| `verticalAlign` | `string` | Default vertical alignment for cell text: 'top', 'middle', 'bottom'. |
+| `visible` | `boolean` | Whether element is visible. |
+| `width` | `number` | Width in pixels. |
+| `x` | `number` | X position in pixels. |
+| `y` | `number` | Y position in pixels. |
+
+
+
+## JSON Schema
+
+```json
+{
+  "additionalProperties": false,
+  "description": "Table element. Extends ShapeAttributes but shadow, blur, brightness, sepia, grayscale, and filter properties are stripped from serialized output.",
+  "properties": {
+    "align": {
+      "description": "Default text alignment for cell text: 'left', 'center', 'right', 'justify'.",
+      "type": "string"
+    },
+    "alwaysOnTop": {
+      "description": "Whether element stays on top of others.",
+      "type": "boolean"
+    },
+    "animations": {
+      "description": "Animation configurations.",
+      "items": {
+        "$ref": "#/definitions/Animation"
+      },
+      "type": "array"
+    },
+    "borderColor": {
+      "description": "Default border color for all cell borders.",
+      "type": "string"
+    },
+    "borderStyle": {
+      "description": "Default border line style for all cell borders.",
+      "enum": [
+        "solid",
+        "dashed",
+        "dotted",
+        "none"
+      ],
+      "type": "string"
+    },
+    "borderWidth": {
+      "description": "Default border width in pixels for all cell borders.",
+      "type": "number"
+    },
+    "cellBackground": {
+      "description": "Default cell background color.",
+      "type": "string"
+    },
+    "cellPadding": {
+      "description": "Default cell inner padding in pixels.",
+      "type": "number"
+    },
+    "cells": {
+      "description": "Flat array of cells in row-major order (length = rows * cols).",
+      "items": {
+        "$ref": "#/definitions/TableCell"
+      },
+      "type": "array"
+    },
+    "colWidths": {
+      "description": "Column width fractions (sum to 1). Each value represents the fraction of total table width for that column.",
+      "items": {
+        "type": "number"
+      },
+      "type": "array"
+    },
+    "cols": {
+      "description": "Number of columns.",
+      "type": "number"
+    },
+    "contentEditable": {
+      "description": "Whether element content can be edited.",
+      "type": "boolean"
+    },
+    "custom": {
+      "description": "Custom data attached to the element."
+    },
+    "draggable": {
+      "description": "Whether element can be dragged.",
+      "type": "boolean"
+    },
+    "fill": {
+      "description": "Default text color for cell text.",
+      "type": "string"
+    },
+    "fontFamily": {
+      "description": "Default font family for cell text.",
+      "type": "string"
+    },
+    "fontSize": {
+      "description": "Default font size in pixels for cell text.",
+      "type": "number"
+    },
+    "fontStyle": {
+      "description": "Default font style for cell text: 'normal' or 'italic'.",
+      "type": "string"
+    },
+    "fontWeight": {
+      "description": "Default font weight for cell text: 'normal', 'bold', or numeric string.",
+      "type": "string"
+    },
+    "height": {
+      "description": "Height in pixels.",
+      "type": "number"
+    },
+    "id": {
+      "description": "Unique identifier for the element.",
+      "type": "string"
+    },
+    "letterSpacing": {
+      "description": "Default letter spacing for cell text as percentage of font size.",
+      "type": "number"
+    },
+    "lineHeight": {
+      "description": "Default line height for cell text.",
+      "type": [
+        "number",
+        "string"
+      ]
+    },
+    "name": {
+      "description": "Display name for the element.",
+      "type": "string"
+    },
+    "opacity": {
+      "description": "Opacity level (0-1).",
+      "type": "number"
+    },
+    "resizable": {
+      "description": "Whether element can be resized.",
+      "type": "boolean"
+    },
+    "rotation": {
+      "description": "Rotation angle in degrees.",
+      "type": "number"
+    },
+    "rowHeights": {
+      "description": "Row height fractions (sum to 1). Each value represents the fraction of total table height for that row.",
+      "items": {
+        "type": "number"
+      },
+      "type": "array"
+    },
+    "rows": {
+      "description": "Number of rows.",
+      "type": "number"
+    },
+    "selectable": {
+      "description": "Whether element can be selected.",
+      "type": "boolean"
+    },
+    "showInExport": {
+      "description": "Whether element appears in exports.",
+      "type": "boolean"
+    },
+    "stroke": {
+      "description": "Default text stroke color for cell text.",
+      "type": "string"
+    },
+    "strokeWidth": {
+      "description": "Default text stroke width in pixels for cell text.",
+      "type": "number"
+    },
+    "styleEditable": {
+      "description": "Whether element style can be edited.",
+      "type": "boolean"
+    },
+    "textDecoration": {
+      "description": "Default text decoration for cell text.",
+      "type": "string"
+    },
+    "textTransform": {
+      "description": "Default text transform for cell text: 'uppercase', 'lowercase', 'capitalize', 'none'.",
+      "type": "string"
+    },
+    "type": {
+      "const": "table",
+      "description": "Element type identifier.",
+      "type": "string"
+    },
+    "verticalAlign": {
+      "description": "Default vertical alignment for cell text: 'top', 'middle', 'bottom'.",
+      "type": "string"
+    },
+    "visible": {
+      "description": "Whether element is visible.",
+      "type": "boolean"
+    },
+    "width": {
+      "description": "Width in pixels.",
+      "type": "number"
+    },
+    "x": {
+      "description": "X position in pixels.",
+      "type": "number"
+    },
+    "y": {
+      "description": "Y position in pixels.",
+      "type": "number"
+    }
+  },
+  "required": [
+    "align",
+    "alwaysOnTop",
+    "animations",
+    "borderColor",
+    "borderStyle",
+    "borderWidth",
+    "cellBackground",
+    "cellPadding",
+    "cells",
+    "colWidths",
+    "cols",
+    "contentEditable",
+    "draggable",
+    "fill",
+    "fontFamily",
+    "fontSize",
+    "fontStyle",
+    "fontWeight",
+    "height",
+    "id",
+    "letterSpacing",
+    "lineHeight",
+    "opacity",
+    "resizable",
+    "rotation",
+    "rowHeights",
+    "rows",
+    "selectable",
+    "showInExport",
+    "stroke",
+    "strokeWidth",
+    "styleEditable",
+    "textDecoration",
+    "textTransform",
+    "type",
+    "verticalAlign",
+    "visible",
+    "width",
+    "x",
+    "y"
+  ],
+  "type": "object"
+}
+```
+
+## Related Definitions
+
+- [Animation](./animation)
+- [TableCell](./table-cell)
