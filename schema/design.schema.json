@@ -25,11 +25,22 @@
         },
         "type": {
           "description": "Type of animation: enter, exit, or loop.",
-          "enum": ["enter", "exit", "loop"],
+          "enum": [
+            "enter",
+            "exit",
+            "loop"
+          ],
           "type": "string"
         }
       },
-      "required": ["delay", "duration", "enabled", "type", "name", "data"],
+      "required": [
+        "delay",
+        "duration",
+        "enabled",
+        "type",
+        "name",
+        "data"
+      ],
       "type": "object"
     },
     "Audio": {
@@ -75,6 +86,52 @@
       ],
       "type": "object"
     },
+    "BorderSide": {
+      "additionalProperties": false,
+      "properties": {
+        "color": {
+          "description": "Border color (CSS color string). Inherits from table borderColor if omitted.",
+          "type": "string"
+        },
+        "style": {
+          "description": "Border line style. Inherits from table borderStyle if omitted.",
+          "enum": [
+            "solid",
+            "dashed",
+            "dotted",
+            "none"
+          ],
+          "type": "string"
+        },
+        "width": {
+          "description": "Border width in pixels. Inherits from table borderWidth if omitted.",
+          "type": "number"
+        }
+      },
+      "type": "object"
+    },
+    "CellBorders": {
+      "additionalProperties": false,
+      "properties": {
+        "bottom": {
+          "$ref": "#/definitions/BorderSide",
+          "description": "Bottom border override."
+        },
+        "left": {
+          "$ref": "#/definitions/BorderSide",
+          "description": "Left border override."
+        },
+        "right": {
+          "$ref": "#/definitions/BorderSide",
+          "description": "Right border override."
+        },
+        "top": {
+          "$ref": "#/definitions/BorderSide",
+          "description": "Top border override."
+        }
+      },
+      "type": "object"
+    },
     "Element": {
       "anyOf": [
         {
@@ -100,6 +157,9 @@
         },
         {
           "$ref": "#/definitions/GroupElement"
+        },
+        {
+          "$ref": "#/definitions/TableElement"
         }
       ]
     },
@@ -168,7 +228,9 @@
                 "type": "number"
               }
             },
-            "required": ["intensity"],
+            "required": [
+              "intensity"
+            ],
             "type": "object"
           },
           "description": "Applied image filters.",
@@ -324,14 +386,41 @@
           "type": "string"
         },
         "styles": {
-          "description": "Font style variants (weight, style, etc.)."
+          "description": "Font style variants for multi-weight/style font families. Each entry generates a separate",
+          "items": {
+            "$ref": "#/definitions/FontStyleVariant"
+          },
+          "type": "array"
         },
         "url": {
-          "description": "URL to load the font from.",
+          "description": "URL to load the font from. Used when the font has a single style variant.",
           "type": "string"
         }
       },
-      "required": ["fontFamily"],
+      "required": [
+        "fontFamily"
+      ],
+      "type": "object"
+    },
+    "FontStyleVariant": {
+      "additionalProperties": false,
+      "properties": {
+        "fontStyle": {
+          "description": "CSS font style value: 'normal' or 'italic'. Defaults to 'normal'.",
+          "type": "string"
+        },
+        "fontWeight": {
+          "description": "CSS font weight value: 'normal', 'bold', or numeric string (e.g. '400', '700'). Defaults to 'normal'.",
+          "type": "string"
+        },
+        "src": {
+          "description": "Font source URL, typically in CSS url() format (e.g. 'url(\"https://example.com/font.woff2\")').",
+          "type": "string"
+        }
+      },
+      "required": [
+        "src"
+      ],
       "type": "object"
     },
     "GifElement": {
@@ -420,7 +509,9 @@
                 "type": "number"
               }
             },
-            "required": ["intensity"],
+            "required": [
+              "intensity"
+            ],
             "type": "object"
           },
           "description": "Applied image filters.",
@@ -635,7 +726,11 @@
           "type": "boolean"
         }
       },
-      "required": ["id", "type", "children"],
+      "required": [
+        "id",
+        "type",
+        "children"
+      ],
       "type": "object"
     },
     "ImageElement": {
@@ -720,7 +815,9 @@
                 "type": "number"
               }
             },
-            "required": ["intensity"],
+            "required": [
+              "intensity"
+            ],
             "type": "object"
           },
           "description": "Applied image filters.",
@@ -948,7 +1045,9 @@
                 "type": "number"
               }
             },
-            "required": ["intensity"],
+            "required": [
+              "intensity"
+            ],
             "type": "object"
           },
           "description": "Applied image filters.",
@@ -1236,7 +1335,9 @@
                 "type": "number"
               }
             },
-            "required": ["intensity"],
+            "required": [
+              "intensity"
+            ],
             "type": "object"
           },
           "description": "Applied image filters.",
@@ -1445,7 +1546,13 @@
         },
         "unit": {
           "description": "Unit type for measurements.",
-          "enum": ["px", "pt", "mm", "in"],
+          "enum": [
+            "px",
+            "pt",
+            "mm",
+            "cm",
+            "in"
+          ],
           "type": "string"
         },
         "width": {
@@ -1465,12 +1572,368 @@
       ],
       "type": "object"
     },
+    "TableCell": {
+      "additionalProperties": false,
+      "properties": {
+        "align": {
+          "description": "Text alignment. Inherits from table align.",
+          "type": "string"
+        },
+        "borders": {
+          "$ref": "#/definitions/CellBorders",
+          "description": "Per-side border overrides. Absent sides inherit from the table's border properties."
+        },
+        "cellBackground": {
+          "description": "Cell background color (CSS color string). Inherits from table cellBackground.",
+          "type": "string"
+        },
+        "cellPadding": {
+          "description": "Cell inner padding in pixels. Inherits from table cellPadding.",
+          "type": "number"
+        },
+        "colSpan": {
+          "description": "Number of columns this cell spans. Defaults to 1.",
+          "type": "number"
+        },
+        "custom": {
+          "description": "Custom data attached to the cell."
+        },
+        "fill": {
+          "description": "Text color (CSS color string). Inherits from table fill.",
+          "type": "string"
+        },
+        "fontFamily": {
+          "description": "Font family name. Inherits from table fontFamily.",
+          "type": "string"
+        },
+        "fontSize": {
+          "description": "Font size in pixels. Inherits from table fontSize.",
+          "type": "number"
+        },
+        "fontStyle": {
+          "description": "Font style: 'normal' or 'italic'. Inherits from table fontStyle.",
+          "type": "string"
+        },
+        "fontWeight": {
+          "description": "Font weight: 'normal', 'bold', or numeric string. Inherits from table fontWeight.",
+          "type": "string"
+        },
+        "id": {
+          "description": "Unique identifier for the cell.",
+          "type": "string"
+        },
+        "letterSpacing": {
+          "description": "Letter spacing as percentage of font size. Inherits from table letterSpacing.",
+          "type": "number"
+        },
+        "lineHeight": {
+          "description": "Line height multiplier or string value. Inherits from table lineHeight.",
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "mergedInto": {
+          "description": "ID of the cell this cell is merged into. When set, this cell is hidden and its space is consumed by the target cell.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Display name for the cell.",
+          "type": "string"
+        },
+        "opacity": {
+          "description": "Cell opacity (0-1). Defaults to 1.",
+          "type": "number"
+        },
+        "rowSpan": {
+          "description": "Number of rows this cell spans. Defaults to 1.",
+          "type": "number"
+        },
+        "stroke": {
+          "description": "Text stroke color. Inherits from table stroke.",
+          "type": "string"
+        },
+        "strokeWidth": {
+          "description": "Text stroke width in pixels. Inherits from table strokeWidth.",
+          "type": "number"
+        },
+        "text": {
+          "description": "Cell text content.",
+          "type": "string"
+        },
+        "textDecoration": {
+          "description": "Text decoration: 'underline', 'line-through', or empty string. Inherits from table textDecoration.",
+          "type": "string"
+        },
+        "textTransform": {
+          "description": "Text transform: 'uppercase', 'lowercase', 'capitalize', 'none'. Inherits from table textTransform.",
+          "type": "string"
+        },
+        "type": {
+          "const": "tablecell",
+          "description": "Element type identifier.",
+          "type": "string"
+        },
+        "verticalAlign": {
+          "description": "Vertical text alignment. Inherits from table verticalAlign.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "type": "object"
+    },
+    "TableElement": {
+      "additionalProperties": false,
+      "description": "Table element. Extends ShapeAttributes but shadow, blur, brightness, sepia, grayscale, and filter properties are stripped from serialized output.",
+      "properties": {
+        "align": {
+          "description": "Default text alignment for cell text: 'left', 'center', 'right', 'justify'.",
+          "type": "string"
+        },
+        "alwaysOnTop": {
+          "description": "Whether element stays on top of others.",
+          "type": "boolean"
+        },
+        "animations": {
+          "description": "Animation configurations.",
+          "items": {
+            "$ref": "#/definitions/Animation"
+          },
+          "type": "array"
+        },
+        "borderColor": {
+          "description": "Default border color for all cell borders.",
+          "type": "string"
+        },
+        "borderStyle": {
+          "description": "Default border line style for all cell borders.",
+          "enum": [
+            "solid",
+            "dashed",
+            "dotted",
+            "none"
+          ],
+          "type": "string"
+        },
+        "borderWidth": {
+          "description": "Default border width in pixels for all cell borders.",
+          "type": "number"
+        },
+        "cellBackground": {
+          "description": "Default cell background color.",
+          "type": "string"
+        },
+        "cellPadding": {
+          "description": "Default cell inner padding in pixels.",
+          "type": "number"
+        },
+        "cells": {
+          "description": "Flat array of cells in row-major order (length = rows * cols).",
+          "items": {
+            "$ref": "#/definitions/TableCell"
+          },
+          "type": "array"
+        },
+        "colWidths": {
+          "description": "Column width fractions (sum to 1). Each value represents the fraction of total table width for that column.",
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        },
+        "cols": {
+          "description": "Number of columns.",
+          "type": "number"
+        },
+        "contentEditable": {
+          "description": "Whether element content can be edited.",
+          "type": "boolean"
+        },
+        "custom": {
+          "description": "Custom data attached to the element."
+        },
+        "draggable": {
+          "description": "Whether element can be dragged.",
+          "type": "boolean"
+        },
+        "fill": {
+          "description": "Default text color for cell text.",
+          "type": "string"
+        },
+        "fontFamily": {
+          "description": "Default font family for cell text.",
+          "type": "string"
+        },
+        "fontSize": {
+          "description": "Default font size in pixels for cell text.",
+          "type": "number"
+        },
+        "fontStyle": {
+          "description": "Default font style for cell text: 'normal' or 'italic'.",
+          "type": "string"
+        },
+        "fontWeight": {
+          "description": "Default font weight for cell text: 'normal', 'bold', or numeric string.",
+          "type": "string"
+        },
+        "height": {
+          "description": "Height in pixels.",
+          "type": "number"
+        },
+        "id": {
+          "description": "Unique identifier for the element.",
+          "type": "string"
+        },
+        "letterSpacing": {
+          "description": "Default letter spacing for cell text as percentage of font size.",
+          "type": "number"
+        },
+        "lineHeight": {
+          "description": "Default line height for cell text.",
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "name": {
+          "description": "Display name for the element.",
+          "type": "string"
+        },
+        "opacity": {
+          "description": "Opacity level (0-1).",
+          "type": "number"
+        },
+        "resizable": {
+          "description": "Whether element can be resized.",
+          "type": "boolean"
+        },
+        "rotation": {
+          "description": "Rotation angle in degrees.",
+          "type": "number"
+        },
+        "rowHeights": {
+          "description": "Row height fractions (sum to 1). Each value represents the fraction of total table height for that row.",
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        },
+        "rows": {
+          "description": "Number of rows.",
+          "type": "number"
+        },
+        "selectable": {
+          "description": "Whether element can be selected.",
+          "type": "boolean"
+        },
+        "showInExport": {
+          "description": "Whether element appears in exports.",
+          "type": "boolean"
+        },
+        "stroke": {
+          "description": "Default text stroke color for cell text.",
+          "type": "string"
+        },
+        "strokeWidth": {
+          "description": "Default text stroke width in pixels for cell text.",
+          "type": "number"
+        },
+        "styleEditable": {
+          "description": "Whether element style can be edited.",
+          "type": "boolean"
+        },
+        "textDecoration": {
+          "description": "Default text decoration for cell text.",
+          "type": "string"
+        },
+        "textTransform": {
+          "description": "Default text transform for cell text: 'uppercase', 'lowercase', 'capitalize', 'none'.",
+          "type": "string"
+        },
+        "type": {
+          "const": "table",
+          "description": "Element type identifier.",
+          "type": "string"
+        },
+        "verticalAlign": {
+          "description": "Default vertical alignment for cell text: 'top', 'middle', 'bottom'.",
+          "type": "string"
+        },
+        "visible": {
+          "description": "Whether element is visible.",
+          "type": "boolean"
+        },
+        "width": {
+          "description": "Width in pixels.",
+          "type": "number"
+        },
+        "x": {
+          "description": "X position in pixels.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Y position in pixels.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "align",
+        "alwaysOnTop",
+        "animations",
+        "borderColor",
+        "borderStyle",
+        "borderWidth",
+        "cellBackground",
+        "cellPadding",
+        "cells",
+        "colWidths",
+        "cols",
+        "contentEditable",
+        "draggable",
+        "fill",
+        "fontFamily",
+        "fontSize",
+        "fontStyle",
+        "fontWeight",
+        "height",
+        "id",
+        "letterSpacing",
+        "lineHeight",
+        "opacity",
+        "resizable",
+        "rotation",
+        "rowHeights",
+        "rows",
+        "selectable",
+        "showInExport",
+        "stroke",
+        "strokeWidth",
+        "styleEditable",
+        "textDecoration",
+        "textTransform",
+        "type",
+        "verticalAlign",
+        "visible",
+        "width",
+        "x",
+        "y"
+      ],
+      "type": "object"
+    },
     "TextElement": {
       "additionalProperties": false,
       "properties": {
         "align": {
           "description": "Text alignment: left, center, right, justify.",
-          "enum": ["left", "center", "right", "justify"],
+          "enum": [
+            "left",
+            "center",
+            "right",
+            "justify"
+          ],
           "type": "string"
         },
         "alwaysOnTop": {
@@ -1552,7 +2015,9 @@
                 "type": "number"
               }
             },
-            "required": ["intensity"],
+            "required": [
+              "intensity"
+            ],
             "type": "object"
           },
           "description": "Applied image filters.",
@@ -1592,7 +2057,10 @@
         },
         "lineHeight": {
           "description": "Line height as number or string.",
-          "type": ["number", "string"]
+          "type": [
+            "number",
+            "string"
+          ]
         },
         "name": {
           "description": "Display name for the element.",
@@ -1846,7 +2314,9 @@
                 "type": "number"
               }
             },
-            "required": ["intensity"],
+            "required": [
+              "intensity"
+            ],
             "type": "object"
           },
           "description": "Applied image filters.",
