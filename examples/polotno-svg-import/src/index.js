@@ -15,16 +15,24 @@ const store = createStore({
 });
 store.addPage();
 
-const handleFileChange = async (e) => {
-  const file = e.target.files[0];
-  if (!file) return;
-  const svgContent = await file.text();
-  const json = await svgToJson({ svg: svgContent });
-  store.loadJSON(json);
-};
-
 const App = ({ store }) => {
   const inputRef = React.useRef(null);
+  const [loading, setLoading] = React.useState(false);
+
+  const handleFileChange = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    setLoading(true);
+    try {
+      const svgContent = await file.text();
+      const json = await svgToJson({ svg: svgContent });
+      store.loadJSON(json);
+    } finally {
+      setLoading(false);
+      e.target.value = '';
+    }
+  };
 
   return (
     <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
@@ -47,9 +55,10 @@ const App = ({ store }) => {
                 />
                 <button
                   className="bp5-button bp5-intent-primary"
+                  disabled={loading}
                   onClick={() => inputRef.current?.click()}
                 >
-                  Import SVG
+                  {loading ? 'Importing...' : 'Import SVG'}
                 </button>
               </>
             ),
