@@ -9,8 +9,8 @@
   "description": "Workspace for Polotno example demos",
   "dependencies": {
     "polotno": "2.37.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "mobx-react-lite": "^4.0.0",
     "escodegen": "^1.8.1"
   }
