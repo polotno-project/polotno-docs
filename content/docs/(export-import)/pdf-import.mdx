@@ -1,0 +1,72 @@
+---
+title: PDF Import
+description: Convert PDF files into editable Polotno designs
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+The `@polotno/pdf-import` package converts PDF files into Polotno JSON format, enabling you to import PDF designs into Polotno for further editing.
+
+<Callout type="warn">
+**Beta Feature:** This library is new and may not work correctly for all PDF files. Please [report issues](https://community.polotno.com/c/ask) to help us improve it.
+</Callout>
+
+## Installation
+
+```bash
+npm install @polotno/pdf-import
+```
+
+## Basic Usage
+
+```typescript
+import { pdfToJson } from '@polotno/pdf-import';
+
+const json = await pdfToJson({ pdf: buffer });
+
+// Load into Polotno store
+store.loadJSON(json);
+```
+
+## Node.js Example
+
+```typescript
+import { pdfToJson } from '@polotno/pdf-import';
+import fs from 'fs';
+
+const buffer = fs.readFileSync('design.pdf');
+const json = await pdfToJson({ pdf: buffer });
+store.loadJSON(json);
+```
+
+## Browser Example
+
+```typescript
+import { pdfToJson } from '@polotno/pdf-import';
+
+async function handleFileUpload(file: File) {
+  const buffer = await file.arrayBuffer();
+  const json = await pdfToJson({ pdf: buffer });
+  store.loadJSON(json);
+}
+```
+
+## Platform Support
+
+This package works both **client-side (browser)** and **server-side (Node.js)**. All processing runs locally — no data is sent to any external server.
+
+## Demo
+
+<Sandbox github="polotno-project/polotno-docs/tree/main/examples/polotno-pdf-import" />
+
+## Troubleshooting
+
+**Import produces unexpected results:**
+- Check if the PDF contains vector elements or rasterized content
+- Try re-exporting the PDF from your design tool with different settings
+
+**Missing elements:**
+- Some advanced PDF features may not be supported
+- Check browser console for warnings
+
+**Need help?** Report issues and get support at [community.polotno.com](https://community.polotno.com/c/ask).

@@ -7,14 +7,10 @@ import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 import { createStore } from 'polotno/model/store';
-
-// this is a demo key just for that project
-// (!) please don't use it in your projects
-// to create your own API key please go here: https://polotno.com/cabinet
-const KEY = 'nFA5H9elEytDyPyvKL7T';
+import { pdfToJson } from '@polotno/pdf-import';
 
 const store = createStore({
-  key: KEY,
+  key: 'nFA5H9elEytDyPyvKL7T',
   showCredit: true,
 });
 store.addPage();
@@ -29,21 +25,11 @@ const App = ({ store }) => {
 
     setLoading(true);
     try {
-      const formData = new FormData();
-      formData.append('file', file);
-
-      const res = await fetch(
-        'https://api.polotno.com/api/pdf-to-json?KEY=' + KEY,
-        {
-          method: 'POST',
-          body: formData,
-        }
-      );
-      const json = await res.json();
+      const buffer = await file.arrayBuffer();
+      const json = await pdfToJson({ pdf: buffer });
       store.loadJSON(json);
     } finally {
       setLoading(false);
-      // reset input so the same file can be re-selected
       e.target.value = '';
     }
   };

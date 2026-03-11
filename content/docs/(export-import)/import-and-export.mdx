@@ -5,7 +5,7 @@ description: Overview of Polotno's import (JSON, SVG) and export (PNG, JPEG, PDF
 
 Polotno offers comprehensive import and export capabilities for designs, from open JSON format to high-quality images, PDFs, and video exports. The SDK supports both client-side and [server-side rendering](/docs/server-side-image-generation-with-node-js) for automated design generation.
 
-**Import:** JSON (open, developer-friendly format), [SVG](/docs/svg-import)
+**Import:** JSON (open, developer-friendly format), [SVG](/docs/svg-import), [PDF](/docs/pdf-import)
 
 **Export:** JSON, PNG, JPEG, PDF, PPTX, GIF, MP4, HTML, SVG
 
@@ -69,6 +69,24 @@ store.loadJSON(json);
 ```
 
 **Note:** Text converted to paths cannot be restored as editable text. See [SVG Import](/docs/svg-import) for full details and workflow recommendations.
+
+## PDF Import
+
+Import PDF files into Polotno using the `@polotno/pdf-import` package.
+
+```bash
+npm install @polotno/pdf-import
+```
+
+```ts
+import { pdfToJson } from '@polotno/pdf-import';
+
+const buffer = await file.arrayBuffer();
+const json = await pdfToJson({ pdf: buffer });
+store.loadJSON(json);
+```
+
+Works both client-side and server-side. See [PDF Import](/docs/pdf-import) for full details.
 
 ## Image Export (PNG, JPEG)
 
