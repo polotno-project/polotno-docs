@@ -466,9 +466,9 @@ async function main() {
       const pkgJson = JSON.parse(await readFile(pkgPath, 'utf8'));
       bundler = detectBundler(pkgJson);
 
-      // Skip non-react-scripts demos (parcel, angular, vue-cli, next, vite, etc.)
-      if (bundler !== 'cra') {
-        console.log(`   ⚠️  ${demoName}: skipped (not using react-scripts)`);
+      // Skip unsupported bundlers (parcel, angular, vue-cli, next, etc.)
+      if (bundler !== 'cra' && bundler !== 'vite') {
+        console.log(`   ⚠️  ${demoName}: skipped (unsupported bundler: ${bundler})`);
         // Extract name and description for skipped demos too
         const rawName = pkgJson.name?.replace('@polotno-docs/', '') || demoName;
         demoName_clean = rawName
@@ -483,7 +483,7 @@ async function main() {
           description: demoDescription,
           bundler,
           status: 'skipped',
-          reason: 'not using react-scripts',
+          reason: `unsupported bundler: ${bundler}`,
         };
       }
 
