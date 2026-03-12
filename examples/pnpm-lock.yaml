@@ -13,16 +13,16 @@ importers:
         version: 1.14.3
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
 
   cloud-render:
     dependencies:
@@ -41,16 +41,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -60,16 +60,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -79,29 +79,29 @@ importers:
     dependencies:
       '@vue/cli-plugin-babel':
         specifier: 4.1.1
-        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16))(core-js@3.46.0)(vue@2.7.16)
+        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16))(core-js@3.46.0)(vue@2.7.16)
       mobx-vue:
         specifier: 2.0.11
         version: 2.0.11(mobx@6.15.0)(vue@2.7.16)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       vue:
         specifier: ^2.6.11
         version: 2.7.16
     devDependencies:
       '@vue/cli-plugin-eslint':
         specifier: 4.1.1
-        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16))(eslint@6.8.0)
+        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16))(eslint@6.8.0)
       '@vue/cli-service':
         specifier: 4.1.1
-        version: 4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16)
+        version: 4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16)
       babel-eslint:
         specifier: ^10.0.3
         version: 10.1.0(eslint@6.8.0)
@@ -124,10 +124,10 @@ importers:
         specifier: 2.37.1
         version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: ^18.2.0
+        specifier: 18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.2.0
+        specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
       vue:
         specifier: ^3.2.47
@@ -135,7 +135,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^4.0.0
-        version: 4.6.2(vite@4.5.14(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1))(vue@3.5.24(typescript@4.4.4))
+        version: 4.6.2(vite@4.5.14(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1))(vue@3.5.24(typescript@4.4.4))
       buffer:
         specifier: ^5.7.1
         version: 5.7.1
@@ -150,7 +150,7 @@ importers:
         version: 0.2.1
       vite:
         specifier: ^4.1.4
-        version: 4.5.14(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1)
+        version: 4.5.14(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1)
 
   polotno-angular:
     dependencies:
@@ -186,20 +186,20 @@ importers:
         version: 4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@6.15.0)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.5.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       rxjs:
         specifier: 7.8.1
         version: 7.8.1
     devDependencies:
       '@angular/build':
         specifier: ^18.0.1
-        version: 18.2.21(@angular/compiler-cli@18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4))(@types/node@24.10.1)(chokidar@4.0.3)(lightningcss@1.30.2)(postcss@8.5.6)(tailwindcss@3.4.18(yaml@1.10.2))(terser@5.44.1)(typescript@5.5.4)
+        version: 18.2.21(@angular/compiler-cli@18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4))(@types/node@24.10.1)(chokidar@4.0.3)(lightningcss@1.32.0)(postcss@8.5.8)(tailwindcss@3.4.18(yaml@1.10.2))(terser@5.44.1)(typescript@5.5.4)
       '@angular/cli':
         specifier: ^18.0.0
         version: 18.2.21(chokidar@4.0.3)
@@ -217,16 +217,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -236,16 +236,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -258,19 +258,19 @@ importers:
         version: 3.11.5
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -280,19 +280,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -302,19 +302,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.1.1
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -327,22 +327,22 @@ importers:
         version: 1.6.2
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       qrcode:
         specifier: 1.5.0
         version: 1.5.0
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -351,14 +351,14 @@ importers:
   polotno-cloud-render:
     dependencies:
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -368,19 +368,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -390,19 +390,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -412,35 +412,54 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.9.5)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.9.5)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.9.5)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
         version: 4.9.5
 
+  polotno-demo-vite:
+    dependencies:
+      polotno:
+        specifier: 2.37.1
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
+    devDependencies:
+      '@vitejs/plugin-react':
+        specifier: ^6
+        version: 6.0.0(vite@8.0.0(@types/node@24.10.1)(esbuild@0.23.0)(jiti@1.21.7)(sass@1.77.6)(terser@5.44.1)(yaml@1.10.2))
+      vite:
+        specifier: ^8
+        version: 8.0.0(@types/node@24.10.1)(esbuild@0.23.0)(jiti@1.21.7)(sass@1.77.6)(terser@5.44.1)(yaml@1.10.2)
+
   polotno-design-validation:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.9.5)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.9.5)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.9.5)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -453,19 +472,19 @@ importers:
         version: 6.15.0
       mobx-react-lite:
         specifier: ^4.0.5
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -488,19 +507,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -510,19 +529,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -532,19 +551,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -554,19 +573,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -576,16 +595,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -595,16 +614,16 @@ importers:
     dependencies:
       next:
         specifier: ^14
-        version: 14.2.33(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.6)
+        version: 14.2.33(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
 
   polotno-non-react-integration:
     dependencies:
@@ -615,10 +634,10 @@ importers:
         specifier: 2.37.1
         version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: ^18.2.0
+        specifier: 18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.2.0
+        specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
       buffer:
@@ -638,19 +657,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -660,16 +679,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -679,19 +698,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -701,19 +720,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -723,16 +742,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -742,19 +761,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -762,18 +781,21 @@ importers:
 
   polotno-pdf-import:
     dependencies:
+      '@polotno/pdf-import':
+        specifier: 0.0.2
+        version: 0.0.2
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -783,19 +805,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -805,22 +827,22 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^4.0.0
-        version: 4.0.0(react@18.2.0)
+        version: 4.0.0(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -830,22 +852,22 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       qrcode:
         specifier: 1.5.0
         version: 1.5.0
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -855,28 +877,28 @@ importers:
     dependencies:
       '@blueprintjs/core':
         specifier: ^5.0.0
-        version: 5.19.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 5.19.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@blueprintjs/icons':
         specifier: ^6.5.2
-        version: 6.5.2(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 6.5.2(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx:
         specifier: ^6.0.0
         version: 6.15.0
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -886,16 +908,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -905,19 +927,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -927,19 +949,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -949,16 +971,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -968,16 +990,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -987,16 +1009,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1006,19 +1028,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
       signature_pad:
         specifier: 4.0.4
         version: 4.0.4
@@ -1031,16 +1053,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1050,19 +1072,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.1.1
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1072,19 +1094,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1097,16 +1119,16 @@ importers:
         version: 0.0.13
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1116,19 +1138,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1138,19 +1160,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1160,22 +1182,22 @@ importers:
     dependencies:
       '@blueprintjs/core':
         specifier: ^5.0.0
-        version: 5.19.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 5.19.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       '@types/react':
         specifier: ^18.2.0
@@ -1202,13 +1224,13 @@ importers:
         specifier: 2.37.1
         version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
-        specifier: ^18.3.1
+        specifier: 18.3.1
         version: 18.3.1
       react-datasheet:
         specifier: 1.4.12
         version: 1.4.12(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-dom:
-        specifier: ^18.3.1
+        specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
@@ -1218,19 +1240,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1240,16 +1262,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1259,16 +1281,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1278,16 +1300,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1297,19 +1319,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1319,19 +1341,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1341,19 +1363,19 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1363,16 +1385,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1382,16 +1404,16 @@ importers:
     dependencies:
       polotno:
         specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4)
+        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2)
     devDependencies:
       typescript:
         specifier: ^4
@@ -1406,10 +1428,10 @@ importers:
         specifier: 2.37.1
         version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4)
       react:
-        specifier: ^18.3.1
+        specifier: 18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.3.1
+        specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
       vue:
         specifier: ^3.5.10
@@ -1417,10 +1439,10 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.1.4
-        version: 5.2.4(vite@5.4.21(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1))(vue@3.5.24(typescript@4.4.4))
+        version: 5.2.4(vite@5.4.21(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1))(vue@3.5.24(typescript@4.4.4))
       vite:
         specifier: ^5.4.8
-        version: 5.4.21(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1)
+        version: 5.4.21(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1)
 
 packages:
 
@@ -2448,6 +2470,15 @@ packages:
     peerDependencies:
       postcss-selector-parser: ^6.0.10
 
+  '@emnapi/core@1.9.0':
+    resolution: {integrity: sha512-0DQ98G9ZQZOxfUcQn1waV2yS8aWdZ6kJMbYCJB3oUBecjWYO1fqJ+a1DRfPF3O5JEkwqwP1A9QEN/9mYm2Yd0w==}
+
+  '@emnapi/runtime@1.9.0':
+    resolution: {integrity: sha512-QN75eB0IH2ywSpRpNddCRfQIhmJYBCJ1x5Lb3IscKAL8bMnVAKnRg8dCoXbHzVLLH7P38N2Z3mtulB7W0J0FKw==}
+
+  '@emnapi/wasi-threads@1.2.0':
+    resolution: {integrity: sha512-N10dEJNSsUx41Z6pZsXU8FjPjpBEplgH24sfkmITrBED1/U2Esum9F3lfLrMjKHHjmi557zQn7kR9R+XWXu5Rg==}
+
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
     engines: {node: '>=12'}
@@ -3218,6 +3249,79 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@napi-rs/canvas-android-arm64@0.1.96':
+    resolution: {integrity: sha512-ew1sPrN3dGdZ3L4FoohPfnjq0f9/Jk7o+wP7HkQZokcXgIUD6FIyICEWGhMYzv53j63wUcPvZeAwgewX58/egg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [android]
+
+  '@napi-rs/canvas-darwin-arm64@0.1.96':
+    resolution: {integrity: sha512-Q/wOXZ5PzTqpdmA5eUOcegCf4Go/zz3aZ5DlzSeDpOjFmfwMKh8EzLAoweQ+mJVagcHQyzoJhaTEnrO68TNyNg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@napi-rs/canvas-darwin-x64@0.1.96':
+    resolution: {integrity: sha512-UrXiQz28tQEvGM1qvyptewOAfmUrrd5+wvi6Rzjj2VprZI8iZ2KIvBD2lTTG1bVF95AbeDeG7PJA0D9sLKaOFA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@napi-rs/canvas-linux-arm-gnueabihf@0.1.96':
+    resolution: {integrity: sha512-I90ODxweD8aEP6XKU/NU+biso95MwCtQ2F46dUvhec1HesFi0tq/tAJkYic/1aBSiO/1kGKmSeD1B0duOHhEHQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [linux]
+
+  '@napi-rs/canvas-linux-arm64-gnu@0.1.96':
+    resolution: {integrity: sha512-Dx/0+RFV++w3PcRy+4xNXkghhXjA5d0Mw1bs95emn5Llinp1vihMaA6WJt3oYv2LAHc36+gnrhIBsPhUyI2SGw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@napi-rs/canvas-linux-arm64-musl@0.1.96':
+    resolution: {integrity: sha512-UvOi7fii3IE2KDfEfhh8m+LpzSRvhGK7o1eho99M2M0HTik11k3GX+2qgVx9EtujN3/bhFFS1kSO3+vPMaJ0Mg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@napi-rs/canvas-linux-riscv64-gnu@0.1.96':
+    resolution: {integrity: sha512-MBSukhGCQ5nRtf9NbFYWOU080yqkZU1PbuH4o1ROvB4CbPl12fchDR35tU83Wz8gWIM9JTn99lBn9DenPIv7Ig==}
+    engines: {node: '>= 10'}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@napi-rs/canvas-linux-x64-gnu@0.1.96':
+    resolution: {integrity: sha512-I/ccu2SstyKiV3HIeVzyBIWfrJo8cN7+MSQZPnabewWV6hfJ2nY7Df2WqOHmobBRUw84uGR6zfQHsUEio/m5Vg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@napi-rs/canvas-linux-x64-musl@0.1.96':
+    resolution: {integrity: sha512-H3uov7qnTl73GDT4h52lAqpJPsl1tIUyNPWJyhQ6gHakohNqqRq3uf80+NEpzcytKGEOENP1wX3yGwZxhjiWEQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@napi-rs/canvas-win32-arm64-msvc@0.1.96':
+    resolution: {integrity: sha512-ATp6Y+djOjYtkfV/VRH7CZ8I1MEtkUQBmKUbuWw5zWEHHqfL0cEcInE4Cxgx7zkNAhEdBbnH8HMVrqNp+/gwxA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@napi-rs/canvas-win32-x64-msvc@0.1.96':
+    resolution: {integrity: sha512-UYGdTltVd+Z8mcIuoqGmAXXUvwH5CLf2M6mIB5B0/JmX5J041jETjqtSYl7gN+aj3k1by/SG6sS0hAwCqyK7zw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@napi-rs/canvas@0.1.96':
+    resolution: {integrity: sha512-6NNmNxvoJKeucVjxaaRUt3La2i5jShgiAbaY3G/72s1Vp3U06XPrAIxkAjBxpDcamEn/t+WJ4OOlGmvILo4/Ew==}
+    engines: {node: '>= 10'}
+
+  '@napi-rs/wasm-runtime@1.1.1':
+    resolution: {integrity: sha512-p64ah1M1ld8xjWv3qbvFwHiFVWrq1yFvV4f7w+mzaqiR4IlSgkqhcRdHwsGgomwzBH51sRY4NEowLxnaBjcW/A==}
+
   '@next/env@14.2.33':
     resolution: {integrity: sha512-CgVHNZ1fRIlxkLhIX22flAZI/HmpDaZ8vwyJ/B0SDPTBuLZ1PJ+DWMjCHhqnExfmSQzA/PbZi8OAc7PAq2w9IA==}
 
@@ -3334,6 +3438,13 @@ packages:
   '@npmcli/run-script@8.1.0':
     resolution: {integrity: sha512-y7efHHwghQfk28G2z3tlZ67pLG0XdfYbcVG26r7YIXALRsrVQcTq4/tdenSmdOrEsNahIYA/eh8aEVROWGFUDg==}
     engines: {node: ^16.14.0 || >=18.0.0}
+
+  '@oxc-project/runtime@0.115.0':
+    resolution: {integrity: sha512-Rg8Wlt5dCbXhQnsXPrkOjL1DTSvXLgb2R/KYfnf1/K+R0k6UMLEmbQXPM+kwrWqSmWA2t0B1EtHy2/3zikQpvQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+
+  '@oxc-project/types@0.115.0':
+    resolution: {integrity: sha512-4n91DKnebUS4yjUHl2g3/b2T+IUdCfmoZGhmwsovZCDaJSs+QkVAM+0AqqTxHSsHfeiMuueT75cZaZcT/m0pSw==}
 
   '@parcel/bundler-default@2.16.1':
     resolution: {integrity: sha512-ruy+Yt96Jre2+5PSE4qcH7ETarIuQ+OIY8hejOQ53inVgu9QlvBJf/L2PhNkumHN2zA6m5f0m/MhB+amaee5ew==}
@@ -3756,11 +3867,109 @@ packages:
       webpack-plugin-serve:
         optional: true
 
+  '@polotno/pdf-import@0.0.2':
+    resolution: {integrity: sha512-tvXVdNTJvIYgnNKy3Rr9cMZ7heyjy5iC7R/wN3VDeyKp6XuqoGWxAloZh2CGzdJieeF77S4q0VVEawxrQkDujg==}
+
   '@polotno/svg-import@0.0.13':
     resolution: {integrity: sha512-TuK/7YpBkHbw0UOWM7ejMDhh1S2+M0eD7RtOgMg09Rc6M6c400UdOBVUlgksT2mkyG19F7b4PZ9cXv30LLH/VQ==}
 
   '@popperjs/core@2.11.8':
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+
+  '@rolldown/binding-android-arm64@1.0.0-rc.9':
+    resolution: {integrity: sha512-lcJL0bN5hpgJfSIz/8PIf02irmyL43P+j1pTCfbD1DbLkmGRuFIA4DD3B3ZOvGqG0XiVvRznbKtN0COQVaKUTg==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [android]
+
+  '@rolldown/binding-darwin-arm64@1.0.0-rc.9':
+    resolution: {integrity: sha512-J7Zk3kLYFsLtuH6U+F4pS2sYVzac0qkjcO5QxHS7OS7yZu2LRs+IXo+uvJ/mvpyUljDJ3LROZPoQfgBIpCMhdQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@rolldown/binding-darwin-x64@1.0.0-rc.9':
+    resolution: {integrity: sha512-iwtmmghy8nhfRGeNAIltcNXzD0QMNaaA5U/NyZc1Ia4bxrzFByNMDoppoC+hl7cDiUq5/1CnFthpT9n+UtfFyg==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [darwin]
+
+  '@rolldown/binding-freebsd-x64@1.0.0-rc.9':
+    resolution: {integrity: sha512-DLFYI78SCiZr5VvdEplsVC2Vx53lnA4/Ga5C65iyldMVaErr86aiqCoNBLl92PXPfDtUYjUh+xFFor40ueNs4Q==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@rolldown/binding-linux-arm-gnueabihf@1.0.0-rc.9':
+    resolution: {integrity: sha512-CsjTmTwd0Hri6iTw/DRMK7kOZ7FwAkrO4h8YWKoX/kcj833e4coqo2wzIFywtch/8Eb5enQ/lwLM7w6JX1W5RQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm]
+    os: [linux]
+
+  '@rolldown/binding-linux-arm64-gnu@1.0.0-rc.9':
+    resolution: {integrity: sha512-2x9O2JbSPxpxMDhP9Z74mahAStibTlrBMW0520+epJH5sac7/LwZW5Bmg/E6CXuEF53JJFW509uP+lSedaUNxg==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [linux]
+
+  '@rolldown/binding-linux-arm64-musl@1.0.0-rc.9':
+    resolution: {integrity: sha512-JA1QRW31ogheAIRhIg9tjMfsYbglXXYGNPLdPEYrwFxdbkQCAzvpSCSHCDWNl4hTtrol8WeboCSEpjdZK8qrCg==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [linux]
+
+  '@rolldown/binding-linux-ppc64-gnu@1.0.0-rc.9':
+    resolution: {integrity: sha512-aOKU9dJheda8Kj8Y3w9gnt9QFOO+qKPAl8SWd7JPHP+Cu0EuDAE5wokQubLzIDQWg2myXq2XhTpOVS07qqvT+w==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [ppc64]
+    os: [linux]
+
+  '@rolldown/binding-linux-s390x-gnu@1.0.0-rc.9':
+    resolution: {integrity: sha512-OalO94fqj7IWRn3VdXWty75jC5dk4C197AWEuMhIpvVv2lw9fiPhud0+bW2ctCxb3YoBZor71QHbY+9/WToadA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [s390x]
+    os: [linux]
+
+  '@rolldown/binding-linux-x64-gnu@1.0.0-rc.9':
+    resolution: {integrity: sha512-cVEl1vZtBsBZna3YMjGXNvnYYrOJ7RzuWvZU0ffvJUexWkukMaDuGhUXn0rjnV0ptzGVkvc+vW9Yqy6h8YX4pg==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [linux]
+
+  '@rolldown/binding-linux-x64-musl@1.0.0-rc.9':
+    resolution: {integrity: sha512-UzYnKCIIc4heAKgI4PZ3dfBGUZefGCJ1TPDuLHoCzgrMYPb5Rv6TLFuYtyM4rWyHM7hymNdsg5ik2C+UD9VDbA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [linux]
+
+  '@rolldown/binding-openharmony-arm64@1.0.0-rc.9':
+    resolution: {integrity: sha512-+6zoiF+RRyf5cdlFQP7nm58mq7+/2PFaY2DNQeD4B87N36JzfF/l9mdBkkmTvSYcYPE8tMh/o3cRlsx1ldLfog==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [openharmony]
+
+  '@rolldown/binding-wasm32-wasi@1.0.0-rc.9':
+    resolution: {integrity: sha512-rgFN6sA/dyebil3YTlL2evvi/M+ivhfnyxec7AccTpRPccno/rPoNlqybEZQBkcbZu8Hy+eqNJCqfBR8P7Pg8g==}
+    engines: {node: '>=14.0.0'}
+    cpu: [wasm32]
+
+  '@rolldown/binding-win32-arm64-msvc@1.0.0-rc.9':
+    resolution: {integrity: sha512-lHVNUG/8nlF1IQk1C0Ci574qKYyty2goMiPlRqkC5R+3LkXDkL5Dhx8ytbxq35m+pkHVIvIxviD+TWLdfeuadA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [win32]
+
+  '@rolldown/binding-win32-x64-msvc@1.0.0-rc.9':
+    resolution: {integrity: sha512-G0oA4+w1iY5AGi5HcDTxWsoxF509hrFIPB2rduV5aDqS9FtDg1CAfa7V34qImbjfhIcA8C+RekocJZA96EarwQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [win32]
+
+  '@rolldown/pluginutils@1.0.0-rc.7':
+    resolution: {integrity: sha512-qujRfC8sFVInYSPPMLQByRh7zhwkGFS4+tyMQ83srV1qrxL4g8E2tyxVVyxd0+8QeBM1mIk9KbWxkegRr76XzA==}
+
+  '@rolldown/pluginutils@1.0.0-rc.9':
+    resolution: {integrity: sha512-w6oiRWgEBl04QkFZgmW+jnU1EC9b57Oihi2ot3HNWIQRqgHp5PnYDia5iZ5FF7rpa4EQdiqMDXjlqKGXBhsoXw==}
 
   '@rollup/plugin-babel@5.3.1':
     resolution: {integrity: sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q==}
@@ -4185,6 +4394,9 @@ packages:
     resolution: {integrity: sha512-92F7/SFyufn4DXsha9+QfKnN03JGqtMFMXgSHbZOo8JG59WkTni7UzAouNQDf7AuP9OAMxVOPQcqG3sB7w+kkg==}
     engines: {node: ^16.14.0 || >=18.0.0}
 
+  '@tybys/wasm-util@0.10.1':
+    resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
+
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
 
@@ -4448,6 +4660,19 @@ packages:
     engines: {node: '>=14.6.0'}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0
+
+  '@vitejs/plugin-react@6.0.0':
+    resolution: {integrity: sha512-Bu5/eP6td3WI654+tRq+ryW1PbgA90y5pqMKpb3U7UpNk6VjI53P/ncPUd192U9dSrepLy7DHnq1XEMDz5H++w==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    peerDependencies:
+      '@rolldown/plugin-babel': ^0.1.7
+      babel-plugin-react-compiler: ^1.0.0
+      vite: ^8.0.0
+    peerDependenciesMeta:
+      '@rolldown/plugin-babel':
+        optional: true
+      babel-plugin-react-compiler:
+        optional: true
 
   '@vitejs/plugin-vue@4.6.2':
     resolution: {integrity: sha512-kqf7SGFoG+80aZG6Pf+gsZIVvGSCKE98JbiWqcCV9cThtg91Jav0yvYFC9Zb+jKetNGF6ZKeoaxgZfND21fWKw==}
@@ -7036,6 +7261,15 @@ packages:
   fb-watchman@2.0.2:
     resolution: {integrity: sha512-p5161BqbuCaSnB8jIbzQHOlpgsPmK5rJVDfDKO91Axs5NC1uu3HRQm6wt9cd9/+GtQQIO53JdGXXoyDpTAsgYA==}
 
+  fdir@6.5.0:
+    resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      picomatch: ^3 || ^4
+    peerDependenciesMeta:
+      picomatch:
+        optional: true
+
   figgy-pudding@3.5.2:
     resolution: {integrity: sha512-0btnI/H8f2pavGMN8w40mlSKOfTK2SVJmBfBeVIj3kNw0swwgzyRq0d5TJVOwodFmtvpPeWPN/MCcfuWF0Ezbw==}
     deprecated: This module is no longer supported.
@@ -8524,8 +8758,20 @@ packages:
     cpu: [arm64]
     os: [android]
 
+  lightningcss-android-arm64@1.32.0:
+    resolution: {integrity: sha512-YK7/ClTt4kAK0vo6w3X+Pnm0D2cf2vPHbhOXdoNti1Ga0al1P4TBZhwjATvjNwLEBCnKvjJc2jQgHXH0NEwlAg==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [android]
+
   lightningcss-darwin-arm64@1.30.2:
     resolution: {integrity: sha512-ylTcDJBN3Hp21TdhRT5zBOIi73P6/W0qwvlFEk22fkdXchtNTOU4Qc37SkzV+EKYxLouZ6M4LG9NfZ1qkhhBWA==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  lightningcss-darwin-arm64@1.32.0:
+    resolution: {integrity: sha512-RzeG9Ju5bag2Bv1/lwlVJvBE3q6TtXskdZLLCyfg5pt+HLz9BqlICO7LZM7VHNTTn/5PRhHFBSjk5lc4cmscPQ==}
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [darwin]
@@ -8536,8 +8782,20 @@ packages:
     cpu: [x64]
     os: [darwin]
 
+  lightningcss-darwin-x64@1.32.0:
+    resolution: {integrity: sha512-U+QsBp2m/s2wqpUYT/6wnlagdZbtZdndSmut/NJqlCcMLTWp5muCrID+K5UJ6jqD2BFshejCYXniPDbNh73V8w==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [darwin]
+
   lightningcss-freebsd-x64@1.30.2:
     resolution: {integrity: sha512-c2bH6xTrf4BDpK8MoGG4Bd6zAMZDAXS569UxCAGcA7IKbHNMlhGQ89eRmvpIUGfKWNVdbhSbkQaWhEoMGmGslA==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [freebsd]
+
+  lightningcss-freebsd-x64@1.32.0:
+    resolution: {integrity: sha512-JCTigedEksZk3tHTTthnMdVfGf61Fky8Ji2E4YjUTEQX14xiy/lTzXnu1vwiZe3bYe0q+SpsSH/CTeDXK6WHig==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [freebsd]
@@ -8548,8 +8806,20 @@ packages:
     cpu: [arm]
     os: [linux]
 
+  lightningcss-linux-arm-gnueabihf@1.32.0:
+    resolution: {integrity: sha512-x6rnnpRa2GL0zQOkt6rts3YDPzduLpWvwAF6EMhXFVZXD4tPrBkEFqzGowzCsIWsPjqSK+tyNEODUBXeeVHSkw==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm]
+    os: [linux]
+
   lightningcss-linux-arm64-gnu@1.30.2:
     resolution: {integrity: sha512-UK65WJAbwIJbiBFXpxrbTNArtfuznvxAJw4Q2ZGlU8kPeDIWEX1dg3rn2veBVUylA2Ezg89ktszWbaQnxD/e3A==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [linux]
+
+  lightningcss-linux-arm64-gnu@1.32.0:
+    resolution: {integrity: sha512-0nnMyoyOLRJXfbMOilaSRcLH3Jw5z9HDNGfT/gwCPgaDjnx0i8w7vBzFLFR1f6CMLKF8gVbebmkUN3fa/kQJpQ==}
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [linux]
@@ -8560,8 +8830,20 @@ packages:
     cpu: [arm64]
     os: [linux]
 
+  lightningcss-linux-arm64-musl@1.32.0:
+    resolution: {integrity: sha512-UpQkoenr4UJEzgVIYpI80lDFvRmPVg6oqboNHfoH4CQIfNA+HOrZ7Mo7KZP02dC6LjghPQJeBsvXhJod/wnIBg==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [linux]
+
   lightningcss-linux-x64-gnu@1.30.2:
     resolution: {integrity: sha512-Cfd46gdmj1vQ+lR6VRTTadNHu6ALuw2pKR9lYq4FnhvgBc4zWY1EtZcAc6EffShbb1MFrIPfLDXD6Xprbnni4w==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [linux]
+
+  lightningcss-linux-x64-gnu@1.32.0:
+    resolution: {integrity: sha512-V7Qr52IhZmdKPVr+Vtw8o+WLsQJYCTd8loIfpDaMRWGUZfBOYEJeyJIkqGIDMZPwPx24pUMfwSxxI8phr/MbOA==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [linux]
@@ -8572,8 +8854,20 @@ packages:
     cpu: [x64]
     os: [linux]
 
+  lightningcss-linux-x64-musl@1.32.0:
+    resolution: {integrity: sha512-bYcLp+Vb0awsiXg/80uCRezCYHNg1/l3mt0gzHnWV9XP1W5sKa5/TCdGWaR/zBM2PeF/HbsQv/j2URNOiVuxWg==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [linux]
+
   lightningcss-win32-arm64-msvc@1.30.2:
     resolution: {integrity: sha512-FZn+vaj7zLv//D/192WFFVA0RgHawIcHqLX9xuWiQt7P0PtdFEVaxgF9rjM/IRYHQXNnk61/H/gb2Ei+kUQ4xQ==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  lightningcss-win32-arm64-msvc@1.32.0:
+    resolution: {integrity: sha512-8SbC8BR40pS6baCM8sbtYDSwEVQd4JlFTOlaD3gWGHfThTcABnNDBda6eTZeqbofalIJhFx0qKzgHJmcPTnGdw==}
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [win32]
@@ -8584,8 +8878,18 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  lightningcss-win32-x64-msvc@1.32.0:
+    resolution: {integrity: sha512-Amq9B/SoZYdDi1kFrojnoqPLxYhQ4Wo5XiL8EVJrVsB8ARoC1PWW6VGtT0WKCemjy8aC+louJnjS7U18x3b06Q==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [win32]
+
   lightningcss@1.30.2:
     resolution: {integrity: sha512-utfs7Pr5uJyyvDETitgsaqSyjCb2qNRAtuqUeWIAKztsOYdcACf2KtARYXg2pSvhkt+9NfoaNY7fxjl6nuMjIQ==}
+    engines: {node: '>= 12.0.0'}
+
+  lightningcss@1.32.0:
+    resolution: {integrity: sha512-NXYBzinNrblfraPGyrbPoD19C1h9lfI/1mzgWYvXUTe414Gz/X1FD2XBZSZM7rRTrMA8JL3OtAaGifrIKhQ5yQ==}
     engines: {node: '>= 12.0.0'}
 
   lilconfig@2.1.0:
@@ -9351,6 +9655,11 @@ packages:
     resolution: {integrity: sha512-ur5UIdyw5Y7yEj9wLzhqXiy6GZ3Mwx0yGI+5sMn2r0N0v3cKJvUmFH5yPP+WXh9e0xfyzyJX95D8l088DNFj7A==}
     hasBin: true
 
+  opentype.js@1.3.4:
+    resolution: {integrity: sha512-d2JE9RP/6uagpQAVtJoF0pJJA/fgai89Cc50Yp0EJHk+eLp6QQ7gBoblsnubRULNY132I0J1QKMJ+JTbMqz4sw==}
+    engines: {node: '>= 8.0.0'}
+    hasBin: true
+
   opn@5.5.0:
     resolution: {integrity: sha512-PqHpggC9bLV0VeWcdKhkpxY+3JTzetLSqTCWL/z/tFIbI6G8JCjondXklT1JinczLz2Xib62sSp0T/gKT4KksA==}
     engines: {node: '>=4'}
@@ -9584,6 +9893,10 @@ packages:
     resolution: {integrity: sha512-Q3CG/cYvCO1ye4QKkuH7EXxs3VC/rI1/trd+qX2+PolbaKG0H+bgcZzrTt96mMyRtejk+JMCiLUn3y29W8qmFQ==}
     engines: {node: '>= 0.10'}
 
+  pdfjs-dist@4.10.38:
+    resolution: {integrity: sha512-/Y3fcFrXEAsMjJXeL9J8+ZG9U01LbuWaYypvDW2ycW1jL269L3js3DVBjDJ0Up9Np1uqDXsDrRihHANhZOlwdQ==}
+    engines: {node: '>=20'}
+
   performance-now@2.1.0:
     resolution: {integrity: sha512-7EAHlyLHI56VEIdK57uwHdHKIaAGbnXPiw0yWbarQZOKaKpvUIgW0jWRVLiatnM+XXlSwsanIBH/hzGMJulMow==}
 
@@ -9602,6 +9915,10 @@ packages:
 
   picomatch@4.0.2:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
+    engines: {node: '>=12'}
+
+  picomatch@4.0.3:
+    resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
     engines: {node: '>=12'}
 
   pify@2.3.0:
@@ -10276,6 +10593,10 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postcss@8.5.8:
+    resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
+    engines: {node: ^10 || ^12 || >=14}
+
   posthtml-parser@0.4.2:
     resolution: {integrity: sha512-BUIorsYJTvS9UhXxPTzupIztOMVNPa/HtAm9KHni9z6qEfiJ1bpOBL5DfUOL9XAc3XkLIEzBzpph+Zbm4AdRAg==}
 
@@ -10499,11 +10820,6 @@ packages:
       typescript:
         optional: true
 
-  react-dom@18.2.0:
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
-    peerDependencies:
-      react: ^18.2.0
-
   react-dom@18.3.1:
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
@@ -10602,10 +10918,6 @@ packages:
     peerDependencies:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-
-  react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
-    engines: {node: '>=0.10.0'}
 
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
@@ -10859,6 +11171,11 @@ packages:
   ripemd160@2.0.3:
     resolution: {integrity: sha512-5Di9UC0+8h1L6ZD2d7awM7E/T4uA1fJRlx6zk/NvdCCVEoAnFqvHmCuNeIKoCeIixBX/q8uM+6ycDvF8woqosA==}
     engines: {node: '>= 0.8'}
+
+  rolldown@1.0.0-rc.9:
+    resolution: {integrity: sha512-9EbgWge7ZH+yqb4d2EnELAntgPTWbfL8ajiTW+SyhJEC4qhBbkCKbqFV4Ge4zmu5ziQuVbWxb/XwLZ+RIO7E8Q==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    hasBin: true
 
   rollup-plugin-terser@7.0.2:
     resolution: {integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==}
@@ -11384,6 +11701,9 @@ packages:
     resolution: {integrity: sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==}
     engines: {node: '>=18'}
 
+  string.prototype.codepointat@0.2.1:
+    resolution: {integrity: sha512-2cBVCj6I4IOvEnjgO/hWqXjqBGsY+zwPmHl12Srk9IXSZ56Jwwmy+66XO5Iut/oQVR7t5ihYdLB0GMa4alEUcg==}
+
   string.prototype.includes@2.0.1:
     resolution: {integrity: sha512-o7+c9bW6zpAdJHTtujeePODAhkuicdAryFsfVKwA+wGw89wJ4GTY484WTucM9hLtDEOpOvI+aHnzqnC5lHp4Rg==}
     engines: {node: '>= 0.4'}
@@ -11697,6 +12017,10 @@ packages:
 
   tinycolor2@1.6.0:
     resolution: {integrity: sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==}
+
+  tinyglobby@0.2.15:
+    resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
+    engines: {node: '>=12.0.0'}
 
   tmp@0.0.33:
     resolution: {integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==}
@@ -12140,6 +12464,49 @@ packages:
       sugarss:
         optional: true
       terser:
+        optional: true
+
+  vite@8.0.0:
+    resolution: {integrity: sha512-fPGaRNj9Zytaf8LEiBhY7Z6ijnFKdzU/+mL8EFBaKr7Vw1/FWcTBAMW0wLPJAGMPX38ZPVCVgLceWiEqeoqL2Q==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': ^20.19.0 || >=22.12.0
+      '@vitejs/devtools': ^0.0.0-alpha.31
+      esbuild: ^0.27.0
+      jiti: '>=1.21.0'
+      less: ^4.0.0
+      sass: ^1.70.0
+      sass-embedded: ^1.70.0
+      stylus: '>=0.54.8'
+      sugarss: ^5.0.0
+      terser: ^5.16.0
+      tsx: ^4.8.1
+      yaml: ^2.4.2
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      '@vitejs/devtools':
+        optional: true
+      esbuild:
+        optional: true
+      jiti:
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      sass-embedded:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+      tsx:
+        optional: true
+      yaml:
         optional: true
 
   vlq@0.2.3:
@@ -12675,7 +13042,7 @@ snapshots:
       '@angular/core': 18.2.14(rxjs@7.8.1)(zone.js@0.14.10)
       tslib: 2.6.3
 
-  '@angular/build@18.2.21(@angular/compiler-cli@18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4))(@types/node@24.10.1)(chokidar@4.0.3)(lightningcss@1.30.2)(postcss@8.5.6)(tailwindcss@3.4.18(yaml@1.10.2))(terser@5.44.1)(typescript@5.5.4)':
+  '@angular/build@18.2.21(@angular/compiler-cli@18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4))(@types/node@24.10.1)(chokidar@4.0.3)(lightningcss@1.32.0)(postcss@8.5.8)(tailwindcss@3.4.18(yaml@1.10.2))(terser@5.44.1)(typescript@5.5.4)':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular-devkit/architect': 0.1802.21(chokidar@4.0.3)
@@ -12685,7 +13052,7 @@ snapshots:
       '@babel/helper-split-export-declaration': 7.24.7
       '@babel/plugin-syntax-import-attributes': 7.24.7(@babel/core@7.25.2)
       '@inquirer/confirm': 3.1.22
-      '@vitejs/plugin-basic-ssl': 1.1.0(vite@5.4.21(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1))
+      '@vitejs/plugin-basic-ssl': 1.1.0(vite@5.4.21(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1))
       browserslist: 4.28.0
       critters: 0.0.24
       esbuild: 0.23.0
@@ -12702,10 +13069,10 @@ snapshots:
       sass: 1.77.6
       semver: 7.6.3
       typescript: 5.5.4
-      vite: 5.4.21(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1)
+      vite: 5.4.21(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1)
       watchpack: 2.4.1
     optionalDependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       tailwindcss: 3.4.18(yaml@1.10.2)
     transitivePeerDependencies:
       - '@types/node'
@@ -13791,23 +14158,6 @@ snapshots:
     dependencies:
       tslib: 2.6.3
 
-  '@blueprintjs/core@5.19.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
-    dependencies:
-      '@blueprintjs/colors': 5.1.11
-      '@blueprintjs/icons': 5.23.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@popperjs/core': 2.11.8
-      classnames: 2.5.1
-      normalize.css: 8.0.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-popper: 2.3.0(@popperjs/core@2.11.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react-transition-group: 4.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react-uid: 2.4.0(@types/react@18.3.26)(react@18.2.0)
-      tslib: 2.6.3
-      use-sync-external-store: 1.6.0(react@18.2.0)
-    optionalDependencies:
-      '@types/react': 18.3.26
-
   '@blueprintjs/core@5.19.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@blueprintjs/colors': 5.1.11
@@ -13825,16 +14175,6 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.26
 
-  '@blueprintjs/icons@5.23.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
-    dependencies:
-      change-case: 4.1.2
-      classnames: 2.5.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      tslib: 2.6.3
-    optionalDependencies:
-      '@types/react': 18.3.26
-
   '@blueprintjs/icons@5.23.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       change-case: 4.1.2
@@ -13845,23 +14185,12 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.26
 
-  '@blueprintjs/icons@6.5.2(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@blueprintjs/icons@6.5.2(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       change-case: 4.1.2
       classnames: 2.5.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      tslib: 2.6.3
-    optionalDependencies:
-      '@types/react': 18.3.26
-
-  '@blueprintjs/select@5.3.20(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
-    dependencies:
-      '@blueprintjs/core': 5.19.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@blueprintjs/icons': 5.23.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      classnames: 2.5.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
       tslib: 2.6.3
     optionalDependencies:
       '@types/react': 18.3.26
@@ -13956,6 +14285,22 @@ snapshots:
   '@csstools/selector-specificity@2.2.0(postcss-selector-parser@6.1.2)':
     dependencies:
       postcss-selector-parser: 6.1.2
+
+  '@emnapi/core@1.9.0':
+    dependencies:
+      '@emnapi/wasi-threads': 1.2.0
+      tslib: 2.8.1
+    optional: true
+
+  '@emnapi/runtime@1.9.0':
+    dependencies:
+      tslib: 2.8.1
+    optional: true
+
+  '@emnapi/wasi-threads@1.2.0':
+    dependencies:
+      tslib: 2.8.1
+    optional: true
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
@@ -14223,10 +14568,6 @@ snapshots:
   '@humanwhocodes/object-schema@2.0.3': {}
 
   '@iarna/toml@2.2.5': {}
-
-  '@icons/material@0.2.4(react@18.2.0)':
-    dependencies:
-      react: 18.2.0
 
   '@icons/material@0.2.4(react@18.3.1)':
     dependencies:
@@ -14613,12 +14954,6 @@ snapshots:
   '@lmdb/lmdb-win32-x64@3.0.13':
     optional: true
 
-  '@meronex/icons@4.0.0(react@18.2.0)':
-    dependencies:
-      camelcase: 5.3.1
-      ncp: 2.0.0
-      react: 18.2.0
-
   '@meronex/icons@4.0.0(react@18.3.1)':
     dependencies:
       camelcase: 5.3.1
@@ -14652,6 +14987,61 @@ snapshots:
     optional: true
 
   '@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3':
+    optional: true
+
+  '@napi-rs/canvas-android-arm64@0.1.96':
+    optional: true
+
+  '@napi-rs/canvas-darwin-arm64@0.1.96':
+    optional: true
+
+  '@napi-rs/canvas-darwin-x64@0.1.96':
+    optional: true
+
+  '@napi-rs/canvas-linux-arm-gnueabihf@0.1.96':
+    optional: true
+
+  '@napi-rs/canvas-linux-arm64-gnu@0.1.96':
+    optional: true
+
+  '@napi-rs/canvas-linux-arm64-musl@0.1.96':
+    optional: true
+
+  '@napi-rs/canvas-linux-riscv64-gnu@0.1.96':
+    optional: true
+
+  '@napi-rs/canvas-linux-x64-gnu@0.1.96':
+    optional: true
+
+  '@napi-rs/canvas-linux-x64-musl@0.1.96':
+    optional: true
+
+  '@napi-rs/canvas-win32-arm64-msvc@0.1.96':
+    optional: true
+
+  '@napi-rs/canvas-win32-x64-msvc@0.1.96':
+    optional: true
+
+  '@napi-rs/canvas@0.1.96':
+    optionalDependencies:
+      '@napi-rs/canvas-android-arm64': 0.1.96
+      '@napi-rs/canvas-darwin-arm64': 0.1.96
+      '@napi-rs/canvas-darwin-x64': 0.1.96
+      '@napi-rs/canvas-linux-arm-gnueabihf': 0.1.96
+      '@napi-rs/canvas-linux-arm64-gnu': 0.1.96
+      '@napi-rs/canvas-linux-arm64-musl': 0.1.96
+      '@napi-rs/canvas-linux-riscv64-gnu': 0.1.96
+      '@napi-rs/canvas-linux-x64-gnu': 0.1.96
+      '@napi-rs/canvas-linux-x64-musl': 0.1.96
+      '@napi-rs/canvas-win32-arm64-msvc': 0.1.96
+      '@napi-rs/canvas-win32-x64-msvc': 0.1.96
+    optional: true
+
+  '@napi-rs/wasm-runtime@1.1.1':
+    dependencies:
+      '@emnapi/core': 1.9.0
+      '@emnapi/runtime': 1.9.0
+      '@tybys/wasm-util': 0.10.1
     optional: true
 
   '@next/env@14.2.33': {}
@@ -14769,6 +15159,10 @@ snapshots:
     transitivePeerDependencies:
       - bluebird
       - supports-color
+
+  '@oxc-project/runtime@0.115.0': {}
+
+  '@oxc-project/types@0.115.0': {}
 
   '@parcel/bundler-default@2.16.1(@parcel/core@2.16.1(@swc/helpers@0.5.17))':
     dependencies:
@@ -15465,11 +15859,67 @@ snapshots:
       type-fest: 0.21.3
       webpack-dev-server: 4.15.2(webpack@5.102.1)
 
+  '@polotno/pdf-import@0.0.2':
+    dependencies:
+      opentype.js: 1.3.4
+      pdfjs-dist: 4.10.38
+
   '@polotno/svg-import@0.0.13':
     dependencies:
       konva: 10.2.0
 
   '@popperjs/core@2.11.8': {}
+
+  '@rolldown/binding-android-arm64@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-darwin-arm64@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-darwin-x64@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-freebsd-x64@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-linux-arm-gnueabihf@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-linux-arm64-gnu@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-linux-arm64-musl@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-linux-ppc64-gnu@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-linux-s390x-gnu@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-linux-x64-gnu@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-linux-x64-musl@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-openharmony-arm64@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-wasm32-wasi@1.0.0-rc.9':
+    dependencies:
+      '@napi-rs/wasm-runtime': 1.1.1
+    optional: true
+
+  '@rolldown/binding-win32-arm64-msvc@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/binding-win32-x64-msvc@1.0.0-rc.9':
+    optional: true
+
+  '@rolldown/pluginutils@1.0.0-rc.7': {}
+
+  '@rolldown/pluginutils@1.0.0-rc.9': {}
 
   '@rollup/plugin-babel@5.3.1(@babel/core@7.28.5)(@types/babel__core@7.20.5)(rollup@2.79.2)':
     dependencies:
@@ -15827,6 +16277,11 @@ snapshots:
     dependencies:
       '@tufjs/canonical-json': 2.0.0
       minimatch: 9.0.5
+
+  '@tybys/wasm-util@0.10.1':
+    dependencies:
+      tslib: 2.8.1
+    optional: true
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -16304,18 +16759,23 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@vitejs/plugin-basic-ssl@1.1.0(vite@5.4.21(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1))':
+  '@vitejs/plugin-basic-ssl@1.1.0(vite@5.4.21(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1))':
     dependencies:
-      vite: 5.4.21(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1)
+      vite: 5.4.21(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1)
 
-  '@vitejs/plugin-vue@4.6.2(vite@4.5.14(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1))(vue@3.5.24(typescript@4.4.4))':
+  '@vitejs/plugin-react@6.0.0(vite@8.0.0(@types/node@24.10.1)(esbuild@0.23.0)(jiti@1.21.7)(sass@1.77.6)(terser@5.44.1)(yaml@1.10.2))':
     dependencies:
-      vite: 4.5.14(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1)
+      '@rolldown/pluginutils': 1.0.0-rc.7
+      vite: 8.0.0(@types/node@24.10.1)(esbuild@0.23.0)(jiti@1.21.7)(sass@1.77.6)(terser@5.44.1)(yaml@1.10.2)
+
+  '@vitejs/plugin-vue@4.6.2(vite@4.5.14(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1))(vue@3.5.24(typescript@4.4.4))':
+    dependencies:
+      vite: 4.5.14(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1)
       vue: 3.5.24(typescript@4.4.4)
 
-  '@vitejs/plugin-vue@5.2.4(vite@5.4.21(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1))(vue@3.5.24(typescript@4.4.4))':
+  '@vitejs/plugin-vue@5.2.4(vite@5.4.21(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1))(vue@3.5.24(typescript@4.4.4))':
     dependencies:
-      vite: 5.4.21(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1)
+      vite: 5.4.21(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1)
       vue: 3.5.24(typescript@4.4.4)
 
   '@vue/babel-helper-vue-jsx-merge-props@1.4.0': {}
@@ -16443,11 +16903,11 @@ snapshots:
 
   '@vue/cli-overlay@4.5.19': {}
 
-  '@vue/cli-plugin-babel@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16))(core-js@3.46.0)(vue@2.7.16)':
+  '@vue/cli-plugin-babel@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16))(core-js@3.46.0)(vue@2.7.16)':
     dependencies:
       '@babel/core': 7.28.5
       '@vue/babel-preset-app': 4.5.19(@babel/core@7.28.5)(core-js@3.46.0)(vue@2.7.16)
-      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16)
+      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16)
       '@vue/cli-shared-utils': 4.5.19
       babel-loader: 8.4.1(@babel/core@7.28.5)(webpack@4.47.0)
       cache-loader: 4.1.0(webpack@4.47.0)
@@ -16460,9 +16920,9 @@ snapshots:
       - webpack-cli
       - webpack-command
 
-  '@vue/cli-plugin-eslint@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16))(eslint@6.8.0)':
+  '@vue/cli-plugin-eslint@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16))(eslint@6.8.0)':
     dependencies:
-      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16)
+      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16)
       '@vue/cli-shared-utils': 4.5.19
       eslint: 6.8.0
       eslint-loader: 2.2.1(eslint@6.8.0)(webpack@4.47.0)
@@ -16474,24 +16934,24 @@ snapshots:
       - webpack-cli
       - webpack-command
 
-  '@vue/cli-plugin-router@4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16))':
+  '@vue/cli-plugin-router@4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16))':
     dependencies:
-      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16)
+      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16)
       '@vue/cli-shared-utils': 4.5.19
 
-  '@vue/cli-plugin-vuex@4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16))':
+  '@vue/cli-plugin-vuex@4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16))':
     dependencies:
-      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16)
+      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16)
 
-  '@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16)':
+  '@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16)':
     dependencies:
       '@intervolga/optimize-cssnano-plugin': 1.0.6(webpack@4.47.0)
       '@soda/friendly-errors-webpack-plugin': 1.8.1(webpack@4.47.0)
       '@vue/cli-overlay': 4.5.19
-      '@vue/cli-plugin-router': 4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16))
-      '@vue/cli-plugin-vuex': 4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16))
+      '@vue/cli-plugin-router': 4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16))
+      '@vue/cli-plugin-vuex': 4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.24)(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16))
       '@vue/cli-shared-utils': 4.5.19
-      '@vue/component-compiler-utils': 3.3.0(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)
+      '@vue/component-compiler-utils': 3.3.0(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)
       '@vue/preload-webpack-plugin': 1.1.2(html-webpack-plugin@3.2.0(webpack@4.47.0))(webpack@4.47.0)
       '@vue/web-component-wrapper': 1.3.0
       acorn: 6.4.2
@@ -16536,7 +16996,7 @@ snapshots:
       terser-webpack-plugin: 2.3.8(webpack@4.47.0)
       thread-loader: 2.1.3(webpack@4.47.0)
       url-loader: 2.3.0(file-loader@4.3.0(webpack@4.47.0))(webpack@4.47.0)
-      vue-loader: 15.11.1(@vue/compiler-sfc@3.5.24)(cache-loader@4.1.0(webpack@4.47.0))(css-loader@3.6.0(webpack@4.47.0))(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16)(webpack@4.47.0)
+      vue-loader: 15.11.1(@vue/compiler-sfc@3.5.24)(cache-loader@4.1.0(webpack@4.47.0))(css-loader@3.6.0(webpack@4.47.0))(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16)(webpack@4.47.0)
       vue-style-loader: 4.1.3
       vue-template-compiler: 2.7.16
       webpack: 4.47.0
@@ -16660,9 +17120,9 @@ snapshots:
       '@vue/compiler-dom': 3.5.24
       '@vue/shared': 3.5.24
 
-  '@vue/component-compiler-utils@3.3.0(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)':
+  '@vue/component-compiler-utils@3.3.0(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)':
     dependencies:
-      consolidate: 0.15.1(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)
+      consolidate: 0.15.1(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)
       hash-sum: 1.0.2
       lru-cache: 4.1.5
       merge-source-map: 1.1.0
@@ -18124,14 +18584,14 @@ snapshots:
 
   console-browserify@1.2.0: {}
 
-  consolidate@0.15.1(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1):
+  consolidate@0.15.1(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1):
     dependencies:
       bluebird: 3.7.2
     optionalDependencies:
       ejs: 3.1.10
       lodash: 4.17.21
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
       underscore: 1.12.1
 
   constant-case@3.0.4:
@@ -19881,6 +20341,10 @@ snapshots:
     dependencies:
       bser: 2.1.1
 
+  fdir@6.5.0(picomatch@4.0.3):
+    optionalDependencies:
+      picomatch: 4.0.3
+
   figgy-pudding@3.5.2: {}
 
   figures@3.2.0:
@@ -21122,13 +21586,6 @@ snapshots:
       has-symbols: 1.1.0
       set-function-name: 2.0.2
 
-  its-fine@1.2.5(@types/react@18.3.26)(react@18.2.0):
-    dependencies:
-      '@types/react-reconciler': 0.28.9(@types/react@18.3.26)
-      react: 18.2.0
-    transitivePeerDependencies:
-      - '@types/react'
-
   its-fine@1.2.5(@types/react@18.3.26)(react@18.3.1):
     dependencies:
       '@types/react-reconciler': 0.28.9(@types/react@18.3.26)
@@ -21772,34 +22229,67 @@ snapshots:
   lightningcss-android-arm64@1.30.2:
     optional: true
 
+  lightningcss-android-arm64@1.32.0:
+    optional: true
+
   lightningcss-darwin-arm64@1.30.2:
+    optional: true
+
+  lightningcss-darwin-arm64@1.32.0:
     optional: true
 
   lightningcss-darwin-x64@1.30.2:
     optional: true
 
+  lightningcss-darwin-x64@1.32.0:
+    optional: true
+
   lightningcss-freebsd-x64@1.30.2:
+    optional: true
+
+  lightningcss-freebsd-x64@1.32.0:
     optional: true
 
   lightningcss-linux-arm-gnueabihf@1.30.2:
     optional: true
 
+  lightningcss-linux-arm-gnueabihf@1.32.0:
+    optional: true
+
   lightningcss-linux-arm64-gnu@1.30.2:
+    optional: true
+
+  lightningcss-linux-arm64-gnu@1.32.0:
     optional: true
 
   lightningcss-linux-arm64-musl@1.30.2:
     optional: true
 
+  lightningcss-linux-arm64-musl@1.32.0:
+    optional: true
+
   lightningcss-linux-x64-gnu@1.30.2:
+    optional: true
+
+  lightningcss-linux-x64-gnu@1.32.0:
     optional: true
 
   lightningcss-linux-x64-musl@1.30.2:
     optional: true
 
+  lightningcss-linux-x64-musl@1.32.0:
+    optional: true
+
   lightningcss-win32-arm64-msvc@1.30.2:
     optional: true
 
+  lightningcss-win32-arm64-msvc@1.32.0:
+    optional: true
+
   lightningcss-win32-x64-msvc@1.30.2:
+    optional: true
+
+  lightningcss-win32-x64-msvc@1.32.0:
     optional: true
 
   lightningcss@1.30.2:
@@ -21817,6 +22307,22 @@ snapshots:
       lightningcss-linux-x64-musl: 1.30.2
       lightningcss-win32-arm64-msvc: 1.30.2
       lightningcss-win32-x64-msvc: 1.30.2
+
+  lightningcss@1.32.0:
+    dependencies:
+      detect-libc: 2.1.2
+    optionalDependencies:
+      lightningcss-android-arm64: 1.32.0
+      lightningcss-darwin-arm64: 1.32.0
+      lightningcss-darwin-x64: 1.32.0
+      lightningcss-freebsd-x64: 1.32.0
+      lightningcss-linux-arm-gnueabihf: 1.32.0
+      lightningcss-linux-arm64-gnu: 1.32.0
+      lightningcss-linux-arm64-musl: 1.32.0
+      lightningcss-linux-x64-gnu: 1.32.0
+      lightningcss-linux-x64-musl: 1.32.0
+      lightningcss-win32-arm64-msvc: 1.32.0
+      lightningcss-win32-x64-msvc: 1.32.0
 
   lilconfig@2.1.0: {}
 
@@ -22231,14 +22737,6 @@ snapshots:
       mobx: 6.15.0
       tslib: 2.6.3
 
-  mobx-react-lite@4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      mobx: 6.15.0
-      react: 18.2.0
-      use-sync-external-store: 1.6.0(react@18.2.0)
-    optionalDependencies:
-      react-dom: 18.2.0(react@18.2.0)
-
   mobx-react-lite@4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       mobx: 6.15.0
@@ -22372,7 +22870,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@14.2.33(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.6):
+  next@14.2.33(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6):
     dependencies:
       '@next/env': 14.2.33
       '@swc/helpers': 0.5.5
@@ -22380,9 +22878,9 @@ snapshots:
       caniuse-lite: 1.0.30001754
       graceful-fs: 4.2.11
       postcss: 8.4.31
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      styled-jsx: 5.1.1(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      styled-jsx: 5.1.1(react@18.3.1)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.2.33
       '@next/swc-darwin-x64': 14.2.33
@@ -22705,6 +23203,11 @@ snapshots:
       is-wsl: 2.2.0
 
   opener@1.5.2: {}
+
+  opentype.js@1.3.4:
+    dependencies:
+      string.prototype.codepointat: 0.2.1
+      tiny-inflate: 1.0.3
 
   opn@5.5.0:
     dependencies:
@@ -23054,6 +23557,10 @@ snapshots:
       sha.js: 2.4.12
       to-buffer: 1.2.2
 
+  pdfjs-dist@4.10.38:
+    optionalDependencies:
+      '@napi-rs/canvas': 0.1.96
+
   performance-now@2.1.0: {}
 
   physical-cpu-count@2.0.0: {}
@@ -23065,6 +23572,8 @@ snapshots:
   picomatch@2.3.1: {}
 
   picomatch@4.0.2: {}
+
+  picomatch@4.0.3: {}
 
   pify@2.3.0: {}
 
@@ -23104,117 +23613,6 @@ snapshots:
 
   pngjs@5.0.0: {}
 
-  polotno@2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.4.4):
-    dependencies:
-      '@blueprintjs/core': 5.19.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@blueprintjs/icons': 5.23.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@blueprintjs/select': 5.3.20(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@meronex/icons': 4.0.0(react@18.2.0)
-      cssom: 0.5.0
-      fast-json-patch: 3.1.1
-      functions-have-names: 1.2.3
-      gifuct-js: 2.1.2
-      gradient-parser: 1.1.1
-      konva: 10.2.0
-      mediabunny: 1.34.4
-      mensch: 0.3.4
-      mobx: 6.15.0
-      mobx-react-lite: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      mobx-state-tree: 7.0.2(mobx@6.15.0)(typescript@4.4.4)
-      nanoid: 3.3.11
-      quill: 1.3.7
-      rasterizehtml: 1.4.0
-      react: 18.2.0
-      react-color: 2.19.3(react@18.2.0)
-      react-dom: 18.2.0(react@18.2.0)
-      react-konva: 18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react-konva-utils: 2.0.0(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react-konva@18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
-      react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sortablejs@1.15.6)
-      react-window: 1.8.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      sortablejs: 1.15.6
-      svg-round-corners: 0.4.3
-      swr: 2.3.6(react@18.2.0)
-      use-image: 1.1.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/sortablejs'
-      - react-native
-      - typescript
-
-  polotno@2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5):
-    dependencies:
-      '@blueprintjs/core': 5.19.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@blueprintjs/icons': 5.23.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@blueprintjs/select': 5.3.20(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@meronex/icons': 4.0.0(react@18.2.0)
-      cssom: 0.5.0
-      fast-json-patch: 3.1.1
-      functions-have-names: 1.2.3
-      gifuct-js: 2.1.2
-      gradient-parser: 1.1.1
-      konva: 10.2.0
-      mediabunny: 1.34.4
-      mensch: 0.3.4
-      mobx: 6.15.0
-      mobx-react-lite: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      mobx-state-tree: 7.0.2(mobx@6.15.0)(typescript@4.9.5)
-      nanoid: 3.3.11
-      quill: 1.3.7
-      rasterizehtml: 1.4.0
-      react: 18.2.0
-      react-color: 2.19.3(react@18.2.0)
-      react-dom: 18.2.0(react@18.2.0)
-      react-konva: 18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react-konva-utils: 2.0.0(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react-konva@18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
-      react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sortablejs@1.15.6)
-      react-window: 1.8.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      sortablejs: 1.15.6
-      svg-round-corners: 0.4.3
-      swr: 2.3.6(react@18.2.0)
-      use-image: 1.1.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/sortablejs'
-      - react-native
-      - typescript
-
-  polotno@2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.5.4):
-    dependencies:
-      '@blueprintjs/core': 5.19.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@blueprintjs/icons': 5.23.0(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@blueprintjs/select': 5.3.20(@types/react@18.3.26)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@meronex/icons': 4.0.0(react@18.2.0)
-      cssom: 0.5.0
-      fast-json-patch: 3.1.1
-      functions-have-names: 1.2.3
-      gifuct-js: 2.1.2
-      gradient-parser: 1.1.1
-      konva: 10.2.0
-      mediabunny: 1.34.4
-      mensch: 0.3.4
-      mobx: 6.15.0
-      mobx-react-lite: 4.1.1(mobx@6.15.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      mobx-state-tree: 7.0.2(mobx@6.15.0)(typescript@5.5.4)
-      nanoid: 3.3.11
-      quill: 1.3.7
-      rasterizehtml: 1.4.0
-      react: 18.2.0
-      react-color: 2.19.3(react@18.2.0)
-      react-dom: 18.2.0(react@18.2.0)
-      react-konva: 18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react-konva-utils: 2.0.0(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react-konva@18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
-      react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sortablejs@1.15.6)
-      react-window: 1.8.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      sortablejs: 1.15.6
-      svg-round-corners: 0.4.3
-      swr: 2.3.6(react@18.2.0)
-      use-image: 1.1.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/sortablejs'
-      - react-native
-      - typescript
-
   polotno@2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.4.4):
     dependencies:
       '@blueprintjs/core': 5.19.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -23232,6 +23630,43 @@ snapshots:
       mobx: 6.15.0
       mobx-react-lite: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-state-tree: 7.0.2(mobx@6.15.0)(typescript@4.4.4)
+      nanoid: 3.3.11
+      quill: 1.3.7
+      rasterizehtml: 1.4.0
+      react: 18.3.1
+      react-color: 2.19.3(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
+      react-konva: 18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-konva-utils: 2.0.0(konva@10.2.0)(react-dom@18.3.1(react@18.3.1))(react-konva@18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sortablejs@1.15.6)
+      react-window: 1.8.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      sortablejs: 1.15.6
+      svg-round-corners: 0.4.3
+      swr: 2.3.6(react@18.3.1)
+      use-image: 1.1.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@types/sortablejs'
+      - react-native
+      - typescript
+
+  polotno@2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@4.9.5):
+    dependencies:
+      '@blueprintjs/core': 5.19.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@blueprintjs/icons': 5.23.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@blueprintjs/select': 5.3.20(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@meronex/icons': 4.0.0(react@18.3.1)
+      cssom: 0.5.0
+      fast-json-patch: 3.1.1
+      functions-have-names: 1.2.3
+      gifuct-js: 2.1.2
+      gradient-parser: 1.1.1
+      konva: 10.2.0
+      mediabunny: 1.34.4
+      mensch: 0.3.4
+      mobx: 6.15.0
+      mobx-react-lite: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      mobx-state-tree: 7.0.2(mobx@6.15.0)(typescript@4.9.5)
       nanoid: 3.3.11
       quill: 1.3.7
       rasterizehtml: 1.4.0
@@ -23981,6 +24416,12 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
+  postcss@8.5.8:
+    dependencies:
+      nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
   posthtml-parser@0.4.2:
     dependencies:
       htmlparser2: 3.10.1
@@ -24205,17 +24646,6 @@ snapshots:
       regenerator-runtime: 0.13.11
       whatwg-fetch: 3.6.20
 
-  react-color@2.19.3(react@18.2.0):
-    dependencies:
-      '@icons/material': 0.2.4(react@18.2.0)
-      lodash: 4.17.21
-      lodash-es: 4.17.21
-      material-colors: 1.2.6
-      prop-types: 15.8.1
-      react: 18.2.0
-      reactcss: 1.2.3(react@18.2.0)
-      tinycolor2: 1.6.0
-
   react-color@2.19.3(react@18.3.1):
     dependencies:
       '@icons/material': 0.2.4(react@18.3.1)
@@ -24335,12 +24765,6 @@ snapshots:
       - supports-color
       - vue-template-compiler
 
-  react-dom@18.2.0(react@18.2.0):
-    dependencies:
-      loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.2
-
   react-dom@18.3.1(react@18.3.1):
     dependencies:
       loose-envify: 1.4.0
@@ -24357,14 +24781,6 @@ snapshots:
 
   react-is@18.3.1: {}
 
-  react-konva-utils@2.0.0(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react-konva@18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0):
-    dependencies:
-      konva: 10.2.0
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-konva: 18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      use-image: 1.1.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-
   react-konva-utils@2.0.0(konva@10.2.0)(react-dom@18.3.1(react@18.3.1))(react-konva@18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
       konva: 10.2.0
@@ -24372,18 +24788,6 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-konva: 18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       use-image: 1.1.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-
-  react-konva@18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      '@types/react-reconciler': 0.28.9(@types/react@18.3.26)
-      its-fine: 1.2.5(@types/react@18.3.26)(react@18.2.0)
-      konva: 10.2.0
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-reconciler: 0.29.2(react@18.2.0)
-      scheduler: 0.23.2
-    transitivePeerDependencies:
-      - '@types/react'
 
   react-konva@18.2.14(@types/react@18.3.26)(konva@10.2.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -24397,14 +24801,6 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  react-popper@2.3.0(@popperjs/core@2.11.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      '@popperjs/core': 2.11.8
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-fast-compare: 3.2.2
-      warning: 4.0.3
-
   react-popper@2.3.0(@popperjs/core@2.11.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@popperjs/core': 2.11.8
@@ -24412,12 +24808,6 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-fast-compare: 3.2.2
       warning: 4.0.3
-
-  react-reconciler@0.29.2(react@18.2.0):
-    dependencies:
-      loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.2
 
   react-reconciler@0.29.2(react@18.3.1):
     dependencies:
@@ -24429,7 +24819,7 @@ snapshots:
 
   react-refresh@0.16.0: {}
 
-  react-scripts@5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2):
+  react-scripts@5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.4.4)(vue-template-compiler@2.7.16)(yaml@1.10.2):
     dependencies:
       '@babel/core': 7.28.5
       '@pmmmwh/react-refresh-webpack-plugin': 0.5.17(react-refresh@0.11.0)(sockjs-client@1.6.1)(type-fest@0.21.3)(webpack-dev-server@4.15.2(webpack@5.102.1))(webpack@5.102.1)
@@ -24463,7 +24853,7 @@ snapshots:
       postcss-normalize: 10.0.1(browserslist@4.28.0)(postcss@8.5.6)
       postcss-preset-env: 7.8.3(postcss@8.5.6)
       prompts: 2.4.2
-      react: 18.2.0
+      react: 18.3.1
       react-app-polyfill: 3.0.0
       react-dev-utils: 12.0.1(eslint@8.57.1)(typescript@4.4.4)(vue-template-compiler@2.7.16)(webpack@5.102.1)
       react-refresh: 0.11.0
@@ -24518,7 +24908,7 @@ snapshots:
       - webpack-plugin-serve
       - yaml
 
-  react-scripts@5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.2.0)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.9.5)(vue-template-compiler@2.7.16)(yaml@1.10.2):
+  react-scripts@5.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(sass@1.77.6)(sockjs-client@1.6.1)(type-fest@0.21.3)(typescript@4.9.5)(vue-template-compiler@2.7.16)(yaml@1.10.2):
     dependencies:
       '@babel/core': 7.28.5
       '@pmmmwh/react-refresh-webpack-plugin': 0.5.17(react-refresh@0.11.0)(sockjs-client@1.6.1)(type-fest@0.21.3)(webpack-dev-server@4.15.2(webpack@5.102.1))(webpack@5.102.1)
@@ -24552,7 +24942,7 @@ snapshots:
       postcss-normalize: 10.0.1(browserslist@4.28.0)(postcss@8.5.6)
       postcss-preset-env: 7.8.3(postcss@8.5.6)
       prompts: 2.4.2
-      react: 18.2.0
+      react: 18.3.1
       react-app-polyfill: 3.0.0
       react-dev-utils: 12.0.1(eslint@8.57.1)(typescript@4.9.5)(vue-template-compiler@2.7.16)(webpack@5.102.1)
       react-refresh: 0.11.0
@@ -24696,15 +25086,6 @@ snapshots:
       - webpack-plugin-serve
       - yaml
 
-  react-sortablejs@6.1.4(@types/sortablejs@1.15.9)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sortablejs@1.15.6):
-    dependencies:
-      '@types/sortablejs': 1.15.9
-      classnames: 2.3.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      sortablejs: 1.15.6
-      tiny-invariant: 1.2.0
-
   react-sortablejs@6.1.4(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sortablejs@1.15.6):
     dependencies:
       '@types/sortablejs': 1.15.9
@@ -24713,15 +25094,6 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       sortablejs: 1.15.6
       tiny-invariant: 1.2.0
-
-  react-transition-group@4.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      '@babel/runtime': 7.28.4
-      dom-helpers: 5.2.1
-      loose-envify: 1.4.0
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
 
   react-transition-group@4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -24732,26 +25104,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  react-uid@2.4.0(@types/react@18.3.26)(react@18.2.0):
-    dependencies:
-      react: 18.2.0
-      tslib: 2.8.1
-    optionalDependencies:
-      '@types/react': 18.3.26
-
   react-uid@2.4.0(@types/react@18.3.26)(react@18.3.1):
     dependencies:
       react: 18.3.1
       tslib: 2.8.1
     optionalDependencies:
       '@types/react': 18.3.26
-
-  react-window@1.8.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      '@babel/runtime': 7.28.4
-      memoize-one: 5.2.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
 
   react-window@1.8.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -24760,18 +25118,9 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  react@18.2.0:
-    dependencies:
-      loose-envify: 1.4.0
-
   react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
-
-  reactcss@1.2.3(react@18.2.0):
-    dependencies:
-      lodash: 4.17.21
-      react: 18.2.0
 
   reactcss@1.2.3(react@18.3.1):
     dependencies:
@@ -25040,6 +25389,27 @@ snapshots:
     dependencies:
       hash-base: 3.1.2
       inherits: 2.0.4
+
+  rolldown@1.0.0-rc.9:
+    dependencies:
+      '@oxc-project/types': 0.115.0
+      '@rolldown/pluginutils': 1.0.0-rc.9
+    optionalDependencies:
+      '@rolldown/binding-android-arm64': 1.0.0-rc.9
+      '@rolldown/binding-darwin-arm64': 1.0.0-rc.9
+      '@rolldown/binding-darwin-x64': 1.0.0-rc.9
+      '@rolldown/binding-freebsd-x64': 1.0.0-rc.9
+      '@rolldown/binding-linux-arm-gnueabihf': 1.0.0-rc.9
+      '@rolldown/binding-linux-arm64-gnu': 1.0.0-rc.9
+      '@rolldown/binding-linux-arm64-musl': 1.0.0-rc.9
+      '@rolldown/binding-linux-ppc64-gnu': 1.0.0-rc.9
+      '@rolldown/binding-linux-s390x-gnu': 1.0.0-rc.9
+      '@rolldown/binding-linux-x64-gnu': 1.0.0-rc.9
+      '@rolldown/binding-linux-x64-musl': 1.0.0-rc.9
+      '@rolldown/binding-openharmony-arm64': 1.0.0-rc.9
+      '@rolldown/binding-wasm32-wasi': 1.0.0-rc.9
+      '@rolldown/binding-win32-arm64-msvc': 1.0.0-rc.9
+      '@rolldown/binding-win32-x64-msvc': 1.0.0-rc.9
 
   rollup-plugin-terser@7.0.2(rollup@2.79.2):
     dependencies:
@@ -25703,6 +26073,8 @@ snapshots:
       get-east-asian-width: 1.4.0
       strip-ansi: 7.1.2
 
+  string.prototype.codepointat@0.2.1: {}
+
   string.prototype.includes@2.0.1:
     dependencies:
       call-bind: 1.0.8
@@ -25812,10 +26184,10 @@ snapshots:
     dependencies:
       webpack: 5.102.1
 
-  styled-jsx@5.1.1(react@18.2.0):
+  styled-jsx@5.1.1(react@18.3.1):
     dependencies:
       client-only: 0.0.1
-      react: 18.2.0
+      react: 18.3.1
 
   stylehacks@4.0.3:
     dependencies:
@@ -25899,12 +26271,6 @@ snapshots:
       csso: 4.2.0
       picocolors: 1.1.1
       stable: 0.1.8
-
-  swr@2.3.6(react@18.2.0):
-    dependencies:
-      dequal: 2.0.3
-      react: 18.2.0
-      use-sync-external-store: 1.6.0(react@18.2.0)
 
   swr@2.3.6(react@18.3.1):
     dependencies:
@@ -26086,6 +26452,11 @@ snapshots:
   tiny-invariant@1.2.0: {}
 
   tinycolor2@1.6.0: {}
+
+  tinyglobby@0.2.15:
+    dependencies:
+      fdir: 6.5.0(picomatch@4.0.3)
+      picomatch: 4.0.3
 
   tmp@0.0.33:
     dependencies:
@@ -26415,19 +26786,10 @@ snapshots:
       punycode: 1.4.1
       qs: 6.14.0
 
-  use-image@1.1.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-
   use-image@1.1.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  use-sync-external-store@1.6.0(react@18.2.0):
-    dependencies:
-      react: 18.2.0
 
   use-sync-external-store@1.6.0(react@18.3.1):
     dependencies:
@@ -26492,7 +26854,7 @@ snapshots:
       core-util-is: 1.0.2
       extsprintf: 1.3.0
 
-  vite@4.5.14(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1):
+  vite@4.5.14(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1):
     dependencies:
       esbuild: 0.18.20
       postcss: 8.5.6
@@ -26500,11 +26862,11 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.10.1
       fsevents: 2.3.3
-      lightningcss: 1.30.2
+      lightningcss: 1.32.0
       sass: 1.77.6
       terser: 5.44.1
 
-  vite@5.4.21(@types/node@24.10.1)(lightningcss@1.30.2)(sass@1.77.6)(terser@5.44.1):
+  vite@5.4.21(@types/node@24.10.1)(lightningcss@1.32.0)(sass@1.77.6)(terser@5.44.1):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.5.6
@@ -26512,9 +26874,26 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.10.1
       fsevents: 2.3.3
-      lightningcss: 1.30.2
+      lightningcss: 1.32.0
       sass: 1.77.6
       terser: 5.44.1
+
+  vite@8.0.0(@types/node@24.10.1)(esbuild@0.23.0)(jiti@1.21.7)(sass@1.77.6)(terser@5.44.1)(yaml@1.10.2):
+    dependencies:
+      '@oxc-project/runtime': 0.115.0
+      lightningcss: 1.32.0
+      picomatch: 4.0.3
+      postcss: 8.5.8
+      rolldown: 1.0.0-rc.9
+      tinyglobby: 0.2.15
+    optionalDependencies:
+      '@types/node': 24.10.1
+      esbuild: 0.23.0
+      fsevents: 2.3.3
+      jiti: 1.21.7
+      sass: 1.77.6
+      terser: 5.44.1
+      yaml: 1.10.2
 
   vlq@0.2.3: {}
 
@@ -26539,9 +26918,9 @@ snapshots:
 
   vue-hot-reload-api@2.3.4: {}
 
-  vue-loader@15.11.1(@vue/compiler-sfc@3.5.24)(cache-loader@4.1.0(webpack@4.47.0))(css-loader@3.6.0(webpack@4.47.0))(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)(vue-template-compiler@2.7.16)(webpack@4.47.0):
+  vue-loader@15.11.1(@vue/compiler-sfc@3.5.24)(cache-loader@4.1.0(webpack@4.47.0))(css-loader@3.6.0(webpack@4.47.0))(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)(vue-template-compiler@2.7.16)(webpack@4.47.0):
     dependencies:
-      '@vue/component-compiler-utils': 3.3.0(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(underscore@1.12.1)
+      '@vue/component-compiler-utils': 3.3.0(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)
       css-loader: 3.6.0(webpack@4.47.0)
       hash-sum: 1.0.2
       loader-utils: 1.4.2
