@@ -15,6 +15,13 @@ node_modules
 /public/docs/examples
 *.tsbuildinfo
 
+# lock files in individual demos (demos should install fresh in sandboxes)
+examples/*/pnpm-lock.yaml
+examples/*/package-lock.json
+examples/*/yarn.lock
+
+examples/*/dist
+
 # misc
 .DS_Store
 *.pem
