@@ -1,13 +1,9 @@
 {
-  "setupTasks": [
-    {
-      "name": "Install Dependencies",
-      "command": "npm install"
-    }
-  ],
+  "$schema": "https://codesandbox.io/schemas/tasks.json",
+  "setupTasks": ["npm install"],
   "tasks": {
     "dev": {
-      "name": "dev",
+      "name": "Dev Server",
       "command": "npm run dev",
       "runAtStart": true,
       "preview": {
