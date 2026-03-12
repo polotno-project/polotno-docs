@@ -1,177 +1,76 @@
-import { fileURLToPath } from 'node:url';
+import { readdir, readFile, writeFile, stat } from 'node:fs/promises';
 import path from 'node:path';
-import { readdir, readFile, writeFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const REPO_ROOT = path.resolve(__dirname, '..');
-const EXAMPLES_DIR = path.join(REPO_ROOT, 'examples');
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const EXAMPLES_DIR = path.resolve(__dirname, '..', 'examples');
 
-// Common dependencies that might be missing
-const COMMON_DEPS = {
-  'mobx-react-lite': ['observer', 'Observer', 'useObserver'],
-  mobx: ['observable', 'computed', 'action', 'makeObservable', 'makeAutoObservable', 'reaction', 'autorun'],
-  'mobx-react': ['observer', 'Observer', 'inject', 'Provider'],
-  'react-dom': ['createRoot', 'render'],
-  'react': ['React', 'useState', 'useEffect', 'useRef', 'useCallback', 'useMemo'],
+const PACKAGES = {
+  '@blueprintjs/core': '^5.0.0',
+  '@meronex/icons': '^1.0.0',
+  'mobx': '^6.0.0',
+  'react-konva': '^18.0.0',
+  'react-konva-utils': '^1.0.0',
+  'quill': '^2.0.0',
 };
 
-async function fixDemoDeps() {
-  const entries = await readdir(EXAMPLES_DIR, { withFileTypes: true });
-  const demos = entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name);
-
-  let fixed = 0;
-  let skipped = 0;
-
-  for (const demoName of demos) {
-    const demoDir = path.join(EXAMPLES_DIR, demoName);
-    const pkgPath = path.join(demoDir, 'package.json');
-
-    try {
-      const pkgExists = await fileExists(pkgPath);
-      if (!pkgExists) {
-        skipped++;
-        continue;
-      }
-
-      const pkgContent = await readFile(pkgPath, 'utf8');
-      const pkgJson = JSON.parse(pkgContent);
-      
-      // Find all source files
-      const srcFiles = await findSourceFiles(demoDir);
-      const allImports = new Set();
-      
-      // Collect all imports from source files
-      for (const filePath of srcFiles) {
-        const content = await readFile(filePath, 'utf8');
-        const imports = extractImports(content);
-        imports.forEach(imp => allImports.add(imp));
-      }
-
-      // Check which dependencies are missing
-      const deps = { ...pkgJson.dependencies, ...pkgJson.devDependencies };
-      const missingDeps = new Map();
-
-      // Check for mobx-react-lite (most common)
-      if (allImports.has('observer') || allImports.has('Observer') || allImports.has('useObserver')) {
-        if (!deps['mobx-react-lite'] && !deps['mobx-react']) {
-          missingDeps.set('mobx-react-lite', '^4.0.0');
-        }
-      }
-
-      // Check for mobx
-      if (allImports.has('observable') || allImports.has('computed') || allImports.has('action') || 
-          allImports.has('makeObservable') || allImports.has('makeAutoObservable')) {
-        if (!deps.mobx) {
-          missingDeps.set('mobx', '^6.0.0');
-        }
-      }
-
-      // Check for react-dom
-      if (allImports.has('createRoot') || allImports.has('render')) {
-        if (!deps['react-dom']) {
-          missingDeps.set('react-dom', pkgJson.dependencies?.react || '^18.2.0');
-        }
-      }
-
-      // Add missing dependencies
-      if (missingDeps.size > 0) {
-        if (!pkgJson.dependencies) {
-          pkgJson.dependencies = {};
-        }
-        for (const [dep, version] of missingDeps) {
-          pkgJson.dependencies[dep] = version;
-        }
-        
-        // Sort dependencies
-        pkgJson.dependencies = Object.fromEntries(
-          Object.entries(pkgJson.dependencies).sort(([a], [b]) => a.localeCompare(b))
-        );
-
-        const updatedContent = JSON.stringify(pkgJson, null, 2) + '\n';
-        await writeFile(pkgPath, updatedContent, 'utf8');
-        console.log(`✓ ${demoName}: added ${Array.from(missingDeps.keys()).join(', ')}`);
-        fixed++;
-      } else {
-        skipped++;
-      }
-    } catch (error) {
-      console.error(`✗ ${demoName}: ${error.message}`);
-    }
-  }
-
-  console.log(`\nFixed: ${fixed}, Skipped: ${skipped}`);
+async function pathExists(p) {
+  try { await stat(p); return true; } catch { return false; }
 }
 
-function extractImports(content) {
-  const imports = new Set();
-  
-  // Match import statements
-  const importRegex = /import\s+(?:(?:\{[^}]*\}|\*\s+as\s+\w+|\w+)(?:\s*,\s*(?:\{[^}]*\}|\*\s+as\s+\w+|\w+))*)+\s+from\s+['"]([^'"]+)['"]/g;
-  const dynamicImportRegex = /import\(['"]([^'"]+)['"]\)/g;
-  
-  // Extract from named imports: import { observer, something } from 'mobx-react-lite'
-  const namedImportRegex = /import\s+\{([^}]+)\}\s+from\s+['"]([^'"]+)['"]/g;
-  let match;
-  
-  while ((match = namedImportRegex.exec(content)) !== null) {
-    const module = match[2];
-    const names = match[1].split(',').map(n => n.trim().split(' as ')[0].trim());
-    names.forEach(name => {
-      imports.add(name);
-    });
-  }
-  
-  // Extract default imports: import React from 'react'
-  const defaultImportRegex = /import\s+(\w+)\s+from\s+['"]([^'"]+)['"]/g;
-  while ((match = defaultImportRegex.exec(content)) !== null) {
-    const name = match[1];
-    const module = match[2];
-    if (module === 'react') {
-      imports.add('React');
-    }
-  }
-  
-  return imports;
-}
-
-async function findSourceFiles(dir) {
+async function getSourceFiles(dir) {
   const files = [];
-  const extensions = ['.js', '.jsx', '.ts', '.tsx'];
-  
-  async function walk(currentDir) {
-    try {
-      const entries = await readdir(currentDir, { withFileTypes: true });
-      for (const entry of entries) {
-        const fullPath = path.join(currentDir, entry.name);
-        if (entry.isDirectory()) {
-          if (!['node_modules', 'dist', 'build', 'out', '.next'].includes(entry.name)) {
-            await walk(fullPath);
-          }
-        } else if (extensions.some(ext => entry.name.endsWith(ext))) {
-          files.push(fullPath);
-        }
-      }
-    } catch (error) {
-      // Skip directories we can't read
-    }
+  const entries = await readdir(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    if (['node_modules','dist','build','.codesandbox'].includes(entry.name)) continue;
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) files.push(...await getSourceFiles(full));
+    else if (/\.(js|jsx|ts|tsx)$/.test(entry.name)) files.push(full);
   }
-
-  await walk(dir);
   return files;
 }
 
-async function fileExists(filePath) {
-  try {
-    await readFile(filePath);
-    return true;
-  } catch {
-    return false;
-  }
+function findImports(source, pkg) {
+  const escaped = pkg.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp("(?:from\\s+|require\\s*\\()\\s*['\"]" + escaped + "(?:/[^'\"]*)?['\"]").test(source);
 }
 
-fixDemoDeps().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+async function main() {
+  const entries = await readdir(EXAMPLES_DIR, { withFileTypes: true });
+  const dirs = entries.filter(e => e.isDirectory() && e.name !== 'node_modules').map(e => e.name);
+  let totalChanges = 0;
 
+  for (const dir of dirs) {
+    const demoDir = path.join(EXAMPLES_DIR, dir);
+    const pkgPath = path.join(demoDir, 'package.json');
+    if (!(await pathExists(pkgPath))) continue;
+
+    const sourceFiles = await getSourceFiles(demoDir);
+    const allSource = await Promise.all(sourceFiles.map(f => readFile(f, 'utf8')));
+    const combined = allSource.join('\n');
+
+    const pkg = JSON.parse(await readFile(pkgPath, 'utf8'));
+    const allDeps = { ...pkg.dependencies, ...pkg.devDependencies };
+    let changed = false;
+
+    for (const [pkgName, version] of Object.entries(PACKAGES)) {
+      if (allDeps[pkgName]) continue;
+      if (!findImports(combined, pkgName)) continue;
+      if (!pkg.dependencies) pkg.dependencies = {};
+      pkg.dependencies[pkgName] = version;
+      changed = true;
+      console.log("  + " + dir + ": added " + pkgName + "@" + version);
+    }
+
+    if (changed) {
+      pkg.dependencies = Object.fromEntries(
+        Object.entries(pkg.dependencies).sort(([a], [b]) => a.localeCompare(b))
+      );
+      await writeFile(pkgPath, JSON.stringify(pkg, null, 2) + '\n');
+      totalChanges++;
+    }
+  }
+  console.log("\nUpdated " + totalChanges + " package.json files.");
+}
+
+main().catch(err => { console.error(err); process.exitCode = 1; });

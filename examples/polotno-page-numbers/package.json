@@ -3,26 +3,20 @@
   "version": "1.0.0",
   "description": "Demo showing how to automatically add and update page numbers in Polotno editor",
   "keywords": [],
-  "main": "src/index.js",
   "dependencies": {
     "polotno": "2.37.1",
     "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-scripts": "5.0.1"
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "typescript": "^4"
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "type": "module"
 }
