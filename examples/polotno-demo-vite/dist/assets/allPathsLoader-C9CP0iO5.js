@@ -1,2 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/allPaths-B-k7MAAt.js","assets/index-DU_uq0nd.js","assets/paths-DVu8lvvA.js","assets/paths-D0SnBfMO.js"])))=>i.map(i=>d[i]);
-import{a as e,i as t,t as n}from"./index-DU_uq0nd.js";var r=function(r,i){return t(void 0,void 0,void 0,function(){var t;return e(this,function(e){switch(e.label){case 0:return[4,n(()=>import(`./allPaths-B-k7MAAt.js`),__vite__mapDeps([0,1,2,3]))];case 1:return t=e.sent().getIconPaths,[2,t(r,i)]}})})};export{r as allPathsLoader};
