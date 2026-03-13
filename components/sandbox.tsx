@@ -96,11 +96,12 @@ export default function Sandbox({
       embed: '1',
       hideNavigation: hideNavigation ? '1' : '0',
       theme,
+      file: 'src/index.jsx',
     });
     if (view) {
-      params.set('view', view);
+      params.set('view', view === 'preview' ? 'preview' : 'default');
     }
-    return `https://stackblitz.com/github/${path}?${params.toString()}`;
+    return `https://stackblitz.com/fork/github/${path}?${params.toString()}`;
   };
 
   // If provider is codesandbox or stackblitz, show only the sandbox iframe
@@ -152,27 +153,33 @@ export default function Sandbox({
         ...style,
       }}
     >
-      {/* Action buttons */}
+      {/* Action links */}
       <div className="flex gap-4 py-2">
-        <button
-          onClick={() => window.open(codeSandboxUrl, '_blank')}
-          className="text-xs text-muted-foreground hover:text-foreground transition-colors px-1 py-0.5 hover:cursor-pointer"
+        <a
+          href={codeSandboxUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs text-muted-foreground hover:text-foreground transition-colors px-1 py-0.5"
         >
           Open in CodeSandbox
-        </button>
-        <button
-          onClick={() => window.open(stackBlitzUrl, '_blank')}
+        </a>
+        <a
+          href={stackBlitzUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-xs text-muted-foreground hover:text-foreground transition-colors px-1 py-0.5"
         >
           Open in StackBlitz
-        </button>
+        </a>
         {demoUrl && (
-          <button
-            onClick={() => window.open(newPageUrl, '_blank')}
+          <a
+            href={newPageUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-xs text-muted-foreground hover:text-foreground transition-colors px-1 py-0.5"
           >
             Open in New Page
-          </button>
+          </a>
         )}
       </div>
       {/* Demo iframe */}
