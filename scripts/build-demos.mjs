@@ -177,7 +177,7 @@ function bundlerBuildConfig(bundler, demoName) {
   const basePath = `/docs/examples/${demoName}/`;
   switch (bundler) {
     case 'vite':
-      return {};
+      return { extraArgs: ['--base', './'] };
     case 'cra':
       return { env: { PUBLIC_URL: `/docs/examples/${demoName}` } };
     case 'vue-cli':
