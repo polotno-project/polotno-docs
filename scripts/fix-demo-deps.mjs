@@ -12,6 +12,7 @@ const PACKAGES = {
   'react-konva': '^18.0.0',
   'react-konva-utils': '^1.0.0',
   'quill': '^2.0.0',
+  'nanoid': '^5.0.0',
 };
 
 async function pathExists(p) {
