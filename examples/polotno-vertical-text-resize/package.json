@@ -4,7 +4,7 @@
   "description": "Demo showing how to enable vertical text resizing in Polotno editor",
   "keywords": [],
   "dependencies": {
-    "polotno": "2.38.1",
+    "polotno": "2.38.2",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
