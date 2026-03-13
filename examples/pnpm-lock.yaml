@@ -64,6 +64,9 @@ importers:
       mobx:
         specifier: ^6.0.0
         version: 6.15.0
+      nanoid:
+        specifier: ^3.3.11
+        version: 3.3.11
       polotno:
         specifier: 2.37.1
         version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
