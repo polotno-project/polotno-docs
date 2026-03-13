@@ -177,7 +177,7 @@ function bundlerBuildConfig(bundler, demoName) {
   const basePath = `/docs/examples/${demoName}/`;
   switch (bundler) {
     case 'vite':
-      return { extraArgs: ['--base', './'] };
+      return {};
     case 'cra':
       return { env: { PUBLIC_URL: `/docs/examples/${demoName}` } };
     case 'vue-cli':
@@ -550,14 +550,7 @@ async function main() {
         console.error(
           `   ✖ ${demoName}: failed - ${(error && error.message) || error}`
         );
-        return {
-          path: demoName,
-          name: demoName_clean || demoName,
-          description: demoDescription || '',
-          bundler,
-          status: 'failed',
-          error: error instanceof Error ? error.message : String(error),
-        };
+        throw error;
       }
     })
   );
