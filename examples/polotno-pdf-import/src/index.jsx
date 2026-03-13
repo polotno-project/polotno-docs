@@ -49,7 +49,7 @@ const App = ({ store }) => {
                 <input
                   ref={inputRef}
                   type="file"
-                  accept=".pdf"
+                  accept=".pdf,.ai"
                   style={{ display: 'none' }}
                   onChange={handleFileChange}
                 />
@@ -58,7 +58,7 @@ const App = ({ store }) => {
                   disabled={loading}
                   onClick={() => inputRef.current?.click()}
                 >
-                  {loading ? 'Importing...' : 'Import PDF'}
+                  {loading ? 'Importing...' : 'Import PDF/AI'}
                 </button>
               </>
             ),
