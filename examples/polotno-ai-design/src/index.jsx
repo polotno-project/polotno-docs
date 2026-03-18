@@ -21,7 +21,7 @@ import {
   Spinner,
 } from '@blueprintjs/core';
 
-import MdAutoAwesome from '@meronex/icons/md/MdAutoAwesome';
+import AiOutlineExperiment from '@meronex/icons/ai/AiOutlineExperiment';
 
 const store = createStore({ key: 'nFA5H9elEytDyPyvKL7T', showCredit: true });
 store.addPage();
@@ -210,7 +210,7 @@ const AIDesignPanel = observer(({ store }) => {
       {/* Header */}
       <div style={styles.header}>
         <h3 style={styles.title}>
-          <MdAutoAwesome style={styles.titleIcon} />
+          <AiOutlineExperiment style={styles.titleIcon} />
           AI Design
         </h3>
         <p style={styles.subtitle}>
@@ -328,7 +328,7 @@ const AIDesignSection = {
   name: 'ai-design',
   Tab: (props) => (
     <SectionTab name="AI Design" {...props}>
-      <MdAutoAwesome />
+      <AiOutlineExperiment />
     </SectionTab>
   ),
   Panel: AIDesignPanel,
