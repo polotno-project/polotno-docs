@@ -155,6 +155,9 @@ const AIDesignPanel = observer(({ store }) => {
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(null);
   const [success, setSuccess] = React.useState(false);
+  const successTimerRef = React.useRef(null);
+
+  React.useEffect(() => () => clearTimeout(successTimerRef.current), []);
 
   const handleGenerate = async () => {
     if (!prompt.trim() || loading) return;
@@ -177,14 +180,14 @@ const AIDesignPanel = observer(({ store }) => {
         throw new Error(text || `Request failed (${response.status})`);
       }
 
-      const data = await response.json();
-
       if (mode === 'json') {
+        const data = await response.json();
         store.loadJSON(data);
       } else {
-        store.activePage.addElement({
+        const svgText = await response.text();
+        store.activePage?.addElement({
           type: 'svg',
-          svg: data.svg,
+          svg: svgText,
           x: 50,
           y: 50,
           width: 500,
@@ -193,7 +196,8 @@ const AIDesignPanel = observer(({ store }) => {
       }
 
       setSuccess(true);
-      setTimeout(() => setSuccess(false), 4000);
+      if (successTimerRef.current) clearTimeout(successTimerRef.current);
+      successTimerRef.current = setTimeout(() => setSuccess(false), 4000);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -276,13 +280,17 @@ const AIDesignPanel = observer(({ store }) => {
 
       {/* Error */}
       {error && (
-        <Callout
-          intent="danger"
-          icon="error"
-          style={styles.errorCallout}
-          onDismiss={() => setError(null)}
-        >
-          {error}
+        <Callout intent="danger" icon="error" style={styles.errorCallout}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '8px' }}>
+            <span>{error}</span>
+            <Button
+              minimal
+              small
+              icon="cross"
+              onClick={() => setError(null)}
+              style={{ minWidth: 'auto', minHeight: 'auto', flexShrink: 0 }}
+            />
+          </div>
         </Callout>
       )}
 
