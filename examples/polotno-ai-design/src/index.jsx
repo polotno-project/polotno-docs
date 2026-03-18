@@ -4,25 +4,15 @@ import { observer } from 'mobx-react-lite';
 
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 import { Workspace } from 'polotno/canvas/workspace';
-import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
+import { DEFAULT_SECTIONS, SectionTab, SidePanel } from 'polotno/side-panel';
 import { Toolbar } from 'polotno/toolbar/toolbar';
 import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
-import { SectionTab } from 'polotno/side-panel';
 
-import {
-  Button,
-  TextArea,
-  HTMLSelect,
-  RadioGroup,
-  Radio,
-  Callout,
-  Spinner,
-} from '@blueprintjs/core';
+import { Button, Callout, Spinner, TextArea, } from '@blueprintjs/core';
 
 import AiOutlineExperiment from '@meronex/icons/ai/AiOutlineExperiment';
-import { svgToURL } from 'polotno/utils/svg';
 
 const POLOTNO_KEY = `nFA5H9elEytDyPyvKL7T`;
 
@@ -151,8 +141,6 @@ if (typeof document !== 'undefined' && !document.getElementById(PULSE_KEYFRAMES_
 
 const AIDesignPanel = observer(({ store }) => {
   const [prompt, setPrompt] = React.useState('');
-  const [provider, setProvider] = React.useState('gemini');
-  const [mode, setMode] = React.useState('json');
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(null);
   const [success, setSuccess] = React.useState(false);
@@ -172,7 +160,7 @@ const AIDesignPanel = observer(({ store }) => {
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ prompt, provider, type: mode }),
+          body: JSON.stringify({ prompt }),
         }
       );
 
@@ -181,20 +169,8 @@ const AIDesignPanel = observer(({ store }) => {
         throw new Error(text || `Request failed (${response.status})`);
       }
 
-      if (mode === 'json') {
-        const data = await response.json();
-        store.loadJSON(data.data);
-      } else {
-        const { data: svgText } = await response.json();
-        store.activePage?.addElement({
-          type: 'svg',
-          src: svgToURL(svgText),
-          x: 50,
-          y: 50,
-          width: 500,
-          height: 500,
-        });
-      }
+      const data = await response.json();
+      store.loadJSON(data.data);
 
       setSuccess(true);
       if (successTimerRef.current) clearTimeout(successTimerRef.current);
@@ -211,7 +187,7 @@ const AIDesignPanel = observer(({ store }) => {
       {/* Header */}
       <div style={styles.header}>
         <h3 style={styles.title}>
-          <AiOutlineExperiment style={styles.titleIcon} />
+          <AiOutlineExperiment style={styles.titleIcon}/>
           AI Design
         </h3>
         <p style={styles.subtitle}>
@@ -233,41 +209,6 @@ const AIDesignPanel = observer(({ store }) => {
           growVertically={false}
         />
       </div>
-
-      <hr style={styles.divider} />
-
-      {/* Provider */}
-      <div style={styles.fieldGroup}>
-        <label style={styles.label}>AI Provider</label>
-        <HTMLSelect
-          fill
-          style={styles.selectWrapper}
-          value={provider}
-          onChange={(e) => setProvider(e.target.value)}
-          disabled={loading}
-          options={[
-            { label: 'Gemini', value: 'gemini' },
-            { label: 'Anthropic', value: 'anthropic' },
-            { label: 'OpenAI', value: 'openai' },
-          ]}
-        />
-      </div>
-
-      {/* Mode */}
-      <div style={styles.fieldGroup}>
-        <label style={styles.label}>Output Mode</label>
-        <RadioGroup
-          selectedValue={mode}
-          onChange={(e) => setMode(e.target.value)}
-          disabled={loading}
-          inline
-        >
-          <Radio label="JSON" value="json" />
-          <Radio label="SVG" value="svg" />
-        </RadioGroup>
-      </div>
-
-      <hr style={styles.divider} />
 
       {/* Info banner */}
       <Callout
@@ -314,7 +255,7 @@ const AIDesignPanel = observer(({ store }) => {
         style={loading ? styles.generateBtnDisabled : styles.generateBtn}
         disabled={loading || !prompt.trim()}
         onClick={handleGenerate}
-        icon={loading ? <Spinner size={18} /> : 'clean'}
+        icon={loading ? <Spinner size={18}/> : 'clean'}
         text={loading ? 'Generating...' : 'Generate Design'}
       />
     </div>
@@ -329,7 +270,7 @@ const AIDesignSection = {
   name: 'ai-design',
   Tab: (props) => (
     <SectionTab name="AI Design" {...props}>
-      <AiOutlineExperiment />
+      <AiOutlineExperiment/>
     </SectionTab>
   ),
   Panel: AIDesignPanel,
@@ -344,16 +285,16 @@ const sections = [AIDesignSection, ...DEFAULT_SECTIONS];
 export const App = () => (
   <PolotnoContainer className="bp5-scope">
     <SidePanelWrap>
-      <SidePanel store={store} sections={sections} defaultSection="ai-design" />
+      <SidePanel store={store} sections={sections} defaultSection="ai-design"/>
     </SidePanelWrap>
     <WorkspaceWrap>
-      <Toolbar store={store} downloadButtonEnabled />
-      <Workspace store={store} />
-      <ZoomButtons store={store} />
-      <PagesTimeline store={store} />
+      <Toolbar store={store} downloadButtonEnabled/>
+      <Workspace store={store}/>
+      <ZoomButtons store={store}/>
+      <PagesTimeline store={store}/>
     </WorkspaceWrap>
   </PolotnoContainer>
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(<App/>);
