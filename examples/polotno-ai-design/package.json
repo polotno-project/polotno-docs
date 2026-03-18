@@ -1,0 +1,25 @@
+{
+  "name": "@polotno-docs/polotno-ai-design",
+  "version": "1.0.0",
+  "description": "Demo showing AI-powered design generation with custom side panel",
+  "keywords": [],
+  "dependencies": {
+    "@blueprintjs/core": "^5.0.0",
+    "@meronex/icons": "^1.0.0",
+    "mobx-react-lite": "^4.0.0",
+    "polotno": "2.38.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}
