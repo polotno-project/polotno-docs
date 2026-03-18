@@ -22,8 +22,11 @@ import {
 } from '@blueprintjs/core';
 
 import AiOutlineExperiment from '@meronex/icons/ai/AiOutlineExperiment';
+import { svgToURL } from 'polotno/utils/svg';
 
-const store = createStore({ key: 'nFA5H9elEytDyPyvKL7T', showCredit: true });
+const POLOTNO_KEY = `nFA5H9elEytDyPyvKL7T`;
+
+const store = createStore({ key: POLOTNO_KEY, showCredit: true });
 store.addPage();
 
 // ---------------------------------------------------------------------------
@@ -38,7 +41,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     gap: '18px',
-    background: 'linear-gradient(180deg, rgba(30,40,60,0.25) 0%, transparent 40%)',
   },
   header: {
     textAlign: 'center',
@@ -91,7 +93,6 @@ const styles = {
   infoBanner: {
     borderRadius: '8px',
     fontSize: '12px',
-    padding: '10px 12px',
     background: 'rgba(124,92,252,0.08)',
     border: '1px solid rgba(124,92,252,0.2)',
   },
@@ -167,7 +168,7 @@ const AIDesignPanel = observer(({ store }) => {
 
     try {
       const response = await fetch(
-        `https://api.polotno.com/api/ai/design/create?KEY=nFA5H9elEytDyPyvKL7T`,
+        `https://api.polotno.com/api/ai/design/create?KEY=${POLOTNO_KEY}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -182,12 +183,12 @@ const AIDesignPanel = observer(({ store }) => {
 
       if (mode === 'json') {
         const data = await response.json();
-        store.loadJSON(data);
+        store.loadJSON(data.data);
       } else {
-        const svgText = await response.text();
+        const { data: svgText } = await response.json();
         store.activePage?.addElement({
           type: 'svg',
-          svg: svgText,
+          src: svgToURL(svgText),
           x: 50,
           y: 50,
           width: 500,
@@ -261,8 +262,8 @@ const AIDesignPanel = observer(({ store }) => {
           disabled={loading}
           inline
         >
-          <Radio label="JSON (full design)" value="json" />
-          <Radio label="SVG (element)" value="svg" />
+          <Radio label="JSON" value="json" />
+          <Radio label="SVG" value="svg" />
         </RadioGroup>
       </div>
 

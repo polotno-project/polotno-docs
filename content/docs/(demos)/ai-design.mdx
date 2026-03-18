@@ -3,6 +3,10 @@ title: AI Design Generation
 description: Generate designs using AI with a custom side panel for prompt input and provider selection
 ---
 
+<Callout type="warn">
+  This feature is experimental.
+</Callout>
+
 Use the Polotno AI API to generate complete designs from text prompts. This demo shows how to build a custom side panel that integrates with the AI design generation endpoint.
 
 ## Features
@@ -10,7 +14,6 @@ Use the Polotno AI API to generate complete designs from text prompts. This demo
 - **Text prompt input** — describe the design you want
 - **AI provider selection** — choose between Gemini, Anthropic, or OpenAI
 - **Output mode** — generate as Polotno JSON (full design) or SVG element
-- **Loading state** — clear feedback during generation (can take up to 2 minutes)
 
 ## How it works
 
@@ -37,6 +40,10 @@ Request body:
   "type": "json"
 }
 ```
+
+<Callout type="info">
+  Each AI design generation request is billed at **$0.20 per design**
+</Callout>
 
 ## Live demo
 
