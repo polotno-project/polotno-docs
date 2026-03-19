@@ -1,6 +1,6 @@
 ---
 title: AI Design Generation
-description: Generate designs using AI with a custom side panel for prompt input and provider selection
+description: Generate designs using AI with a custom side panel for prompt input
 ---
 
 <Callout type="warn">
@@ -12,16 +12,13 @@ Use the Polotno AI API to generate complete designs from text prompts. This demo
 ## Features
 
 - **Text prompt input** — describe the design you want
-- **AI provider selection** — choose between Gemini, Anthropic, or OpenAI
-- **Output mode** — generate as Polotno JSON (full design) or SVG element
+- **JSON design output** — the API returns a complete Polotno JSON design
 
 ## How it works
 
 1. User enters a design prompt in the custom AI Design side panel
-2. Selects an AI provider and output mode (JSON or SVG)
-3. The app sends a POST request to the Polotno AI API
-4. In JSON mode, the response is loaded via `store.loadJSON()` replacing the current design
-5. In SVG mode, the SVG is added as an element on the current page
+2. The app sends a POST request to the Polotno AI API
+3. The API returns a Polotno JSON design which is loaded via `store.loadJSON()`
 
 ## API
 
@@ -31,15 +28,17 @@ The demo uses the AI design creation endpoint:
 POST https://api.polotno.com/api/ai/design/create?KEY=<your-api-key>
 ```
 
+The API accepts a `prompt` field and returns a JSON design:
+
 Request body:
 
 ```json
 {
-  "prompt": "A business card with blue gradient",
-  "provider": "gemini",
-  "type": "json"
+  "prompt": "A business card with blue gradient"
 }
 ```
+
+Response: a Polotno-compatible JSON design object that can be loaded directly with `store.loadJSON()`.
 
 <Callout type="info">
   Each AI design generation request is billed at **$0.20 per design**
