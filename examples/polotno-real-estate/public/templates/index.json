@@ -1,52 +1,26 @@
 [
   {
-    "name": "Property Listing Flyer",
-    "json": "01-real-estate-property-listing-flyer-with-a-large-he.json",
-    "preview": "01-real-estate-property-listing-flyer-with-a-large-he.png"
+    "json": "real-estate-template-1.json",
+    "preview": "real-estate-template-1.png"
   },
   {
-    "name": "Luxury Instagram Post",
-    "json": "02-luxury-real-estate-instagram-post-dark-moody-theme.json",
-    "preview": "02-luxury-real-estate-instagram-post-dark-moody-theme.png"
+    "json": "real-estate-template-2.json",
+    "preview": "real-estate-template-2.png"
   },
   {
-    "name": "Bold Vertical Post",
-    "json": "03-real-estate-social-media-post-with-a-bold-vertical.json",
-    "preview": "03-real-estate-social-media-post-with-a-bold-vertical.png"
+    "json": "real-estate-template-3.json",
+    "preview": "real-estate-template-3.png"
   },
   {
-    "name": "Photo Grid Showcase",
-    "json": "04-real-estate-property-showcase-with-a-2x2-photo-gri.json",
-    "preview": "04-real-estate-property-showcase-with-a-2x2-photo-gri.png"
+    "json": "real-estate-template-4.json",
+    "preview": "real-estate-template-4.png"
   },
   {
-    "name": "Just Sold Celebration",
-    "json": "05-bold-just-sold-real-estate-celebration-post-large-.json",
-    "preview": "05-bold-just-sold-real-estate-celebration-post-large-.png"
+    "json": "real-estate-template-5.json",
+    "preview": "real-estate-template-5.png"
   },
   {
-    "name": "Open House Invitation",
-    "json": "06-open-house-invitation-flyer-portrait-format-1080x1.json",
-    "preview": "06-open-house-invitation-flyer-portrait-format-1080x1.png"
-  },
-  {
-    "name": "Market Update Infographic",
-    "json": "07-real-estate-market-update-infographic-post-1080x10.json",
-    "preview": "07-real-estate-market-update-infographic-post-1080x10.png"
-  },
-  {
-    "name": "Magazine Editorial Listing",
-    "json": "08-new-listing-announcement-in-magazine-editorial-sty.json",
-    "preview": "08-new-listing-announcement-in-magazine-editorial-sty.png"
-  },
-  {
-    "name": "Price Reduced Alert",
-    "json": "09-price-reduced-real-estate-post-1080x1080-attention.json",
-    "preview": "09-price-reduced-real-estate-post-1080x1080-attention.png"
-  },
-  {
-    "name": "Coming Soon Teaser",
-    "json": "10-coming-soon-real-estate-teaser-post-1080x1080-myst.json",
-    "preview": "10-coming-soon-real-estate-teaser-post-1080x1080-myst.png"
+    "json": "real-estate-template-6.json",
+    "preview": "real-estate-template-6.png"
   }
 ]

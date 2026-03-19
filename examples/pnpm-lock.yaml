@@ -15,8 +15,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -40,8 +40,8 @@ importers:
   polotno-admin-role:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -68,8 +68,8 @@ importers:
         specifier: ^3.3.11
         version: 3.3.11
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -93,8 +93,8 @@ importers:
         specifier: 2.0.11
         version: 2.0.11(mobx@6.15.0)(vue@2.7.16)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -130,8 +130,8 @@ importers:
         specifier: ^2.8.3
         version: 2.16.1(@swc/helpers@0.5.17)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -194,8 +194,8 @@ importers:
         specifier: ^4.8.0
         version: 4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@6.15.0)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -225,8 +225,8 @@ importers:
   polotno-animations:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -244,8 +244,8 @@ importers:
   polotno-background-sidepanel:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -275,8 +275,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -300,8 +300,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -325,8 +325,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -356,8 +356,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       qrcode:
         specifier: 1.5.0
         version: 1.5.0
@@ -400,8 +400,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -428,8 +428,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -447,8 +447,8 @@ importers:
   polotno-demo:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -466,8 +466,8 @@ importers:
   polotno-demo-vite:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -488,8 +488,8 @@ importers:
         specifier: ^5.0.0
         version: 5.19.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -516,8 +516,8 @@ importers:
         specifier: ^4.0.5
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -554,8 +554,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -585,8 +585,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -613,8 +613,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -641,8 +641,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -660,8 +660,8 @@ importers:
   polotno-mobile:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -682,8 +682,8 @@ importers:
         specifier: ^14
         version: 14.2.33(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -697,8 +697,8 @@ importers:
         specifier: ^2.7.0
         version: 2.16.1(@swc/helpers@0.5.17)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -731,8 +731,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -750,8 +750,8 @@ importers:
   polotno-overlay:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -775,8 +775,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -800,8 +800,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -819,8 +819,8 @@ importers:
   polotno-page-numbers:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -844,8 +844,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -866,8 +866,8 @@ importers:
         specifier: 0.0.2
         version: 0.0.2
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -894,8 +894,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -922,8 +922,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -950,8 +950,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       qrcode:
         specifier: 1.5.0
         version: 1.5.0
@@ -984,8 +984,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1003,8 +1003,8 @@ importers:
   polotno-remove-side-panel:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1028,8 +1028,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1053,8 +1053,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1075,8 +1075,8 @@ importers:
         specifier: ^5.0.0
         version: 5.19.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1094,8 +1094,8 @@ importers:
   polotno-rulers:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1116,8 +1116,8 @@ importers:
         specifier: ^6.0.0
         version: 6.15.0
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1144,8 +1144,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1166,8 +1166,8 @@ importers:
   polotno-simple-t-shirt-demo:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1191,8 +1191,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1222,8 +1222,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       quill:
         specifier: ^2.0.0
         version: 2.0.3
@@ -1247,8 +1247,8 @@ importers:
         specifier: ^0.0.13
         version: 0.0.13
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1275,8 +1275,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1300,8 +1300,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1328,8 +1328,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1368,8 +1368,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1396,8 +1396,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1418,8 +1418,8 @@ importers:
         specifier: ^6.0.0
         version: 6.15.0
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1437,8 +1437,8 @@ importers:
   polotno-theme:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1459,8 +1459,8 @@ importers:
         specifier: ^5.0.0
         version: 5.19.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1484,8 +1484,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1506,8 +1506,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1531,8 +1531,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1553,8 +1553,8 @@ importers:
         specifier: ^5.0.0
         version: 5.19.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1572,8 +1572,8 @@ importers:
   polotno-vertical-text-resize:
     dependencies:
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1594,8 +1594,8 @@ importers:
         specifier: ^0.4.3
         version: 0.4.3(mobx@6.15.0)(vue@3.5.24(typescript@5.5.4))
       polotno:
-        specifier: 2.37.1
-        version: 2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: 2.38.2
+        version: 2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -8150,8 +8150,8 @@ packages:
     resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==}
     engines: {node: '>=10.13.0'}
 
-  polotno@2.37.1:
-    resolution: {integrity: sha512-hBRSzwGrR8YqnL7dKiEl+AO+YfXetBv+/OSO95Xv3mwvS81fGKI6qB+w0TlGW3AFXEZUg90OIK9Rx206NXW/0w==}
+  polotno@2.38.2:
+    resolution: {integrity: sha512-w5bdxBBhjrUdf+bb08Fitj9pdBjgUmlGbCqW+pXtHW3TBuQ9WjjGjgPo0/gvrFc9CmEe/OPoLwM8FHj8i2sWzQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -17946,7 +17946,7 @@ snapshots:
 
   pngjs@5.0.0: {}
 
-  polotno@2.37.1(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4):
+  polotno@2.38.2(@types/react@18.3.26)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4):
     dependencies:
       '@blueprintjs/core': 5.19.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@blueprintjs/icons': 5.23.0(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)

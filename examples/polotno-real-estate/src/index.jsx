@@ -11,8 +11,9 @@ import { SidePanel, DEFAULT_SECTIONS, SectionTab } from 'polotno/side-panel';
 import { ImagesGrid } from 'polotno/side-panel/images-grid';
 import { Workspace } from 'polotno/canvas/workspace';
 import { Tooltip } from 'polotno/canvas/tooltip';
-import { Button } from '@blueprintjs/core';
+import { Button, HTMLSelect } from '@blueprintjs/core';
 import { createStore } from 'polotno/model/store';
+import { setTextOverflow } from 'polotno/config';
 
 import Topbar from './topbar';
 import { EditImageSection } from './edit-image-section';
@@ -23,6 +24,7 @@ const store = createStore({
   key: 'nFA5H9elEytDyPyvKL7T',
   showCredit: true,
 });
+window.store = store;
 
 const page = store.addPage();
 
@@ -141,9 +143,75 @@ const IconsIcon = () => (
   </svg>
 );
 
+function applyListingToTemplate(templateJson, listing) {
+  const json = JSON.parse(JSON.stringify(templateJson));
+  json.pages.forEach((page) => {
+    page.children.forEach((child) => {
+      const variable = child.custom?.variable;
+      if (!variable) return;
+      switch (variable) {
+        case 'price':
+          child.text = listing.price;
+          break;
+        case 'address':
+          if (child.text?.includes('•')) {
+            child.text = child.text.replace(
+              /^.*?•\s*.*/s,
+              listing.propertyType + ' • ' + listing.address,
+            );
+          } else {
+            child.text = listing.address;
+          }
+          break;
+        case 'listingType':
+          if (child.text?.includes('•')) {
+            child.text = listing.listingType + ' • ' + listing.propertyType;
+          } else {
+            child.text = listing.listingType;
+          }
+          break;
+        case 'beds':
+          child.text = String(listing.beds);
+          break;
+        case 'baths':
+          child.text = String(listing.baths);
+          break;
+        case 'sqft':
+          child.text = listing.sqft.toLocaleString();
+          break;
+        case 'agentName':
+          child.text = listing.agentName;
+          break;
+        case 'agentInfo':
+          child.text = child.text
+            .replace(/Jessica Porter/g, listing.agentName)
+            .replace(/\(619\) 840-0210/g, listing.agentPhone)
+            .replace(/jess@coldwell\.com/g, listing.agentEmail);
+          break;
+        case 'legalDisclaimer':
+          child.text = listing.legalDisclaimer;
+          break;
+        default:
+          if (variable.startsWith('photo')) {
+            const idx = parseInt(variable.replace('photo', '')) - 1;
+            if (listing.images[idx]) {
+              child.src = './listings/' + listing.images[idx];
+            }
+          }
+          break;
+      }
+    });
+  });
+  return json;
+}
+
 const TemplatesPanel = observer(({ store }) => {
   const [templates, setTemplates] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
+  const [listings, setListings] = React.useState([]);
+  const [selectedTemplate, setSelectedTemplate] = React.useState(null);
+  const [templateJson, setTemplateJson] = React.useState(null);
+  const [selectedListingIndex, setSelectedListingIndex] = React.useState('');
 
   React.useEffect(() => {
     fetch('./templates/index.json')
@@ -152,7 +220,74 @@ const TemplatesPanel = observer(({ store }) => {
         setTemplates(data);
         setLoading(false);
       });
+    fetch('./listings/listing.json')
+      .then((res) => res.json())
+      .then((data) => {
+        setListings(data);
+      });
   }, []);
+
+  if (selectedTemplate) {
+    return (
+      <div className="listing-select-panel">
+        <div className="listing-select-header">
+          <button
+            className="listing-select-back"
+            onClick={() => {
+              setSelectedTemplate(null);
+              setTemplateJson(null);
+              setSelectedListingIndex('');
+            }}
+          >
+            ←
+          </button>
+          <span className="listing-select-title">Choose a listing</span>
+          <button
+            className="listing-select-close"
+            onClick={() => {
+              setSelectedTemplate(null);
+              setTemplateJson(null);
+              setSelectedListingIndex('');
+            }}
+          >
+            ✕
+          </button>
+        </div>
+        <div className="listing-select-body">
+          <label className="listing-select-label">Listing</label>
+          <HTMLSelect
+            fill
+            value={selectedListingIndex}
+            onChange={(e) => setSelectedListingIndex(e.target.value)}
+            className="listing-select-dropdown"
+          >
+            <option value="">Choose listing</option>
+            {listings.map((l, i) => (
+              <option key={i} value={i}>
+                {l.listing}
+              </option>
+            ))}
+          </HTMLSelect>
+          <button
+            className="listing-select-run"
+            disabled={selectedListingIndex === ''}
+            onClick={async () => {
+              const listing = listings[parseInt(selectedListingIndex)];
+              if (listing && templateJson) {
+                const modified = applyListingToTemplate(templateJson, listing);
+                setTextOverflow('change-font-size');
+                store.loadJSON(modified);
+                await store.waitLoading();
+                setTextOverflow('resize');
+              }
+            }}
+          >
+            Run
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div style={{ height: '100%' }}>
@@ -165,6 +300,8 @@ const TemplatesPanel = observer(({ store }) => {
           const req = await fetch(`./templates/${item.json}`);
           const json = await req.json();
           store.loadJSON(json);
+          setTemplateJson(json);
+          setSelectedTemplate(item);
         }}
         rowsNumber={2}
       />
