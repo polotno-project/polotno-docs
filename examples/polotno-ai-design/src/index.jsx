@@ -10,11 +10,17 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
 
-import { Button, Callout, ProgressBar, Spinner, TextArea } from '@blueprintjs/core';
+import {
+  Button,
+  Callout,
+  ProgressBar,
+  Spinner,
+  TextArea,
+} from '@blueprintjs/core';
 
 import AiOutlineExperiment from '@meronex/icons/ai/AiOutlineExperiment';
 
-const POLOTNO_KEY = 'nFA5H9elEytDyPyvKL7T'
+const POLOTNO_KEY = 'nFA5H9elEytDyPyvKL7T';
 
 const store = createStore({
   // this is a demo key just for that project
@@ -36,10 +42,13 @@ const AIDesignPanel = observer(({ store }) => {
   const successTimerRef = React.useRef(null);
   const progressTimerRef = React.useRef(null);
 
-  React.useEffect(() => () => {
-    clearTimeout(successTimerRef.current);
-    clearInterval(progressTimerRef.current);
-  }, []);
+  React.useEffect(
+    () => () => {
+      clearTimeout(successTimerRef.current);
+      clearInterval(progressTimerRef.current);
+    },
+    [],
+  );
 
   const handleGenerate = async () => {
     if (!prompt.trim() || loading) return;
@@ -73,7 +82,7 @@ const AIDesignPanel = observer(({ store }) => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ prompt }),
-        }
+        },
       );
 
       if (!response.ok) {
@@ -82,7 +91,7 @@ const AIDesignPanel = observer(({ store }) => {
       }
 
       const data = await response.json();
-      store.loadJSON(data);
+      store.loadJSON(data.data);
 
       setSuccess(true);
       if (successTimerRef.current) clearTimeout(successTimerRef.current);
@@ -97,7 +106,14 @@ const AIDesignPanel = observer(({ store }) => {
   };
 
   return (
-    <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '15px' }}>
+    <div
+      style={{
+        padding: '20px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '15px',
+      }}
+    >
       <p>
         Describe what you want and let AI generate a complete design for you.
       </p>
@@ -119,8 +135,18 @@ const AIDesignPanel = observer(({ store }) => {
             value={progress}
             animate={progress < 0.9}
           />
-          <p style={{ textAlign: 'center', marginTop: '5px', fontSize: '12px', color: '#5c7080' }}>
-            {Math.round(progress * 100)}% — {progress < 0.9 ? 'Generating your design...' : 'Almost there, finalizing...'}
+          <p
+            style={{
+              textAlign: 'center',
+              marginTop: '5px',
+              fontSize: '12px',
+              color: '#5c7080',
+            }}
+          >
+            {Math.round(progress * 100)}% —{' '}
+            {progress < 0.9
+              ? 'Generating your design...'
+              : 'Almost there, finalizing...'}
           </p>
         </div>
       )}
