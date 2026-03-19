@@ -68,7 +68,7 @@ const AIDesignPanel = observer(({ store }) => {
 
     try {
       const response = await fetch(
-        `https://feature-ai-design.polotno-api.pages.dev/api/ai/design/create?KEY=${POLOTNO_KEY}`,
+        `https://api.polotno.com/api/ai/design/create?KEY=${POLOTNO_KEY}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
