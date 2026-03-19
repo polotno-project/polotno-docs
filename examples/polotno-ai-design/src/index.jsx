@@ -10,15 +10,17 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
 
-import { Button, Callout, Spinner, TextArea } from '@blueprintjs/core';
+import { Button, Callout, ProgressBar, Spinner, TextArea } from '@blueprintjs/core';
 
 import AiOutlineExperiment from '@meronex/icons/ai/AiOutlineExperiment';
+
+const POLOTNO_KEY = 'nFA5H9elEytDyPyvKL7T'
 
 const store = createStore({
   // this is a demo key just for that project
   // (!) please don't use it in your projects
   // to create your own API key please go here: https://polotno.com/cabinet
-  key: 'nFA5H9elEytDyPyvKL7T',
+  key: POLOTNO_KEY,
   // you can hide back-link on a paid license
   // but it will be good if you can keep it for Polotno project support
   showCredit: true,
@@ -30,19 +32,43 @@ const AIDesignPanel = observer(({ store }) => {
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(null);
   const [success, setSuccess] = React.useState(false);
+  const [progress, setProgress] = React.useState(0);
   const successTimerRef = React.useRef(null);
+  const progressTimerRef = React.useRef(null);
 
-  React.useEffect(() => () => clearTimeout(successTimerRef.current), []);
+  React.useEffect(() => () => {
+    clearTimeout(successTimerRef.current);
+    clearInterval(progressTimerRef.current);
+  }, []);
 
   const handleGenerate = async () => {
     if (!prompt.trim() || loading) return;
     setLoading(true);
     setError(null);
     setSuccess(false);
+    setProgress(0);
+
+    const DURATION = 90000; // ~90 seconds to reach 90%
+    const INTERVAL = 400;
+    const startTime = Date.now();
+    let displayed = 0;
+    clearInterval(progressTimerRef.current);
+    progressTimerRef.current = setInterval(() => {
+      const elapsed = Date.now() - startTime;
+      const t = Math.min(elapsed / DURATION, 1);
+      // ease-out curve: fast start, slows down toward the end
+      const base = 1 - Math.pow(1 - t, 2.5);
+      // small random jitter so speed feels organic
+      const jitter = (Math.random() - 0.5) * 0.02;
+      const target = Math.min(base * 0.9 + jitter, 0.9);
+      // only move forward, never backward
+      displayed = Math.max(displayed, target);
+      setProgress(displayed);
+    }, INTERVAL);
 
     try {
       const response = await fetch(
-        `https://api.polotno.com/api/ai/design/create?KEY=${store.key}`,
+        `https://feature-ai-design.polotno-api.pages.dev/api/ai/design/create?KEY=${POLOTNO_KEY}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -56,7 +82,7 @@ const AIDesignPanel = observer(({ store }) => {
       }
 
       const data = await response.json();
-      store.loadJSON(data.data);
+      store.loadJSON(data);
 
       setSuccess(true);
       if (successTimerRef.current) clearTimeout(successTimerRef.current);
@@ -64,6 +90,8 @@ const AIDesignPanel = observer(({ store }) => {
     } catch (err) {
       setError(err.message);
     } finally {
+      clearInterval(progressTimerRef.current);
+      setProgress(1);
       setLoading(false);
     }
   };
@@ -84,10 +112,25 @@ const AIDesignPanel = observer(({ store }) => {
         growVertically={false}
       />
 
-      <Callout icon="time" intent="primary">
-        AI generation can take up to 2 minutes. Please be patient while your
-        design is being created.
-      </Callout>
+      {loading && (
+        <div>
+          <ProgressBar
+            intent="primary"
+            value={progress}
+            animate={progress < 0.9}
+          />
+          <p style={{ textAlign: 'center', marginTop: '5px', fontSize: '12px', color: '#5c7080' }}>
+            {Math.round(progress * 100)}% — {progress < 0.9 ? 'Generating your design...' : 'Almost there, finalizing...'}
+          </p>
+        </div>
+      )}
+
+      {!loading && (
+        <Callout icon="time" intent="primary">
+          AI generation can take up to 2 minutes. Please be patient while your
+          design is being created.
+        </Callout>
+      )}
 
       {error && (
         <Callout intent="danger" icon="error">
