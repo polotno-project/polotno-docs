@@ -10,134 +10,20 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
 
-import { Button, Callout, Spinner, TextArea, } from '@blueprintjs/core';
+import { Button, Callout, Spinner, TextArea } from '@blueprintjs/core';
 
 import AiOutlineExperiment from '@meronex/icons/ai/AiOutlineExperiment';
 
-const POLOTNO_KEY = `nFA5H9elEytDyPyvKL7T`;
-
-const store = createStore({ key: POLOTNO_KEY, showCredit: true });
+const store = createStore({
+  // this is a demo key just for that project
+  // (!) please don't use it in your projects
+  // to create your own API key please go here: https://polotno.com/cabinet
+  key: 'nFA5H9elEytDyPyvKL7T',
+  // you can hide back-link on a paid license
+  // but it will be good if you can keep it for Polotno project support
+  showCredit: true,
+});
 store.addPage();
-
-// ---------------------------------------------------------------------------
-// Styles
-// ---------------------------------------------------------------------------
-
-const styles = {
-  panel: {
-    padding: '20px',
-    height: '100%',
-    overflowY: 'auto',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '18px',
-  },
-  header: {
-    textAlign: 'center',
-    paddingBottom: '10px',
-    borderBottom: '1px solid rgba(255,255,255,0.08)',
-  },
-  title: {
-    fontSize: '18px',
-    fontWeight: 700,
-    letterSpacing: '0.3px',
-    margin: 0,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: '8px',
-  },
-  titleIcon: {
-    fontSize: '22px',
-    color: '#7c5cfc',
-  },
-  subtitle: {
-    fontSize: '12px',
-    opacity: 0.55,
-    marginTop: '6px',
-    lineHeight: 1.4,
-  },
-  label: {
-    fontSize: '12px',
-    fontWeight: 600,
-    textTransform: 'uppercase',
-    letterSpacing: '0.6px',
-    opacity: 0.7,
-    marginBottom: '6px',
-    display: 'block',
-  },
-  fieldGroup: {
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  textArea: {
-    resize: 'vertical',
-    borderRadius: '8px',
-    fontSize: '13px',
-    lineHeight: 1.5,
-  },
-  selectWrapper: {
-    borderRadius: '8px',
-    overflow: 'hidden',
-  },
-  infoBanner: {
-    borderRadius: '8px',
-    fontSize: '12px',
-    background: 'rgba(124,92,252,0.08)',
-    border: '1px solid rgba(124,92,252,0.2)',
-  },
-  generateBtn: {
-    borderRadius: '8px',
-    fontWeight: 600,
-    letterSpacing: '0.3px',
-    background: 'linear-gradient(135deg, #7c5cfc 0%, #5a3de8 100%)',
-    boxShadow: '0 4px 14px rgba(124,92,252,0.35)',
-    border: 'none',
-    transition: 'transform 0.15s ease, box-shadow 0.15s ease',
-  },
-  generateBtnDisabled: {
-    borderRadius: '8px',
-    fontWeight: 600,
-    letterSpacing: '0.3px',
-    background: 'linear-gradient(135deg, #7c5cfc 0%, #5a3de8 100%)',
-    boxShadow: '0 2px 8px rgba(124,92,252,0.2)',
-    border: 'none',
-    opacity: 0.85,
-    animation: 'pulse 1.8s ease-in-out infinite',
-  },
-  errorCallout: {
-    borderRadius: '8px',
-    fontSize: '13px',
-  },
-  successCallout: {
-    borderRadius: '8px',
-    fontSize: '13px',
-  },
-  divider: {
-    height: '1px',
-    background: 'rgba(255,255,255,0.06)',
-    margin: '2px 0',
-    border: 'none',
-  },
-};
-
-// Keyframes injected once for the pulse animation
-const PULSE_KEYFRAMES_ID = 'ai-design-pulse-keyframes';
-if (typeof document !== 'undefined' && !document.getElementById(PULSE_KEYFRAMES_ID)) {
-  const styleEl = document.createElement('style');
-  styleEl.id = PULSE_KEYFRAMES_ID;
-  styleEl.textContent = `
-    @keyframes pulse {
-      0%, 100% { opacity: 0.85; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.015); }
-    }
-  `;
-  document.head.appendChild(styleEl);
-}
-
-// ---------------------------------------------------------------------------
-// AI Design Panel
-// ---------------------------------------------------------------------------
 
 const AIDesignPanel = observer(({ store }) => {
   const [prompt, setPrompt] = React.useState('');
@@ -156,7 +42,7 @@ const AIDesignPanel = observer(({ store }) => {
 
     try {
       const response = await fetch(
-        `https://api.polotno.com/api/ai/design/create?KEY=${POLOTNO_KEY}`,
+        `https://api.polotno.com/api/ai/design/create?KEY=${store.key}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -183,94 +69,56 @@ const AIDesignPanel = observer(({ store }) => {
   };
 
   return (
-    <div style={styles.panel}>
-      {/* Header */}
-      <div style={styles.header}>
-        <h3 style={styles.title}>
-          <AiOutlineExperiment style={styles.titleIcon}/>
-          AI Design
-        </h3>
-        <p style={styles.subtitle}>
-          Describe what you want and let AI generate a complete design for you.
-        </p>
-      </div>
+    <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '15px' }}>
+      <p>
+        Describe what you want and let AI generate a complete design for you.
+      </p>
 
-      {/* Prompt */}
-      <div style={styles.fieldGroup}>
-        <label style={styles.label}>Prompt</label>
-        <TextArea
-          rows={5}
-          fill
-          style={styles.textArea}
-          placeholder="Describe your design... e.g., A modern business card with gradient background"
-          value={prompt}
-          onChange={(e) => setPrompt(e.target.value)}
-          disabled={loading}
-          growVertically={false}
-        />
-      </div>
+      <TextArea
+        rows={5}
+        fill
+        placeholder="Describe your design... e.g., A modern business card with gradient background"
+        value={prompt}
+        onChange={(e) => setPrompt(e.target.value)}
+        disabled={loading}
+        growVertically={false}
+      />
 
-      {/* Info banner */}
-      <Callout
-        icon="time"
-        intent="primary"
-        style={styles.infoBanner}
-      >
-        AI generation can take up to 2 minutes. Please be patient while
-        your design is being created.
+      <Callout icon="time" intent="primary">
+        AI generation can take up to 2 minutes. Please be patient while your
+        design is being created.
       </Callout>
 
-      {/* Error */}
       {error && (
-        <Callout intent="danger" icon="error" style={styles.errorCallout}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '8px' }}>
-            <span>{error}</span>
-            <Button
-              minimal
-              small
-              icon="cross"
-              onClick={() => setError(null)}
-              style={{ minWidth: 'auto', minHeight: 'auto', flexShrink: 0 }}
-            />
-          </div>
+        <Callout intent="danger" icon="error">
+          {error}
         </Callout>
       )}
 
-      {/* Success */}
       {success && (
-        <Callout
-          intent="success"
-          icon="tick-circle"
-          style={styles.successCallout}
-        >
+        <Callout intent="success" icon="tick-circle">
           Design generated successfully!
         </Callout>
       )}
 
-      {/* Generate button */}
       <Button
         intent="primary"
         large
         fill
-        style={loading ? styles.generateBtnDisabled : styles.generateBtn}
         disabled={loading || !prompt.trim()}
         onClick={handleGenerate}
-        icon={loading ? <Spinner size={18}/> : 'clean'}
+        icon={loading ? <Spinner size={18} /> : 'clean'}
         text={loading ? 'Generating...' : 'Generate Design'}
       />
     </div>
   );
 });
 
-// ---------------------------------------------------------------------------
-// Section definition
-// ---------------------------------------------------------------------------
-
 const AIDesignSection = {
   name: 'ai-design',
   Tab: (props) => (
     <SectionTab name="AI Design" {...props}>
-      <AiOutlineExperiment/>
+      <AiOutlineExperiment />
     </SectionTab>
   ),
   Panel: AIDesignPanel,
@@ -278,23 +126,19 @@ const AIDesignSection = {
 
 const sections = [AIDesignSection, ...DEFAULT_SECTIONS];
 
-// ---------------------------------------------------------------------------
-// App
-// ---------------------------------------------------------------------------
-
 export const App = () => (
   <PolotnoContainer className="bp5-scope">
     <SidePanelWrap>
-      <SidePanel store={store} sections={sections} defaultSection="ai-design"/>
+      <SidePanel store={store} sections={sections} defaultSection="ai-design" />
     </SidePanelWrap>
     <WorkspaceWrap>
-      <Toolbar store={store} downloadButtonEnabled/>
-      <Workspace store={store}/>
-      <ZoomButtons store={store}/>
-      <PagesTimeline store={store}/>
+      <Toolbar store={store} downloadButtonEnabled />
+      <Workspace store={store} />
+      <ZoomButtons store={store} />
+      <PagesTimeline store={store} />
     </WorkspaceWrap>
   </PolotnoContainer>
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App/>);
+root.render(<App />);
