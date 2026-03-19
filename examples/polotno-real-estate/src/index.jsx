@@ -195,7 +195,8 @@ function applyListingToTemplate(templateJson, listing) {
           if (variable.startsWith('photo')) {
             const idx = parseInt(variable.replace('photo', '')) - 1;
             if (listing.images[idx]) {
-              child.src = './listings/' + listing.images[idx];
+              const base = new URL('./listings/', window.location.href).href;
+              child.src = base + listing.images[idx];
             }
           }
           break;
