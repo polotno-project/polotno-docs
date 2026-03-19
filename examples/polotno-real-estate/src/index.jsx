@@ -212,6 +212,7 @@ const TemplatesPanel = observer(({ store }) => {
   const [selectedTemplate, setSelectedTemplate] = React.useState(null);
   const [templateJson, setTemplateJson] = React.useState(null);
   const [selectedListingIndex, setSelectedListingIndex] = React.useState('');
+  const [loadingTemplate, setLoadingTemplate] = React.useState(false);
 
   React.useEffect(() => {
     fetch('./templates/index.json')
@@ -229,37 +230,46 @@ const TemplatesPanel = observer(({ store }) => {
 
   if (selectedTemplate) {
     return (
-      <div className="listing-select-panel">
-        <div className="listing-select-header">
+      <div className="drill-down-panel">
+        <div className="drill-down-header">
           <button
-            className="listing-select-back"
+            className="back-button"
             onClick={() => {
               setSelectedTemplate(null);
               setTemplateJson(null);
               setSelectedListingIndex('');
             }}
           >
-            ←
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path
+                d="M15 9H3M3 9L8 4M3 9L8 14"
+                stroke="white"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
-          <span className="listing-select-title">Choose a listing</span>
+          <span className="title">Choose a listing</span>
           <button
-            className="listing-select-close"
+            className="close-button"
             onClick={() => {
               setSelectedTemplate(null);
               setTemplateJson(null);
               setSelectedListingIndex('');
             }}
           >
-            ✕
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="white">
+              <path d="M1 1l12 12M13 1L1 13" stroke="white" strokeWidth="2" />
+            </svg>
           </button>
         </div>
-        <div className="listing-select-body">
-          <label className="listing-select-label">Listing</label>
+        <div className="drill-down-body">
+          <label>Listing</label>
           <HTMLSelect
             fill
             value={selectedListingIndex}
             onChange={(e) => setSelectedListingIndex(e.target.value)}
-            className="listing-select-dropdown"
           >
             <option value="">Choose listing</option>
             {listings.map((l, i) => (
@@ -268,8 +278,8 @@ const TemplatesPanel = observer(({ store }) => {
               </option>
             ))}
           </HTMLSelect>
-          <button
-            className="listing-select-run"
+          <Button
+            className="run-button"
             disabled={selectedListingIndex === ''}
             onClick={async () => {
               const listing = listings[parseInt(selectedListingIndex)];
@@ -283,25 +293,37 @@ const TemplatesPanel = observer(({ store }) => {
             }}
           >
             Run
-          </button>
+          </Button>
         </div>
       </div>
     );
   }
 
   return (
-    <div style={{ height: '100%' }}>
+    <div style={{ height: '100%', position: 'relative' }}>
+      {loadingTemplate && (
+        <div className="template-loading-overlay">
+          <div className="template-loading-spinner" />
+          <span>Loading template…</span>
+        </div>
+      )}
       <ImagesGrid
         shadowEnabled={false}
         images={templates}
         getPreview={(item) => `./templates/${item.preview}`}
         isLoading={loading}
         onSelect={async (item) => {
-          const req = await fetch(`./templates/${item.json}`);
-          const json = await req.json();
-          store.loadJSON(json);
-          setTemplateJson(json);
-          setSelectedTemplate(item);
+          setLoadingTemplate(true);
+          try {
+            const req = await fetch(`./templates/${item.json}`);
+            const json = await req.json();
+            store.loadJSON(json);
+            await store.waitLoading();
+            setTemplateJson(json);
+            setSelectedTemplate(item);
+          } finally {
+            setLoadingTemplate(false);
+          }
         }}
         rowsNumber={2}
       />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
-import { Button, HTMLSelect, Spinner, TextArea } from '@blueprintjs/core';
+import { Button, Spinner, TextArea } from '@blueprintjs/core';
 import { SectionTab } from 'polotno/side-panel';
 import { getKey } from 'polotno/utils/validate-key';
 
@@ -50,13 +50,7 @@ const INTENSITY_PROMPTS = {
   Low: ' Apply subtle, minimal changes. Keep the image mostly the same.',
 };
 
-const LLM_MODELS = [
-  { value: 'gpt-image-1.5', label: 'GPT Image 1.5' },
-  { value: 'gpt-image-1', label: 'GPT Image 1' },
-];
-
 const DrillDownPanel = observer(({ store, tool, onBack, onClose }) => {
-  const [model, setModel] = React.useState('gpt-image-1.5');
   const [intensity, setIntensity] = React.useState('Strong');
   const [showCustomPrompt, setShowCustomPrompt] = React.useState(false);
   const [customPrompt, setCustomPrompt] = React.useState('');
@@ -138,20 +132,6 @@ const DrillDownPanel = observer(({ store, tool, onBack, onClose }) => {
         </button>
       </div>
       <div className="drill-down-body">
-        <label>LLM model</label>
-        <HTMLSelect
-          fill
-          value={model}
-          onChange={(e) => setModel(e.target.value)}
-          style={{ marginBottom: '20px' }}
-        >
-          {LLM_MODELS.map((m) => (
-            <option key={m.value} value={m.value}>
-              {m.label}
-            </option>
-          ))}
-        </HTMLSelect>
-
         <label>Intensity</label>
         <div className="intensity-group">
           {['Strong', 'Medium', 'Low'].map((level) => (
@@ -250,10 +230,6 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
           prompt =
             'Remove the background from this image completely. Keep only the main subject.';
           break;
-        case 'remove-object':
-          prompt =
-            'Remove unwanted objects and distractions from this image. Keep the main composition clean.';
-          break;
         case 'extend':
           prompt =
             'Extend this image outward, generating natural content beyond the current borders. Keep the style consistent.';
@@ -265,9 +241,6 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
         case 'enhance':
           prompt =
             'Enhance this image quality. Improve colors, contrast, sharpness and overall visual appeal.';
-          break;
-        case 'image-to-video':
-          prompt = 'Create a smooth cinematic camera movement from this image.';
           break;
         default:
           return;
@@ -340,14 +313,6 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
         >
           Remove background
         </Button>
-        <Button
-          className="tool-button"
-          small
-          loading={processingAction === 'remove-object'}
-          onClick={() => handleAiTool('remove-object')}
-        >
-          Remove object
-        </Button>
       </div>
       <div className="button-row">
         <Button
@@ -375,17 +340,6 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
           Enhance
         </Button>
       </div>
-      <div className="button-row">
-        <Button
-          className="tool-button"
-          small
-          loading={processingAction === 'image-to-video'}
-          onClick={() => handleAiTool('image-to-video')}
-        >
-          Image to video
-        </Button>
-      </div>
-
       <div className="section-header">Listing Tools</div>
 
       <div className="button-row">
