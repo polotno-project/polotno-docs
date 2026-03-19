@@ -226,48 +226,60 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
     setProcessingAction(action);
     try {
       const imageUrl = element.src;
-      let prompt = '';
 
-      switch (action) {
-        case 'remove-background':
-          prompt =
-            'Remove the background from this image completely. Keep only the main subject.';
-          break;
-        case 'extend':
-          prompt =
-            'Extend this image outward, generating natural content beyond the current borders. Keep the style consistent.';
-          break;
-        case 'upscale':
-          prompt =
-            'Upscale and enhance the resolution of this image. Make it sharper and more detailed.';
-          break;
-        case 'enhance':
-          prompt =
-            'Enhance this image quality. Improve colors, contrast, sharpness and overall visual appeal.';
-          break;
-        default:
-          return;
+      let data;
+      if (action === 'remove-background') {
+        const response = await fetch(
+          'https://api.polotno.com/api/remove-image-background?KEY=' + getKey(),
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url: imageUrl }),
+          },
+        );
+        if (!response.ok) {
+          const errorText = await response.text();
+          throw new Error(`API request failed: ${errorText}`);
+        }
+        data = await response.json();
+      } else {
+        let prompt = '';
+        switch (action) {
+          case 'extend':
+            prompt =
+              'Extend this image outward, generating natural content beyond the current borders. Keep the style consistent.';
+            break;
+          case 'upscale':
+            prompt =
+              'Upscale and enhance the resolution of this image. Make it sharper and more detailed.';
+            break;
+          case 'enhance':
+            prompt =
+              'Enhance this image quality. Improve colors, contrast, sharpness and overall visual appeal.';
+            break;
+          default:
+            return;
+        }
+
+        const response = await fetch(
+          'https://api.polotno.com/api/ai/image-to-image?KEY=' + getKey(),
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              url: imageUrl,
+              prompt,
+              model: 'nano-banana',
+            }),
+          },
+        );
+        if (!response.ok) {
+          const errorText = await response.text();
+          throw new Error(`API request failed: ${errorText}`);
+        }
+        data = await response.json();
       }
 
-      const response = await fetch(
-        'https://api.polotno.com/api/ai/image-to-image?KEY=' + getKey(),
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            url: imageUrl,
-            prompt,
-            provider: 'openai',
-          }),
-        },
-      );
-
-      if (!response.ok) {
-        const errorText = await response.text();
-        throw new Error(`API request failed: ${errorText}`);
-      }
-
-      const data = await response.json();
       const newSize = await getImageSize(data.url);
       const crop = getCrop(element, newSize);
       element.set({ src: data.url, ...crop });
