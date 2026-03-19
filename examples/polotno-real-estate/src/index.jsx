@@ -15,6 +15,8 @@ import { Button, HTMLSelect } from '@blueprintjs/core';
 import { createStore } from 'polotno/model/store';
 import { setTextOverflow } from 'polotno/config';
 
+import { getImageSize, getCrop } from 'polotno/utils/image';
+
 import Topbar from './topbar';
 import { EditImageSection } from './edit-image-section';
 
@@ -143,8 +145,10 @@ const IconsIcon = () => (
   </svg>
 );
 
-function applyListingToTemplate(templateJson, listing) {
+async function applyListingToTemplate(templateJson, listing) {
   const json = JSON.parse(JSON.stringify(templateJson));
+  const imageUpdates = [];
+
   json.pages.forEach((page) => {
     page.children.forEach((child) => {
       const variable = child.custom?.variable;
@@ -196,13 +200,36 @@ function applyListingToTemplate(templateJson, listing) {
             const idx = parseInt(variable.replace('photo', '')) - 1;
             if (listing.images[idx]) {
               const base = new URL('./listings/', window.location.href).href;
-              child.src = base + listing.images[idx];
+              const src = base + listing.images[idx];
+              child.src = src;
+              imageUpdates.push({ child, src });
             }
           }
           break;
       }
     });
   });
+
+  // Compute center-focused crops for replaced images
+  await Promise.all(
+    imageUpdates.map(async ({ child, src }) => {
+      try {
+        const { width, height } = await getImageSize(src);
+        const crop = getCrop(
+          { width: child.width, height: child.height },
+          { width, height },
+        );
+        Object.assign(child, crop);
+      } catch (e) {
+        // Fallback: reset crop to show full image
+        child.cropX = 0;
+        child.cropY = 0;
+        child.cropWidth = 1;
+        child.cropHeight = 1;
+      }
+    }),
+  );
+
   return json;
 }
 
@@ -285,7 +312,7 @@ const TemplatesPanel = observer(({ store }) => {
             onClick={async () => {
               const listing = listings[parseInt(selectedListingIndex)];
               if (listing && templateJson) {
-                const modified = applyListingToTemplate(templateJson, listing);
+                const modified = await applyListingToTemplate(templateJson, listing);
                 setTextOverflow('change-font-size');
                 store.loadJSON(modified);
                 await store.waitLoading();

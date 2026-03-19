@@ -3,6 +3,7 @@ import { observer } from 'mobx-react-lite';
 import { Button, Spinner, TextArea } from '@blueprintjs/core';
 import { SectionTab } from 'polotno/side-panel';
 import { getKey } from 'polotno/utils/validate-key';
+import { getImageSize, getCrop } from 'polotno/utils/image';
 
 const LISTING_TOOLS = [
   {
@@ -100,7 +101,9 @@ const DrillDownPanel = observer(({ store, tool, onBack, onClose }) => {
       const data = await response.json();
       setProgress(100);
 
-      element.set({ src: data.url });
+      const newSize = await getImageSize(data.url);
+      const crop = getCrop(element, newSize);
+      element.set({ src: data.url, ...crop });
     } catch (error) {
       console.error('Error processing image:', error);
       alert('Error processing image: ' + error.message);
@@ -265,7 +268,9 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
       }
 
       const data = await response.json();
-      element.set({ src: data.url });
+      const newSize = await getImageSize(data.url);
+      const crop = getCrop(element, newSize);
+      element.set({ src: data.url, ...crop });
     } catch (error) {
       console.error('Error with AI tool:', error);
       alert('Error: ' + error.message);
