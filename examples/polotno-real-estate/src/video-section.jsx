@@ -6,6 +6,7 @@ import { getKey } from 'polotno/utils/validate-key';
 import { observer } from 'mobx-react-lite';
 import { VideosGrid } from 'polotno/side-panel/videos-grid';
 import { SectionTab } from 'polotno/side-panel';
+import { Search } from '@blueprintjs/icons';
 
 const API = 'https://api.polotno.com/api/pexels/videos';
 
@@ -13,24 +14,6 @@ const getPexelsVideoAPI = ({ query, page }) =>
   `${API}/${
     query ? 'search' : 'popular'
   }?query=${query}&per_page=20&page=${page}&KEY=${getKey()}`;
-
-const SearchIcon = () => (
-  <svg
-    width="16"
-    height="16"
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M14 14L10.5 10.5M12 7C12 9.76142 9.76142 12 7 12C4.23858 12 2 9.76142 2 7C2 4.23858 4.23858 2 7 2C9.76142 2 12 4.23858 12 7Z"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
 
 const VideosIcon = () => (
   <svg
@@ -63,7 +46,7 @@ const VideoPanel = observer(({ store }) => {
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <InputGroup
-        leftIcon={<SearchIcon />}
+        leftIcon={<Search />}
         placeholder="Search videos..."
         onChange={(e) => {
           setQuery(e.target.value);
@@ -125,9 +108,9 @@ const VideoPanel = observer(({ store }) => {
 });
 
 export const VideoSection = {
-  name: 'video',
+  name: 'videos',
   Tab: (props) => (
-    <SectionTab name="Video" {...props}>
+    <SectionTab name="Videos" {...props}>
       <VideosIcon />
     </SectionTab>
   ),

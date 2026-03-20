@@ -336,10 +336,6 @@ DEFAULT_SECTIONS.find((s) => s.name === 'text').Tab = (props) => (
   </SectionTab>
 );
 
-// Remove the default videos section added by setAnimationsEnabled
-const videosIdx = DEFAULT_SECTIONS.findIndex((s) => s.name === 'videos');
-if (videosIdx >= 0) DEFAULT_SECTIONS.splice(videosIdx, 1);
-
 const sections = [
   TemplatesSection,
   DEFAULT_SECTIONS.find((s) => s.name === 'text'),
