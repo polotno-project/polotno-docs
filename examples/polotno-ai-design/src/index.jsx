@@ -10,17 +10,11 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
 
-import {
-  Button,
-  Callout,
-  ProgressBar,
-  Spinner,
-  TextArea,
-} from '@blueprintjs/core';
+import { Button, Callout, ProgressBar, Spinner, TextArea } from '@blueprintjs/core';
 
 import AiOutlineExperiment from '@meronex/icons/ai/AiOutlineExperiment';
 
-const POLOTNO_KEY = 'nFA5H9elEytDyPyvKL7T';
+const POLOTNO_KEY = 'nFA5H9elEytDyPyvKL7T'
 
 const store = createStore({
   // this is a demo key just for that project
@@ -41,14 +35,18 @@ const AIDesignPanel = observer(({ store }) => {
   const [progress, setProgress] = React.useState(0);
   const successTimerRef = React.useRef(null);
   const progressTimerRef = React.useRef(null);
+  const abortControllerRef = React.useRef(null);
 
   React.useEffect(
-    () => () => {
-      clearTimeout(successTimerRef.current);
-      clearInterval(progressTimerRef.current);
-    },
-    [],
+    () => () => {clearTimeout(successTimerRef.current);
+    clearInterval(progressTimerRef.current);
+    abortControllerRef.current?.abort();
+  }, [],
   );
+
+  const handleCancel = () => {
+    abortControllerRef.current?.abort();
+  };
 
   const handleGenerate = async () => {
     if (!prompt.trim() || loading) return;
@@ -75,6 +73,9 @@ const AIDesignPanel = observer(({ store }) => {
       setProgress(displayed);
     }, INTERVAL);
 
+    const abortController = new AbortController();
+    abortControllerRef.current = abortController;
+
     try {
       const response = await fetch(
         `https://api.polotno.com/api/ai/design/create?KEY=${POLOTNO_KEY}`,
@@ -82,6 +83,7 @@ const AIDesignPanel = observer(({ store }) => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ prompt }),
+          signal: abortController.signal,
         },
       );
 
@@ -91,14 +93,19 @@ const AIDesignPanel = observer(({ store }) => {
       }
 
       const data = await response.json();
-      store.loadJSON(data.data);
+      store.loadJSON(data);
 
       setSuccess(true);
       if (successTimerRef.current) clearTimeout(successTimerRef.current);
       successTimerRef.current = setTimeout(() => setSuccess(false), 4000);
     } catch (err) {
-      setError(err.message);
+      if (err.name === 'AbortError') {
+        // request was cancelled by the user
+      } else {
+        setError(err.message);
+      }
     } finally {
+      abortControllerRef.current = null;
       clearInterval(progressTimerRef.current);
       setProgress(1);
       setLoading(false);
@@ -106,14 +113,7 @@ const AIDesignPanel = observer(({ store }) => {
   };
 
   return (
-    <div
-      style={{
-        padding: '20px',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '15px',
-      }}
-    >
+    <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '15px' }}>
       <p>
         Describe what you want and let AI generate a complete design for you.
       </p>
@@ -135,18 +135,8 @@ const AIDesignPanel = observer(({ store }) => {
             value={progress}
             animate={progress < 0.9}
           />
-          <p
-            style={{
-              textAlign: 'center',
-              marginTop: '5px',
-              fontSize: '12px',
-              color: '#5c7080',
-            }}
-          >
-            {Math.round(progress * 100)}% —{' '}
-            {progress < 0.9
-              ? 'Generating your design...'
-              : 'Almost there, finalizing...'}
+          <p style={{ textAlign: 'center', marginTop: '5px', fontSize: '12px', color: '#5c7080' }}>
+            {Math.round(progress * 100)}% — {progress < 0.9 ? 'Generating your design...' : 'Almost there, finalizing...'}
           </p>
         </div>
       )}
@@ -179,6 +169,17 @@ const AIDesignPanel = observer(({ store }) => {
         icon={loading ? <Spinner size={18} /> : 'clean'}
         text={loading ? 'Generating...' : 'Generate Design'}
       />
+
+      {loading && (
+        <Button
+          intent="danger"
+          outlined
+          fill
+          onClick={handleCancel}
+          icon="cross"
+          text="Cancel request"
+        />
+      )}
     </div>
   );
 });
