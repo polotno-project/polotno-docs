@@ -161,14 +161,25 @@ const AIDesignPanel = observer(({ store }) => {
       )}
 
       <Button
-        intent={loading ? 'danger' : 'primary'}
+        intent="primary"
         large
         fill
-        disabled={!loading && !prompt.trim()}
-        onClick={loading ? handleCancel : handleGenerate}
+        disabled={loading || !prompt.trim()}
+        onClick={handleGenerate}
         icon={loading ? <Spinner size={18} /> : 'clean'}
-        text={loading ? 'Cancel request' : 'Generate Design'}
+        text={loading ? 'Generating...' : 'Generate Design'}
       />
+
+      {loading && (
+        <Button
+          intent="danger"
+          outlined
+          fill
+          onClick={handleCancel}
+          icon="cross"
+          text="Cancel request"
+        />
+      )}
     </div>
   );
 });
