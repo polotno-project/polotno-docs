@@ -101,7 +101,7 @@ const AIDesignPanel = observer(({ store }) => {
       }
 
       const data = await response.json();
-      store.loadJSON(data.data);
+      store.loadJSON(data.design);
 
       setSuccess(true);
       if (successTimerRef.current) clearTimeout(successTimerRef.current);
