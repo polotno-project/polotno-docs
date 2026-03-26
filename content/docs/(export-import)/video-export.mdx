@@ -105,6 +105,16 @@ All video encoding happens **directly in the browser** using client-side renderi
 </Callout>
 
 
+## Multi-Page Designs with Different Dimensions
+
+Video files require a single fixed resolution throughout playback. When your store contains pages with different dimensions, `storeToVideo` determines the output resolution by taking the **maximum width and height** across all pages (rounded to even numbers for H.264 codec compatibility).
+
+During export, all pages are temporarily resized to match this output resolution. The resize is smart — it preserves relative positions and sizes of elements, so the layout is mostly maintained. Original page dimensions are restored after the export completes.
+
+<Callout type="info" title="Recommendation">
+For best results, use pages with **similar dimensions**. If your store mixes very different aspect ratios (e.g. a landscape page and a portrait page), the resized layout may not look as intended.
+</Callout>
+
 ## Common Questions
 
 ### How long does video export take?
