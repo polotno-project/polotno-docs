@@ -198,6 +198,13 @@ Optionally, change some styles of the workspace.
   rulerTickColor="#999"
   rulerTickSize={8}
 
+  // Controls auto-scroll when the active page changes.                                                                
+  // When a new page becomes active, the workspace scrolls to it only if                                               
+  // the current scroll position is farther than this threshold from the page.                                         
+  // Value is a fraction of the page size (0.5 = 50% of page height/width).                                            
+  // Default 0.5. Increase to reduce scrolling. Use Infinity to disable completely.                                    
+  scrollToPageThreshold={0.5}
+
 // by default polotno will use checkerboard background for transparency, you can change it to any color you want
   transparencyBackgroundColor="grey" 
 
