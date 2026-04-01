@@ -1,23 +1,81 @@
 ---
-title: AI Documentation Assistant
-description: AI-powered search and IDE integration for Polotno docs and community knowledge
+title: AI Dev Tools
+description: AI rules, MCP servers, and documentation tools for working with Polotno SDK
 ---
 
 ## Overview
 
-Polotno documentation and community forums are indexed by [Crawlchat](https://crawlchat.com), providing AI-powered search with source citations. Available as a web widget and IDE integration via Model Context Protocol (MCP).
+There are several ways to give your AI coding assistant knowledge about Polotno SDK — from project-level rules to live documentation servers.
 
-## Web Widget
+## Polotno AI Rules
+
+The [polotno-ai-rules](https://github.com/polotno-project/polotno-ai-rules) repository provides AI coding rules and skills for working with Polotno SDK. It includes API references, code examples, best practices, and common pitfalls — ready to use with 40+ AI coding tools.
+
+### Claude Code
+
+```bash
+claude plugin add polotno-project/polotno-ai-rules
+```
+
+### Cursor, Copilot, Windsurf, Cline, and others
+
+```bash
+npx skills add polotno-project/polotno-ai-rules
+```
+
+This auto-detects your editor and installs the appropriate rules file.
+
+### Manual Setup
+
+Copy `rules/polotno-rules.md` from the repo into your project:
+
+| Platform | File |
+|----------|------|
+| Cursor | `.cursorrules` |
+| GitHub Copilot | `.github/copilot-instructions.md` |
+| Codex / Jules | `AGENTS.md` |
+| Windsurf | `.windsurfrules` |
+
+## Context7
+
+[Context7](https://context7.com) provides up-to-date Polotno documentation directly inside your AI editor via MCP.
+
+### Quick Setup
+
+```bash
+npx ctx7 setup
+```
+
+Use flags to target a specific editor: `--cursor`, `--claude`, `--opencode`.
+
+### Manual MCP Configuration
+
+Add to your editor's MCP config (e.g. `~/.cursor/config/mcp.json` for Cursor):
+
+```json
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    }
+  }
+}
+```
+
+A free API key from [context7.com/dashboard](https://context7.com/dashboard) is recommended for higher rate limits.
+
+## Crawlchat MCP
+
+Polotno documentation and community forums are also indexed by [Crawlchat](https://crawlchat.com), providing AI-powered search with source citations.
+
+### Web Widget
 
 Find the AI assistant on [polotno.com/docs](https://polotno.com/docs) and [community.polotno.com](https://community.polotno.com). Ask questions like "How do I resize a page?" to get instant answers with links to source docs or forum threads.
 
-## IDE Integration
+### MCP Server
 
-Add Polotno documentation directly to Cursor, Cline, or any MCP-compatible editor.
-
-### Cursor
-
-Add to `~/.cursor/config/mcp.json`:
+Add to your editor's MCP config:
 
 ```json
 {
@@ -34,17 +92,7 @@ Add to `~/.cursor/config/mcp.json`:
 }
 ```
 
-Restart Cursor. Requires Node.js 18+.
-
-### Other Editors
-
-Run the MCP server directly:
-
-```bash
-npx crawl-chat-mcp --id=67e312247a822a2303f2b8a7 --name=polotno_documentation
-```
-
-The server uses stdio transport. Check your editor's MCP documentation for connection setup.
+The server uses stdio transport. Works with Cursor, Cline, and any MCP-compatible editor. Requires Node.js 18+.
 
 ## What You Can Ask
 
