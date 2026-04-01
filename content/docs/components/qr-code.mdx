@@ -41,45 +41,4 @@ const sections = [...DEFAULT_SECTIONS, QrSection];
 
 ## Demo 
 
-<SandpackDemo 
-  dependencies={{
-    "qrcode": "latest",
-    "@meronex/icons": "latest"
-  }}
-  fileSrc={{ path: 'src/components/side-panel/qr-code.tsx', as: '/side-panel/qr-code.tsx' }}
-  files={{
-    "/App.js": `import React from 'react';
-import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
-import { Workspace } from 'polotno/canvas/workspace';
-import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
-import { Toolbar } from 'polotno/toolbar/toolbar';
-import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
-import { createStore } from 'polotno/model/store';
-import { QrSection } from './side-panel/qr-code';
-import '@blueprintjs/core/lib/css/blueprint.css';
-
-const store = createStore({
-  key: 'nFA5H9elEytDyPyvKL7T',
-});
-
-// Add a default template
-store.addPage();
-
-const sections = [...DEFAULT_SECTIONS, QrSection];
-
-export default function App() {
-  return (
-    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
-      <SidePanelWrap>
-        <SidePanel store={store} sections={sections} defaultSection="qr" />
-      </SidePanelWrap>
-      <WorkspaceWrap>
-        <Toolbar store={store} downloadButtonEnabled />
-        <Workspace store={store} />
-        <ZoomButtons store={store} />
-      </WorkspaceWrap>
-    </PolotnoContainer>
-  );
-}`
-  }}
-/>
+<Sandbox github="polotno-project/polotno-docs/tree/main/examples/polotno-qr-codes" />

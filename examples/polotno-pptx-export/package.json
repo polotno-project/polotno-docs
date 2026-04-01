@@ -1,0 +1,23 @@
+{
+  "name": "@polotno-docs/polotno-pptx-export",
+  "version": "1.0.0",
+  "description": "Demo showing PPTX export in Polotno editor",
+  "keywords": [],
+  "dependencies": {
+    "@polotno/pptx-export": "latest",
+    "polotno": "2.39.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}

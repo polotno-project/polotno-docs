@@ -1,0 +1,23 @@
+{
+  "name": "@polotno-docs/polotno-video-export",
+  "version": "1.0.0",
+  "description": "Demo showing video export in Polotno editor",
+  "keywords": [],
+  "dependencies": {
+    "@polotno/video-export": "0.0.2",
+    "polotno": "2.39.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}
