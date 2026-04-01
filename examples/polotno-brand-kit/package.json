@@ -6,10 +6,13 @@
   "dependencies": {
     "@blueprintjs/core": "^5",
     "@blueprintjs/icons": "^5",
+    "konva": "^9",
     "mobx-react-lite": "^3",
     "polotno": "2.39.1",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "react-window": "^1",
+    "swr": "^2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5",
