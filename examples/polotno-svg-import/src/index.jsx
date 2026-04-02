@@ -13,6 +13,7 @@ const store = createStore({
   key: 'nFA5H9elEytDyPyvKL7T',
   showCredit: true,
 });
+store.openSidePanel('');
 store.addPage();
 
 const App = ({ store }) => {

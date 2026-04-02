@@ -13,6 +13,7 @@ const store = createStore({
   showCredit: true,
 });
 
+store.openSidePanel('');
 const page = store.addPage();
 page.addElement({
   type: 'text',

@@ -17,6 +17,7 @@ const store = createStore({
   showCredit: true,
 });
 
+store.openSidePanel('');
 store.loadJSON({
     "width": 1080,
     "height": 1080,
