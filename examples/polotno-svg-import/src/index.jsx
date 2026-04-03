@@ -13,7 +13,6 @@ const store = createStore({
   key: 'nFA5H9elEytDyPyvKL7T',
   showCredit: true,
 });
-store.openSidePanel('');
 store.addPage();
 
 const App = ({ store }) => {
@@ -38,7 +37,7 @@ const App = ({ store }) => {
   return (
     <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
-        <SidePanel store={store} />
+        <SidePanel store={store} defaultSection="" />
       </SidePanelWrap>
       <WorkspaceWrap>
         <Toolbar

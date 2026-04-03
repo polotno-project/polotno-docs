@@ -488,11 +488,6 @@ function App() {
     }
   }, []);
 
-  // Close side panel by default
-  useEffect(() => {
-    store.openSidePanel('');
-  }, []);
-
   const fileInput = usePlaceholderSelection(store);
 
   return (

@@ -131,6 +131,8 @@ store.openSidePanel('templates');
 
 In addition to the visible tab sections, Polotno has several built-in hidden panels: `effects`, `animation`, and `image-clip`. See [Hidden Panels](/docs/hidden-panels) for details.
 
+**Note:** Calling `store.openSidePanel('')` before the `<SidePanel>` component mounts will not work, because the component resets the panel to its default on mount. To hide the side panel on initial load, use the `defaultSection=""` prop on the `<SidePanel>` component instead. See [Side Panel overview](/docs/side-panel-overview) for details.
+
 ### `store.setUnit({ unit, dpi })`
 
 Set unit metrics to use in UI.

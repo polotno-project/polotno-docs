@@ -19,6 +19,16 @@ const MyPanel = () => {
 
 The `SidePanel` will automatically use the full width and height of its parent; you don't have to manually adjust its size. Set the size of the parent `div` with CSS.
 
+## How to hide the side panel on initial load?
+
+Use the `defaultSection` prop to control which section is open when the component first mounts. Pass an empty string to start with the panel closed:
+
+```tsx
+<SidePanel store={store} defaultSection="" />
+```
+
+**Note:** `store.openSidePanel('')` will not work for this purpose because it is called before `<SidePanel>` mounts, and the component overrides it with its default on mount.
+
 ## How to customize side panel tabs?
 
 You can pass the `sections` property to the `<SidePanel />` component to specify all available tabs manually.

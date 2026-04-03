@@ -17,7 +17,6 @@ const store = createStore({
   showCredit: true,
 });
 
-store.openSidePanel('');
 store.loadJSON({
     "width": 1080,
     "height": 1080,
@@ -140,7 +139,7 @@ export const App = () => {
   return (
     <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
-        <SidePanel store={store} />
+        <SidePanel store={store} defaultSection="" />
       </SidePanelWrap>
       <WorkspaceWrap>
         <Toolbar
