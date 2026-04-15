@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "parcel": "^2.7.0",
-    "polotno": "2.39.1",
+    "polotno": "2.40.0",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
