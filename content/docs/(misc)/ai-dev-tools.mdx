@@ -14,7 +14,18 @@ The [polotno-ai-rules](https://github.com/polotno-project/polotno-ai-rules) repo
 ### Claude Code
 
 ```bash
-claude plugin add polotno-project/polotno-ai-rules
+# 1. Add the marketplace
+claude plugin marketplace add polotno-project/polotno-ai-rules
+
+# 2. Install the plugin
+claude plugin install polotno-sdk@polotno-sdk
+```
+
+Or from within a Claude Code session:
+
+```
+/plugin marketplace add polotno-project/polotno-ai-rules
+/plugin install polotno-sdk@polotno-sdk
 ```
 
 ### Cursor, Copilot, Windsurf, Cline, and others
