@@ -121,6 +121,29 @@ Optionally, change some styles of the workspace.
   rulerTickColor="#999"
   rulerTickSize={8}
 
+  // selection transformer (resize handles around selected element)
+  // accepts Konva.TransformerConfig; omitted fields keep default values
+  transformerStyle={{ anchorStroke: 'red', borderStroke: 'red' }}
+
+  // hover/highlight rectangle around elements
+  highlighterStyle={{ stroke: 'rgb(0, 161, 255)', strokeWidth: 2 }}
+
+  // image crop transformers (inner = over cropped image, outer = source bounds)
+  innerImageCropTransformerStyle={{ borderStroke: 'red' }}
+  outerImageCropTransformerStyle={{ borderStroke: 'red' }}
+
+  // dim overlay drawn around the canvas while an image is in crop mode
+  cropOverlayFill="rgba(0,0,0,0.3)"
+
+  // background + spinner color for image/video/gif elements while loading
+  mediaLoadingStyle={{ fill: 'rgba(124, 173, 212, 0.8)', textFill: 'white' }}
+
+  // background + text color for image/video/gif elements that failed to load
+  mediaErrorStyle={{ fill: 'rgba(223, 102, 102, 0.8)', textFill: 'white' }}
+
+  // stroke color for the (hidden) text overflow indicator path
+  textOverflowIndicatorStyle={{ stroke: 'red' }}
+
   // Controls auto-scroll when the active page changes.                                                                
   // When a new page becomes active, the workspace scrolls to it only if                                               
   // the current scroll position is farther than this threshold from the page.                                         
@@ -141,30 +164,12 @@ Optionally, change some styles of the workspace.
 />
 ```
 
-Change default styles of Transformer (resize tool) and Highlighter (on object select or hover).
-
-```ts
-import { setHighlighterStyle, setTransformerStyle } from 'polotno/config';
-
-// pass properties of Konva.Transformer shape
-setTransformerStyle({
-  anchorStroke: 'red',
-  borderStroke: 'red',
-});
-
-// pass properties of Konva.Rect node
-setHighlighterStyle({
-  stroke: 'red',
-});
-
-// also control style of the cropping tool of image element
-import { setInnerImageCropTransformerStyle, setOuterImageCropTransformerStyle } from 'polotno/config';
-
-// use Konva.Transformer properties
-setInnerImageCropTransformerStyle({
-  borderStroke: 'red',
-});
-```
+> **Deprecated.** `setTransformerStyle`, `setHighlighterStyle`,
+> `setInnerImageCropTransformerStyle`, and
+> `setOuterImageCropTransformerStyle` from `polotno/config` do the same
+> thing globally and still work for backwards compatibility, but prefer
+> the per-`<Workspace>` props above. The setters will be removed in the
+> next major.
 
 ## Show only the current page in Workspace
 

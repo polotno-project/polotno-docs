@@ -38,3 +38,24 @@ The simplest way is to use CSS. Inspect the DOM to find class names. Some intern
 ## Live demo
 
 <Sandbox github="polotno-project/polotno-docs/tree/main/examples/polotno-theme"  />
+
+## Theming the canvas chrome
+
+All editor canvas chrome — selection rectangles, transformer handles, snap guides, distance guides, crop overlays, loading/error indicators, rulers, and the hover highlighter — is themed via props on the `<Workspace>` component. Each prop is optional and merges with the default.
+
+Example: recolor the editor accent away from the default blue.
+
+```tsx
+<Workspace
+  store={store}
+  selectionRectStroke="#c8c52d"
+  selectionRectFill="rgba(200, 197, 45, 0.3)"
+  snapGuideStroke="#c8c52d"
+  transformLabelFill="#c8c52d"
+  highlighterStyle={{ stroke: '#c8c52d' }}
+/>
+```
+
+See the [Workspace](/docs/workspace) page for the full list of canvas styling props.
+
+> The legacy `setTransformerStyle`, `setHighlighterStyle`, `setInnerImageCropTransformerStyle`, and `setOuterImageCropTransformerStyle` globals from `polotno/config` do the same thing globally and are deprecated — prefer the per-Workspace props.

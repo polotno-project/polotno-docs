@@ -385,9 +385,11 @@ const json = store.toJSON();
 saveIntoBackend(JSON.stringify(json));
 ```
 
-### store.loadJSON(json, keepHistory?)
+### store.loadJSON(json, keepHistory?) / store.loadJSON(json, options?)
 
 Load passed json into the store. It will update all properties, pages and elements. By default loading JSON into the store will reset undo/redo history (so a user can't undo it). You can use `keepHistory` argument, if you want to preserve the history.
+
+The second argument can also be an options object (`{ keepHistory?, modernizeTextBackground? }`). Pass `modernizeTextBackground: true` to force the modern per-line rich-text background render on pre-v3 documents — by default, loading a `schemaVersion < 3` design with `backgroundEnabled: true` preserves its pre-v3 full-rect look pixel-exact.
 
 ```ts
 import { createStore } from 'polotno/model/store';
@@ -409,6 +411,9 @@ store.loadJSON(json);
 // load JSON but save previous undo history
 // a user can undo this action
 store.loadJSON(json, true);
+
+// force modern per-line text backgrounds when loading pre-v3 designs
+store.loadJSON(oldJson, { modernizeTextBackground: true });
 ```
 
 ## Events
