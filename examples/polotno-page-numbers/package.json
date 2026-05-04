@@ -4,7 +4,7 @@
   "description": "Demo showing how to automatically add and update page numbers in Polotno editor",
   "keywords": [],
   "dependencies": {
-    "polotno": "2.40.1",
+    "polotno": "2.40.2",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
