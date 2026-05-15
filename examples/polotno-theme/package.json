@@ -4,7 +4,7 @@
   "description": "Demo showing how to customize the theme and styling of Polotno editor",
   "keywords": [],
   "dependencies": {
-    "polotno": "2.41.0",
+    "polotno": "2.41.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
