@@ -8,7 +8,7 @@ import { ZoomButtons } from "polotno/toolbar/zoom-buttons";
 import { SidePanel } from "polotno/side-panel";
 import { Workspace } from "polotno/canvas/workspace";
 import { PageControls as DefaultPageControls } from "polotno/canvas/page-controls";
-import { Button } from "@blueprintjs/core";
+import { Button } from 'polotno/primitives';
 
 import { createStore } from "polotno/model/store";
 
@@ -57,7 +57,7 @@ const PageControls = observer(({ xPadding, yPadding, store, page }) => {
       }}
     >
       <Button
-        active={store.pages.indexOf(store.activePage) === 0}
+        variant={store.pages.indexOf(store.activePage) === 0 ? 'secondary' : 'ghost'}
         onClick={() => {
           store.selectPage(store.pages[0].id);
         }}
@@ -65,7 +65,7 @@ const PageControls = observer(({ xPadding, yPadding, store, page }) => {
         Front
       </Button>
       <Button
-        active={store.pages.indexOf(store.activePage) === 1}
+        variant={store.pages.indexOf(store.activePage) === 1 ? 'secondary' : 'ghost'}
         onClick={() => {
           store.selectPage(store.pages[1].id);
         }}
@@ -78,7 +78,7 @@ const PageControls = observer(({ xPadding, yPadding, store, page }) => {
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: "100vw", height: "100vh" }}>
+    <PolotnoContainer style={{ width: "100vw", height: "100vh" }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

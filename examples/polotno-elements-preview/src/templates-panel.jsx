@@ -1,7 +1,7 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
 import { SectionTab } from 'polotno/side-panel';
-import { Button, Card } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 import { templateStore } from './template-store';
 import { jsonToSVG } from 'polotno/utils/to-svg';
 import { svgToURL } from 'polotno/utils/svg';
@@ -121,14 +121,15 @@ const TemplateGrid = observer(({ store }) => {
         }}
       >
         {templateStore.templates.map((template) => (
-          <Card
+          <div
             key={template.id}
-            interactive
-            elevation={1}
             style={{
               padding: '10px',
               cursor: 'pointer',
               position: 'relative',
+              border: '1px solid var(--pn-border, #e5e5e5)',
+              borderRadius: '8px',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.08)',
             }}
             onClick={() => handleTemplateClick(template)}
           >
@@ -155,14 +156,14 @@ const TemplateGrid = observer(({ store }) => {
             </div>
 
             <Button
-              icon="trash"
-              small
-              minimal
-              intent="danger"
+              variant="ghost"
+              size="icon-sm"
               style={{ position: 'absolute', top: '5px', right: '5px' }}
               onClick={(e) => handleDeleteTemplate(e, template.id)}
-            />
-          </Card>
+            >
+              ✕
+            </Button>
+          </div>
         ))}
       </div>
     </div>

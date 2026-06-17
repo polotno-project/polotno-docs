@@ -3,7 +3,15 @@ import { observer } from 'mobx-react-lite';
 import { SectionTab } from 'polotno/side-panel';
 import * as svg from 'polotno/utils/svg';
 import AiFillPieChart from '@meronex/icons/ai/AiFillPieChart';
-import { Button, InputGroup, HTMLSelect } from '@blueprintjs/core';
+import {
+  Button,
+  Input,
+  Select,
+  SelectTrigger,
+  SelectContent,
+  SelectItem,
+  SelectValue,
+} from 'polotno/primitives';
 import { Chart } from 'frappe-charts';
 
 // create svg image for QR code for input text
@@ -87,18 +95,17 @@ export const ChartSection = {
           }}
         >
           <div style={{ lineHeight: '23px' }}>Char type:</div>
-          <HTMLSelect
-            style={{ width: '100px' }}
-            value={type}
-            onChange={(e) => {
-              setType(e.target.value);
-            }}
-          >
-            <option>pie</option>
-            <option>bar</option>
-            <option>line</option>
-            <option>percentage</option>
-          </HTMLSelect>
+          <Select value={type} onValueChange={(v) => setType(v)}>
+            <SelectTrigger style={{ width: '100px' }}>
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="pie">pie</SelectItem>
+              <SelectItem value="bar">bar</SelectItem>
+              <SelectItem value="line">line</SelectItem>
+              <SelectItem value="percentage">percentage</SelectItem>
+            </SelectContent>
+          </Select>
         </div>
         {val.map((row, index) => (
           <div
@@ -108,13 +115,13 @@ export const ChartSection = {
               paddingTop: '5px',
             }}
           >
-            <InputGroup
+            <Input
               onChange={(e) => {
                 const copy = val.slice();
                 copy[index] = e.target.value;
                 setVal(copy);
               }}
-              placeholder="Type qr code content"
+              placeholder="Type chart row, e.g. 10,20,30"
               value={row}
               style={{ width: '100%' }}
             />
@@ -147,8 +154,8 @@ export const ChartSection = {
         <Button
           style={{
             display: isChart ? 'none' : '',
+            width: '100%',
           }}
-          fill
           onClick={async () => {
             const src = await getChart({
               data: val.map((e) => e.split(',')),

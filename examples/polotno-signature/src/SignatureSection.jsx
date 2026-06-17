@@ -5,7 +5,7 @@ import * as svg from 'polotno/utils/svg';
 // import our own icon
 import FaSignature from '@meronex/icons/fa/FaSignature';
 import SignaturePad from 'signature_pad';
-import { Button } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 
 // define the new custom section
 export const SignatureSection = {

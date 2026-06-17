@@ -1,7 +1,7 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
 
-import { Button, EditableText, Tooltip } from '@blueprintjs/core';
+import { Input, TooltipIconButton } from 'polotno/primitives';
 import { t } from 'polotno/utils/l10n';
 
 export const PageControls = observer(({ store, page, xPadding, yPadding }) => {
@@ -17,14 +17,14 @@ export const PageControls = observer(({ store, page, xPadding, yPadding }) => {
           left: xPadding + 'px',
         }}
       >
-        <EditableText
+        <Input
           // we can use custom data to store page name into store
           value={page.custom?.name || 'Untitled page'}
-          onChange={(val) => {
+          onChange={(e) => {
             page.set({
               custom: {
                 ...page.custom,
-                name: val,
+                name: e.target.value,
               },
             });
           }}
@@ -38,66 +38,58 @@ export const PageControls = observer(({ store, page, xPadding, yPadding }) => {
         }}
       >
         {hasManyPages && (
-          <Tooltip content={t('workspace.moveUp')} disabled={index === 0}>
-            <Button
-              icon="chevron-up"
-              minimal
-              disabled={index === 0}
-              onClick={() => {
-                page.setZIndex(index - 1);
-              }}
-            ></Button>
-          </Tooltip>
-        )}
-        {hasManyPages && (
-          <Tooltip
-            content={t('workspace.moveDown')}
-            disabled={index === store.pages.length - 1}
+          <TooltipIconButton
+            label={t('workspace.moveUp')}
+            disabled={index === 0}
+            onClick={() => {
+              page.setZIndex(index - 1);
+            }}
           >
-            <Button
-              icon="chevron-down"
-              minimal
-              disabled={index === store.pages.length - 1}
-              onClick={() => {
-                const index = store.pages.indexOf(page);
-                page.setZIndex(index + 1);
-              }}
-            ></Button>
-          </Tooltip>
+            ↑
+          </TooltipIconButton>
         )}
-        <Tooltip content={t('workspace.duplicatePage')}>
-          <Button
-            icon="duplicate"
-            minimal
-            onClick={() => {
-              page.clone();
-            }}
-          ></Button>
-        </Tooltip>
         {hasManyPages && (
-          <Tooltip content={t('workspace.removePage')}>
-            <Button
-              icon="trash"
-              minimal
-              onClick={() => {
-                store.deletePages([page.id]);
-              }}
-            ></Button>
-          </Tooltip>
-        )}
-        <Tooltip content={t('workspace.addPage')}>
-          <Button
-            icon="insert"
-            minimal
+          <TooltipIconButton
+            label={t('workspace.moveDown')}
+            disabled={index === store.pages.length - 1}
             onClick={() => {
-              const newPage = store.addPage({
-                bleed: store.activePage?.bleed || 0,
-              });
               const index = store.pages.indexOf(page);
-              newPage.setZIndex(index + 1);
+              page.setZIndex(index + 1);
             }}
-          ></Button>
-        </Tooltip>
+          >
+            ↓
+          </TooltipIconButton>
+        )}
+        <TooltipIconButton
+          label={t('workspace.duplicatePage')}
+          onClick={() => {
+            page.clone();
+          }}
+        >
+          ⧉
+        </TooltipIconButton>
+        {hasManyPages && (
+          <TooltipIconButton
+            label={t('workspace.removePage')}
+            onClick={() => {
+              store.deletePages([page.id]);
+            }}
+          >
+            🗑
+          </TooltipIconButton>
+        )}
+        <TooltipIconButton
+          label={t('workspace.addPage')}
+          onClick={() => {
+            const newPage = store.addPage({
+              bleed: store.activePage?.bleed || 0,
+            });
+            const index = store.pages.indexOf(page);
+            newPage.setZIndex(index + 1);
+          }}
+        >
+          +
+        </TooltipIconButton>
       </div>
     </>
   );

@@ -4,12 +4,11 @@
   "description": "Polotno Spine Web Player",
   "keywords": [],
   "dependencies": {
-    "@blueprintjs/core": "^5.0.0",
     "mobx-react-lite": "^4.1.1",
-    "polotno": "2.41.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-konva": "^18.0.0",
+    "polotno": "^4.0.2",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-konva": "^19",
     "react-konva-utils": "^1.0.0"
   },
   "devDependencies": {

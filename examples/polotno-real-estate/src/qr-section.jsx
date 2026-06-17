@@ -3,7 +3,7 @@ import { observer } from 'mobx-react-lite';
 import { SectionTab } from 'polotno/side-panel';
 import QRCode from 'qrcode';
 import * as svg from 'polotno/utils/svg';
-import { Button, InputGroup } from '@blueprintjs/core';
+import { Button, Input } from 'polotno/primitives';
 
 const QrIcon = () => (
   <svg
@@ -66,10 +66,10 @@ export const QrSection = {
       <div>
         <h3 style={{ marginBottom: '10px', marginTop: '5px' }}>QR code</h3>
         <p>Generate QR code with any URL you want.</p>
-        <InputGroup
+        <Input
           placeholder="Paste URL here"
           style={{ width: '100%', marginTop: '10px', marginBottom: '10px' }}
-          inputRef={inputRef}
+          ref={inputRef}
         />
 
         <Button
@@ -86,8 +86,7 @@ export const QrSection = {
               src,
             });
           }}
-          fill
-          intent="primary"
+          style={{ width: '100%' }}
         >
           Add new QR code
         </Button>

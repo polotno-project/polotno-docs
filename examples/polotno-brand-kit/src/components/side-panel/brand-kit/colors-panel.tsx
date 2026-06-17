@@ -1,7 +1,7 @@
 import React from 'react';
 import Konva from 'konva';
 import { observer } from 'mobx-react-lite';
-import { Button, FormGroup, InputGroup, Intent } from '@blueprintjs/core';
+import { Button, Input } from 'polotno/primitives';
 import { Color, useBrandKit } from './context';
 import { useInfiniteAPI } from 'polotno/utils/use-api';
 import { StoreType } from 'polotno/model/store';
@@ -161,24 +161,25 @@ export const ColorsPanel = observer(({ store, columns = 3 }: ColorsPanelProps) =
       <ItemInfo>{color.name}</ItemInfo>
       <ItemActions>
         <Button
-          icon="edit"
-          minimal
-          small
+          variant="ghost"
+          size="icon-sm"
           onClick={(e) => {
             e.stopPropagation();
             handleEditColor(color);
           }}
-        />
+        >
+          ✎
+        </Button>
         <Button
-          icon="trash"
-          minimal
-          small
-          intent={Intent.DANGER}
+          variant="ghost"
+          size="icon-sm"
           onClick={(e) => {
             e.stopPropagation();
             handleDeleteColor(color);
           }}
-        />
+        >
+          🗑
+        </Button>
       </ItemActions>
     </GridItem>
   );
@@ -207,16 +208,25 @@ export const ColorsPanel = observer(({ store, columns = 3 }: ColorsPanelProps) =
         onClose={handleCancel}
         title={editingColor ? t('brandKit.editColor') : t('brandKit.createColor')}
       >
-        <FormGroup label={t('brandKit.colorName')} labelFor="color-name">
-          <InputGroup
+        <div style={{ marginBottom: 12 }}>
+          <label
+            htmlFor="color-name"
+            style={{ display: 'block', marginBottom: 4, fontSize: 12 }}
+          >
+            {t('brandKit.colorName')}
+          </label>
+          <Input
             id="color-name"
             value={formState.name}
             onChange={(e) => setFormState({ ...formState, name: e.target.value })}
             placeholder={t('brandKit.enterColorName')}
           />
-        </FormGroup>
+        </div>
         
-        <FormGroup label={t('brandKit.color')}>
+        <div style={{ marginBottom: 12 }}>
+          <label style={{ display: 'block', marginBottom: 4, fontSize: 12 }}>
+            {t('brandKit.color')}
+          </label>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <ColorPicker
               value={formState.hex ? (formState.hex.startsWith('#') ? formState.hex : `#${formState.hex}`) : '#000000'}
@@ -230,7 +240,7 @@ export const ColorsPanel = observer(({ store, columns = 3 }: ColorsPanelProps) =
               {t('brandKit.clickToOpenColorPicker')}
             </span>
           </div>
-        </FormGroup>
+        </div>
         
         <BrandKitModalActions
           onCancel={handleCancel}

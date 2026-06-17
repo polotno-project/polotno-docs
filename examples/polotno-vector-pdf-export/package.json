@@ -1,0 +1,24 @@
+{
+  "name": "@polotno-docs/polotno-vector-pdf-export",
+  "version": "1.0.0",
+  "description": "Demo: export a Polotno design as bitmap PDF (default) or vector PDF, fully client-side via @polotno/pdf-export/browser",
+  "keywords": [],
+  "dependencies": {
+    "@polotno/pdf-export": "^0.2.0",
+    "mobx-react-lite": "^4.0.0",
+    "polotno": "^4.0.2",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}

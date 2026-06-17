@@ -39,7 +39,7 @@ const $05449a417923a4ab$var$store = (0, $bLCaw$polotnomodelstore.createStore)({
 const $05449a417923a4ab$var$page = $05449a417923a4ab$var$store.addPage();
 const $05449a417923a4ab$export$86fbec116b87613f = ({ store: store })=>{
     return /*#__PURE__*/ (0, $bLCaw$reactjsxruntime.jsxs)((0, $bLCaw$polotno.PolotnoContainer), {
-        className: "bp5-scope",
+        className: "",
         style: {
             width: '100vw',
             height: '100vh'

@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { observer } from 'mobx-react-lite';
 
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
@@ -48,7 +48,7 @@ store.activePage.addElement({
 
 export const App = observer(() => {
   return (
-    <PolotnoContainer className="polotno-app-container bp5-scope">
+    <PolotnoContainer className="polotno-app-container">
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { observer } from 'mobx-react-lite';
 import { reaction } from 'mobx';
-import { NumericInput, Switch, Alignment } from '@blueprintjs/core';
+import { NumericInput, Switch } from 'polotno/primitives';
 
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 
@@ -149,31 +149,33 @@ const GridSection = {
     return (
       <div>
         <div>
-          <Switch
-            checked={visible}
-            onChange={(val) => {
-              setVisible(val.target.checked);
-            }}
-            alignIndicator={Alignment.RIGHT}
+          <label
             style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 8,
               marginTop: '8px',
               marginBottom: '25px',
             }}
           >
+            <Switch
+              checked={visible}
+              onCheckedChange={(checked) => {
+                setVisible(checked);
+              }}
+            />
             Show grid
-          </Switch>
+          </label>
           <div style={{ width: '50%', display: 'inline-block' }}>Rows:</div>
           <div style={{ width: '50%', display: 'inline-block' }}>
             <NumericInput
-              fill
-              defaultValue={rowsNumber}
+              value={rowsNumber}
               onValueChange={(rows) => {
                 rowsNumber = rows || 1;
                 generateGrid(rowsNumber, colsNumber);
               }}
               min={1}
               max={100}
-              selectAllOnFocus
             />
           </div>
         </div>
@@ -181,15 +183,13 @@ const GridSection = {
           <div style={{ width: '50%', display: 'inline-block' }}>Cols:</div>
           <div style={{ width: '50%', display: 'inline-block' }}>
             <NumericInput
-              fill
-              defaultValue={colsNumber}
+              value={colsNumber}
               onValueChange={(cols) => {
                 colsNumber = cols || 1;
                 generateGrid(rowsNumber, colsNumber);
               }}
               min={1}
               max={100}
-              selectAllOnFocus
             />
           </div>
         </div>
@@ -203,7 +203,7 @@ const sections = [GridSection, ...DEFAULT_SECTIONS];
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container bp5-scope">
+    <PolotnoContainer className="polotno-app-container">
       <SidePanelWrap>
         <SidePanel store={store} sections={sections} defaultSection="grid" />
       </SidePanelWrap>

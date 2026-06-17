@@ -4,7 +4,7 @@ import { SectionTab } from 'polotno/side-panel';
 import QRCode from 'qrcode';
 import * as svg from 'polotno/utils/svg';
 import ImQrcode from '@meronex/icons/im/ImQrcode';
-import { Button, InputGroup } from '@blueprintjs/core';
+import { Button, Input } from 'polotno/primitives';
 
 // create svg image for QR code for input text
 export async function getQR(text) {
@@ -65,7 +65,7 @@ export const QrSection = {
       <div>
         {isQR && <p>Update select QR code:</p>}
         {!isQR && <p>Create new QR code:</p>}
-        <InputGroup
+        <Input
           onChange={(e) => {
             setVal(e.target.value);
           }}

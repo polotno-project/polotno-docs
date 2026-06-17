@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Button } from '@blueprintjs/core';
+import { Navbar, Button } from 'polotno/primitives';
 import { observer } from 'mobx-react-lite';
 
 export const Preview = observer(({ store }) => {
@@ -35,8 +35,7 @@ export const Preview = observer(({ store }) => {
         <Navbar.Group align="right">
           {previewVisible && (
             <Button
-              icon="eye-off"
-              minimal
+              variant="ghost"
               onClick={() => {
                 setPreviewVisible(false);
               }}
@@ -46,8 +45,7 @@ export const Preview = observer(({ store }) => {
           )}
           {!previewVisible && (
             <Button
-              icon="eye-on"
-              minimal
+              variant="ghost"
               onClick={() => {
                 setPreviewVisible(true);
               }}

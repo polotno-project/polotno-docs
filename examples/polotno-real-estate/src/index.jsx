@@ -11,7 +11,14 @@ import { SidePanel, DEFAULT_SECTIONS, SectionTab } from 'polotno/side-panel';
 import { ImagesGrid } from 'polotno/side-panel/images-grid';
 import { Workspace } from 'polotno/canvas/workspace';
 import { Tooltip } from 'polotno/canvas/tooltip';
-import { Button, HTMLSelect } from '@blueprintjs/core';
+import {
+  Button,
+  Select,
+  SelectTrigger,
+  SelectContent,
+  SelectItem,
+  SelectValue,
+} from 'polotno/primitives';
 import { createStore } from 'polotno/model/store';
 import { setTextOverflow, setAnimationsEnabled } from 'polotno/config';
 
@@ -252,18 +259,23 @@ const TemplatesPanel = observer(({ store }) => {
         </div>
         <div className="drill-down-body">
           <label>Listing</label>
-          <HTMLSelect
-            fill
-            value={selectedListingIndex}
-            onChange={(e) => setSelectedListingIndex(e.target.value)}
+          <Select
+            value={
+              selectedListingIndex === '' ? undefined : String(selectedListingIndex)
+            }
+            onValueChange={(v) => setSelectedListingIndex(v)}
           >
-            <option value="">Choose listing</option>
-            {listings.map((l, i) => (
-              <option key={i} value={i}>
-                {l.listing}
-              </option>
-            ))}
-          </HTMLSelect>
+            <SelectTrigger style={{ width: '100%' }}>
+              <SelectValue placeholder="Choose listing" />
+            </SelectTrigger>
+            <SelectContent>
+              {listings.map((l, i) => (
+                <SelectItem key={i} value={String(i)}>
+                  {l.listing}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
           <Button
             className="run-button"
             disabled={selectedListingIndex === ''}
@@ -404,11 +416,11 @@ const EditIcon = () => (
 const ImageEditButton = observer(({ store }) => {
   return (
     <Button
-      small
-      minimal
+      size="sm"
+      variant="ghost"
       onClick={() => store.openSidePanel('edit-image')}
-      icon={<EditIcon />}
     >
+      <EditIcon />
       Edit Image
     </Button>
   );

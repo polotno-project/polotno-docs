@@ -1,6 +1,6 @@
 import React, {useMemo} from 'react';
 import {observer} from 'mobx-react-lite';
-import {Button, FormGroup, InputGroup, Intent} from '@blueprintjs/core';
+import { Button, Input } from 'polotno/primitives';
 import {Asset, useBrandKit} from './context';
 import {useInfiniteAPI} from 'polotno/utils/use-api';
 import {StoreType} from 'polotno/model/store';
@@ -220,24 +220,25 @@ export const AssetsPanel = observer(({store, columns = 2}: AssetsPanelProps) => 
         <ItemInfo>{asset.name}</ItemInfo>
         <ItemActions>
           <Button
-              icon="edit"
-              minimal
-              small
+              variant="ghost"
+              size="icon-sm"
               onClick={(e) => {
                 e.stopPropagation();
                 handleEditAsset(asset);
               }}
-          />
+          >
+              ✎
+          </Button>
           <Button
-              icon="trash"
-              minimal
-              small
-              intent={Intent.DANGER}
+              variant="ghost"
+              size="icon-sm"
               onClick={(e) => {
                 e.stopPropagation();
                 handleDeleteAsset(asset);
               }}
-          />
+          >
+              🗑
+          </Button>
         </ItemActions>
       </GridItem>
   );
@@ -267,18 +268,29 @@ export const AssetsPanel = observer(({store, columns = 2}: AssetsPanelProps) => 
             title={editingAsset ? t('brandKit.editAsset') : t('brandKit.createAsset')}
             width="400px"
         >
-          <FormGroup label={t('brandKit.assetName')} labelFor="asset-name">
-            <InputGroup
+          <div style={{ marginBottom: 12 }}>
+            <label
+                htmlFor="asset-name"
+                style={{ display: 'block', marginBottom: 4, fontSize: 12 }}
+            >
+              {t('brandKit.assetName')}
+            </label>
+            <Input
                 id="asset-name"
                 value={formState.name}
                 onChange={(e) => setFormState({...formState, name: e.target.value})}
                 placeholder={t('brandKit.enterAssetName')}
             />
-          </FormGroup>
+          </div>
           
-          <FormGroup label={t('brandKit.uploadAsset')} labelFor="asset-file">
+          <div style={{ marginBottom: 12 }}>
+            <label
+                htmlFor="asset-file"
+                style={{ display: 'block', marginBottom: 4, fontSize: 12 }}
+            >
+              {t('brandKit.uploadAsset')}
+            </label>
             <Button
-                icon="upload"
                 style={{width: '100%'}}
                 onClick={() => fileInputRef.current?.click()}
             >
@@ -291,11 +303,14 @@ export const AssetsPanel = observer(({store, columns = 2}: AssetsPanelProps) => 
                 accept=".png,.jpg,.jpeg,.svg"
                 onChange={handleFileChange}
             />
-          </FormGroup>
+          </div>
           
           {/* Preview */}
           {(formState.file || formState.url) && (
-              <FormGroup label={t('brandKit.preview')}>
+              <div style={{ marginBottom: 12 }}>
+                <label style={{ display: 'block', marginBottom: 4, fontSize: 12 }}>
+                  {t('brandKit.preview')}
+                </label>
                 <div
                     style={{
                       width: '100px',
@@ -308,7 +323,7 @@ export const AssetsPanel = observer(({store, columns = 2}: AssetsPanelProps) => 
                       backgroundColor: '#f5f8fa'
                     }}
                 />
-              </FormGroup>
+              </div>
           )}
           
           <BrandKitModalActions

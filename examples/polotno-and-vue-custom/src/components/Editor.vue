@@ -12,10 +12,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <link
-    href="https://unpkg.com/@blueprintjs/core@5/lib/css/blueprint.css"
-    rel="stylesheet"
-  />
   <div id="editor"></div>
 </template>
 

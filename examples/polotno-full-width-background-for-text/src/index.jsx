@@ -5,7 +5,7 @@ import { Toolbar } from 'polotno/toolbar/toolbar';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
-import { Button } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 import { observer } from 'mobx-react-lite';
 import { getClientRect } from 'polotno/utils/math';
 
@@ -22,8 +22,7 @@ const page = store.addPage();
 const TextFullWidthBackground = observer(({ element }) => {
   return (
     <Button
-      active={element.custom?.fullWidthBackground}
-      minimal
+      variant={element.custom?.fullWidthBackground ? 'secondary' : 'ghost'}
       onClick={() => {
         element.set({
           custom: {
@@ -104,7 +103,7 @@ store.activePage.addElement({
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

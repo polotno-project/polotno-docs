@@ -8,6 +8,7 @@ import { Workspace } from 'polotno/canvas/workspace';
 import { PagesTimeline } from 'polotno/pages-timeline';
 import { createStore } from 'polotno/model/store';
 import { observer } from 'mobx-react-lite';
+import { Button } from 'polotno/primitives';
 
 import { setAnimationsEnabled } from 'polotno/config';
 setAnimationsEnabled(true);
@@ -38,19 +39,13 @@ const AudioControls = observer(() => {
   return (
     <div style={{ display: 'flex', gap: '8px', marginLeft: 'auto' }}>
       {!hasAudio ? (
-        <button
-          className="bp5-button bp5-minimal"
-          onClick={addSampleAudio}
-        >
+        <Button variant="ghost" onClick={addSampleAudio}>
           Add Audio
-        </button>
+        </Button>
       ) : (
-        <button
-          className="bp5-button bp5-minimal"
-          onClick={removeAllAudio}
-        >
+        <Button variant="ghost" onClick={removeAllAudio}>
           Remove Audio
-        </button>
+        </Button>
       )}
     </div>
   );
@@ -58,7 +53,7 @@ const AudioControls = observer(() => {
 
 export const App = () => {
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} defaultSection="none" />
       </SidePanelWrap>

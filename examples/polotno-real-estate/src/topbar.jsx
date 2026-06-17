@@ -2,14 +2,16 @@ import React from 'react';
 import { observer } from 'mobx-react-lite';
 import {
   Navbar,
-  Alignment,
   Button,
-  Position,
-  Menu,
-  HTMLSelect,
   Popover,
-} from '@blueprintjs/core';
-import { ChevronDown } from '@blueprintjs/icons';
+  PopoverTrigger,
+  PopoverContent,
+  Select,
+  SelectTrigger,
+  SelectContent,
+  SelectItem,
+  SelectValue,
+} from 'polotno/primitives';
 
 const DownloadButton = observer(({ store }) => {
   const [saving, setSaving] = React.useState(false);
@@ -54,47 +56,37 @@ const DownloadButton = observer(({ store }) => {
   };
 
   return (
-    <Popover
-      content={
-        <Menu style={{ minWidth: '200px' }}>
-          <p>File type</p>
-          <HTMLSelect
-            fill
-            onChange={(e) => setType(e.target.value)}
-            value={type}
-          >
-            <option value="png">PNG</option>
-            <option value="jpeg">JPEG</option>
-            <option value="pdf">PDF</option>
-          </HTMLSelect>
-          <Button
-            fill
-            intent="primary"
-            loading={saving}
-            onClick={handleExport}
-            style={{ marginTop: '10px' }}
-          >
-            Download {type.toUpperCase()}
-          </Button>
-        </Menu>
-      }
-      position={Position.BOTTOM_RIGHT}
-    >
-      <Button
-        endIcon={<ChevronDown color="white" />}
-        text="Download"
-        intent="primary"
-        loading={saving}
-      />
+    <Popover>
+      <PopoverTrigger render={<Button disabled={saving}>Download ▾</Button>} />
+      <PopoverContent align="end" style={{ minWidth: '200px' }}>
+        <p>File type</p>
+        <Select value={type} onValueChange={(v) => setType(v)}>
+          <SelectTrigger style={{ width: '100%' }}>
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="png">PNG</SelectItem>
+            <SelectItem value="jpeg">JPEG</SelectItem>
+            <SelectItem value="pdf">PDF</SelectItem>
+          </SelectContent>
+        </Select>
+        <Button
+          disabled={saving}
+          onClick={handleExport}
+          style={{ marginTop: '10px', width: '100%' }}
+        >
+          Download {type.toUpperCase()}
+        </Button>
+      </PopoverContent>
     </Popover>
   );
 });
 
 const Topbar = observer(({ store }) => {
   return (
-    <Navbar className="bp5-dark topbar" style={{ color: 'white' }}>
+    <Navbar className="dark topbar" style={{ color: 'white' }}>
       <div>
-        <Navbar.Group align={Alignment.LEFT}>
+        <Navbar.Group align="left">
           <div
             style={{
               display: 'flex',
@@ -136,7 +128,7 @@ const Topbar = observer(({ store }) => {
             [Demo] Real estate use cases
           </span>
         </Navbar.Group>
-        <Navbar.Group align={Alignment.RIGHT}>
+        <Navbar.Group align="right">
           <DownloadButton store={store} />
         </Navbar.Group>
       </div>

@@ -4,8 +4,8 @@
   "description": "Demo showing how to use Polotno cloud rendering API with various export options",
   "keywords": [],
   "dependencies": {
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react": "^19",
+    "react-dom": "^19"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5",

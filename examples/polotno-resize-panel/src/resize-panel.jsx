@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { observer } from 'mobx-react-lite';
-import { Button, NumericInput, HTMLSelect } from '@blueprintjs/core';
+import {
+  Button,
+  NumericInput,
+  Select,
+  SelectTrigger,
+  SelectContent,
+  SelectItem,
+  SelectValue,
+} from 'polotno/primitives';
 import { pxToUnitRounded, unitToPx } from 'polotno/utils/unit';
 
 const MIN_PX = 10;
@@ -12,22 +20,6 @@ const PRESETS = [
   { label: 'A4', w: 21, h: 29.7, unit: 'cm' },
   { label: 'Letter', w: 8.5, h: 11, unit: 'in' },
 ];
-
-const Num = ({ value, onChange, ...rest }) => {
-  const [val, setVal] = useState(value);
-  useEffect(() => setVal(value), [value]);
-  return (
-    <NumericInput
-      {...rest}
-      value={val}
-      onValueChange={(v) => setVal(v)}
-      onBlur={() => onChange(val)}
-      onKeyDown={(e) => e.key === 'Enter' && onChange(val)}
-      allowNumericCharactersOnly={false}
-      fill
-    />
-  );
-};
 
 export const ResizePanel = observer(({ store }) => {
   const [w, setW] = useState(0);
@@ -74,28 +66,33 @@ export const ResizePanel = observer(({ store }) => {
     <div style={{ padding: 16, overflowY: 'auto', maxHeight: '100%' }}>
       <Row>
         <div style={{ width: 60 }}>Width</div>
-        <Num value={w} onChange={setW} min={1} />
+        <NumericInput value={w} onValueChange={setW} min={1} />
       </Row>
       <Row>
         <div style={{ width: 60 }}>Height</div>
-        <Num value={h} onChange={setH} min={1} />
+        <NumericInput value={h} onValueChange={setH} min={1} />
       </Row>
       <Row>
         <div style={{ width: 60 }}>Units</div>
-        <HTMLSelect
+        <Select
           value={store.unit}
-          options={['px', 'cm', 'in']}
-          onChange={(e) =>
-            store.setUnit({ unit: e.target.value, dpi: store.dpi })
-          }
-          fill
-        />
+          onValueChange={(unit) => store.setUnit({ unit, dpi: store.dpi })}
+        >
+          <SelectTrigger style={{ width: '100%' }}>
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            {['px', 'cm', 'in'].map((u) => (
+              <SelectItem key={u} value={u}>
+                {u}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
       </Row>
       <Button
-        intent="primary"
-        fill
         onClick={() => applyResize()}
-        style={{ marginBottom: 16 }}
+        style={{ marginBottom: 16, width: '100%' }}
       >
         Resize
       </Button>
@@ -104,8 +101,7 @@ export const ResizePanel = observer(({ store }) => {
       {PRESETS.map(({ label, w: pw, h: ph, unit }) => (
         <Button
           key={label}
-          fill
-          style={{ height: 60, marginBottom: 8 }}
+          style={{ height: 60, marginBottom: 8, width: '100%' }}
           onClick={() => {
             store.setUnit({ unit, dpi: store.dpi });
             applyResize(pw, ph);

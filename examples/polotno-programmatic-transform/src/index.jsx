@@ -7,7 +7,7 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel, DEFAULT_SECTIONS, SectionTab } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
-import { NumericInput, FormGroup, Divider, Card, Tag } from '@blueprintjs/core';
+import { NumericInput, Separator } from 'polotno/primitives';
 import MdTransform from '@meronex/icons/md/MdTransform';
 
 // Import Polotno utilities for math operations
@@ -116,11 +116,17 @@ const TransformPanel = observer(({ store }) => {
   if (elements.length === 0) {
     return (
       <div style={{ padding: 16 }}>
-        <Card>
+        <div
+          style={{
+            border: '1px solid var(--pn-border, #e5e5e5)',
+            borderRadius: 8,
+            padding: 12,
+          }}
+        >
           <p style={{ margin: 0, color: '#888' }}>
             Select an element to transform
           </p>
-        </Card>
+        </div>
       </div>
     );
   }
@@ -293,48 +299,46 @@ const TransformPanel = observer(({ store }) => {
         style={{ marginBottom: 12, display: 'flex', gap: 8, flexWrap: 'wrap' }}
       >
         {isMultiple && (
-          <Tag intent="primary" minimal>
+          <span style={{ display: 'inline-block', padding: '2px 8px', borderRadius: 4, fontSize: 12, background: 'var(--pn-secondary, #f0f0f0)' }}>
             {elements.length} elements
-          </Tag>
+          </span>
         )}
         {hasGroup && (
-          <Tag intent="warning" minimal>
+          <span style={{ display: 'inline-block', padding: '2px 8px', borderRadius: 4, fontSize: 12, background: 'var(--pn-secondary, #f0f0f0)' }}>
             Contains group
-          </Tag>
+          </span>
         )}
         {isSingleGroup && (
-          <Tag intent="warning" minimal>
+          <span style={{ display: 'inline-block', padding: '2px 8px', borderRadius: 4, fontSize: 12, background: 'var(--pn-secondary, #f0f0f0)' }}>
             Group ({elements[0].children?.length || 0} children)
-          </Tag>
+          </span>
         )}
       </div>
 
-      <Divider style={{ margin: '12px 0' }} />
+      <Separator style={{ margin: '12px 0' }} />
 
       {/* Position */}
       <h4 style={{ margin: '0 0 12px 0', fontWeight: 600 }}>Position</h4>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-        <FormGroup label="X" style={{ margin: 0 }}>
+        <div style={{ margin: 0 }}>
+          <div style={{ fontSize: 12, marginBottom: 4, fontWeight: 500 }}>X</div>
           <NumericInput
             value={Math.round(x)}
             onValueChange={handleXChange}
-            fill
-            buttonPosition="none"
             style={inputStyle}
           />
-        </FormGroup>
-        <FormGroup label="Y" style={{ margin: 0 }}>
+        </div>
+        <div style={{ margin: 0 }}>
+          <div style={{ fontSize: 12, marginBottom: 4, fontWeight: 500 }}>Y</div>
           <NumericInput
             value={Math.round(y)}
             onValueChange={handleYChange}
-            fill
-            buttonPosition="none"
             style={inputStyle}
           />
-        </FormGroup>
+        </div>
       </div>
 
-      <Divider style={{ margin: '16px 0' }} />
+      <Separator style={{ margin: '16px 0' }} />
 
       {/* Size */}
       <h4 style={{ margin: '0 0 12px 0', fontWeight: 600 }}>Size</h4>
@@ -342,43 +346,40 @@ const TransformPanel = observer(({ store }) => {
         Aspect ratio is locked
       </p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-        <FormGroup label="Width" style={{ margin: 0 }}>
+        <div style={{ margin: 0 }}>
+          <div style={{ fontSize: 12, marginBottom: 4, fontWeight: 500 }}>Width</div>
           <NumericInput
             value={Math.round(width)}
             onValueChange={handleWidthChange}
-            fill
-            buttonPosition="none"
             min={1}
             style={inputStyle}
           />
-        </FormGroup>
-        <FormGroup label="Height" style={{ margin: 0 }}>
+        </div>
+        <div style={{ margin: 0 }}>
+          <div style={{ fontSize: 12, marginBottom: 4, fontWeight: 500 }}>Height</div>
           <NumericInput
             value={Math.round(height)}
             onValueChange={handleHeightChange}
-            fill
-            buttonPosition="none"
             min={1}
             style={inputStyle}
           />
-        </FormGroup>
+        </div>
       </div>
 
-      <Divider style={{ margin: '16px 0' }} />
+      <Separator style={{ margin: '16px 0' }} />
 
       {/* Rotation */}
       <h4 style={{ margin: '0 0 12px 0', fontWeight: 600 }}>Rotation</h4>
-      <FormGroup label="Angle (degrees)" style={{ margin: 0 }}>
+      <div style={{ margin: 0 }}>
+        <div style={{ fontSize: 12, marginBottom: 4, fontWeight: 500 }}>Angle (degrees)</div>
         <NumericInput
           value={Math.round(rotation)}
           onValueChange={handleRotationChange}
-          fill
-          buttonPosition="none"
           min={-360}
           max={360}
           style={inputStyle}
         />
-      </FormGroup>
+      </div>
     </div>
   );
 });
@@ -399,10 +400,7 @@ const sections = [TransformSection, ...DEFAULT_SECTIONS];
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer
-      className="bp5-scope"
-      style={{ width: '100vw', height: '100vh' }}
-    >
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel
           store={store}

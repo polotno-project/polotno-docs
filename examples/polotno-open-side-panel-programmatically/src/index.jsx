@@ -4,7 +4,7 @@ import { autorun } from 'mobx';
 import { observer } from 'mobx-react-lite';
 
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
-import { InputGroup } from '@blueprintjs/core';
+import { Input } from 'polotno/primitives';
 
 import { Workspace } from 'polotno/canvas/workspace';
 import { SidePanel } from 'polotno/side-panel';
@@ -44,7 +44,7 @@ const CustomSection = {
     const text = store.selectedElements[0]?.text;
     return (
       <div>
-        <InputGroup
+        <Input
           value={text}
           onChange={(e) => {
             store.selectedElements[0]?.set({ text: e.target.value });
@@ -71,7 +71,7 @@ export const App = () => {
     });
   }, []);
   return (
-    <PolotnoContainer className="polotno-app-container bp5-scope">
+    <PolotnoContainer className="polotno-app-container">
       <SidePanelWrap>
         <SidePanel store={store} sections={sections} />
       </SidePanelWrap>

@@ -32,7 +32,7 @@ const store = createStore({
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container bp5-scope">
+    <PolotnoContainer className="polotno-app-container">
       <SidePanelWrap>
         <SidePanel
           store={store}

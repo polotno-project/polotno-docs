@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
-import { Button, Position, Tooltip } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 import { templateStore } from './template-store';
 import { getTotalClientRect } from 'polotno/utils/math';
 import { forEveryChild } from 'polotno/model/group-model';
@@ -73,19 +73,12 @@ export const SaveTemplateButton = observer(({ store }) => {
   };
 
   return (
-    <Tooltip
-      content="Save as Template"
-      position={Position.BOTTOM}
+    <Button
+      onClick={handleSaveTemplate}
       disabled={!hasSelection}
+      variant="ghost"
     >
-      <Button
-        icon="floppy-disk"
-        onClick={handleSaveTemplate}
-        disabled={!hasSelection}
-        minimal
-      >
-        Save as Template
-      </Button>
-    </Tooltip>
+      Save as Template
+    </Button>
   );
 });

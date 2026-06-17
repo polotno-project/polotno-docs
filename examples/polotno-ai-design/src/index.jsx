@@ -10,13 +10,7 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
 
-import {
-  Button,
-  Callout,
-  ProgressBar,
-  Spinner,
-  TextArea,
-} from '@blueprintjs/core';
+import { Button, Spinner, Textarea } from 'polotno/primitives';
 
 import AiOutlineExperiment from '@meronex/icons/ai/AiOutlineExperiment';
 
@@ -133,23 +127,18 @@ const AIDesignPanel = observer(({ store }) => {
         Describe what you want and let AI generate a complete design for you.
       </p>
 
-      <TextArea
+      <Textarea
         rows={5}
-        fill
         placeholder="Describe your design... e.g., A modern business card with gradient background"
         value={prompt}
         onChange={(e) => setPrompt(e.target.value)}
         disabled={loading}
-        growVertically={false}
+        style={{ width: '100%' }}
       />
 
       {loading && (
         <div>
-          <ProgressBar
-            intent="primary"
-            value={progress}
-            animate={progress < 0.9}
-          />
+          <progress value={progress} max={1} style={{ width: '100%' }} />
           <p
             style={{
               textAlign: 'center',
@@ -167,43 +156,42 @@ const AIDesignPanel = observer(({ store }) => {
       )}
 
       {!loading && (
-        <Callout icon="time" intent="primary">
+        <div style={{ padding: '10px 12px', borderRadius: 6, fontSize: 13, background: 'rgba(45,114,210,0.1)' }}>
           AI generation can take up to 2 minutes. Please be patient while your
           design is being created.
-        </Callout>
+        </div>
       )}
 
       {error && (
-        <Callout intent="danger" icon="error">
+        <div style={{ padding: '10px 12px', borderRadius: 6, fontSize: 13, background: 'rgba(219,55,55,0.1)' }}>
           {error}
-        </Callout>
+        </div>
       )}
 
       {success && (
-        <Callout intent="success" icon="tick-circle">
+        <div style={{ padding: '10px 12px', borderRadius: 6, fontSize: 13, background: 'rgba(15,153,96,0.1)' }}>
           Design generated successfully!
-        </Callout>
+        </div>
       )}
 
       <Button
-        intent="primary"
-        large
-        fill
+        size="lg"
+        style={{ width: '100%' }}
         disabled={loading || !prompt.trim()}
         onClick={handleGenerate}
-        icon={loading ? <Spinner size={18} /> : 'clean'}
-        text={loading ? 'Generating...' : 'Generate Design'}
-      />
+      >
+        {loading && <Spinner size={18} />}
+        {loading ? 'Generating...' : 'Generate Design'}
+      </Button>
 
       {loading && (
         <Button
-          intent="danger"
-          outlined
-          fill
+          variant="outline"
+          style={{ width: '100%' }}
           onClick={handleCancel}
-          icon="cross"
-          text="Cancel request"
-        />
+        >
+          Cancel request
+        </Button>
       )}
     </div>
   );
@@ -222,7 +210,7 @@ const AIDesignSection = {
 const sections = [AIDesignSection, ...DEFAULT_SECTIONS];
 
 export const App = () => (
-  <PolotnoContainer className="bp5-scope">
+  <PolotnoContainer>
     <SidePanelWrap>
       <SidePanel store={store} sections={sections} defaultSection="ai-design" />
     </SidePanelWrap>

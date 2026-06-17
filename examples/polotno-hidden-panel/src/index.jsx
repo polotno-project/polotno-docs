@@ -10,7 +10,7 @@ import { Toolbar } from 'polotno/toolbar/toolbar';
 import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
-import { InputGroup } from '@blueprintjs/core';
+import { Input } from 'polotno/primitives';
 
 const store = createStore({
   // this is a demo key just for that project
@@ -33,7 +33,7 @@ const CustomSection = {
     const text = store.selectedElements[0]?.text;
     return (
       <div>
-        <InputGroup
+        <Input
           value={text}
           onChange={(e) => {
             store.selectedElements[0].set({ text: e.target.value });
@@ -63,7 +63,7 @@ reaction(
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container bp5-scope">
+    <PolotnoContainer className="polotno-app-container">
       <SidePanelWrap>
         <SidePanel store={store} sections={sections} />
       </SidePanelWrap>

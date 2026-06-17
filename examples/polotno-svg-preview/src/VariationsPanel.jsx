@@ -4,7 +4,7 @@ import { SectionTab } from 'polotno/side-panel';
 import { jsonToSVG } from 'polotno/utils/to-svg';
 import { svgToURL } from 'polotno/utils/svg';
 import FaShapes from '@meronex/icons/fa/FaShapes';
-import { Button } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 import { ImagesGrid } from 'polotno/side-panel/images-grid';
 
 const createVariation = (json) => {
@@ -48,11 +48,9 @@ export const VariationsSection = {
     return (
       <div style={{ padding: 16, height: '100%' }}>
         <Button
-          intent="primary"
-          loading={loading}
+          disabled={loading}
           onClick={generateVariations}
-          style={{ marginBottom: 16 }}
-          fill
+          style={{ marginBottom: 16, width: '100%' }}
         >
           Generate Variations
         </Button>

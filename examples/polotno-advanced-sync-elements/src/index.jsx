@@ -6,7 +6,7 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
-import { Button } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 import { nanoid } from 'nanoid';
 import { setupSync } from './sync';
 
@@ -42,7 +42,7 @@ store.pages[0].select();
 const ApplyToAllPages = ({ store, element, elements }) => {
   return (
     <Button
-      minimal
+      variant="ghost"
       onClick={() => {
         elements.forEach((element) => {
           // first let's remove all "copies" of that element in other pages
@@ -93,7 +93,7 @@ const ApplyToAllPages = ({ store, element, elements }) => {
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

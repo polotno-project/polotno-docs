@@ -9,9 +9,9 @@
   "description": "Workspace for Polotno example demos",
   "dependencies": {
     "mobx-react-lite": "^4.0.0",
-    "polotno": "2.41.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "polotno": "^4.0.2",
+    "react": "^19",
+    "react-dom": "^19"
   },
   "pnpm": {
     "overrides": {

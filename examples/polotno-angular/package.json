@@ -22,16 +22,16 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/router": "^18.2.7",
     "mobx-angular": "^4.8.0",
-    "polotno": "2.41.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "polotno": "^4.0.2",
+    "react": "^19",
+    "react-dom": "^19",
     "rxjs": "7.8.1"
   },
   "devDependencies": {
     "@angular/build": "^18.0.1",
     "@angular/cli": "^18.0.0",
     "@angular/compiler-cli": "^18.0.0",
-    "@types/react-dom": "^18.3.0",
+    "@types/react-dom": "^19",
     "typescript": "~5.5.0"
   },
   "keywords": []

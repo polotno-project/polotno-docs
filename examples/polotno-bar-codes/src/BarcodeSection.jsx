@@ -3,7 +3,7 @@ import { observer } from 'mobx-react-lite';
 import { SectionTab } from 'polotno/side-panel';
 import * as svg from 'polotno/utils/svg';
 import AiOutlineBarcode from '@meronex/icons/ai/AiOutlineBarcode';
-import { Button, InputGroup } from '@blueprintjs/core';
+import { Button, Input } from 'polotno/primitives';
 import JsBarcode from 'jsbarcode';
 
 // create svg image for QR code for input text
@@ -62,7 +62,7 @@ export const BarcodeSection = {
       <div>
         {isBarcode && <p>Update select bar code:</p>}
         {!isBarcode && <p>Create new bar code:</p>}
-        <InputGroup
+        <Input
           onChange={(e) => {
             setVal(e.target.value);
           }}

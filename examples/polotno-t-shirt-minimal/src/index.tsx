@@ -11,9 +11,15 @@ import { Tooltip } from 'polotno/canvas/tooltip';
 import { ImagesGrid } from 'polotno/side-panel/images-grid';
 import { useInfiniteAPI } from 'polotno/utils/use-api';
 import { getImageSize } from 'polotno/utils/image';
-import { Button, Menu, MenuItem, Popover } from '@blueprintjs/core';
+import {
+  Button,
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from 'polotno/primitives';
 
-import '@blueprintjs/core/lib/css/blueprint.css';
+import 'polotno/ui.css';
 
 import { createStore } from 'polotno/model/store';
 
@@ -221,13 +227,14 @@ const ImageReplaceButton = observer(({ element }: { element: any }) => {
   return (
     <>
       <Button
-        text="Replace Image"
+        variant="ghost"
+        size="sm"
         onClick={() => {
           fileInputRef.current?.click();
         }}
-        minimal
-        small
-      />
+      >
+        Replace Image
+      </Button>
       <input
         ref={fileInputRef}
         type="file"
@@ -322,26 +329,26 @@ const CustomDownloadButton = observer(({ store }: { store: any }) => {
   }, [store]);
 
   return (
-    <Popover
-      minimal
-      disabled={isProcessing}
-      content={
-        <Menu>
-          <MenuItem
-            text="Download preview"
-            onClick={handleDownloadPreview}
-            disabled={isProcessing}
-          />
-          <MenuItem
-            text="Download print"
-            onClick={handleDownloadPrint}
-            disabled={isProcessing}
-          />
-        </Menu>
-      }
-    >
-      <Button text="Download" loading={isProcessing} minimal />
-    </Popover>
+    <DropdownMenu>
+      <DropdownMenuTrigger
+        render={
+          <Button variant="ghost" disabled={isProcessing}>
+            Download
+          </Button>
+        }
+      />
+      <DropdownMenuContent>
+        <DropdownMenuItem
+          onClick={handleDownloadPreview}
+          disabled={isProcessing}
+        >
+          Download preview
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={handleDownloadPrint} disabled={isProcessing}>
+          Download print
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 });
 
@@ -426,7 +433,7 @@ const PageControls = observer(
         }}
       >
         <Button
-          active={store.pages.indexOf(store.activePage) === 0}
+          variant={store.pages.indexOf(store.activePage) === 0 ? 'secondary' : 'ghost'}
           onClick={() => {
             store.selectPage(store.pages[0].id);
           }}
@@ -434,7 +441,7 @@ const PageControls = observer(
           Front
         </Button>
         <Button
-          active={store.pages.indexOf(store.activePage) === 1}
+          variant={store.pages.indexOf(store.activePage) === 1 ? 'secondary' : 'ghost'}
           onClick={() => {
             store.selectPage(store.pages[1].id);
           }}

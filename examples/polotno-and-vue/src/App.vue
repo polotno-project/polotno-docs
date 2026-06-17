@@ -1,9 +1,5 @@
 <template>
   <div>
-    <link
-      href="https://unpkg.com/@blueprintjs/core@5/lib/css/blueprint.css"
-      rel="stylesheet"
-    />
     <!-- <div v-text="store.pages[0].children.length"></div> -->
     <div id="polotno"></div>
   </div>

@@ -19,37 +19,32 @@
         height: 100vh;
       }
 
-      /* overwrite colors for side-panel tabs */
-      .bp5-dark .polotno-side-tabs-container .polotno-side-panel-tab:hover,
-      .bp5-dark .polotno-side-tabs-container .polotno-side-panel-tab.active {
-        background-color: #c8c52d;
-        color: white;
+      /* layout: configurator bar on top, editor fills the rest.
+         The bar and its controls are Polotno primitives, themed by the
+         CSS variables we set on :root (see /docs/theme-and-ui-styles). */
+      .app {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
       }
-
-      /* change hover style of all buttons */
-      .bp5-dark .bp5-button:not([class*='bp5-intent-']):hover {
-        background-color: #c8c52d;
+      .editor-wrap {
+        position: relative;
+        flex: 1;
+        min-height: 0;
       }
-
-      /* change main color of all active buttons */
-      .bp5-dark
-        .polotno-app-container
-        .bp5-button:not([class*='bp5-intent-'])
-        .bp5-icon:not([class*='bp5-intent-']) {
-        color: white;
-      }
-      .bp5-dark .polotno-app-container .bp5-button.bp5-minimal.bp5-disabled {
-        color: rgba(171, 179, 191, 0.6);
+      .editor-wrap .polotno-app-container {
+        width: 100%;
+        height: 100%;
       }
     </style>
-    <title>Polotno demo</title>
+    <title>Polotno theme configurator</title>
     <link
-    href="https://unpkg.com/polotno@^2/blueprint.polotno.css"
+    href="https://unpkg.com/polotno@4/ui.css"
     rel="stylesheet"
   />
 </head>
 
-  <body class="bp5-dark">
+  <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <div id="root"></div>
       <script type="module" src="/src/index.jsx"></script>

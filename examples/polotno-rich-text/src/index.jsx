@@ -14,7 +14,7 @@ import {
   createQuill,
   setQuillContent,
 } from 'polotno/canvas/html-element';
-import { Button } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 
 setRichTextEnabled(true);
 
@@ -58,15 +58,13 @@ const ToggleButton = observer(
     element,
     disableGlobal,
     enableGlobal,
-    icon,
+    text,
     ...props
   }) => {
     return (
       <Button
         {...props}
-        minimal
-        icon={icon}
-        active={active}
+        variant={active ? 'secondary' : 'ghost'}
         onMouseDown={(e) => {
           e.preventDefault();
         }}
@@ -102,7 +100,9 @@ const ToggleButton = observer(
             enableGlobal();
           }
         }}
-      />
+      >
+        {text}
+      </Button>
     );
   }
 );
@@ -129,7 +129,7 @@ export const TextBold = observer(({ element, store }) => {
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

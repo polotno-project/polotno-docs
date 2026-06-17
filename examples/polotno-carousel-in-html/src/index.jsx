@@ -7,7 +7,7 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
-import { Button } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 
 import { createStore } from 'polotno/model/store';
 import { CarouselSection } from './CarouselPanel';
@@ -42,12 +42,9 @@ const ActionControls = observer(({ store }) => {
   };
 
   return (
-    <Button
-      text="Download"
-      onClick={handleDownload}
-      loading={isLoading}
-      minimal
-    />
+    <Button variant="ghost" disabled={isLoading} onClick={handleDownload}>
+      Download
+    </Button>
   );
 });
 
@@ -56,7 +53,7 @@ export const App = ({ store }) => {
   const sections = [CarouselSection, ...DEFAULT_SECTIONS];
 
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel
           store={store}

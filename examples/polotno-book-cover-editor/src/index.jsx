@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 
@@ -51,7 +51,7 @@ store.activePage.addElement({
 
 const App = ({ store }) => {
   return (
-    <PolotnoContainer className="polotno-app-container bp5-scope">
+    <PolotnoContainer className="polotno-app-container">
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>
@@ -64,4 +64,4 @@ const App = ({ store }) => {
   );
 };
 
-ReactDOM.render(<App store={store} />, document.getElementById('root'));
+ReactDOM.createRoot(document.getElementById('root')).render(<App store={store} />);

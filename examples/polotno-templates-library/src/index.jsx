@@ -28,7 +28,7 @@ const sections = [TemplatesSection, ...DEFAULT_SECTIONS];
 
 export const App = () => {
   return (
-    <PolotnoContainer className="bp5-scope">
+    <PolotnoContainer>
       <SidePanelWrap>
         <SidePanel
           store={store}

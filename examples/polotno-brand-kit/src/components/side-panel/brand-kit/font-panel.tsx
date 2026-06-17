@@ -2,17 +2,14 @@ import React from 'react';
 import {observer} from 'mobx-react-lite';
 import {
   Button,
-  Checkbox,
-  FormGroup,
-  InputGroup,
-  Intent,
-  Menu,
-  MenuDivider,
-  MenuItem,
+  Switch,
+  Input,
   NumericInput,
-  Popover
-} from '@blueprintjs/core';
-import {CaretDown, Search} from "@blueprintjs/icons";
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  Separator,
+} from 'polotno/primitives';
 import {Typography, useBrandKit} from './context';
 import {useInfiniteAPI} from 'polotno/utils/use-api';
 import {StoreType} from 'polotno/model/store';
@@ -30,7 +27,7 @@ import {FixedSizeList} from 'react-window';
 const Image = styled('img')`
     height: 20px;
 
-    .bp5-dark & {
+    .dark & {
         filter: invert(1);
     }
 `;
@@ -51,7 +48,7 @@ const FontItem = ({fontFamily, handleClick, modifiers, store, isCustom}) => {
   if (fontFamily === '_divider') {
     return (
         <div style={{paddingTop: '10px'}}>
-          <MenuDivider/>
+          <Separator/>
         </div>
     );
   }
@@ -66,15 +63,19 @@ const FontItem = ({fontFamily, handleClick, modifiers, store, isCustom}) => {
       fontFamily
   );
   return (
-      <MenuItem
-          text={inner}
-          active={modifiers.active}
-          disabled={modifiers.disabled}
-          onClick={handleClick}
+      <div
+          onClick={modifiers.disabled ? undefined : handleClick}
           style={{
             fontFamily: '"' + fontFamily + '"',
+            padding: '6px 10px',
+            cursor: modifiers.disabled ? 'default' : 'pointer',
+            borderRadius: 4,
+            background: modifiers.active ? 'var(--pn-accent, #eee)' : 'transparent',
+            opacity: modifiers.disabled ? 0.5 : 1,
           }}
-      ></MenuItem>
+      >
+        {inner}
+      </div>
   );
 };
 
@@ -86,9 +87,8 @@ const SearchInput = ({onChange, defaultValue}) => {
     }
   }, []);
   return (
-      <InputGroup
-          leftIcon={<Search/>}
-          inputRef={ref}
+      <Input
+          ref={ref}
           defaultValue={defaultValue}
           onChange={(e) => onChange(e.target.value)}
       />
@@ -109,14 +109,14 @@ const FontMenu = ({
   });
   
   return (
-      <Popover
-          content={
+      <Popover>
+        <PopoverContent>
             <div>
               <SearchInput onChange={(val) => setQuery(val)} defaultValue={query}/>
               <div style={{paddingTop: '5px'}}>
                 <FixedSizeList
                     innerElementType={React.forwardRef((props, ref) => (
-                        <Menu ref={ref} {...props} />
+                        <div ref={ref} {...props} />
                     ))}
                     height={Math.min(400, filteredFonts.length * 30) + 10}
                     width={210}
@@ -143,20 +143,22 @@ const FontMenu = ({
                 />
               </div>
             </div>
+        </PopoverContent>
+        <PopoverTrigger
+          render={
+            <Button
+                variant="ghost"
+                style={{
+                  marginRight: '5px',
+                  fontFamily: '"' + activeFont + '"',
+                  overflow: 'hidden',
+                  whiteSpace: 'nowrap',
+                  maxHeight: '30px',
+                }}
+            >
+              {activeFontLabel} ▾
+            </Button>
           }
-      >
-        <Button
-            // show just first word of the name, otherwise it may look ugly
-            text={activeFontLabel}
-            rightIcon={<CaretDown/>}
-            minimal
-            style={{
-              marginRight: '5px',
-              fontFamily: '"' + activeFont + '"',
-              overflow: 'hidden',
-              whiteSpace: 'nowrap',
-              maxHeight: '30px',
-            }}
         />
       </Popover>
   );
@@ -185,9 +187,17 @@ const FontPreview = styled(ItemPreview)<{
     text-decoration: ${props => `${props.underline ? 'underline' : ''} ${props.strikethrough ? 'line-through' : ''}`.trim()};
 `;
 
-const FontFormGroup = styled(FormGroup)`
-    margin-bottom: 15px;
-`;
+const FontFormGroup = ({ label, labelFor, style, children }: any) => (
+  <div style={{ marginBottom: 15, ...style }}>
+    <label
+      htmlFor={labelFor}
+      style={{ display: 'block', marginBottom: 4, fontSize: 12 }}
+    >
+      {label}
+    </label>
+    {children}
+  </div>
+);
 
 interface FontPanelProps {
   store: StoreType;
@@ -422,24 +432,25 @@ export const FontPanel = observer(({store, columns = 3}: FontPanelProps) => {
         </ItemInfo>
         <ItemActions>
           <Button
-              icon="edit"
-              minimal
-              small
+              variant="ghost"
+              size="icon-sm"
               onClick={(e) => {
                 e.stopPropagation();
                 handleEditFont(font);
               }}
-          />
+          >
+              ✎
+          </Button>
           <Button
-              icon="trash"
-              minimal
-              small
-              intent={Intent.DANGER}
+              variant="ghost"
+              size="icon-sm"
               onClick={(e) => {
                 e.stopPropagation();
                 handleDeleteFont(font);
               }}
-          />
+          >
+              🗑
+          </Button>
         </ItemActions>
       </GridItem>
   );
@@ -470,7 +481,7 @@ export const FontPanel = observer(({store, columns = 3}: FontPanelProps) => {
             width="500px"
         >
           <FontFormGroup label={t('brandKit.fontName')} labelFor="font-name">
-            <InputGroup
+            <Input
                 id="font-name"
                 value={formState.name}
                 onChange={(e) => setFormState({...formState, name: e.target.value})}
@@ -494,8 +505,6 @@ export const FontPanel = observer(({store, columns = 3}: FontPanelProps) => {
                   onValueChange={(value) => setFormState({...formState, fontSize: value || 16})}
                   min={8}
                   max={200}
-                  stepSize={1}
-                  fill
               />
             </FontFormGroup>
           </div>
@@ -507,32 +516,38 @@ export const FontPanel = observer(({store, columns = 3}: FontPanelProps) => {
                 onValueChange={(value) => setFormState({...formState, lineHeight: value || 1.2})}
                 min={0.5}
                 max={3}
-                stepSize={0.1}
-                fill
             />
           </FontFormGroup>
           
           <div style={{display: 'flex', gap: '20px', flexWrap: 'wrap'}}>
-            <Checkbox
-                checked={formState.bold}
-                onChange={(e) => setFormState({...formState, bold: e.currentTarget.checked})}
-                label={t('brandKit.bold')}
-            />
-            <Checkbox
-                checked={formState.italic}
-                onChange={(e) => setFormState({...formState, italic: e.currentTarget.checked})}
-                label={t('brandKit.italic')}
-            />
-            <Checkbox
-                checked={formState.underline}
-                onChange={(e) => setFormState({...formState, underline: e.currentTarget.checked})}
-                label={t('brandKit.underline')}
-            />
-            <Checkbox
-                checked={formState.strikethrough}
-                onChange={(e) => setFormState({...formState, strikethrough: e.currentTarget.checked})}
-                label={t('brandKit.strikethrough')}
-            />
+            <label style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <Switch
+                  checked={formState.bold}
+                  onCheckedChange={(checked) => setFormState({...formState, bold: checked})}
+              />
+              {t('brandKit.bold')}
+            </label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <Switch
+                  checked={formState.italic}
+                  onCheckedChange={(checked) => setFormState({...formState, italic: checked})}
+              />
+              {t('brandKit.italic')}
+            </label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <Switch
+                  checked={formState.underline}
+                  onCheckedChange={(checked) => setFormState({...formState, underline: checked})}
+              />
+              {t('brandKit.underline')}
+            </label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <Switch
+                  checked={formState.strikethrough}
+                  onCheckedChange={(checked) => setFormState({...formState, strikethrough: checked})}
+              />
+              {t('brandKit.strikethrough')}
+            </label>
           </div>
           
           {/* Font Preview */}

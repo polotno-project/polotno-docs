@@ -1,4 +1,10 @@
-import { Button, Dialog, Tooltip } from '@blueprintjs/core';
+import {
+  Button,
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from 'polotno/primitives';
 import * as svg from 'polotno/utils/svg';
 import React from 'react';
 import { observer } from 'mobx-react-lite';
@@ -29,14 +35,13 @@ const SimpleTableEditor = ({ table, onChange }) => {
 
   return (
     <div>
-      <table className="bp4-html-table" style={{ width: '100%', marginTop: 8 }}>
+      <table style={{ width: '100%', marginTop: 8 }}>
         <thead>
           <tr>
             {data[0]?.map((cell, j) => (
               <th key={j}>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <input
-                    className="bp4-input"
                     value={cell}
                     onChange={(e) => setCell(0, j, e.target.value)}
                     style={{
@@ -46,24 +51,26 @@ const SimpleTableEditor = ({ table, onChange }) => {
                     }}
                   />
                   <Button
-                    minimal
-                    small
-                    icon="cross"
+                    variant="ghost"
+                    size="icon-sm"
                     style={{ marginBottom: 0 }}
                     onClick={() => removeCol(j)}
                     title="Remove column"
-                  />
+                  >
+                    ✕
+                  </Button>
                 </div>
               </th>
             ))}
             <th>
               <Button
-                small
-                icon="add"
+                size="sm"
                 onClick={addCol}
                 style={{ marginLeft: 4 }}
                 title="Add column"
-              />
+              >
+                ＋
+              </Button>
             </th>
           </tr>
         </thead>
@@ -73,7 +80,6 @@ const SimpleTableEditor = ({ table, onChange }) => {
               {row.map((cell, j) => (
                 <td key={j}>
                   <input
-                    className="bp4-input"
                     value={cell}
                     onChange={(e) => setCell(i + 1, j, e.target.value)}
                     style={{ width: '100%' }}
@@ -82,19 +88,20 @@ const SimpleTableEditor = ({ table, onChange }) => {
               ))}
               <td>
                 <Button
-                  minimal
-                  small
-                  icon="cross"
+                  variant="ghost"
+                  size="icon-sm"
                   onClick={() => removeRow(i + 1)}
                   title="Remove row"
-                />
+                >
+                  ✕
+                </Button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
       <div style={{ marginTop: 8 }}>
-        <Button small icon="add" onClick={addRow} title="Add row">
+        <Button size="sm" onClick={addRow} title="Add row">
           Add Row
         </Button>
       </div>
@@ -157,21 +164,17 @@ export const SvgEditTableButton = observer(({ store, element }) => {
   const table = element.custom.table;
   return (
     <>
-      <Tooltip content="Edit table">
-        <Button minimal onClick={() => setIsOpen(true)}>
-          Edit Table
-        </Button>
-      </Tooltip>
-      <Dialog
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
-        title="Edit Table"
-        style={{ width: 800, maxWidth: '90vw' }}
-        dialogBodyProps={{ style: { padding: 0 } }}
-      >
-        <div
-          style={{ width: '100%', height: '60vh', minHeight: 300, padding: 24 }}
-        >
+      <Button variant="ghost" onClick={() => setIsOpen(true)}>
+        Edit Table
+      </Button>
+      <Dialog open={isOpen} onOpenChange={setIsOpen}>
+        <DialogContent style={{ width: 800, maxWidth: '90vw' }}>
+          <DialogHeader>
+            <DialogTitle>Edit Table</DialogTitle>
+          </DialogHeader>
+          <div
+            style={{ width: '100%', height: '60vh', minHeight: 300, padding: 24 }}
+          >
           <SimpleTableEditor
             table={table}
             onChange={(newTable) => {
@@ -186,7 +189,8 @@ export const SvgEditTableButton = observer(({ store, element }) => {
               });
             }}
           />
-        </div>
+          </div>
+        </DialogContent>
       </Dialog>
     </>
   );

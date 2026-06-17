@@ -4,11 +4,10 @@
   "description": "Demo showing how to export Polotno designs as interactive HTML carousels",
   "keywords": [],
   "dependencies": {
-    "@blueprintjs/core": "^5.0.0",
     "mobx-react-lite": "^4.1.1",
-    "polotno": "2.41.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "polotno": "^4.0.2",
+    "react": "^19",
+    "react-dom": "^19"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5",

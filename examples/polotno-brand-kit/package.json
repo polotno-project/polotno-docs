@@ -4,13 +4,11 @@
   "description": "Demo showing brand kit side panel in Polotno editor",
   "keywords": [],
   "dependencies": {
-    "@blueprintjs/core": "^5",
-    "@blueprintjs/icons": "^5",
     "konva": "^9",
-    "mobx-react-lite": "^3",
-    "polotno": "2.41.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "mobx-react-lite": "^4",
+    "polotno": "^4.0.2",
+    "react": "^19",
+    "react-dom": "^19",
     "react-window": "^1",
     "swr": "^2"
   },

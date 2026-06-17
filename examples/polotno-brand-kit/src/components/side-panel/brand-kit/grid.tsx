@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'polotno/utils/styled';
+import { Spinner } from 'polotno/primitives';
 
 const GridContainer = styled('div')<{ columns?: number }>`
     display: grid;
@@ -98,14 +99,7 @@ export const Grid = <T extends { id: number | string }>(
       
       {isLoadingItems && (
         <LoadingIndicator>
-          <div className="bp5-spinner bp5-small">
-            <svg viewBox="0 0 100 100">
-              <path className="bp5-spinner-track"
-                    d="M 50,50 m 0,-44.5 a 44.5,44.5 0 1 1 0,89 a 44.5,44.5 0 1 1 0,-89"></path>
-              <path className="bp5-spinner-head"
-                    d="M 50,50 m 0,-44.5 a 44.5,44.5 0 1 1 0,89 a 44.5,44.5 0 1 1 0,-89"></path>
-            </svg>
-          </div>
+          <Spinner />
         </LoadingIndicator>
       )}
       

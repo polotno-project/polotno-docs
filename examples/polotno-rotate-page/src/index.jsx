@@ -6,7 +6,7 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
-import { Button } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 
 import { createStore } from 'polotno/model/store';
 
@@ -30,7 +30,7 @@ fetch(
 const PageRotate = ({ store }) => {
   return (
     <Button
-      minimal
+      variant="ghost"
       onClick={() => {
         // 1. swap page dimensions
         const [oldW, oldH] = [store.width, store.height];
@@ -60,7 +60,7 @@ const PageRotate = ({ store }) => {
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

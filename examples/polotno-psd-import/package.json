@@ -1,0 +1,23 @@
+{
+  "name": "@polotno-docs/polotno-psd-import",
+  "version": "1.0.0",
+  "description": "Demo of PSD import into Polotno editor",
+  "keywords": [],
+  "dependencies": {
+    "@polotno/psd-import": "^0.0.2",
+    "polotno": "^4.0.2",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Button } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 import { PolotnoContainer, WorkspaceWrap } from 'polotno';
 import { Workspace } from 'polotno/canvas/workspace';
 import { Toolbar } from 'polotno/toolbar/toolbar';
@@ -26,7 +26,6 @@ const ActionControls1 = ({ store }) => {
     <div>
       <DownloadButton store={store} />
       <Button
-        intent="primary"
         onClick={() => {
           alert('Saving');
         }}
@@ -44,12 +43,12 @@ const ActionControls2 = ({ store }) => {
         onClick={() => {
           store.saveAsImage({ pixelRatio: 0.2 });
         }}
-        minimal
+        variant="ghost"
       >
         Download Preview
       </Button>
       <Button
-        minimal
+        variant="ghost"
         onClick={() => {
           alert('Save clicked...');
         }}
@@ -62,7 +61,7 @@ const ActionControls2 = ({ store }) => {
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container bp5-scope">
+    <PolotnoContainer className="polotno-app-container">
       <WorkspaceWrap>
         {/* by default no action controls */}
         <Toolbar store={store} />

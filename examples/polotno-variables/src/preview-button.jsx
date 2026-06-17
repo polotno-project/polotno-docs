@@ -1,5 +1,13 @@
 import React from 'react';
-import { Button, Classes, Dialog, InputGroup } from '@blueprintjs/core';
+import {
+  Button,
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogFooter,
+  Input,
+} from 'polotno/primitives';
 
 // this is a demo key just for that project
 // (!) please don't use it in your projects
@@ -62,14 +70,17 @@ const ExportModal = ({ isOpen, store, onClose }) => {
 
   return (
     <Dialog
-      icon="info-sign"
-      onClose={onClose}
-      title="Generate Previews"
-      isOpen={isOpen}
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!open) onClose();
+      }}
     >
-      <div className={Classes.DIALOG_BODY}>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Generate Previews</DialogTitle>
+        </DialogHeader>
         List of names to generate previews:
-        <InputGroup
+        <Input
           value={input}
           onChange={(e) => {
             setInput(e.target.value);
@@ -84,15 +95,15 @@ const ExportModal = ({ isOpen, store, onClose }) => {
             />
           ))}
         </div>
-      </div>
-      <div className={Classes.DIALOG_FOOTER}>
-        <div className={Classes.DIALOG_FOOTER_ACTIONS}>
-          <Button onClick={onClose}>Close</Button>
-          <Button onClick={handleGenerate} intent="primary" loading={loading}>
+        <DialogFooter>
+          <Button variant="outline" onClick={onClose}>
+            Close
+          </Button>
+          <Button onClick={handleGenerate} disabled={loading}>
             Generate
           </Button>
-        </div>
-      </div>
+        </DialogFooter>
+      </DialogContent>
     </Dialog>
   );
 };
@@ -102,7 +113,6 @@ export const PreviewButton = ({ store }) => {
   return (
     <>
       <Button
-        intent="primary"
         onClick={() => {
           setModalVisible(true);
         }}

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
+import { Button } from 'polotno/primitives';
 import { Toolbar } from 'polotno/toolbar/toolbar';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
@@ -137,7 +138,7 @@ async function exportToVideo() {
 
 export const App = () => {
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} defaultSection="" />
       </SidePanelWrap>
@@ -147,13 +148,13 @@ export const App = () => {
           downloadButtonEnabled
           components={{
             ActionControls: () => (
-              <button
-                className="bp5-button bp5-minimal"
+              <Button
+                variant="ghost"
                 onClick={exportToVideo}
                 style={{ marginLeft: 'auto' }}
               >
                 Export to Video
-              </button>
+              </Button>
             ),
           }}
         />

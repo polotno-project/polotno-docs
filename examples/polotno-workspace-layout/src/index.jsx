@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Workspace } from 'polotno/canvas/workspace';
 import { createStore } from 'polotno/model/store';
-import { Button, ButtonGroup, Navbar, NavbarGroup, NavbarHeading } from '@blueprintjs/core';
+import { Button, ButtonGroup, Navbar, NavbarGroup } from 'polotno/primitives';
 
 const store = createStore({
   key: 'nFA5H9elEytDyPyvKL7T',
@@ -51,14 +51,14 @@ export const App = () => {
     <div style={{ width: '100vw', height: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Navbar>
         <NavbarGroup>
-          <NavbarHeading>Workspace layout</NavbarHeading>
+          <div style={{ fontWeight: 600, padding: '0 8px' }}>Workspace layout</div>
         </NavbarGroup>
         <NavbarGroup align="right">
           <ButtonGroup>
-            <Button active={layout === 'vertical'} onClick={() => setLayout('vertical')}>
+            <Button variant={layout === 'vertical' ? 'secondary' : 'ghost'} onClick={() => setLayout('vertical')}>
               Vertical
             </Button>
-            <Button active={layout === 'horizontal'} onClick={() => setLayout('horizontal')}>
+            <Button variant={layout === 'horizontal' ? 'secondary' : 'ghost'} onClick={() => setLayout('horizontal')}>
               Horizontal
             </Button>
           </ButtonGroup>

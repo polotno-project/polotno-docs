@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
-import { Button, Spinner, TextArea } from '@blueprintjs/core';
+import { Button, Spinner, Textarea } from 'polotno/primitives';
 import { SectionTab } from 'polotno/side-panel';
 import { getKey } from 'polotno/utils/validate-key';
 import { getImageSize, getCrop } from 'polotno/utils/image';
@@ -160,8 +160,7 @@ const DrillDownPanel = observer(({ store, tool, onBack, onClose }) => {
         ) : (
           <div style={{ marginBottom: '12px' }}>
             <label>Custom prompt</label>
-            <TextArea
-              fill
+            <Textarea
               rows={3}
               value={customPrompt}
               onChange={(e) => setCustomPrompt(e.target.value)}
@@ -200,7 +199,6 @@ const DrillDownPanel = observer(({ store, tool, onBack, onClose }) => {
         <Button
           className="run-button"
           onClick={handleRun}
-          loading={loading}
           disabled={loading}
         >
           Run
@@ -298,21 +296,21 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
       <div className="button-row">
         <Button
           className="tool-button"
-          small
+          size="sm"
           onClick={() => store.openSidePanel('effects')}
         >
           Effects
         </Button>
         <Button
           className="tool-button"
-          small
+          size="sm"
           onClick={() => store.openSidePanel('animation')}
         >
           Animate
         </Button>
         <Button
           className="tool-button"
-          small
+          size="sm"
           onClick={() => store.openSidePanel('image-clip')}
         >
           Apply mask
@@ -324,8 +322,8 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
       <div className="button-row">
         <Button
           className="tool-button"
-          small
-          loading={processingAction === 'remove-background'}
+          size="sm"
+          disabled={processingAction === 'remove-background'}
           onClick={() => handleAiTool('remove-background')}
         >
           Remove background
@@ -334,24 +332,24 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
       <div className="button-row">
         <Button
           className="tool-button"
-          small
-          loading={processingAction === 'extend'}
+          size="sm"
+          disabled={processingAction === 'extend'}
           onClick={() => handleAiTool('extend')}
         >
           Extend
         </Button>
         <Button
           className="tool-button"
-          small
-          loading={processingAction === 'upscale'}
+          size="sm"
+          disabled={processingAction === 'upscale'}
           onClick={() => handleAiTool('upscale')}
         >
           Upscale
         </Button>
         <Button
           className="tool-button"
-          small
-          loading={processingAction === 'enhance'}
+          size="sm"
+          disabled={processingAction === 'enhance'}
           onClick={() => handleAiTool('enhance')}
         >
           Enhance
@@ -364,7 +362,7 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
           <Button
             key={tool.id}
             className="tool-button"
-            small
+            size="sm"
             onClick={() => onSelectTool(tool)}
           >
             {tool.label}
@@ -376,7 +374,7 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
           <Button
             key={tool.id}
             className="tool-button"
-            small
+            size="sm"
             onClick={() => onSelectTool(tool)}
           >
             {tool.label}
@@ -388,7 +386,7 @@ const EditImageMainPanel = observer(({ store, onSelectTool }) => {
           <Button
             key={tool.id}
             className="tool-button"
-            small
+            size="sm"
             onClick={() => onSelectTool(tool)}
           >
             {tool.label}

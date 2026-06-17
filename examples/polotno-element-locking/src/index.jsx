@@ -6,7 +6,7 @@ import { Toolbar } from 'polotno/toolbar/toolbar';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel, SectionTab, DEFAULT_SECTIONS } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
-import { Button, Checkbox } from '@blueprintjs/core';
+import { Button, Switch } from 'polotno/primitives';
 import { createStore } from 'polotno/model/store';
 
 const store = createStore({
@@ -50,42 +50,63 @@ const LockPanel = observer(({ store }) => {
 
   return (
     <div style={{ padding: 10 }}>
-      <Checkbox
-        checked={el.selectable}
-        onChange={() => toggle('selectable')}
-        label="Selectable"
-      />
-      <Checkbox
-        checked={el.draggable}
-        onChange={() => toggle('draggable')}
-        label="Draggable"
-      />
-      <Checkbox
-        checked={el.resizable}
-        onChange={() => toggle('resizable')}
-        label="Resizable"
-      />
-      <Checkbox
-        checked={el.removable}
-        onChange={() => toggle('removable')}
-        label="Removable"
-      />
-      <Checkbox
-        checked={el.contentEditable}
-        onChange={() => toggle('contentEditable')}
-        label="Content Editable"
-      />
-      <Checkbox
-        checked={el.styleEditable}
-        onChange={() => toggle('styleEditable')}
-        label="Style Editable"
-      />
+      <label
+        style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}
+      >
+        <Switch
+          checked={el.selectable}
+          onCheckedChange={() => toggle('selectable')}
+        />
+        Selectable
+      </label>
+      <label
+        style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}
+      >
+        <Switch
+          checked={el.draggable}
+          onCheckedChange={() => toggle('draggable')}
+        />
+        Draggable
+      </label>
+      <label
+        style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}
+      >
+        <Switch
+          checked={el.resizable}
+          onCheckedChange={() => toggle('resizable')}
+        />
+        Resizable
+      </label>
+      <label
+        style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}
+      >
+        <Switch
+          checked={el.removable}
+          onCheckedChange={() => toggle('removable')}
+        />
+        Removable
+      </label>
+      <label
+        style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}
+      >
+        <Switch
+          checked={el.contentEditable}
+          onCheckedChange={() => toggle('contentEditable')}
+        />
+        Content Editable
+      </label>
+      <label
+        style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}
+      >
+        <Switch
+          checked={el.styleEditable}
+          onCheckedChange={() => toggle('styleEditable')}
+        />
+        Style Editable
+      </label>
 
       <Button
-        style={{ marginTop: 10 }}
-        icon={el.locked ? 'unlock' : 'lock'}
-        text={el.locked ? 'Unlock All' : 'Lock All'}
-        intent={el.locked ? 'warning' : 'success'}
+        style={{ marginTop: 10, width: '100%' }}
         onClick={() => {
           const state = !el.locked;
           el.set({
@@ -96,8 +117,9 @@ const LockPanel = observer(({ store }) => {
             styleEditable: state,
           });
         }}
-        fill
-      />
+      >
+        {el.locked ? 'Unlock All' : 'Lock All'}
+      </Button>
     </div>
   );
 });
@@ -115,7 +137,7 @@ const LockSection = {
 
 export const App = observer(() => {
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} sections={[LockSection, ...DEFAULT_SECTIONS]} />
       </SidePanelWrap>

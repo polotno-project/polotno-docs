@@ -6,6 +6,7 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
+import { Button } from 'polotno/primitives';
 import { createStore } from 'polotno/model/store';
 import { svgToJson } from '@polotno/svg-import';
 
@@ -35,7 +36,7 @@ const App = ({ store }) => {
   };
 
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} defaultSection="" />
       </SidePanelWrap>
@@ -53,13 +54,12 @@ const App = ({ store }) => {
                   style={{ display: 'none' }}
                   onChange={handleFileChange}
                 />
-                <button
-                  className="bp5-button bp5-intent-primary"
+                <Button
                   disabled={loading}
                   onClick={() => inputRef.current?.click()}
                 >
                   {loading ? 'Importing...' : 'Import SVG'}
-                </button>
+                </Button>
               </>
             ),
           }}

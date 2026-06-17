@@ -1,5 +1,4 @@
-import {Icon, Tab, TabId, Tabs} from '@blueprintjs/core';
-import {Style,} from '@blueprintjs/icons';
+import { Tabs, TabsList, TabsTrigger } from 'polotno/primitives';
 import React from 'react';
 import {BrandKitContext} from './context';
 import {createIndexedDbBrandKitContext} from './indexeddb-storage';
@@ -66,15 +65,17 @@ interface BrandKitPanelProps {
 }
 
 const BrandKitPanel = ({store}: BrandKitPanelProps) => {
-  const [selectedTabId, setSelectedTabId] = React.useState<TabId>('colors');
+  const [selectedTabId, setSelectedTabId] = React.useState('colors');
   
   return (
       <BrandKitContext.Provider value={createIndexedDbBrandKitContext()}>
         <div style={{height: '100%', display: 'flex', flexDirection: 'column'}}>
-          <Tabs onChange={(id) => setSelectedTabId(id)} id="brand-kit" renderActiveTabPanelOnly={true}>
-            <Tab id="colors" title={t('brandKit.colors')}/>
-            <Tab id="fonts" title={t('brandKit.fonts')}/>
-            <Tab id="assets" title={t('brandKit.assets')}/>
+          <Tabs value={selectedTabId} onValueChange={setSelectedTabId}>
+            <TabsList>
+              <TabsTrigger value="colors">{t('brandKit.colors')}</TabsTrigger>
+              <TabsTrigger value="fonts">{t('brandKit.fonts')}</TabsTrigger>
+              <TabsTrigger value="assets">{t('brandKit.assets')}</TabsTrigger>
+            </TabsList>
           </Tabs>
           {selectedTabId === 'colors' && <ColorsPanel store={store}/>}
           {selectedTabId === 'fonts' && <FontPanel store={store}/>}
@@ -88,7 +89,7 @@ export const BrandKitSection = {
   name: 'brand-kit',
   Tab: (props) => (
       <SectionTab name={t('sidePanel.brandKit')} {...props}>
-        <Icon icon={<Style/>}/>
+        🎨
       </SectionTab>
   ),
   Panel: BrandKitPanel

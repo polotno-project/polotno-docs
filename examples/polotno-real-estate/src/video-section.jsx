@@ -1,12 +1,11 @@
 import React from 'react';
-import { InputGroup } from '@blueprintjs/core';
+import { SearchInput } from 'polotno/primitives';
 import { useInfiniteAPI } from 'polotno/utils/use-api';
 import { selectVideo } from 'polotno/side-panel/select-video';
 import { getKey } from 'polotno/utils/validate-key';
 import { observer } from 'mobx-react-lite';
 import { VideosGrid } from 'polotno/side-panel/videos-grid';
 import { SectionTab } from 'polotno/side-panel';
-import { Search } from '@blueprintjs/icons';
 
 const API = 'https://api.polotno.com/api/pexels/videos';
 
@@ -45,13 +44,11 @@ const VideoPanel = observer(({ store }) => {
 
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <InputGroup
-        leftIcon={<Search />}
+      <SearchInput
         placeholder="Search videos..."
         onChange={(e) => {
           setQuery(e.target.value);
         }}
-        type="search"
         style={{
           marginBottom: '20px',
         }}

@@ -4,10 +4,9 @@
   "description": "Demo showing how to add custom action buttons to the toolbar in Polotno editor",
   "keywords": [],
   "dependencies": {
-    "@blueprintjs/core": "^5.0.0",
-    "polotno": "2.41.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "polotno": "^4.0.2",
+    "react": "^19",
+    "react-dom": "^19"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5",

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { observer } from 'mobx-react-lite';
-import { InputGroup } from '@blueprintjs/core';
+import { SearchInput } from 'polotno/primitives';
 
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 
@@ -48,8 +48,7 @@ export const PhotosPanel = observer(({ store }) => {
 
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <InputGroup
-        leftIcon="search"
+      <SearchInput
         placeholder="Search..."
         onChange={(e) => {
           loadImages();
@@ -89,7 +88,7 @@ const sections = [PexelsSection, ...DEFAULT_SECTIONS];
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container bp5-scope">
+    <PolotnoContainer className="polotno-app-container">
       <SidePanelWrap>
         <SidePanel store={store} sections={sections} defaultSection="pexels" />
       </SidePanelWrap>

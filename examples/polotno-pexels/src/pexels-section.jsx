@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputGroup } from '@blueprintjs/core';
+import { SearchInput } from 'polotno/primitives';
 import { ImagesGrid } from 'polotno/side-panel/images-grid';
 import { getImageSize } from 'polotno/utils/image';
 import { SectionTab } from 'polotno/side-panel';
@@ -30,13 +30,11 @@ export const PexelsPanel = ({ store }) => {
 
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <InputGroup
-        leftIcon="search"
+      <SearchInput
         placeholder={t('sidePanel.searchPlaceholder')}
         onChange={(e) => {
           setQuery(e.target.value);
         }}
-        type="search"
         style={{
           marginBottom: '20px',
         }}

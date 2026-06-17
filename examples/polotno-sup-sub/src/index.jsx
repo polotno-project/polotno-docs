@@ -14,7 +14,7 @@ import {
   createQuill,
   setQuillContent,
 } from 'polotno/canvas/html-element';
-import { Button } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 
 import { unstable_setQuillFormats } from 'polotno/config';
 
@@ -92,15 +92,13 @@ const ToggleButton = observer(
     element,
     disableGlobal,
     enableGlobal,
-    icon,
+    text,
     ...props
   }) => {
     return (
       <Button
         {...props}
-        minimal
-        icon={icon}
-        active={active}
+        variant={active ? 'secondary' : 'ghost'}
         onMouseDown={(e) => {
           e.preventDefault();
         }}
@@ -128,7 +126,9 @@ const ToggleButton = observer(
           removeTempQuill(quill);
           element.set({ text: innerHtml });
         }}
-      />
+      >
+        {text}
+      </Button>
     );
   }
 );
@@ -157,7 +157,7 @@ export const TextSup = observer(({ element, store }) => {
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>

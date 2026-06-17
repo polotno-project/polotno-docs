@@ -6,7 +6,7 @@ import { observer } from 'mobx-react-lite';
 import { Star } from 'react-konva';
 
 // import toolbar components
-import { NumericInput, Navbar, Alignment } from '@blueprintjs/core';
+import { NumericInput, Navbar } from 'polotno/primitives';
 import ColorPicker from 'polotno/toolbar/color-picker';
 
 // import Polotno API methods
@@ -99,7 +99,7 @@ const LineToolbar = observer(({ store }) => {
   const element = store.selectedElements[0];
 
   return (
-    <Navbar.Group align={Alignment.LEFT}>
+    <Navbar.Group align="left">
       <ColorPicker
         value={element.fill}
         onChange={(fill) =>
@@ -114,7 +114,6 @@ const LineToolbar = observer(({ store }) => {
           element.set({ radius: val });
         }}
         value={element.radius}
-        style={{ width: '50px', marginLeft: '10px' }}
         min={1}
         max={500}
       />

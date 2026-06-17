@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Button, NumericInput, Navbar } from '@blueprintjs/core';
+import ReactDOM from 'react-dom/client';
+import { Button, NumericInput, Navbar } from 'polotno/primitives';
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 import { Workspace } from 'polotno/canvas/workspace';
 import { SidePanel } from 'polotno/side-panel';
@@ -41,7 +41,7 @@ const Topbar = observer(({ store }) => {
           onClick={() => {
             store.toggleBleed();
           }}
-          active={store.bleedVisible}
+          variant={store.bleedVisible ? 'secondary' : 'ghost'}
           style={{ marginLeft: '20px' }}
         >
           Toggle bleed on Workspace
@@ -73,7 +73,7 @@ export const App = () => {
     >
       <Topbar store={store} />
       <div style={{ height: 'calc(100% - 50px)' }}>
-        <PolotnoContainer className="polotno-app-container bp5-scope">
+        <PolotnoContainer className="polotno-app-container">
           <SidePanelWrap>
             <SidePanel store={store} />
           </SidePanelWrap>
@@ -89,4 +89,4 @@ export const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);

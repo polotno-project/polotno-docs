@@ -7,6 +7,7 @@ import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 import { createStore } from 'polotno/model/store';
 import { jsonToPPTX } from '@polotno/pptx-export';
+import { Button } from 'polotno/primitives';
 
 const store = createStore({
   key: 'nFA5H9elEytDyPyvKL7T',
@@ -31,7 +32,7 @@ async function exportToPPTX() {
 
 export const App = () => {
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: '100vw', height: '100vh' }}>
+    <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
         <SidePanel store={store} defaultSection="" />
       </SidePanelWrap>
@@ -41,13 +42,13 @@ export const App = () => {
           downloadButtonEnabled
           components={{
             ActionControls: () => (
-              <button
-                className="bp5-button bp5-minimal"
+              <Button
+                variant="ghost"
                 onClick={exportToPPTX}
                 style={{ marginLeft: 'auto' }}
               >
                 Export to PPTX
-              </button>
+              </Button>
             ),
           }}
         />

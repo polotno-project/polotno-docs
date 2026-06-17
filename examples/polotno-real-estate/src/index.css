@@ -4,83 +4,37 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-/* Buttons */
-.bp5-dark .bp5-button.bp5-intent-primary {
-  box-shadow: none !important;
-  border-radius: 4px;
-  background-color: #1764ea;
+/* Theme the editor's dark palette via Polotno UI CSS variables.
+   (Replaces the old Blueprint bp5-* overrides — see /docs/theme-and-ui-styles.) */
+.dark {
+  --pn-background: #161616;
+  --pn-foreground: #f4f4f4;
+  --pn-card: #262626;
+  --pn-popover: #393939;
+  --pn-popover-foreground: #ffffff;
+  --pn-primary: #1764ea;
+  --pn-primary-foreground: #ffffff;
+  --pn-secondary: #393939;
+  --pn-secondary-foreground: #ffffff;
+  --pn-muted: #262626;
+  --pn-accent: #262626;
+  --pn-input: #262626;
+  --pn-border: #393939;
+  --pn-ring: #525252;
+  --pn-radius: 4px;
 }
 
-.bp5-button {
-  background-color: #393939;
-}
-
-/* Search inputs */
-body .bp5-input[type='search'] {
-  border-radius: 1px;
-  border: 1px solid #393939;
-  box-shadow: none;
-  background-color: #262626;
-  height: 36px;
-}
-
-body .bp5-input-group .bp5-icon-search {
-  margin: 10px;
-}
-
-/* Navbar */
-.bp5-navbar.bp5-dark,
-.bp5-dark .bp5-navbar {
-  background-color: #161616;
-  border-bottom: 1px solid #393939;
-  box-shadow: none;
-}
-
-.topbar.bp5-navbar {
+/* Topbar (primitives Navbar with className="dark topbar") */
+.topbar {
   height: 50px;
   color: white;
-}
-
-/* Popovers */
-.bp5-popover.bp5-dark .bp5-popover-content,
-.bp5-dark .bp5-popover .bp5-popover-content {
-  background-color: #393939;
-  border-radius: 4px;
-  color: white;
-}
-
-/* Menus */
-body .bp5-dark .bp5-menu {
-  background-color: #393939;
-  border-radius: 4px;
-  color: white;
-  padding: 16px;
-}
-
-/* Selects */
-body .bp5-dark .bp5-html-select select,
-body .bp5-dark .bp5-select select {
-  background-color: #262626;
-  border: 1px solid #525252;
-  border-radius: 8px;
-  height: 40px;
-  font-size: 14px;
-  box-shadow: none;
-}
-
-body .bp5-dark .bp5-html-select .bp5-icon {
-  margin: 4px;
+  background-color: #161616;
+  border-bottom: 1px solid #393939;
 }
 
 /* Side panel fill */
-.bp5-dark .polotno-app-container .polotno-side-panel .fill {
+.dark .polotno-app-container .polotno-side-panel .fill {
   fill: #161616;
-}
-
-/* Popover arrows */
-.bp5-popover.bp5-dark .bp5-popover-arrow-fill,
-.bp5-dark .bp5-popover .bp5-popover-arrow-fill {
-  fill: #393939;
 }
 
 /* Side panel tabs */
@@ -106,35 +60,12 @@ body .bp5-dark .bp5-html-select .bp5-icon {
 }
 
 /* Active tab hover */
-.bp5-dark .polotno-app-container .go3977838046:hover,
-.bp5-dark .polotno-app-container .go3977838046.active {
+.dark .polotno-app-container .go3977838046:hover,
+.dark .polotno-app-container .go3977838046.active {
   background-color: #262626;
   color: white !important;
   border-top: 1px solid #393939;
   border-bottom: 1px solid #393939;
-}
-
-/* Popover shadows */
-.bp5-popover.bp5-dark,
-.bp5-dark .bp5-popover {
-  box-shadow: none;
-}
-
-.bp5-popover.bp5-dark .bp5-popover-arrow::before,
-.bp5-dark .bp5-popover .bp5-popover-arrow::before {
-  display: none;
-}
-
-.bp5-popover-arrow-fill {
-  background-color: #393939;
-}
-
-/* Menu item icons */
-.bp5-dark .bp5-menu-item::before,
-.bp5-dark .bp5-menu-item .bp5-menu-item-icon,
-.bp5-dark .bp5-menu-item .bp5-menu-item-selected-icon,
-.bp5-dark .bp5-menu-item .bp5-submenu-icon {
-  color: white;
 }
 
 /* Edit image panel */

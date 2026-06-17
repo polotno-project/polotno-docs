@@ -1,15 +1,7 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
 import { SectionTab } from 'polotno/side-panel';
-import {
-  Button,
-  InputGroup,
-  NumericInput,
-  Card,
-  H5,
-  Divider,
-  Icon,
-} from '@blueprintjs/core';
+import { Button, Input, NumericInput, Separator } from 'polotno/primitives';
 
 // Carousel Settings Panel Component
 const CarouselPanel = observer(({ store }) => {
@@ -19,7 +11,7 @@ const CarouselPanel = observer(({ store }) => {
   if (!isImage) {
     return (
       <div style={{ padding: '20px', textAlign: 'center', color: '#666' }}>
-        <Icon icon="media" size={40} style={{ marginBottom: '10px' }} />
+        <div style={{ fontSize: 40, marginBottom: '10px' }}>🖼</div>
         <p>Select an image element to configure carousel settings</p>
       </div>
     );
@@ -73,12 +65,12 @@ const CarouselPanel = observer(({ store }) => {
 
   return (
     <div style={{ padding: '20px', height: '100%', overflow: 'auto' }}>
-      <H5>Carousel Settings</H5>
+      <h5 style={{ margin: '0 0 8px' }}>Carousel Settings</h5>
       <p style={{ fontSize: '12px', color: '#666', marginBottom: '15px' }}>
         Configure carousel images and animation timeout for the selected image.
       </p>
 
-      <Divider style={{ margin: '15px 0' }} />
+      <Separator style={{ margin: '15px 0' }} />
 
       <div style={{ marginBottom: '20px' }}>
         <label
@@ -96,16 +88,13 @@ const CarouselPanel = observer(({ store }) => {
           onValueChange={updateTimeout}
           min={500}
           max={30000}
-          stepSize={500}
-          fill
-          placeholder="Enter timeout in milliseconds"
         />
         <p style={{ fontSize: '11px', color: '#999', marginTop: '5px' }}>
           Time between slide transitions (default: 3000ms)
         </p>
       </div>
 
-      <Divider style={{ margin: '15px 0' }} />
+      <Separator style={{ margin: '15px 0' }} />
 
       <div style={{ marginBottom: '10px' }}>
         <label
@@ -124,10 +113,14 @@ const CarouselPanel = observer(({ store }) => {
       </div>
 
       {images.map((image, index) => (
-        <Card
+        <div
           key={index}
-          elevation={1}
-          style={{ marginBottom: '10px', padding: '10px' }}
+          style={{
+            marginBottom: '10px',
+            padding: '10px',
+            border: '1px solid var(--pn-border, #e5e5e5)',
+            borderRadius: '8px',
+          }}
         >
           <div style={{ marginBottom: '8px' }}>
             <label
@@ -140,20 +133,22 @@ const CarouselPanel = observer(({ store }) => {
             >
               Image {index + 1}
             </label>
-            <InputGroup
-              value={image}
-              onChange={(e) => updateImage(index, e.target.value)}
-              placeholder="Enter image URL"
-              rightElement={
-                <Button
-                  icon="trash"
-                  minimal
-                  intent="danger"
-                  onClick={() => removeImage(index)}
-                  onMouseDown={(e) => e.preventDefault()}
-                />
-              }
-            />
+            <div style={{ display: 'flex', gap: 4 }}>
+              <Input
+                value={image}
+                onChange={(e) => updateImage(index, e.target.value)}
+                placeholder="Enter image URL"
+                style={{ flex: 1 }}
+              />
+              <Button
+                variant="ghost"
+                size="icon-sm"
+                onClick={() => removeImage(index)}
+                onMouseDown={(e) => e.preventDefault()}
+              >
+                ✕
+              </Button>
+            </div>
           </div>
           {image && (
             <div
@@ -175,18 +170,16 @@ const CarouselPanel = observer(({ store }) => {
               />
             </div>
           )}
-        </Card>
+        </div>
       ))}
 
       <Button
-        icon="add"
-        text="Add Carousel Image"
         onClick={addImage}
-        fill
-        intent="primary"
-        style={{ marginTop: '10px' }}
+        style={{ marginTop: '10px', width: '100%' }}
         onMouseDown={(e) => e.preventDefault()}
-      />
+      >
+        Add Carousel Image
+      </Button>
     </div>
   );
 });
@@ -196,7 +189,7 @@ export const CarouselSection = {
   name: 'carousel',
   Tab: (props) => (
     <SectionTab name="Carousel" {...props}>
-      <Icon icon="media" />
+      🖼
     </SectionTab>
   ),
   Panel: CarouselPanel,

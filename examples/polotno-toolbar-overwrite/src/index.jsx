@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Button } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 import { observer } from 'mobx-react-lite';
 import { PolotnoContainer, WorkspaceWrap } from 'polotno';
 import { Workspace } from 'polotno/canvas/workspace';
@@ -70,7 +70,7 @@ const History = () => null;
 
 export const App = () => {
   return (
-    <PolotnoContainer className="polotno-app-container bp5-scope">
+    <PolotnoContainer className="polotno-app-container">
       <WorkspaceWrap>
         <Toolbar
           store={store}

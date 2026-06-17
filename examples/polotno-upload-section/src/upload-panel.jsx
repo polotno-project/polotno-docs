@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
-import { Button } from '@blueprintjs/core';
+import { Button } from 'polotno/primitives';
 import { ImagesGrid } from 'polotno/side-panel';
 import { getImageSize } from 'polotno/utils/image';
 
@@ -35,12 +35,11 @@ export const UploadPanel = observer(({ store }) => {
       <div style={{ marginBottom: '20px' }}>
         <label htmlFor="input-file">
           <Button
-            icon="upload"
             style={{ width: '100%' }}
             onClick={() => {
               document.querySelector('#input-file')?.click();
             }}
-            loading={isUploading}
+            disabled={isUploading}
           >
             Upload Image (use small image for demo)
           </Button>
@@ -60,7 +59,7 @@ export const UploadPanel = observer(({ store }) => {
         getCredit={(image) => (
           <div>
             <Button
-              icon="trash"
+              variant="ghost"
               onClick={async (e) => {
                 e.stopPropagation();
                 if (
@@ -70,7 +69,9 @@ export const UploadPanel = observer(({ store }) => {
                   await load();
                 }
               }}
-            ></Button>
+            >
+              Delete
+            </Button>
           </div>
         )}
         onSelect={async (image, pos, element) => {

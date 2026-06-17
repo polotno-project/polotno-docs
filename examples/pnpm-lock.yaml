@@ -13,16 +13,16 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
 
   cloud-render:
     dependencies:
@@ -40,14 +40,14 @@ importers:
   polotno-admin-role:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -58,9 +58,6 @@ importers:
 
   polotno-advanced-sync-elements:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx:
         specifier: ^6.0.0
         version: 6.15.0
@@ -68,14 +65,14 @@ importers:
         specifier: ^3.3.11
         version: 3.3.11
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -86,24 +83,21 @@ importers:
 
   polotno-ai-design:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@18.3.1)
+        version: 1.4.1(react@19.2.7)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -116,29 +110,29 @@ importers:
     dependencies:
       '@vue/cli-plugin-babel':
         specifier: 4.1.1
-        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16))(core-js@3.49.0)(vue@2.7.16)
+        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16))(core-js@3.49.0)(vue@2.7.16)
       mobx-vue:
         specifier: 2.0.11
-        version: 2.0.11(mobx@6.15.0)(vue@2.7.16)
+        version: 2.0.11(mobx@6.16.1)(vue@2.7.16)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
       vue:
         specifier: ^2.6.11
         version: 2.7.16
     devDependencies:
       '@vue/cli-plugin-eslint':
         specifier: 4.1.1
-        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16))(eslint@6.8.0)
+        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16))(eslint@6.8.0)
       '@vue/cli-service':
         specifier: 4.1.1
-        version: 4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16)
+        version: 4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16)
       babel-eslint:
         specifier: ^10.0.3
         version: 10.1.0(eslint@6.8.0)
@@ -158,14 +152,14 @@ importers:
         specifier: ^2.8.3
         version: 2.16.4(@swc/helpers@0.5.20)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
       vue:
         specifier: ^3.2.47
         version: 3.5.31(typescript@5.5.4)
@@ -220,16 +214,16 @@ importers:
         version: 18.2.14(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(@angular/platform-browser@18.2.14(@angular/animations@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(rxjs@7.8.1)
       mobx-angular:
         specifier: ^4.8.0
-        version: 4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@6.15.0)
+        version: 4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@6.16.1)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
       rxjs:
         specifier: 7.8.1
         version: 7.8.1
@@ -244,8 +238,8 @@ importers:
         specifier: ^18.0.0
         version: 18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4)
       '@types/react-dom':
-        specifier: ^18.3.0
-        version: 18.3.7(@types/react@18.3.28)
+        specifier: ^19
+        version: 19.2.3(@types/react@19.2.17)
       typescript:
         specifier: ~5.5.0
         version: 5.5.4
@@ -253,14 +247,14 @@ importers:
   polotno-animations:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -272,14 +266,14 @@ importers:
   polotno-audio:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -291,14 +285,14 @@ importers:
   polotno-background-sidepanel:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -309,27 +303,24 @@ importers:
 
   polotno-bar-codes:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@18.3.1)
+        version: 1.4.1(react@19.2.7)
       jsbarcode:
         specifier: 3.11.5
         version: 3.11.5
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -340,21 +331,18 @@ importers:
 
   polotno-book-cover-editor:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -365,33 +353,27 @@ importers:
 
   polotno-brand-kit:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@blueprintjs/icons':
-        specifier: ^5
-        version: 5.23.0(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       konva:
         specifier: ^9
         version: 9.3.22
       mobx-react-lite:
-        specifier: ^3
-        version: 3.4.3(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^4
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
       react-window:
         specifier: ^1
-        version: 1.8.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 1.8.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       swr:
         specifier: ^2
-        version: 2.4.1(react@18.3.1)
+        version: 2.4.1(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -402,21 +384,18 @@ importers:
 
   polotno-carousel-in-html:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.1.1
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -427,30 +406,27 @@ importers:
 
   polotno-charts:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@18.3.1)
+        version: 1.4.1(react@19.2.7)
       frappe-charts:
         specifier: 1.6.2
         version: 1.6.2
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       qrcode:
         specifier: 1.5.0
         version: 1.5.0
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -462,11 +438,11 @@ importers:
   polotno-cloud-render:
     dependencies:
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -477,24 +453,21 @@ importers:
 
   polotno-custom-element:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
       react-konva:
-        specifier: ^18.0.0
-        version: 18.2.14(@types/react@18.3.28)(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^19
+        version: 19.2.5(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -507,19 +480,19 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@18.3.1)
+        version: 1.4.1(react@19.2.7)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -531,14 +504,14 @@ importers:
   polotno-demo:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -550,14 +523,14 @@ importers:
   polotno-demo-vite:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -568,18 +541,15 @@ importers:
 
   polotno-design-validation:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -590,21 +560,18 @@ importers:
 
   polotno-element-locking:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.5
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -615,24 +582,21 @@ importers:
 
   polotno-elements-preview:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx:
         specifier: ^6.10.0
         version: 6.15.0
       mobx-react-lite:
         specifier: ^4.0.5
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -656,21 +620,18 @@ importers:
 
   polotno-full-width-background-for-text:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -681,27 +642,24 @@ importers:
 
   polotno-grid:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@18.3.1)
+        version: 1.4.1(react@19.2.7)
       mobx:
         specifier: ^6.0.0
         version: 6.15.0
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -712,24 +670,21 @@ importers:
 
   polotno-hidden-panel:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx:
         specifier: ^6.0.0
         version: 6.15.0
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -740,24 +695,21 @@ importers:
 
   polotno-load-custom-images:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@18.3.1)
+        version: 1.4.1(react@19.2.7)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -769,14 +721,14 @@ importers:
   polotno-mobile:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -789,16 +741,16 @@ importers:
     dependencies:
       next:
         specifier: ^14
-        version: 14.2.35(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6)
+        version: 14.2.35(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.77.6)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
 
   polotno-non-react-integration:
     dependencies:
@@ -806,14 +758,14 @@ importers:
         specifier: ^2.7.0
         version: 2.16.4(@swc/helpers@0.5.20)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       buffer:
         specifier: ^5.7.1
@@ -830,24 +782,21 @@ importers:
 
   polotno-open-side-panel-programmatically:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx:
         specifier: ^6.0.0
         version: 6.15.0
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -859,14 +808,14 @@ importers:
   polotno-overlay:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -877,21 +826,18 @@ importers:
 
   polotno-page-bleed:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -902,21 +848,18 @@ importers:
 
   polotno-page-name:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -928,14 +871,14 @@ importers:
   polotno-page-numbers:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -946,21 +889,18 @@ importers:
 
   polotno-pages-navigation:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -975,14 +915,14 @@ importers:
         specifier: 0.0.6
         version: 0.0.6
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -993,24 +933,21 @@ importers:
 
   polotno-pexels:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@18.3.1)
+        version: 1.4.1(react@19.2.7)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1023,16 +960,16 @@ importers:
     dependencies:
       '@polotno/pptx-export':
         specifier: latest
-        version: 0.0.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        version: 0.0.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1043,24 +980,43 @@ importers:
 
   polotno-programmatic-transform:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@meronex/icons':
         specifier: ^4.0.0
-        version: 4.0.0(react@18.3.1)
+        version: 4.0.0(react@19.2.7)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
+    devDependencies:
+      '@vitejs/plugin-react':
+        specifier: ^5
+        version: 5.2.0(vite@8.0.3(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
+      vite:
+        specifier: ^8
+        version: 8.0.3(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
+
+  polotno-psd-import:
+    dependencies:
+      '@polotno/psd-import':
+        specifier: ^0.0.2
+        version: 0.0.2
+      polotno:
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+      react:
+        specifier: ^19
+        version: 19.2.7
+      react-dom:
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1071,27 +1027,24 @@ importers:
 
   polotno-qr-codes:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@18.3.1)
+        version: 1.4.1(react@19.2.7)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       qrcode:
         specifier: 1.5.0
         version: 1.5.0
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1102,30 +1055,24 @@ importers:
 
   polotno-real-estate:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@blueprintjs/icons':
-        specifier: ^5.22.0
-        version: 5.23.0(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx:
         specifier: ^6.0.0
         version: 6.15.0
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1137,14 +1084,14 @@ importers:
   polotno-remove-side-panel:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1155,21 +1102,18 @@ importers:
 
   polotno-resize-panel:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1180,21 +1124,18 @@ importers:
 
   polotno-rich-text:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1205,18 +1146,15 @@ importers:
 
   polotno-rotate-page:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1228,14 +1166,14 @@ importers:
   polotno-rulers:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1250,14 +1188,14 @@ importers:
         specifier: ^6.0.0
         version: 6.15.0
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1268,24 +1206,21 @@ importers:
 
   polotno-signature:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@18.3.1)
+        version: 1.4.1(react@19.2.7)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
       signature_pad:
         specifier: 4.0.4
         version: 4.0.4
@@ -1300,14 +1235,14 @@ importers:
   polotno-simple-t-shirt-demo:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1318,27 +1253,24 @@ importers:
 
   polotno-spine-web-player:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.1.1
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
       react-konva:
-        specifier: ^18.0.0
-        version: 18.2.14(@types/react@18.3.28)(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^19
+        version: 19.2.5(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react-konva-utils:
         specifier: ^1.0.0
-        version: 1.1.3(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react-konva@18.2.14(@types/react@18.3.28)(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        version: 1.1.3(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react-konva@19.2.5(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1349,24 +1281,21 @@ importers:
 
   polotno-sup-sub:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       quill:
         specifier: ^2.0.0
         version: 2.0.3
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1381,14 +1310,14 @@ importers:
         specifier: ^0.0.13
         version: 0.0.13
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1399,24 +1328,21 @@ importers:
 
   polotno-svg-preview:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@18.3.1)
+        version: 1.4.1(react@19.2.7)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1427,21 +1353,18 @@ importers:
 
   polotno-t-shirt:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1452,31 +1375,28 @@ importers:
 
   polotno-t-shirt-minimal:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx:
         specifier: ^6.0.0
         version: 6.15.0
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@types/react':
-        specifier: ^18.2.0
-        version: 18.3.28
+        specifier: ^19
+        version: 19.2.17
       '@types/react-dom':
-        specifier: ^18.2.0
-        version: 18.3.7(@types/react@18.3.28)
+        specifier: ^19
+        version: 19.2.3(@types/react@19.2.17)
       '@vitejs/plugin-react':
         specifier: ^5
         version: 5.2.0(vite@8.0.3(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
@@ -1489,9 +1409,6 @@ importers:
 
   polotno-table-via-svg:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@handsontable/react':
         specifier: ^15.3.0
         version: 15.3.0(handsontable@15.3.0)
@@ -1500,19 +1417,19 @@ importers:
         version: 15.3.0
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-datasheet:
         specifier: 1.4.12
-        version: 1.4.12(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 1.4.12(prop-types@15.8.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1525,19 +1442,19 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@18.3.1)
+        version: 1.4.1(react@19.2.7)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1552,14 +1469,14 @@ importers:
         specifier: ^6.0.0
         version: 6.15.0
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1570,15 +1487,18 @@ importers:
 
   polotno-theme:
     dependencies:
+      lucide-react:
+        specifier: ^1.18.0
+        version: 1.18.0(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1589,18 +1509,15 @@ importers:
 
   polotno-toolbar-actions:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1611,21 +1528,18 @@ importers:
 
   polotno-toolbar-overwrite:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1638,16 +1552,16 @@ importers:
     dependencies:
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1658,21 +1572,18 @@ importers:
 
   polotno-upload-section:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       mobx-react-lite:
         specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1683,18 +1594,40 @@ importers:
 
   polotno-variables:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
+    devDependencies:
+      '@vitejs/plugin-react':
+        specifier: ^5
+        version: 5.2.0(vite@8.0.3(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
+      vite:
+        specifier: ^8
+        version: 8.0.3(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
+
+  polotno-vector-pdf-export:
+    dependencies:
+      '@polotno/pdf-export':
+        specifier: ^0.2.0
+        version: 0.2.1
+      mobx-react-lite:
+        specifier: ^4.0.0
+        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      polotno:
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+      react:
+        specifier: ^19
+        version: 19.2.7
+      react-dom:
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1706,14 +1639,14 @@ importers:
   polotno-vertical-text-resize:
     dependencies:
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1726,16 +1659,16 @@ importers:
     dependencies:
       '@polotno/video-export':
         specifier: 0.0.2
-        version: 0.0.2(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        version: 0.0.2(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1748,16 +1681,16 @@ importers:
     dependencies:
       mobx-vue-lite:
         specifier: ^0.4.3
-        version: 0.4.3(mobx@6.15.0)(vue@3.5.31(typescript@5.5.4))
+        version: 0.4.3(mobx@6.16.1)(vue@3.5.31(typescript@5.5.4))
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
       vue:
         specifier: ^3.5.10
         version: 3.5.31(typescript@5.5.4)
@@ -1771,18 +1704,15 @@ importers:
 
   polotno-workspace-layout:
     dependencies:
-      '@blueprintjs/core':
-        specifier: ^5.0.0
-        version: 5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       polotno:
-        specifier: 2.39.1
-        version: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+        specifier: ^4.0.2
+        version: 4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.7
       react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: ^19
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -2516,6 +2446,33 @@ packages:
     resolution: {integrity: sha512-LwdZHpScM4Qz8Xw2iKSzS+cfglZzJGvofQICy7W7v4caru4EaAmyUuO6BGrbyQ2mYV11W0U8j5mBhd14dd3B0A==}
     engines: {node: '>=6.9.0'}
 
+  '@base-ui/react@1.5.0':
+    resolution: {integrity: sha512-z1gSAlced1yY+iM+mHDEtIkD8UI3Ebs52MuBPxvV6f5hRutk+xvCH/wuB7hDqDzK9JG5FoMz5nhrqtSs1wjt1A==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      '@date-fns/tz': ^1.2.0
+      '@types/react': ^17 || ^18 || ^19
+      date-fns: ^4.0.0
+      react: ^17 || ^18 || ^19
+      react-dom: ^17 || ^18 || ^19
+    peerDependenciesMeta:
+      '@date-fns/tz':
+        optional: true
+      '@types/react':
+        optional: true
+      date-fns:
+        optional: true
+
+  '@base-ui/utils@0.2.9':
+    resolution: {integrity: sha512-x/PDDCYzoqPpjrdyb3VcyylTI2IjUXEtYDGi5foh7KsnmNJIIaVwA2GLgDH1dps1GgXiJbA60hM+AyuTfQzIvw==}
+    peerDependencies:
+      '@types/react': ^17 || ^18 || ^19
+      react: ^17 || ^18 || ^19
+      react-dom: ^17 || ^18 || ^19
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
   '@blueprintjs/colors@5.1.16':
     resolution: {integrity: sha512-P9uX0Aj2TP9+6aUcori1iPl4snxM/Vgq0LZbhUl1l5bHTgNxxwm/0+IoS/SlQg93HBRl8KTAM1evEqtPbwV10A==}
 
@@ -2560,6 +2517,9 @@ packages:
     peerDependenciesMeta:
       '@types/react':
         optional: true
+
+  '@borewit/text-codec@0.2.2':
+    resolution: {integrity: sha512-DDaRehssg1aNrH4+2hnj1B7vnUGEjU6OIlyRdkMd0aUdIUvKXrJfXsy8LVtXAy7DRvYVluWbMspsRhz2lcW0mQ==}
 
   '@emnapi/core@1.9.1':
     resolution: {integrity: sha512-mukuNALVsoix/w1BJwFzwXBN/dHeejQtuVzcDsfOEsdpCumXb/E9j8w11h5S54tT1xhifGfbbSm/ICrObRb3KA==}
@@ -2714,6 +2674,21 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@floating-ui/core@1.7.5':
+    resolution: {integrity: sha512-1Ih4WTWyw0+lKyFMcBHGbb5U5FtuHJuujoyyr5zTaWS5EYMeT6Jb2AuDeftsCsEuchO+mM2ij5+q9crhydzLhQ==}
+
+  '@floating-ui/dom@1.7.6':
+    resolution: {integrity: sha512-9gZSAI5XM36880PPMm//9dfiEngYoC6Am2izES1FF406YFsjvyBMmeJ2g4SAju3xWwtuynNRFL2s9hgxpLI5SQ==}
+
+  '@floating-ui/react-dom@2.1.8':
+    resolution: {integrity: sha512-cC52bHwM/n/CxS87FH0yWdngEZrjdtLW/qVruo68qg+prK7ZQ4YGdut2GyDVpoGeAYe/h899rVeOVm6Oi40k2A==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+
+  '@floating-ui/utils@0.2.11':
+    resolution: {integrity: sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==}
+
   '@handsontable/pikaday@1.0.0':
     resolution: {integrity: sha512-1VN6N38t5/DcjJ7y7XUYrDx1LuzvvzlrFdBdMG90Qo1xc8+LXHqbWbsTEm5Ec5gXTEbDEO53vUT35R+2COmOyg==}
 
@@ -2750,6 +2725,143 @@ packages:
     resolution: {integrity: sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==}
     peerDependencies:
       react: '*'
+
+  '@img/colour@1.1.0':
+    resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
+    engines: {node: '>=18'}
+
+  '@img/sharp-darwin-arm64@0.34.5':
+    resolution: {integrity: sha512-imtQ3WMJXbMY4fxb/Ndp6HBTNVtWCUI0WdobyheGf5+ad6xX8VIDO8u2xE4qc/fr08CKG/7dDseFtn6M6g/r3w==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@img/sharp-darwin-x64@0.34.5':
+    resolution: {integrity: sha512-YNEFAF/4KQ/PeW0N+r+aVVsoIY0/qxxikF2SWdp+NRkmMB7y9LBZAVqQ4yhGCm/H3H270OSykqmQMKLBhBJDEw==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [x64]
+    os: [darwin]
+
+  '@img/sharp-libvips-darwin-arm64@1.2.4':
+    resolution: {integrity: sha512-zqjjo7RatFfFoP0MkQ51jfuFZBnVE2pRiaydKJ1G/rHZvnsrHAOcQALIi9sA5co5xenQdTugCvtb1cuf78Vf4g==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@img/sharp-libvips-darwin-x64@1.2.4':
+    resolution: {integrity: sha512-1IOd5xfVhlGwX+zXv2N93k0yMONvUlANylbJw1eTah8K/Jtpi15KC+WSiaX/nBmbm2HxRM1gZ0nSdjSsrZbGKg==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@img/sharp-libvips-linux-arm64@1.2.4':
+    resolution: {integrity: sha512-excjX8DfsIcJ10x1Kzr4RcWe1edC9PquDRRPx3YVCvQv+U5p7Yin2s32ftzikXojb1PIFc/9Mt28/y+iRklkrw==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@img/sharp-libvips-linux-arm@1.2.4':
+    resolution: {integrity: sha512-bFI7xcKFELdiNCVov8e44Ia4u2byA+l3XtsAj+Q8tfCwO6BQ8iDojYdvoPMqsKDkuoOo+X6HZA0s0q11ANMQ8A==}
+    cpu: [arm]
+    os: [linux]
+
+  '@img/sharp-libvips-linux-ppc64@1.2.4':
+    resolution: {integrity: sha512-FMuvGijLDYG6lW+b/UvyilUWu5Ayu+3r2d1S8notiGCIyYU/76eig1UfMmkZ7vwgOrzKzlQbFSuQfgm7GYUPpA==}
+    cpu: [ppc64]
+    os: [linux]
+
+  '@img/sharp-libvips-linux-riscv64@1.2.4':
+    resolution: {integrity: sha512-oVDbcR4zUC0ce82teubSm+x6ETixtKZBh/qbREIOcI3cULzDyb18Sr/Wcyx7NRQeQzOiHTNbZFF1UwPS2scyGA==}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@img/sharp-libvips-linux-s390x@1.2.4':
+    resolution: {integrity: sha512-qmp9VrzgPgMoGZyPvrQHqk02uyjA0/QrTO26Tqk6l4ZV0MPWIW6LTkqOIov+J1yEu7MbFQaDpwdwJKhbJvuRxQ==}
+    cpu: [s390x]
+    os: [linux]
+
+  '@img/sharp-libvips-linux-x64@1.2.4':
+    resolution: {integrity: sha512-tJxiiLsmHc9Ax1bz3oaOYBURTXGIRDODBqhveVHonrHJ9/+k89qbLl0bcJns+e4t4rvaNBxaEZsFtSfAdquPrw==}
+    cpu: [x64]
+    os: [linux]
+
+  '@img/sharp-libvips-linuxmusl-arm64@1.2.4':
+    resolution: {integrity: sha512-FVQHuwx1IIuNow9QAbYUzJ+En8KcVm9Lk5+uGUQJHaZmMECZmOlix9HnH7n1TRkXMS0pGxIJokIVB9SuqZGGXw==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@img/sharp-libvips-linuxmusl-x64@1.2.4':
+    resolution: {integrity: sha512-+LpyBk7L44ZIXwz/VYfglaX/okxezESc6UxDSoyo2Ks6Jxc4Y7sGjpgU9s4PMgqgjj1gZCylTieNamqA1MF7Dg==}
+    cpu: [x64]
+    os: [linux]
+
+  '@img/sharp-linux-arm64@0.34.5':
+    resolution: {integrity: sha512-bKQzaJRY/bkPOXyKx5EVup7qkaojECG6NLYswgktOZjaXecSAeCWiZwwiFf3/Y+O1HrauiE3FVsGxFg8c24rZg==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [arm64]
+    os: [linux]
+
+  '@img/sharp-linux-arm@0.34.5':
+    resolution: {integrity: sha512-9dLqsvwtg1uuXBGZKsxem9595+ujv0sJ6Vi8wcTANSFpwV/GONat5eCkzQo/1O6zRIkh0m/8+5BjrRr7jDUSZw==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [arm]
+    os: [linux]
+
+  '@img/sharp-linux-ppc64@0.34.5':
+    resolution: {integrity: sha512-7zznwNaqW6YtsfrGGDA6BRkISKAAE1Jo0QdpNYXNMHu2+0dTrPflTLNkpc8l7MUP5M16ZJcUvysVWWrMefZquA==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [ppc64]
+    os: [linux]
+
+  '@img/sharp-linux-riscv64@0.34.5':
+    resolution: {integrity: sha512-51gJuLPTKa7piYPaVs8GmByo7/U7/7TZOq+cnXJIHZKavIRHAP77e3N2HEl3dgiqdD/w0yUfiJnII77PuDDFdw==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@img/sharp-linux-s390x@0.34.5':
+    resolution: {integrity: sha512-nQtCk0PdKfho3eC5MrbQoigJ2gd1CgddUMkabUj+rBevs8tZ2cULOx46E7oyX+04WGfABgIwmMC0VqieTiR4jg==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [s390x]
+    os: [linux]
+
+  '@img/sharp-linux-x64@0.34.5':
+    resolution: {integrity: sha512-MEzd8HPKxVxVenwAa+JRPwEC7QFjoPWuS5NZnBt6B3pu7EG2Ge0id1oLHZpPJdn3OQK+BQDiw9zStiHBTJQQQQ==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [x64]
+    os: [linux]
+
+  '@img/sharp-linuxmusl-arm64@0.34.5':
+    resolution: {integrity: sha512-fprJR6GtRsMt6Kyfq44IsChVZeGN97gTD331weR1ex1c1rypDEABN6Tm2xa1wE6lYb5DdEnk03NZPqA7Id21yg==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [arm64]
+    os: [linux]
+
+  '@img/sharp-linuxmusl-x64@0.34.5':
+    resolution: {integrity: sha512-Jg8wNT1MUzIvhBFxViqrEhWDGzqymo3sV7z7ZsaWbZNDLXRJZoRGrjulp60YYtV4wfY8VIKcWidjojlLcWrd8Q==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [x64]
+    os: [linux]
+
+  '@img/sharp-wasm32@0.34.5':
+    resolution: {integrity: sha512-OdWTEiVkY2PHwqkbBI8frFxQQFekHaSSkUIJkwzclWZe64O1X4UlUjqqqLaPbUpMOQk6FBu/HtlGXNblIs0huw==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [wasm32]
+
+  '@img/sharp-win32-arm64@0.34.5':
+    resolution: {integrity: sha512-WQ3AgWCWYSb2yt+IG8mnC6Jdk9Whs7O0gxphblsLvdhSpSTtmu69ZG1Gkb6NuvxsNACwiPV6cNSZNzt0KPsw7g==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [arm64]
+    os: [win32]
+
+  '@img/sharp-win32-ia32@0.34.5':
+    resolution: {integrity: sha512-FV9m/7NmeCmSHDD5j4+4pNI8Cp3aW+JvLoXcTUo0IqyjSfAZJ8dIUmijx1qaJsIiU+Hosw6xM5KijAWRJCSgNg==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [ia32]
+    os: [win32]
+
+  '@img/sharp-win32-x64@0.34.5':
+    resolution: {integrity: sha512-+29YMsqY2/9eFEiW93eqWnuLcWcufowXewwSNIT6UwZdUUCrM3oFjMWH/Z6/TMmb4hlFenmfAVbpWeup2jryCw==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [x64]
+    os: [win32]
 
   '@inquirer/checkbox@2.5.0':
     resolution: {integrity: sha512-sMgdETOfi2dUHT8r7TT1BTKOwNvdDGFDXYWtQ2J69SvlYNntk9I/gJe7r5yvMwwsuKnYbuRs3pNhx4tgNck5aA==}
@@ -3554,11 +3666,17 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
+  '@polotno/pdf-export@0.2.1':
+    resolution: {integrity: sha512-Lf7ypZ9UEUn8pIm7uBg47aSybgyFzU5xaDG5xOe1VUVaEm2j8f/77mr9lEASMDpR399VImynNMyZYCgZuUAepA==}
+
   '@polotno/pdf-import@0.0.6':
     resolution: {integrity: sha512-uKbO5fwdocIBh1E27hV9V2rwCt5Mt2URbDm7v/Mj0VuJNDiK3btnviPiF7Kg0WzKTCH5JNYBeeqhLNOVwcQbPA==}
 
   '@polotno/pptx-export@0.0.1':
     resolution: {integrity: sha512-ArXYlcdghRFBdkoTjZpcAeomKB5zmzcHimSVUEDj29GWiOFRB/pSoYIsKIdORp0P3j4FIKIBXJcnMcunIcHaUA==}
+
+  '@polotno/psd-import@0.0.2':
+    resolution: {integrity: sha512-zCv6w3Vl8RhRjBQ+evAZR6TTVwQrUSf6ERL1eTpczCVO7uUPl4RgJyUgwX4+8rURJthM00JUnw5FYA6kkHtmAw==}
 
   '@polotno/svg-import@0.0.13':
     resolution: {integrity: sha512-TuK/7YpBkHbw0UOWM7ejMDhh1S2+M0eD7RtOgMg09Rc6M6c400UdOBVUlgksT2mkyG19F7b4PZ9cXv30LLH/VQ==}
@@ -3871,6 +3989,13 @@ packages:
   '@swc/types@0.1.26':
     resolution: {integrity: sha512-lyMwd7WGgG79RS7EERZV3T8wMdmPq3xwyg+1nmAM64kIhx5yl+juO2PYIHb7vTiPgPCj8LYjsNV2T5wiQHUEaw==}
 
+  '@tokenizer/inflate@0.4.1':
+    resolution: {integrity: sha512-2mAv+8pkG6GIZiF1kNg1jAjh27IDxEPKwdGul3snfztFerfPGI1LjDezZp3i7BElXompqEtPmoPx6c2wgtWsOA==}
+    engines: {node: '>=18'}
+
+  '@tokenizer/token@0.3.0':
+    resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
+
   '@tufjs/canonical-json@2.0.0':
     resolution: {integrity: sha512-yVtV8zsdo8qFHe+/3kw81dSLyF7D576A5cCFCi4X7B39tWT7SekaEFUnvnWJHz+9qO7qJTah1JbrDjWKqFtdWA==}
     engines: {node: ^16.14.0 || >=18.0.0}
@@ -3925,24 +4050,26 @@ packages:
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
-  '@types/prop-types@15.7.15':
-    resolution: {integrity: sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==}
-
   '@types/q@1.5.8':
     resolution: {integrity: sha512-hroOstUScF6zhIi+5+x0dzqrHA1EJi+Irri6b1fxolMTqqHIV/Cg77EtnQcZqZCu8hR3mX2BzIxN4/GzI68Kfw==}
 
-  '@types/react-dom@18.3.7':
-    resolution: {integrity: sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==}
+  '@types/react-dom@19.2.3':
+    resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
     peerDependencies:
-      '@types/react': ^18.0.0
+      '@types/react': ^19.2.0
 
   '@types/react-reconciler@0.28.9':
     resolution: {integrity: sha512-HHM3nxyUZ3zAylX8ZEyrDNd2XZOnQ0D5XfunJF5FLQnZbHHYq4UWvW1QfelQNXv1ICNkwYhfxjwfnqivYB6bFg==}
     peerDependencies:
       '@types/react': '*'
 
-  '@types/react@18.3.28':
-    resolution: {integrity: sha512-z9VXpC7MWrhfWipitjNdgCauoMLRdIILQsAEV+ZesIzBq/oUlxk0m3ApZuMFCXdnS4U7KrI+l3WRUEGQ8K1QKw==}
+  '@types/react-reconciler@0.33.0':
+    resolution: {integrity: sha512-HZOXsKT0tGI9LlUw2LuedXsVeB88wFa536vVL0M6vE8zN63nI+sSr1ByxmPToP5K5bukaVscyeCJcF9guVNJ1g==}
+    peerDependencies:
+      '@types/react': '*'
+
+  '@types/react@19.2.17':
+    resolution: {integrity: sha512-MXfmqaVPEVgkBT/aY0aGCkRWWtByiYQXo3xdQ8r5RzuFrPiRn8Gar2tQdXSUQ2GKV3bkXckek89V8wQBY2Q/Aw==}
 
   '@types/sortablejs@1.15.9':
     resolution: {integrity: sha512-7HP+rZGE2p886PKV9c9OJzLBI6BBJu1O7lJGYnPyG3fS4/duUCcngkNCjsLwIMV+WMqANe3tt4irrXHSIe68OQ==}
@@ -4215,6 +4342,10 @@ packages:
   '@webassemblyjs/wast-printer@1.9.0':
     resolution: {integrity: sha512-2J0nE95rHXHyQ24cWjMKJ1tqB/ds8z/cyeOZxJhcb+rW+SQASVjuznUSmdz5GpVJTzU8JkhYut0D3siFDD6wsA==}
 
+  '@xmldom/xmldom@0.9.10':
+    resolution: {integrity: sha512-A9gOqLdi6cV4ibazAjcQufGj0B1y/vDqYrcuP6d/6x8P27gRS8643Dj9o1dEKtB6O7fwxb2FgBmJS2mX7gpvdw==}
+    engines: {node: '>=14.6'}
+
   '@xtuc/ieee754@1.2.0':
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
 
@@ -4270,6 +4401,9 @@ packages:
   address@1.2.2:
     resolution: {integrity: sha512-4B/qKCfeE/ODUaAUpSwfzazo5x29WD4r3vXiWsB7I2mSDAihwEqKO+g8GELZUQSSAo5e1XTYh3ZVfLyxBc12nA==}
     engines: {node: '>= 10.0.0'}
+
+  ag-psd@28.5.1:
+    resolution: {integrity: sha512-oDzQ4VctavkqGiI1mFN9PIMjVrv0T6MpoIS6SAbzAQXCQs2b3UdyI9VQTrUQdfq9AaHQcR0cIX/hAZ7fyh7Cgw==}
 
   agent-base@7.1.4:
     resolution: {integrity: sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==}
@@ -4629,6 +4763,9 @@ packages:
   brorand@1.1.0:
     resolution: {integrity: sha512-cKV8tMCEpQs4hK/ik71d6LrPOnpkpGBR0wzxqr68g2m/LB2GxVYQroAjMJZRVM1Y4BCjCKc3vAamxSzOY2RP+w==}
 
+  brotli@1.3.3:
+    resolution: {integrity: sha512-oTKjJdShmDuGW94SyyaoQvAjf30dZaHnjJ8uAF+u2/vGJkJbJPJAT1gDiOJP5v1Zb6f9KEyW/1HpuaWIXtGHPg==}
+
   browser-process-hrtime@1.0.0:
     resolution: {integrity: sha512-9o5UecI3GhkpM6DrXr69PblIuWxPKk9Y0jHBRhdocZ2y7YECBFCsHm79Pr3OyR2AvjhDkabFJaDJMYRazHgsow==}
 
@@ -4758,6 +4895,10 @@ packages:
   caniuse-lite@1.0.30001782:
     resolution: {integrity: sha512-dZcaJLJeDMh4rELYFw1tvSn1bhZWYFOt468FcbHHxx/Z/dFidd1I6ciyFdi3iwfQCyOjqo9upF6lGQYtMiJWxw==}
 
+  canvas@3.2.3:
+    resolution: {integrity: sha512-PzE5nJZPz72YUAfo8oTp0u3fqqY7IzlTubneAihqDYAUcBk7ryeCmBbdJBEdaH0bptSOe2VT2Zwcb3UaFyaSWw==}
+    engines: {node: ^18.12.0 || >= 20.9.0}
+
   capital-case@1.0.4:
     resolution: {integrity: sha512-ds37W8CytHgwnhGGTi88pcPyR15qoNkOpYwmMMfnWqqWgESapLqvDx6huFjQ5vqWSn2Z06173XNA7LtMOeUh1A==}
 
@@ -4828,6 +4969,9 @@ packages:
   class-utils@0.3.6:
     resolution: {integrity: sha512-qOhPa/Fj7s6TY8H8esGu5QNpMMQxz79h+urzrNYN6mn+9BnxlDGf5QZ+XeCDsxSjPqsSR56XOZOJmpeurnLMeg==}
     engines: {node: '>=0.10.0'}
+
+  class-variance-authority@0.7.1:
+    resolution: {integrity: sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==}
 
   classnames@2.3.1:
     resolution: {integrity: sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==}
@@ -4907,6 +5051,10 @@ packages:
   clone@2.1.2:
     resolution: {integrity: sha512-3Pe/CF1Nn94hyhIYpjtiLhdCoEoz0DqQ+988E9gmeEdQZlojxnOb74wctFyuwWQHzqyf9X7C7MG8juUpqBJT8w==}
     engines: {node: '>=0.8'}
+
+  clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
 
   coa@2.0.2:
     resolution: {integrity: sha512-q5/jG+YQnSy4nRTV4F7lPepBJZ8qBNJJDBuJdoejDyLXgmL7IEo+Le2JDZudFTFt7mrCqIRaSjws4ygRCTCAXA==}
@@ -5402,9 +5550,17 @@ packages:
     resolution: {integrity: sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==}
     engines: {node: '>=0.10'}
 
+  decompress-response@6.0.0:
+    resolution: {integrity: sha512-aW35yZM6Bb/4oJlZncMH2LCoZtJXTRxES17vE3hoRiowU2kWHaJKFkSBDnDR+cm9J+9QhXmREyIfv0pji9ejCQ==}
+    engines: {node: '>=10'}
+
   deep-equal@1.1.2:
     resolution: {integrity: sha512-5tdhKF6DbU7iIzrIOa1AOUt39ZRm13cmL1cGEh//aqR8x9+tNfbywRf0n5FD/18OKMdo7DNEtrX2t22ZAkI+eg==}
     engines: {node: '>= 0.4'}
+
+  deep-extend@0.6.0:
+    resolution: {integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==}
+    engines: {node: '>=4.0.0'}
 
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
@@ -5482,6 +5638,9 @@ packages:
 
   detect-node@2.1.0:
     resolution: {integrity: sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==}
+
+  dfa@1.2.0:
+    resolution: {integrity: sha512-ED3jP8saaweFTjeGX8HQPjeC1YYyZs98jGNZx6IiBvxW7JG5v492kamAQB3m2wop07CvU/RQmzcKr6bgcC5D/Q==}
 
   diffie-hellman@5.0.3:
     resolution: {integrity: sha512-kqag/Nl+f3GwyK25fhUMYj81BUOrZ9IuJsjIcDE5icNM9FJHAVm3VcUDxdLPoQtTuUylWm6ZIknYJwwaPxsUzg==}
@@ -5876,6 +6035,10 @@ packages:
     resolution: {integrity: sha512-w/ozOKR9Obk3qoWeY/WDi6MFta9AoMR+zud60mdnbniMcBxRuFJyDt2LdX/14A1UABeqk+Uk+LDfUpvoGKppZA==}
     engines: {node: '>=0.10.0'}
 
+  expand-template@2.0.3:
+    resolution: {integrity: sha512-XYfuKMvj4O35f/pOXLObndIRvyQ+/+6AhODh+OKWj9S9498pHHn/IMszH+gt0fBCRWMNfk1ZSp5x3AifmnI2vg==}
+    engines: {node: '>=6'}
+
   exponential-backoff@3.1.3:
     resolution: {integrity: sha512-ZgEeZXj30q+I0EN+CbSSpIyPaJ5HVQD18Z1m+u1FXbAeT94mr1zw50q4q6jiiC447Nl/YTcIYSAftiGqetwXCA==}
 
@@ -5976,6 +6139,10 @@ packages:
     peerDependencies:
       webpack: ^4.0.0
 
+  file-type@22.0.1:
+    resolution: {integrity: sha512-ww5Mhre0EE+jmBvOXTmXAbEMuZE7uX4a3+oRCQFNj8w++g3ev913N6tXQz0XTXbueQ5TWQfm6BdaViEHHn8bhA==}
+    engines: {node: '>=22'}
+
   file-uri-to-path@1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
 
@@ -6038,6 +6205,9 @@ packages:
       debug:
         optional: true
 
+  fontkit@2.0.4:
+    resolution: {integrity: sha512-syetQadaUEDNdxdugga9CpEYVaQIxOwk7GlwZWWZ19//qW4zE5bknOKeMBDYAASwnpaSHKJITRLMF9m1fp3s6g==}
+
   for-each@0.3.5:
     resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
     engines: {node: '>= 0.4'}
@@ -6074,6 +6244,9 @@ packages:
 
   from2@2.3.0:
     resolution: {integrity: sha512-OMcX/4IC/uqEPVgGeyfN22LJk6AZrMkRZHxcHBMBvHScDGgwTm2GT2Wkgtocyd3JfZffjj2kYUDXXII0Fk9W0g==}
+
+  fs-constants@1.0.0:
+    resolution: {integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==}
 
   fs-extra@7.0.1:
     resolution: {integrity: sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==}
@@ -6175,6 +6348,9 @@ packages:
 
   gifuct-js@2.1.2:
     resolution: {integrity: sha512-rI2asw77u0mGgwhV3qA+OEgYqaDn5UNqgs+Bx0FGwSpuqfYn+Ir6RQY5ENNQ8SbIiG/m5gVa7CD5RriO4f4Lsg==}
+
+  github-from-package@0.0.0:
+    resolution: {integrity: sha512-SyHy3T1v2NUXn29OsWdxmK6RwHD+vkj3v8en8AOBZ1wBQ/hCAQ5bAQTD02kW4W9tUp/3Qh6J8r9EvntiyCmOOw==}
 
   glob-parent@3.1.0:
     resolution: {integrity: sha512-E8Ak/2+dZY6fnzlR7+ueWvhsH1SjHr4jjss4YS/h4py44jY9MhK/VFdaZJAWDz6BbL21KeteKxFSFpq8OS5gVA==}
@@ -6370,6 +6546,9 @@ packages:
   html-entities@1.4.0:
     resolution: {integrity: sha512-8nxjcBcd8wovbeKx7h3wTji4e6+rhaVuPNpMqwWgnHh+N9ToqsCs6XztWRBPQ+UtzsoMAdKZtUENoVzU/EMtZA==}
 
+  html-escaper@3.0.3:
+    resolution: {integrity: sha512-RuMffC89BOWQoY0WKGpIhn5gX3iI54O6nRA0yC124NYVtzjmFWBIiFd8M0x+ZdX0P9R4lADg1mgP8C7PxGOWuQ==}
+
   html-minifier@3.5.21:
     resolution: {integrity: sha512-LKUKwuJDhxNa3uf/LPR/KVjm/l3rBqtYeCOAekvG8F1vItxMUpueGd94i/asDDr8/1u7InxzFA5EeGjhhG5mMA==}
     engines: {node: '>=4'}
@@ -6392,6 +6571,9 @@ packages:
 
   htmlnano@0.2.9:
     resolution: {integrity: sha512-jWTtP3dCd7R8x/tt9DK3pvpcQd7HDMcRPUqPxr/i9989q2k5RHIhmlRDFeyQ/LSd8IKrteG8Ce5g0Ig4eGIipg==}
+
+  htmlparser2@10.1.0:
+    resolution: {integrity: sha512-VTZkM9GWRAtEpveh7MSF6SjjrpNVNNVJfFup7xTY3UpFtm67foy9HDVXneLtFVt4pMz5kZtgNcvCniNFb1hlEQ==}
 
   htmlparser2@3.10.1:
     resolution: {integrity: sha512-IgieNijUMbkDovyoKObU1DUhm1iwNYE/fuifEoEHfd1oZKZDaONBSkal7Y01shxsM49R4XaMdGez3WnF9UfiCQ==}
@@ -6543,6 +6725,9 @@ packages:
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
+
+  ini@1.3.8:
+    resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
 
   ini@4.1.3:
     resolution: {integrity: sha512-X7rqawQBvfdjS10YU1y1YVreA3SsLrW9dX2CewP2EbBJM4ypVNLDkO5y04gejPwKIY9lR+7r9gn3rFPt/kmWFg==}
@@ -6865,6 +7050,11 @@ packages:
     peerDependencies:
       react: '>=18.0'
 
+  its-fine@2.0.0:
+    resolution: {integrity: sha512-KLViCmWx94zOvpLwSlsx6yOCeMhZYaxrJV87Po5k/FoZzcPSahvK5qJ7fYhS61sZi5ikmh2S3Hz55A2l3U69ng==}
+    peerDependencies:
+      react: ^19.0.0
+
   jackspeak@3.4.3:
     resolution: {integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==}
 
@@ -6978,6 +7168,9 @@ packages:
   konva@10.2.3:
     resolution: {integrity: sha512-NDGeIxm2nsQcp6oqZKS9T764JEi53RpQvpUxV2EK7Awm49fwdd1+EB1Nq1nyspRc0hOAKyKssoTFvPaKwiSUog==}
 
+  konva@10.3.0:
+    resolution: {integrity: sha512-gt19K2gzY4lHbnkvsku7eSmB+A9PTS2jG4F9coBMsdjM1UKfJNxJbDbXVpeCW1wjEGRwBD3nBamcHnqJhAeKlg==}
+
   konva@9.3.22:
     resolution: {integrity: sha512-yQI5d1bmELlD/fowuyfOp9ff+oamg26WOCkyqUyc+nczD/lhRa3EvD2MZOoc4c1293TAubW9n34fSQLgSeEgSw==}
 
@@ -7067,6 +7260,15 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
+  linkedom@0.18.12:
+    resolution: {integrity: sha512-jalJsOwIKuQJSeTvsgzPe9iJzyfVaEJiEXl+25EkKevsULHvMJzpNqwvj1jOESWdmgKDiXObyjOYwlUqG7wo1Q==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      canvas: '>= 2'
+    peerDependenciesMeta:
+      canvas:
+        optional: true
+
   listr2@8.2.4:
     resolution: {integrity: sha512-opevsywziHd3zHCVQGAj8zu+Z3yHNkkoYhWIGnq54RrCVwLz0MozotJEDnKsIBLvkfLGN6BLOyAeRrYI0pKA4g==}
     engines: {node: '>=18.0.0'}
@@ -7107,6 +7309,9 @@ packages:
 
   lodash-es@4.17.23:
     resolution: {integrity: sha512-kVI48u3PZr38HdYz98UmfPnXl2DXrpdctLrFLCd3kOx1xUkOmpFPx7gCWWM5MPkL/fD8zb+Ph0QzjGFs4+hHWg==}
+
+  lodash-es@4.18.1:
+    resolution: {integrity: sha512-J8xewKD/Gk22OZbhpOVSwcs60zhd95ESDwezOFuA3/099925PdHJ7OFHNTGtajL3AlZkykD32HykiMo+BIBI8A==}
 
   lodash.clone@4.5.0:
     resolution: {integrity: sha512-GhrVeweiTD6uTmmn5hV/lzgCQhccwReIVRLHp7LT4SopOjqEZ5BbX8b5WWEtAKasjmy8hR7ZPwsYlxRCku5odg==}
@@ -7181,6 +7386,11 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
+  lucide-react@1.18.0:
+    resolution: {integrity: sha512-LZDb7H/0YfM+RJncD0hDQRCAu+vSGODqpe35TuVI8EuXaRjkczbsx7p8dY4J87F/MUSj6bpYqeI8nw8qXaAdmA==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   magic-string@0.22.5:
     resolution: {integrity: sha512-oreip9rJZkzvA8Qzk9HFs8fZGF/u7H/gtrE8EN6RjKJ9kh2HlC+yQ2QezifqTZfGyiuAV0dRv5a+y/8gBb1m9w==}
 
@@ -7232,6 +7442,9 @@ packages:
 
   mediabunny@1.40.1:
     resolution: {integrity: sha512-HU/stGzAkdWaJIly6ypbUVgAUvT9kt39DIg0IaErR7/1fwtTmgUYs4i8uEPYcgcjPjbB9gtBmUXOLnXi6J2LDw==}
+
+  mediabunny@1.46.0:
+    resolution: {integrity: sha512-HIaMQ6PVMndrFb9sNCh9/uAsLFBfLzyAgbk3kN7ZqlRRq//9RPYqIOQtXYpkbWBZU8ZJkaAUNLDtwTcdKo7yQw==}
 
   memoize-one@5.2.1:
     resolution: {integrity: sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==}
@@ -7312,6 +7525,10 @@ packages:
     resolution: {integrity: sha512-VP79XUPxV2CigYP3jWwAUFSku2aKqBH7uTAapFWCBqutsbmDo96KY5o8uh6U+/YSIn5OxJnXp73beVkpqMIGhA==}
     engines: {node: '>=18'}
 
+  mimic-response@3.1.0:
+    resolution: {integrity: sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ==}
+    engines: {node: '>=10'}
+
   mini-css-extract-plugin@0.8.2:
     resolution: {integrity: sha512-a3Y4of27Wz+mqK3qrcd3VhYz6cU0iW5x3Sgvqzbj+XmlrSizmvu8QQMl5oMYJjgHOC4iyt+w7l4umP+dQeW3bw==}
     engines: {node: '>= 6.9.0'}
@@ -7386,6 +7603,9 @@ packages:
     resolution: {integrity: sha512-WRoDn//mXBiJ1H40rqa3vH0toePwSsGb45iInWlTySa+Uu4k3tYUSxa2v1KqAiLtvlrSzaExqS1gtk96A9zvEA==}
     engines: {node: '>=0.10.0'}
 
+  mkdirp-classic@0.5.3:
+    resolution: {integrity: sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A==}
+
   mkdirp@0.5.6:
     resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==}
     hasBin: true
@@ -7401,19 +7621,6 @@ packages:
       '@angular/common': '>=11.1.1'
       '@angular/core': '>=11.1.1'
       mobx: '>=2'
-
-  mobx-react-lite@3.4.3:
-    resolution: {integrity: sha512-NkJREyFTSUXR772Qaai51BnE1voWx56LOL80xG7qkZr6vo8vEaLF3sz1JNUVh+rxmUzxYaqOhfuxTfqUh0FXUg==}
-    peerDependencies:
-      mobx: ^6.1.0
-      react: ^16.8.0 || ^17 || ^18
-      react-dom: '*'
-      react-native: '*'
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-      react-native:
-        optional: true
 
   mobx-react-lite@4.1.1:
     resolution: {integrity: sha512-iUxiMpsvNraCKXU+yPotsOncNNmyeS2B5DKL+TL6Tar/xm+wwNJAubJmtRSeAoYawdZqwv8Z/+5nPRHeQxTiXg==}
@@ -7433,6 +7640,11 @@ packages:
     peerDependencies:
       mobx: ^6.3.0
 
+  mobx-state-tree@7.2.0:
+    resolution: {integrity: sha512-o46IsMI/lHITYCmkbQgNOCDT8M9Hd2WAgOlHt42hCg+XUZP21obF5ui5Vv9epIsQV8Wpp/GWNHu1YFhTx6iq0g==}
+    peerDependencies:
+      mobx: ^6.3.0
+
   mobx-vue-lite@0.4.3:
     resolution: {integrity: sha512-eTFd+Mpadl/w2EO2lik6Opax5kF4aHJTcRFKOLu+29oaUJBGZyP1z5gCQo9YzxkHlyytRNPny60NPJrbHRa70g==}
     peerDependencies:
@@ -7447,6 +7659,9 @@ packages:
 
   mobx@6.15.0:
     resolution: {integrity: sha512-UczzB+0nnwGotYSgllfARAqWCJ5e/skuV2K/l+Zyck/H6pJIhLXuBnz+6vn2i211o7DtbE78HQtsYEKICHGI+g==}
+
+  mobx@6.16.1:
+    resolution: {integrity: sha512-syNcDdX3KT+Jq3je6eGjBhuc24Z68td2VG0zNFqRswaE433D9SNH5VRy/xrGbJsUixfppLLccXhAW9JSf6n+SQ==}
 
   moment@2.30.1:
     resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
@@ -7497,9 +7712,17 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  nanoid@5.1.11:
+    resolution: {integrity: sha512-v+KEsUv2ps74PaSKv0gHTxTCgMXOIfBEbaqa6w6ISIGC7ZsvHN4N9oJ8d4cmf0n5oTzQz2SLmThbQWhjd/8eKg==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+
   nanomatch@1.2.13:
     resolution: {integrity: sha512-fpoe2T0RbHwBTBUOftAfBPaDEi06ufaUai0mE6Yn1kacc3SnTErfb/h+X94VXzI64rKFHYImXSvdwGGCmwOqCA==}
     engines: {node: '>=0.10.0'}
+
+  napi-build-utils@2.0.0:
+    resolution: {integrity: sha512-GEbrYkbfF7MoNaoh2iGG84Mnf/WZfB0GdGEsM8wz7Expx/LlWf5U8t9nvJKXSp3qr5IsEbK04cBGhol/KwOsWA==}
 
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
@@ -7549,6 +7772,10 @@ packages:
 
   no-case@3.0.4:
     resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
+
+  node-abi@3.92.0:
+    resolution: {integrity: sha512-KdHvFWZjEKDf0cakgFjebl371GPsISX2oZHcuyKqM7DtogIsHrqKeLTo8wBHxaXRAQlY2PsPlZmfo+9ZCxEREQ==}
+    engines: {node: '>=10'}
 
   node-addon-api@1.7.2:
     resolution: {integrity: sha512-ibPK3iA+vaY1eEjESkQkM0BbCqFOaZMiXRTtdB0u7b4djtY6JnsjvPdUHVMg6xQt3B8fpTTWHI9A+ADjM9frzg==}
@@ -7859,6 +8086,9 @@ packages:
   pako@1.0.11:
     resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
 
+  pako@2.1.0:
+    resolution: {integrity: sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==}
+
   parallel-transform@1.2.0:
     resolution: {integrity: sha512-P2vSmIu38uIlvdcU7fDkyrxj33gTUy/ABO5ZUbGowxNCopBq/OoD42bP4UmMrJoPyk4Uqf0mu3mtWBhHCZD8yg==}
 
@@ -8057,11 +8287,27 @@ packages:
     resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==}
     engines: {node: '>=10.13.0'}
 
-  polotno@2.39.1:
-    resolution: {integrity: sha512-r3rYoAtbwcvyZK3yKUDObFLYUWHx4tmK6doc0Hu15oKUroNbK5yYtqH+zd5QHTpYSuKgfGnjSAaVy0W9FiXPvw==}
+  polotno@2.40.0:
+    resolution: {integrity: sha512-p//uzPlJGs6onMZOLla+OQ9SJPZ106nWRGRdxHClCgs07W6EwS4sq7oNcm7nzaD/p6GmdZORgBPmbSirSOh+uQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
+
+  polotno@4.0.2:
+    resolution: {integrity: sha512-JiW1jCQAi3tz3PhMCmQ/d5/zH4N1A2U/weTtoseaCBoSLtd/6vWOvp2mTGxzYQ0++YPtSD5jRUA0cxSINiD5KQ==}
+    peerDependencies:
+      '@blueprintjs/core': ^6.x
+      '@blueprintjs/icons': ^6.x
+      '@blueprintjs/select': ^6.x
+      react: ^19.2.0
+      react-dom: ^19.2.0
+    peerDependenciesMeta:
+      '@blueprintjs/core':
+        optional: true
+      '@blueprintjs/icons':
+        optional: true
+      '@blueprintjs/select':
+        optional: true
 
   portfinder@1.0.38:
     resolution: {integrity: sha512-rEwq/ZHlJIKw++XtLAO8PPuOQA/zaPJOZJ37BVuN97nLpMJeuDVLVGRwbFoBgLudgdTMP2hdRJP++H+8QOA3vg==}
@@ -8280,6 +8526,12 @@ packages:
   pptxgenjs@4.0.1:
     resolution: {integrity: sha512-TeJISr8wouAuXw4C1F/mC33xbZs/FuEG6nH9FG1Zj+nuPcGMP5YRHl6X+j3HSUnS1f3at6k75ZZXPMZlA5Lj9A==}
 
+  prebuild-install@7.1.3:
+    resolution: {integrity: sha512-8Mf2cbV7x1cXPUILADGI3wuhfqWvtiLA1iclTDbFRZkgRQS0NqsPZphna9V+HyTEadheuPmjaJMsbzKQFOzLug==}
+    engines: {node: '>=10'}
+    deprecated: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+    hasBin: true
+
   prelude-ls@1.1.2:
     resolution: {integrity: sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==}
     engines: {node: '>= 0.8.0'}
@@ -8442,6 +8694,10 @@ packages:
     resolution: {integrity: sha512-s4VSOf6yN0rvbRZGxs8Om5CWj6seneMwK3oDb4lWDH0UPhWcxwOWw5+qk24bxq87szX1ydrwylIOp2uG1ojUpA==}
     engines: {node: '>= 0.8'}
 
+  rc@1.2.8:
+    resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
+    hasBin: true
+
   react-color@2.19.3:
     resolution: {integrity: sha512-LEeGE/ZzNLIsFWa1TMe8y5VYqr7bibneWmvJwm1pCn/eNmrabWDh659JSPn9BuaMpEfU83WTOJfnCcjDZwNQTA==}
     peerDependencies:
@@ -8454,10 +8710,10 @@ packages:
       react: '>=16'
       react-dom: '>=16'
 
-  react-dom@18.3.1:
-    resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
+  react-dom@19.2.7:
+    resolution: {integrity: sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==}
     peerDependencies:
-      react: ^18.3.1
+      react: ^19.2.7
 
   react-fast-compare@3.2.2:
     resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
@@ -8488,6 +8744,13 @@ packages:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
 
+  react-konva@19.2.5:
+    resolution: {integrity: sha512-AdsuDB59GdB86QdenTAqRzr6Tfw3z9x9Opxo4BoqDjdNLsjekF9a1VhN4FlMPvg0qtrMl3d4dNmagaUTGH7fSA==}
+    peerDependencies:
+      konva: ^8.0.1 || ^7.2.5 || ^9.0.0 || ^10.0.0
+      react: ^19.2.0
+      react-dom: ^19.2.0
+
   react-popper@2.3.0:
     resolution: {integrity: sha512-e1hj8lL3uM+sgSR4Lxzn5h1GxBlpa4CQz0XLF8kx4MDrDRWY0Ena4c97PUeSX9i5W3UAfDP0z0FXCTQkoXUl3Q==}
     peerDependencies:
@@ -8500,6 +8763,12 @@ packages:
     engines: {node: '>=0.10.0'}
     peerDependencies:
       react: ^18.3.1
+
+  react-reconciler@0.33.0:
+    resolution: {integrity: sha512-KetWRytFv1epdpJc3J4G75I4WrplZE5jOL7Yq0p34+OVOKF4Se7WrdIdVC45XsSSmUTlht2FM/fM1FZb1mfQeA==}
+    engines: {node: '>=0.10.0'}
+    peerDependencies:
+      react: ^19.2.0
 
   react-refresh@0.16.0:
     resolution: {integrity: sha512-FPvF2XxTSikpJxcr+bHut2H4gJ17+18Uy20D5/F+SKzFap62R3cM5wH6b8WN3LyGSYeQilLEcJcR1fjBSI2S1A==}
@@ -8540,8 +8809,8 @@ packages:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  react@18.3.1:
-    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
+  react@19.2.7:
+    resolution: {integrity: sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==}
     engines: {node: '>=0.10.0'}
 
   reactcss@1.2.3:
@@ -8625,6 +8894,9 @@ packages:
   remove-trailing-separator@1.1.0:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==}
 
+  render-tag@0.1.15:
+    resolution: {integrity: sha512-x2nVSHF2l62ZTqmXUO6wZkctDuI3bvIjwdyhWiQxLADCQq1vWOKT147OAR+HmOGcibm1tJleFTWAKNL+gVG5XQ==}
+
   renderkid@2.0.7:
     resolution: {integrity: sha512-oCcFyxaMrKsKcTY59qnCAtmDVSLfPbrv6A3tVbPdFMMrv5jaK10V6m40cKsoPNhAqN6rmHW9sswW4o3ruSrwUQ==}
 
@@ -8668,6 +8940,9 @@ packages:
   requires-port@1.0.0:
     resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
 
+  reselect@5.2.0:
+    resolution: {integrity: sha512-AgZ3UOZm3YndfrJ4OYjgrT7bmCm/1iqkjvEfH/oYjzh6PD2qw4QuT3jjnXIrpdt4MTpMXclMT3lXbmRY+XRakw==}
+
   resolve-cwd@2.0.0:
     resolution: {integrity: sha512-ccu8zQTrzVr954472aUVPLEcB3YpKSYR3cg/3lo1okzobPBM+1INXBbBZlDbnI/hbEocnf8j0QVo43hQKrbchg==}
     engines: {node: '>=4'}
@@ -8704,6 +8979,9 @@ packages:
   restore-cursor@5.1.0:
     resolution: {integrity: sha512-oMA2dcrw6u0YfxJQXm342bFKX/E4sG9rbTzO9ptUcR/e8A33cHuvStiYOwH7fszkZlZ1z/ta9AAoPk2F4qIOHA==}
     engines: {node: '>=18'}
+
+  restructure@3.0.2:
+    resolution: {integrity: sha512-gSfoiOEA0VPE6Tukkrr7I0RBdE0s7H1eFCDBk05l1KIQT1UIKNc5JZy6jdyW6eYH3aR3g5b3PuL77rq0hvwtAw==}
 
   ret@0.1.15:
     resolution: {integrity: sha512-TTlYpa+OL+vMMNG24xSlQGEJ3B/RzEfUlLct7b5G/ytav+wPrplCpVMFuwzXbkecJrb6IYo1iFb0S9v37754mg==}
@@ -8806,6 +9084,9 @@ packages:
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
 
+  scheduler@0.27.0:
+    resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
+
   schema-utils@1.0.0:
     resolution: {integrity: sha512-i27Mic4KovM/lnGsy8whRCHhc7VicJajAjTrYg11K9zfZXnYIt4k5F+kZkwjnrhKzLic/HLU4j11mjsz2G/75g==}
     engines: {node: '>= 4'}
@@ -8893,6 +9174,10 @@ packages:
   shallow-copy@0.0.1:
     resolution: {integrity: sha512-b6i4ZpVuUxB9h5gfCxPiusKYkqTMOjEbBs4wMaFbkfia4yFv92UKZ6Df8WXcKbn08JNL/abvg3FnMAOfakDvUw==}
 
+  sharp@0.34.5:
+    resolution: {integrity: sha512-Ou9I5Ft9WNcCbXrU9cMgPBcCK8LiwLqcbywW3t4oDV37n1pzpuNLsYiAV8eODnjbtQlSDwZ2cUEeQz4E54Hltg==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+
   shebang-command@1.2.0:
     resolution: {integrity: sha512-EV3L1+UQWGor21OmnvojK36mhg+TyIKDh3iFBKBohr5xeXIhNBcx8oWdgkTEEQ+BEFFYdLRuqMfd5L84N1V5Vg==}
     engines: {node: '>=0.10.0'}
@@ -8942,6 +9227,12 @@ packages:
   sigstore@2.3.1:
     resolution: {integrity: sha512-8G+/XDU8wNsJOQS5ysDVO0Etg9/2uA5gR9l4ZwijjlwxBcrU6RPfwi2+jJmbP+Ap1Hlp/nVAaEO4Fj22/SL2gQ==}
     engines: {node: ^16.14.0 || >=18.0.0}
+
+  simple-concat@1.0.1:
+    resolution: {integrity: sha512-cSFtAPtRhljv69IK0hTVZQ+OfE9nePi/rtJmw5UjHeVyVroEqJXP1sFztKUy1qU+xvz3u/sfYJLa947b7nAN2Q==}
+
+  simple-get@4.0.1:
+    resolution: {integrity: sha512-brv7p5WgH0jmQJr1ZDDfKDOSeWWg+OVypG99A/5vYGPqJ6pxiaHLy8nxtFjBA7oMa01ebA9gfh1uMCFqOuXxvA==}
 
   simple-swizzle@0.2.4:
     resolution: {integrity: sha512-nAu1WFPQSMNr2Zn9PGSZK9AGn4t/y97lEm+MXTtUDwfP0ksAIX4nO+6ruD9Jwut4C49SB1Ws+fbXsm/yScWOHw==}
@@ -9213,9 +9504,17 @@ packages:
     resolution: {integrity: sha512-RsSNPLpq6YUL7QYy44RnPVTn/lcVZtb48Uof3X5JLbF4zD/Gs7ZFDv2HWol+leoQN2mT86LAzSshGfkTlSOpsA==}
     engines: {node: '>=4'}
 
+  strip-json-comments@2.0.1:
+    resolution: {integrity: sha512-4gB8na07fecVVkOI6Rs4e7T6NOTki5EmL7TUduTs6bu3EdnSycntVJ4re8kgZA+wx9IueI2Y11bfbgwtzuE0KQ==}
+    engines: {node: '>=0.10.0'}
+
   strip-json-comments@3.1.1:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
+
+  strtok3@10.3.5:
+    resolution: {integrity: sha512-ki4hZQfh5rX0QDLLkOCj+h+CVNkqmp/CMf8v8kZpkNVK6jGQooMytqzLZYUVYIZcFZ6yDB70EfD8POcFXiF5oA==}
+    engines: {node: '>=18'}
 
   styled-jsx@5.1.1:
     resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
@@ -9286,8 +9585,18 @@ packages:
     resolution: {integrity: sha512-wmEc8m4fjnob4gt5riFRtTu/6+4rSe12TpAELNSqHMfF3IqnA+CH37USM6/YR3qRZv7e56kAEAtd6nKZaxe0Ug==}
     engines: {node: '>=6.0.0'}
 
+  tailwind-merge@3.6.0:
+    resolution: {integrity: sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==}
+
   tapable@1.1.3:
     resolution: {integrity: sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==}
+    engines: {node: '>=6'}
+
+  tar-fs@2.1.4:
+    resolution: {integrity: sha512-mDAjwmZdh7LTT6pNleZ05Yt65HC3E+NiQzl672vQG38jIrehtJk/J3mNwIg+vShQPcLF/LV7CMnDW6vjj6sfYQ==}
+
+  tar-stream@2.2.0:
+    resolution: {integrity: sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==}
     engines: {node: '>=6'}
 
   tar@6.2.1:
@@ -9409,6 +9718,10 @@ packages:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
     engines: {node: '>=0.6'}
 
+  token-types@6.1.2:
+    resolution: {integrity: sha512-dRXchy+C0IgK8WPC6xvCHFRIWYUbqqdEIKPaKo/AcTUNzwLTK6AH7RjdLWsEZcAN/TBdtfUw3PYEgPr5VPr6ww==}
+    engines: {node: '>=14.16'}
+
   toposort@1.0.7:
     resolution: {integrity: sha512-FclLrw8b9bMWf4QlCJuHBEVhSRsqDj6u3nIjAzPeJvgl//1hBlffdlk0MALceL14+koWEdU4ofRAXofbODxQzg==}
 
@@ -9510,6 +9823,13 @@ packages:
     engines: {node: '>=0.8.0'}
     hasBin: true
 
+  uhyphen@0.2.0:
+    resolution: {integrity: sha512-qz3o9CHXmJJPGBdqzab7qAYuW8kQGKNEuoHFYrBwV6hWIMcpAmxDLXojcHfFr9US1Pe6zUswEIJIbLI610fuqA==}
+
+  uint8array-extras@1.5.0:
+    resolution: {integrity: sha512-rvKSBiC5zqCCiDZ9kAOszZcDvdAHwwIKJG33Ykj43OKcWsnmcBRL09YTU4nOeHZ8Y2a7l1MgTd08SBe9A8Qj6A==}
+    engines: {node: '>=18'}
+
   unbox-primitive@1.1.0:
     resolution: {integrity: sha512-nWJ91DjeOkej/TA8pXQ3myruKpKEYgqvpw9lz4OPHj/NWFNluYrjbz9j01CJ8yKQd2g4jFoOkINCTW2I5LEEyw==}
     engines: {node: '>= 0.4'}
@@ -9537,12 +9857,18 @@ packages:
     resolution: {integrity: sha512-JQ84qTuMg4nVkx8ga4A16a1epI9H6uTXAknqxkGF/aFfRLw1xC/Bp24HNLaZhHSkWd3+84t8iXnp1J0kYcZHhg==}
     engines: {node: '>=4'}
 
+  unicode-properties@1.4.1:
+    resolution: {integrity: sha512-CLjCCLQ6UuMxWnbIylkisbRj31qxHPAurvena/0iwSVbQ2G1VY5/HjV0IRabOEbDHlzZlRdCrD4NhB0JtU40Pg==}
+
   unicode-property-aliases-ecmascript@2.2.0:
     resolution: {integrity: sha512-hpbDzxUY9BFwX+UeBnxv3Sh1q7HFxj48DTmXchNgRa46lO8uj3/1iEn3MiNUYTg1g9ctIqXCCERn8gYZhHC5lQ==}
     engines: {node: '>=4'}
 
   unicode-trie@0.3.1:
     resolution: {integrity: sha512-WgVuO0M2jDl7hVfbPgXv2LUrD81HM0bQj/bvLGiw6fJ4Zo8nNFnDrA0/hU2Te/wz6pjxCm5cxJwtLjo2eyV51Q==}
+
+  unicode-trie@2.0.0:
+    resolution: {integrity: sha512-x7bc76x0bm4prf1VLg79uhAzKw8DVboClSN5VxJuQ+LKDOVEW9CdH+VY7SP+vX7xCYQqzzgQpFqz15zeLvAtZQ==}
 
   union-value@1.0.1:
     resolution: {integrity: sha512-tJfXmxMeWYnczCVs7XAEvIV7ieppALdyepWMkHkwciRpZraG/xwT+s2JN8+pr1+8jCRf80FFzvr+MpQeeoF4Xg==}
@@ -11046,64 +11372,89 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
+  '@base-ui/react@1.5.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+    dependencies:
+      '@babel/runtime': 7.29.2
+      '@base-ui/utils': 0.2.9(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@floating-ui/react-dom': 2.1.8(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@floating-ui/utils': 0.2.11
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      use-sync-external-store: 1.6.0(react@19.2.7)
+    optionalDependencies:
+      '@types/react': 19.2.17
+
+  '@base-ui/utils@0.2.9(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+    dependencies:
+      '@babel/runtime': 7.29.2
+      '@floating-ui/utils': 0.2.11
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      reselect: 5.2.0
+      use-sync-external-store: 1.6.0(react@19.2.7)
+    optionalDependencies:
+      '@types/react': 19.2.17
+
   '@blueprintjs/colors@5.1.16':
     dependencies:
       tslib: 2.6.3
 
-  '@blueprintjs/core@5.19.0(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@blueprintjs/core@5.19.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@blueprintjs/colors': 5.1.16
-      '@blueprintjs/icons': 5.23.0(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@blueprintjs/icons': 5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@popperjs/core': 2.11.8
       classnames: 2.5.1
       normalize.css: 8.0.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-popper: 2.3.0(@popperjs/core@2.11.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-transition-group: 4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-uid: 2.4.0(@types/react@18.3.28)(react@18.3.1)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      react-popper: 2.3.0(@popperjs/core@2.11.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-transition-group: 4.4.5(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-uid: 2.4.0(@types/react@19.2.17)(react@19.2.7)
       tslib: 2.6.3
-      use-sync-external-store: 1.6.0(react@18.3.1)
+      use-sync-external-store: 1.6.0(react@19.2.7)
     optionalDependencies:
-      '@types/react': 18.3.28
+      '@types/react': 19.2.17
 
-  '@blueprintjs/core@5.19.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@blueprintjs/colors': 5.1.16
-      '@blueprintjs/icons': 5.23.0(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@blueprintjs/icons': 5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@popperjs/core': 2.11.8
       classnames: 2.5.1
       normalize.css: 8.0.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-popper: 2.3.0(@popperjs/core@2.11.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-transition-group: 4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-uid: 2.4.0(@types/react@18.3.28)(react@18.3.1)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      react-popper: 2.3.0(@popperjs/core@2.11.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-transition-group: 4.4.5(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-uid: 2.4.0(@types/react@19.2.17)(react@19.2.7)
       tslib: 2.6.3
-      use-sync-external-store: 1.6.0(react@18.3.1)
+      use-sync-external-store: 1.6.0(react@19.2.7)
     optionalDependencies:
-      '@types/react': 18.3.28
+      '@types/react': 19.2.17
 
-  '@blueprintjs/icons@5.23.0(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       change-case: 4.1.2
       classnames: 2.5.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
       tslib: 2.6.3
     optionalDependencies:
-      '@types/react': 18.3.28
+      '@types/react': 19.2.17
 
-  '@blueprintjs/select@5.3.20(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
-      '@blueprintjs/core': 5.19.0(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@blueprintjs/icons': 5.23.0(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@blueprintjs/core': 5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@blueprintjs/icons': 5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       classnames: 2.5.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
       tslib: 2.6.3
     optionalDependencies:
-      '@types/react': 18.3.28
+      '@types/react': 19.2.17
+
+  '@borewit/text-codec@0.2.2': {}
 
   '@emnapi/core@1.9.1':
     dependencies:
@@ -11193,6 +11544,23 @@ snapshots:
   '@esbuild/win32-x64@0.23.0':
     optional: true
 
+  '@floating-ui/core@1.7.5':
+    dependencies:
+      '@floating-ui/utils': 0.2.11
+
+  '@floating-ui/dom@1.7.6':
+    dependencies:
+      '@floating-ui/core': 1.7.5
+      '@floating-ui/utils': 0.2.11
+
+  '@floating-ui/react-dom@2.1.8(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+    dependencies:
+      '@floating-ui/dom': 1.7.6
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+
+  '@floating-ui/utils@0.2.11': {}
+
   '@handsontable/pikaday@1.0.0': {}
 
   '@handsontable/react@15.3.0(handsontable@15.3.0)':
@@ -11218,9 +11586,105 @@ snapshots:
 
   '@iarna/toml@2.2.5': {}
 
-  '@icons/material@0.2.4(react@18.3.1)':
+  '@icons/material@0.2.4(react@19.2.7)':
     dependencies:
-      react: 18.3.1
+      react: 19.2.7
+
+  '@img/colour@1.1.0': {}
+
+  '@img/sharp-darwin-arm64@0.34.5':
+    optionalDependencies:
+      '@img/sharp-libvips-darwin-arm64': 1.2.4
+    optional: true
+
+  '@img/sharp-darwin-x64@0.34.5':
+    optionalDependencies:
+      '@img/sharp-libvips-darwin-x64': 1.2.4
+    optional: true
+
+  '@img/sharp-libvips-darwin-arm64@1.2.4':
+    optional: true
+
+  '@img/sharp-libvips-darwin-x64@1.2.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-arm64@1.2.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-arm@1.2.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-ppc64@1.2.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-riscv64@1.2.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-s390x@1.2.4':
+    optional: true
+
+  '@img/sharp-libvips-linux-x64@1.2.4':
+    optional: true
+
+  '@img/sharp-libvips-linuxmusl-arm64@1.2.4':
+    optional: true
+
+  '@img/sharp-libvips-linuxmusl-x64@1.2.4':
+    optional: true
+
+  '@img/sharp-linux-arm64@0.34.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-arm64': 1.2.4
+    optional: true
+
+  '@img/sharp-linux-arm@0.34.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-arm': 1.2.4
+    optional: true
+
+  '@img/sharp-linux-ppc64@0.34.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-ppc64': 1.2.4
+    optional: true
+
+  '@img/sharp-linux-riscv64@0.34.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-riscv64': 1.2.4
+    optional: true
+
+  '@img/sharp-linux-s390x@0.34.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-s390x': 1.2.4
+    optional: true
+
+  '@img/sharp-linux-x64@0.34.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linux-x64': 1.2.4
+    optional: true
+
+  '@img/sharp-linuxmusl-arm64@0.34.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linuxmusl-arm64': 1.2.4
+    optional: true
+
+  '@img/sharp-linuxmusl-x64@0.34.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linuxmusl-x64': 1.2.4
+    optional: true
+
+  '@img/sharp-wasm32@0.34.5':
+    dependencies:
+      '@emnapi/runtime': 1.9.1
+    optional: true
+
+  '@img/sharp-win32-arm64@0.34.5':
+    optional: true
+
+  '@img/sharp-win32-ia32@0.34.5':
+    optional: true
+
+  '@img/sharp-win32-x64@0.34.5':
+    optional: true
 
   '@inquirer/checkbox@2.5.0':
     dependencies:
@@ -11416,17 +11880,17 @@ snapshots:
   '@lmdb/lmdb-win32-x64@3.0.13':
     optional: true
 
-  '@meronex/icons@1.4.1(react@18.3.1)':
+  '@meronex/icons@1.4.1(react@19.2.7)':
     dependencies:
       camelcase: 5.3.1
       ncp: 2.0.0
-      react: 18.3.1
+      react: 19.2.7
 
-  '@meronex/icons@4.0.0(react@18.3.1)':
+  '@meronex/icons@4.0.0(react@19.2.7)':
     dependencies:
       camelcase: 5.3.1
       ncp: 2.0.0
-      react: 18.3.1
+      react: 19.2.7
 
   '@mischnic/json-sourcemap@0.1.1':
     dependencies:
@@ -12305,14 +12769,24 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
+  '@polotno/pdf-export@0.2.1':
+    dependencies:
+      '@xmldom/xmldom': 0.9.10
+      canvas: 3.2.3
+      file-type: 22.0.1
+      linkedom: 0.18.12(canvas@3.2.3)
+      sharp: 0.34.5
+    transitivePeerDependencies:
+      - supports-color
+
   '@polotno/pdf-import@0.0.6':
     dependencies:
       opentype.js: 1.3.4
       pdfjs-dist: 4.10.38
 
-  '@polotno/pptx-export@0.0.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)':
+  '@polotno/pptx-export@0.0.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)':
     dependencies:
-      polotno: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+      polotno: 2.40.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       pptxgenjs: 4.0.1
     transitivePeerDependencies:
       - '@types/react'
@@ -12322,14 +12796,19 @@ snapshots:
       - react-native
       - typescript
 
+  '@polotno/psd-import@0.0.2':
+    dependencies:
+      ag-psd: 28.5.1
+      fontkit: 2.0.4
+
   '@polotno/svg-import@0.0.13':
     dependencies:
       konva: 10.2.3
 
-  '@polotno/video-export@0.0.2(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)':
+  '@polotno/video-export@0.0.2(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)':
     dependencies:
       mediabunny: 1.40.1
-      polotno: 2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4)
+      polotno: 2.40.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
     transitivePeerDependencies:
       - '@types/react'
       - '@types/sortablejs'
@@ -12560,6 +13039,15 @@ snapshots:
     dependencies:
       '@swc/counter': 0.1.3
 
+  '@tokenizer/inflate@0.4.1':
+    dependencies:
+      debug: 4.4.3(supports-color@6.1.0)
+      token-types: 6.1.2
+    transitivePeerDependencies:
+      - supports-color
+
+  '@tokenizer/token@0.3.0': {}
+
   '@tufjs/canonical-json@2.0.0': {}
 
   '@tufjs/models@2.0.1':
@@ -12626,21 +13114,22 @@ snapshots:
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@types/prop-types@15.7.15': {}
-
   '@types/q@1.5.8': {}
 
-  '@types/react-dom@18.3.7(@types/react@18.3.28)':
+  '@types/react-dom@19.2.3(@types/react@19.2.17)':
     dependencies:
-      '@types/react': 18.3.28
+      '@types/react': 19.2.17
 
-  '@types/react-reconciler@0.28.9(@types/react@18.3.28)':
+  '@types/react-reconciler@0.28.9(@types/react@19.2.17)':
     dependencies:
-      '@types/react': 18.3.28
+      '@types/react': 19.2.17
 
-  '@types/react@18.3.28':
+  '@types/react-reconciler@0.33.0(@types/react@19.2.17)':
     dependencies:
-      '@types/prop-types': 15.7.15
+      '@types/react': 19.2.17
+
+  '@types/react@19.2.17':
+    dependencies:
       csstype: 3.2.3
 
   '@types/sortablejs@1.15.9': {}
@@ -12803,11 +13292,11 @@ snapshots:
 
   '@vue/cli-overlay@4.5.19': {}
 
-  '@vue/cli-plugin-babel@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16))(core-js@3.49.0)(vue@2.7.16)':
+  '@vue/cli-plugin-babel@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16))(core-js@3.49.0)(vue@2.7.16)':
     dependencies:
       '@babel/core': 7.29.0
       '@vue/babel-preset-app': 4.5.19(@babel/core@7.29.0)(core-js@3.49.0)(vue@2.7.16)
-      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16)
+      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16)
       '@vue/cli-shared-utils': 4.5.19
       babel-loader: 8.4.1(@babel/core@7.29.0)(webpack@4.47.0)
       cache-loader: 4.1.0(webpack@4.47.0)
@@ -12820,9 +13309,9 @@ snapshots:
       - webpack-cli
       - webpack-command
 
-  '@vue/cli-plugin-eslint@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16))(eslint@6.8.0)':
+  '@vue/cli-plugin-eslint@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16))(eslint@6.8.0)':
     dependencies:
-      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16)
+      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16)
       '@vue/cli-shared-utils': 4.5.19
       eslint: 6.8.0
       eslint-loader: 2.2.1(eslint@6.8.0)(webpack@4.47.0)
@@ -12834,24 +13323,24 @@ snapshots:
       - webpack-cli
       - webpack-command
 
-  '@vue/cli-plugin-router@4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16))':
+  '@vue/cli-plugin-router@4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16))':
     dependencies:
-      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16)
+      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16)
       '@vue/cli-shared-utils': 4.5.19
 
-  '@vue/cli-plugin-vuex@4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16))':
+  '@vue/cli-plugin-vuex@4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16))':
     dependencies:
-      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16)
+      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16)
 
-  '@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16)':
+  '@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16)':
     dependencies:
       '@intervolga/optimize-cssnano-plugin': 1.0.6(webpack@4.47.0)
       '@soda/friendly-errors-webpack-plugin': 1.8.1(webpack@4.47.0)
       '@vue/cli-overlay': 4.5.19
-      '@vue/cli-plugin-router': 4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16))
-      '@vue/cli-plugin-vuex': 4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16))
+      '@vue/cli-plugin-router': 4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16))
+      '@vue/cli-plugin-vuex': 4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16))
       '@vue/cli-shared-utils': 4.5.19
-      '@vue/component-compiler-utils': 3.3.0(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@vue/component-compiler-utils': 3.3.0(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@vue/preload-webpack-plugin': 1.1.2(html-webpack-plugin@3.2.0(webpack@4.47.0))(webpack@4.47.0)
       '@vue/web-component-wrapper': 1.3.0
       acorn: 6.4.2
@@ -12896,7 +13385,7 @@ snapshots:
       terser-webpack-plugin: 2.3.8(webpack@4.47.0)
       thread-loader: 2.1.3(webpack@4.47.0)
       url-loader: 2.3.0(file-loader@4.3.0(webpack@4.47.0))(webpack@4.47.0)
-      vue-loader: 15.11.1(@vue/compiler-sfc@3.5.31)(cache-loader@4.1.0(webpack@4.47.0))(css-loader@3.6.0(webpack@4.47.0))(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16)(webpack@4.47.0)
+      vue-loader: 15.11.1(@vue/compiler-sfc@3.5.31)(cache-loader@4.1.0(webpack@4.47.0))(css-loader@3.6.0(webpack@4.47.0))(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16)(webpack@4.47.0)
       vue-style-loader: 4.1.3
       vue-template-compiler: 2.7.16
       webpack: 4.47.0
@@ -13020,9 +13509,9 @@ snapshots:
       '@vue/compiler-dom': 3.5.31
       '@vue/shared': 3.5.31
 
-  '@vue/component-compiler-utils@3.3.0(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@vue/component-compiler-utils@3.3.0(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
-      consolidate: 0.15.1(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      consolidate: 0.15.1(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       hash-sum: 1.0.2
       lru-cache: 4.1.5
       merge-source-map: 1.1.0
@@ -13228,6 +13717,8 @@ snapshots:
       '@webassemblyjs/wast-parser': 1.9.0
       '@xtuc/long': 4.2.2
 
+  '@xmldom/xmldom@0.9.10': {}
+
   '@xtuc/ieee754@1.2.0': {}
 
   '@xtuc/long@4.2.2': {}
@@ -13263,6 +13754,11 @@ snapshots:
   acorn@8.16.0: {}
 
   address@1.2.2: {}
+
+  ag-psd@28.5.1:
+    dependencies:
+      base64-js: 1.5.1
+      pako: 2.1.0
 
   agent-base@7.1.4: {}
 
@@ -13661,6 +14157,10 @@ snapshots:
 
   brorand@1.1.0: {}
 
+  brotli@1.3.3:
+    dependencies:
+      base64-js: 1.5.1
+
   browser-process-hrtime@1.0.0: {}
 
   browserify-aes@1.2.0:
@@ -13874,6 +14374,11 @@ snapshots:
 
   caniuse-lite@1.0.30001782: {}
 
+  canvas@3.2.3:
+    dependencies:
+      node-addon-api: 7.1.1
+      prebuild-install: 7.1.3
+
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
@@ -13987,6 +14492,10 @@ snapshots:
       isobject: 3.0.1
       static-extend: 0.1.2
 
+  class-variance-authority@0.7.1:
+    dependencies:
+      clsx: 2.1.1
+
   classnames@2.3.1: {}
 
   classnames@2.5.1: {}
@@ -14066,6 +14575,8 @@ snapshots:
   clone@1.0.4: {}
 
   clone@2.1.2: {}
+
+  clsx@2.1.1: {}
 
   coa@2.0.2:
     dependencies:
@@ -14151,14 +14662,14 @@ snapshots:
 
   console-browserify@1.2.0: {}
 
-  consolidate@0.15.1(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  consolidate@0.15.1(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       bluebird: 3.7.2
     optionalDependencies:
       ejs: 2.7.4
       lodash: 4.17.21
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
 
   constant-case@3.0.4:
     dependencies:
@@ -14499,6 +15010,10 @@ snapshots:
 
   decode-uri-component@0.2.2: {}
 
+  decompress-response@6.0.0:
+    dependencies:
+      mimic-response: 3.1.0
+
   deep-equal@1.1.2:
     dependencies:
       is-arguments: 1.2.0
@@ -14507,6 +15022,8 @@ snapshots:
       object-is: 1.1.6
       object-keys: 1.1.1
       regexp.prototype.flags: 1.5.4
+
+  deep-extend@0.6.0: {}
 
   deep-is@0.1.4: {}
 
@@ -14580,6 +15097,8 @@ snapshots:
   detect-libc@2.1.2: {}
 
   detect-node@2.1.0: {}
+
+  dfa@1.2.0: {}
 
   diffie-hellman@5.0.3:
     dependencies:
@@ -15108,6 +15627,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  expand-template@2.0.3: {}
+
   exponential-backoff@3.1.3: {}
 
   express@4.22.1(supports-color@6.1.0):
@@ -15246,6 +15767,15 @@ snapshots:
       schema-utils: 2.7.1
       webpack: 4.47.0
 
+  file-type@22.0.1:
+    dependencies:
+      '@tokenizer/inflate': 0.4.1
+      strtok3: 10.3.5
+      token-types: 6.1.2
+      uint8array-extras: 1.5.0
+    transitivePeerDependencies:
+      - supports-color
+
   file-uri-to-path@1.0.0: {}
 
   filesize@3.6.1: {}
@@ -15322,6 +15852,18 @@ snapshots:
     optionalDependencies:
       debug: 4.4.3(supports-color@6.1.0)
 
+  fontkit@2.0.4:
+    dependencies:
+      '@swc/helpers': 0.5.20
+      brotli: 1.3.3
+      clone: 2.1.2
+      dfa: 1.2.0
+      fast-deep-equal: 3.1.3
+      restructure: 3.0.2
+      tiny-inflate: 1.0.3
+      unicode-properties: 1.4.1
+      unicode-trie: 2.0.0
+
   for-each@0.3.5:
     dependencies:
       is-callable: 1.2.7
@@ -15355,6 +15897,8 @@ snapshots:
     dependencies:
       inherits: 2.0.4
       readable-stream: 2.3.8
+
+  fs-constants@1.0.0: {}
 
   fs-extra@7.0.1:
     dependencies:
@@ -15458,6 +16002,8 @@ snapshots:
   gifuct-js@2.1.2:
     dependencies:
       js-binary-schema-parser: 2.0.3
+
+  github-from-package@0.0.0: {}
 
   glob-parent@3.1.0:
     dependencies:
@@ -15680,6 +16226,8 @@ snapshots:
 
   html-entities@1.4.0: {}
 
+  html-escaper@3.0.3: {}
+
   html-minifier@3.5.21:
     dependencies:
       camel-case: 3.0.0
@@ -15719,6 +16267,13 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+
+  htmlparser2@10.1.0:
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      domutils: 3.2.2
+      entities: 7.0.1
 
   htmlparser2@3.10.1:
     dependencies:
@@ -15896,6 +16451,8 @@ snapshots:
   inherits@2.0.3: {}
 
   inherits@2.0.4: {}
+
+  ini@1.3.8: {}
 
   ini@4.1.3: {}
 
@@ -16186,10 +16743,17 @@ snapshots:
 
   isstream@0.1.2: {}
 
-  its-fine@1.2.5(@types/react@18.3.28)(react@18.3.1):
+  its-fine@1.2.5(@types/react@19.2.17)(react@19.2.7):
     dependencies:
-      '@types/react-reconciler': 0.28.9(@types/react@18.3.28)
-      react: 18.3.1
+      '@types/react-reconciler': 0.28.9(@types/react@19.2.17)
+      react: 19.2.7
+    transitivePeerDependencies:
+      - '@types/react'
+
+  its-fine@2.0.0(@types/react@19.2.17)(react@19.2.7):
+    dependencies:
+      '@types/react-reconciler': 0.28.9(@types/react@19.2.17)
+      react: 19.2.7
     transitivePeerDependencies:
       - '@types/react'
 
@@ -16315,6 +16879,8 @@ snapshots:
 
   konva@10.2.3: {}
 
+  konva@10.3.0: {}
+
   konva@9.3.22: {}
 
   launch-editor-middleware@2.13.2:
@@ -16385,6 +16951,16 @@ snapshots:
       lightningcss-win32-x64-msvc: 1.32.0
 
   lines-and-columns@1.2.4: {}
+
+  linkedom@0.18.12(canvas@3.2.3):
+    dependencies:
+      css-select: 5.2.2
+      cssom: 0.5.0
+      html-escaper: 3.0.3
+      htmlparser2: 10.1.0
+      uhyphen: 0.2.0
+    optionalDependencies:
+      canvas: 3.2.3
 
   listr2@8.2.4:
     dependencies:
@@ -16462,6 +17038,8 @@ snapshots:
 
   lodash-es@4.17.23: {}
 
+  lodash-es@4.18.1: {}
+
   lodash.clone@4.5.0: {}
 
   lodash.clonedeep@4.5.0: {}
@@ -16526,6 +17104,10 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
+  lucide-react@1.18.0(react@19.2.7):
+    dependencies:
+      react: 19.2.7
+
   magic-string@0.22.5:
     dependencies:
       vlq: 0.2.3
@@ -16587,6 +17169,11 @@ snapshots:
   media-typer@0.3.0: {}
 
   mediabunny@1.40.1:
+    dependencies:
+      '@types/dom-mediacapture-transform': 0.1.11
+      '@types/dom-webcodecs': 0.1.13
+
+  mediabunny@1.46.0:
     dependencies:
       '@types/dom-mediacapture-transform': 0.1.11
       '@types/dom-webcodecs': 0.1.13
@@ -16666,6 +17253,8 @@ snapshots:
   mimic-fn@2.1.0: {}
 
   mimic-function@5.0.1: {}
+
+  mimic-response@3.1.0: {}
 
   mini-css-extract-plugin@0.8.2(webpack@4.47.0):
     dependencies:
@@ -16752,33 +17341,36 @@ snapshots:
       for-in: 1.0.2
       is-extendable: 1.0.1
 
+  mkdirp-classic@0.5.3: {}
+
   mkdirp@0.5.6:
     dependencies:
       minimist: 1.2.8
 
   mkdirp@1.0.4: {}
 
-  mobx-angular@4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@6.15.0):
+  mobx-angular@4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@6.16.1):
     dependencies:
       '@angular/common': 18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
       '@angular/core': 18.2.14(rxjs@7.8.1)(zone.js@0.14.10)
-      mobx: 6.15.0
+      mobx: 6.16.1
       tslib: 2.8.1
 
-  mobx-react-lite@3.4.3(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  mobx-react-lite@4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       mobx: 6.15.0
-      react: 18.3.1
+      react: 19.2.7
+      use-sync-external-store: 1.6.0(react@19.2.7)
     optionalDependencies:
-      react-dom: 18.3.1(react@18.3.1)
+      react-dom: 19.2.7(react@19.2.7)
 
-  mobx-react-lite@4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  mobx-react-lite@4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
-      mobx: 6.15.0
-      react: 18.3.1
-      use-sync-external-store: 1.6.0(react@18.3.1)
+      mobx: 6.16.1
+      react: 19.2.7
+      use-sync-external-store: 1.6.0(react@19.2.7)
     optionalDependencies:
-      react-dom: 18.3.1(react@18.3.1)
+      react-dom: 19.2.7(react@19.2.7)
 
   mobx-state-tree@7.0.2(mobx@6.15.0)(typescript@5.5.4):
     dependencies:
@@ -16787,21 +17379,30 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  mobx-vue-lite@0.4.3(mobx@6.15.0)(vue@3.5.31(typescript@5.5.4)):
+  mobx-state-tree@7.2.0(mobx@6.16.1)(typescript@5.5.4):
+    dependencies:
+      mobx: 6.16.1
+      ts-essentials: 9.4.2(typescript@5.5.4)
+    transitivePeerDependencies:
+      - typescript
+
+  mobx-vue-lite@0.4.3(mobx@6.16.1)(vue@3.5.31(typescript@5.5.4)):
     dependencies:
       '@vueuse/core': 10.7.2(vue@3.5.31(typescript@5.5.4))
-      mobx: 6.15.0
+      mobx: 6.16.1
       vue: 3.5.31(typescript@5.5.4)
     transitivePeerDependencies:
       - '@vue/composition-api'
 
-  mobx-vue@2.0.11(mobx@6.15.0)(vue@2.7.16):
+  mobx-vue@2.0.11(mobx@6.16.1)(vue@2.7.16):
     dependencies:
-      mobx: 6.15.0
+      mobx: 6.16.1
       tslib: 1.14.1
       vue: 2.7.16
 
   mobx@6.15.0: {}
+
+  mobx@6.16.1: {}
 
   moment@2.30.1: {}
 
@@ -16858,6 +17459,8 @@ snapshots:
 
   nanoid@3.3.11: {}
 
+  nanoid@5.1.11: {}
+
   nanomatch@1.2.13(supports-color@6.1.0):
     dependencies:
       arr-diff: 4.0.0
@@ -16874,6 +17477,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  napi-build-utils@2.0.0: {}
+
   natural-compare@1.4.0: {}
 
   ncp@2.0.0: {}
@@ -16884,7 +17489,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@14.2.35(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6):
+  next@14.2.35(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.77.6):
     dependencies:
       '@next/env': 14.2.35
       '@swc/helpers': 0.5.5
@@ -16892,9 +17497,9 @@ snapshots:
       caniuse-lite: 1.0.30001782
       graceful-fs: 4.2.11
       postcss: 8.4.31
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      styled-jsx: 5.1.1(react@18.3.1)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      styled-jsx: 5.1.1(react@19.2.7)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.2.33
       '@next/swc-darwin-x64': 14.2.33
@@ -16926,6 +17531,10 @@ snapshots:
     dependencies:
       lower-case: 2.0.2
       tslib: 2.6.3
+
+  node-abi@3.92.0:
+    dependencies:
+      semver: 7.7.4
 
   node-addon-api@1.7.2: {}
 
@@ -17305,6 +17914,8 @@ snapshots:
 
   pako@1.0.11: {}
 
+  pako@2.1.0: {}
+
   parallel-transform@1.2.0:
     dependencies:
       cyclist: 1.0.2
@@ -17565,39 +18176,81 @@ snapshots:
 
   pngjs@5.0.0: {}
 
-  polotno@2.39.1(@types/react@18.3.28)(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4):
+  polotno@2.40.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4):
     dependencies:
-      '@blueprintjs/core': 5.19.0(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@blueprintjs/icons': 5.23.0(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@blueprintjs/select': 5.3.20(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@meronex/icons': 4.0.0(react@18.3.1)
+      '@blueprintjs/core': 5.19.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@blueprintjs/icons': 5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@blueprintjs/select': 5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@meronex/icons': 4.0.0(react@19.2.7)
       cssom: 0.5.0
       fast-json-patch: 3.1.1
       functions-have-names: 1.2.3
       gifuct-js: 2.1.2
       gradient-parser: 1.2.0
-      konva: 10.2.3
-      mediabunny: 1.40.1
+      konva: 10.3.0
+      mediabunny: 1.46.0
       mensch: 0.3.4
       mobx: 6.15.0
-      mobx-react-lite: 4.1.1(mobx@6.15.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      mobx-react-lite: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       mobx-state-tree: 7.0.2(mobx@6.15.0)(typescript@5.5.4)
       nanoid: 3.3.11
       quill: 1.3.7
-      react: 18.3.1
-      react-color: 2.19.3(react@18.3.1)
-      react-dom: 18.3.1(react@18.3.1)
-      react-konva: 18.2.14(@types/react@18.3.28)(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-konva-utils: 2.0.0(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react-konva@18.2.14(@types/react@18.3.28)(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
-      react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sortablejs@1.15.7)
-      react-window: 1.8.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 19.2.7
+      react-color: 2.19.3(react@19.2.7)
+      react-dom: 19.2.7(react@19.2.7)
+      react-konva: 18.2.14(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-konva-utils: 2.0.0(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react-konva@18.2.14(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
+      react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sortablejs@1.15.7)
+      react-window: 1.8.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       sortablejs: 1.15.7
       svg-round-corners: 0.4.3
-      swr: 2.4.1(react@18.3.1)
-      use-image: 1.1.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      swr: 2.4.1(react@19.2.7)
+      use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
     transitivePeerDependencies:
       - '@types/react'
       - '@types/sortablejs'
+      - react-native
+      - typescript
+
+  polotno@4.0.2(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4):
+    dependencies:
+      '@base-ui/react': 1.5.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      class-variance-authority: 0.7.1
+      clsx: 2.1.1
+      gifuct-js: 2.1.2
+      gradient-parser: 1.2.0
+      konva: 10.3.0
+      lodash-es: 4.18.1
+      lucide-react: 1.18.0(react@19.2.7)
+      mediabunny: 1.46.0
+      mensch: 0.3.4
+      mobx: 6.16.1
+      mobx-react-lite: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      mobx-state-tree: 7.2.0(mobx@6.16.1)(typescript@5.5.4)
+      nanoid: 5.1.11
+      quill: 2.0.3
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      react-konva: 19.2.5(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-konva-utils: 2.0.0(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react-konva@19.2.5(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
+      react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sortablejs@1.15.7)
+      react-window: 1.8.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      render-tag: 0.1.15
+      sortablejs: 1.15.7
+      svg-round-corners: 0.4.3
+      swr: 2.4.1(react@19.2.7)
+      tailwind-merge: 3.6.0
+      tinycolor2: 1.6.0
+      use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+    optionalDependencies:
+      '@blueprintjs/core': 5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@blueprintjs/icons': 5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@blueprintjs/select': 5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+    transitivePeerDependencies:
+      - '@date-fns/tz'
+      - '@types/react'
+      - '@types/sortablejs'
+      - date-fns
       - react-native
       - typescript
 
@@ -17908,6 +18561,21 @@ snapshots:
       image-size: 1.2.1
       jszip: 3.10.1
 
+  prebuild-install@7.1.3:
+    dependencies:
+      detect-libc: 2.1.2
+      expand-template: 2.0.3
+      github-from-package: 0.0.0
+      minimist: 1.2.8
+      mkdirp-classic: 0.5.3
+      napi-build-utils: 2.0.0
+      node-abi: 3.92.0
+      pump: 3.0.4
+      rc: 1.2.8
+      simple-get: 4.0.1
+      tar-fs: 2.1.4
+      tunnel-agent: 0.6.0
+
   prelude-ls@1.1.2: {}
 
   prepend-http@1.0.4: {}
@@ -18084,119 +18752,148 @@ snapshots:
       iconv-lite: 0.4.24
       unpipe: 1.0.0
 
-  react-color@2.19.3(react@18.3.1):
+  rc@1.2.8:
     dependencies:
-      '@icons/material': 0.2.4(react@18.3.1)
+      deep-extend: 0.6.0
+      ini: 1.3.8
+      minimist: 1.2.8
+      strip-json-comments: 2.0.1
+
+  react-color@2.19.3(react@19.2.7):
+    dependencies:
+      '@icons/material': 0.2.4(react@19.2.7)
       lodash: 4.17.21
-      lodash-es: 4.17.23
+      lodash-es: 4.18.1
       material-colors: 1.2.6
       prop-types: 15.8.1
-      react: 18.3.1
-      reactcss: 1.2.3(react@18.3.1)
+      react: 19.2.7
+      reactcss: 1.2.3(react@19.2.7)
       tinycolor2: 1.6.0
 
-  react-datasheet@1.4.12(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-datasheet@1.4.12(prop-types@15.8.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       prop-types: 15.8.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
 
-  react-dom@18.3.1(react@18.3.1):
+  react-dom@19.2.7(react@19.2.7):
     dependencies:
-      loose-envify: 1.4.0
-      react: 18.3.1
-      scheduler: 0.23.2
+      react: 19.2.7
+      scheduler: 0.27.0
 
   react-fast-compare@3.2.2: {}
 
   react-is@16.13.1: {}
 
-  react-konva-utils@1.1.3(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react-konva@18.2.14(@types/react@18.3.28)(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+  react-konva-utils@1.1.3(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react-konva@19.2.5(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
     dependencies:
-      konva: 10.2.3
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-konva: 18.2.14(@types/react@18.3.28)(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      use-image: 1.1.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      konva: 10.3.0
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      react-konva: 19.2.5(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
-  react-konva-utils@2.0.0(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react-konva@18.2.14(@types/react@18.3.28)(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+  react-konva-utils@2.0.0(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react-konva@18.2.14(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
     dependencies:
-      konva: 10.2.3
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-konva: 18.2.14(@types/react@18.3.28)(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      use-image: 1.1.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      konva: 10.3.0
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      react-konva: 18.2.14(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
-  react-konva@18.2.14(@types/react@18.3.28)(konva@10.2.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-konva-utils@2.0.0(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react-konva@19.2.5(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
     dependencies:
-      '@types/react-reconciler': 0.28.9(@types/react@18.3.28)
-      its-fine: 1.2.5(@types/react@18.3.28)(react@18.3.1)
-      konva: 10.2.3
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-reconciler: 0.29.2(react@18.3.1)
+      konva: 10.3.0
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      react-konva: 19.2.5(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+
+  react-konva@18.2.14(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+    dependencies:
+      '@types/react-reconciler': 0.28.9(@types/react@19.2.17)
+      its-fine: 1.2.5(@types/react@19.2.17)(react@19.2.7)
+      konva: 10.3.0
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      react-reconciler: 0.29.2(react@19.2.7)
       scheduler: 0.23.2
     transitivePeerDependencies:
       - '@types/react'
 
-  react-popper@2.3.0(@popperjs/core@2.11.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-konva@19.2.5(@types/react@19.2.17)(konva@10.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+    dependencies:
+      '@types/react-reconciler': 0.33.0(@types/react@19.2.17)
+      its-fine: 2.0.0(@types/react@19.2.17)(react@19.2.7)
+      konva: 10.3.0
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+      react-reconciler: 0.33.0(react@19.2.7)
+      scheduler: 0.27.0
+    transitivePeerDependencies:
+      - '@types/react'
+
+  react-popper@2.3.0(@popperjs/core@2.11.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       '@popperjs/core': 2.11.8
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
       react-fast-compare: 3.2.2
       warning: 4.0.3
 
-  react-reconciler@0.29.2(react@18.3.1):
+  react-reconciler@0.29.2(react@19.2.7):
     dependencies:
       loose-envify: 1.4.0
-      react: 18.3.1
+      react: 19.2.7
       scheduler: 0.23.2
+
+  react-reconciler@0.33.0(react@19.2.7):
+    dependencies:
+      react: 19.2.7
+      scheduler: 0.27.0
 
   react-refresh@0.16.0: {}
 
   react-refresh@0.18.0: {}
 
-  react-sortablejs@6.1.4(@types/sortablejs@1.15.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sortablejs@1.15.7):
+  react-sortablejs@6.1.4(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sortablejs@1.15.7):
     dependencies:
       '@types/sortablejs': 1.15.9
       classnames: 2.3.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
       sortablejs: 1.15.7
       tiny-invariant: 1.2.0
 
-  react-transition-group@4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-transition-group@4.4.5(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       '@babel/runtime': 7.29.2
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
 
-  react-uid@2.4.0(@types/react@18.3.28)(react@18.3.1):
+  react-uid@2.4.0(@types/react@19.2.17)(react@19.2.7):
     dependencies:
-      react: 18.3.1
+      react: 19.2.7
       tslib: 2.6.3
     optionalDependencies:
-      '@types/react': 18.3.28
+      '@types/react': 19.2.17
 
-  react-window@1.8.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-window@1.8.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       '@babel/runtime': 7.29.2
       memoize-one: 5.2.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
 
-  react@18.3.1:
-    dependencies:
-      loose-envify: 1.4.0
+  react@19.2.7: {}
 
-  reactcss@1.2.3(react@18.3.1):
+  reactcss@1.2.3(react@19.2.7):
     dependencies:
       lodash: 4.17.21
-      react: 18.3.1
+      react: 19.2.7
 
   read-pkg@5.2.0:
     dependencies:
@@ -18296,6 +18993,8 @@ snapshots:
 
   remove-trailing-separator@1.1.0: {}
 
+  render-tag@0.1.15: {}
+
   renderkid@2.0.7:
     dependencies:
       css-select: 4.3.0
@@ -18351,6 +19050,8 @@ snapshots:
 
   requires-port@1.0.0: {}
 
+  reselect@5.2.0: {}
+
   resolve-cwd@2.0.0:
     dependencies:
       resolve-from: 3.0.0
@@ -18387,6 +19088,8 @@ snapshots:
     dependencies:
       onetime: 7.0.0
       signal-exit: 4.1.0
+
+  restructure@3.0.2: {}
 
   ret@0.1.15: {}
 
@@ -18522,6 +19225,8 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
+  scheduler@0.27.0: {}
+
   schema-utils@1.0.0:
     dependencies:
       ajv: 6.14.0
@@ -18642,6 +19347,37 @@ snapshots:
 
   shallow-copy@0.0.1: {}
 
+  sharp@0.34.5:
+    dependencies:
+      '@img/colour': 1.1.0
+      detect-libc: 2.1.2
+      semver: 7.7.4
+    optionalDependencies:
+      '@img/sharp-darwin-arm64': 0.34.5
+      '@img/sharp-darwin-x64': 0.34.5
+      '@img/sharp-libvips-darwin-arm64': 1.2.4
+      '@img/sharp-libvips-darwin-x64': 1.2.4
+      '@img/sharp-libvips-linux-arm': 1.2.4
+      '@img/sharp-libvips-linux-arm64': 1.2.4
+      '@img/sharp-libvips-linux-ppc64': 1.2.4
+      '@img/sharp-libvips-linux-riscv64': 1.2.4
+      '@img/sharp-libvips-linux-s390x': 1.2.4
+      '@img/sharp-libvips-linux-x64': 1.2.4
+      '@img/sharp-libvips-linuxmusl-arm64': 1.2.4
+      '@img/sharp-libvips-linuxmusl-x64': 1.2.4
+      '@img/sharp-linux-arm': 0.34.5
+      '@img/sharp-linux-arm64': 0.34.5
+      '@img/sharp-linux-ppc64': 0.34.5
+      '@img/sharp-linux-riscv64': 0.34.5
+      '@img/sharp-linux-s390x': 0.34.5
+      '@img/sharp-linux-x64': 0.34.5
+      '@img/sharp-linuxmusl-arm64': 0.34.5
+      '@img/sharp-linuxmusl-x64': 0.34.5
+      '@img/sharp-wasm32': 0.34.5
+      '@img/sharp-win32-arm64': 0.34.5
+      '@img/sharp-win32-ia32': 0.34.5
+      '@img/sharp-win32-x64': 0.34.5
+
   shebang-command@1.2.0:
     dependencies:
       shebang-regex: 1.0.0
@@ -18700,6 +19436,14 @@ snapshots:
       '@sigstore/verify': 1.2.1
     transitivePeerDependencies:
       - supports-color
+
+  simple-concat@1.0.1: {}
+
+  simple-get@4.0.1:
+    dependencies:
+      decompress-response: 6.0.0
+      once: 1.4.0
+      simple-concat: 1.0.1
 
   simple-swizzle@0.2.4:
     dependencies:
@@ -19040,12 +19784,18 @@ snapshots:
 
   strip-indent@2.0.0: {}
 
+  strip-json-comments@2.0.1: {}
+
   strip-json-comments@3.1.1: {}
 
-  styled-jsx@5.1.1(react@18.3.1):
+  strtok3@10.3.5:
+    dependencies:
+      '@tokenizer/token': 0.3.0
+
+  styled-jsx@5.1.1(react@19.2.7):
     dependencies:
       client-only: 0.0.1
-      react: 18.3.1
+      react: 19.2.7
 
   stylehacks@4.0.3:
     dependencies:
@@ -19093,11 +19843,11 @@ snapshots:
       unquote: 1.1.1
       util.promisify: 1.0.1
 
-  swr@2.4.1(react@18.3.1):
+  swr@2.4.1(react@19.2.7):
     dependencies:
       dequal: 2.0.3
-      react: 18.3.1
-      use-sync-external-store: 1.6.0(react@18.3.1)
+      react: 19.2.7
+      use-sync-external-store: 1.6.0(react@19.2.7)
 
   symbol-observable@4.0.0: {}
 
@@ -19110,7 +19860,24 @@ snapshots:
       slice-ansi: 2.1.0
       string-width: 3.1.0
 
+  tailwind-merge@3.6.0: {}
+
   tapable@1.1.3: {}
+
+  tar-fs@2.1.4:
+    dependencies:
+      chownr: 1.1.4
+      mkdirp-classic: 0.5.3
+      pump: 3.0.4
+      tar-stream: 2.2.0
+
+  tar-stream@2.2.0:
+    dependencies:
+      bl: 4.1.0
+      end-of-stream: 1.4.5
+      fs-constants: 1.0.0
+      inherits: 2.0.4
+      readable-stream: 3.6.2
 
   tar@6.2.1:
     dependencies:
@@ -19254,6 +20021,12 @@ snapshots:
 
   toidentifier@1.0.1: {}
 
+  token-types@6.1.2:
+    dependencies:
+      '@borewit/text-codec': 0.2.2
+      '@tokenizer/token': 0.3.0
+      ieee754: 1.2.1
+
   toposort@1.0.7: {}
 
   tough-cookie@2.5.0:
@@ -19354,6 +20127,10 @@ snapshots:
       commander: 2.19.0
       source-map: 0.6.1
 
+  uhyphen@0.2.0: {}
+
+  uint8array-extras@1.5.0: {}
+
   unbox-primitive@1.1.0:
     dependencies:
       call-bound: 1.0.4
@@ -19389,9 +20166,19 @@ snapshots:
 
   unicode-match-property-value-ecmascript@2.2.1: {}
 
+  unicode-properties@1.4.1:
+    dependencies:
+      base64-js: 1.5.1
+      unicode-trie: 2.0.0
+
   unicode-property-aliases-ecmascript@2.2.0: {}
 
   unicode-trie@0.3.1:
+    dependencies:
+      pako: 0.2.9
+      tiny-inflate: 1.0.3
+
+  unicode-trie@2.0.0:
     dependencies:
       pako: 0.2.9
       tiny-inflate: 1.0.3
@@ -19477,14 +20264,14 @@ snapshots:
       punycode: 1.4.1
       qs: 6.15.0
 
-  use-image@1.1.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  use-image@1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
 
-  use-sync-external-store@1.6.0(react@18.3.1):
+  use-sync-external-store@1.6.0(react@19.2.7):
     dependencies:
-      react: 18.3.1
+      react: 19.2.7
 
   use@3.1.1: {}
 
@@ -19579,9 +20366,9 @@ snapshots:
 
   vue-hot-reload-api@2.3.4: {}
 
-  vue-loader@15.11.1(@vue/compiler-sfc@3.5.31)(cache-loader@4.1.0(webpack@4.47.0))(css-loader@3.6.0(webpack@4.47.0))(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue-template-compiler@2.7.16)(webpack@4.47.0):
+  vue-loader@15.11.1(@vue/compiler-sfc@3.5.31)(cache-loader@4.1.0(webpack@4.47.0))(css-loader@3.6.0(webpack@4.47.0))(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16)(webpack@4.47.0):
     dependencies:
-      '@vue/component-compiler-utils': 3.3.0(ejs@2.7.4)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@vue/component-compiler-utils': 3.3.0(ejs@2.7.4)(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       css-loader: 3.6.0(webpack@4.47.0)
       hash-sum: 1.0.2
       loader-utils: 1.4.2

@@ -1,8 +1,15 @@
 import React from 'react';
-import { Alert, Button, Dialog, InputGroup, Intent } from '@blueprintjs/core';
+import {
+  Button,
+  SearchInput,
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogFooter,
+} from 'polotno/primitives';
 import styled from 'polotno/utils/styled';
 import { t } from 'polotno/utils/l10n';
-import { Search } from '@blueprintjs/icons';
 
 // Shared styled components
 export const HeaderContainer = styled('div')`
@@ -26,21 +33,14 @@ export const BrandKitHeader: React.FC<BrandKitHeaderProps> = ({
   onSearch
 }) => {return (
     <HeaderContainer>
-      <InputGroup
-        leftIcon={<Search />}
+      <SearchInput
         placeholder={t('sidePanel.searchPlaceholder')}
         onChange={(e) => onSearch(e.target.value)}
-        type="search"
         style={{
           marginBottom: '20px',
         }}
       />
-      <Button
-        icon={addIcon}
-        intent={Intent.PRIMARY}
-        onClick={onAddClick}
-        small
-      >
+      <Button size="sm" onClick={onAddClick}>
         {addButtonText}
       </Button>
     </HeaderContainer>
@@ -64,15 +64,17 @@ export const BrandKitModal: React.FC<BrandKitModalProps> = ({
 }) => {
   return (
     <Dialog
-      isOpen={isOpen}
-      onClose={onClose}
-      title={title}
-      canOutsideClickClose={false}
-      style={{ width }}
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!open) onClose();
+      }}
     >
-      <div style={{ padding: '20px' }}>
-        {children}
-      </div>
+      <DialogContent style={{ width }}>
+        <DialogHeader>
+          <DialogTitle>{title}</DialogTitle>
+        </DialogHeader>
+        <div style={{ padding: '20px' }}>{children}</div>
+      </DialogContent>
     </Dialog>
   );
 };
@@ -95,17 +97,29 @@ export const BrandKitDeleteAlert: React.FC<BrandKitDeleteAlertProps> = ({
   loading = false
 }) => {
   return (
-    <Alert
-      isOpen={isOpen}
-      onCancel={onCancel}
-      onConfirm={onConfirm}
-      confirmButtonText={t('brandKit.delete')}
-      cancelButtonText={t('brandKit.cancel')}
-      intent={Intent.DANGER}
-      loading={loading}
+    <Dialog
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!open) onCancel();
+      }}
     >
-      {confirmationMessage} {itemName ? `"${itemName}"` : ''}?
-    </Alert>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>{t('brandKit.delete')}</DialogTitle>
+        </DialogHeader>
+        <p>
+          {confirmationMessage} {itemName ? `"${itemName}"` : ''}?
+        </p>
+        <DialogFooter>
+          <Button variant="outline" onClick={onCancel}>
+            {t('brandKit.cancel')}
+          </Button>
+          <Button variant="destructive" onClick={onConfirm} disabled={loading}>
+            {t('brandKit.delete')}
+          </Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
   );
 };
 
@@ -126,14 +140,12 @@ export const BrandKitModalActions: React.FC<BrandKitModalActionsProps> = ({
 }) => {
   return (
     <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '10px', marginTop: '20px' }}>
-      <Button onClick={onCancel}>
+      <Button variant="outline" onClick={onCancel}>
         {t('brandKit.cancel')}
       </Button>
       <Button
-        intent={Intent.PRIMARY}
         onClick={onSave}
-        loading={isLoading}
-        disabled={saveDisabled}
+        disabled={isLoading || saveDisabled}
       >
         {isEditing ? t('brandKit.update') : t('brandKit.create')}
       </Button>

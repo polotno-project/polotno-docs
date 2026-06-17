@@ -2,7 +2,7 @@ import React from 'react';
 import { observer } from 'mobx-react-lite';
 import { Html } from 'react-konva-utils';
 import { Group, Rect, Text } from 'react-konva';
-import { Navbar, Alignment } from '@blueprintjs/core';
+import { Navbar } from 'polotno/primitives';
 import {
   unstable_registerShapeComponent,
   unstable_registerToolbarComponent,
@@ -235,7 +235,7 @@ unstable_registerTransformerAttrs('spinePlayer', {
 // Define custom toolbar (minimal for now)
 const SpinePlayerToolbar = observer(({ store }) => {
   const element = store.selectedElements[0];
-  return <Navbar.Group align={Alignment.LEFT}></Navbar.Group>;
+  return <Navbar.Group align="left"></Navbar.Group>;
 });
 
 unstable_registerToolbarComponent('spinePlayer', SpinePlayerToolbar);

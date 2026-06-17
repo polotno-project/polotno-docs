@@ -20,7 +20,7 @@ export const Editor = () => {
     <>
       {/* use CDN for css, you can also use local css file */}
       <link
-        href="https://unpkg.com/polotno@^2/blueprint.polotno.css"
+        href="https://unpkg.com/polotno@4/ui.css"
         rel="stylesheet"
       />
       <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>

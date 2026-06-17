@@ -4,14 +4,13 @@
   "description": "Demo showing how to create and edit tables in Polotno using SVG conversion",
   "keywords": [],
   "dependencies": {
-    "@blueprintjs/core": "^5.0.0",
     "@handsontable/react": "^15.3.0",
     "handsontable": "^15.3.0",
     "mobx-react-lite": "^4.0.0",
-    "polotno": "2.41.1",
-    "react": "18.3.1",
+    "polotno": "^4.0.2",
+    "react": "^19",
     "react-datasheet": "1.4.12",
-    "react-dom": "18.3.1"
+    "react-dom": "^19"
   },
   "scripts": {
     "dev": "vite",

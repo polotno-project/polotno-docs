@@ -8,7 +8,13 @@ import { SidePanel } from "polotno/side-panel";
 import { Workspace } from "polotno/canvas/workspace";
 import { getClientRect } from "polotno/utils/math";
 import { getImageSize } from "polotno/utils/image";
-import { Button, Popover, Menu, MenuItem, Position } from "@blueprintjs/core";
+import {
+  Button,
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "polotno/primitives";
 
 import { createStore } from "polotno/model/store";
 
@@ -150,41 +156,39 @@ const ActionControls = ({ store }) => {
     };
   }, [issues]);
 
-  // Create dropdown menu with validation results
-  const content = (
-    <Menu>
-      {issues.length === 0 ? (
-        <MenuItem text="Design is valid. All checks arepassed." />
-      ) : (
-        issues.map((issue, index) => (
-          <MenuItem
-            key={index}
-            // Show different icons based on issue type
-            icon={issue.type === "text" ? "font" : "media"}
-            text={`${issue.message}`}
-            onClick={() => handleIssueClick(issue)}
-          />
-        ))
-      )}
-    </Menu>
-  );
-
-  // Render validation button with popover
+  // Render validation button with a dropdown of results
   return (
-    <Popover content={content}>
-      <Button
-        // Visual feedback based on validation status
-        minimal
-        icon={issues.length === 0 ? "tick-circle" : "warning-sign"}
-        intent={issues.length === 0 ? "none" : "danger"}
+    <DropdownMenu>
+      <DropdownMenuTrigger
+        render={
+          <Button variant="ghost">
+            {issues.length === 0 ? "✓ Valid" : `⚠ ${issues.length} issue(s)`}
+          </Button>
+        }
       />
-    </Popover>
+      <DropdownMenuContent>
+        {issues.length === 0 ? (
+          <DropdownMenuItem>
+            Design is valid. All checks are passed.
+          </DropdownMenuItem>
+        ) : (
+          issues.map((issue, index) => (
+            <DropdownMenuItem
+              key={index}
+              onClick={() => handleIssueClick(issue)}
+            >
+              {issue.message}
+            </DropdownMenuItem>
+          ))
+        )}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 };
 
 export const App = ({ store }) => {
   return (
-    <PolotnoContainer className="bp5-scope" style={{ width: "100vw", height: "100vh" }}>
+    <PolotnoContainer style={{ width: "100vw", height: "100vh" }}>
       <SidePanelWrap>
         <SidePanel store={store} />
       </SidePanelWrap>
