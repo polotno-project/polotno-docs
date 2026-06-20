@@ -6,7 +6,7 @@
   "dependencies": {
     "@meronex/icons": "^4.0.0",
     "mobx-react-lite": "^4.0.0",
-    "polotno": "^4.0.3",
+    "polotno": "^4.1.0",
     "react": "^19",
     "react-dom": "^19"
   },

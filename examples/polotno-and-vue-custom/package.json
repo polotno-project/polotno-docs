@@ -13,7 +13,7 @@
   "main": "editor.js",
   "dependencies": {
     "parcel": "^2.8.3",
-    "polotno": "^4.0.3",
+    "polotno": "^4.1.0",
     "react": "^19",
     "react-dom": "^19",
     "vue": "^3.2.47"
