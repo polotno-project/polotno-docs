@@ -1,21 +1,15 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
 import {
-  Navbar,
   Button,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  Select,
-  SelectTrigger,
-  SelectContent,
-  SelectItem,
-  SelectValue,
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
 } from 'polotno/primitives';
 
 const DownloadButton = observer(({ store }) => {
   const [saving, setSaving] = React.useState(false);
-  const [type, setType] = React.useState('png');
 
   const getName = () => {
     const texts = [];
@@ -31,7 +25,7 @@ const DownloadButton = observer(({ store }) => {
     return words.join(' ').replace(/\s/g, '-').toLowerCase() || 'polotno';
   };
 
-  const handleExport = async () => {
+  const handleExport = async (type) => {
     setSaving(true);
     try {
       if (type === 'pdf') {
@@ -56,83 +50,77 @@ const DownloadButton = observer(({ store }) => {
   };
 
   return (
-    <Popover>
-      <PopoverTrigger render={<Button disabled={saving}>Download ▾</Button>} />
-      <PopoverContent align="end" style={{ minWidth: '200px' }}>
-        <p>File type</p>
-        <Select value={type} onValueChange={(v) => setType(v)}>
-          <SelectTrigger style={{ width: '100%' }}>
-            <SelectValue />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="png">PNG</SelectItem>
-            <SelectItem value="jpeg">JPEG</SelectItem>
-            <SelectItem value="pdf">PDF</SelectItem>
-          </SelectContent>
-        </Select>
-        <Button
-          disabled={saving}
-          onClick={handleExport}
-          style={{ marginTop: '10px', width: '100%' }}
-        >
-          Download {type.toUpperCase()}
-        </Button>
-      </PopoverContent>
-    </Popover>
+    <DropdownMenu>
+      <DropdownMenuTrigger
+        render={<Button disabled={saving}>Download ▾</Button>}
+      />
+      <DropdownMenuContent align="end">
+        <DropdownMenuItem onClick={() => handleExport('png')}>
+          PNG
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => handleExport('jpeg')}>
+          JPEG
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => handleExport('pdf')}>
+          PDF
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 });
 
 const Topbar = observer(({ store }) => {
   return (
-    <Navbar className="dark topbar" style={{ color: 'white' }}>
-      <div>
-        <Navbar.Group align="left">
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '10px',
-              padding: '0 16px',
-            }}
+    <div
+      className="dark topbar"
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        gap: '12px',
+        padding: '0 16px',
+        color: 'white',
+      }}
+    >
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', minWidth: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="20" height="20" fill="white" />
-            </svg>
-            <span
-              style={{
-                fontWeight: 500,
-                fontSize: '21px',
-                lineHeight: '100%',
-                letterSpacing: '0.25px',
-                color: 'white',
-              }}
-            >
-              Polotno
-            </span>
-          </div>
-          <Navbar.Divider />
+            <rect width="20" height="20" fill="white" />
+          </svg>
           <span
             style={{
-              paddingLeft: '10px',
-              opacity: 0.7,
-              fontSize: '14px',
+              fontWeight: 500,
+              fontSize: '18px',
+              lineHeight: '100%',
+              letterSpacing: '0.25px',
               color: 'white',
             }}
           >
-            [Demo] Real estate use cases
+            Polotno
           </span>
-        </Navbar.Group>
-        <Navbar.Group align="right">
-          <DownloadButton store={store} />
-        </Navbar.Group>
+        </div>
+        <div style={{ width: '1px', height: '24px', background: '#393939' }} />
+        <span
+          style={{
+            opacity: 0.7,
+            fontSize: '14px',
+            color: 'white',
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+          }}
+        >
+          [Demo] Real estate use cases
+        </span>
       </div>
-    </Navbar>
+      <DownloadButton store={store} />
+    </div>
   );
 });
 

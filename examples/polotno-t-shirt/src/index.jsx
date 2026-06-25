@@ -54,6 +54,9 @@ const PageControls = observer(({ xPadding, yPadding, store, page }) => {
         position: "absolute",
         top: "10px",
         left: "10px",
+        display: "flex",
+        gap: "8px",
+        zIndex: 10,
       }}
     >
       <Button
