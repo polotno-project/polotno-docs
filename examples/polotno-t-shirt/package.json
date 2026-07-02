@@ -5,7 +5,7 @@
   "keywords": [],
   "dependencies": {
     "mobx-react-lite": "^4.0.0",
-    "polotno": "^4.1.3",
+    "polotno": "^4.2.0",
     "react": "^19",
     "react-dom": "^19"
   },
