@@ -6,7 +6,7 @@
   "dependencies": {
     "mobx": "^6.10.0",
     "mobx-react-lite": "^4.0.5",
-    "polotno": "^4.2.1",
+    "polotno": "^4.2.2",
     "react": "^19",
     "react-dom": "^19"
   },

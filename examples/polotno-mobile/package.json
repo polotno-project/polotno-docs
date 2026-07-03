@@ -4,7 +4,7 @@
   "description": "Demo showing Polotno editor optimized for mobile devices",
   "keywords": [],
   "dependencies": {
-    "polotno": "^4.2.1",
+    "polotno": "^4.2.2",
     "react": "^19",
     "react-dom": "^19"
   },

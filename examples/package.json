@@ -9,7 +9,7 @@
   "description": "Workspace for Polotno example demos",
   "dependencies": {
     "mobx-react-lite": "^4.0.0",
-    "polotno": "^4.2.1",
+    "polotno": "^4.2.2",
     "react": "^19",
     "react-dom": "^19"
   },
