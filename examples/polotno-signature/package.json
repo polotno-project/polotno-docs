@@ -6,7 +6,7 @@
   "dependencies": {
     "@meronex/icons": "^1.0.0",
     "mobx-react-lite": "^4.0.0",
-    "polotno": "^4.3.0",
+    "polotno": "^4.4.0",
     "react": "^19",
     "react-dom": "^19",
     "signature_pad": "4.0.4"
