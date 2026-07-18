@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createPortal } from 'react-dom';
 import { observer } from 'mobx-react-lite';
 import { reaction } from 'mobx';
 
@@ -11,14 +12,7 @@ import { SidePanel, DEFAULT_SECTIONS, SectionTab } from 'polotno/side-panel';
 import { ImagesGrid } from 'polotno/side-panel/images-grid';
 import { Workspace } from 'polotno/canvas/workspace';
 import { Tooltip } from 'polotno/canvas/tooltip';
-import {
-  Button,
-  Select,
-  SelectTrigger,
-  SelectContent,
-  SelectItem,
-  SelectValue,
-} from 'polotno/primitives';
+import { Button } from 'polotno/primitives';
 import { createStore } from 'polotno/model/store';
 import { setTextOverflow, setAnimationsEnabled } from 'polotno/config';
 
@@ -28,15 +22,14 @@ import Topbar from './topbar';
 import { EditImageSection } from './edit-image-section';
 import { QrSection } from './qr-section';
 import { VideoSection } from './video-section';
-import { PhotosSection } from './photos-section';
 
 import './index.css';
 
 setAnimationsEnabled(true);
 
 const store = createStore({
-  key: 'nFA5H9elEytDyPyvKL7T',
-  showCredit: true,
+  key: 'HyhTCjrrUThWw9E7dO_y',
+  showCredit: false,
 });
 window.store = store;
 
@@ -198,6 +191,84 @@ async function applyListingToTemplate(templateJson, listing) {
   return json;
 }
 
+// Listing picker. A small custom dropdown rather than the base-ui <Select>: it shows the
+// selected listing's address on the trigger (the base-ui SelectValue was surfacing the raw
+// index), and renders its menu through a portal with position:fixed so the side panel's
+// overflow can't clip it and it stays sized to its content.
+function ListingDropdown({ listings, value, onChange }) {
+  const [open, setOpen] = React.useState(false);
+  const [pos, setPos] = React.useState(null);
+  const btnRef = React.useRef(null);
+  const menuRef = React.useRef(null);
+  const selected =
+    value !== '' && value != null ? listings[parseInt(value)] : null;
+
+  const toggle = () => {
+    if (open) {
+      setOpen(false);
+      return;
+    }
+    const r = btnRef.current.getBoundingClientRect();
+    setPos({ top: r.bottom + 6, left: r.left, width: r.width });
+    setOpen(true);
+  };
+
+  React.useEffect(() => {
+    if (!open) return;
+    const onDown = (e) => {
+      if (btnRef.current?.contains(e.target)) return;
+      if (menuRef.current?.contains(e.target)) return;
+      setOpen(false);
+    };
+    const onLeave = () => setOpen(false);
+    window.addEventListener('mousedown', onDown, true);
+    window.addEventListener('resize', onLeave);
+    return () => {
+      window.removeEventListener('mousedown', onDown, true);
+      window.removeEventListener('resize', onLeave);
+    };
+  }, [open]);
+
+  return (
+    <>
+      <button ref={btnRef} type="button" className="listing-select-trigger" onClick={toggle}>
+        <span className={selected ? '' : 'placeholder'}>
+          {selected ? selected.listing : 'Choose listing'}
+        </span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </button>
+      {open &&
+        pos &&
+        createPortal(
+          <div
+            ref={menuRef}
+            className="listing-select-menu"
+            style={{ position: 'fixed', top: pos.top, left: pos.left, width: pos.width }}
+          >
+            {listings.map((l, i) => (
+              <button
+                key={i}
+                type="button"
+                className={
+                  'listing-select-option' + (String(i) === String(value) ? ' active' : '')
+                }
+                onClick={() => {
+                  onChange(String(i));
+                  setOpen(false);
+                }}
+              >
+                {l.listing}
+              </button>
+            ))}
+          </div>,
+          document.body
+        )}
+    </>
+  );
+}
+
 const TemplatesPanel = observer(({ store }) => {
   const [templates, setTemplates] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
@@ -259,23 +330,11 @@ const TemplatesPanel = observer(({ store }) => {
         </div>
         <div className="drill-down-body">
           <label>Listing</label>
-          <Select
-            value={
-              selectedListingIndex === '' ? undefined : String(selectedListingIndex)
-            }
-            onValueChange={(v) => setSelectedListingIndex(v)}
-          >
-            <SelectTrigger style={{ width: '100%' }}>
-              <SelectValue placeholder="Choose listing" />
-            </SelectTrigger>
-            <SelectContent>
-              {listings.map((l, i) => (
-                <SelectItem key={i} value={String(i)}>
-                  {l.listing}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+          <ListingDropdown
+            listings={listings}
+            value={selectedListingIndex}
+            onChange={setSelectedListingIndex}
+          />
           <Button
             className="run-button"
             disabled={selectedListingIndex === ''}
@@ -351,7 +410,6 @@ DEFAULT_SECTIONS.find((s) => s.name === 'text').Tab = (props) => (
 const sections = [
   TemplatesSection,
   DEFAULT_SECTIONS.find((s) => s.name === 'text'),
-  PhotosSection,
   VideoSection,
   {
     name: 'icons',
