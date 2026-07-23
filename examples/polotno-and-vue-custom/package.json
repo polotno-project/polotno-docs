@@ -2,6 +2,7 @@
   "name": "@polotno-docs/polotno-and-vue-custom",
   "private": true,
   "version": "0.0.0",
+  "description": "Embed Polotno editor into a Vue application with a custom React-built editor bundle",
   "type": "module",
   "scripts": {
     "dev": "vite",
