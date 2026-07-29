@@ -4,7 +4,7 @@
   "description": "Demo showing how to add overlay elements (like bleed guides) to Polotno editor",
   "keywords": [],
   "dependencies": {
-    "polotno": "^4.5.1",
+    "polotno": "^4.5.2",
     "react": "^19",
     "react-dom": "^19"
   },
