@@ -6,7 +6,7 @@
   "dependencies": {
     "mobx": "^6.0.0",
     "mobx-react-lite": "^4.0.0",
-    "polotno": "^4.5.0",
+    "polotno": "^4.5.1",
     "qrcode": "^1.5.4",
     "react": "^19",
     "react-dom": "^19"
