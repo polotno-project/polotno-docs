@@ -4,7 +4,7 @@
   "description": "Demo showing how to add custom action buttons to the toolbar in Polotno editor",
   "keywords": [],
   "dependencies": {
-    "polotno": "^4.5.2",
+    "polotno": "^4.6.0",
     "react": "^19",
     "react-dom": "^19"
   },

@@ -5,7 +5,7 @@
   "keywords": [],
   "dependencies": {
     "@polotno/video-export": "0.0.2",
-    "polotno": "^4.5.2",
+    "polotno": "^4.6.0",
     "react": "^19",
     "react-dom": "^19"
   },
