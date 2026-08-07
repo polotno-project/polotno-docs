@@ -4,7 +4,7 @@
   "description": "Demo showing how to rotate pages and adjust element positions in Polotno editor",
   "keywords": [],
   "dependencies": {
-    "polotno": "^4.6.0",
+    "polotno": "^4.7.0",
     "react": "^19",
     "react-dom": "^19"
   },

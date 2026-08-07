@@ -6,7 +6,7 @@
   "dependencies": {
     "konva": "^9",
     "mobx-react-lite": "^4",
-    "polotno": "^4.6.0",
+    "polotno": "^4.7.0",
     "react": "^19",
     "react-dom": "^19"
   },
