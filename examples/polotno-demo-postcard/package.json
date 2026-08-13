@@ -4,7 +4,7 @@
   "description": "Live demo of a direct-mail postcard designer built on Polotno SDK",
   "keywords": [],
   "dependencies": {
-    "@polotno/pdf-export": "^0.7.0",
+    "@polotno/pdf-export": "^0.8.1",
     "mobx": "^6.0.0",
     "mobx-react-lite": "^4",
     "polotno": "^4.8.0",

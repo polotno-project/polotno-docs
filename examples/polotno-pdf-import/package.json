@@ -4,7 +4,7 @@
   "description": "Demo of PDF import into Polotno editor",
   "keywords": [],
   "dependencies": {
-    "@polotno/pdf-import": "0.4.0",
+    "@polotno/pdf-import": "0.5.0",
     "polotno": "^4.8.0",
     "react": "^19",
     "react-dom": "^19"

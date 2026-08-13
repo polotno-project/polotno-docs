@@ -1,9 +1,11 @@
-# Vector vs Bitmap PDF Export
+# PDF Export Options
 
-Demo of two PDF export paths from a Polotno design, both running fully client-side in the browser:
+Demo of the PDF export paths from a Polotno design, all running fully client-side in the browser. One **Download PDF** button opens a menu of options:
 
-- **Bitmap PDF** (default) — `store.saveAsPDF()`. Each page is rasterised into a flattened image embedded in the PDF. Identical to the canvas; larger files; fixed resolution.
-- **Vector PDF** — `jsonToPDFBlob()` from `@polotno/pdf-export/browser`. Paths, strokes, and text survive as real PDF objects. Selectable text, smaller files, resolution-independent.
+- **Vector PDF** (default) — `jsonToPDFBlob()` from `@polotno/pdf-export/browser`. Paths, strokes, and text survive as real PDF objects. Selectable text, smaller files, resolution-independent.
+- **Flatten pages** — `store.saveAsPDF()`. Each page is rasterised into a flattened image embedded in the PDF. Identical to the canvas; larger files; fixed resolution.
+- **Print-ready (PDF/X-4)** — `pdfx: 'x-4'` with an ISO Coated v2 (FOGRA39) output intent embedded from an ICC profile.
+- **CMYK colors** — `colorMode: 'cmyk'` converts fills, strokes, and gradients through the output intent.
 
 ## Links
 
@@ -13,8 +15,8 @@ Demo of two PDF export paths from a Polotno design, both running fully client-si
 
 ## When to pick which
 
-| Need | Use |
-|------|-----|
-| Pixel-perfect parity with the canvas | Bitmap |
-| Selectable text, smaller files | Vector |
-| Print shop deliverables (PDF/X-1a, spot inks) | Vector via the [Node entry](https://www.npmjs.com/package/@polotno/pdf-export) — Ghostscript required |
+| Need                                          | Use                   |
+| --------------------------------------------- | --------------------- |
+| Selectable text, smaller files                | Vector (default)      |
+| Pixel-perfect parity with the canvas          | Flatten pages         |
+| Print shop deliverables (PDF/X, CMYK)         | Print-ready (PDF/X-4) |
