@@ -1,6 +1,6 @@
 # Cloud Render
 
-Demo showing how to use Polotno cloud rendering API with various export options.
+Demo showing how to use the Polotno Cloud Render API: paste a design JSON, pick a format (PNG, JPEG, PDF, GIF, MP4) and its options — quality, DPI, vector PDF, print-ready PDF/X-4, CMYK color profiles, bleed, error skipping, text overflow, webhooks — and render.
 
 ## Links
 
