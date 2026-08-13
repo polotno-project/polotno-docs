@@ -11,7 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "polotno": "^4.7.0",
+    "polotno": "^4.8.0",
     "react": "^19",
     "react-dom": "^19"
   },

@@ -7,7 +7,7 @@
     "@meronex/icons": "^1.0.0",
     "mobx": "^6.0.0",
     "mobx-react-lite": "^4.0.0",
-    "polotno": "^4.7.0",
+    "polotno": "^4.8.0",
     "react": "^19",
     "react-dom": "^19"
   },
