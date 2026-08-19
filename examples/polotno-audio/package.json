@@ -4,7 +4,7 @@
   "description": "Demo showing audio support in Polotno editor",
   "keywords": [],
   "dependencies": {
-    "polotno": "^4.8.0",
+    "polotno": "^4.9.0",
     "react": "^19",
     "react-dom": "^19"
   },

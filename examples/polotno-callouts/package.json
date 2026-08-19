@@ -1,0 +1,25 @@
+{
+  "name": "@polotno-docs/polotno-callouts",
+  "version": "1.0.0",
+  "description": "Reusable callouts (speech balloons), built in two ways: from built-in elements, and from a custom element type",
+  "keywords": [],
+  "dependencies": {
+    "mobx": "^6.0.0",
+    "mobx-react-lite": "^4.0.0",
+    "polotno": "^4.9.0",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-konva": "^19"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}

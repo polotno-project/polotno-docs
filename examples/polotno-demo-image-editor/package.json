@@ -4,7 +4,7 @@
   "description": "Live demo of an image editor built on Polotno SDK — video features hidden",
   "keywords": [],
   "dependencies": {
-    "polotno": "^4.8.0",
+    "polotno": "^4.9.0",
     "react": "^19",
     "react-dom": "^19"
   },
