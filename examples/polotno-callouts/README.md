@@ -1,68 +1,124 @@
 # Callouts in Polotno
 
-Reusable callouts (speech balloons) that you insert from the side panel, with
-a text you can edit and a tail you can point in any direction.
+Reusable callouts (speech balloons): insert one from the side panel, edit its
+text, point its tail anywhere, and change the fill, the border and the shape.
 
-The demo builds the same callout in **two ways**, so you can put them beside
-each other on one page and compare them. The toggle in the **Callouts** panel
-selects the way.
+This example has no page in the documentation. It is standalone: this file
+holds the ideas, the source holds the details.
 
 ## Links
 
 - [Open Demo](http://polotno.com/docs/examples/polotno-callouts/index.html)
 - [Edit in CodeSandbox](https://codesandbox.io/embed/github/polotno-project/polotno-docs/tree/main/examples/polotno-callouts?fontsize=14&hidenavigation=1&theme=dark&view=preview)
 
-|                         | Built-in elements                         | Custom element                                                                                                                                     |
-| ----------------------- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| What the balloon is     | an `svg` element, drawn again at run time | a new element type, `callout`                                                                                                                      |
-| Code you write          | a function that makes an SVG string       | a MobX model + a react-konva component                                                                                                             |
-| Where the settings live | `group.custom.callout`                    | attributes of the element                                                                                                                          |
-| Handle on the canvas    | no, the toolbar points the tail           | yes, drag the blue dot                                                                                                                             |
-| Export                  | every path works                          | PNG/JPEG in the browser; the Cloud Render API, `polotno-node` and the vector exporters need [extra work](https://polotno.com/docs/custom-elements) |
+## Before you write any code
 
-**Use the built-in way if you can.** It stays inside the standard element
-types, so every export path and every other tool keeps working. Use the custom
-element when you need controls on the canvas itself.
+Polotno already draws a balloon: a `figure` element with
+`subType: 'speechBubble'`, already in the **Elements** tab, with fill, border,
+dash, corner radius, animations and every export path.
+
+```js
+page.addElement({ type: 'figure', subType: 'speechBubble', width: 300, height: 200 });
+```
+
+What it has not is a tail you can point. If a tail in the middle of the bottom
+edge is enough, stop here.
+
+## Two ways to get a movable tail
+
+The demo builds the same callout in two ways. The toggle in the **Callouts**
+panel selects the way, so you can compare them on one canvas.
+
+|                         | Built-in elements                         | Custom element                                                                                        |
+| ----------------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| What the balloon is     | an `svg` element, drawn again at run time | a new element type, `callout`                                                                         |
+| Where the settings live | `group.custom.callout`                    | attributes of the element                                                                             |
+| Handle on the canvas    | no, the toolbar points the tail           | yes, drag the blue dot                                                                                |
+| Export                  | every path works                          | the browser exports it; the Cloud Render API, `polotno-node` and the vector exporters need an adapter |
+
+**Use the built-in way if you can.** Use a custom element when you need
+controls on the canvas itself.
+
+### Way 1: built-in elements
+
+A `group` of an `svg` element and a `text` element. The settings live in
+`custom`, the only place Polotno keeps your own data on an element. A MobX
+reaction turns them into a new `src`:
+
+```js
+autorun(() => {
+  // ...for every callout group:
+  const src = calloutToSVG({
+    ...settings,
+    width: shape.width,
+    height: shape.height,
+  });
+  untracked(() => {
+    if (src === shape.src) return;
+    // `history.ignore` keeps the correction out of the undo steps
+    store.history.ignore(() => shape.set({ src }));
+  });
+});
+```
+
+### Way 2: a custom `callout` element
+
+`unstable_registerShapeModel` + `unstable_registerShapeComponent` +
+`unstable_registerTransformerAttrs` add the type. The value is the handle: a
+Konva shape inside the element, so the tail follows the mouse.
+
+```jsx
+<Circle
+  x={tip[0]}
+  y={tip[1]}
+  radius={7}
+  draggable
+  hideInExport
+  // the editor moves the whole selection on a drag that reaches the stage
+  onDragMove={(e) => {
+    e.cancelBubble = true;
+    element.set({
+      tipX: e.target.x() / element.width,
+      tipY: e.target.y() / element.height,
+    });
+  }}
+/>
+```
+
+### The controls in the toolbar
+
+A callout is a `group`, so the controls are extra items of the group toolbar.
+A key of `components` that starts with a type name is added to that type:
+
+```jsx
+<Toolbar store={store} components={{ GroupCalloutFill, GroupCalloutSettings }} />
+```
+
+Each item returns `null` when the selection is not a callout.
+`registerToolbarComponent('group', ...)` would **replace** the group toolbar,
+and the built-in controls would disappear.
+
+## Two traps
+
+- **The box holds the balloon and the tail.** Keep a margin around the body for
+  the tail: the tail then points anywhere without a change of the box, and the
+  text never moves when the tail moves.
+- **Never write the box of the text while the user resizes it.** The
+  transformer works from the size of the element, so a write in the middle of a
+  drag makes the font size run away. See `isUserDragging` in
+  `src/shared/text-box.js`.
 
 ## Files
 
 ```
-src/
-  index.jsx             the editor
-  callouts-panel.jsx    the "Callouts" tab, with the toggle
-  callout-toolbar.jsx   the controls in the top toolbar, for both ways
-  shared/               everything the two ways have in common
-    callout-geometry.js   pure math: size + tail direction -> SVG paths
-    callout-svg.js        the paths -> an SVG image, and the default colors
-    presets.js            the three cards of the side panel
-    text-box.js           the text is the body of the balloon, and stays in it
-    callout-controls.jsx  fill, border, shape, tail, tail direction
-    tail-pad.jsx          the small pad that points the tail
-  builtin/
-    callout.js            way 1: an `svg` element + a `text` element in a group
-  custom-element/
-    callout-element.jsx   way 2: registers the `callout` type
-    add-callout.js        way 2: inserts one, keeps its text in place
+src/shared/                          geometry, SVG, presets, text rule, controls
+src/builtin/callout.js               way 1
+src/custom-element/callout-element.jsx   way 2
+src/index.jsx, callouts-panel.jsx, callout-toolbar.jsx   the app, both ways
 ```
 
-**To take one way into your own app:** copy `src/shared/` and the folder of
-the way you want. `callouts-panel.jsx` and `callout-toolbar.jsx` know both
-ways; each way is one block in them, so delete the other.
-
-## Details that are easy to miss
-
-- The box of a callout holds the balloon **and** the tail. `inset` keeps a
-  margin around the body for the tail, so the tail can point anywhere without
-  a change of the box, and the text never moves when the tail moves.
-- The Konva node of a custom element must have `name="element"`. Polotno finds
-  the node of an element by this name.
-- A drag on the tail handle sends its events up to the stage, where the editor
-  moves all the selected elements. `event.cancelBubble = true` in
-  `onDragStart`, `onDragMove` and `onDragEnd` of the handle stops this.
-- Nothing may write the box of the text while the user moves or resizes it
-  with the mouse: the transformer works from the size of the element, so a
-  write in the middle of a drag makes the font size run away. See
-  `isUserDragging` in `shared/text-box.js`.
+To take one way into your app, copy `src/shared/` and that one folder. Each way
+is one block in the three root files.
 
 ## Run
 
