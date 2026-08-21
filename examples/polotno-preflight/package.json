@@ -1,0 +1,24 @@
+{
+  "name": "@polotno-docs/polotno-preflight",
+  "version": "1.0.0",
+  "description": "Print preflight panel for Polotno",
+  "keywords": [],
+  "dependencies": {
+    "mobx": "^6.0.0",
+    "mobx-react-lite": "^4",
+    "polotno": "^4.8.0",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}
