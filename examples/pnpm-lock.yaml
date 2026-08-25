@@ -595,8 +595,8 @@ importers:
   polotno-demo-postcard:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.9.0
-        version: 0.9.0(@types/node@25.5.0)(canvas@3.2.3)
+        specifier: ^0.10.0
+        version: 0.10.0(@types/node@25.5.0)(canvas@3.2.3)
       mobx:
         specifier: ^6.0.0
         version: 6.16.1
@@ -1059,8 +1059,8 @@ importers:
   polotno-pdf-import:
     dependencies:
       '@polotno/pdf-import':
-        specifier: 0.5.1
-        version: 0.5.1(canvas@3.2.3)
+        specifier: 0.5.2
+        version: 0.5.2(canvas@3.2.3)
       polotno:
         specifier: ^4.10.0
         version: 4.10.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
@@ -1178,8 +1178,8 @@ importers:
   polotno-psd-import:
     dependencies:
       '@polotno/psd-import':
-        specifier: ^0.0.10
-        version: 0.0.10
+        specifier: ^0.1.0
+        version: 0.1.0(canvas@3.2.3)
       polotno:
         specifier: ^4.10.0
         version: 4.10.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
@@ -1479,8 +1479,8 @@ importers:
   polotno-svg-import:
     dependencies:
       '@polotno/svg-import':
-        specifier: ^0.0.25
-        version: 0.0.25
+        specifier: ^0.1.0
+        version: 0.1.0(canvas@3.2.3)
       polotno:
         specifier: ^4.10.0
         version: 4.10.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
@@ -1786,8 +1786,8 @@ importers:
   polotno-vector-pdf-export:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.9.0
-        version: 0.9.0(@types/node@25.5.0)(canvas@3.2.3)
+        specifier: ^0.10.0
+        version: 0.10.0(@types/node@25.5.0)(canvas@3.2.3)
       mobx-react-lite:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -3920,37 +3920,28 @@ packages:
   '@polotno/core@0.5.0':
     resolution: {integrity: sha512-v8Pzeko3xyO5fiE4T5xO/DJvEZHF0Ki7CNDmjmZMDu7ZFrh7NfZLKzbJo3pHl81YqJcPG56jeGdZNOui6nuSRg==}
 
-  '@polotno/core@0.6.0':
-    resolution: {integrity: sha512-rVGE/0Fs1hUxwjuLvDXenEdsTYySVBI9dC71rhhrTZquHiwADS9JcHe7+dTMTBBJ6NtpSRHUEAqHc3XHdXUMzg==}
-
-  '@polotno/core@0.7.0':
-    resolution: {integrity: sha512-JZ9pbsskafZYYsZrFiB/Z7ohDhrDhAn5mVW0eV1711B8pWkL3GUEyhVzbg04lT9/hX6vow2/B2BDFBKLfu2SzA==}
-
   '@polotno/core@0.8.0':
     resolution: {integrity: sha512-5R9rlsiR2bMugVHNGwuf9qtop1vIEi8F8qRuwswKRnu7LjHZCUlhRREjPvu1DFV4utfSsRgehMrtA3FJWxN55g==}
 
   '@polotno/html-export@0.4.1':
     resolution: {integrity: sha512-h/bFsX0AZ1afOhOk7boyIGdAjPkUJdkhcty9JZFE3hnTszh24vVBDN1GjjZOQwESOIpC4qrxs5d5drsPJ2d8kA==}
 
-  '@polotno/pdf-export@0.9.0':
-    resolution: {integrity: sha512-hGu6DEeTk0wolK8wWbDUi5wWZuhcTJAVQm8ZoE5qOitsniIXiOYYC7TrWI00j+5KKxaT6T1Azj+awDzSrPfBZw==}
+  '@polotno/pdf-export@0.10.0':
+    resolution: {integrity: sha512-94Aw4U0O8miNRkHiKZwFcJrhNANOWKEA9SQG4PNeg7wyNiTu2Y+aBLIrORHb5YbrNiSVQZWFApfw0fL8t4NaNQ==}
     engines: {node: '>=22.13.0'}
 
-  '@polotno/pdf-import@0.5.1':
-    resolution: {integrity: sha512-FD1w4+JmZj/4Wkq3id/vwTE/jjQ8dnMYtkOcJP7gETOCC0aTmCTrM/tc6bRpeFALEUCimkPGhIAW8S2K9Bo+0g==}
+  '@polotno/pdf-import@0.5.2':
+    resolution: {integrity: sha512-EJ8jnJqwPDbl0TFM0K/NH16RBWKAARNfuOG24e4o2nK4ZqWgTlioBd1XkQuqeNsscTiWvoOT37Wgi1ot6+h+8A==}
     engines: {node: '>=20'}
 
   '@polotno/pptx-export@0.0.1':
     resolution: {integrity: sha512-ArXYlcdghRFBdkoTjZpcAeomKB5zmzcHimSVUEDj29GWiOFRB/pSoYIsKIdORp0P3j4FIKIBXJcnMcunIcHaUA==}
 
-  '@polotno/psd-import@0.0.10':
-    resolution: {integrity: sha512-HI+DvrZnQ6MEUM2qNV+ARz/uIe4jXikQPgSbOOGo4Cirz9j8z0uELAtEvqUldF4Dt5Mcx24Vjw/Obo0ycHodWg==}
+  '@polotno/psd-import@0.1.0':
+    resolution: {integrity: sha512-cqkcGEkx2n+54tvP8T6ZlO19DEbeCUvwrC2v/cBaXb3zxprBVpEGHiYJxFiBpBsCwmq0vGNDk5+Su5NxvW6+ig==}
 
   '@polotno/schema@0.5.0':
     resolution: {integrity: sha512-ItVbsrP9XCGTrY8TaBY5JhkEP7utwvPiqYCefUjir2ls6eviLQUQ2j0uLIwAwfqhGA58cjagebU0zDIxYGsFXQ==}
-
-  '@polotno/schema@0.6.0':
-    resolution: {integrity: sha512-M1my66LHTTdy7Dm0/ObqM0wa8WWQgAMUqpP8f+c9fcRPI/3qC1RCGOBhTRm0gS7M5XREK4Ge76okOB+siUbv9g==}
 
   '@polotno/schema@0.6.1':
     resolution: {integrity: sha512-Gwry6IEegkwfINDwVEHigD72/VsyWIV8gQK/6OtYRv9VevgqYEQFMLV03/Q2oHiU7opE31Q+O7pGWfskLHrmvA==}
@@ -3958,8 +3949,8 @@ packages:
   '@polotno/svg-export@0.5.0':
     resolution: {integrity: sha512-Egoe94IoBq18aG3Sj3isxLIUD2TucdIQYq4DadZDTBJPU6zHuroS6eYaKgtKbbGWO5fWFUmrNjjYxiKwfdeSUQ==}
 
-  '@polotno/svg-import@0.0.25':
-    resolution: {integrity: sha512-0u+x3hTLxI/MLn8TT3nuEdd+Tyv9XKDBlykeSuurufS1A6hp2l0Zx63i+XLB7asS9ZifT8+g9cflJgmCvDlI0Q==}
+  '@polotno/svg-import@0.1.0':
+    resolution: {integrity: sha512-VLhEXPTUz4OjmMUe1ytxvVZDSPbNUBSVjDb/PhZQfTRy6qG0cO+9LXMet9nOVPl0AeZB/o6J8MtW5vNj5R9DYA==}
 
   '@polotno/video-export@0.2.3':
     resolution: {integrity: sha512-sNWGBvR9iS6oXZKLUp5CIbPrDw05MIFUYi0ibfXvFyRNJ8PNZPzR1jHZd1s0PCaaH+EVf1xi350Fq2pixrw6yg==}
@@ -9234,9 +9225,6 @@ packages:
   render-tag@0.1.27:
     resolution: {integrity: sha512-XeA8g23MmVB+C/OTp49P0RBl0nsSOu9XSXxHQzFZwWh7zM1zf1oL8tupBRlG3gZCKoe02OqiePZSemoIfTh1WA==}
 
-  render-tag@0.1.29:
-    resolution: {integrity: sha512-+5R3OEufUmDcbEZG8Ury10EvoXSCyjN/neOmP+/mGuccN+cEFSMR5JiQNRlildnUzqL+5gdWmgQb3vm1f0IdrQ==}
-
   render-tag@0.1.34:
     resolution: {integrity: sha512-0ZJkoWEUg9VROw7TMgb9nxQ5ucSgYQORMCG2ybInab6+s8V2GTQl05cHLCUBv/qGgoQcr1DGFt1U0jh+NWuESQ==}
 
@@ -13196,31 +13184,6 @@ snapshots:
       svg-round-corners: 0.4.3
       tinycolor2: 1.6.0
 
-  '@polotno/core@0.6.0':
-    dependencies:
-      '@polotno/schema': 0.6.0
-      fflate: 0.8.3
-      gradient-parser: 1.2.0
-      konva: 10.3.0
-      mensch: 0.3.4
-      render-tag: 0.1.29
-      svg-round-corners: 0.4.3
-      tinycolor2: 1.6.0
-
-  '@polotno/core@0.7.0(canvas@3.2.3)':
-    dependencies:
-      '@polotno/schema': 0.6.0
-      fflate: 0.8.3
-      gradient-parser: 1.2.0
-      konva: 10.3.1(canvas@3.2.3)
-      mensch: 0.3.4
-      render-tag: 0.1.29
-      svg-round-corners: 0.4.3
-      tinycolor2: 1.6.0
-    transitivePeerDependencies:
-      - canvas
-      - skia-canvas
-
   '@polotno/core@0.8.0(canvas@3.2.3)':
     dependencies:
       '@polotno/schema': 0.6.1
@@ -13243,11 +13206,11 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/pdf-export@0.9.0(@types/node@25.5.0)(canvas@3.2.3)':
+  '@polotno/pdf-export@0.10.0(@types/node@25.5.0)(canvas@3.2.3)':
     dependencies:
       '@napi-rs/canvas': 1.0.3
-      '@polotno/core': 0.7.0(canvas@3.2.3)
-      '@polotno/schema': 0.6.0
+      '@polotno/core': 0.8.0(canvas@3.2.3)
+      '@polotno/schema': 0.6.1
       '@xmldom/xmldom': 0.9.10
       file-type: 22.0.1
       linkedom: 0.18.13(canvas@3.2.3)
@@ -13258,10 +13221,10 @@ snapshots:
       - skia-canvas
       - supports-color
 
-  '@polotno/pdf-import@0.5.1(canvas@3.2.3)':
+  '@polotno/pdf-import@0.5.2(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.7.0(canvas@3.2.3)
-      '@polotno/schema': 0.6.0
+      '@polotno/core': 0.8.0(canvas@3.2.3)
+      '@polotno/schema': 0.6.1
       opentype.js: 2.0.0
       pdfjs-dist: 4.10.38
     transitivePeerDependencies:
@@ -13282,18 +13245,17 @@ snapshots:
       - skia-canvas
       - typescript
 
-  '@polotno/psd-import@0.0.10':
+  '@polotno/psd-import@0.1.0(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.5.0
-      '@polotno/schema': 0.5.0
+      '@polotno/core': 0.8.0(canvas@3.2.3)
+      '@polotno/schema': 0.6.1
       ag-psd: 30.2.0
       fontkit: 2.0.4
+    transitivePeerDependencies:
+      - canvas
+      - skia-canvas
 
   '@polotno/schema@0.5.0':
-    dependencies:
-      zod: 4.4.3
-
-  '@polotno/schema@0.6.0':
     dependencies:
       zod: 4.4.3
 
@@ -13310,11 +13272,14 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/svg-import@0.0.25':
+  '@polotno/svg-import@0.1.0(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.6.0
-      '@polotno/schema': 0.6.0
-      konva: 10.3.0
+      '@polotno/core': 0.8.0(canvas@3.2.3)
+      '@polotno/schema': 0.6.1
+      konva: 10.3.1(canvas@3.2.3)
+    transitivePeerDependencies:
+      - canvas
+      - skia-canvas
 
   '@polotno/video-export@0.2.3(polotno@4.10.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))':
     dependencies:
@@ -19559,8 +19524,6 @@ snapshots:
   remove-trailing-separator@1.1.0: {}
 
   render-tag@0.1.27: {}
-
-  render-tag@0.1.29: {}
 
   render-tag@0.1.34: {}
 
