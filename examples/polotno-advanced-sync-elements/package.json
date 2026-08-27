@@ -6,7 +6,7 @@
   "dependencies": {
     "mobx": "^6.0.0",
     "nanoid": "^3.3.11",
-    "polotno": "^4.10.0",
+    "polotno": "^4.11.0",
     "react": "^19",
     "react-dom": "^19"
   },

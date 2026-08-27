@@ -4,7 +4,7 @@
   "description": "Demo showing admin role with extra toolbar settings and permissions",
   "keywords": [],
   "dependencies": {
-    "polotno": "^4.10.0",
+    "polotno": "^4.11.0",
     "react": "^19",
     "react-dom": "^19"
   },
