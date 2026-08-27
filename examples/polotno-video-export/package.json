@@ -4,7 +4,7 @@
   "description": "Demo showing video export in Polotno editor",
   "keywords": [],
   "dependencies": {
-    "@polotno/video-export": "0.2.3",
+    "@polotno/video-export": "0.2.4",
     "polotno": "^4.11.0",
     "react": "^19",
     "react-dom": "^19"
