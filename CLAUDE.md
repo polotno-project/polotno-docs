@@ -1,6 +1,6 @@
 # Working with Polotno in this repo
 
-This project uses the Polotno SDK (`polotno`), a design editor SDK built on
+These examples use the Polotno SDK (`polotno`), a design editor SDK built on
 Konva and react-konva.
 
 - Install the official Polotno skills before changing editor code:
