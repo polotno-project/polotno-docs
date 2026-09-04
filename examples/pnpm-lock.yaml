@@ -15,8 +15,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -40,8 +40,8 @@ importers:
   polotno-admin-role:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -65,8 +65,8 @@ importers:
         specifier: ^3.3.11
         version: 3.3.11
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -90,8 +90,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -115,8 +115,8 @@ importers:
         specifier: 2.0.11
         version: 2.0.11(mobx@6.16.1)(vue@2.7.16)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -152,8 +152,8 @@ importers:
         specifier: ^2.8.3
         version: 2.16.4(@swc/helpers@0.5.20)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -216,8 +216,8 @@ importers:
         specifier: ^4.8.0
         version: 4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@6.16.1)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -247,8 +247,8 @@ importers:
   polotno-animations:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -266,8 +266,8 @@ importers:
   polotno-audio:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -285,8 +285,8 @@ importers:
   polotno-background-sidepanel:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -313,8 +313,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -335,8 +335,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -360,8 +360,8 @@ importers:
         specifier: ^4
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -391,8 +391,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -416,8 +416,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -444,8 +444,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       qrcode:
         specifier: 1.5.0
         version: 1.5.0
@@ -485,8 +485,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -513,8 +513,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -532,8 +532,8 @@ importers:
   polotno-demo:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -557,8 +557,8 @@ importers:
         specifier: ^4
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -576,8 +576,8 @@ importers:
   polotno-demo-image-editor:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -604,8 +604,8 @@ importers:
         specifier: ^4
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -629,8 +629,8 @@ importers:
         specifier: ^4
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -649,10 +649,10 @@ importers:
     dependencies:
       '@polotno/video-export':
         specifier: 0.2.4
-        version: 0.2.4(canvas@3.2.3)(polotno@4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))
+        version: 0.2.4(canvas@3.2.3)(polotno@4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -670,8 +670,8 @@ importers:
   polotno-demo-vite:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -689,8 +689,8 @@ importers:
   polotno-design-validation:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -711,8 +711,8 @@ importers:
         specifier: ^4.0.5
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -736,8 +736,8 @@ importers:
         specifier: ^4.0.5
         version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -771,8 +771,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -799,8 +799,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -824,8 +824,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -849,8 +849,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -868,8 +868,8 @@ importers:
   polotno-mobile:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -890,8 +890,8 @@ importers:
         specifier: ^14
         version: 14.2.35(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.77.6)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -905,8 +905,8 @@ importers:
         specifier: ^2.7.0
         version: 2.16.4(@swc/helpers@0.5.20)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -936,8 +936,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -955,8 +955,8 @@ importers:
   polotno-overlay:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -977,8 +977,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -999,8 +999,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1018,8 +1018,8 @@ importers:
   polotno-page-numbers:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1040,8 +1040,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1062,8 +1062,8 @@ importers:
         specifier: 0.6.0
         version: 0.6.0(canvas@3.2.3)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1087,8 +1087,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1109,8 +1109,8 @@ importers:
         specifier: latest
         version: 0.0.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1134,8 +1134,8 @@ importers:
         specifier: ^4
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1159,8 +1159,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1181,8 +1181,8 @@ importers:
         specifier: ^0.1.0
         version: 0.1.0(canvas@3.2.3)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1206,8 +1206,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       qrcode:
         specifier: 1.5.0
         version: 1.5.0
@@ -1234,8 +1234,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
@@ -1256,8 +1256,8 @@ importers:
   polotno-remove-side-panel:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1278,8 +1278,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1300,8 +1300,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1319,8 +1319,8 @@ importers:
   polotno-rotate-page:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1338,8 +1338,8 @@ importers:
   polotno-rulers:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1360,8 +1360,8 @@ importers:
         specifier: ^6.0.0
         version: 6.15.0
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1385,8 +1385,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1407,8 +1407,8 @@ importers:
   polotno-simple-t-shirt-demo:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1429,8 +1429,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1457,8 +1457,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       quill:
         specifier: ^2.0.0
         version: 2.0.3
@@ -1482,8 +1482,8 @@ importers:
         specifier: ^0.1.0
         version: 0.1.0(canvas@3.2.3)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1507,8 +1507,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1529,8 +1529,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1554,8 +1554,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1591,8 +1591,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1619,8 +1619,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1641,8 +1641,8 @@ importers:
         specifier: ^6.0.0
         version: 6.15.0
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1663,8 +1663,8 @@ importers:
         specifier: ^1.18.0
         version: 1.18.0(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1682,8 +1682,8 @@ importers:
   polotno-toolbar-actions:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1704,8 +1704,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1726,8 +1726,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1748,8 +1748,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1767,8 +1767,8 @@ importers:
   polotno-variables:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1792,8 +1792,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1811,8 +1811,8 @@ importers:
   polotno-vertical-text-resize:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1831,10 +1831,10 @@ importers:
     dependencies:
       '@polotno/video-export':
         specifier: 0.2.4
-        version: 0.2.4(canvas@3.2.3)(polotno@4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))
+        version: 0.2.4(canvas@3.2.3)(polotno@4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1855,8 +1855,8 @@ importers:
         specifier: ^0.4.3
         version: 0.4.3(mobx@6.16.1)(vue@3.5.31(typescript@5.5.4))
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1877,8 +1877,8 @@ importers:
   polotno-workspace-layout:
     dependencies:
       polotno:
-        specifier: ^4.11.0
-        version: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.12.0
+        version: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -3917,14 +3917,17 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
+  '@polotno/core@0.10.0':
+    resolution: {integrity: sha512-ezOnFjkEfP9dgLFapCnnQKfxJ07jnkEIiipkFAld7kDK2pxTg846NDQtvNiEV6aBkNo1oGUFO5qIiR2Ki/5K+w==}
+
   '@polotno/core@0.8.0':
     resolution: {integrity: sha512-5R9rlsiR2bMugVHNGwuf9qtop1vIEi8F8qRuwswKRnu7LjHZCUlhRREjPvu1DFV4utfSsRgehMrtA3FJWxN55g==}
 
   '@polotno/core@0.9.0':
     resolution: {integrity: sha512-tMl/bqHZrQuXDlrnxFWjdxBizGVYTmXEhj+XV8Dqq3TdbFBuEEl2M8So/5JvQs97G+faYD95BGBG9QAg3K1Jkg==}
 
-  '@polotno/html-export@0.5.0':
-    resolution: {integrity: sha512-GkTWU97GatEl7Y6Yj0EVbADO5w62z5GqqZ7Eb3wvrY/ufNPZ+QNXcSkp0h8TAboEVg2qQB/T3OrZoIz4SmFH0A==}
+  '@polotno/html-export@0.5.1':
+    resolution: {integrity: sha512-odrEJGOD2yAh9tD/tD1R4+2ElY3+IHOLhZBOLMVsfOz0OUM4ySOs5t+vylqe134vA9wfAefXQLF86P5faXy6OA==}
 
   '@polotno/pdf-export@0.11.0':
     resolution: {integrity: sha512-7oItcpHW1p/3prFVIwXc5dxj4/v8Lx1MLiMaWehdNtUEEczk+yp82sQGEpW/fpHgHH2vm5ExO0243IHrYjdicA==}
@@ -3943,8 +3946,8 @@ packages:
   '@polotno/schema@0.6.1':
     resolution: {integrity: sha512-Gwry6IEegkwfINDwVEHigD72/VsyWIV8gQK/6OtYRv9VevgqYEQFMLV03/Q2oHiU7opE31Q+O7pGWfskLHrmvA==}
 
-  '@polotno/svg-export@0.6.0':
-    resolution: {integrity: sha512-eA47PSYPI9WJld6/aJcxap2bUcbr3grCqfluyYBV8eW2vBGjWyK7shYvrprbH/4nFIwvtrOo9FGv8NNDXCmkCg==}
+  '@polotno/svg-export@0.6.1':
+    resolution: {integrity: sha512-B4YmCjJZ0+iQj52vtGbEO5iz2VfDT/ai5DNgxdv1neJ28K174A9adiatxX+HOqX64ClWx8keepDLScNsuYQQTA==}
 
   '@polotno/svg-import@0.1.0':
     resolution: {integrity: sha512-VLhEXPTUz4OjmMUe1ytxvVZDSPbNUBSVjDb/PhZQfTRy6qG0cO+9LXMet9nOVPl0AeZB/o6J8MtW5vNj5R9DYA==}
@@ -7713,8 +7716,8 @@ packages:
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  lucide-react@1.30.0:
-    resolution: {integrity: sha512-tUIr2jXLbWpCkdtH8XP7P7YppM9ueWgTky99lpWDY6z5REs6B+O6ZQ3U5tHkUUY59ANyOv/PBcs8E4Fe3KO3eA==}
+  lucide-react@1.41.0:
+    resolution: {integrity: sha512-6lksP35l6KszDKUeRTi4LV7i6DEe0Yzl2ALJm9j4c5xEYN91GdW1xGsawGMOg2mgjF5GHBVX8pKX9kP+cWsP3Q==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -7769,6 +7772,9 @@ packages:
 
   mediabunny@1.52.3:
     resolution: {integrity: sha512-rMGwH5fykDCSA55LG9aWkE433wwHrycq3J5mRf+djBnHBZzmJGvIwg6Qfcfr4rRkzkmrdmewxQozLkOM1H1C6Q==}
+
+  mediabunny@1.55.6:
+    resolution: {integrity: sha512-IuwxlL8GQ5qODxvdj0mm5bUumrwTr13ooX0UygsrT2u1uwERjV1Awv/zuFoY5iNeYic6SQU78BcGcGLnDgPQ9g==}
 
   memoize-one@5.2.1:
     resolution: {integrity: sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==}
@@ -7964,8 +7970,8 @@ packages:
     peerDependencies:
       mobx: ^6.3.0
 
-  mobx-state-tree@7.3.2:
-    resolution: {integrity: sha512-Owf+2CkqUFLXevr+mZVY7dvY7fG7HSCGwmd0sdNOiu/A34tCz9Yc1Cu7vlGpafqBr4cRLWZAbynvoUKFyJuT2w==}
+  mobx-state-tree@7.4.0:
+    resolution: {integrity: sha512-NfOgl47Eov6tgfmIWZCJiflBn+kuQScOd4uSZjygNgZuKT/heXggmA27KfxNxp6PZrxkROliA1yAApnsPww4JA==}
     peerDependencies:
       mobx: ^6.3.0
 
@@ -8620,8 +8626,8 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  polotno@4.11.0:
-    resolution: {integrity: sha512-HVuQsGr3pKB0lv0detP/7wnlFjUvF2b9Pbu3R1Df/Z4kW/c55WW8JNtjfvUyjdyS08EX5Xk5OQhnEcH4UyfIww==}
+  polotno@4.12.0:
+    resolution: {integrity: sha512-zrb1MnC3I9w0h7ARTj3T5Kmt0u9EVf/QEf/zuUIMg7FlhRQhgD/EMtQ2N5OgleOjCe5+5m3zpFdBfbC0f2Jtrw==}
     peerDependencies:
       '@blueprintjs/core': ^6.x
       '@blueprintjs/icons': ^6.x
@@ -9919,6 +9925,11 @@ packages:
 
   swr@2.5.0:
     resolution: {integrity: sha512-W0GomadRJe9OfzIoRX0kZHhDSaRRfdiOUeH6uazgR05SibBhDNwfdTbhAxmFtObvkf59fFymo22mooKukosvNA==}
+    peerDependencies:
+      react: ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
+  swr@2.5.1:
+    resolution: {integrity: sha512-BRw55e8r0B7SpDN20CAzoQAHl7y1yP7/Zt7oqUjMv0vSt2u2Xnkm88Ws+VypbV9BXHQVuSuyVq7zMjO16wSExw==}
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -13178,6 +13189,20 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
+  '@polotno/core@0.10.0(canvas@3.2.3)':
+    dependencies:
+      '@polotno/schema': 0.6.1
+      fflate: 0.8.3
+      gradient-parser: 1.2.0
+      konva: 10.3.2(canvas@3.2.3)
+      mensch: 0.3.4
+      render-tag: 0.1.35
+      svg-round-corners: 0.4.3
+      tinycolor2: 1.6.0
+    transitivePeerDependencies:
+      - canvas
+      - skia-canvas
+
   '@polotno/core@0.8.0(canvas@3.2.3)':
     dependencies:
       '@polotno/schema': 0.6.1
@@ -13206,9 +13231,9 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/html-export@0.5.0(canvas@3.2.3)':
+  '@polotno/html-export@0.5.1(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.9.0(canvas@3.2.3)
+      '@polotno/core': 0.10.0(canvas@3.2.3)
       '@polotno/schema': 0.6.1
     transitivePeerDependencies:
       - canvas
@@ -13267,9 +13292,9 @@ snapshots:
     dependencies:
       zod: 4.4.3
 
-  '@polotno/svg-export@0.6.0(canvas@3.2.3)':
+  '@polotno/svg-export@0.6.1(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.9.0(canvas@3.2.3)
+      '@polotno/core': 0.10.0(canvas@3.2.3)
       '@polotno/schema': 0.6.1
       render-tag: 0.1.35
     transitivePeerDependencies:
@@ -13285,11 +13310,11 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/video-export@0.2.4(canvas@3.2.3)(polotno@4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))':
+  '@polotno/video-export@0.2.4(canvas@3.2.3)(polotno@4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))':
     dependencies:
       '@polotno/core': 0.9.0(canvas@3.2.3)
       mediabunny: 1.52.3
-      polotno: 4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+      polotno: 4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
     transitivePeerDependencies:
       - canvas
       - skia-canvas
@@ -17630,7 +17655,7 @@ snapshots:
     dependencies:
       react: 19.2.7
 
-  lucide-react@1.30.0(react@19.2.7):
+  lucide-react@1.41.0(react@19.2.7):
     dependencies:
       react: 19.2.7
 
@@ -17695,6 +17720,11 @@ snapshots:
   media-typer@0.3.0: {}
 
   mediabunny@1.52.3:
+    dependencies:
+      '@types/dom-mediacapture-transform': 0.1.11
+      '@types/dom-webcodecs': 0.1.13
+
+  mediabunny@1.55.6:
     dependencies:
       '@types/dom-mediacapture-transform': 0.1.11
       '@types/dom-webcodecs': 0.1.13
@@ -17902,7 +17932,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  mobx-state-tree@7.3.2(mobx@6.16.1)(typescript@5.5.4):
+  mobx-state-tree@7.4.0(mobx@6.16.1)(typescript@5.5.4):
     dependencies:
       mobx: 6.16.1
       ts-essentials: 9.4.2(typescript@5.5.4)
@@ -18713,7 +18743,7 @@ snapshots:
       functions-have-names: 1.2.3
       gifuct-js: 2.1.2
       gradient-parser: 1.2.0
-      konva: 10.3.1(canvas@3.2.3)
+      konva: 10.3.2(canvas@3.2.3)
       mediabunny: 1.52.3
       mensch: 0.3.4
       mobx: 6.15.0
@@ -18724,8 +18754,8 @@ snapshots:
       react: 19.2.7
       react-color: 2.19.3(react@19.2.7)
       react-dom: 19.2.7(react@19.2.7)
-      react-konva: 18.2.14(@types/react@19.2.17)(konva@10.3.1(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      react-konva-utils: 2.0.0(konva@10.3.1(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react-konva@18.2.14(@types/react@19.2.17)(konva@10.3.1(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
+      react-konva: 18.2.14(@types/react@19.2.17)(konva@10.3.2(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-konva-utils: 2.0.0(konva@10.3.2(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react-konva@18.2.14(@types/react@19.2.17)(konva@10.3.2(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
       react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sortablejs@1.15.7)
       react-window: 1.8.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       sortablejs: 1.15.7
@@ -18740,23 +18770,23 @@ snapshots:
       - skia-canvas
       - typescript
 
-  polotno@4.11.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4):
+  polotno@4.12.0(@blueprintjs/core@5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/icons@5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@blueprintjs/select@5.3.20(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4):
     dependencies:
       '@base-ui/react': 1.7.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@polotno/core': 0.9.0(canvas@3.2.3)
-      '@polotno/html-export': 0.5.0(canvas@3.2.3)
+      '@polotno/core': 0.10.0(canvas@3.2.3)
+      '@polotno/html-export': 0.5.1(canvas@3.2.3)
       '@polotno/schema': 0.6.1
-      '@polotno/svg-export': 0.6.0(canvas@3.2.3)
+      '@polotno/svg-export': 0.6.1(canvas@3.2.3)
       class-variance-authority: 0.7.1
       clsx: 2.1.1
       gifuct-js: 2.1.2
       konva: 10.3.2(canvas@3.2.3)
       lodash-es: 4.18.1
-      lucide-react: 1.30.0(react@19.2.7)
-      mediabunny: 1.52.3
+      lucide-react: 1.41.0(react@19.2.7)
+      mediabunny: 1.55.6
       mobx: 6.16.1
       mobx-react-lite: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      mobx-state-tree: 7.3.2(mobx@6.16.1)(typescript@5.5.4)
+      mobx-state-tree: 7.4.0(mobx@6.16.1)(typescript@5.5.4)
       nanoid: 6.0.1
       quill: 2.0.3
       react: 19.2.7
@@ -18768,10 +18798,9 @@ snapshots:
       render-tag: 0.1.35
       sortablejs: 1.15.7
       svg-round-corners: 0.4.3
-      swr: 2.5.0(react@19.2.7)
+      swr: 2.5.1(react@19.2.7)
       tailwind-merge: 3.6.0
       tinycolor2: 1.6.0
-      use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
     optionalDependencies:
       '@blueprintjs/core': 5.19.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@blueprintjs/icons': 5.23.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -19327,12 +19356,12 @@ snapshots:
       react-konva: 19.2.5(@types/react@19.2.17)(konva@10.3.2(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
-  react-konva-utils@2.0.0(konva@10.3.1(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react-konva@18.2.14(@types/react@19.2.17)(konva@10.3.1(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
+  react-konva-utils@2.0.0(konva@10.3.2(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react-konva@18.2.14(@types/react@19.2.17)(konva@10.3.2(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
     dependencies:
-      konva: 10.3.1(canvas@3.2.3)
+      konva: 10.3.2(canvas@3.2.3)
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
-      react-konva: 18.2.14(@types/react@19.2.17)(konva@10.3.1(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-konva: 18.2.14(@types/react@19.2.17)(konva@10.3.2(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
   react-konva-utils@2.0.0(konva@10.3.2(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react-konva@19.2.5(@types/react@19.2.17)(konva@10.3.2(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
@@ -19343,11 +19372,11 @@ snapshots:
       react-konva: 19.2.5(@types/react@19.2.17)(konva@10.3.2(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
-  react-konva@18.2.14(@types/react@19.2.17)(konva@10.3.1(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  react-konva@18.2.14(@types/react@19.2.17)(konva@10.3.2(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       '@types/react-reconciler': 0.28.9(@types/react@19.2.17)
       its-fine: 1.2.5(@types/react@19.2.17)(react@19.2.7)
-      konva: 10.3.1(canvas@3.2.3)
+      konva: 10.3.2(canvas@3.2.3)
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
       react-reconciler: 0.29.2(react@19.2.7)
@@ -20396,6 +20425,12 @@ snapshots:
       use-sync-external-store: 1.6.0(react@19.2.7)
 
   swr@2.5.0(react@19.2.7):
+    dependencies:
+      dequal: 2.0.3
+      react: 19.2.7
+      use-sync-external-store: 1.6.0(react@19.2.7)
+
+  swr@2.5.1(react@19.2.7):
     dependencies:
       dequal: 2.0.3
       react: 19.2.7

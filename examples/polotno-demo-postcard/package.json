@@ -7,7 +7,7 @@
     "@polotno/pdf-export": "^0.11.0",
     "mobx": "^6.0.0",
     "mobx-react-lite": "^4",
-    "polotno": "^4.11.0",
+    "polotno": "^4.12.0",
     "react": "^19",
     "react-dom": "^19"
   },
