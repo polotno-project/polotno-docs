@@ -4,7 +4,7 @@ These examples use the Polotno SDK (`polotno`), a design editor SDK built on
 Konva and react-konva.
 
 - Install the official Polotno skills before changing editor code:
-  `npx skills add polotno-project/skills`
+  `pnpm dlx skills add polotno-project/skills`
   (Claude Code: `claude plugin marketplace add polotno-project/skills` then
   `claude plugin install polotno@polotno`, which also adds the docs MCP server).
 - Read the docs as markdown: `https://polotno.com/docs/<page>.md`.

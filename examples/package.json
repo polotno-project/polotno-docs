@@ -2,7 +2,7 @@
   "name": "polotno-examples-workspace",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@12.3.4",
   "workspaces": [
     "*"
   ],
@@ -12,10 +12,5 @@
     "polotno": "^4.12.1",
     "react": "^19",
     "react-dom": "^19"
-  },
-  "pnpm": {
-    "overrides": {
-      "vite": "^8"
-    }
   }
 }

@@ -1,3 +1,23 @@
 packages:
-  - '*'
-
+  - "*"
+overrides:
+  vite: ^8
+verifyDepsBeforeRun: error
+allowBuilds:
+  esbuild: true
+  canvas: true
+  "@parcel/watcher": true
+  "@swc/core": true
+  core-js: false
+  core-js-pure: false
+  deasync: true
+  ejs: false
+  fsevents: false
+  lmdb: true
+  msgpackr-extract: true
+  nice-napi: true
+  parcel-bundler: false
+  vue-demi: true
+  yorkie: false
+# Match the website: permit the latest same-day SDK releases.
+minimumReleaseAge: 0
