@@ -1,6 +1,6 @@
 # Demo (Vite)
 
-Basic demo of canvas editor framework — using Vite as the bundler. A simple starting point for Polotno integration.
+Basic demo of canvas editor framework – using Vite as the bundler. A simple starting point for Polotno integration.
 
 ## Links
 

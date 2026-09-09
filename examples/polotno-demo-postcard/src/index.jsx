@@ -68,7 +68,7 @@ function sameColor(a, b) {
 
 function recolorAccent(color) {
   // Accent elements can live on either side of the card (e.g. the corner stars sit
-  // on both front and back), so recolour every page — not just the front.
+  // on both front and back), so recolour every page – not just the front.
   const accents = store.pages.flatMap((p) => p.children.filter(isAccent));
   const old = accents.find((el) => el.fill)?.fill;
   accents.forEach((el) => el.set({ fill: color }));
@@ -78,7 +78,7 @@ function recolorAccent(color) {
     store.pages.forEach((page) =>
       page.children.forEach((el) => {
         if (el.type !== 'text' || typeof el.text !== 'string' || !/color\s*:/i.test(el.text)) return;
-        // Match a `color:` value up to the next ; or " — includes rgb()/rgba() parens.
+        // Match a `color:` value up to the next ; or " – includes rgb()/rgba() parens.
         // Lookbehind avoids matching background-color / border-color, etc.
         const next = el.text.replace(/(?<![-\w])color\s*:\s*([^;"]+)/gi, (full, col) =>
           sameColor(col, old) ? `color: ${color}` : full
@@ -309,7 +309,7 @@ function App() {
     }
   };
 
-  // Lazy-load the (heavy) scene JSON only now, on click — the grid itself never
+  // Lazy-load the (heavy) scene JSON only now, on click – the grid itself never
   // touches it. Step over to Design immediately; the canvas fills in when it lands.
   const chooseTemplate = async (id) => {
     setTemplateId(id);

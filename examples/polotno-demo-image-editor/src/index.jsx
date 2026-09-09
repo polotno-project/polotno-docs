@@ -14,12 +14,12 @@ import template from './template.json';
 
 // An image-focused editor. Animations are deliberately left OFF, so Polotno never
 // inserts its Videos/Animations side-panel sections. DEFAULT_SECTIONS is already
-// image-only — Templates, Text, Photos, Elements, Draw, Upload, Background, Layers,
-// Resize — so we use it as-is.
+// image-only – Templates, Text, Photos, Elements, Draw, Upload, Background, Layers,
+// Resize – so we use it as-is.
 const store = createStore({ key: 'HyhTCjrrUThWw9E7dO_y', showCredit: false });
 window.store = store;
 
-// Start on a real design rather than a blank page — a template pulled from the
+// Start on a real design rather than a blank page – a template pulled from the
 // Polotno templates library, so the editor has something to edit on open.
 store.loadJSON(template);
 
@@ -27,7 +27,7 @@ store.loadJSON(template);
 
 // The full still-image format set that polotno.com/studio offers, all client-side.
 // (Video/GIF are motion-only and belong in the video editor; PDF here is raster via
-// the store — the vector path lives in the postcard demo.)
+// the store – the vector path lives in the postcard demo.)
 function downloadJSON() {
   const blob = new Blob([JSON.stringify(store.toJSON(), null, 2)], {
     type: 'application/json',
@@ -61,7 +61,7 @@ const DownloadIcon = () => (
 );
 
 // Hand-rolled dropdown. The menu is rendered through a portal to <body> with
-// position:fixed — the Polotno toolbar clips its overflow (`overflow-y:hidden`), so an
+// position:fixed – the Polotno toolbar clips its overflow (`overflow-y:hidden`), so an
 // in-flow absolute dropdown would be invisible/unclickable below the bar. Anchoring a
 // fixed portal to the button's bounding box escapes that clip entirely.
 function DownloadMenu() {

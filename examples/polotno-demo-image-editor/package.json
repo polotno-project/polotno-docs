@@ -1,7 +1,7 @@
 {
   "name": "@polotno-docs/polotno-demo-image-editor",
   "version": "1.0.0",
-  "description": "Live demo of an image editor built on Polotno SDK — video features hidden",
+  "description": "Live demo of an image editor built on Polotno SDK – video features hidden",
   "keywords": [],
   "dependencies": {
     "polotno": "^4.12.0",

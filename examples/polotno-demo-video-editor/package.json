@@ -1,7 +1,7 @@
 {
   "name": "@polotno-docs/polotno-demo-video-editor",
   "version": "1.0.0",
-  "description": "Live demo of a video editor built on Polotno SDK — photo/stock-image features hidden",
+  "description": "Live demo of a video editor built on Polotno SDK – photo/stock-image features hidden",
   "keywords": [],
   "dependencies": {
     "@polotno/video-export": "0.2.5",

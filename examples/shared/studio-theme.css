@@ -1,8 +1,8 @@
 /**
- * Polotno Studio — shared theme for marketing demo editors.
+ * Polotno Studio – shared theme for marketing demo editors.
  *
  * Mirrors the LIVE Polotno Studio (polotno.com/studio) exactly: a light IBM Carbon
- * system — monochrome (black primary on white), square corners (radius 0), IBM Plex
+ * system – monochrome (black primary on white), square corners (radius 0), IBM Plex
  * Sans. No brand blue, no rounding. Values were read from the live Studio's computed
  * CSS custom properties. Every `examples/polotno-demo-*` mini-app imports this file so
  * all demos share one look. All future demos should feature this style.
@@ -10,7 +10,7 @@
  * How it works: Polotno's new-UI components read shadcn CSS variables
  * (`var(--pn-X, var(--X, …))`). We set the plain `--X` names on `:root`/`.polotno-ui`
  * so both Polotno's own components and any custom side-panel markup inherit the same
- * tokens. No theme class is needed — light is the default.
+ * tokens. No theme class is needed – light is the default.
  *
  * Usage in a demo:
  *   // src/index.jsx:  import '../../shared/studio-theme.css';
@@ -78,7 +78,7 @@ input::-webkit-contacts-auto-fill-button {
   pointer-events: none;
 }
 
-/* Side rail — Carbon divider lines, slightly wider tab column, like Studio. */
+/* Side rail – Carbon divider lines, slightly wider tab column, like Studio. */
 .polotno-side-tabs-container {
   border-right: 1px solid #e0e0e0;
   min-width: 86px;

@@ -104,7 +104,7 @@ export const App = () => {
       if (store.pages.length) store.selectPage(store.pages[0].id);
     };
     // Apply once the workspace has mounted (double rAF runs after Polotno's
-    // mount-time auto-fit), then again after the videos finish loading — that
+    // mount-time auto-fit), then again after the videos finish loading – that
     // re-lays out the workspace and would otherwise scroll off the first page.
     const raf = requestAnimationFrame(() => requestAnimationFrame(apply));
     store.waitLoading().then(() => requestAnimationFrame(apply));
@@ -117,19 +117,19 @@ export const App = () => {
   return (
     <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
-        {/* Start with no panel open — the design is already loaded, so the canvas
+        {/* Start with no panel open – the design is already loaded, so the canvas
             and timeline lead instead of the stock-video grid. */}
         <SidePanel store={store} sections={sections} defaultSection="" />
       </SidePanelWrap>
       <WorkspaceWrap>
-        {/* Keep the default (image) download button off — video export is the
+        {/* Keep the default (image) download button off – video export is the
             primary output here and lives in ActionControls. */}
         <Toolbar
           store={store}
           downloadButtonEnabled={false}
           components={{ ActionControls: VideoExportButton }}
         />
-        {/* Show one page at a time (the active one) — the timeline switches pages.
+        {/* Show one page at a time (the active one) – the timeline switches pages.
             Avoids the all-pages-stacked scroll landing off the first page. */}
         <Workspace store={store} backgroundColor="#f4f4f4" renderOnlyActivePage />
         <ZoomButtons store={store} />

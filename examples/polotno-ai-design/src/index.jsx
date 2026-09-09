@@ -147,7 +147,7 @@ const AIDesignPanel = observer(({ store }) => {
               color: '#5c7080',
             }}
           >
-            {Math.round(progress * 100)}% —{' '}
+            {Math.round(progress * 100)}% –{' '}
             {progress < 0.9
               ? 'Generating your design...'
               : 'Almost there, finalizing...'}

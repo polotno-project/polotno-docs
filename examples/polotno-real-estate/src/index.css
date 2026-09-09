@@ -5,7 +5,7 @@ body {
 }
 
 /* Theme the editor's dark palette via Polotno UI CSS variables.
-   (Replaces the old Blueprint bp5-* overrides — see /docs/theme-and-ui-styles.) */
+   (Replaces the old Blueprint bp5-* overrides – see /docs/theme-and-ui-styles.) */
 .dark {
   --pn-background: #161616;
   --pn-foreground: #f4f4f4;

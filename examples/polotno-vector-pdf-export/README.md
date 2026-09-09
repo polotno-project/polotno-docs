@@ -2,10 +2,10 @@
 
 Demo of the PDF export paths from a Polotno design, all running fully client-side in the browser. One **Download PDF** button opens a menu of options:
 
-- **Vector PDF** (default) — `jsonToPDFBlob()` from `@polotno/pdf-export/browser`. Paths, strokes, and text survive as real PDF objects. Selectable text, smaller files, resolution-independent.
-- **Flatten pages** — `store.saveAsPDF()`. Each page is rasterised into a flattened image embedded in the PDF. Identical to the canvas; larger files; fixed resolution.
-- **Print-ready (PDF/X-4)** — `pdfx: 'x-4'` with an ISO Coated v2 (FOGRA39) output intent embedded from an ICC profile.
-- **CMYK colors** — `colorMode: 'cmyk'` converts fills, strokes, and gradients through the output intent.
+- **Vector PDF** (default) – `jsonToPDFBlob()` from `@polotno/pdf-export/browser`. Paths, strokes, and text survive as real PDF objects. Selectable text, smaller files, resolution-independent.
+- **Flatten pages** – `store.saveAsPDF()`. Each page is rasterised into a flattened image embedded in the PDF. Identical to the canvas; larger files; fixed resolution.
+- **Print-ready (PDF/X-4)** – `pdfx: 'x-4'` with an ISO Coated v2 (FOGRA39) output intent embedded from an ICC profile.
+- **CMYK colors** – `colorMode: 'cmyk'` converts fills, strokes, and gradients through the output intent.
 
 ## Links
 

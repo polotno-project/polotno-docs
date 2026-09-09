@@ -246,7 +246,7 @@ export function FontDropdown({ fonts, activeFont, onSelect }) {
   );
 }
 
-// Free size field — type any px value. The extra attributes keep password managers
+// Free size field – type any px value. The extra attributes keep password managers
 // (Dashlane/1Password/LastPass) from injecting their icon into the input.
 export function SizeInput({ value, onChange }) {
   const [local, setLocal] = React.useState(value ?? 24);
@@ -405,7 +405,7 @@ export function TemplateGrid({ templates, onChoose }) {
           Pick a card to start
         </h2>
         <p style={{ margin: '0 0 28px', fontSize: 14, color: 'var(--muted-foreground)' }}>
-          Choose a greeting card — you&rsquo;ll design the front, then write the back.
+          Choose a greeting card – you&rsquo;ll design the front, then write the back.
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
           {templates.map(({ id, name, preview }) => (
@@ -421,7 +421,7 @@ export function TemplateGrid({ templates, onChoose }) {
                 boxShadow: '0 6px 16px rgba(22,22,22,0.10)',
               }}
             >
-              {/* static preview of the card front (3:2) — the heavy scene JSON is
+              {/* static preview of the card front (3:2) – the heavy scene JSON is
                   only loaded once the card is picked */}
               <div
                 style={{

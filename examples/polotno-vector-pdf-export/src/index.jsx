@@ -20,7 +20,7 @@ import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
 import { setRichTextEnabled } from 'polotno/config';
 import { jsonToPDFBlob } from '@polotno/pdf-export/browser';
-// ISO Coated v2 (based on FOGRA39) — the ICC printing condition PDF/X embeds
+// ISO Coated v2 (based on FOGRA39) – the ICC printing condition PDF/X embeds
 // as its output intent. Loaded lazily, only when a print-ready export runs.
 import iccUrl from './ISOcoated_v2_eci.icc?url';
 
@@ -31,7 +31,7 @@ setRichTextEnabled(true);
 
 // create store
 const store = createStore({
-  // demo key — please use your own in production projects
+  // demo key – please use your own in production projects
   // https://polotno.com/cabinet
   key: 'nFA5H9elEytDyPyvKL7T',
   showCredit: true,
@@ -95,7 +95,7 @@ async function loadIccProfile() {
 
 const captionFor = ({ flatten, printReady, cmyk }) => {
   if (flatten) {
-    return 'Each page is rasterized into the PDF — exact canvas match, bigger file.';
+    return 'Each page is rasterized into the PDF – exact canvas match, bigger file.';
   }
   if (printReady && cmyk) {
     return 'PDF/X-4 with all colors converted to CMYK through ISO Coated v2 (FOGRA39).';
@@ -103,7 +103,7 @@ const captionFor = ({ flatten, printReady, cmyk }) => {
   if (printReady) {
     return 'PDF/X-4 with an ISO Coated v2 (FOGRA39) output intent. Text stays selectable.';
   }
-  return 'Vector PDF — selectable text, resolution-independent, small file.';
+  return 'Vector PDF – selectable text, resolution-independent, small file.';
 };
 
 const ExportButton = ({ store }) => {

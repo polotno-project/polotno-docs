@@ -8,7 +8,7 @@
  *   *placeholder* → click-to-replace photo area
  *   greeting*     → the message text (Font / Colour / Size on the Back step)
  *
- * The Style grid shows only a tiny static preview image — the heavy scene JSON is
+ * The Style grid shows only a tiny static preview image – the heavy scene JSON is
  * lazy-loaded (dynamic import → its own chunk) the moment a card is picked, so the
  * first step is instant and no big JSON is parsed up front.
  */
@@ -16,7 +16,7 @@
 import justListedPreview from './templates/previews/just_listed.jpg';
 import wishPreview from './templates/previews/wish_you_were_here.jpg';
 
-/** Handwritten set — greeting-card cards. Includes 'Aguafina Script' (the Wish default). */
+/** Handwritten set – greeting-card cards. Includes 'Aguafina Script' (the Wish default). */
 const HANDWRITTEN_FONTS = [
   'Aguafina Script',
   'Caveat',
@@ -88,7 +88,7 @@ export const PHOTO_EXAMPLES = [
   'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=70',
 ];
 
-/** House examples for property placeholders (name contains `property`) — homes for sale. */
+/** House examples for property placeholders (name contains `property`) – homes for sale. */
 export const HOUSE_EXAMPLES = [
   'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=900&q=70',
   'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=900&q=70',

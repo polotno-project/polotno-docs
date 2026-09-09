@@ -10,7 +10,7 @@ import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
 
 // Polotno ships shadcn-style UI primitives, themed by the same CSS variables
-// as the editor — so the configurator controls recolor with the chosen theme.
+// as the editor – so the configurator controls recolor with the chosen theme.
 import {
   Navbar,
   NavbarGroup,
@@ -62,7 +62,7 @@ const themeItems = Object.fromEntries(options.map((t) => [t.slug, t.name]));
 // Emits a full :root (light) block + a .dark block so it works in any mode.
 function buildCss(theme, usePrefix) {
   if (!theme.light) {
-    return `/* Default Polotno theme — no CSS variables needed. */\n/* For dark mode, add the \`dark\` class to a container\n   (or set data-polotno-theme="dark"). */`;
+    return `/* Default Polotno theme – no CSS variables needed. */\n/* For dark mode, add the \`dark\` class to a container\n   (or set data-polotno-theme="dark"). */`;
   }
   const p = usePrefix ? '--pn-' : '--';
   const block = (vars) =>
@@ -82,7 +82,7 @@ function applyTheme(theme, mode, prevNames) {
   prevNames.forEach((name) => root.style.removeProperty(name));
 
   const applied = [];
-  // theme[mode] is null for "Default" — clear overrides, fall back to built-in
+  // theme[mode] is null for "Default" – clear overrides, fall back to built-in
   for (const [key, value] of Object.entries(theme[mode] ?? {})) {
     const name = '--' + key;
     root.style.setProperty(name, value);
@@ -106,7 +106,7 @@ function CodeDialog({ open, onOpenChange, theme, usePrefix, setUsePrefix }) {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
-      // clipboard may be unavailable (e.g. insecure context) — ignore
+      // clipboard may be unavailable (e.g. insecure context) – ignore
     }
   };
 
@@ -180,10 +180,10 @@ export const App = () => {
   }, [theme, mode]);
 
   return (
-    // `polotno-ui` puts the top panel inside Polotno's CSS context — it picks up
+    // `polotno-ui` puts the top panel inside Polotno's CSS context – it picks up
     // the themed background, foreground, and font, matching the editor exactly.
     <div className="app polotno-ui">
-      {/* flat bar with a divider that follows the theme — `attached`/`elevated`
+      {/* flat bar with a divider that follows the theme – `attached`/`elevated`
           cast a drop shadow that bleeds onto the side panel below, so we draw the
           line ourselves with the theme's `--border` token. Falls back to a neutral
           currentColor hairline for the Default theme (which sets no `--border`). */}
@@ -219,7 +219,7 @@ export const App = () => {
             </Select>
           </span>
 
-          {/* taller separator that matches the bottom divider — the Navbar
+          {/* taller separator that matches the bottom divider – the Navbar
               primitive's own divider is only 20px tall. Uses the theme's
               `--border`, with a neutral currentColor fallback for Default. */}
           <span
