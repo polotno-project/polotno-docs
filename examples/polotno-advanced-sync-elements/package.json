@@ -4,11 +4,11 @@
   "description": "Advanced example showing how to sync elements across multiple pages with custom controls",
   "keywords": [],
   "dependencies": {
-    "mobx": "^6.0.0",
+    "mobx": "^7.0.3",
     "nanoid": "^3.3.11",
     "polotno": "^4.13.0",
-    "react": "^19",
-    "react-dom": "^19"
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5",

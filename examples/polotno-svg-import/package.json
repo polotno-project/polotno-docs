@@ -6,8 +6,8 @@
   "dependencies": {
     "@polotno/svg-import": "^0.2.1",
     "polotno": "^4.13.0",
-    "react": "^19",
-    "react-dom": "^19"
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5",

@@ -4,10 +4,10 @@
   "description": "Demo showing how to configure text overflow behavior in Polotno editor",
   "keywords": [],
   "dependencies": {
-    "mobx": "^6.0.0",
+    "mobx": "^7.0.3",
     "polotno": "^4.13.0",
-    "react": "^19",
-    "react-dom": "^19"
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5",

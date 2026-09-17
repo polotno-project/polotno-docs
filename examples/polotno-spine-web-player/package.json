@@ -4,12 +4,12 @@
   "description": "Polotno Spine Web Player",
   "keywords": [],
   "dependencies": {
-    "mobx-react-lite": "^4.1.1",
+    "mobx-react-lite": "^5.0.3",
     "polotno": "^4.13.0",
-    "react": "^19",
-    "react-dom": "^19",
-    "react-konva": "^19",
-    "react-konva-utils": "^1.0.0"
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-konva": "^19.3.0",
+    "react-konva-utils": "^2.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5",

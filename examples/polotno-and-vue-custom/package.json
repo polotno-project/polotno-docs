@@ -15,8 +15,8 @@
   "dependencies": {
     "parcel": "^2.8.3",
     "polotno": "^4.13.0",
-    "react": "^19",
-    "react-dom": "^19",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "vue": "^3.2.47"
   },
   "devDependencies": {

@@ -6,11 +6,11 @@
   "dependencies": {
     "@meronex/icons": "^1.0.0",
     "frappe-charts": "1.6.2",
-    "mobx-react-lite": "^4.0.0",
+    "mobx-react-lite": "^5.0.3",
     "polotno": "^4.13.0",
     "qrcode": "1.5.0",
-    "react": "^19",
-    "react-dom": "^19"
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5",

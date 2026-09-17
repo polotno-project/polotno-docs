@@ -113,17 +113,17 @@ importers:
   .:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
 
   cloud-render:
     dependencies:
@@ -142,13 +142,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -160,20 +160,20 @@ importers:
   polotno-advanced-sync-elements:
     dependencies:
       mobx:
-        specifier: ^6.0.0
-        version: 6.15.0
+        specifier: ^7.0.3
+        version: 7.0.3
       nanoid:
         specifier: ^3.3.11
         version: 3.3.11
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -186,19 +186,19 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@19.2.7)
+        version: 1.4.1(react@19.3.0)
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -211,29 +211,29 @@ importers:
     dependencies:
       '@vue/cli-plugin-babel':
         specifier: 4.1.1
-        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(core-js@3.49.0)(supports-color@6.1.0)(vue@2.7.16)
+        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(core-js@3.49.0)(supports-color@6.1.0)(vue@2.7.16)
       mobx-vue:
         specifier: 2.0.11
-        version: 2.0.11(mobx@6.16.1)(vue@2.7.16)
+        version: 2.0.11(mobx@7.0.3)(vue@2.7.16)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
       vue:
         specifier: ^2.6.11
         version: 2.7.16
     devDependencies:
       '@vue/cli-plugin-eslint':
         specifier: 4.1.1
-        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(eslint@6.8.0(supports-color@6.1.0))(supports-color@6.1.0)
+        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(eslint@6.8.0(supports-color@6.1.0))(supports-color@6.1.0)
       '@vue/cli-service':
         specifier: 4.1.1
-        version: 4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16)
+        version: 4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16)
       babel-eslint:
         specifier: ^10.0.3
         version: 10.1.0(eslint@6.8.0(supports-color@6.1.0))(supports-color@6.1.0)
@@ -254,13 +254,13 @@ importers:
         version: 2.16.4(@swc/helpers@0.5.20)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
       vue:
         specifier: ^3.2.47
         version: 3.5.31(typescript@5.5.4)
@@ -315,16 +315,16 @@ importers:
         version: 18.2.14(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(@angular/platform-browser@18.2.14(@angular/animations@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(rxjs@7.8.1)
       mobx-angular:
         specifier: ^4.8.0
-        version: 4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@6.16.1)
+        version: 4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@7.0.3)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
       rxjs:
         specifier: 7.8.1
         version: 7.8.1
@@ -349,13 +349,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -368,13 +368,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -387,13 +387,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -406,22 +406,22 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@19.2.7)
+        version: 1.4.1(react@19.3.0)
       jsbarcode:
         specifier: 3.11.5
         version: 3.11.5
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -433,17 +433,17 @@ importers:
   polotno-book-cover-editor:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -455,26 +455,26 @@ importers:
   polotno-brand-kit:
     dependencies:
       konva:
-        specifier: ^9
-        version: 9.3.22
+        specifier: ^10.5.0
+        version: 10.5.0(canvas@3.2.3)
       mobx-react-lite:
-        specifier: ^4
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
       react-window:
         specifier: ^1
-        version: 1.8.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 1.8.11(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       swr:
         specifier: ^2
-        version: 2.4.1(react@19.2.7)
+        version: 2.5.1(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -486,23 +486,23 @@ importers:
   polotno-callouts:
     dependencies:
       mobx:
-        specifier: ^6.0.0
-        version: 6.16.1
+        specifier: ^7.0.3
+        version: 7.0.3
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
       react-konva:
-        specifier: ^19
-        version: 19.2.5(@types/react@19.2.17)(konva@9.3.22)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -514,17 +514,17 @@ importers:
   polotno-carousel-in-html:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.1.1
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -537,25 +537,25 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@19.2.7)
+        version: 1.4.1(react@19.3.0)
       frappe-charts:
         specifier: 1.6.2
         version: 1.6.2
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       qrcode:
         specifier: 1.5.0
         version: 1.5.0
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -567,11 +567,11 @@ importers:
   polotno-cloud-render:
     dependencies:
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -583,20 +583,20 @@ importers:
   polotno-custom-element:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
       react-konva:
-        specifier: ^19
-        version: 19.2.5(@types/react@19.2.17)(konva@9.3.22)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -609,19 +609,19 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@19.2.7)
+        version: 1.4.1(react@19.3.0)
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -634,13 +634,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -652,20 +652,20 @@ importers:
   polotno-demo-digital-signage:
     dependencies:
       konva:
-        specifier: ^9
-        version: 9.3.22
+        specifier: ^10.5.0
+        version: 10.5.0(canvas@3.2.3)
       mobx-react-lite:
-        specifier: ^4
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -678,13 +678,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -699,20 +699,20 @@ importers:
         specifier: ^0.12.0
         version: 0.12.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
       mobx:
-        specifier: ^6.0.0
-        version: 6.16.1
+        specifier: ^7.0.3
+        version: 7.0.3
       mobx-react-lite:
-        specifier: ^4
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -724,20 +724,20 @@ importers:
   polotno-demo-social-media:
     dependencies:
       konva:
-        specifier: ^9
-        version: 9.3.22
+        specifier: ^10.5.0
+        version: 10.5.0(canvas@3.2.3)
       mobx-react-lite:
-        specifier: ^4
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -750,16 +750,16 @@ importers:
     dependencies:
       '@polotno/video-export':
         specifier: 0.4.0
-        version: 0.4.0(canvas@3.2.3)(polotno@4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))
+        version: 0.4.0(canvas@3.2.3)(polotno@4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4))
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -772,13 +772,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -791,13 +791,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -809,17 +809,17 @@ importers:
   polotno-element-locking:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.5
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -831,20 +831,20 @@ importers:
   polotno-elements-preview:
     dependencies:
       mobx:
-        specifier: ^6.10.0
-        version: 6.15.0
+        specifier: ^7.0.3
+        version: 7.0.3
       mobx-react-lite:
-        specifier: ^4.0.5
-        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -869,17 +869,17 @@ importers:
   polotno-full-width-background-for-text:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -892,22 +892,22 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@19.2.7)
+        version: 1.4.1(react@19.3.0)
       mobx:
-        specifier: ^6.0.0
-        version: 6.15.0
+        specifier: ^7.0.3
+        version: 7.0.3
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -919,20 +919,20 @@ importers:
   polotno-hidden-panel:
     dependencies:
       mobx:
-        specifier: ^6.0.0
-        version: 6.15.0
+        specifier: ^7.0.3
+        version: 7.0.3
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -945,19 +945,19 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@19.2.7)
+        version: 1.4.1(react@19.3.0)
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -970,13 +970,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -989,16 +989,16 @@ importers:
     dependencies:
       next:
         specifier: ^14
-        version: 14.2.35(@babel/core@7.29.0(supports-color@7.2.0))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.77.6)
+        version: 14.2.35(@babel/core@7.29.0(supports-color@7.2.0))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.77.6)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
 
   polotno-non-react-integration:
     dependencies:
@@ -1007,13 +1007,13 @@ importers:
         version: 2.16.4(@swc/helpers@0.5.20)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       buffer:
         specifier: ^5.7.1
@@ -1031,20 +1031,20 @@ importers:
   polotno-open-side-panel-programmatically:
     dependencies:
       mobx:
-        specifier: ^6.0.0
-        version: 6.15.0
+        specifier: ^7.0.3
+        version: 7.0.3
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1057,13 +1057,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1075,17 +1075,17 @@ importers:
   polotno-page-bleed:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1097,17 +1097,17 @@ importers:
   polotno-page-name:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1120,13 +1120,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1138,17 +1138,17 @@ importers:
   polotno-pages-navigation:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1164,13 +1164,13 @@ importers:
         version: 0.8.0(canvas@3.2.3)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1183,19 +1183,19 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@19.2.7)
+        version: 1.4.1(react@19.3.0)
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1211,13 +1211,13 @@ importers:
         version: 0.5.1(@types/node@25.5.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1229,20 +1229,20 @@ importers:
   polotno-preflight:
     dependencies:
       mobx:
-        specifier: ^6.0.0
-        version: 6.16.1
+        specifier: ^7.0.3
+        version: 7.0.3
       mobx-react-lite:
-        specifier: ^4
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1255,19 +1255,19 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^4.0.0
-        version: 4.0.0(react@19.2.7)
+        version: 4.0.0(react@19.3.0)
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1283,13 +1283,13 @@ importers:
         version: 0.1.0(canvas@3.2.3)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1302,22 +1302,22 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@19.2.7)
+        version: 1.4.1(react@19.3.0)
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       qrcode:
         specifier: 1.5.0
         version: 1.5.0
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1329,23 +1329,23 @@ importers:
   polotno-real-estate:
     dependencies:
       mobx:
-        specifier: ^6.0.0
-        version: 6.15.0
+        specifier: ^7.0.3
+        version: 7.0.3
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1358,13 +1358,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1376,17 +1376,17 @@ importers:
   polotno-resize-panel:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1398,17 +1398,17 @@ importers:
   polotno-rich-text:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1421,13 +1421,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1440,13 +1440,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1458,17 +1458,17 @@ importers:
   polotno-select-image-placeholder:
     dependencies:
       mobx:
-        specifier: ^6.0.0
-        version: 6.15.0
+        specifier: ^7.0.3
+        version: 7.0.3
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1481,19 +1481,19 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@19.2.7)
+        version: 1.4.1(react@19.3.0)
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
       signature_pad:
         specifier: 4.0.4
         version: 4.0.4
@@ -1509,13 +1509,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1527,23 +1527,23 @@ importers:
   polotno-spine-web-player:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.1.1
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
       react-konva:
-        specifier: ^19
-        version: 19.2.5(@types/react@19.2.17)(konva@9.3.22)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       react-konva-utils:
-        specifier: ^1.0.0
-        version: 1.1.3(konva@9.3.22)(react-dom@19.2.7(react@19.2.7))(react-konva@19.2.5(@types/react@19.2.17)(konva@9.3.22)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
+        specifier: ^2.1.0
+        version: 2.1.0(konva@10.5.0(canvas@3.2.3))(react-dom@19.3.0(react@19.3.0))(react-konva@19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1555,20 +1555,20 @@ importers:
   polotno-sup-sub:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       quill:
         specifier: ^2.0.0
         version: 2.0.3
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1584,13 +1584,13 @@ importers:
         version: 0.2.1(canvas@3.2.3)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1603,19 +1603,19 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@19.2.7)
+        version: 1.4.1(react@19.3.0)
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1627,17 +1627,17 @@ importers:
   polotno-t-shirt:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1649,20 +1649,20 @@ importers:
   polotno-t-shirt-minimal:
     dependencies:
       mobx:
-        specifier: ^6.0.0
-        version: 6.15.0
+        specifier: ^7.0.3
+        version: 7.0.3
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@types/react':
         specifier: ^19
@@ -1689,20 +1689,20 @@ importers:
         specifier: ^15.3.0
         version: 15.3.0
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-datasheet:
         specifier: 1.4.12
-        version: 1.4.12(prop-types@15.8.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 1.4.12(prop-types@15.8.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1715,19 +1715,19 @@ importers:
     dependencies:
       '@meronex/icons':
         specifier: ^1.0.0
-        version: 1.4.1(react@19.2.7)
+        version: 1.4.1(react@19.3.0)
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1739,17 +1739,17 @@ importers:
   polotno-text-overflow:
     dependencies:
       mobx:
-        specifier: ^6.0.0
-        version: 6.15.0
+        specifier: ^7.0.3
+        version: 7.0.3
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1762,16 +1762,16 @@ importers:
     dependencies:
       lucide-react:
         specifier: ^1.18.0
-        version: 1.18.0(react@19.2.7)
+        version: 1.47.0(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1784,13 +1784,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1802,17 +1802,17 @@ importers:
   polotno-toolbar-overwrite:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1824,17 +1824,17 @@ importers:
   polotno-tooltip:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1846,17 +1846,17 @@ importers:
   polotno-upload-section:
     dependencies:
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1869,13 +1869,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1890,17 +1890,17 @@ importers:
         specifier: ^0.12.0
         version: 0.12.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1913,13 +1913,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1932,16 +1932,16 @@ importers:
     dependencies:
       '@polotno/video-export':
         specifier: 0.4.0
-        version: 0.4.0(canvas@3.2.3)(polotno@4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))
+        version: 0.4.0(canvas@3.2.3)(polotno@4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4))
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -1954,16 +1954,16 @@ importers:
     dependencies:
       mobx-vue-lite:
         specifier: ^0.4.3
-        version: 0.4.3(mobx@6.16.1)(vue@3.5.31(typescript@5.5.4))
+        version: 0.4.3(mobx@7.0.3)(vue@3.5.31(typescript@5.5.4))
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
       vue:
         specifier: ^3.5.10
         version: 3.5.31(typescript@5.5.4)
@@ -1978,20 +1978,20 @@ importers:
   polotno-watermark:
     dependencies:
       mobx:
-        specifier: ^6.0.0
-        version: 6.16.1
+        specifier: ^7.0.3
+        version: 7.0.3
       mobx-react-lite:
-        specifier: ^4.0.0
-        version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^5.0.3
+        version: 5.0.3(mobx@7.0.3)(react@19.3.0)
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -2004,13 +2004,13 @@ importers:
     dependencies:
       polotno:
         specifier: ^4.13.0
-        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
       react:
-        specifier: ^19
-        version: 19.2.7
+        specifier: ^19.3.0
+        version: 19.3.0
       react-dom:
-        specifier: ^19
-        version: 19.2.7(react@19.2.7)
+        specifier: ^19.3.0
+        version: 19.3.0(react@19.3.0)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^5
@@ -5546,7 +5546,7 @@ packages:
       lodash: ^4.17.20
       marko: ^3.14.4
       mote: ^0.2.0
-      mustache: ^3.0.0
+      mustache: ^4.0.1
       nunjucks: ^3.2.2
       plates: ~0.4.11
       pug: ^3.0.0
@@ -7546,17 +7546,6 @@ packages:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
 
-  konva@10.3.1:
-    resolution: {integrity: sha512-7fT/jSkL2bZZOHRBk2QVMKAUbgHoKG72W+KJtpP5YMJUZRmjgoafROgxTADsrxKOY2ZM5eKyN/x6CM9PrlFfOg==}
-    peerDependencies:
-      canvas: ^3.0.0
-      skia-canvas: ^3.0.0
-    peerDependenciesMeta:
-      canvas:
-        optional: true
-      skia-canvas:
-        optional: true
-
   konva@10.5.0:
     resolution: {integrity: sha512-gTVQ12CVE2vCaP8g+Ag6lYf9LIo1s1lr7bXLNTbF5pcXbdRFCA3Oy1fFxDN/wK7RklJ9e8oqTiSsqmUtfQx91w==}
     peerDependencies:
@@ -7567,9 +7556,6 @@ packages:
         optional: true
       skia-canvas:
         optional: true
-
-  konva@9.3.22:
-    resolution: {integrity: sha512-yQI5d1bmELlD/fowuyfOp9ff+oamg26WOCkyqUyc+nczD/lhRa3EvD2MZOoc4c1293TAubW9n34fSQLgSeEgSw==}
 
   launch-editor-middleware@2.13.2:
     resolution: {integrity: sha512-kI7VqA9g6mhoeQ6YdNgd+gKLaeuWHAUR8oDM8vFtt924wG8HbI2XO0n/hSX2ML4hcJbTgUihuPHfpnPjIKMdJg==}
@@ -7779,11 +7765,6 @@ packages:
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
-
-  lucide-react@1.18.0:
-    resolution: {integrity: sha512-LZDb7H/0YfM+RJncD0hDQRCAu+vSGODqpe35TuVI8EuXaRjkczbsx7p8dY4J87F/MUSj6bpYqeI8nw8qXaAdmA==}
-    peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   lucide-react@1.47.0:
     resolution: {integrity: sha512-o8C23aXpNQypRY73W7fW02EyvWJinEMXgKeGjFoKym0zj3Q73hD97A1IQps1g8C14HTGsOpZL0Am+xjfgFZAbg==}
@@ -8015,19 +7996,6 @@ packages:
       '@angular/core': '>=11.1.1'
       mobx: '>=2'
 
-  mobx-react-lite@4.1.1:
-    resolution: {integrity: sha512-iUxiMpsvNraCKXU+yPotsOncNNmyeS2B5DKL+TL6Tar/xm+wwNJAubJmtRSeAoYawdZqwv8Z/+5nPRHeQxTiXg==}
-    peerDependencies:
-      mobx: ^6.9.0
-      react: ^16.8.0 || ^17 || ^18 || ^19
-      react-dom: '*'
-      react-native: '*'
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-      react-native:
-        optional: true
-
   mobx-react-lite@5.0.3:
     resolution: {integrity: sha512-8qT/d/8Cg8ljt+heKhoFHNoqgedyeSGzdTixT0lgbFMMFlWfHUcXHZ8UD63eQi3ELjkxaH1VU07lXWhRwM0cVA==}
     peerDependencies:
@@ -8050,12 +8018,6 @@ packages:
     peerDependencies:
       mobx: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
       vue: ^2.0.0
-
-  mobx@6.15.0:
-    resolution: {integrity: sha512-UczzB+0nnwGotYSgllfARAqWCJ5e/skuV2K/l+Zyck/H6pJIhLXuBnz+6vn2i211o7DtbE78HQtsYEKICHGI+g==}
-
-  mobx@6.16.1:
-    resolution: {integrity: sha512-syNcDdX3KT+Jq3je6eGjBhuc24Z68td2VG0zNFqRswaE433D9SNH5VRy/xrGbJsUixfppLLccXhAW9JSf6n+SQ==}
 
   mobx@7.0.3:
     resolution: {integrity: sha512-KopyyzqZ8xT1fqxFNl8ItKKMpGifRe2ySaNAHs80/cx0mL1bpJtJ46S+FSyzXKRjW0TODWj5zwq/Y9hUdJUy4w==}
@@ -9074,21 +9036,13 @@ packages:
       react: '>=16'
       react-dom: '>=16'
 
-  react-dom@19.2.7:
-    resolution: {integrity: sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==}
+  react-dom@19.3.0:
+    resolution: {integrity: sha512-JDk8dgif51OjFoDE70+OT9ICyYr+69HlmihNwp1+Nsfbna3t5sIiCa9ZJktDmQ4/1b/rn26hIAR2uYXDMr5r0Q==}
     peerDependencies:
-      react: ^19.2.7
+      react: ^19.3.0
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-
-  react-konva-utils@1.1.3:
-    resolution: {integrity: sha512-v5cEI9OxZ/EioclOVH94rEkYX/CVKFh+D84VCPcqR51NoO9JLaP+Hp92RKSsh60z7jFkQMusw9i7Pc1Bge+1RQ==}
-    peerDependencies:
-      konva: ^8.3.5 || ^9.0.0
-      react: ^18.2.0 || ^19.0.0
-      react-dom: ^18.2.0 || ^19.0.0
-      react-konva: ^18.2.10 || ^19.0.1
 
   react-konva-utils@2.1.0:
     resolution: {integrity: sha512-ecCE3U4T0FaDoiHBpKGffAcyOjEPJtVrinFAf9qWG1SQsbQ28qVEVss42WV4uft5oUKrpRou6yVR9uVMRYfUiA==}
@@ -9098,25 +9052,12 @@ packages:
       react-dom: ^18.2.0 || ^19.0.0
       react-konva: ^18.2.14 || ^19.0.10
 
-  react-konva@19.2.5:
-    resolution: {integrity: sha512-AdsuDB59GdB86QdenTAqRzr6Tfw3z9x9Opxo4BoqDjdNLsjekF9a1VhN4FlMPvg0qtrMl3d4dNmagaUTGH7fSA==}
-    peerDependencies:
-      konva: ^8.0.1 || ^7.2.5 || ^9.0.0 || ^10.0.0
-      react: ^19.2.0
-      react-dom: ^19.2.0
-
   react-konva@19.3.0:
     resolution: {integrity: sha512-YEDAdM0PUUUJcTzXAKXMRO2+krSE+hhjGsupWjy6UBtzyFI6f2LkwSYQresl7WwvD+j3fbMy0uj3jtnytKqk9Q==}
     peerDependencies:
       konva: ^8.0.1 || ^7.2.5 || ^9.0.0 || ^10.0.0
       react: ^19.3.0
       react-dom: ^19.3.0
-
-  react-reconciler@0.33.0:
-    resolution: {integrity: sha512-KetWRytFv1epdpJc3J4G75I4WrplZE5jOL7Yq0p34+OVOKF4Se7WrdIdVC45XsSSmUTlht2FM/fM1FZb1mfQeA==}
-    engines: {node: '>=0.10.0'}
-    peerDependencies:
-      react: ^19.2.0
 
   react-reconciler@0.34.0:
     resolution: {integrity: sha512-eVibvB1fc9j5Qf1KRkiM3GzRPBdjg2P6G6QV2f3P6Eb3OGMxRBhdg2rrUwjbV5JrQaJj8nOa8uajmmJA5tJWjQ==}
@@ -9153,8 +9094,8 @@ packages:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
 
-  react@19.2.7:
-    resolution: {integrity: sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==}
+  react@19.3.0:
+    resolution: {integrity: sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==}
     engines: {node: '>=0.10.0'}
 
   read-pkg@5.2.0:
@@ -9235,9 +9176,6 @@ packages:
 
   render-tag@0.1.34:
     resolution: {integrity: sha512-0ZJkoWEUg9VROw7TMgb9nxQ5ucSgYQORMCG2ybInab6+s8V2GTQl05cHLCUBv/qGgoQcr1DGFt1U0jh+NWuESQ==}
-
-  render-tag@0.1.35:
-    resolution: {integrity: sha512-ig5t2hLS15iGwTVo7/gPMv3mHvyhtU/URSW/0RAWtR3bEpwwAPoTdnY0xIN7WLXnRVaNHA1iiFtTp5HNoSkZMA==}
 
   render-tag@0.1.37:
     resolution: {integrity: sha512-bZu2L9LBOTkcPeGBb9PlnIe8LY4Su25utIrBYsZPkB95F00S2qHqxn6WRARqmAmMbx89/pURhYH5BVzQ5wkoew==}
@@ -9425,9 +9363,6 @@ packages:
   saxes@3.1.11:
     resolution: {integrity: sha512-Ydydq3zC+WYDJK1+gRxRapLIED9PWeSuuS41wqyoRmzvhhh9nc+QQrVMKJYzJFULazeGhzSV0QleN2wD3boh2g==}
     engines: {node: '>=8'}
-
-  scheduler@0.27.0:
-    resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
   scheduler@0.28.0:
     resolution: {integrity: sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==}
@@ -9914,11 +9849,6 @@ packages:
     engines: {node: '>=4.0.0'}
     deprecated: This SVGO version is no longer supported. Upgrade to v2.x.x.
     hasBin: true
-
-  swr@2.4.1:
-    resolution: {integrity: sha512-2CC6CiKQtEwaEeNiqWTAw9PGykW8SR5zZX8MZk6TeAvEAnVS7Visz8WzphqgtQ8v2xz/4Q5K+j+SeMaKXeeQIA==}
-    peerDependencies:
-      react: ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   swr@2.5.1:
     resolution: {integrity: sha512-BRw55e8r0B7SpDN20CAzoQAHl7y1yP7/Zt7oqUjMv0vSt2u2Xnkm88Ws+VypbV9BXHQVuSuyVq7zMjO16wSExw==}
@@ -10724,9 +10654,6 @@ packages:
   yorkie@2.0.0:
     resolution: {integrity: sha512-jcKpkthap6x63MB4TxwCyuIGkV0oYP/YRyuQU5UO0Yz/E/ZAu+653/uov+phdmO54n6BcvFRyyt0RRrWdN2mpw==}
     engines: {node: '>=4'}
-
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
   zod@4.6.5:
     resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
@@ -12326,26 +12253,26 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@base-ui/react@1.8.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@base-ui/react@1.8.0(@types/react@19.2.17)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
       '@babel/runtime': 7.29.7
-      '@base-ui/utils': 0.4.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@floating-ui/react-dom': 2.1.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@base-ui/utils': 0.4.0(@types/react@19.2.17)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      '@floating-ui/react-dom': 2.1.9(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@floating-ui/utils': 0.2.12
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      use-sync-external-store: 1.6.0(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
+      use-sync-external-store: 1.6.0(react@19.3.0)
     optionalDependencies:
       '@types/react': 19.2.17
 
-  '@base-ui/utils@0.4.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@base-ui/utils@0.4.0(@types/react@19.2.17)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
       '@babel/runtime': 7.29.7
       '@floating-ui/utils': 0.2.12
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
       reselect: 5.2.0
-      use-sync-external-store: 1.6.0(react@19.2.7)
+      use-sync-external-store: 1.6.0(react@19.3.0)
     optionalDependencies:
       '@types/react': 19.2.17
 
@@ -12448,11 +12375,11 @@ snapshots:
       '@floating-ui/core': 1.8.0
       '@floating-ui/utils': 0.2.12
 
-  '@floating-ui/react-dom@2.1.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@floating-ui/react-dom@2.1.9(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
       '@floating-ui/dom': 1.8.0
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
 
   '@floating-ui/utils@0.2.12': {}
 
@@ -12781,17 +12708,17 @@ snapshots:
   '@lmdb/lmdb-win32-x64@3.0.13':
     optional: true
 
-  '@meronex/icons@1.4.1(react@19.2.7)':
+  '@meronex/icons@1.4.1(react@19.3.0)':
     dependencies:
       camelcase: 5.3.1
       ncp: 2.0.0
-      react: 19.2.7
+      react: 19.3.0
 
-  '@meronex/icons@4.0.0(react@19.2.7)':
+  '@meronex/icons@4.0.0(react@19.3.0)':
     dependencies:
       camelcase: 5.3.1
       ncp: 2.0.0
-      react: 19.2.7
+      react: 19.3.0
 
   '@mischnic/json-sourcemap@0.1.1':
     dependencies:
@@ -13724,7 +13651,7 @@ snapshots:
       gradient-parser: 1.2.0
       konva: 10.5.0(canvas@3.2.3)
       mensch: 0.3.4
-      render-tag: 0.1.35
+      render-tag: 0.1.37
       svg-round-corners: 0.4.3
       tinycolor2: 1.6.0
     transitivePeerDependencies:
@@ -13750,7 +13677,7 @@ snapshots:
       '@polotno/schema': 0.6.1
       fflate: 0.8.3
       gradient-parser: 1.2.0
-      konva: 10.3.1(canvas@3.2.3)
+      konva: 10.5.0(canvas@3.2.3)
       mensch: 0.3.4
       render-tag: 0.1.34
       svg-round-corners: 0.4.3
@@ -13818,7 +13745,7 @@ snapshots:
 
   '@polotno/schema@0.6.1':
     dependencies:
-      zod: 4.4.3
+      zod: 4.6.5
 
   '@polotno/schema@0.6.2':
     dependencies:
@@ -13843,11 +13770,11 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/video-export@0.4.0(canvas@3.2.3)(polotno@4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))':
+  '@polotno/video-export@0.4.0(canvas@3.2.3)(polotno@4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4))':
     dependencies:
       '@polotno/core': 0.12.0(canvas@3.2.3)
       mediabunny: 1.57.0
-      polotno: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+      polotno: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
     transitivePeerDependencies:
       - canvas
       - skia-canvas
@@ -14337,11 +14264,11 @@ snapshots:
 
   '@vue/cli-overlay@4.5.19': {}
 
-  '@vue/cli-plugin-babel@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(core-js@3.49.0)(supports-color@6.1.0)(vue@2.7.16)':
+  '@vue/cli-plugin-babel@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(core-js@3.49.0)(supports-color@6.1.0)(vue@2.7.16)':
     dependencies:
       '@babel/core': 7.29.0(supports-color@6.1.0)
       '@vue/babel-preset-app': 4.5.19(@babel/core@7.29.0(supports-color@6.1.0))(core-js@3.49.0)(supports-color@6.1.0)(vue@2.7.16)
-      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16)
+      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16)
       '@vue/cli-shared-utils': 4.5.19
       babel-loader: 8.4.1(@babel/core@7.29.0(supports-color@6.1.0))(webpack@4.47.0(supports-color@6.1.0))
       cache-loader: 4.1.0(webpack@4.47.0(supports-color@6.1.0))
@@ -14354,9 +14281,9 @@ snapshots:
       - webpack-cli
       - webpack-command
 
-  '@vue/cli-plugin-eslint@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(eslint@6.8.0(supports-color@6.1.0))(supports-color@6.1.0)':
+  '@vue/cli-plugin-eslint@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(eslint@6.8.0(supports-color@6.1.0))(supports-color@6.1.0)':
     dependencies:
-      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16)
+      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16)
       '@vue/cli-shared-utils': 4.5.19
       eslint: 6.8.0(supports-color@6.1.0)
       eslint-loader: 2.2.1(eslint@6.8.0(supports-color@6.1.0))(webpack@4.47.0(supports-color@6.1.0))
@@ -14368,24 +14295,24 @@ snapshots:
       - webpack-cli
       - webpack-command
 
-  '@vue/cli-plugin-router@4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16))':
+  '@vue/cli-plugin-router@4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16))':
     dependencies:
-      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16)
+      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16)
       '@vue/cli-shared-utils': 4.5.19
 
-  '@vue/cli-plugin-vuex@4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16))':
+  '@vue/cli-plugin-vuex@4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16))':
     dependencies:
-      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16)
+      '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16)
 
-  '@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16)':
+  '@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16)':
     dependencies:
       '@intervolga/optimize-cssnano-plugin': 1.0.6(webpack@4.47.0(supports-color@6.1.0))
       '@soda/friendly-errors-webpack-plugin': 1.8.1(webpack@4.47.0(supports-color@6.1.0))
       '@vue/cli-overlay': 4.5.19
-      '@vue/cli-plugin-router': 4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16))
-      '@vue/cli-plugin-vuex': 4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16))
+      '@vue/cli-plugin-router': 4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16))
+      '@vue/cli-plugin-vuex': 4.5.19(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16))
       '@vue/cli-shared-utils': 4.5.19
-      '@vue/component-compiler-utils': 3.3.0(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@vue/component-compiler-utils': 3.3.0(lodash@4.17.21)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@vue/preload-webpack-plugin': 1.1.2(html-webpack-plugin@3.2.0(webpack@4.47.0(supports-color@6.1.0)))(webpack@4.47.0(supports-color@6.1.0))
       '@vue/web-component-wrapper': 1.3.0
       acorn: 6.4.2
@@ -14430,7 +14357,7 @@ snapshots:
       terser-webpack-plugin: 2.3.8(bluebird@3.7.2)(webpack@4.47.0(supports-color@6.1.0))
       thread-loader: 2.1.3(webpack@4.47.0(supports-color@6.1.0))
       url-loader: 2.3.0(file-loader@4.3.0(webpack@4.47.0(supports-color@6.1.0)))(webpack@4.47.0(supports-color@6.1.0))
-      vue-loader: 15.11.1(@vue/compiler-sfc@3.5.31)(cache-loader@4.1.0(webpack@4.47.0(supports-color@6.1.0)))(css-loader@3.6.0(webpack@4.47.0(supports-color@6.1.0)))(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16)(webpack@4.47.0(supports-color@6.1.0))
+      vue-loader: 15.11.1(@vue/compiler-sfc@3.5.31)(cache-loader@4.1.0(webpack@4.47.0(supports-color@6.1.0)))(css-loader@3.6.0(webpack@4.47.0(supports-color@6.1.0)))(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(vue-template-compiler@2.7.16)(webpack@4.47.0(supports-color@6.1.0))
       vue-style-loader: 4.1.3
       vue-template-compiler: 2.7.16
       webpack: 4.47.0(supports-color@6.1.0)
@@ -14554,9 +14481,9 @@ snapshots:
       '@vue/compiler-dom': 3.5.31
       '@vue/shared': 3.5.31
 
-  '@vue/component-compiler-utils@3.3.0(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@vue/component-compiler-utils@3.3.0(lodash@4.17.21)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
-      consolidate: 0.15.1(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      consolidate: 0.15.1(lodash@4.17.21)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       hash-sum: 1.0.2
       lru-cache: 4.1.5
       merge-source-map: 1.1.0
@@ -15745,13 +15672,13 @@ snapshots:
 
   console-browserify@1.2.0: {}
 
-  consolidate@0.15.1(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  consolidate@0.15.1(lodash@4.17.21)(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
     dependencies:
       bluebird: 3.7.2
     optionalDependencies:
       lodash: 4.17.21
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
 
   constants-browserify@1.0.0: {}
 
@@ -17878,10 +17805,10 @@ snapshots:
 
   isstream@0.1.2: {}
 
-  its-fine@2.0.0(@types/react@19.2.17)(react@19.2.7):
+  its-fine@2.0.0(@types/react@19.2.17)(react@19.3.0):
     dependencies:
       '@types/react-reconciler': 0.28.9(@types/react@19.2.17)
-      react: 19.2.7
+      react: 19.3.0
     transitivePeerDependencies:
       - '@types/react'
 
@@ -18005,15 +17932,9 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  konva@10.3.1(canvas@3.2.3):
-    optionalDependencies:
-      canvas: 3.2.3
-
   konva@10.5.0(canvas@3.2.3):
     optionalDependencies:
       canvas: 3.2.3
-
-  konva@9.3.22: {}
 
   launch-editor-middleware@2.13.2:
     dependencies:
@@ -18232,13 +18153,9 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-react@1.18.0(react@19.2.7):
+  lucide-react@1.47.0(react@19.3.0):
     dependencies:
-      react: 19.2.7
-
-  lucide-react@1.47.0(react@19.2.7):
-    dependencies:
-      react: 19.2.7
+      react: 19.3.0
 
   magic-string@0.22.5:
     dependencies:
@@ -18492,33 +18409,17 @@ snapshots:
 
   mkdirp@1.0.4: {}
 
-  mobx-angular@4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@6.16.1):
+  mobx-angular@4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@7.0.3):
     dependencies:
       '@angular/common': 18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
       '@angular/core': 18.2.14(rxjs@7.8.1)(zone.js@0.14.10)
-      mobx: 6.16.1
+      mobx: 7.0.3
       tslib: 2.8.1
 
-  mobx-react-lite@4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
-    dependencies:
-      mobx: 6.15.0
-      react: 19.2.7
-      use-sync-external-store: 1.6.0(react@19.2.7)
-    optionalDependencies:
-      react-dom: 19.2.7(react@19.2.7)
-
-  mobx-react-lite@4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
-    dependencies:
-      mobx: 6.16.1
-      react: 19.2.7
-      use-sync-external-store: 1.6.0(react@19.2.7)
-    optionalDependencies:
-      react-dom: 19.2.7(react@19.2.7)
-
-  mobx-react-lite@5.0.3(mobx@7.0.3)(react@19.2.7):
+  mobx-react-lite@5.0.3(mobx@7.0.3)(react@19.3.0):
     dependencies:
       mobx: 7.0.3
-      react: 19.2.7
+      react: 19.3.0
 
   mobx-state-tree@8.0.0(mobx@7.0.3)(typescript@5.5.4):
     dependencies:
@@ -18527,23 +18428,19 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  mobx-vue-lite@0.4.3(mobx@6.16.1)(vue@3.5.31(typescript@5.5.4)):
+  mobx-vue-lite@0.4.3(mobx@7.0.3)(vue@3.5.31(typescript@5.5.4)):
     dependencies:
       '@vueuse/core': 10.7.2(vue@3.5.31(typescript@5.5.4))
-      mobx: 6.16.1
+      mobx: 7.0.3
       vue: 3.5.31(typescript@5.5.4)
     transitivePeerDependencies:
       - '@vue/composition-api'
 
-  mobx-vue@2.0.11(mobx@6.16.1)(vue@2.7.16):
+  mobx-vue@2.0.11(mobx@7.0.3)(vue@2.7.16):
     dependencies:
-      mobx: 6.16.1
+      mobx: 7.0.3
       tslib: 1.14.1
       vue: 2.7.16
-
-  mobx@6.15.0: {}
-
-  mobx@6.16.1: {}
 
   mobx@7.0.3: {}
 
@@ -18648,7 +18545,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@14.2.35(@babel/core@7.29.0(supports-color@7.2.0))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.77.6):
+  next@14.2.35(@babel/core@7.29.0(supports-color@7.2.0))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.77.6):
     dependencies:
       '@next/env': 14.2.35
       '@swc/helpers': 0.5.5
@@ -18656,9 +18553,9 @@ snapshots:
       caniuse-lite: 1.0.30001782
       graceful-fs: 4.2.11
       postcss: 8.4.31
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      styled-jsx: 5.1.1(@babel/core@7.29.0(supports-color@7.2.0))(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
+      styled-jsx: 5.1.1(@babel/core@7.29.0(supports-color@7.2.0))(react@19.3.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.2.33
       '@next/swc-darwin-x64': 14.2.33
@@ -19312,9 +19209,9 @@ snapshots:
 
   pngjs@5.0.0: {}
 
-  polotno@4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4):
+  polotno@4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4):
     dependencies:
-      '@base-ui/react': 1.8.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@base-ui/react': 1.8.0(@types/react@19.2.17)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@polotno/core': 0.12.0(canvas@3.2.3)
       '@polotno/html-export': 0.6.0(canvas@3.2.3)
       '@polotno/schema': 0.6.2
@@ -19324,23 +19221,23 @@ snapshots:
       gifuct-js: 2.1.2
       konva: 10.5.0(canvas@3.2.3)
       lodash-es: 4.18.1
-      lucide-react: 1.47.0(react@19.2.7)
+      lucide-react: 1.47.0(react@19.3.0)
       mediabunny: 1.57.0
       mobx: 7.0.3
-      mobx-react-lite: 5.0.3(mobx@7.0.3)(react@19.2.7)
+      mobx-react-lite: 5.0.3(mobx@7.0.3)(react@19.3.0)
       mobx-state-tree: 8.0.0(mobx@7.0.3)(typescript@5.5.4)
       nanoid: 6.0.1
       quill: 2.0.3
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      react-konva: 19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      react-konva-utils: 2.1.0(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react-konva@19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
-      react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sortablejs@1.15.7)
-      react-window: 2.3.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
+      react-konva: 19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      react-konva-utils: 2.1.0(konva@10.5.0(canvas@3.2.3))(react-dom@19.3.0(react@19.3.0))(react-konva@19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
+      react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sortablejs@1.15.7)
+      react-window: 2.3.1(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       render-tag: 0.1.37
       sortablejs: 1.15.7
       svg-round-corners: 0.4.3
-      swr: 2.5.1(react@19.2.7)
+      swr: 2.5.1(react@19.3.0)
       tailwind-merge: 3.7.0
       tinycolor2: 1.6.0
     transitivePeerDependencies:
@@ -19842,95 +19739,70 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  react-datasheet@1.4.12(prop-types@15.8.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  react-datasheet@1.4.12(prop-types@15.8.1)(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
     dependencies:
       prop-types: 15.8.1
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
 
-  react-dom@19.2.7(react@19.2.7):
+  react-dom@19.3.0(react@19.3.0):
     dependencies:
-      react: 19.2.7
-      scheduler: 0.27.0
+      react: 19.3.0
+      scheduler: 0.28.0
 
   react-is@16.13.1: {}
 
-  react-konva-utils@1.1.3(konva@9.3.22)(react-dom@19.2.7(react@19.2.7))(react-konva@19.2.5(@types/react@19.2.17)(konva@9.3.22)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
-    dependencies:
-      konva: 9.3.22
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      react-konva: 19.2.5(@types/react@19.2.17)(konva@9.3.22)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-
-  react-konva-utils@2.1.0(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react-konva@19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
+  react-konva-utils@2.1.0(konva@10.5.0(canvas@3.2.3))(react-dom@19.3.0(react@19.3.0))(react-konva@19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0):
     dependencies:
       konva: 10.5.0(canvas@3.2.3)
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      react-konva: 19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
+      react-konva: 19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      use-image: 1.1.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
 
-  react-konva@19.2.5(@types/react@19.2.17)(konva@9.3.22)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  react-konva@19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
     dependencies:
       '@types/react-reconciler': 0.33.0(@types/react@19.2.17)
-      its-fine: 2.0.0(@types/react@19.2.17)(react@19.2.7)
-      konva: 9.3.22
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      react-reconciler: 0.33.0(react@19.2.7)
-      scheduler: 0.27.0
-    transitivePeerDependencies:
-      - '@types/react'
-
-  react-konva@19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
-    dependencies:
-      '@types/react-reconciler': 0.33.0(@types/react@19.2.17)
-      its-fine: 2.0.0(@types/react@19.2.17)(react@19.2.7)
+      its-fine: 2.0.0(@types/react@19.2.17)(react@19.3.0)
       konva: 10.5.0(canvas@3.2.3)
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      react-reconciler: 0.34.0(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
+      react-reconciler: 0.34.0(react@19.3.0)
       scheduler: 0.28.0
     transitivePeerDependencies:
       - '@types/react'
 
-  react-reconciler@0.33.0(react@19.2.7):
+  react-reconciler@0.34.0(react@19.3.0):
     dependencies:
-      react: 19.2.7
-      scheduler: 0.27.0
-
-  react-reconciler@0.34.0(react@19.2.7):
-    dependencies:
-      react: 19.2.7
+      react: 19.3.0
       scheduler: 0.28.0
 
   react-refresh@0.16.0: {}
 
   react-refresh@0.18.0: {}
 
-  react-sortablejs@6.1.4(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sortablejs@1.15.7):
+  react-sortablejs@6.1.4(@types/sortablejs@1.15.9)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sortablejs@1.15.7):
     dependencies:
       '@types/sortablejs': 1.15.9
       classnames: 2.3.1
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
       sortablejs: 1.15.7
       tiny-invariant: 1.2.0
 
-  react-window@1.8.11(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  react-window@1.8.11(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
     dependencies:
       '@babel/runtime': 7.29.2
       memoize-one: 5.2.1
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
 
-  react-window@2.3.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  react-window@2.3.1(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
     dependencies:
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
 
-  react@19.2.7: {}
+  react@19.3.0: {}
 
   read-pkg@5.2.0:
     dependencies:
@@ -20039,8 +19911,6 @@ snapshots:
   remove-trailing-separator@1.1.0: {}
 
   render-tag@0.1.34: {}
-
-  render-tag@0.1.35: {}
 
   render-tag@0.1.37: {}
 
@@ -20269,8 +20139,6 @@ snapshots:
   saxes@3.1.11:
     dependencies:
       xmlchars: 2.2.0
-
-  scheduler@0.27.0: {}
 
   scheduler@0.28.0: {}
 
@@ -20870,10 +20738,10 @@ snapshots:
     dependencies:
       '@tokenizer/token': 0.3.0
 
-  styled-jsx@5.1.1(@babel/core@7.29.0(supports-color@7.2.0))(react@19.2.7):
+  styled-jsx@5.1.1(@babel/core@7.29.0(supports-color@7.2.0))(react@19.3.0):
     dependencies:
       client-only: 0.0.1
-      react: 19.2.7
+      react: 19.3.0
     optionalDependencies:
       '@babel/core': 7.29.0(supports-color@7.2.0)
 
@@ -20923,17 +20791,11 @@ snapshots:
       unquote: 1.1.1
       util.promisify: 1.0.1
 
-  swr@2.4.1(react@19.2.7):
+  swr@2.5.1(react@19.3.0):
     dependencies:
       dequal: 2.0.3
-      react: 19.2.7
-      use-sync-external-store: 1.6.0(react@19.2.7)
-
-  swr@2.5.1(react@19.2.7):
-    dependencies:
-      dequal: 2.0.3
-      react: 19.2.7
-      use-sync-external-store: 1.6.0(react@19.2.7)
+      react: 19.3.0
+      use-sync-external-store: 1.6.0(react@19.3.0)
 
   symbol-observable@4.0.0: {}
 
@@ -21340,14 +21202,14 @@ snapshots:
       punycode: 1.4.1
       qs: 6.15.0
 
-  use-image@1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  use-image@1.1.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
     dependencies:
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
 
-  use-sync-external-store@1.6.0(react@19.2.7):
+  use-sync-external-store@1.6.0(react@19.3.0):
     dependencies:
-      react: 19.2.7
+      react: 19.3.0
 
   use@3.1.1: {}
 
@@ -21442,9 +21304,9 @@ snapshots:
 
   vue-hot-reload-api@2.3.4: {}
 
-  vue-loader@15.11.1(@vue/compiler-sfc@3.5.31)(cache-loader@4.1.0(webpack@4.47.0(supports-color@6.1.0)))(css-loader@3.6.0(webpack@4.47.0(supports-color@6.1.0)))(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue-template-compiler@2.7.16)(webpack@4.47.0(supports-color@6.1.0)):
+  vue-loader@15.11.1(@vue/compiler-sfc@3.5.31)(cache-loader@4.1.0(webpack@4.47.0(supports-color@6.1.0)))(css-loader@3.6.0(webpack@4.47.0(supports-color@6.1.0)))(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(vue-template-compiler@2.7.16)(webpack@4.47.0(supports-color@6.1.0)):
     dependencies:
-      '@vue/component-compiler-utils': 3.3.0(lodash@4.17.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@vue/component-compiler-utils': 3.3.0(lodash@4.17.21)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       css-loader: 3.6.0(webpack@4.47.0(supports-color@6.1.0))
       hash-sum: 1.0.2
       loader-utils: 1.4.2
@@ -21908,8 +21770,6 @@ snapshots:
       is-ci: 1.2.1
       normalize-path: 1.0.0
       strip-indent: 2.0.0
-
-  zod@4.4.3: {}
 
   zod@4.6.5: {}
 

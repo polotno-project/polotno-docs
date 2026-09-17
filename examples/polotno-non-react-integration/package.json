@@ -12,8 +12,8 @@
   "dependencies": {
     "parcel": "^2.7.0",
     "polotno": "^4.13.0",
-    "react": "^19",
-    "react-dom": "^19"
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "buffer": "^5.7.1",

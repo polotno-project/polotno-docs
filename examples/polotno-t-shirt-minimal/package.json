@@ -4,18 +4,18 @@
   "description": "Minimal t-shirt customization demo with front and back pages",
   "keywords": [],
   "dependencies": {
-    "mobx": "^6.0.0",
-    "mobx-react-lite": "^4.0.0",
+    "mobx": "^7.0.3",
+    "mobx-react-lite": "^5.0.3",
     "polotno": "^4.13.0",
-    "react": "^19",
-    "react-dom": "^19"
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^5",
-    "vite": "^7",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite": "^7"
   },
   "scripts": {
     "dev": "vite",
