@@ -116,8 +116,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -141,8 +141,8 @@ importers:
   polotno-admin-role:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -166,8 +166,8 @@ importers:
         specifier: ^3.3.11
         version: 3.3.11
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -191,8 +191,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -214,10 +214,10 @@ importers:
         version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(core-js@3.49.0)(supports-color@6.1.0)(vue@2.7.16)
       mobx-vue:
         specifier: 2.0.11
-        version: 2.0.11(mobx@5.15.7)(vue@2.7.16)
+        version: 2.0.11(mobx@6.16.1)(vue@2.7.16)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -253,8 +253,8 @@ importers:
         specifier: ^2.8.3
         version: 2.16.4(@swc/helpers@0.5.20)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -317,8 +317,8 @@ importers:
         specifier: ^4.8.0
         version: 4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@6.16.1)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -331,10 +331,10 @@ importers:
     devDependencies:
       '@angular/build':
         specifier: ^18.0.1
-        version: 18.2.21(@angular/compiler-cli@18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(supports-color@7.2.0)(typescript@5.5.4))(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)(@types/node@25.5.0)(postcss@8.5.8)(supports-color@7.2.0)(terser@5.46.1)(typescript@5.5.4)
+        version: 18.2.21(@angular/compiler-cli@18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(supports-color@7.2.0)(typescript@5.5.4))(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)(@types/node@25.5.0)(chokidar@3.6.0)(postcss@8.5.8)(supports-color@7.2.0)(terser@5.46.1)(typescript@5.5.4)
       '@angular/cli':
         specifier: ^18.0.0
-        version: 18.2.21(bluebird@3.7.2)(supports-color@7.2.0)
+        version: 18.2.21(bluebird@3.7.2)(chokidar@3.6.0)(supports-color@7.2.0)
       '@angular/compiler-cli':
         specifier: ^18.0.0
         version: 18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(supports-color@7.2.0)(typescript@5.5.4)
@@ -348,8 +348,8 @@ importers:
   polotno-animations:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -367,8 +367,8 @@ importers:
   polotno-audio:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -386,8 +386,8 @@ importers:
   polotno-background-sidepanel:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -414,8 +414,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -436,8 +436,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -461,8 +461,8 @@ importers:
         specifier: ^4
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -492,8 +492,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -517,8 +517,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -545,8 +545,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       qrcode:
         specifier: 1.5.0
         version: 1.5.0
@@ -586,8 +586,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -614,8 +614,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -633,8 +633,8 @@ importers:
   polotno-demo:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -658,8 +658,8 @@ importers:
         specifier: ^4
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -677,8 +677,8 @@ importers:
   polotno-demo-image-editor:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -696,8 +696,8 @@ importers:
   polotno-demo-postcard:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.11.2
-        version: 0.11.2(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+        specifier: ^0.12.0
+        version: 0.12.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
       mobx:
         specifier: ^6.0.0
         version: 6.16.1
@@ -705,8 +705,8 @@ importers:
         specifier: ^4
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -730,8 +730,8 @@ importers:
         specifier: ^4
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -749,11 +749,11 @@ importers:
   polotno-demo-video-editor:
     dependencies:
       '@polotno/video-export':
-        specifier: 0.3.0
-        version: 0.3.0(canvas@3.2.3)(polotno@4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))
+        specifier: 0.4.0
+        version: 0.4.0(canvas@3.2.3)(polotno@4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -771,8 +771,8 @@ importers:
   polotno-demo-vite:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -790,8 +790,8 @@ importers:
   polotno-design-validation:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -812,8 +812,8 @@ importers:
         specifier: ^4.0.5
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -837,8 +837,8 @@ importers:
         specifier: ^4.0.5
         version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -872,8 +872,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -900,8 +900,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -925,8 +925,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -950,8 +950,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -969,8 +969,8 @@ importers:
   polotno-mobile:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -991,8 +991,8 @@ importers:
         specifier: ^14
         version: 14.2.35(@babel/core@7.29.0(supports-color@7.2.0))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.77.6)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1006,8 +1006,8 @@ importers:
         specifier: ^2.7.0
         version: 2.16.4(@swc/helpers@0.5.20)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1037,8 +1037,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1056,8 +1056,8 @@ importers:
   polotno-overlay:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1078,8 +1078,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1100,8 +1100,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1119,8 +1119,8 @@ importers:
   polotno-page-numbers:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1141,8 +1141,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1160,11 +1160,11 @@ importers:
   polotno-pdf-import:
     dependencies:
       '@polotno/pdf-import':
-        specifier: 0.7.0
-        version: 0.7.0(canvas@3.2.3)
+        specifier: 0.8.0
+        version: 0.8.0(canvas@3.2.3)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1188,8 +1188,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1210,8 +1210,8 @@ importers:
         specifier: latest
         version: 0.5.1(@types/node@25.5.0)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1235,8 +1235,8 @@ importers:
         specifier: ^4
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1260,8 +1260,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1282,8 +1282,8 @@ importers:
         specifier: ^0.1.0
         version: 0.1.0(canvas@3.2.3)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1307,8 +1307,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       qrcode:
         specifier: 1.5.0
         version: 1.5.0
@@ -1335,8 +1335,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
@@ -1357,8 +1357,8 @@ importers:
   polotno-remove-side-panel:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1379,8 +1379,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1401,8 +1401,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1420,8 +1420,8 @@ importers:
   polotno-rotate-page:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1439,8 +1439,8 @@ importers:
   polotno-rulers:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1461,8 +1461,8 @@ importers:
         specifier: ^6.0.0
         version: 6.15.0
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1486,8 +1486,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1508,8 +1508,8 @@ importers:
   polotno-simple-t-shirt-demo:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1530,8 +1530,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1558,8 +1558,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       quill:
         specifier: ^2.0.0
         version: 2.0.3
@@ -1580,11 +1580,11 @@ importers:
   polotno-svg-import:
     dependencies:
       '@polotno/svg-import':
-        specifier: ^0.2.0
-        version: 0.2.0(canvas@3.2.3)
+        specifier: ^0.2.1
+        version: 0.2.1(canvas@3.2.3)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1608,8 +1608,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1630,8 +1630,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1655,8 +1655,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.15.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1692,8 +1692,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1720,8 +1720,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1742,8 +1742,8 @@ importers:
         specifier: ^6.0.0
         version: 6.15.0
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1764,8 +1764,8 @@ importers:
         specifier: ^1.18.0
         version: 1.18.0(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1783,8 +1783,8 @@ importers:
   polotno-toolbar-actions:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1805,8 +1805,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1827,8 +1827,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1849,8 +1849,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1868,8 +1868,8 @@ importers:
   polotno-variables:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1887,14 +1887,14 @@ importers:
   polotno-vector-pdf-export:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.11.2
-        version: 0.11.2(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+        specifier: ^0.12.0
+        version: 0.12.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
       mobx-react-lite:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1912,8 +1912,8 @@ importers:
   polotno-vertical-text-resize:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1931,11 +1931,11 @@ importers:
   polotno-video-export:
     dependencies:
       '@polotno/video-export':
-        specifier: 0.3.0
-        version: 0.3.0(canvas@3.2.3)(polotno@4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))
+        specifier: 0.4.0
+        version: 0.4.0(canvas@3.2.3)(polotno@4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1956,8 +1956,8 @@ importers:
         specifier: ^0.4.3
         version: 0.4.3(mobx@6.16.1)(vue@3.5.31(typescript@5.5.4))
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -1984,8 +1984,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       polotno:
-        specifier: ^4.9.0
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -2003,8 +2003,8 @@ importers:
   polotno-workspace-layout:
     dependencies:
       polotno:
-        specifier: ^4.12.1
-        version: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+        specifier: ^4.13.0
+        version: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
       react:
         specifier: ^19
         version: 19.2.7
@@ -2732,6 +2732,10 @@ packages:
     resolution: {integrity: sha512-JiDShH45zKHWyGe4ZNVRrCjBz8Nh9TMmZG1kh4QTK8hCBTWBi8Da+i7s1fJw7/lYpM4ccepSNfqzZ/QvABBi5g==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/runtime@7.29.7':
+    resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/template@7.28.6':
     resolution: {integrity: sha512-YA6Ma2KsCdGb+WC6UpBVFJGXL58MDA6oyONbjyF/+5sBgxY/dwkhLogbMT2GXXyU84/IhRw/2D1Os1B/giz+BQ==}
     engines: {node: '>=6.9.0'}
@@ -2744,8 +2748,8 @@ packages:
     resolution: {integrity: sha512-LwdZHpScM4Qz8Xw2iKSzS+cfglZzJGvofQICy7W7v4caru4EaAmyUuO6BGrbyQ2mYV11W0U8j5mBhd14dd3B0A==}
     engines: {node: '>=6.9.0'}
 
-  '@base-ui/react@1.7.0':
-    resolution: {integrity: sha512-j+8QjX44C32jrXD/qyEAGpFr70FRpGL2CY61mQd9nBPWN737CK0xxD1ceJ055rW4RtdvFDT1e7otzdlfxvsYug==}
+  '@base-ui/react@1.8.0':
+    resolution: {integrity: sha512-P0/1sxo6SBVZOklKMIedvTWqw2s2IQzi9x5bIVsXu980cuSOD4NeuRSs+/L7LZQfDkZP/uRZyGPyfFl/B1oH+Q==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@date-fns/tz': ^1.2.0
@@ -2761,8 +2765,8 @@ packages:
       date-fns:
         optional: true
 
-  '@base-ui/utils@0.3.2':
-    resolution: {integrity: sha512-oWy1aq/I2GmYjpl4PhEAhzflF8VPGKgZeq0xAWTbfD5KBWyxcN0ZP2+WHSUm/5Z6lVMBDLReLcoXwSYoRc/zNQ==}
+  '@base-ui/utils@0.4.0':
+    resolution: {integrity: sha512-bO9fz25kKtPf+aZVyfQrC0PDmJdmVni31W2hCS5/Owb+inwdIL3XU26pCPRPlt4LSxZrBgLwubXQXQlKaFEZzw==}
     peerDependencies:
       '@types/react': ^17 || ^18 || ^19
       react: ^17 || ^18 || ^19
@@ -3009,89 +3013,105 @@ packages:
     resolution: {integrity: sha512-0DaL0A6Xu6sQSQFwe4iVCrKWU2cCTItnRsYsCdxAMm9NF6twAA9BKnoqy4hqz4+azQ0JHuA26qiUKsf1XJ/v5A==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-libvips-linux-arm@1.3.3':
     resolution: {integrity: sha512-3rbU4vqXXc3hY/OiXdl52xZvT0F1yEngWfvqudtPJg/KkyiaQw2DRsFrNzpmLvfavbwOq3qXn36GP8obHRULQA==}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-libvips-linux-ppc64@1.3.3':
     resolution: {integrity: sha512-cdn1OvUBwsXhbC0zSzJnNzf5MZ/mTrobawDvNXBTxe8VtqKAm0sRuEY2Evzovb/w9JMk4TvRxqt1mekSuJz64w==}
     cpu: [ppc64]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-libvips-linux-riscv64@1.3.3':
     resolution: {integrity: sha512-HjPVx7yKz+0lqdhDlTw1tt90wamBoxhiXpvl1XZpJLiHH4RCJ5yDTqH+VlYPv2fwFs89JFw4c1IexYOcQUi4IQ==}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-libvips-linux-s390x@1.3.3':
     resolution: {integrity: sha512-neWLh+3yCNThxnfy3c4BbVBeGgt9aftno+XbT56iK28RgeDs3UOFWviLWlUu0bArYVYJaFDK+RRohbicUNCm8Q==}
     cpu: [s390x]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-libvips-linux-x64@1.3.3':
     resolution: {integrity: sha512-4vKmvAst9nrowcqquKFAyZJUDolUaIp8uRiN0mWFguJ1IplC9/pitXtlnnlU4aa/eJw3J7i67V+pwUL+wZGdsA==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-libvips-linuxmusl-arm64@1.3.3':
     resolution: {integrity: sha512-Y9kQaLMuNoB0bPYOOdcZMaseNrFpPodIWWMrx+CZyydf2xn68j9WYc6sWWRrDwNkzCQjKYfc68L7jKjGlHMibw==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@img/sharp-libvips-linuxmusl-x64@1.3.3':
     resolution: {integrity: sha512-fj8Mv0HHfD1Rr+4I68+3agJynxDWtBFgicTbSOb9Bke6pIwzGcJ+RX/yHjmiEGFMCavY/dxvem7MyNaJF+wDiw==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@img/sharp-linux-arm64@0.35.4':
     resolution: {integrity: sha512-De4jpEnAU8Hd5oT0j1G3uL4ZvTuipVMn7YC6vPaJhy6/7EwEae0SVAoBrUMYQbkLGDm85taVWwuPc1a44LTzCQ==}
     engines: {node: '>=20.9.0'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-linux-arm@0.35.4':
     resolution: {integrity: sha512-7OAS8gI0EReKGVN2HssHlM6umJgxF5VI3xN0p9FA91p/YO+ou5hiNghLdZ5BEHztwaaK5+bLKRf8x/o2L2nk9A==}
     engines: {node: '>=20.9.0'}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-linux-ppc64@0.35.4':
     resolution: {integrity: sha512-2oYZJeIl4kCcMGk4ouZVjnkCtFrpQFlNEtJ6GbxzhHQchwH0NH/qEb9ykmOl29dqwMq+JhFdZn+1ak2FKhI9fQ==}
     engines: {node: '>=20.9.0'}
     cpu: [ppc64]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-linux-riscv64@0.35.4':
     resolution: {integrity: sha512-cPbNChoRURAWdebDIHSenxRpgEdy7JkPydSnUxRm9VvKD7m0/xVaR/8Fzlu81pk5nHEvHH87UZUA7cTtwnbJSA==}
     engines: {node: '>=20.9.0'}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-linux-s390x@0.35.4':
     resolution: {integrity: sha512-RY0JFY8Fd6RonCBtHz+DvadaPkXDSI1AUn6yWL9TipqkZ1vY8w8evqdgyDFnkm4/K1ve1TvZiaePP5oSd4+WVQ==}
     engines: {node: '>=20.9.0'}
     cpu: [s390x]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-linux-x64@0.35.4':
     resolution: {integrity: sha512-9qvvEAuk8k89TfWUoX2htWjbAMX8p+NxCppjpcg5k6xMsjhBQPTsoIh36h9Qde4WRuGpJeYnOjdosDn/cnv+OA==}
     engines: {node: '>=20.9.0'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-linuxmusl-arm64@0.35.4':
     resolution: {integrity: sha512-KB5jxpfWQTr0nc3xdHtWChdbifHrBGsd2SM62Eyxrl8afikm+f5qGBU75SJIZBT/S1MC8XyacdlXBMSWq6OURA==}
     engines: {node: '>=20.9.0'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@img/sharp-linuxmusl-x64@0.35.4':
     resolution: {integrity: sha512-f+eZJZIQNEEd26RPSW+76chwOf1XtA2Y/O+5ocVyLliHkeih3e+jhLVBdNTd2rS3IbNXK8+ug93Vf5ZXtF5Lxg==}
     engines: {node: '>=20.9.0'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@img/sharp-wasm32@0.35.4':
     resolution: {integrity: sha512-zQnl4Kwp7Q6NHsENtU2T/00Zi+w3AQNwz3+UaTyVBy2FpXrzXzGjndpK61onhZjRtRpQXxCTeqw19bVyXOh7jA==}
@@ -3341,8 +3361,8 @@ packages:
     cpu: [arm64]
     os: [android]
 
-  '@napi-rs/canvas-android-arm64@1.0.8':
-    resolution: {integrity: sha512-5+nkh8i3gt6lqS/d2jTZ1xAn6tdgtB4Lf1mW6T0Qm5/rXNwBuV1sAEyLEWan5o9gJPU/GuvHR3rvSeZ+FaGrbw==}
+  '@napi-rs/canvas-android-arm64@1.0.9':
+    resolution: {integrity: sha512-4LGXk2/0HVzE29K8SzML5WubgCp++B1FH3qgl35XmSZE+lLdr6P9VRQEnZ0MCLZMTSuJP41yyhtoiVNEuvrTIA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [android]
@@ -3353,8 +3373,8 @@ packages:
     cpu: [arm64]
     os: [darwin]
 
-  '@napi-rs/canvas-darwin-arm64@1.0.8':
-    resolution: {integrity: sha512-7jQ47gi+fZ7KJmfc/5rNyy1CYw/cu4kZ0KPIYbo9UUgSdW0bKQJpt+WihEor6s4Lyp7+xc3a+3HeyXmAEbbnPg==}
+  '@napi-rs/canvas-darwin-arm64@1.0.9':
+    resolution: {integrity: sha512-YNdfLBzY0W/Pep9fo2L6RmoNlNksnn05LRnX66W63R3ij58S25QOTcjdtEt2v8+PnCESzqZsYzUo+QPeIR44NA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -3365,8 +3385,8 @@ packages:
     cpu: [x64]
     os: [darwin]
 
-  '@napi-rs/canvas-darwin-x64@1.0.8':
-    resolution: {integrity: sha512-rRjDMZs9pIRKGxgijwezplKc1RnJsqUokrA9h88bbTkqQ+7ePj0ZN4ZnZDy8Vu0tXs7KRlI2tQLaK4mx9QlxHg==}
+  '@napi-rs/canvas-darwin-x64@1.0.9':
+    resolution: {integrity: sha512-ceZQSknTEcy3dOXoekv59LTCkXjvnLsq+VW5PeNNDHEPQbRS5Ervkm1EaDa7WLAjiYWMLuSQTRTHao1dEX4prg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -3377,8 +3397,8 @@ packages:
     cpu: [arm]
     os: [linux]
 
-  '@napi-rs/canvas-linux-arm-gnueabihf@1.0.8':
-    resolution: {integrity: sha512-jGcCd+8ra6Q61xKqZeiItujTpp9a9eRLcQ0jW6qYNku+WpupqOPFPY0SrsuSnXFviJwkpKYT9p7QrB4lsf3LNQ==}
+  '@napi-rs/canvas-linux-arm-gnueabihf@1.0.9':
+    resolution: {integrity: sha512-XhfI0Wwv4llhd6nnWDtY3kQKjq0r+y1i91PlJlJI24ag2U9WrnwbG1qS3+fDLEyouwEVFchiKkTEHozK+5iUNA==}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [linux]
@@ -3388,60 +3408,70 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
-  '@napi-rs/canvas-linux-arm64-gnu@1.0.8':
-    resolution: {integrity: sha512-od6I2Y7kU7i1SwZYG2EKW8rWz6JiedtPpko4WEe1DDsiikrfaotVBCRaUTM5/yeZKaZ92EatoAS+5xG+6uJlYA==}
+  '@napi-rs/canvas-linux-arm64-gnu@1.0.9':
+    resolution: {integrity: sha512-012oiYtKaE7i9oxc8q7nraT7kDOpLcaCmFLzVe9Ty34RHDdoDzbWLrVh827CNxYh/EADX1eSikA3ymLjo/nNuw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@napi-rs/canvas-linux-arm64-musl@0.1.97':
     resolution: {integrity: sha512-kKmSkQVnWeqg7qdsiXvYxKhAFuHz3tkBjW/zyQv5YKUPhotpaVhpBGv5LqCngzyuRV85SXoe+OFj+Tv0a0QXkQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
-  '@napi-rs/canvas-linux-arm64-musl@1.0.8':
-    resolution: {integrity: sha512-yYkPbJDJiWj6N0gASA3CAvRypZmVpJnxU0DQg3aBhneLDQde9TPLKADsQkobNoJUtTT/lj46aWpzT48PDb3Qcg==}
+  '@napi-rs/canvas-linux-arm64-musl@1.0.9':
+    resolution: {integrity: sha512-Ls5UWYFFn63casTZEczbeyEg3vRDRkv9lscuGwfchtY5yLLQhgOB8SN4YGxmfJ5vTaBwZ2YUxBS3NtmjJmFXdA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@napi-rs/canvas-linux-riscv64-gnu@0.1.97':
     resolution: {integrity: sha512-Jc7I3A51jnEOIAXeLsN/M/+Z28LUeakcsXs07FLq9prXc0eYOtVwsDEv913Gr+06IRo34gJJVgT0TXvmz+N2VA==}
     engines: {node: '>= 10'}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
-  '@napi-rs/canvas-linux-riscv64-gnu@1.0.8':
-    resolution: {integrity: sha512-PB00MSKAp4VwK/xwe6duKxRKmH8UH4GIl1pqHSbxng0jnU9Dr7FwaDypDiqwNFZ774N+8G7mJLGuLtg9NTcQsg==}
+  '@napi-rs/canvas-linux-riscv64-gnu@1.0.9':
+    resolution: {integrity: sha512-hLKEGxV7ZiRHqndePTokgDMdBlo/rDfzg7P4p4QIv9pUhuYobnu3R2NIFLCRghG0nwfo+s2sw+c1xZFeCmEAsw==}
     engines: {node: '>= 10'}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@napi-rs/canvas-linux-x64-gnu@0.1.97':
     resolution: {integrity: sha512-iDUBe7AilfuBSRbSa8/IGX38Mf+iCSBqoVKLSQ5XaY2JLOaqz1TVyPFEyIck7wT6mRQhQt5sN6ogfjIDfi74tg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
-  '@napi-rs/canvas-linux-x64-gnu@1.0.8':
-    resolution: {integrity: sha512-TWM2XWJoitLiIPCvgJh7SriC+L/T9qkYCVzC66AidsZy0QP1hkKzBzVwshCdcA3q6fIn3yE0ISbq4lMJSy8jFw==}
+  '@napi-rs/canvas-linux-x64-gnu@1.0.9':
+    resolution: {integrity: sha512-6kaz3w0QMy77PDWk6rJ1ksIihdad3qzEyX2o2oGT8GwCaypfT5mhjr8buOO5hstyLxcWXDScuz56RsINLtBPIQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@napi-rs/canvas-linux-x64-musl@0.1.97':
     resolution: {integrity: sha512-AKLFd/v0Z5fvgqBDqhvqtAdx+fHMJ5t9JcUNKq4FIZ5WH+iegGm8HPdj00NFlCSnm83Fp3Ln8I2f7uq1aIiWaA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
-  '@napi-rs/canvas-linux-x64-musl@1.0.8':
-    resolution: {integrity: sha512-hb20MxKXXb5IB7AAwN8UHz9WRsa2HmdZfjsDCzjElwJoeV1aotVEwFU4FrFQcYQVzsJQLeaCc/2Qdt/0Q72mMg==}
+  '@napi-rs/canvas-linux-x64-musl@1.0.9':
+    resolution: {integrity: sha512-xrGvmS3v55hmZ86ls/kBLVNMUTYio3f6Ik0DireemG994VfPAwiA3ZXA0Uf1bByctkB3NQ1Sfb+H5bkdUnnzfQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@napi-rs/canvas-win32-arm64-msvc@0.1.97':
     resolution: {integrity: sha512-u883Yr6A6fO7Vpsy9YE4FVCIxzzo5sO+7pIUjjoDLjS3vQaNMkVzx5bdIpEL+ob+gU88WDK4VcxYMZ6nmnoX9A==}
@@ -3449,8 +3479,8 @@ packages:
     cpu: [arm64]
     os: [win32]
 
-  '@napi-rs/canvas-win32-arm64-msvc@1.0.8':
-    resolution: {integrity: sha512-WwPN08IXE4SkL+FhJyPz/iFnycMAUkbphFIT4cmKLlvbSU0Zfn1R7BGJ3Hqky1S89QUYc0Q4IOScXb/42Re9wQ==}
+  '@napi-rs/canvas-win32-arm64-msvc@1.0.9':
+    resolution: {integrity: sha512-yjmVS3ArZeRVCP7jqbPq4rpZa/BhTeI7ELE2XqJg3snICQBDevLZyArxswHkiTnT34KRic33/4fLirrHI+SY8A==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
@@ -3461,8 +3491,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@napi-rs/canvas-win32-x64-msvc@1.0.8':
-    resolution: {integrity: sha512-XkrVqKb+pxyba7kjy2LJvABFVBTE0DNpEl7MrG4OYUmaWarrXH+t54z/Czj2YxCKtizYTV4mg6phNm3x24qjhQ==}
+  '@napi-rs/canvas-win32-x64-msvc@1.0.9':
+    resolution: {integrity: sha512-QlSYQdMQslB81nlABo9wNfQ6npFhE7/O+saCZdqVGueGanyRk4jCogD5EwQenfP3kIq9e+mm6GreQBjX5MrA8g==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -3471,8 +3501,8 @@ packages:
     resolution: {integrity: sha512-8cFniXvrIEnVwuNSRCW9wirRZbHvrD3JVujdS2P5n5xiJZNZMOZcfOvJ1pb66c7jXMKHHglJEDVJGbm8XWFcXQ==}
     engines: {node: '>= 10'}
 
-  '@napi-rs/canvas@1.0.8':
-    resolution: {integrity: sha512-/SaLcvlqGWdm0HSCWMgHu7cjJiQXfP8/mOY+6dUyV9flQz7sPBBZ+ed2zYtoukojPmxOaL7bm+d/G4GeWWoN7g==}
+  '@napi-rs/canvas@1.0.9':
+    resolution: {integrity: sha512-QviPdJImDi/jMAvBfqaw+19BndMd/sizXVW3NnpMd3VJGz++QXkOHcP9kWR/smHG0hNjHeyuHFyrx/5lD0oNcQ==}
     engines: {node: '>= 10'}
 
   '@napi-rs/wasm-runtime@1.1.2':
@@ -4000,21 +4030,21 @@ packages:
   '@polotno/core@0.10.0':
     resolution: {integrity: sha512-ezOnFjkEfP9dgLFapCnnQKfxJ07jnkEIiipkFAld7kDK2pxTg846NDQtvNiEV6aBkNo1oGUFO5qIiR2Ki/5K+w==}
 
-  '@polotno/core@0.11.0':
-    resolution: {integrity: sha512-qCxXf/mgpezvaE6ZJuMEsNU6buEZc2GAGgMk8gdslg38ELSmK1R2NgHLs5bHcdKv9LocArcwNzUA7gXDxAv7/A==}
+  '@polotno/core@0.12.0':
+    resolution: {integrity: sha512-RMWVqX9EGfkiSjeq4wslGmc1bVUPOwA2Yg2tb7ukpN6yiEgxEGHHLMjZkxfThxqph4inOCc2FRTIzYXzlpk9Nw==}
 
   '@polotno/core@0.8.0':
     resolution: {integrity: sha512-5R9rlsiR2bMugVHNGwuf9qtop1vIEi8F8qRuwswKRnu7LjHZCUlhRREjPvu1DFV4utfSsRgehMrtA3FJWxN55g==}
 
-  '@polotno/html-export@0.5.2':
-    resolution: {integrity: sha512-IcnSlPZi5xeCscArkniDPehWaC1Swgvoas2Ry5QYNbwcrMFy8PJ2hpmsVZ6cXdmlyBZHR0VbxPs3fGXPIGxgMQ==}
+  '@polotno/html-export@0.6.0':
+    resolution: {integrity: sha512-9tTkMrVv4h68n/DtZ95NfC4zMLsdsry8e700FPpV0E7rEnMGVAniT4Ce/UDrlaU+OmE9EsWPtcDdrYYqN8Vg4w==}
 
-  '@polotno/pdf-export@0.11.2':
-    resolution: {integrity: sha512-i4cGC+XDUhz36K6YSk9hksg8vOOH3nGf/efJwE7wWfgGAenUuU2VnyD5K+VAWWQQZQR6kEjqPRGCIHRmI8seuA==}
+  '@polotno/pdf-export@0.12.0':
+    resolution: {integrity: sha512-3Fb22/K05fL91FMiAI9G9F4IiLOrTackdlxPLEERdc9aD2kYP92c+IqCn7PYsBqaEC0TR3Yh8KFVq8cabJyL6A==}
     engines: {node: '>=22.13.0'}
 
-  '@polotno/pdf-import@0.7.0':
-    resolution: {integrity: sha512-Ie4b218QX1s9R2fKK8CSd12lGVBuyM4cVuEiMeDQIz50w/TsHmssSo0ylsCM5V7F4nNiXLfzabjdMLAMv8qMCw==}
+  '@polotno/pdf-import@0.8.0':
+    resolution: {integrity: sha512-v40C/YZm96OBjNRrA6JU0s67Q/H+YFlsGFXZUOiIM26fRXy6Lqt4Bkg2dLZKsQN0X7SBpsJS3WW0vxCZ/iQf7Q==}
     engines: {node: '>=20'}
 
   '@polotno/pptx-export@0.5.1':
@@ -4027,14 +4057,17 @@ packages:
   '@polotno/schema@0.6.1':
     resolution: {integrity: sha512-Gwry6IEegkwfINDwVEHigD72/VsyWIV8gQK/6OtYRv9VevgqYEQFMLV03/Q2oHiU7opE31Q+O7pGWfskLHrmvA==}
 
-  '@polotno/svg-export@0.6.2':
-    resolution: {integrity: sha512-L3aA3nyDRanQAajNhxvWBdUnS2VTwOJwFRl+Xh8vqnx5kCwJBkGfd2tHdXTRSPJMRRT5hIZ43VdV4gpdOKlAog==}
+  '@polotno/schema@0.6.2':
+    resolution: {integrity: sha512-sK2XLja36twIE+qJs3PciZobFtfD5tgK3r8hbTW/D6uOXDA3ozY9g3ghg2uiVxxeGI4Icj7iurG06ESQ1+EbPw==}
 
-  '@polotno/svg-import@0.2.0':
-    resolution: {integrity: sha512-/rn+/e2j0cM7ulc8/Mr+Q/BMQN31FOTPcTZRz9hFgsMUqnpl5bmlqSM/QTcz62d0DtzXuKWudu2M8MOzXVKpyA==}
+  '@polotno/svg-export@0.7.0':
+    resolution: {integrity: sha512-TSpFTqe/B3PPbuDT3TT/MexJY2Pi711m8HQEXXy3oxpBQoZTc0LWf+45j/xrMSHpvFomro2B22/Q7+BI/c8eBg==}
 
-  '@polotno/video-export@0.3.0':
-    resolution: {integrity: sha512-JZO5TDQihKuVTtEXGZURY+eUZoRcsO3FibYn3slt/XtxhZPDp0XejvjssaPYlDQw4bkEURNKVaaPGZDEGKhs4Q==}
+  '@polotno/svg-import@0.2.1':
+    resolution: {integrity: sha512-mkSFZNMXnu05L+aj0gtHd0Mj2GJEnl7ZhmQRA7GR/1gpoln1h5pd95EL82XoEXszcsgncoguaEZaEJXZSm1pOg==}
+
+  '@polotno/video-export@0.4.0':
+    resolution: {integrity: sha512-z39xwckuqjVjC9fTRn42hYt4GWNXhHXjdCYQAH7AYmOrmAEMrSxWaI9ZylsFlyzMZ27JzCXDHzqrw/tPgrP4GQ==}
     peerDependencies:
       polotno: ^4.1.0
 
@@ -6495,8 +6528,8 @@ packages:
     peerDependencies:
       webpack: ^4.0.0
 
-  file-type@22.0.2:
-    resolution: {integrity: sha512-0H8TsCUGBLx+V5adH3EY52hTAcyLKbV1D4gq5cIOJ6DnQAHeV9Z2Hhuc5CoBX4YmvB2oL+JIC84z0qO7JsCoNw==}
+  file-type@22.1.1:
+    resolution: {integrity: sha512-sEB0oStmeLGtpmSAD88RDNuLsvhv4iC3u0lE25CUvfCULvj49xoQ3l3K525Vn+ZzsZ6DOLajQCV6RmhwwhqiJg==}
     engines: {node: '>=22'}
 
   file-uri-to-path@1.0.0:
@@ -7752,8 +7785,8 @@ packages:
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  lucide-react@1.41.0:
-    resolution: {integrity: sha512-6lksP35l6KszDKUeRTi4LV7i6DEe0Yzl2ALJm9j4c5xEYN91GdW1xGsawGMOg2mgjF5GHBVX8pKX9kP+cWsP3Q==}
+  lucide-react@1.47.0:
+    resolution: {integrity: sha512-o8C23aXpNQypRY73W7fW02EyvWJinEMXgKeGjFoKym0zj3Q73hD97A1IQps1g8C14HTGsOpZL0Am+xjfgFZAbg==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -7803,8 +7836,8 @@ packages:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
     engines: {node: '>= 0.6'}
 
-  mediabunny@1.55.6:
-    resolution: {integrity: sha512-IuwxlL8GQ5qODxvdj0mm5bUumrwTr13ooX0UygsrT2u1uwERjV1Awv/zuFoY5iNeYic6SQU78BcGcGLnDgPQ9g==}
+  mediabunny@1.57.0:
+    resolution: {integrity: sha512-j6L4DutGEcb5DQkWshZjJk6cP7bfmFXfIP6URTRXExMM2WSEQjQxWEV+U+PmYjLFyjRLymNGHWllg2OjHVbdog==}
 
   memoize-one@5.2.1:
     resolution: {integrity: sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==}
@@ -7995,10 +8028,16 @@ packages:
       react-native:
         optional: true
 
-  mobx-state-tree@7.4.0:
-    resolution: {integrity: sha512-NfOgl47Eov6tgfmIWZCJiflBn+kuQScOd4uSZjygNgZuKT/heXggmA27KfxNxp6PZrxkROliA1yAApnsPww4JA==}
+  mobx-react-lite@5.0.3:
+    resolution: {integrity: sha512-8qT/d/8Cg8ljt+heKhoFHNoqgedyeSGzdTixT0lgbFMMFlWfHUcXHZ8UD63eQi3ELjkxaH1VU07lXWhRwM0cVA==}
     peerDependencies:
-      mobx: ^6.3.0
+      mobx: ^7.0.0
+      react: ^18 || ^19
+
+  mobx-state-tree@8.0.0:
+    resolution: {integrity: sha512-3ekhwG9KkPtrzzsp9vJu8JEpctoXeCADk1O1G4s+36JDqLug/AVsdW2JXT+rrAfWtPXopaoCER/sJs6qPK5oTg==}
+    peerDependencies:
+      mobx: ^7.0.0
 
   mobx-vue-lite@0.4.3:
     resolution: {integrity: sha512-eTFd+Mpadl/w2EO2lik6Opax5kF4aHJTcRFKOLu+29oaUJBGZyP1z5gCQo9YzxkHlyytRNPny60NPJrbHRa70g==}
@@ -8012,14 +8051,14 @@ packages:
       mobx: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
       vue: ^2.0.0
 
-  mobx@5.15.7:
-    resolution: {integrity: sha512-wyM3FghTkhmC+hQjyPGGFdpehrcX1KOXsDuERhfK2YbJemkUhEB+6wzEN639T21onxlfYBmriA1PFnvxTUhcKw==}
-
   mobx@6.15.0:
     resolution: {integrity: sha512-UczzB+0nnwGotYSgllfARAqWCJ5e/skuV2K/l+Zyck/H6pJIhLXuBnz+6vn2i211o7DtbE78HQtsYEKICHGI+g==}
 
   mobx@6.16.1:
     resolution: {integrity: sha512-syNcDdX3KT+Jq3je6eGjBhuc24Z68td2VG0zNFqRswaE433D9SNH5VRy/xrGbJsUixfppLLccXhAW9JSf6n+SQ==}
+
+  mobx@7.0.3:
+    resolution: {integrity: sha512-KopyyzqZ8xT1fqxFNl8ItKKMpGifRe2ySaNAHs80/cx0mL1bpJtJ46S+FSyzXKRjW0TODWj5zwq/Y9hUdJUy4w==}
 
   moment@2.30.1:
     resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
@@ -8630,14 +8669,14 @@ packages:
     resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==}
     engines: {node: '>=10.13.0'}
 
-  polotno@4.12.1:
-    resolution: {integrity: sha512-NtmdkKZ3qH7iTjduZUpbzROWsEiDjFCbdyJqB3vwJUS3+xEJTuQgTSuaZ4HUx7Sa80LNkqsh88rx/na7jz0iww==}
+  polotno@4.13.0:
+    resolution: {integrity: sha512-1cBjYKxN35Wp+6mLHfahJOp2X2YKaP6MQCfeAMsGRxOhSFvrnv0uzamD/6l4TnB85Ks86TlhC01J+Hebi9xaag==}
     peerDependencies:
       '@blueprintjs/core': ^6.x
       '@blueprintjs/icons': ^6.x
       '@blueprintjs/select': ^6.x
-      react: ^19.2.0
-      react-dom: ^19.2.0
+      react: ^19.3.0
+      react-dom: ^19.3.0
     peerDependenciesMeta:
       '@blueprintjs/core':
         optional: true
@@ -9051,8 +9090,8 @@ packages:
       react-dom: ^18.2.0 || ^19.0.0
       react-konva: ^18.2.10 || ^19.0.1
 
-  react-konva-utils@2.0.0:
-    resolution: {integrity: sha512-pOb+TF13gFAjfPmUqsE42J4GJ+xhUS97qS32p0NRTqSeqtamWyKJikGa1XeVvV5yItu9SWDo7onL79GGPG96HQ==}
+  react-konva-utils@2.1.0:
+    resolution: {integrity: sha512-ecCE3U4T0FaDoiHBpKGffAcyOjEPJtVrinFAf9qWG1SQsbQ28qVEVss42WV4uft5oUKrpRou6yVR9uVMRYfUiA==}
     peerDependencies:
       konva: ^8.3.5 || ^9.0.0 || ^10.0.0
       react: ^18.2.0 || ^19.0.0
@@ -9066,18 +9105,24 @@ packages:
       react: ^19.2.0
       react-dom: ^19.2.0
 
-  react-konva@19.2.7:
-    resolution: {integrity: sha512-z/mxVITj2W+MQ8+TeD7ONMnMvy99hj4NJ4UfmWbjJcdeUOm8AZR41cCfwRZTryE3/z4r2/nOyckRNlr0GP+G3w==}
+  react-konva@19.3.0:
+    resolution: {integrity: sha512-YEDAdM0PUUUJcTzXAKXMRO2+krSE+hhjGsupWjy6UBtzyFI6f2LkwSYQresl7WwvD+j3fbMy0uj3jtnytKqk9Q==}
     peerDependencies:
       konva: ^8.0.1 || ^7.2.5 || ^9.0.0 || ^10.0.0
-      react: ^19.2.0
-      react-dom: ^19.2.0
+      react: ^19.3.0
+      react-dom: ^19.3.0
 
   react-reconciler@0.33.0:
     resolution: {integrity: sha512-KetWRytFv1epdpJc3J4G75I4WrplZE5jOL7Yq0p34+OVOKF4Se7WrdIdVC45XsSSmUTlht2FM/fM1FZb1mfQeA==}
     engines: {node: '>=0.10.0'}
     peerDependencies:
       react: ^19.2.0
+
+  react-reconciler@0.34.0:
+    resolution: {integrity: sha512-eVibvB1fc9j5Qf1KRkiM3GzRPBdjg2P6G6QV2f3P6Eb3OGMxRBhdg2rrUwjbV5JrQaJj8nOa8uajmmJA5tJWjQ==}
+    engines: {node: '>=0.10.0'}
+    peerDependencies:
+      react: ^19.3.0
 
   react-refresh@0.16.0:
     resolution: {integrity: sha512-FPvF2XxTSikpJxcr+bHut2H4gJ17+18Uy20D5/F+SKzFap62R3cM5wH6b8WN3LyGSYeQilLEcJcR1fjBSI2S1A==}
@@ -9102,8 +9147,8 @@ packages:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  react-window@2.3.0:
-    resolution: {integrity: sha512-FW6TIpaOH646k51X7yE+LSCWGkt5Pfsnc1fVyq/sCI9h0pTqmMiBXM04pzFKg3Bt7NGkeV6kqbU8d/QjmFS7Ug==}
+  react-window@2.3.1:
+    resolution: {integrity: sha512-x/+N6b7FNVtlKE7ZQlfOY2bYdA7VXvT2B1Emo/ndAsFsSQ98FBIO88MsatNELbSIlYJgkCd7unBps5XMfv0Eyg==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
@@ -9193,6 +9238,9 @@ packages:
 
   render-tag@0.1.35:
     resolution: {integrity: sha512-ig5t2hLS15iGwTVo7/gPMv3mHvyhtU/URSW/0RAWtR3bEpwwAPoTdnY0xIN7WLXnRVaNHA1iiFtTp5HNoSkZMA==}
+
+  render-tag@0.1.37:
+    resolution: {integrity: sha512-bZu2L9LBOTkcPeGBb9PlnIe8LY4Su25utIrBYsZPkB95F00S2qHqxn6WRARqmAmMbx89/pURhYH5BVzQ5wkoew==}
 
   renderkid@2.0.7:
     resolution: {integrity: sha512-oCcFyxaMrKsKcTY59qnCAtmDVSLfPbrv6A3tVbPdFMMrv5jaK10V6m40cKsoPNhAqN6rmHW9sswW4o3ruSrwUQ==}
@@ -9380,6 +9428,9 @@ packages:
 
   scheduler@0.27.0:
     resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
+
+  scheduler@0.28.0:
+    resolution: {integrity: sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==}
 
   schema-utils@1.0.0:
     resolution: {integrity: sha512-i27Mic4KovM/lnGsy8whRCHhc7VicJajAjTrYg11K9zfZXnYIt4k5F+kZkwjnrhKzLic/HLU4j11mjsz2G/75g==}
@@ -9885,8 +9936,8 @@ packages:
     resolution: {integrity: sha512-wmEc8m4fjnob4gt5riFRtTu/6+4rSe12TpAELNSqHMfF3IqnA+CH37USM6/YR3qRZv7e56kAEAtd6nKZaxe0Ug==}
     engines: {node: '>=6.0.0'}
 
-  tailwind-merge@3.6.0:
-    resolution: {integrity: sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==}
+  tailwind-merge@3.7.0:
+    resolution: {integrity: sha512-XPPUyAc+cvspz3lHTcR/QgPfW2A0lv/xQNIjX3HGhLR+Nq2lHaLq5MtTesHn8GUr3W3DguT2KT5x3NVgRtYwmA==}
 
   tapable@1.1.3:
     resolution: {integrity: sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==}
@@ -10677,6 +10728,9 @@ packages:
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
+  zod@4.6.5:
+    resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
+
   zone.js@0.14.10:
     resolution: {integrity: sha512-YGAhaO7J5ywOXW6InXNlLmfU194F8lVgu7bRntUF3TiG8Y3nBK0x1UJJuHUP/e8IyihkjCYqhCScpSwnlaSRkQ==}
 
@@ -10693,14 +10747,14 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
 
-  '@angular-devkit/architect@0.1802.21':
+  '@angular-devkit/architect@0.1802.21(chokidar@3.6.0)':
     dependencies:
-      '@angular-devkit/core': 18.2.21
+      '@angular-devkit/core': 18.2.21(chokidar@3.6.0)
       rxjs: 7.8.1
     transitivePeerDependencies:
       - chokidar
 
-  '@angular-devkit/core@18.2.21':
+  '@angular-devkit/core@18.2.21(chokidar@3.6.0)':
     dependencies:
       ajv: 8.17.1
       ajv-formats: 3.0.1(ajv@8.17.1)
@@ -10708,10 +10762,12 @@ snapshots:
       picomatch: 4.0.2
       rxjs: 7.8.1
       source-map: 0.7.4
+    optionalDependencies:
+      chokidar: 3.6.0
 
-  '@angular-devkit/schematics@18.2.21':
+  '@angular-devkit/schematics@18.2.21(chokidar@3.6.0)':
     dependencies:
-      '@angular-devkit/core': 18.2.21
+      '@angular-devkit/core': 18.2.21(chokidar@3.6.0)
       jsonc-parser: 3.3.1
       magic-string: 0.30.11
       ora: 5.4.1
@@ -10724,10 +10780,10 @@ snapshots:
       '@angular/core': 18.2.14(rxjs@7.8.1)(zone.js@0.14.10)
       tslib: 2.8.1
 
-  '@angular/build@18.2.21(@angular/compiler-cli@18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(supports-color@7.2.0)(typescript@5.5.4))(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)(@types/node@25.5.0)(postcss@8.5.8)(supports-color@7.2.0)(terser@5.46.1)(typescript@5.5.4)':
+  '@angular/build@18.2.21(@angular/compiler-cli@18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(supports-color@7.2.0)(typescript@5.5.4))(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)(@types/node@25.5.0)(chokidar@3.6.0)(postcss@8.5.8)(supports-color@7.2.0)(terser@5.46.1)(typescript@5.5.4)':
     dependencies:
       '@ampproject/remapping': 2.3.0
-      '@angular-devkit/architect': 0.1802.21
+      '@angular-devkit/architect': 0.1802.21(chokidar@3.6.0)
       '@angular/compiler-cli': 18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(supports-color@7.2.0)(typescript@5.5.4)
       '@babel/core': 7.25.2(supports-color@7.2.0)
       '@babel/helper-annotate-as-pure': 7.24.7
@@ -10780,14 +10836,14 @@ snapshots:
     optionalDependencies:
       parse5: 7.3.0
 
-  '@angular/cli@18.2.21(bluebird@3.7.2)(supports-color@7.2.0)':
+  '@angular/cli@18.2.21(bluebird@3.7.2)(chokidar@3.6.0)(supports-color@7.2.0)':
     dependencies:
-      '@angular-devkit/architect': 0.1802.21
-      '@angular-devkit/core': 18.2.21
-      '@angular-devkit/schematics': 18.2.21
+      '@angular-devkit/architect': 0.1802.21(chokidar@3.6.0)
+      '@angular-devkit/core': 18.2.21(chokidar@3.6.0)
+      '@angular-devkit/schematics': 18.2.21(chokidar@3.6.0)
       '@inquirer/prompts': 5.3.8
       '@listr2/prompt-adapter-inquirer': 2.0.15(@inquirer/prompts@5.3.8)
-      '@schematics/angular': 18.2.21
+      '@schematics/angular': 18.2.21(chokidar@3.6.0)
       '@yarnpkg/lockfile': 1.1.0
       ini: 4.1.3
       jsonc-parser: 3.3.1
@@ -12233,6 +12289,8 @@ snapshots:
 
   '@babel/runtime@7.29.2': {}
 
+  '@babel/runtime@7.29.7': {}
+
   '@babel/template@7.28.6':
     dependencies:
       '@babel/code-frame': 7.29.0
@@ -12268,10 +12326,10 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@base-ui/react@1.7.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@base-ui/react@1.8.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
-      '@babel/runtime': 7.29.2
-      '@base-ui/utils': 0.3.2(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@babel/runtime': 7.29.7
+      '@base-ui/utils': 0.4.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@floating-ui/react-dom': 2.1.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@floating-ui/utils': 0.2.12
       react: 19.2.7
@@ -12280,9 +12338,9 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.17
 
-  '@base-ui/utils@0.3.2(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@base-ui/utils@0.4.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
-      '@babel/runtime': 7.29.2
+      '@babel/runtime': 7.29.7
       '@floating-ui/utils': 0.2.12
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
@@ -12767,67 +12825,67 @@ snapshots:
   '@napi-rs/canvas-android-arm64@0.1.97':
     optional: true
 
-  '@napi-rs/canvas-android-arm64@1.0.8':
+  '@napi-rs/canvas-android-arm64@1.0.9':
     optional: true
 
   '@napi-rs/canvas-darwin-arm64@0.1.97':
     optional: true
 
-  '@napi-rs/canvas-darwin-arm64@1.0.8':
+  '@napi-rs/canvas-darwin-arm64@1.0.9':
     optional: true
 
   '@napi-rs/canvas-darwin-x64@0.1.97':
     optional: true
 
-  '@napi-rs/canvas-darwin-x64@1.0.8':
+  '@napi-rs/canvas-darwin-x64@1.0.9':
     optional: true
 
   '@napi-rs/canvas-linux-arm-gnueabihf@0.1.97':
     optional: true
 
-  '@napi-rs/canvas-linux-arm-gnueabihf@1.0.8':
+  '@napi-rs/canvas-linux-arm-gnueabihf@1.0.9':
     optional: true
 
   '@napi-rs/canvas-linux-arm64-gnu@0.1.97':
     optional: true
 
-  '@napi-rs/canvas-linux-arm64-gnu@1.0.8':
+  '@napi-rs/canvas-linux-arm64-gnu@1.0.9':
     optional: true
 
   '@napi-rs/canvas-linux-arm64-musl@0.1.97':
     optional: true
 
-  '@napi-rs/canvas-linux-arm64-musl@1.0.8':
+  '@napi-rs/canvas-linux-arm64-musl@1.0.9':
     optional: true
 
   '@napi-rs/canvas-linux-riscv64-gnu@0.1.97':
     optional: true
 
-  '@napi-rs/canvas-linux-riscv64-gnu@1.0.8':
+  '@napi-rs/canvas-linux-riscv64-gnu@1.0.9':
     optional: true
 
   '@napi-rs/canvas-linux-x64-gnu@0.1.97':
     optional: true
 
-  '@napi-rs/canvas-linux-x64-gnu@1.0.8':
+  '@napi-rs/canvas-linux-x64-gnu@1.0.9':
     optional: true
 
   '@napi-rs/canvas-linux-x64-musl@0.1.97':
     optional: true
 
-  '@napi-rs/canvas-linux-x64-musl@1.0.8':
+  '@napi-rs/canvas-linux-x64-musl@1.0.9':
     optional: true
 
   '@napi-rs/canvas-win32-arm64-msvc@0.1.97':
     optional: true
 
-  '@napi-rs/canvas-win32-arm64-msvc@1.0.8':
+  '@napi-rs/canvas-win32-arm64-msvc@1.0.9':
     optional: true
 
   '@napi-rs/canvas-win32-x64-msvc@0.1.97':
     optional: true
 
-  '@napi-rs/canvas-win32-x64-msvc@1.0.8':
+  '@napi-rs/canvas-win32-x64-msvc@1.0.9':
     optional: true
 
   '@napi-rs/canvas@0.1.97':
@@ -12845,19 +12903,19 @@ snapshots:
       '@napi-rs/canvas-win32-x64-msvc': 0.1.97
     optional: true
 
-  '@napi-rs/canvas@1.0.8':
+  '@napi-rs/canvas@1.0.9':
     optionalDependencies:
-      '@napi-rs/canvas-android-arm64': 1.0.8
-      '@napi-rs/canvas-darwin-arm64': 1.0.8
-      '@napi-rs/canvas-darwin-x64': 1.0.8
-      '@napi-rs/canvas-linux-arm-gnueabihf': 1.0.8
-      '@napi-rs/canvas-linux-arm64-gnu': 1.0.8
-      '@napi-rs/canvas-linux-arm64-musl': 1.0.8
-      '@napi-rs/canvas-linux-riscv64-gnu': 1.0.8
-      '@napi-rs/canvas-linux-x64-gnu': 1.0.8
-      '@napi-rs/canvas-linux-x64-musl': 1.0.8
-      '@napi-rs/canvas-win32-arm64-msvc': 1.0.8
-      '@napi-rs/canvas-win32-x64-msvc': 1.0.8
+      '@napi-rs/canvas-android-arm64': 1.0.9
+      '@napi-rs/canvas-darwin-arm64': 1.0.9
+      '@napi-rs/canvas-darwin-x64': 1.0.9
+      '@napi-rs/canvas-linux-arm-gnueabihf': 1.0.9
+      '@napi-rs/canvas-linux-arm64-gnu': 1.0.9
+      '@napi-rs/canvas-linux-arm64-musl': 1.0.9
+      '@napi-rs/canvas-linux-riscv64-gnu': 1.0.9
+      '@napi-rs/canvas-linux-x64-gnu': 1.0.9
+      '@napi-rs/canvas-linux-x64-musl': 1.0.9
+      '@napi-rs/canvas-win32-arm64-msvc': 1.0.9
+      '@napi-rs/canvas-win32-x64-msvc': 1.0.9
 
   '@napi-rs/wasm-runtime@1.1.2(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)':
     dependencies:
@@ -13673,14 +13731,14 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/core@0.11.0(canvas@3.2.3)':
+  '@polotno/core@0.12.0(canvas@3.2.3)':
     dependencies:
-      '@polotno/schema': 0.6.1
+      '@polotno/schema': 0.6.2
       fflate: 0.8.3
       gradient-parser: 1.2.0
       konva: 10.5.0(canvas@3.2.3)
       mensch: 0.3.4
-      render-tag: 0.1.35
+      render-tag: 0.1.37
       svg-round-corners: 0.4.3
       tinycolor2: 1.6.0
     transitivePeerDependencies:
@@ -13701,21 +13759,21 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/html-export@0.5.2(canvas@3.2.3)':
+  '@polotno/html-export@0.6.0(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.11.0(canvas@3.2.3)
-      '@polotno/schema': 0.6.1
+      '@polotno/core': 0.12.0(canvas@3.2.3)
+      '@polotno/schema': 0.6.2
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/pdf-export@0.11.2(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)':
+  '@polotno/pdf-export@0.12.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)':
     dependencies:
-      '@napi-rs/canvas': 1.0.8
-      '@polotno/core': 0.11.0(canvas@3.2.3)
-      '@polotno/schema': 0.6.1
+      '@napi-rs/canvas': 1.0.9
+      '@polotno/core': 0.12.0(canvas@3.2.3)
+      '@polotno/schema': 0.6.2
       '@xmldom/xmldom': 0.9.12
-      file-type: 22.0.2(supports-color@7.2.0)
+      file-type: 22.1.1(supports-color@7.2.0)
       linkedom: 0.18.13(canvas@3.2.3)
       sharp: 0.35.4(@types/node@25.5.0)
     transitivePeerDependencies:
@@ -13724,10 +13782,10 @@ snapshots:
       - skia-canvas
       - supports-color
 
-  '@polotno/pdf-import@0.7.0(canvas@3.2.3)':
+  '@polotno/pdf-import@0.8.0(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.11.0(canvas@3.2.3)
-      '@polotno/schema': 0.6.1
+      '@polotno/core': 0.12.0(canvas@3.2.3)
+      '@polotno/schema': 0.6.2
       opentype.js: 2.0.0
       pdfjs-dist: 4.10.38
     transitivePeerDependencies:
@@ -13762,30 +13820,34 @@ snapshots:
     dependencies:
       zod: 4.4.3
 
-  '@polotno/svg-export@0.6.2(canvas@3.2.3)':
+  '@polotno/schema@0.6.2':
     dependencies:
-      '@polotno/core': 0.11.0(canvas@3.2.3)
-      '@polotno/schema': 0.6.1
-      render-tag: 0.1.35
+      zod: 4.6.5
+
+  '@polotno/svg-export@0.7.0(canvas@3.2.3)':
+    dependencies:
+      '@polotno/core': 0.12.0(canvas@3.2.3)
+      '@polotno/schema': 0.6.2
+      render-tag: 0.1.37
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/svg-import@0.2.0(canvas@3.2.3)':
+  '@polotno/svg-import@0.2.1(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.11.0(canvas@3.2.3)
-      '@polotno/schema': 0.6.1
+      '@polotno/core': 0.12.0(canvas@3.2.3)
+      '@polotno/schema': 0.6.2
       konva: 10.5.0(canvas@3.2.3)
-      render-tag: 0.1.35
+      render-tag: 0.1.37
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/video-export@0.3.0(canvas@3.2.3)(polotno@4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))':
+  '@polotno/video-export@0.4.0(canvas@3.2.3)(polotno@4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4))':
     dependencies:
-      '@polotno/core': 0.11.0(canvas@3.2.3)
-      mediabunny: 1.55.6
-      polotno: 4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
+      '@polotno/core': 0.12.0(canvas@3.2.3)
+      mediabunny: 1.57.0
+      polotno: 4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4)
     transitivePeerDependencies:
       - canvas
       - skia-canvas
@@ -13892,10 +13954,10 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.22.4':
     optional: true
 
-  '@schematics/angular@18.2.21':
+  '@schematics/angular@18.2.21(chokidar@3.6.0)':
     dependencies:
-      '@angular-devkit/core': 18.2.21
-      '@angular-devkit/schematics': 18.2.21
+      '@angular-devkit/core': 18.2.21(chokidar@3.6.0)
+      '@angular-devkit/schematics': 18.2.21(chokidar@3.6.0)
       jsonc-parser: 3.3.1
     transitivePeerDependencies:
       - chokidar
@@ -16845,7 +16907,7 @@ snapshots:
       schema-utils: 2.7.1
       webpack: 4.47.0(supports-color@6.1.0)
 
-  file-type@22.0.2(supports-color@7.2.0):
+  file-type@22.1.1(supports-color@7.2.0):
     dependencies:
       '@tokenizer/inflate': 0.4.1(supports-color@7.2.0)
       strtok3: 10.3.5
@@ -18174,7 +18236,7 @@ snapshots:
     dependencies:
       react: 19.2.7
 
-  lucide-react@1.41.0(react@19.2.7):
+  lucide-react@1.47.0(react@19.2.7):
     dependencies:
       react: 19.2.7
 
@@ -18236,7 +18298,7 @@ snapshots:
 
   media-typer@0.3.0: {}
 
-  mediabunny@1.55.6:
+  mediabunny@1.57.0:
     dependencies:
       '@types/dom-mediacapture-transform': 0.1.11
       '@types/dom-webcodecs': 0.1.13
@@ -18453,9 +18515,14 @@ snapshots:
     optionalDependencies:
       react-dom: 19.2.7(react@19.2.7)
 
-  mobx-state-tree@7.4.0(mobx@6.16.1)(typescript@5.5.4):
+  mobx-react-lite@5.0.3(mobx@7.0.3)(react@19.2.7):
     dependencies:
-      mobx: 6.16.1
+      mobx: 7.0.3
+      react: 19.2.7
+
+  mobx-state-tree@8.0.0(mobx@7.0.3)(typescript@5.5.4):
+    dependencies:
+      mobx: 7.0.3
       ts-essentials: 9.4.2(typescript@5.5.4)
     transitivePeerDependencies:
       - typescript
@@ -18468,17 +18535,17 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
-  mobx-vue@2.0.11(mobx@5.15.7)(vue@2.7.16):
+  mobx-vue@2.0.11(mobx@6.16.1)(vue@2.7.16):
     dependencies:
-      mobx: 5.15.7
+      mobx: 6.16.1
       tslib: 1.14.1
       vue: 2.7.16
-
-  mobx@5.15.7: {}
 
   mobx@6.15.0: {}
 
   mobx@6.16.1: {}
+
+  mobx@7.0.3: {}
 
   moment@2.30.1: {}
 
@@ -19245,36 +19312,36 @@ snapshots:
 
   pngjs@5.0.0: {}
 
-  polotno@4.12.1(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4):
+  polotno@4.13.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.5.4):
     dependencies:
-      '@base-ui/react': 1.7.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@polotno/core': 0.11.0(canvas@3.2.3)
-      '@polotno/html-export': 0.5.2(canvas@3.2.3)
-      '@polotno/schema': 0.6.1
-      '@polotno/svg-export': 0.6.2(canvas@3.2.3)
+      '@base-ui/react': 1.8.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@polotno/core': 0.12.0(canvas@3.2.3)
+      '@polotno/html-export': 0.6.0(canvas@3.2.3)
+      '@polotno/schema': 0.6.2
+      '@polotno/svg-export': 0.7.0(canvas@3.2.3)
       class-variance-authority: 0.7.1
       clsx: 2.1.1
       gifuct-js: 2.1.2
       konva: 10.5.0(canvas@3.2.3)
       lodash-es: 4.18.1
-      lucide-react: 1.41.0(react@19.2.7)
-      mediabunny: 1.55.6
-      mobx: 6.16.1
-      mobx-react-lite: 4.1.1(mobx@6.16.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      mobx-state-tree: 7.4.0(mobx@6.16.1)(typescript@5.5.4)
+      lucide-react: 1.47.0(react@19.2.7)
+      mediabunny: 1.57.0
+      mobx: 7.0.3
+      mobx-react-lite: 5.0.3(mobx@7.0.3)(react@19.2.7)
+      mobx-state-tree: 8.0.0(mobx@7.0.3)(typescript@5.5.4)
       nanoid: 6.0.1
       quill: 2.0.3
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
-      react-konva: 19.2.7(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      react-konva-utils: 2.0.0(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react-konva@19.2.7(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
+      react-konva: 19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-konva-utils: 2.1.0(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react-konva@19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
       react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sortablejs@1.15.7)
-      react-window: 2.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      render-tag: 0.1.35
+      react-window: 2.3.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      render-tag: 0.1.37
       sortablejs: 1.15.7
       svg-round-corners: 0.4.3
       swr: 2.5.1(react@19.2.7)
-      tailwind-merge: 3.6.0
+      tailwind-merge: 3.7.0
       tinycolor2: 1.6.0
     transitivePeerDependencies:
       - '@date-fns/tz'
@@ -19282,7 +19349,6 @@ snapshots:
       - '@types/sortablejs'
       - canvas
       - date-fns
-      - react-native
       - skia-canvas
       - typescript
 
@@ -19797,12 +19863,12 @@ snapshots:
       react-konva: 19.2.5(@types/react@19.2.17)(konva@9.3.22)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
-  react-konva-utils@2.0.0(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react-konva@19.2.7(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
+  react-konva-utils@2.1.0(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react-konva@19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7):
     dependencies:
       konva: 10.5.0(canvas@3.2.3)
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
-      react-konva: 19.2.7(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-konva: 19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       use-image: 1.1.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
   react-konva@19.2.5(@types/react@19.2.17)(konva@9.3.22)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
@@ -19817,15 +19883,15 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  react-konva@19.2.7(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  react-konva@19.3.0(@types/react@19.2.17)(konva@10.5.0(canvas@3.2.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       '@types/react-reconciler': 0.33.0(@types/react@19.2.17)
       its-fine: 2.0.0(@types/react@19.2.17)(react@19.2.7)
       konva: 10.5.0(canvas@3.2.3)
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
-      react-reconciler: 0.33.0(react@19.2.7)
-      scheduler: 0.27.0
+      react-reconciler: 0.34.0(react@19.2.7)
+      scheduler: 0.28.0
     transitivePeerDependencies:
       - '@types/react'
 
@@ -19833,6 +19899,11 @@ snapshots:
     dependencies:
       react: 19.2.7
       scheduler: 0.27.0
+
+  react-reconciler@0.34.0(react@19.2.7):
+    dependencies:
+      react: 19.2.7
+      scheduler: 0.28.0
 
   react-refresh@0.16.0: {}
 
@@ -19854,7 +19925,7 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  react-window@2.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  react-window@2.3.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
@@ -19970,6 +20041,8 @@ snapshots:
   render-tag@0.1.34: {}
 
   render-tag@0.1.35: {}
+
+  render-tag@0.1.37: {}
 
   renderkid@2.0.7:
     dependencies:
@@ -20198,6 +20271,8 @@ snapshots:
       xmlchars: 2.2.0
 
   scheduler@0.27.0: {}
+
+  scheduler@0.28.0: {}
 
   schema-utils@1.0.0:
     dependencies:
@@ -20871,7 +20946,7 @@ snapshots:
       slice-ansi: 2.1.0
       string-width: 3.1.0
 
-  tailwind-merge@3.6.0: {}
+  tailwind-merge@3.7.0: {}
 
   tapable@1.1.3: {}
 
@@ -21835,5 +21910,7 @@ snapshots:
       strip-indent: 2.0.0
 
   zod@4.4.3: {}
+
+  zod@4.6.5: {}
 
   zone.js@0.14.10: {}
