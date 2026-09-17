@@ -1,0 +1,24 @@
+{
+  "name": "@polotno-docs/polotno-watermark",
+  "version": "1.0.0",
+  "description": "Lean watermark editor: locked text and image watermark placeholders you can retext, reskin, and toggle in or out of the export",
+  "keywords": [],
+  "dependencies": {
+    "mobx": "^6.0.0",
+    "mobx-react-lite": "^4.0.0",
+    "polotno": "^4.9.0",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}
