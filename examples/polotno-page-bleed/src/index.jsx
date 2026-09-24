@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Button, NumericInput, Navbar } from 'polotno/primitives';
+import {
+  Button,
+  FieldRow,
+  Navbar,
+  NumericInput,
+  Switch,
+} from 'polotno/primitives';
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 import { Workspace } from 'polotno/canvas/workspace';
 import { SidePanel } from 'polotno/side-panel';
@@ -29,30 +35,32 @@ store.toggleBleed();
 const Topbar = observer(({ store }) => {
   return (
     <Navbar>
-      <Navbar.Group align="left">
-        <div style={{ marginRight: '20px' }}>Bleed size (px):</div>
-        <NumericInput
-          value={store.activePage.bleed}
-          onValueChange={(bleed) => {
-            store.activePage.set({ bleed });
-          }}
-        />
-        <Button
-          onClick={() => {
-            store.toggleBleed();
-          }}
-          variant={store.bleedVisible ? 'secondary' : 'ghost'}
-          style={{ marginLeft: '20px' }}
-        >
-          Toggle bleed on Workspace
-        </Button>
+      <Navbar.Group align="left" style={{ gap: 16 }}>
+        <FieldRow label="Bleed size (px)" style={{ gap: 8 }}>
+          <NumericInput
+            value={store.activePage.bleed}
+            min={0}
+            onValueChange={(bleed) => {
+              store.activePage.set({ bleed });
+            }}
+            style={{ width: 80 }}
+          />
+        </FieldRow>
+        <Navbar.Divider />
+        <FieldRow label="Show bleed" style={{ gap: 8 }}>
+          <Switch
+            checked={store.bleedVisible}
+            onCheckedChange={(visible) => {
+              store.toggleBleed(visible);
+            }}
+          />
+        </FieldRow>
       </Navbar.Group>
       <Navbar.Group align="right">
         <Button
           onClick={() => {
             store.saveAsImage({ includeBleed: true });
           }}
-          style={{ marginLeft: '20px' }}
         >
           Export
         </Button>
@@ -63,7 +71,10 @@ const Topbar = observer(({ store }) => {
 
 export const App = () => {
   return (
+    // `polotno-ui` puts the top bar inside Polotno's CSS context,
+    // so it picks up the editor's font and theme tokens
     <div
+      className="polotno-ui"
       style={{
         width: '100vw',
         height: '100vh',
@@ -72,7 +83,7 @@ export const App = () => {
       }}
     >
       <Topbar store={store} />
-      <div style={{ height: 'calc(100% - 50px)' }}>
+      <div style={{ flex: 1, minHeight: 0 }}>
         <PolotnoContainer className="polotno-app-container">
           <SidePanelWrap>
             <SidePanel store={store} />
