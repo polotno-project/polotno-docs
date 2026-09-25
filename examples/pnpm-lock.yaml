@@ -214,7 +214,7 @@ importers:
         version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(core-js@3.49.0)(supports-color@6.1.0)(vue@2.7.16)
       mobx-vue:
         specifier: 2.0.11
-        version: 2.0.11(mobx@5.15.7)(vue@2.7.16)
+        version: 2.0.11(mobx@7.0.3)(vue@2.7.16)
       polotno:
         specifier: ^4.14.0
         version: 4.14.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
@@ -696,8 +696,8 @@ importers:
   polotno-demo-postcard:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.12.0
-        version: 0.12.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+        specifier: ^0.13.0
+        version: 0.13.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
       mobx:
         specifier: ^7.0.3
         version: 7.0.3
@@ -1160,8 +1160,8 @@ importers:
   polotno-pdf-import:
     dependencies:
       '@polotno/pdf-import':
-        specifier: 0.8.0
-        version: 0.8.0(canvas@3.2.3)
+        specifier: 0.9.0
+        version: 0.9.0(canvas@3.2.3)
       polotno:
         specifier: ^4.14.0
         version: 4.14.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
@@ -1279,8 +1279,8 @@ importers:
   polotno-psd-import:
     dependencies:
       '@polotno/psd-import':
-        specifier: ^0.1.0
-        version: 0.1.0(canvas@3.2.3)
+        specifier: ^0.1.1
+        version: 0.1.1(canvas@3.2.3)
       polotno:
         specifier: ^4.14.0
         version: 4.14.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
@@ -1580,8 +1580,8 @@ importers:
   polotno-svg-import:
     dependencies:
       '@polotno/svg-import':
-        specifier: ^0.2.1
-        version: 0.2.1(canvas@3.2.3)
+        specifier: ^0.2.2
+        version: 0.2.2(canvas@3.2.3)
       polotno:
         specifier: ^4.14.0
         version: 4.14.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
@@ -1887,8 +1887,8 @@ importers:
   polotno-vector-pdf-export:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.12.0
-        version: 0.12.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+        specifier: ^0.13.0
+        version: 0.13.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
       mobx-react-lite:
         specifier: ^5.0.3
         version: 5.0.3(mobx@7.0.3)(react@19.3.0)
@@ -1954,7 +1954,7 @@ importers:
     dependencies:
       mobx-vue-lite:
         specifier: ^0.4.3
-        version: 0.4.3(mobx@6.16.1)(vue@3.5.31(typescript@5.5.4))
+        version: 0.4.3(mobx@7.0.3)(vue@3.5.31(typescript@5.5.4))
       polotno:
         specifier: ^4.14.0
         version: 4.14.0(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.5.4)
@@ -4033,29 +4033,23 @@ packages:
   '@polotno/core@0.13.0':
     resolution: {integrity: sha512-hCOMtgVwJXGKhI8x2gDLF3i9IES0V6clQe68ootK9QWrqGQJqnt9p43QKExuHGMlghguQ7SmR0bNSCeNV3ykbA==}
 
-  '@polotno/core@0.8.0':
-    resolution: {integrity: sha512-5R9rlsiR2bMugVHNGwuf9qtop1vIEi8F8qRuwswKRnu7LjHZCUlhRREjPvu1DFV4utfSsRgehMrtA3FJWxN55g==}
-
   '@polotno/html-export@0.7.0':
     resolution: {integrity: sha512-5X8z1ExAJ1os2RhDywv68+aLEmtkFvt1ZSlUo6U83PxctUP2WzYGI320x8Q50MXPZ9+/FT9TmOrvoHRsTPX7/Q==}
 
-  '@polotno/pdf-export@0.12.0':
-    resolution: {integrity: sha512-3Fb22/K05fL91FMiAI9G9F4IiLOrTackdlxPLEERdc9aD2kYP92c+IqCn7PYsBqaEC0TR3Yh8KFVq8cabJyL6A==}
+  '@polotno/pdf-export@0.13.0':
+    resolution: {integrity: sha512-6X2f/nW0VaMoxVBKqyzDmGV1GCW387DMDEE5MSpm8nsLKptLWYUVipyNIV8+SJLb6WMgZy6zgQN3tZCFjZjmhQ==}
     engines: {node: '>=22.13.0'}
 
-  '@polotno/pdf-import@0.8.0':
-    resolution: {integrity: sha512-v40C/YZm96OBjNRrA6JU0s67Q/H+YFlsGFXZUOiIM26fRXy6Lqt4Bkg2dLZKsQN0X7SBpsJS3WW0vxCZ/iQf7Q==}
+  '@polotno/pdf-import@0.9.0':
+    resolution: {integrity: sha512-pzCvnvO2JctxmcZycxbsidUs1gpb7Z3KhcmcskmKPeB3nby81XewkTwE+eTT2QSi+pk50V3TZy4m/yVv0L9ltQ==}
     engines: {node: '>=20'}
 
   '@polotno/pptx-export@0.6.0':
     resolution: {integrity: sha512-GM1BpIhdSNiaxTK5Oevw/4D6Gj6z1QSPbAyJO+6aw4ZzEfQ4pTh3x4nZfE4Xui8PH/s1N/yz0W9YPK4XWLjhhA==}
     engines: {node: '>=20.9.0'}
 
-  '@polotno/psd-import@0.1.0':
-    resolution: {integrity: sha512-cqkcGEkx2n+54tvP8T6ZlO19DEbeCUvwrC2v/cBaXb3zxprBVpEGHiYJxFiBpBsCwmq0vGNDk5+Su5NxvW6+ig==}
-
-  '@polotno/schema@0.6.1':
-    resolution: {integrity: sha512-Gwry6IEegkwfINDwVEHigD72/VsyWIV8gQK/6OtYRv9VevgqYEQFMLV03/Q2oHiU7opE31Q+O7pGWfskLHrmvA==}
+  '@polotno/psd-import@0.1.1':
+    resolution: {integrity: sha512-6opigZ6m20KAuivhPqflCHuQxFkbohh73KeBtRrWQlKz/wdI8ozcCJyppwG1g2GmdXefqbRQGzmBE5myW69toQ==}
 
   '@polotno/schema@0.6.2':
     resolution: {integrity: sha512-sK2XLja36twIE+qJs3PciZobFtfD5tgK3r8hbTW/D6uOXDA3ozY9g3ghg2uiVxxeGI4Icj7iurG06ESQ1+EbPw==}
@@ -4066,8 +4060,8 @@ packages:
   '@polotno/svg-export@0.8.0':
     resolution: {integrity: sha512-t+7nis6MmnXC375rN2yTsQY45O0/YiV4cCykZSLjtBS0JzV1tnj20Evj+tziThEg83JfHYbqKmNpY9202hLy0A==}
 
-  '@polotno/svg-import@0.2.1':
-    resolution: {integrity: sha512-mkSFZNMXnu05L+aj0gtHd0Mj2GJEnl7ZhmQRA7GR/1gpoln1h5pd95EL82XoEXszcsgncoguaEZaEJXZSm1pOg==}
+  '@polotno/svg-import@0.2.2':
+    resolution: {integrity: sha512-ZjR5pFHz+rNb4IRcHT8PP3t+70ZzO++NJWZ/lhrPS2LXLvVxYbEPQq1VnWWb701p+OJxjvkTmdjuHP7TGzi0mA==}
 
   '@polotno/video-export@0.4.0':
     resolution: {integrity: sha512-z39xwckuqjVjC9fTRn42hYt4GWNXhHXjdCYQAH7AYmOrmAEMrSxWaI9ZylsFlyzMZ27JzCXDHzqrw/tPgrP4GQ==}
@@ -7531,9 +7525,6 @@ packages:
     resolution: {integrity: sha512-P2bSOMAc/ciLz6DzgjVlGJP9+BrJWu5UDGK70C2iweC5QBIeFf0ZXRvGjEj2uYgrY2MkAAhsSWHDWlFtEroZWw==}
     engines: {node: '>=0.6.0'}
 
-  jszip@3.10.1:
-    resolution: {integrity: sha512-xXDvecyTpGLrqFrvkrUSoxxfJI5AH7U8zxxtVclpsUtMCq4JQ290LY8AW5c7Ggnr/Y/oK+bQMbqK2qmtk3pN4g==}
-
   jszip@3.10.2:
     resolution: {integrity: sha512-3l+rb15IOWtUhU0H5MFqES/T6Kh7abYwjosBey/vD6hDt8zoEffkSC5Ws5SGtgVw3gBx2NEbhTeSW1+kWkpyTQ==}
 
@@ -8035,12 +8026,6 @@ packages:
     peerDependencies:
       mobx: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
       vue: ^2.0.0
-
-  mobx@5.15.7:
-    resolution: {integrity: sha512-wyM3FghTkhmC+hQjyPGGFdpehrcX1KOXsDuERhfK2YbJemkUhEB+6wzEN639T21onxlfYBmriA1PFnvxTUhcKw==}
-
-  mobx@6.16.1:
-    resolution: {integrity: sha512-syNcDdX3KT+Jq3je6eGjBhuc24Z68td2VG0zNFqRswaE433D9SNH5VRy/xrGbJsUixfppLLccXhAW9JSf6n+SQ==}
 
   mobx@7.0.3:
     resolution: {integrity: sha512-KopyyzqZ8xT1fqxFNl8ItKKMpGifRe2ySaNAHs80/cx0mL1bpJtJ46S+FSyzXKRjW0TODWj5zwq/Y9hUdJUy4w==}
@@ -9196,9 +9181,6 @@ packages:
 
   remove-trailing-separator@1.1.0:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==}
-
-  render-tag@0.1.34:
-    resolution: {integrity: sha512-0ZJkoWEUg9VROw7TMgb9nxQ5ucSgYQORMCG2ybInab6+s8V2GTQl05cHLCUBv/qGgoQcr1DGFt1U0jh+NWuESQ==}
 
   render-tag@0.1.37:
     resolution: {integrity: sha512-bZu2L9LBOTkcPeGBb9PlnIe8LY4Su25utIrBYsZPkB95F00S2qHqxn6WRARqmAmMbx89/pURhYH5BVzQ5wkoew==}
@@ -13698,20 +13680,6 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/core@0.8.0(canvas@3.2.3)':
-    dependencies:
-      '@polotno/schema': 0.6.1
-      fflate: 0.8.3
-      gradient-parser: 1.2.0
-      konva: 10.5.0(canvas@3.2.3)
-      mensch: 0.3.4
-      render-tag: 0.1.34
-      svg-round-corners: 0.4.3
-      tinycolor2: 1.6.0
-    transitivePeerDependencies:
-      - canvas
-      - skia-canvas
-
   '@polotno/html-export@0.7.0(canvas@3.2.3)':
     dependencies:
       '@polotno/core': 0.13.0(canvas@3.2.3)
@@ -13720,11 +13688,11 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/pdf-export@0.12.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)':
+  '@polotno/pdf-export@0.13.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)':
     dependencies:
       '@napi-rs/canvas': 1.0.9
-      '@polotno/core': 0.12.0(canvas@3.2.3)
-      '@polotno/schema': 0.6.2
+      '@polotno/core': 0.13.0(canvas@3.2.3)
+      '@polotno/schema': 0.7.0
       '@xmldom/xmldom': 0.9.12
       file-type: 22.1.1(supports-color@7.2.0)
       linkedom: 0.18.13(canvas@3.2.3)
@@ -13735,10 +13703,10 @@ snapshots:
       - skia-canvas
       - supports-color
 
-  '@polotno/pdf-import@0.8.0(canvas@3.2.3)':
+  '@polotno/pdf-import@0.9.0(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.12.0(canvas@3.2.3)
-      '@polotno/schema': 0.6.2
+      '@polotno/core': 0.13.0(canvas@3.2.3)
+      '@polotno/schema': 0.7.0
       opentype.js: 2.0.0
       pdfjs-dist: 4.10.38
     transitivePeerDependencies:
@@ -13759,19 +13727,15 @@ snapshots:
       - '@types/node'
       - skia-canvas
 
-  '@polotno/psd-import@0.1.0(canvas@3.2.3)':
+  '@polotno/psd-import@0.1.1(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.8.0(canvas@3.2.3)
-      '@polotno/schema': 0.6.1
+      '@polotno/core': 0.13.0(canvas@3.2.3)
+      '@polotno/schema': 0.7.0
       ag-psd: 30.2.0
       fontkit: 2.0.4
     transitivePeerDependencies:
       - canvas
       - skia-canvas
-
-  '@polotno/schema@0.6.1':
-    dependencies:
-      zod: 4.6.5
 
   '@polotno/schema@0.6.2':
     dependencies:
@@ -13790,12 +13754,12 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/svg-import@0.2.1(canvas@3.2.3)':
+  '@polotno/svg-import@0.2.2(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.12.0(canvas@3.2.3)
-      '@polotno/schema': 0.6.2
-      konva: 10.5.0(canvas@3.2.3)
-      render-tag: 0.1.37
+      '@polotno/core': 0.13.0(canvas@3.2.3)
+      '@polotno/schema': 0.7.0
+      konva: 10.7.0(canvas@3.2.3)
+      render-tag: 0.2.0
     transitivePeerDependencies:
       - canvas
       - skia-canvas
@@ -17943,13 +17907,6 @@ snapshots:
       json-schema: 0.4.0
       verror: 1.10.0
 
-  jszip@3.10.1:
-    dependencies:
-      lie: 3.3.0
-      pako: 1.0.11
-      readable-stream: 2.3.8
-      setimmediate: 1.0.5
-
   jszip@3.10.2:
     dependencies:
       lie: 3.3.0
@@ -18469,23 +18426,19 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  mobx-vue-lite@0.4.3(mobx@6.16.1)(vue@3.5.31(typescript@5.5.4)):
+  mobx-vue-lite@0.4.3(mobx@7.0.3)(vue@3.5.31(typescript@5.5.4)):
     dependencies:
       '@vueuse/core': 10.7.2(vue@3.5.31(typescript@5.5.4))
-      mobx: 6.16.1
+      mobx: 7.0.3
       vue: 3.5.31(typescript@5.5.4)
     transitivePeerDependencies:
       - '@vue/composition-api'
 
-  mobx-vue@2.0.11(mobx@5.15.7)(vue@2.7.16):
+  mobx-vue@2.0.11(mobx@7.0.3)(vue@2.7.16):
     dependencies:
-      mobx: 5.15.7
+      mobx: 7.0.3
       tslib: 1.14.1
       vue: 2.7.16
-
-  mobx@5.15.7: {}
-
-  mobx@6.16.1: {}
 
   mobx@7.0.3: {}
 
@@ -19599,7 +19552,7 @@ snapshots:
       '@types/node': 22.19.15
       https: 1.0.0
       image-size: 1.2.1
-      jszip: 3.10.1
+      jszip: 3.10.2
 
   prebuild-install@7.1.3:
     dependencies:
@@ -19954,8 +19907,6 @@ snapshots:
   relateurl@0.2.7: {}
 
   remove-trailing-separator@1.1.0: {}
-
-  render-tag@0.1.34: {}
 
   render-tag@0.1.37: {}
 
