@@ -4,7 +4,7 @@
   "description": "Basic demo of canvas editor framework",
   "keywords": [],
   "dependencies": {
-    "polotno": "^4.13.0",
+    "polotno": "^4.14.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },

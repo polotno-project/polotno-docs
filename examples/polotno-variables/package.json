@@ -4,7 +4,7 @@
   "description": "Demo showing how to use dynamic template variables in Polotno editor",
   "keywords": [],
   "dependencies": {
-    "polotno": "^4.13.0",
+    "polotno": "^4.14.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },
