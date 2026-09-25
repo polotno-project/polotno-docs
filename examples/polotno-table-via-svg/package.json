@@ -7,7 +7,7 @@
     "@handsontable/react": "^15.3.0",
     "handsontable": "^15.3.0",
     "mobx-react-lite": "^5.0.3",
-    "polotno": "^4.14.0",
+    "polotno": "^4.14.1",
     "react": "^19.3.0",
     "react-datasheet": "1.4.12",
     "react-dom": "^19.3.0"
