@@ -6,17 +6,14 @@ import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 import { createStore } from 'polotno/model/store';
 import 'polotno/ui.css';
-import { registerImageTools } from './image-edit-api';
+import { POLOTNO_KEY, registerImageTools } from './image-edit-api';
 
 // Register the handlers once, before the editor renders. Each registered
 // handler adds its tool to the "AI edit" menu of the image toolbar.
 registerImageTools();
 
 const store = createStore({
-  // this is a demo key just for that project
-  // (!) please don't use it in your projects
-  // to create your own API key please go here: https://polotno.com/cabinet
-  key: 'nFA5H9elEytDyPyvKL7T',
+  key: POLOTNO_KEY,
   showCredit: true,
 });
 
