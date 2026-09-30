@@ -4,9 +4,9 @@
   "description": "Demo: export a Polotno design as a vector, flattened, or print-ready (PDF/X-4, CMYK) PDF, fully client-side via @polotno/pdf-export/browser",
   "keywords": [],
   "dependencies": {
-    "@polotno/pdf-export": "^0.13.0",
-    "mobx-react-lite": "^5.0.3",
-    "polotno": "^4.15.0",
+    "@polotno/pdf-export": "^0.14.0",
+    "mobx-react-lite": "^5.1.0",
+    "polotno": "^4.15.1",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },

@@ -4,8 +4,8 @@
   "description": "Demo showing how to create selectable image placeholders that can be replaced with user uploads",
   "keywords": [],
   "dependencies": {
-    "mobx": "^7.0.3",
-    "polotno": "^4.15.0",
+    "mobx": "^7.0.5",
+    "polotno": "^4.15.1",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },
