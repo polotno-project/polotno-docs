@@ -6,7 +6,7 @@
   "dependencies": {
     "@polotno/pdf-export": "^0.14.1",
     "mobx-react-lite": "^5.1.0",
-    "polotno": "^4.15.2",
+    "polotno": "^4.15.3",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },

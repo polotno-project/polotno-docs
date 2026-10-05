@@ -5,7 +5,7 @@
   "keywords": [],
   "dependencies": {
     "@polotno/pdf-import": "0.10.0",
-    "polotno": "^4.15.2",
+    "polotno": "^4.15.3",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },
