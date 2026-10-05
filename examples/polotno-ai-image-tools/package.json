@@ -4,7 +4,7 @@
   "description": "AI image tools in Polotno: Expand, Generative fill, Upscale and Background removal wired to your own provider",
   "keywords": [],
   "dependencies": {
-    "polotno": "^4.15.1",
+    "polotno": "^4.15.2",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },

@@ -4,9 +4,9 @@
   "description": "Minimal t-shirt customization demo with front and back pages",
   "keywords": [],
   "dependencies": {
-    "mobx": "^7.0.5",
+    "mobx": "^7.0.6",
     "mobx-react-lite": "^5.1.0",
-    "polotno": "^4.15.1",
+    "polotno": "^4.15.2",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },

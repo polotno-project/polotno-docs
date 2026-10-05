@@ -4,9 +4,9 @@
   "description": "Real estate demo with AI editing tools for Polotno SDK",
   "keywords": [],
   "dependencies": {
-    "mobx": "^7.0.5",
+    "mobx": "^7.0.6",
     "mobx-react-lite": "^5.1.0",
-    "polotno": "^4.15.1",
+    "polotno": "^4.15.2",
     "qrcode": "^1.5.4",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
