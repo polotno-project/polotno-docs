@@ -1,0 +1,23 @@
+{
+  "name": "@polotno-docs/polotno-text-sizing",
+  "version": "1.0.0",
+  "description": "Demo of per-element text sizing in Polotno: fit, line caps, size bounds and measureText",
+  "keywords": [],
+  "dependencies": {
+    "mobx-react-lite": "^5.1.0",
+    "polotno": "^4.16.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}

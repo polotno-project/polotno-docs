@@ -4,9 +4,9 @@
   "description": "Live demo of a digital signage editor built on Polotno SDK",
   "keywords": [],
   "dependencies": {
-    "konva": "^10.5.0",
+    "konva": "^10.9.0",
     "mobx-react-lite": "^5.1.0",
-    "polotno": "^4.15.3",
+    "polotno": "^4.16.1",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },
