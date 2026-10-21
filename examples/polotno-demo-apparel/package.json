@@ -1,0 +1,23 @@
+{
+  "name": "@polotno-docs/polotno-demo-apparel",
+  "version": "1.0.0",
+  "description": "Live demo of a t-shirt product customizer built on Polotno SDK",
+  "keywords": [],
+  "dependencies": {
+    "mobx-react-lite": "^5.1.0",
+    "polotno": "^4.17.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}
