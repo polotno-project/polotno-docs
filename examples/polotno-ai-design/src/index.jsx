@@ -207,7 +207,11 @@ const AIDesignSection = {
   Panel: AIDesignPanel,
 };
 
-const sections = [AIDesignSection, ...DEFAULT_SECTIONS];
+// No generic templates and no resize next to the AI panel.
+const sections = [
+  AIDesignSection,
+  ...DEFAULT_SECTIONS.filter((s) => !['templates', 'size'].includes(s.name)),
+];
 
 export const App = () => (
   <PolotnoContainer>

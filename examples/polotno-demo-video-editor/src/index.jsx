@@ -6,14 +6,12 @@ import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { PagesTimeline } from 'polotno/pages-timeline';
 import {
   SidePanel,
-  TemplatesSection,
   TextSection,
   VideosSection,
   ElementsSection,
   UploadSection,
   BackgroundSection,
   LayersSection,
-  SizeSection,
 } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 import { createStore } from 'polotno/model/store';
@@ -34,15 +32,14 @@ window.store = store;
 
 // Photos (stock still images) is intentionally omitted. The Animations section is added
 // automatically by SidePanel because animations are enabled.
+// No generic templates and no resize: the demo opens on its own video design.
 const sections = [
-  TemplatesSection,
   TextSection,
   VideosSection,
   ElementsSection,
   UploadSection,
   BackgroundSection,
   LayersSection,
-  SizeSection,
 ];
 
 // Open on a real multi-page video design (animated headings + stock clips over timed

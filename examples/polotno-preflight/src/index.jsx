@@ -5,7 +5,12 @@ import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 import { Toolbar } from 'polotno/toolbar/toolbar';
 import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
-import { SidePanel } from 'polotno/side-panel';
+import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
+
+// Only the panels this demo needs: no generic templates, no resize, no drawing.
+const SECTIONS = DEFAULT_SECTIONS.filter((s) =>
+  ['text', 'photos', 'elements', 'upload', 'background', 'layers'].includes(s.name)
+);
 import { Workspace } from 'polotno/canvas/workspace';
 import { createStore } from 'polotno/model/store';
 import { setGoogleFonts } from 'polotno/utils/fonts';
@@ -53,7 +58,7 @@ window.store = store;
 export const App = ({ store }) => (
   <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
     <SidePanelWrap>
-      <SidePanel store={store} defaultSection="" />
+      <SidePanel store={store} sections={SECTIONS} defaultSection="" />
     </SidePanelWrap>
     <WorkspaceWrap>
       <Toolbar store={store} />

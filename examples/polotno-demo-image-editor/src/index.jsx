@@ -5,6 +5,9 @@ import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 import { Toolbar } from 'polotno/toolbar/toolbar';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
+
+// No generic templates and no resize: this demo edits the photo in front of you.
+const SECTIONS = DEFAULT_SECTIONS.filter((s) => !['templates', 'size'].includes(s.name));
 import { Workspace } from 'polotno/canvas/workspace';
 import { createStore } from 'polotno/model/store';
 import { Button } from 'polotno/primitives';
@@ -165,7 +168,7 @@ export const App = () => {
   return (
     <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
-        <SidePanel store={store} sections={DEFAULT_SECTIONS} defaultSection="photos" />
+        <SidePanel store={store} sections={SECTIONS} defaultSection="photos" />
       </SidePanelWrap>
       <WorkspaceWrap>
         {/* Replace Polotno's default (image + PDF only) download with the full studio

@@ -152,6 +152,11 @@ const LULU_PAPER_LABELS = {
   'bw-cream': '60# cream, black & white',
   color: '80# coated white, color',
 };
+// Only what a cover needs: no generic templates, no resize (the printer sets
+// the size), no drawing.
+const COVER_SECTIONS = DEFAULT_SECTIONS.filter((s) =>
+  ['text', 'photos', 'elements', 'upload', 'background', 'layers'].includes(s.name)
+);
 const isLulu = params.get('provider') === 'lulu';
 const paper = LULU_PAPER_LABELS[params.get('paper')] ? params.get('paper') : 'bw-white';
 const sections = isLulu
@@ -163,9 +168,9 @@ const sections = isLulu
         paper,
         paperLabel: LULU_PAPER_LABELS[paper],
       }),
-      ...DEFAULT_SECTIONS,
+      ...COVER_SECTIONS,
     ]
-  : DEFAULT_SECTIONS;
+  : COVER_SECTIONS;
 
 const App = () => (
   <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>

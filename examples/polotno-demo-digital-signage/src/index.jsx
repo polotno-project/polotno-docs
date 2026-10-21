@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 import { Workspace } from 'polotno/canvas/workspace';
 import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
+
+// Screens have a fixed size, so no resize panel.
+const SECTIONS = DEFAULT_SECTIONS.filter((s) => s.name !== 'size');
 import { Toolbar } from 'polotno/toolbar/toolbar';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { PagesTimeline } from 'polotno/pages-timeline';
@@ -22,7 +25,7 @@ if (!store.pages.length) store.addPage();
 export const App = () => (
   <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
     <SidePanelWrap>
-      <SidePanel store={store} sections={DEFAULT_SECTIONS} defaultSection="templates" />
+      <SidePanel store={store} sections={SECTIONS} defaultSection="templates" />
     </SidePanelWrap>
     <WorkspaceWrap>
       <Toolbar store={store} downloadButtonEnabled />
