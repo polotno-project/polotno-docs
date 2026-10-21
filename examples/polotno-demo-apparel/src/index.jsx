@@ -16,8 +16,15 @@ import { createStore } from 'polotno/model/store';
 import 'polotno/ui.css';
 import '../../shared/studio-theme.css';
 
-import { COLORS, BG } from './products';
-import { setupScene, setColor, switchView, downloadPrintAssets } from './scene';
+import { COLORS, BG, setPrintAspect } from './products';
+import {
+  setupScene,
+  setColor,
+  switchView,
+  downloadPrintAssets,
+  exportPrintSides,
+} from './scene';
+import { PROVIDER, fetchPrintArea } from './provider';
 import { ImagesSection } from './images-section';
 import { StickersSection } from './stickers-section';
 import { ConfigPanel } from './config-panel';
@@ -72,9 +79,26 @@ const SECTIONS = [
 function App() {
   const [view, setView] = React.useState('front');
   const [color, setColorState] = React.useState(COLORS[0]);
+  const [printArea, setPrintArea] = React.useState(null);
 
   React.useEffect(() => {
-    setupScene(store, COLORS[0]);
+    // In print-on-demand mode, size the print box to the provider's real print
+    // file before the scene is built. If the backend is unreachable, the demo
+    // still works as a plain customizer.
+    const start = async () => {
+      if (PROVIDER) {
+        try {
+          const area = await fetchPrintArea(COLORS[0].id);
+          const front = area.areas.front;
+          if (front) setPrintAspect(front.width, front.height);
+          setPrintArea(area);
+        } catch (e) {
+          console.error(`${PROVIDER.id} print area unavailable`, e);
+        }
+      }
+      setupScene(store, COLORS[0]);
+    };
+    start();
   }, []);
 
   const handleView = (id) => {
@@ -117,6 +141,8 @@ function App() {
         color={color}
         onColor={handleColor}
         onExport={(format) => downloadPrintAssets(store, printStore, format)}
+        printArea={printArea}
+        onExportSides={(sizes) => exportPrintSides(store, printStore, sizes)}
       />
 
       <div

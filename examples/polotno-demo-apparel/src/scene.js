@@ -235,7 +235,7 @@ export async function setColor(store, color) {
 // Polotno can only export from a store that is mounted in a <Workspace>, so
 // the print pages are built in a separate `printStore` rendered off-screen
 // (see index.jsx). The customer's canvas is never touched.
-export async function downloadPrintAssets(store, printStore, format) {
+async function buildPrintPages(store, printStore) {
   // Capture the side currently on screen so both sides are up to date.
   state.designs[state.view] = userChildrenJSON(store);
 
@@ -268,6 +268,32 @@ export async function downloadPrintAssets(store, printStore, format) {
   // let any artwork images decode.
   await wait(120);
   await printStore.waitLoading();
+  return PRINT_PR;
+}
+
+/**
+ * The print file for each side that has artwork, as PNG data URLs at the
+ * given pixel sizes: { front: { width, height }, back: … } -> { front, back }.
+ */
+export async function exportPrintSides(store, printStore, sizes) {
+  await buildPrintPages(store, printStore);
+  const files = {};
+  for (const page of printStore.pages.filter((p) => p.children.length)) {
+    const side = page.id.replace('print-', '');
+    const size = sizes[side];
+    if (!size) continue;
+    files[side] = await printStore.toDataURL({
+      pageId: page.id,
+      pixelRatio: size.width / PRINT.width,
+      mimeType: 'image/png',
+    });
+  }
+  if (!Object.keys(files).length) throw new Error('Add some artwork first');
+  return files;
+}
+
+export async function downloadPrintAssets(store, printStore, format) {
+  const PRINT_PR = await buildPrintPages(store, printStore);
 
   if (format === 'png') {
     const sides = printStore.pages.filter((p) => p.children.length);

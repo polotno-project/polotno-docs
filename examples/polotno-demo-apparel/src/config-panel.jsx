@@ -2,6 +2,8 @@ import React from 'react';
 import { Button } from 'polotno/primitives';
 
 import { PRODUCT, VIEWS, COLORS, PRINT_MM_W, PRINT_MM_H, mockupImage } from './products';
+import { PROVIDER } from './provider';
+import { ProviderSend } from './provider-panel';
 
 // The product column on the right: the shop-side half of the demo (price,
 // side picker, garment colour, cart). Everything here is plain React; the
@@ -64,7 +66,7 @@ const ColorSwatch = ({ color, active, onClick }) => (
   />
 );
 
-export function ConfigPanel({ view, onView, color, onColor, onExport }) {
+export function ConfigPanel({ view, onView, color, onColor, onExport, printArea, onExportSides }) {
   const [toast, setToast] = React.useState(null);
   const [exporting, setExporting] = React.useState(null);
 
@@ -125,7 +127,17 @@ export function ConfigPanel({ view, onView, color, onColor, onExport }) {
           style={{ width: 72, height: 72, objectFit: 'contain', flexShrink: 0 }}
         />
         <div style={{ display: 'flex', flexWrap: 'wrap', columnGap: 24, rowGap: 12 }}>
-          <InfoCol title="Print area" lines={[`Width ${PRINT_MM_W}mm`, `Height ${PRINT_MM_H}mm`]} />
+          <InfoCol
+            title="Print area"
+            lines={
+              printArea?.areas?.[view]
+                ? [
+                    `${printArea.areas[view].width} × ${printArea.areas[view].height} px`,
+                    `from ${PROVIDER.name}'s catalog`,
+                  ]
+                : [`Width ${PRINT_MM_W}mm`, `Height ${PRINT_MM_H}mm`]
+            }
+          />
           <InfoCol title="Print method" lines={[PRODUCT.printMethod]} />
         </div>
       </div>
@@ -150,23 +162,32 @@ export function ConfigPanel({ view, onView, color, onColor, onExport }) {
         {price(PRODUCT.priceFrom)} · Add to cart
       </Button>
 
-      <Label>Print file</Label>
-      <div style={{ display: 'flex', gap: 8 }}>
-        {PRINT_FORMATS.map((f) => (
-          <Button
-            key={f.id}
-            variant="outline"
-            disabled={!!exporting}
-            onClick={() => handleExport(f.id)}
-            style={{ flex: 1 }}
-          >
-            {exporting === f.id ? 'Preparing…' : f.label}
-          </Button>
-        ))}
-      </div>
-      <div style={{ fontSize: 13, color: '#525252', marginTop: 8 }}>
-        Artwork inside the print area at 300 DPI, transparent background.
-      </div>
+      {PROVIDER ? (
+        <>
+          <Label>Print on demand</Label>
+          <ProviderSend color={color} printArea={printArea} onExport={onExportSides} />
+        </>
+      ) : (
+        <>
+          <Label>Print file</Label>
+          <div style={{ display: 'flex', gap: 8 }}>
+            {PRINT_FORMATS.map((f) => (
+              <Button
+                key={f.id}
+                variant="outline"
+                disabled={!!exporting}
+                onClick={() => handleExport(f.id)}
+                style={{ flex: 1 }}
+              >
+                {exporting === f.id ? 'Preparing…' : f.label}
+              </Button>
+            ))}
+          </div>
+          <div style={{ fontSize: 13, color: '#525252', marginTop: 8 }}>
+            Artwork inside the print area at 300 DPI, transparent background.
+          </div>
+        </>
+      )}
 
       {toast && (
         <div

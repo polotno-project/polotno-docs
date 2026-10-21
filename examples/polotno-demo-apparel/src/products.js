@@ -18,6 +18,14 @@ export const PRINT_MM_W = 249;
 export const PRINT_MM_H = 265;
 export const PRINT = { x: 451, y: 418, width: 351, height: 374 };
 
+/**
+ * Match the print box to a provider's print file, keeping its width and top
+ * edge on the chest. Call before the scene is set up.
+ */
+export function setPrintAspect(width, height) {
+  PRINT.height = Math.round((PRINT.width * height) / width);
+}
+
 // Studio / page background. One light grey everywhere (page, workspace, and
 // Polotno's transparency fill) so the area around the shirt is uniform.
 export const BG = '#f4f4f4';
