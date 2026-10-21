@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom/client';
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
 import { Toolbar } from 'polotno/toolbar/toolbar';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
-import { SidePanel } from 'polotno/side-panel';
+import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 import { createStore } from 'polotno/model/store';
+
+import { luluSection } from './lulu-section';
 
 // A paperback cover wrap editor sized from the URL, so a cover calculator can
 // open it at the exact size a printer expects. All values are inches:
@@ -17,6 +19,9 @@ import { createStore } from 'polotno/model/store';
 //   bleed    bleed on the outside edges
 //   safe     keep text this far inside the trim and fold lines
 //   stm      spine text margin; 0 means no spine text for this page count
+//
+// Add ?provider=lulu&pages=200&paper=bw-white and the side panel gets a Lulu
+// section that sends the cover to Lulu's Print API for checking.
 //
 // The page is the trimmed wrap (back + spine + front) and the bleed uses
 // Polotno's own page bleed, so a PDF export with bleed comes out at the full
@@ -37,7 +42,8 @@ const safe = num('safe', 0.125);
 const spineTextMargin = num('stm', 0.0625);
 const printer = (params.get('printer') || '').slice(0, 20);
 
-const px = (inches) => Math.round(inches * DPI);
+// Exact, not rounded: printers check the PDF size to a thousandth of an inch.
+const px = (inches) => inches * DPI;
 const W = px(2 * trimW + spine);
 const H = px(trimH);
 const back = { x: 0, w: px(trimW) };
@@ -141,10 +147,30 @@ if (spineTextMargin > 0 && spineBand.w > 90) {
 }
 store.selectElements([]);
 
+const LULU_PAPER_LABELS = {
+  'bw-white': '60# white, black & white',
+  'bw-cream': '60# cream, black & white',
+  color: '80# coated white, color',
+};
+const isLulu = params.get('provider') === 'lulu';
+const paper = LULU_PAPER_LABELS[params.get('paper')] ? params.get('paper') : 'bw-white';
+const sections = isLulu
+  ? [
+      luluSection({
+        trimWidth: trimW,
+        trimHeight: trimH,
+        pageCount: Math.round(num('pages', 200)),
+        paper,
+        paperLabel: LULU_PAPER_LABELS[paper],
+      }),
+      ...DEFAULT_SECTIONS,
+    ]
+  : DEFAULT_SECTIONS;
+
 const App = () => (
   <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
     <SidePanelWrap>
-      <SidePanel store={store} defaultSection="" />
+      <SidePanel store={store} sections={sections} defaultSection={isLulu ? 'lulu' : ''} />
     </SidePanelWrap>
     <WorkspaceWrap>
       <Toolbar store={store} downloadButtonEnabled />
