@@ -132,6 +132,7 @@ export function ProviderSend({ color, printArea, onExport }) {
           teemill: 'Teemill is creating the product…',
           fourthwall: 'Fourthwall is rendering mockups…',
           spreadconnect: 'Spreadconnect is rendering previews…',
+          scalablepress: 'Scalable Press is rendering mockups…',
         }[PROVIDER.id]
       );
       setResult(await sendDesign(files, color.id));

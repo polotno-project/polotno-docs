@@ -15,6 +15,7 @@ const PROVIDERS = {
   teemill: { id: 'teemill', name: 'Teemill', send: 'product' },
   fourthwall: { id: 'fourthwall', name: 'Fourthwall', send: 'mockups' },
   spreadconnect: { id: 'spreadconnect', name: 'Spreadconnect', send: 'mockups' },
+  scalablepress: { id: 'scalablepress', name: 'Scalable Press', send: 'mockups' },
 };
 
 export const PROVIDER =
