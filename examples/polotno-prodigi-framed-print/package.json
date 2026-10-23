@@ -1,0 +1,24 @@
+{
+  "name": "@polotno-docs/polotno-prodigi-framed-print",
+  "version": "1.0.0",
+  "description": "40 × 50 cm framed print editor that sends the print file to Prodigi's sandbox API, shows which lab would print it for buyers in four countries, and places a sandbox order Prodigi checks the artwork for",
+  "keywords": [],
+  "dependencies": {
+    "mobx": "^7.0.6",
+    "mobx-react-lite": "^5.1.0",
+    "polotno": "^4.18.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}
