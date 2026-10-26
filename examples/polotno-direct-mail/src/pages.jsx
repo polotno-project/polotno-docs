@@ -11,9 +11,8 @@ import { usePagePreview } from 'polotno/pages-timeline/page-preview';
 // flicker while you edit.
 
 const Thumb = observer(({ store, page, label }) => {
-  const [preview, setPreview] = React.useState(null);
   const ref = React.useRef(null);
-  usePagePreview({ page, setPreview, groupRef: ref });
+  const preview = usePagePreview({ page, ref });
   const active = page.id === store.activePage?.id;
   return (
     <button
