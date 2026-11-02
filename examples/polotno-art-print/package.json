@@ -4,11 +4,11 @@
   "description": "A3 art print editor that sends the print PDF to Peecho's Print API and shows the test order Peecho creates, with its price and print lab",
   "keywords": [],
   "dependencies": {
-    "mobx": "^7.0.6",
-    "mobx-react-lite": "^5.1.0",
-    "polotno": "^4.18.0",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "mobx": "^7.1.4",
+    "mobx-react-lite": "^5.1.2",
+    "polotno": "^4.19.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5",

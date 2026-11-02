@@ -4,11 +4,11 @@
   "description": "Demo showing how to add superscript and subscript support to rich text in Polotno",
   "keywords": [],
   "dependencies": {
-    "mobx-react-lite": "^5.1.0",
-    "polotno": "^4.18.0",
+    "mobx-react-lite": "^5.1.2",
+    "polotno": "^4.19.1",
     "quill": "^2.0.0",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5",

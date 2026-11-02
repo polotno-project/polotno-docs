@@ -4,11 +4,11 @@
   "description": "Reusable callouts (speech balloons), built in two ways: from built-in elements, and from a custom element type",
   "keywords": [],
   "dependencies": {
-    "mobx": "^7.0.6",
-    "mobx-react-lite": "^5.1.0",
-    "polotno": "^4.18.0",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0",
+    "mobx": "^7.1.4",
+    "mobx-react-lite": "^5.1.2",
+    "polotno": "^4.19.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "react-konva": "^19.3.2"
   },
   "devDependencies": {

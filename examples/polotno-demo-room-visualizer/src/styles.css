@@ -1,0 +1,837 @@
+:root {
+  --rd-bg: #161616;
+  --rd-side: #212121;
+  --rd-card: #2a2a2a;
+  --rd-glass: rgba(42, 42, 42, 0.92);
+  --rd-tile: rgba(255, 255, 255, 0.06);
+  --rd-tile-hover: rgba(255, 255, 255, 0.1);
+  --rd-line: rgba(255, 255, 255, 0.08);
+  --rd-strong-line: rgba(255, 255, 255, 0.22);
+  --rd-text: #f4f4f4;
+  --rd-muted: rgba(244, 244, 244, 0.55);
+  --rd-accent: #c8875a;
+  --rd-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--rd-bg);
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.rd-app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: var(--rd-text);
+  font-size: 14px;
+}
+
+.rd-app button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+.rd-app button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+/* Sidebar */
+.rd-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.rd-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  border-bottom: 1px solid var(--rd-line);
+}
+
+.rd-side-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rd-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 8px;
+  /* Plex sits high in its line box; nudge the pill onto the title's centre */
+  margin-top: 2px;
+  line-height: 1;
+  border-radius: 999px;
+  background: var(--rd-tile-hover);
+  color: var(--rd-muted);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* "Built with Polotno SDK", pinned to the bottom of the sidebar. The mark is
+   the polotno.com header's: a white square before the name. */
+.rd-built {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rd-line);
+  color: rgba(244, 244, 244, 0.32);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.rd-built strong {
+  font-weight: 500;
+  color: rgba(244, 244, 244, 0.55);
+}
+
+.rd-brand-mark {
+  width: 11px;
+  height: 11px;
+  flex: none;
+  margin-left: 2px;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.rd-built strong,
+.rd-brand-mark {
+  transition:
+    color 0.15s,
+    background 0.15s;
+}
+
+.rd-built:hover strong {
+  color: #ffffff;
+}
+
+.rd-built:hover .rd-brand-mark {
+  background: #ffffff;
+}
+
+.rd-sidebar {
+  flex: none;
+  width: 320px;
+  background: var(--rd-side);
+  border-right: 1px solid var(--rd-line);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.rd-sidebar section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rd-sidebar h3 {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--rd-muted);
+}
+
+.rd-rooms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.rd-app .rd-room {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+  text-align: left;
+  color: var(--rd-muted);
+}
+
+.rd-room img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 0 0 2px transparent;
+  transition: box-shadow 0.15s;
+}
+
+.rd-room-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.rd-room-blurb {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--rd-muted);
+}
+
+.rd-app .rd-room:hover img {
+  box-shadow: 0 0 0 2px var(--rd-strong-line);
+}
+
+.rd-app .rd-room.on {
+  color: var(--rd-text);
+}
+
+.rd-app .rd-room.on img {
+  box-shadow: 0 0 0 2px var(--rd-accent);
+}
+
+/* back to the room picker: phones only */
+.rd-app .rd-back {
+  display: none;
+}
+
+/* Phone start screen */
+.rd-picker {
+  /* spans the whole phone grid */
+  grid-area: 1 / 1 / -1 / -1;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 20px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: var(--rd-side);
+}
+
+.rd-picker h3 {
+  margin: 6px 0 -6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--rd-muted);
+}
+
+.rd-picker .rd-rooms {
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.rd-picker .rd-room-name {
+  font-size: 16px;
+  color: var(--rd-text);
+}
+
+.rd-picker .rd-room img,
+.rd-app .rd-picker .rd-room.on img {
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.rd-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rd-app .rd-slot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--rd-card);
+  box-shadow: inset 0 0 0 1px var(--rd-line);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.rd-app .rd-slot:hover {
+  box-shadow: inset 0 0 0 1px var(--rd-strong-line);
+}
+
+.rd-app .rd-slot.on {
+  background: var(--rd-text);
+  color: var(--rd-bg);
+  box-shadow: none;
+}
+
+.rd-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rd-accent);
+}
+
+.rd-hint {
+  margin: 0;
+  color: var(--rd-muted);
+  line-height: 1.5;
+}
+
+.rd-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 4px;
+}
+
+.rd-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rd-label {
+  font-size: 12px;
+  color: var(--rd-muted);
+}
+
+.rd-styles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.rd-app .rd-style {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background: var(--rd-card);
+  padding: 6px;
+  box-shadow: inset 0 0 0 1px var(--rd-line);
+}
+
+.rd-app .rd-style:hover {
+  box-shadow: inset 0 0 0 1px var(--rd-strong-line);
+}
+
+.rd-style img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.rd-app .rd-style.on {
+  box-shadow: inset 0 0 0 2px var(--rd-accent);
+}
+
+/* Generate / Upload: the AI cards next to the styles */
+.rd-app .rd-ai {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: transparent;
+  box-shadow: none;
+  border: 1.5px dashed var(--rd-strong-line);
+  color: var(--rd-muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.rd-app .rd-ai svg {
+  color: var(--rd-accent);
+}
+
+.rd-app .rd-ai:hover {
+  background: var(--rd-card);
+  color: var(--rd-text);
+}
+
+.rd-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--rd-accent);
+  color: var(--rd-bg);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.rd-split .rd-badge {
+  position: static;
+}
+
+.rd-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.rd-swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+.rd-swatch.on {
+  box-shadow:
+    0 0 0 2px var(--rd-side),
+    0 0 0 4px var(--rd-accent);
+}
+
+/* "Original": a split swatch, since the original isn't one colour */
+.rd-app .rd-original {
+  background: linear-gradient(135deg, #f1ece4 50%, #8a7a6a 50%);
+}
+
+.rd-toggle {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.rd-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--rd-accent);
+  cursor: pointer;
+}
+
+.rd-app .rd-remove {
+  align-self: flex-start;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--rd-tile);
+  color: var(--rd-muted);
+}
+
+.rd-app .rd-remove:hover {
+  background: var(--rd-tile-hover);
+  color: var(--rd-text);
+}
+
+.rd-split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.rd-split-icon {
+  color: var(--rd-accent);
+  animation: rd-twinkle 2.4s ease-in-out infinite;
+}
+
+@keyframes rd-twinkle {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* The room */
+.rd-stage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.rd-toolbar {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.rd-group {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 12px;
+  background: var(--rd-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: var(--rd-shadow);
+}
+
+.rd-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+}
+
+.rd-app .rd-icon:hover:not(:disabled),
+.rd-app .rd-zoom:hover {
+  background: var(--rd-tile-hover);
+}
+
+.rd-app .rd-zoom {
+  min-width: 52px;
+  height: 36px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+/* + markers on empty spots: a white dot with the plus cut out, so the room
+   shows through; on hover it opens into a labelled pill */
+.rd-app .rd-spot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border-radius: 18px;
+  filter: drop-shadow(0 4px 10px rgba(20, 16, 12, 0.35));
+}
+
+.rd-spot-dot {
+  display: block;
+  opacity: 0.92;
+}
+
+.rd-spot-open {
+  display: none;
+  align-items: center;
+  height: 36px;
+  padding: 0 14px 0 9px;
+  gap: 6px;
+  border-radius: 18px;
+  background: #ffffff;
+  /* the pill stays white on the photo, so its text stays dark */
+  color: var(--rd-bg);
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.rd-spot:hover .rd-spot-dot,
+.rd-spot.on .rd-spot-dot {
+  display: none;
+}
+
+.rd-spot:hover .rd-spot-open,
+.rd-spot.on .rd-spot-open {
+  display: flex;
+}
+
+.rd-spot::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-sizing: border-box;
+  animation: rd-pulse 2.4s ease-out infinite;
+  pointer-events: none;
+}
+
+.rd-spot:hover::before,
+.rd-spot.on::before {
+  animation: none;
+  opacity: 0;
+}
+
+@keyframes rd-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  70%,
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+
+/* AI room: the photo fitted to the room area (same margins as the canvas),
+   with a band of light that sweeps over the separable pieces */
+.rd-ai-room {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 64px 20px;
+  background: var(--rd-bg);
+  container-type: size;
+}
+
+.rd-ai-frame {
+  position: relative;
+  width: min(100cqw, 150cqh);
+  aspect-ratio: 3 / 2;
+}
+
+.rd-ai-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rd-sweep {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  background-image: linear-gradient(
+    100deg,
+    transparent 42%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 58%
+  );
+  background-size: 300% 100%;
+  background-position: 100% 0;
+  /* first pass half a second after the room opens, then every 2.6s */
+  animation: rd-sweep 2.6s ease-in-out 0.5s infinite backwards;
+}
+
+.rd-sweep.strong {
+  background-color: rgba(255, 255, 255, 0.14);
+  animation-duration: 1.6s;
+}
+
+@keyframes rd-sweep {
+  0% {
+    background-position: 100% 0;
+  }
+  65%,
+  100% {
+    background-position: 0% 0;
+  }
+}
+
+/* "Live AI is off" message */
+.rd-modal-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  animation: rd-fade 0.2s ease-out;
+}
+
+.rd-modal {
+  width: 380px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  border-radius: 16px;
+  background: var(--rd-side);
+  box-shadow: inset 0 0 0 1px var(--rd-line);
+  box-shadow: var(--rd-shadow);
+  animation: rd-rise 0.25s ease-out;
+}
+
+.rd-modal-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(200, 135, 90, 0.14);
+  color: var(--rd-accent);
+  font-size: 18px;
+}
+
+.rd-modal h2 {
+  margin: 14px 0 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.rd-modal p {
+  margin: 0 0 12px;
+  color: var(--rd-muted);
+  line-height: 1.5;
+}
+
+.rd-modal-note {
+  font-size: 13px;
+  margin-bottom: 20px !important;
+}
+
+.rd-modal-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.rd-app .rd-button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--rd-tile);
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--rd-text);
+}
+
+.rd-app .rd-button:hover {
+  background: var(--rd-tile-hover);
+}
+
+.rd-app .rd-button.primary {
+  background: var(--rd-text);
+  color: var(--rd-bg);
+}
+
+.rd-app .rd-button.primary:hover {
+  background: #ffffff;
+}
+
+@keyframes rd-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes rd-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+/* Phones: title and room switch on top, the room in the middle, furniture
+   in a sheet below. The sidebar dissolves into the grid so its two parts can
+   sit above and below the room. */
+@media (max-width: 720px) {
+  .rd-app {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    grid-template-areas:
+      'head'
+      'stage'
+      'body';
+  }
+
+  .rd-sidebar {
+    display: contents;
+  }
+
+  .rd-head {
+    grid-area: head;
+    gap: 4px;
+    padding: 8px 12px 8px 6px;
+    background: var(--rd-side);
+  }
+
+  .rd-head .rd-title {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .rd-app .rd-back {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+
+  .rd-app .rd-back:hover {
+    background: var(--rd-tile-hover);
+  }
+
+  .rd-room-section {
+    display: none !important;
+  }
+
+  .rd-stage {
+    grid-area: stage;
+  }
+
+  .rd-ai-room {
+    padding: 52px 8px;
+  }
+
+  .rd-side-body {
+    grid-area: body;
+    max-height: 42vh;
+    padding: 12px;
+    gap: 14px;
+    background: var(--rd-side);
+    border-top: 1px solid var(--rd-line);
+    border-radius: 16px 16px 0 0;
+  }
+
+  .rd-sidebar h3 {
+    display: none;
+  }
+
+  .rd-styles {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+  }
+
+  .rd-app .rd-ai span:last-child {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .rd-badge {
+    top: 3px;
+    right: 3px;
+    font-size: 9px;
+  }
+
+  .rd-toolbar {
+    top: 8px;
+    right: 8px;
+    gap: 6px;
+  }
+
+  .rd-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* pinch zooms on a phone */
+  .rd-zoom-group {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .rd-tag {
+    display: none;
+  }
+}

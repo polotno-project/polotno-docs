@@ -5,9 +5,9 @@
   "keywords": [],
   "dependencies": {
     "@polotno/pptx-export": "latest",
-    "polotno": "^4.18.0",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "polotno": "^4.19.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5",
