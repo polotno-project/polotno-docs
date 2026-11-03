@@ -1,0 +1,24 @@
+{
+  "name": "@polotno-docs/polotno-demo-mood",
+  "version": "1.0.0",
+  "description": "Mood v0.1: a photoreal room you furnish piece by piece, built on Polotno SDK",
+  "keywords": [],
+  "dependencies": {
+    "mobx": "^7.0.6",
+    "mobx-react-lite": "^5.1.0",
+    "polotno": "^4.18.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}

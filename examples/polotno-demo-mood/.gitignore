@@ -1,0 +1,6 @@
+# Repaint mode backups (dev server only)
+.repaint-history/
+
+# The room's pictures (~200 MB) live in the asset bucket, not git:
+# pipeline/upload-assets.mjs uploads them and writes src/cdn.json.
+public/soviet/

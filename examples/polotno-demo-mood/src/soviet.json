@@ -1,0 +1,642 @@
+{
+ "width": 3840,
+ "height": 2560,
+ "src": "soviet/room.webp",
+ "wallUnit": {
+  "id": "wall-unit",
+  "label": "Wall unit",
+  "spot": {
+   "x": 3500,
+   "y": 1080
+  },
+  "items": [
+   {
+    "id": "wall-unit-1",
+    "src": "soviet/room-wall-unit-1.webp",
+    "thumb": "soviet/wall-unit-1-thumb.webp"
+   },
+   {
+    "id": "wall-unit-2",
+    "src": "soviet/room-wall-unit-2.webp",
+    "thumb": "soviet/wall-unit-2-thumb.webp"
+   },
+   {
+    "id": "wall-unit-3",
+    "src": "soviet/room-wall-unit-3.webp",
+    "thumb": "soviet/wall-unit-3-thumb.webp"
+   },
+   {
+    "id": "wall-unit-5",
+    "src": "soviet/room-wall-unit-5.webp",
+    "thumb": "soviet/wall-unit-5-thumb.webp"
+   },
+   {
+    "id": "wall-unit-4",
+    "src": "soviet/room-wall-unit-4.webp",
+    "thumb": "soviet/wall-unit-4-thumb.webp"
+   }
+  ]
+ },
+ "slots": [
+  {
+   "id": "wall-carpet",
+   "label": "Wall carpet",
+   "beforeShadows": true,
+   "spot": {
+    "x": 349,
+    "y": 804
+   },
+   "items": [
+    {
+     "id": "wall-carpet-1",
+     "box": {
+      "x": 0,
+      "y": 0,
+      "width": 697,
+      "height": 1462
+     },
+     "shadow": {
+      "x": -300,
+      "y": 24,
+      "width": 1144,
+      "height": 1774
+     }
+    },
+    {
+     "id": "wall-carpet-2",
+     "box": {
+      "x": 0,
+      "y": 0,
+      "width": 693,
+      "height": 1462
+     },
+     "shadow": {
+      "x": 5,
+      "y": 22,
+      "width": 840,
+      "height": 1796
+     }
+    },
+    {
+     "id": "wall-carpet-3",
+     "box": {
+      "x": 0,
+      "y": 0,
+      "width": 946,
+      "height": 1473
+     },
+     "shadow": {
+      "x": -300,
+      "y": 12,
+      "width": 1428,
+      "height": 1807
+     }
+    },
+    {
+     "id": "wall-carpet-4",
+     "box": {
+      "x": 0,
+      "y": 0,
+      "width": 832,
+      "height": 1583
+     },
+     "shadow": null
+    },
+    {
+     "id": "wall-carpet-5",
+     "box": {
+      "x": 0,
+      "y": 0,
+      "width": 832,
+      "height": 1597
+     },
+     "shadow": null
+    }
+   ]
+  },
+  {
+   "id": "rug",
+   "label": "Carpet",
+   "beforeShadows": true,
+   "spot": {
+    "x": 2696,
+    "y": 2194
+   },
+   "items": [
+    {
+     "id": "rug-1",
+     "box": {
+      "x": 463,
+      "y": 1426,
+      "width": 3190,
+      "height": 1024
+     },
+     "shadow": {
+      "x": 64,
+      "y": 803,
+      "width": 4076,
+      "height": 2057
+     }
+    },
+    {
+     "id": "rug-2",
+     "box": {
+      "x": 458,
+      "y": 1416,
+      "width": 3268,
+      "height": 1066
+     },
+     "shadow": {
+      "x": -300,
+      "y": 785,
+      "width": 4440,
+      "height": 2075
+     }
+    },
+    {
+     "id": "rug-3",
+     "box": {
+      "x": 441,
+      "y": 1423,
+      "width": 3229,
+      "height": 1028
+     },
+     "shadow": {
+      "x": -300,
+      "y": 793,
+      "width": 4440,
+      "height": 2067
+     }
+    },
+    {
+     "id": "rug-4",
+     "box": {
+      "x": 456,
+      "y": 1150,
+      "width": 3203,
+      "height": 1227
+     },
+     "shadow": {
+      "x": 56,
+      "y": 784,
+      "width": 4084,
+      "height": 2076
+     }
+    },
+    {
+     "id": "rug-5",
+     "box": {
+      "x": 451,
+      "y": 1148,
+      "width": 3282,
+      "height": 1293
+     },
+     "shadow": {
+      "x": 55,
+      "y": 754,
+      "width": 4085,
+      "height": 2106
+     }
+    }
+   ]
+  },
+  {
+   "id": "tv",
+   "label": "TV",
+   "beforeShadows": false,
+   "spot": {
+    "x": 2805,
+    "y": 1175
+   },
+   "items": [
+    {
+     "id": "tv-1",
+     "box": {
+      "x": 2539,
+      "y": 733,
+      "width": 531,
+      "height": 803
+     },
+     "shadow": {
+      "x": 2386,
+      "y": 590,
+      "width": 841,
+      "height": 1038
+     }
+    },
+    {
+     "id": "tv-2",
+     "box": {
+      "x": 2539,
+      "y": 843,
+      "width": 531,
+      "height": 728
+     },
+     "shadow": {
+      "x": 2413,
+      "y": 698,
+      "width": 788,
+      "height": 951
+     }
+    },
+    {
+     "id": "tv-3",
+     "box": {
+      "x": 2539,
+      "y": 804,
+      "width": 531,
+      "height": 773
+     },
+     "shadow": {
+      "x": 2389,
+      "y": 654,
+      "width": 799,
+      "height": 1021
+     }
+    },
+    {
+     "id": "tv-4",
+     "box": {
+      "x": 2538,
+      "y": 740,
+      "width": 534,
+      "height": 787
+     },
+     "shadow": {
+      "x": 2385,
+      "y": 606,
+      "width": 844,
+      "height": 1014
+     }
+    },
+    {
+     "id": "tv-5",
+     "box": {
+      "x": 2541,
+      "y": 682,
+      "width": 602,
+      "height": 851
+     },
+     "shadow": {
+      "x": 2381,
+      "y": 620,
+      "width": 931,
+      "height": 998
+     }
+    }
+   ]
+  },
+  {
+   "id": "lamp",
+   "label": "Lamp",
+   "beforeShadows": false,
+   "spot": {
+    "x": 1416,
+    "y": 994
+   },
+   "items": [
+    {
+     "id": "lamp-1",
+     "box": {
+      "x": 1246,
+      "y": 452,
+      "width": 340,
+      "height": 985
+     },
+     "shadow": {
+      "x": 1152,
+      "y": 281,
+      "width": 579,
+      "height": 1335
+     }
+    },
+    {
+     "id": "lamp-2",
+     "box": {
+      "x": 1262,
+      "y": 408,
+      "width": 305,
+      "height": 1039
+     },
+     "shadow": {
+      "x": 1139,
+      "y": 241,
+      "width": 567,
+      "height": 1318
+     }
+    },
+    {
+     "id": "lamp-3",
+     "box": {
+      "x": 1255,
+      "y": 440,
+      "width": 317,
+      "height": 1014
+     },
+     "shadow": {
+      "x": 1072,
+      "y": 258,
+      "width": 686,
+      "height": 1286
+     }
+    },
+    {
+     "id": "lamp-5",
+     "box": {
+      "x": 1259,
+      "y": 459,
+      "width": 328,
+      "height": 980
+     },
+     "shadow": {
+      "x": 1153,
+      "y": 283,
+      "width": 587,
+      "height": 1222
+     }
+    },
+    {
+     "id": "lamp-4",
+     "box": {
+      "x": 1326,
+      "y": 451,
+      "width": 306,
+      "height": 1090
+     },
+     "shadow": {
+      "x": 1154,
+      "y": 269,
+      "width": 592,
+      "height": 1395
+     }
+    }
+   ]
+  },
+  {
+   "id": "sofa",
+   "label": "Sofa",
+   "beforeShadows": false,
+   "spot": {
+    "x": 761,
+    "y": 1842
+   },
+   "items": [
+    {
+     "id": "sofa-1",
+     "box": {
+      "x": 0,
+      "y": 964,
+      "width": 1521,
+      "height": 1596
+     },
+     "shadow": {
+      "x": 17,
+      "y": 691,
+      "width": 1691,
+      "height": 2169
+     }
+    },
+    {
+     "id": "sofa-2",
+     "box": {
+      "x": 0,
+      "y": 899,
+      "width": 1477,
+      "height": 1568
+     },
+     "shadow": {
+      "x": -300,
+      "y": 633,
+      "width": 2006,
+      "height": 2227
+     },
+     "colour": true
+    },
+    {
+     "id": "sofa-3",
+     "box": {
+      "x": 0,
+      "y": 859,
+      "width": 1506,
+      "height": 1701
+     },
+     "shadow": {
+      "x": -300,
+      "y": 545,
+      "width": 2062,
+      "height": 2315
+     }
+    },
+    {
+     "id": "sofa-4",
+     "box": {
+      "x": 46,
+      "y": 964,
+      "width": 1437,
+      "height": 1206
+     },
+     "shadow": {
+      "x": -300,
+      "y": 818,
+      "width": 1773,
+      "height": 1547
+     },
+     "colour": true
+    },
+    {
+     "id": "sofa-5",
+     "box": {
+      "x": 0,
+      "y": 907,
+      "width": 1489,
+      "height": 1580
+     },
+     "shadow": {
+      "x": -300,
+      "y": 644,
+      "width": 1985,
+      "height": 2216
+     },
+     "colour": true
+    }
+   ]
+  },
+  {
+   "id": "table",
+   "label": "Table",
+   "beforeShadows": false,
+   "spot": {
+    "x": 1872,
+    "y": 1729
+   },
+   "items": [
+    {
+     "id": "table-1",
+     "box": {
+      "x": 1310,
+      "y": 1204,
+      "width": 1123,
+      "height": 954
+     },
+     "shadow": {
+      "x": 1264,
+      "y": 1682,
+      "width": 1158,
+      "height": 643
+     }
+    },
+    {
+     "id": "table-2",
+     "box": {
+      "x": 1307,
+      "y": 1350,
+      "width": 1238,
+      "height": 799
+     },
+     "shadow": {
+      "x": 1236,
+      "y": 1370,
+      "width": 1384,
+      "height": 934
+     }
+    },
+    {
+     "id": "table-3",
+     "box": {
+      "x": 1179,
+      "y": 1043,
+      "width": 1452,
+      "height": 1076
+     },
+     "shadow": {
+      "x": 1189,
+      "y": 1462,
+      "width": 1437,
+      "height": 897
+     }
+    },
+    {
+     "id": "table-4",
+     "box": {
+      "x": 1339,
+      "y": 1369,
+      "width": 1059,
+      "height": 741
+     },
+     "shadow": {
+      "x": 1326,
+      "y": 1512,
+      "width": 1115,
+      "height": 746
+     }
+    },
+    {
+     "id": "table-5",
+     "box": {
+      "x": 1320,
+      "y": 1183,
+      "width": 1115,
+      "height": 991
+     },
+     "shadow": {
+      "x": 1295,
+      "y": 1218,
+      "width": 1068,
+      "height": 1120
+     }
+    }
+   ]
+  },
+  {
+   "id": "armchair",
+   "label": "Armchair",
+   "beforeShadows": false,
+   "spot": {
+    "x": 2826,
+    "y": 1745
+   },
+   "items": [
+    {
+     "id": "armchair-1",
+     "box": {
+      "x": 2418,
+      "y": 1315,
+      "width": 815,
+      "height": 782
+     },
+     "shadow": {
+      "x": 2438,
+      "y": 1159,
+      "width": 896,
+      "height": 1088
+     },
+     "colour": true
+    },
+    {
+     "id": "armchair-2",
+     "box": {
+      "x": 2426,
+      "y": 1316,
+      "width": 821,
+      "height": 794
+     },
+     "shadow": {
+      "x": 2442,
+      "y": 1168,
+      "width": 897,
+      "height": 1083
+     },
+     "colour": true
+    },
+    {
+     "id": "armchair-3",
+     "box": {
+      "x": 2415,
+      "y": 1313,
+      "width": 824,
+      "height": 801
+     },
+     "shadow": {
+      "x": 2429,
+      "y": 1173,
+      "width": 912,
+      "height": 1088
+     },
+     "colour": true
+    },
+    {
+     "id": "armchair-4",
+     "box": {
+      "x": 2451,
+      "y": 1291,
+      "width": 769,
+      "height": 846
+     },
+     "shadow": {
+      "x": 2487,
+      "y": 1149,
+      "width": 739,
+      "height": 1110
+     },
+     "colour": true
+    },
+    {
+     "id": "armchair-5",
+     "box": {
+      "x": 2423,
+      "y": 1337,
+      "width": 802,
+      "height": 742
+     },
+     "shadow": {
+      "x": 2433,
+      "y": 1193,
+      "width": 900,
+      "height": 1040
+     },
+     "colour": true
+    }
+   ]
+  }
+ ]
+}

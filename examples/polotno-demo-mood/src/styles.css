@@ -1,0 +1,860 @@
+:root {
+  --rd-bg: #161616;
+  --rd-side: #212121;
+  --rd-card: #2a2a2a;
+  --rd-glass: rgba(42, 42, 42, 0.92);
+  --rd-tile: rgba(255, 255, 255, 0.06);
+  --rd-tile-hover: rgba(255, 255, 255, 0.1);
+  --rd-line: rgba(255, 255, 255, 0.08);
+  --rd-strong-line: rgba(255, 255, 255, 0.22);
+  --rd-text: #f4f4f4;
+  --rd-muted: rgba(244, 244, 244, 0.55);
+  --rd-accent: #c8875a;
+  --rd-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--rd-bg);
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.rd-app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: var(--rd-text);
+  font-size: 14px;
+}
+
+.rd-app button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+.rd-app button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+/* Sidebar */
+.rd-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.rd-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 12px 12px 16px;
+  border-bottom: 1px solid var(--rd-line);
+}
+
+/* Light icons in the header: phones only */
+.rd-head-lights {
+  display: none;
+}
+
+/* Undo, redo, download: on the title's right */
+.rd-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.rd-side-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rd-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 8px;
+  /* Plex sits high in its line box; nudge the pill onto the title's centre */
+  margin-top: 2px;
+  line-height: 1;
+  border-radius: 999px;
+  background: var(--rd-tile-hover);
+  color: var(--rd-muted);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.rd-sidebar {
+  flex: none;
+  width: 320px;
+  background: var(--rd-side);
+  border-right: 1px solid var(--rd-line);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.rd-sidebar section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rd-sidebar h3 {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--rd-muted);
+}
+
+.rd-rooms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.rd-app .rd-room {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+  text-align: left;
+  color: var(--rd-muted);
+}
+
+.rd-room img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 0 0 2px transparent;
+  transition: box-shadow 0.15s;
+}
+
+.rd-room-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.rd-room-blurb {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--rd-muted);
+}
+
+.rd-app .rd-room:hover img {
+  box-shadow: 0 0 0 2px var(--rd-strong-line);
+}
+
+.rd-app .rd-room.on {
+  color: var(--rd-text);
+}
+
+.rd-app .rd-room.on img {
+  box-shadow: 0 0 0 2px var(--rd-accent);
+}
+
+.rd-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rd-app .rd-slot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--rd-card);
+  box-shadow: inset 0 0 0 1px var(--rd-line);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.rd-app .rd-slot:hover {
+  box-shadow: inset 0 0 0 1px var(--rd-strong-line);
+}
+
+.rd-app .rd-slot.on {
+  background: var(--rd-text);
+  color: var(--rd-bg);
+  box-shadow: none;
+}
+
+.rd-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rd-accent);
+}
+
+.rd-hint {
+  margin: 0;
+  color: var(--rd-muted);
+  line-height: 1.5;
+}
+
+.rd-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 4px;
+}
+
+.rd-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rd-label {
+  font-size: 12px;
+  color: var(--rd-muted);
+}
+
+.rd-styles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.rd-app .rd-style {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background: var(--rd-card);
+  padding: 6px;
+  box-shadow: inset 0 0 0 1px var(--rd-line);
+}
+
+.rd-app .rd-style:hover {
+  box-shadow: inset 0 0 0 1px var(--rd-strong-line);
+}
+
+.rd-style img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.rd-app .rd-style.on {
+  box-shadow: inset 0 0 0 2px var(--rd-accent);
+}
+
+/* Generate / Upload: the AI cards next to the styles */
+.rd-app .rd-ai {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: transparent;
+  box-shadow: none;
+  border: 1.5px dashed var(--rd-strong-line);
+  color: var(--rd-muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.rd-app .rd-ai svg {
+  color: var(--rd-accent);
+}
+
+.rd-app .rd-ai:hover {
+  background: var(--rd-card);
+  color: var(--rd-text);
+}
+
+.rd-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--rd-accent);
+  color: var(--rd-bg);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.rd-split .rd-badge {
+  position: static;
+}
+
+.rd-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.rd-swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+.rd-swatch.on {
+  box-shadow:
+    0 0 0 2px var(--rd-side),
+    0 0 0 4px var(--rd-accent);
+}
+
+/* "Original": a split swatch, since the original isn't one colour */
+.rd-app .rd-original {
+  background: linear-gradient(135deg, #f1ece4 50%, #8a7a6a 50%);
+}
+
+.rd-toggle {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.rd-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--rd-accent);
+  cursor: pointer;
+}
+
+.rd-app .rd-remove {
+  align-self: flex-start;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--rd-tile);
+  color: var(--rd-muted);
+}
+
+.rd-app .rd-remove:hover {
+  background: var(--rd-tile-hover);
+  color: var(--rd-text);
+}
+
+.rd-split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.rd-split-icon {
+  color: var(--rd-accent);
+  animation: rd-twinkle 2.4s ease-in-out infinite;
+}
+
+@keyframes rd-twinkle {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* The room */
+.rd-stage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.rd-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+}
+
+.rd-app .rd-icon:hover:not(:disabled),
+.rd-app .rd-zoom:hover {
+  background: var(--rd-tile-hover);
+}
+
+.rd-app .rd-zoom {
+  min-width: 52px;
+  height: 36px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Markers on empty spots, as in the client's design: a thin white ring with
+   a faint light gradient inside. The label opens on the active spot. */
+.rd-app .rd-spot {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.16));
+  box-shadow: 0 1px 6px rgba(20, 15, 10, 0.12);
+  box-sizing: border-box;
+  transition:
+    transform 0.15s,
+    background 0.15s;
+}
+
+.rd-app .rd-spot.on {
+  transform: translate(-50%, -50%) scale(1.12);
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.rd-spot-label {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  margin-bottom: 8px;
+  transform: translateX(-50%);
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(30, 24, 20, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fffaf4;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.rd-spot.from-left .rd-spot-label {
+  left: -6px;
+  transform: none;
+}
+
+.rd-spot.from-right .rd-spot-label {
+  left: auto;
+  right: -6px;
+  transform: none;
+}
+
+.rd-spot.on .rd-spot-label,
+.rd-spot:hover .rd-spot-label {
+  opacity: 1;
+}
+
+@media (max-width: 720px) {
+  .rd-app .rd-spot {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* AI room: the photo fitted to the room area (same margins as the canvas),
+   with a band of light that sweeps over the separable pieces */
+.rd-ai-room {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 64px 20px;
+  background: var(--rd-bg);
+  container-type: size;
+}
+
+.rd-ai-frame {
+  position: relative;
+  width: min(100cqw, 150cqh);
+  aspect-ratio: 3 / 2;
+}
+
+.rd-ai-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rd-sweep {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  background-image: linear-gradient(
+    100deg,
+    transparent 42%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 58%
+  );
+  background-size: 300% 100%;
+  background-position: 100% 0;
+  /* first pass half a second after the room opens, then every 2.6s */
+  animation: rd-sweep 2.6s ease-in-out 0.5s infinite backwards;
+}
+
+.rd-sweep.strong {
+  background-color: rgba(255, 255, 255, 0.14);
+  animation-duration: 1.6s;
+}
+
+@keyframes rd-sweep {
+  0% {
+    background-position: 100% 0;
+  }
+  65%,
+  100% {
+    background-position: 0% 0;
+  }
+}
+
+/* "Live AI is off" message */
+.rd-modal-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  animation: rd-fade 0.2s ease-out;
+}
+
+.rd-modal {
+  width: 380px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  border-radius: 16px;
+  background: var(--rd-side);
+  box-shadow: inset 0 0 0 1px var(--rd-line);
+  box-shadow: var(--rd-shadow);
+  animation: rd-rise 0.25s ease-out;
+}
+
+.rd-modal-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(200, 135, 90, 0.14);
+  color: var(--rd-accent);
+  font-size: 18px;
+}
+
+.rd-modal h2 {
+  margin: 14px 0 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.rd-modal p {
+  margin: 0 0 12px;
+  color: var(--rd-muted);
+  line-height: 1.5;
+}
+
+.rd-modal-note {
+  font-size: 13px;
+  margin-bottom: 20px !important;
+}
+
+.rd-modal-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.rd-app .rd-button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--rd-tile);
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--rd-text);
+}
+
+.rd-app .rd-button:hover {
+  background: var(--rd-tile-hover);
+}
+
+.rd-app .rd-button.primary {
+  background: var(--rd-text);
+  color: var(--rd-bg);
+}
+
+.rd-app .rd-button.primary:hover {
+  background: #ffffff;
+}
+
+@keyframes rd-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes rd-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+/* Phones: title and room switch on top, the room in the middle, furniture
+   in a sheet below. The sidebar dissolves into the grid so its two parts can
+   sit above and below the room. */
+@media (max-width: 720px) {
+  .rd-app {
+    display: grid;
+    grid-template-rows: auto auto minmax(0, 1fr);
+    grid-template-areas:
+      'head'
+      'stage'
+      'body';
+  }
+
+  .rd-sidebar {
+    display: contents;
+  }
+
+  .rd-head {
+    grid-area: head;
+    gap: 4px;
+    padding: 6px 6px 6px 16px;
+    padding-top: calc(6px + env(safe-area-inset-top));
+    background: var(--rd-side);
+  }
+
+  .rd-head .rd-title {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  /* Phones switch the light from the header instead */
+  .rd-room-section {
+    display: none !important;
+  }
+
+  .rd-head-lights {
+    display: flex;
+    gap: 2px;
+    margin-left: 6px;
+    padding: 2px;
+    border-radius: 10px;
+    background: var(--rd-tile);
+  }
+
+  .rd-head-lights .rd-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    color: var(--rd-muted);
+  }
+
+  .rd-app .rd-head-lights .rd-icon.on {
+    background: var(--rd-tile-hover);
+    color: var(--rd-text);
+  }
+
+  /* The photo edge to edge at its own aspect ratio; pinch zoom stays inside it */
+  .rd-stage {
+    grid-area: stage;
+    aspect-ratio: 3 / 2;
+  }
+
+  .rd-ai-room {
+    padding: 52px 8px;
+  }
+
+  .rd-side-body {
+    grid-area: body;
+    min-height: 0;
+    padding: 14px 12px calc(14px + env(safe-area-inset-bottom));
+    gap: 14px;
+    background: var(--rd-side);
+    border-top: 1px solid var(--rd-line);
+    border-radius: 16px 16px 0 0;
+  }
+
+  .rd-sidebar h3 {
+    display: none;
+  }
+
+  /* Styles: big previews in one row that scrolls sideways, faded at the
+     right edge so it reads as more to see */
+  .rd-scroll {
+    position: relative;
+    margin: 0 -12px;
+  }
+
+  .rd-scroll::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 48px;
+    background: linear-gradient(to right, transparent, var(--rd-side));
+    pointer-events: none;
+  }
+
+  .rd-styles {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 0 48px 0 12px;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 12px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .rd-styles::-webkit-scrollbar {
+    display: none;
+  }
+
+  .rd-app .rd-style {
+    flex: 0 0 38vw;
+    max-width: 200px;
+    scroll-snap-align: start;
+    padding: 8px;
+  }
+
+  .rd-app .rd-ai span:last-child {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .rd-badge {
+    top: 3px;
+    right: 3px;
+    font-size: 9px;
+  }
+
+  .rd-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+}
+
+
+/* Frozen picture faded out over the canvas when a piece changes. */
+.rd-fade {
+  position: absolute;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Repaint mode (dev server only). */
+.rd-fix {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 94vw;
+  padding: 16px;
+  background: var(--rd-side);
+  box-shadow: var(--rd-shadow);
+  border-radius: 14px;
+}
+
+.rd-fix-head {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  font-size: 14px;
+}
+
+.rd-fix-head span {
+  opacity: 0.6;
+}
+
+.rd-fix-canvas {
+  position: relative;
+  align-self: center;
+  line-height: 0;
+}
+
+.rd-fix-paint {
+  position: absolute;
+  inset: 0;
+  opacity: 0.45;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.rd-fix-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.rd-fix-controls textarea {
+  flex: 1;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 14px;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--rd-line);
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.rd-fix-size {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+}
+
+/* Shown while a light switch is still loading. */
+.rd-busy {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 5;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 13px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  animation: rd-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes rd-pulse {
+  50% {
+    opacity: 0.55;
+  }
+}

@@ -1,0 +1,325 @@
+{
+ "sofa-2": {
+  "chenille": {
+   "box": {
+    "x": 0,
+    "y": 899,
+    "width": 1477,
+    "height": 1568
+   }
+  },
+  "jacquard": {
+   "box": {
+    "x": 0,
+    "y": 899,
+    "width": 1477,
+    "height": 1568
+   }
+  },
+  "tweed": {
+   "box": {
+    "x": 0,
+    "y": 899,
+    "width": 1477,
+    "height": 1568
+   }
+  },
+  "leatherette": {
+   "box": {
+    "x": 0,
+    "y": 899,
+    "width": 1477,
+    "height": 1568
+   }
+  }
+ },
+ "wall-unit-1": {
+  "walnut": {},
+  "birch": {},
+  "oak": {},
+  "mahogany": {},
+  "white": {}
+ },
+ "wall-unit-2": {
+  "mahogany": {},
+  "oak": {},
+  "birch": {},
+  "white": {},
+  "walnut": {}
+ },
+ "wall-unit-3": {
+  "mahogany": {},
+  "birch": {},
+  "oak": {},
+  "walnut": {},
+  "white": {}
+ },
+ "sofa-1": {
+  "chenille": {
+   "box": {
+    "x": 0,
+    "y": 964,
+    "width": 1521,
+    "height": 1596
+   }
+  },
+  "jacquard": {
+   "box": {
+    "x": 0,
+    "y": 964,
+    "width": 1521,
+    "height": 1596
+   }
+  },
+  "leatherette": {
+   "box": {
+    "x": 0,
+    "y": 964,
+    "width": 1521,
+    "height": 1596
+   }
+  },
+  "tweed": {
+   "box": {
+    "x": 0,
+    "y": 964,
+    "width": 1521,
+    "height": 1596
+   }
+  },
+  "velour": {
+   "box": {
+    "x": 0,
+    "y": 964,
+    "width": 1521,
+    "height": 1596
+   }
+  }
+ },
+ "armchair-1": {
+  "jacquard": {
+   "box": {
+    "x": 2418,
+    "y": 1315,
+    "width": 815,
+    "height": 782
+   }
+  },
+  "chenille": {
+   "box": {
+    "x": 2418,
+    "y": 1315,
+    "width": 815,
+    "height": 782
+   }
+  },
+  "leatherette": {
+   "box": {
+    "x": 2418,
+    "y": 1315,
+    "width": 815,
+    "height": 782
+   }
+  },
+  "tweed": {
+   "box": {
+    "x": 2418,
+    "y": 1315,
+    "width": 815,
+    "height": 782
+   }
+  }
+ },
+ "armchair-3": {
+  "leatherette": {
+   "box": {
+    "x": 2415,
+    "y": 1313,
+    "width": 824,
+    "height": 801
+   }
+  },
+  "tweed": {
+   "box": {
+    "x": 2415,
+    "y": 1313,
+    "width": 824,
+    "height": 801
+   }
+  },
+  "jacquard": {
+   "box": {
+    "x": 2415,
+    "y": 1313,
+    "width": 824,
+    "height": 801
+   }
+  },
+  "velour": {
+   "box": {
+    "x": 2415,
+    "y": 1313,
+    "width": 824,
+    "height": 801
+   }
+  },
+  "chenille": {
+   "box": {
+    "x": 2415,
+    "y": 1313,
+    "width": 824,
+    "height": 801
+   }
+  }
+ },
+ "armchair-2": {
+  "leatherette": {
+   "box": {
+    "x": 2426,
+    "y": 1316,
+    "width": 821,
+    "height": 794
+   }
+  },
+  "chenille": {
+   "box": {
+    "x": 2426,
+    "y": 1316,
+    "width": 821,
+    "height": 794
+   }
+  },
+  "velour": {
+   "box": {
+    "x": 2426,
+    "y": 1316,
+    "width": 821,
+    "height": 794
+   }
+  },
+  "tweed": {
+   "box": {
+    "x": 2426,
+    "y": 1316,
+    "width": 821,
+    "height": 794
+   }
+  }
+ },
+ "armchair-5": {
+  "leatherette": {
+   "box": {
+    "x": 2423,
+    "y": 1337,
+    "width": 802,
+    "height": 742
+   }
+  },
+  "jacquard": {
+   "box": {
+    "x": 2423,
+    "y": 1337,
+    "width": 802,
+    "height": 742
+   }
+  },
+  "chenille": {
+   "box": {
+    "x": 2423,
+    "y": 1337,
+    "width": 802,
+    "height": 742
+   }
+  },
+  "tweed": {
+   "box": {
+    "x": 2423,
+    "y": 1337,
+    "width": 802,
+    "height": 742
+   }
+  }
+ },
+ "wall-unit-5": {
+  "oak": {},
+  "walnut": {},
+  "birch": {},
+  "mahogany": {},
+  "white": {}
+ },
+ "sofa-4": {
+  "chenille": {
+   "box": {
+    "x": 46,
+    "y": 964,
+    "width": 1437,
+    "height": 1206
+   }
+  },
+  "leatherette": {
+   "box": {
+    "x": 46,
+    "y": 964,
+    "width": 1437,
+    "height": 1206
+   }
+  },
+  "velour": {
+   "box": {
+    "x": 46,
+    "y": 964,
+    "width": 1437,
+    "height": 1206
+   }
+  },
+  "jacquard": {
+   "box": {
+    "x": 46,
+    "y": 964,
+    "width": 1437,
+    "height": 1206
+   }
+  }
+ },
+ "sofa-5": {
+  "leatherette": {
+   "box": {
+    "x": 0,
+    "y": 907,
+    "width": 1489,
+    "height": 1580
+   }
+  },
+  "jacquard": {
+   "box": {
+    "x": 0,
+    "y": 907,
+    "width": 1489,
+    "height": 1580
+   }
+  },
+  "velour": {
+   "box": {
+    "x": 0,
+    "y": 907,
+    "width": 1489,
+    "height": 1580
+   }
+  },
+  "tweed": {
+   "box": {
+    "x": 0,
+    "y": 907,
+    "width": 1489,
+    "height": 1580
+   }
+  }
+ },
+ "wall-unit-4": {
+  "oak": {},
+  "walnut": {},
+  "white": {},
+  "mahogany": {},
+  "birch": {}
+ }
+}
