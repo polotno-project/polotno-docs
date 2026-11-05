@@ -157,7 +157,7 @@ const AIDesignPanel = observer(({ store }) => {
 
       {!loading && (
         <div style={{ padding: '10px 12px', borderRadius: 6, fontSize: 13, background: 'rgba(45,114,210,0.1)' }}>
-          AI generation can take up to 2 minutes. Please be patient while your
+          AI generation can take up to 3 minutes. Please be patient while your
           design is being created.
         </div>
       )}
