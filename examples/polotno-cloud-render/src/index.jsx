@@ -17,7 +17,7 @@ const downloadFile = async (url, filename) => {
 // to create your own API key please go here: https://polotno.com/login
 const KEY = 'nFA5H9elEytDyPyvKL7T';
 
-const FORMATS = ['png', 'jpeg', 'pdf', 'gif', 'mp4'];
+const FORMATS = ['png', 'jpeg', 'pdf', 'gif', 'mp4', 'pptx'];
 
 // Small labeled control group for the options bar.
 const Field = ({ label, children }) => (
@@ -67,15 +67,19 @@ const App = () => {
   const textareaRef = React.useRef(null);
 
   const isPdf = format === 'pdf';
+  const isPptx = format === 'pptx';
   const canCmyk = format === 'jpeg' || isPdf;
-  const isDownloadFormat = isPdf || format === 'mp4' || format === 'gif';
+  const isDownloadFormat =
+    isPdf || isPptx || format === 'mp4' || format === 'gif';
+  // vector PDF and PPTX keep text and shapes as objects, not pixels
+  const usesPixelRatio = !isPptx && !(isPdf && vector);
 
   // Build only the options that matter for the selected format,
   // so the payload mirrors what you would send from your own code.
   const buildRenderOptions = () => {
     const options = { format, outputFormat: 'url' };
-    if (!(isPdf && vector)) {
-      // quality of rasterization; vector PDF has no raster to scale
+    if (usesPixelRatio) {
+      // quality of rasterization
       options.pixelRatio = pixelRatio;
     }
     if (isPdf && dpi !== 'auto') {
@@ -240,7 +244,7 @@ const App = () => {
           </div>
         </div>
 
-        {!(isPdf && vector) && (
+        {usesPixelRatio && (
           <Field label={`Quality ×${pixelRatio}`}>
             <input
               type="range"
