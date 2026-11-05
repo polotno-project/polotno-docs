@@ -1,0 +1,171 @@
+/*
+ * Jewelry theme: two palettes for the editor chrome, switched with
+ * `data-theme` on <html>. They re-point Polotno's public `--pn-*` tokens
+ * (the same shadcn token set), so every primitive follows. The work area
+ * colour comes from theme.js: onyx in dark, warm stone in light.
+ *
+ *   dark   onyx canvas, charcoal panels, champagne gold accent
+ *   light  ivory panels, warm ink, antique gold accent
+ *
+ * Type: EB Garamond for titles, labels and part names; Jost (a Futura-style
+ * geometric sans, the classic partner for a Garalde serif in luxury
+ * branding) for controls, numbers and small text.
+ */
+
+:root {
+  --jw-display: 'EB Garamond', 'Cormorant Garamond', Garamond, serif;
+  --jw-text: 'Jost', 'Futura', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Tokens sit on the document root as well as the editor, so dropdowns and
+   popovers (rendered outside the editor) get the same palette and type. */
+:root[data-theme='dark'],
+:root[data-theme='dark'] .polotno-ui {
+  --pn-radius: 0.375rem;
+  --pn-font-sans: var(--jw-text);
+  --pn-background: #16151a;
+  --pn-foreground: #ece5d8;
+  --pn-card: #1c1b20;
+  --pn-card-foreground: #ece5d8;
+  --pn-popover: #1c1b20;
+  --pn-popover-foreground: #ece5d8;
+  --pn-primary: #c9a45c;
+  --pn-primary-foreground: #16130d;
+  --pn-secondary: #24222a;
+  --pn-secondary-foreground: #ece5d8;
+  --pn-muted: #212026;
+  --pn-muted-foreground: #9b9384;
+  --pn-accent: #26242b;
+  --pn-accent-foreground: #f3ead9;
+  --pn-destructive: #e5484d;
+  --pn-destructive-foreground: #fff;
+  --pn-border: rgba(236, 229, 216, 0.09);
+  --pn-input: rgba(236, 229, 216, 0.14);
+  --pn-ring: #c9a45c;
+  --pn-sidebar: #16151a;
+  --pn-sidebar-foreground: #b7ae9f;
+  --pn-sidebar-accent: transparent;
+  --pn-sidebar-accent-foreground: #d9b871;
+  --pn-sidebar-border: rgba(236, 229, 216, 0.09);
+  --jw-ruler: #16151a;
+  --jw-ruler-ink: #8d8578;
+  --jw-ruler-tick: rgba(236, 229, 216, 0.28);
+  --jw-mark: rgba(201, 164, 92, 0.22);
+  --jw-mark-ink: #d9b871;
+  --jw-selected: #c9a45c;
+  color-scheme: dark;
+}
+
+:root[data-theme='light'],
+:root[data-theme='light'] .polotno-ui {
+  --pn-radius: 0.375rem;
+  --pn-font-sans: var(--jw-text);
+  --pn-background: #fbf8f2;
+  --pn-foreground: #1d1b17;
+  --pn-card: #ffffff;
+  --pn-card-foreground: #1d1b17;
+  --pn-popover: #ffffff;
+  --pn-popover-foreground: #1d1b17;
+  --pn-primary: #1d1b17;
+  --pn-primary-foreground: #fbf8f2;
+  --pn-secondary: #f1ebe0;
+  --pn-secondary-foreground: #1d1b17;
+  --pn-muted: #f3eee5;
+  --pn-muted-foreground: #7c7366;
+  --pn-accent: #f1ebe0;
+  --pn-accent-foreground: #1d1b17;
+  --pn-destructive: #c62a2f;
+  --pn-destructive-foreground: #fff;
+  --pn-border: #e8e0d2;
+  --pn-input: #ddd3c2;
+  --pn-ring: #a8823e;
+  --pn-sidebar: #fbf8f2;
+  --pn-sidebar-foreground: #6f665a;
+  --pn-sidebar-accent: transparent;
+  --pn-sidebar-accent-foreground: #8a6a2c;
+  --pn-sidebar-border: #e8e0d2;
+  --jw-ruler: #fbf8f2;
+  --jw-ruler-ink: #8a8072;
+  --jw-ruler-tick: rgba(29, 27, 23, 0.3);
+  --jw-mark: rgba(168, 130, 62, 0.18);
+  --jw-mark-ink: #8a6a2c;
+  --jw-selected: #a8823e;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  font-family: var(--jw-text);
+}
+
+/* Jost everywhere text is set by the UI: buttons, inputs, dropdowns and
+   their menus, the zoom readout, popovers. */
+.polotno-ui,
+.polotno-ui button,
+.polotno-ui input,
+.polotno-ui textarea,
+.polotno-ui select,
+[data-base-ui-portal],
+[role='listbox'],
+[role='option'],
+[role='dialog'],
+[role='menu'] {
+  font-family: var(--jw-text) !important;
+}
+.polotno-ui h3,
+[role='dialog'] h2 {
+  font-family: var(--jw-display) !important;
+}
+
+/* A wider panel, so picker cards have room. */
+.polotno-ui {
+  --pn-sidebar-width: 380px;
+}
+
+/* Panel titles in the display serif, on the toolbar's 50 px line. */
+.polotno-ui h3 {
+  font-family: var(--jw-display);
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+}
+
+/* Our panels set their own padding; Polotno's container adds 10px on top,
+   which pushed the title and X below the toolbar row. */
+.polotno-panel-container {
+  padding: 0 !important;
+}
+
+/* Side tabs: Jost, tracked caps, no grey block on the active one. It turns
+   gold, with a hairline on the left. */
+.polotno-side-panel-tab {
+  font-family: var(--jw-text);
+  font-size: 10.5px !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.15s;
+}
+.polotno-side-panel-tab.active {
+  box-shadow: inset 2px 0 0 var(--jw-selected);
+}
+
+/* Toggles: a fine gold outline when on, never a solid fill. */
+.polotno-ui [data-pressed] {
+  background: transparent !important;
+  color: var(--jw-selected) !important;
+  box-shadow: inset 0 0 0 1px var(--jw-selected);
+  position: relative;
+  z-index: 1;
+}
+
+/* The toolbar runs straight into the top ruler: no shadow between them. */
+.polotno-toolbar {
+  box-shadow: none !important;
+}
+
+/* The side panel closes from its own X; its collapse tab would sit on the
+   left ruler. */
+.pn-side-panel-hide-button {
+  display: none !important;
+}

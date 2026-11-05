@@ -1,0 +1,25 @@
+{
+  "name": "@polotno-docs/polotno-demo-jewelry",
+  "version": "1.0.0",
+  "description": "Live demo of a 2D jewelry designer built on Polotno SDK: build a ring from parts, then render it photoreal with AI",
+  "keywords": [],
+  "dependencies": {
+    "lucide-react": "^1.66.0",
+    "mobx": "^7.1.4",
+    "mobx-react-lite": "^5.1.2",
+    "polotno": "^4.19.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5",
+    "vite": "^7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}

@@ -19,7 +19,7 @@ const POLOTNO_KEY = 'nFA5H9elEytDyPyvKL7T';
 const store = createStore({
   // this is a demo key just for that project
   // (!) please don't use it in your projects
-  // to create your own API key please go here: https://polotno.com/cabinet
+  // to create your own API key please go here: https://polotno.com/login
   key: POLOTNO_KEY,
   // you can hide back-link on a paid license
   // but it will be good if you can keep it for Polotno project support

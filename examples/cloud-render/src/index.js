@@ -12,7 +12,7 @@ const button = document.querySelector('#generate-button');
 
 // this is a demo key just for that project
 // (!) please don't use it in your projects
-// to create your own API key please go here: https://polotno.com/cabinet
+// to create your own API key please go here: https://polotno.com/login
 const KEY = 'nFA5H9elEytDyPyvKL7T';
 
 button.addEventListener('click', async () => {

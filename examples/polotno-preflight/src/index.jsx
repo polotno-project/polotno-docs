@@ -20,7 +20,7 @@ import { ARTWORK, BRAND_FONTS } from './artwork.js';
 import { PRODUCT, PAGE_WIDTH, PAGE_HEIGHT } from './spec.js';
 
 const store = createStore({
-  key: 'HyhTCjrrUThWw9E7dO_y', // you can create it here: https://polotno.com/cabinet/
+  key: 'HyhTCjrrUThWw9E7dO_y', // you can create it here: https://polotno.com/login
   // you can hide back-link on a paid license
   // but it will be good if you can keep it for Polotno project support
   showCredit: true,

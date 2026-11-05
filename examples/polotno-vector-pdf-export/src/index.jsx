@@ -32,7 +32,7 @@ setRichTextEnabled(true);
 // create store
 const store = createStore({
   // demo key – please use your own in production projects
-  // https://polotno.com/cabinet
+  // https://polotno.com/login
   key: 'nFA5H9elEytDyPyvKL7T',
   showCredit: true,
 });

@@ -17,7 +17,7 @@ import { createStore } from 'polotno/model/store';
 import { json } from './sample';
 
 const store = createStore({
-  key: 'nFA5H9elEytDyPyvKL7T', // you can create it here: https://polotno.com/cabinet/
+  key: 'nFA5H9elEytDyPyvKL7T', // you can create it here: https://polotno.com/login
   // you can hide back-link on a paid license
   // but it will be good if you can keep it for Polotno project support
   showCredit: true,

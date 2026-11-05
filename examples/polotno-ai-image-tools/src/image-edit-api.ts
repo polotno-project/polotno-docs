@@ -10,7 +10,7 @@ import { prepareImageInput } from 'polotno/utils/image-edit';
 
 // this is a demo key just for that project
 // (!) please don't use it in your projects
-// to create your own API key please go here: https://polotno.com/cabinet
+// to create your own API key please go here: https://polotno.com/login
 export const POLOTNO_KEY = 'nFA5H9elEytDyPyvKL7T';
 
 // Polotno's AI endpoints. They run this demo on polotno.com under a daily

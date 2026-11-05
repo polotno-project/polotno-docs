@@ -14,7 +14,7 @@ const downloadFile = async (url, filename) => {
 
 // this is a demo key just for that project
 // (!) please don't use it in your projects
-// to create your own API key please go here: https://polotno.com/cabinet
+// to create your own API key please go here: https://polotno.com/login
 const KEY = 'nFA5H9elEytDyPyvKL7T';
 
 const FORMATS = ['png', 'jpeg', 'pdf', 'gif', 'mp4'];
