@@ -4,14 +4,14 @@
   "description": "Demo of SVG import into Polotno editor",
   "keywords": [],
   "dependencies": {
-    "@polotno/svg-import": "^0.2.3",
-    "polotno": "^4.19.1",
+    "@polotno/svg-import": "^0.2.4",
+    "polotno": "^4.20.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5",
-    "vite": "^7"
+    "@vitejs/plugin-react": "^6",
+    "vite": "^8"
   },
   "scripts": {
     "dev": "vite",

@@ -4,14 +4,14 @@
   "description": "Demo showing how to customize the theme and styling of Polotno editor",
   "keywords": [],
   "dependencies": {
-    "lucide-react": "^1.18.0",
-    "polotno": "^4.19.1",
+    "lucide-react": "^1.72.0",
+    "polotno": "^4.20.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5",
-    "vite": "^7"
+    "@vitejs/plugin-react": "^6",
+    "vite": "^8"
   },
   "scripts": {
     "dev": "vite",

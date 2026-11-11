@@ -4,16 +4,16 @@
   "description": "Live demo of a direct-mail postcard designer built on Polotno SDK",
   "keywords": [],
   "dependencies": {
-    "@polotno/pdf-export": "^0.15.3",
-    "mobx": "^7.1.4",
+    "@polotno/pdf-export": "^0.16.0",
+    "mobx": "7.1.5",
     "mobx-react-lite": "^5.1.2",
-    "polotno": "^4.19.1",
+    "polotno": "^4.20.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5",
-    "vite": "^7"
+    "@vitejs/plugin-react": "^6",
+    "vite": "^8"
   },
   "scripts": {
     "dev": "vite",

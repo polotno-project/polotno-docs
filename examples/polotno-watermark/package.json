@@ -4,15 +4,15 @@
   "description": "Lean watermark editor: locked text and image watermark placeholders you can retext, reskin, and toggle in or out of the export",
   "keywords": [],
   "dependencies": {
-    "mobx": "^7.1.4",
+    "mobx": "7.1.5",
     "mobx-react-lite": "^5.1.2",
-    "polotno": "^4.19.1",
+    "polotno": "^4.20.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5",
-    "vite": "^7"
+    "@vitejs/plugin-react": "^6",
+    "vite": "^8"
   },
   "scripts": {
     "dev": "vite",

@@ -4,14 +4,14 @@
   "description": "Demo showing video export in Polotno editor",
   "keywords": [],
   "dependencies": {
-    "@polotno/video-export": "0.5.1",
-    "polotno": "^4.19.1",
+    "@polotno/video-export": "0.5.2",
+    "polotno": "^4.20.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5",
-    "vite": "^7"
+    "@vitejs/plugin-react": "^6",
+    "vite": "^8"
   },
   "scripts": {
     "dev": "vite",
