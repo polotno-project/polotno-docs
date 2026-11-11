@@ -5,7 +5,7 @@
   "keywords": [],
   "dependencies": {
     "@polotno/pptx-export": "latest",
-    "polotno": "^4.20.0",
+    "polotno": "^4.20.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
