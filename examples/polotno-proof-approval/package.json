@@ -1,0 +1,24 @@
+{
+  "name": "@polotno-docs/polotno-proof-approval",
+  "version": "1.0.0",
+  "description": "Proof and approval flow on top of Polotno: a designer sends a proof, the customer comments on elements and approves or asks for changes, every version is kept",
+  "keywords": [],
+  "dependencies": {
+    "mobx": "7.1.7",
+    "mobx-react-lite": "^5.1.3",
+    "polotno": "^4.21.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6",
+    "vite": "^8"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}
