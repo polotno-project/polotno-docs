@@ -4,9 +4,9 @@
   "description": "40 × 50 cm framed print editor that sends the print file to Prodigi's sandbox API, shows which lab would print it for buyers in four countries, and places a sandbox order Prodigi checks the artwork for",
   "keywords": [],
   "dependencies": {
-    "mobx": "7.1.5",
-    "mobx-react-lite": "^5.1.2",
-    "polotno": "^4.20.1",
+    "mobx": "7.1.7",
+    "mobx-react-lite": "^5.1.3",
+    "polotno": "^4.21.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

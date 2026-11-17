@@ -113,11 +113,11 @@ importers:
   .:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -141,8 +141,8 @@ importers:
   polotno-admin-role:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -160,14 +160,14 @@ importers:
   polotno-advanced-sync-elements:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       nanoid:
         specifier: ^3.3.11
         version: 3.3.20
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -188,11 +188,11 @@ importers:
         specifier: ^1.0.0
         version: 1.4.1(react@19.3.1)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -210,8 +210,8 @@ importers:
   polotno-ai-image-tools:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -244,8 +244,8 @@ importers:
         specifier: 2.0.11
         version: 2.0.11(mobx@5.15.7)(vue@2.7.16)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -281,8 +281,8 @@ importers:
         specifier: ^2.8.3
         version: 2.16.4(@swc/helpers@0.5.20)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -343,10 +343,10 @@ importers:
         version: 18.2.14(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(@angular/platform-browser@18.2.14(@angular/animations@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(rxjs@7.8.1)
       mobx-angular:
         specifier: ^4.8.0
-        version: 4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@7.1.5)
+        version: 4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@7.1.7)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -376,8 +376,8 @@ importers:
   polotno-animations:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -395,14 +395,14 @@ importers:
   polotno-art-print:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -420,8 +420,8 @@ importers:
   polotno-audio:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -439,8 +439,8 @@ importers:
   polotno-background-sidepanel:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -464,11 +464,11 @@ importers:
         specifier: 3.11.5
         version: 3.11.5
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -486,11 +486,11 @@ importers:
   polotno-book-cover-editor:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -508,14 +508,14 @@ importers:
   polotno-book-cover-wrap:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -536,11 +536,11 @@ importers:
         specifier: ^10.9.1
         version: 10.9.1(canvas@3.2.3)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -564,14 +564,14 @@ importers:
   polotno-callouts:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -592,11 +592,11 @@ importers:
   polotno-carousel-in-html:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -620,11 +620,11 @@ importers:
         specifier: 1.6.2
         version: 1.6.2
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
@@ -661,11 +661,11 @@ importers:
   polotno-custom-element:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -689,11 +689,11 @@ importers:
         specifier: ^1.0.0
         version: 1.4.1(react@19.3.1)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -711,8 +711,8 @@ importers:
   polotno-demo:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -730,11 +730,11 @@ importers:
   polotno-demo-apparel:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -755,11 +755,11 @@ importers:
         specifier: ^10.9.1
         version: 10.9.1(canvas@3.2.3)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -777,8 +777,8 @@ importers:
   polotno-demo-image-editor:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -799,14 +799,14 @@ importers:
         specifier: ^1.72.0
         version: 1.72.0(@types/react@19.2.17)(react@19.3.1)
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -824,14 +824,14 @@ importers:
   polotno-demo-mood:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -849,17 +849,17 @@ importers:
   polotno-demo-postcard:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.16.0
-        version: 0.16.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+        specifier: ^0.17.1
+        version: 0.17.1(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -877,14 +877,14 @@ importers:
   polotno-demo-room-visualizer:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -905,11 +905,11 @@ importers:
         specifier: ^10.9.1
         version: 10.9.1(canvas@3.2.3)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -927,11 +927,11 @@ importers:
   polotno-demo-video-editor:
     dependencies:
       '@polotno/video-export':
-        specifier: 0.5.2
-        version: 0.5.2(canvas@3.2.3)(polotno@4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))
+        specifier: 0.6.0
+        version: 0.6.0(canvas@3.2.3)(polotno@4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -949,8 +949,8 @@ importers:
   polotno-demo-vite:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -968,8 +968,8 @@ importers:
   polotno-design-validation:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -987,20 +987,20 @@ importers:
   polotno-direct-mail:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.16.0
-        version: 0.16.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+        specifier: ^0.17.1
+        version: 0.17.1(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
       lucide-react:
         specifier: ^1.72.0
         version: 1.72.0(@types/react@19.2.17)(react@19.3.1)
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
@@ -1021,11 +1021,11 @@ importers:
   polotno-element-locking:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1043,14 +1043,14 @@ importers:
   polotno-elements-preview:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1081,11 +1081,11 @@ importers:
   polotno-full-width-background-for-text:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1103,14 +1103,14 @@ importers:
   polotno-gelato-poster:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1131,14 +1131,14 @@ importers:
         specifier: ^1.0.0
         version: 1.4.1(react@19.3.1)
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1156,14 +1156,14 @@ importers:
   polotno-hidden-panel:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1184,11 +1184,11 @@ importers:
         specifier: ^1.0.0
         version: 1.4.1(react@19.3.1)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1206,8 +1206,8 @@ importers:
   polotno-mobile:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1225,11 +1225,11 @@ importers:
   polotno-nextjs:
     dependencies:
       next:
-        specifier: ^14
-        version: 14.2.35(@babel/core@7.29.0(supports-color@7.2.0))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sass@1.77.6)
+        specifier: ^16.3.4
+        version: 16.4.6(@babel/core@7.29.0(supports-color@7.2.0))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sass@1.77.6)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1243,8 +1243,8 @@ importers:
         specifier: ^2.7.0
         version: 2.16.4(@swc/helpers@0.5.20)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1268,14 +1268,14 @@ importers:
   polotno-open-side-panel-programmatically:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1293,8 +1293,8 @@ importers:
   polotno-overlay:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1312,11 +1312,11 @@ importers:
   polotno-page-bleed:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1334,11 +1334,11 @@ importers:
   polotno-page-name:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1356,8 +1356,8 @@ importers:
   polotno-page-numbers:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1375,11 +1375,11 @@ importers:
   polotno-pages-navigation:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1397,11 +1397,11 @@ importers:
   polotno-pdf-import:
     dependencies:
       '@polotno/pdf-import':
-        specifier: 0.13.0
-        version: 0.13.0(canvas@3.2.3)
+        specifier: 0.13.1
+        version: 0.13.1(canvas@3.2.3)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1422,11 +1422,11 @@ importers:
         specifier: ^1.0.0
         version: 1.4.1(react@19.3.1)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1445,10 +1445,10 @@ importers:
     dependencies:
       '@polotno/pptx-export':
         specifier: latest
-        version: 0.12.0(@types/node@25.5.0)(canvas@3.2.3)
+        version: 0.13.0(@types/node@25.5.0)(canvas@3.2.3)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1466,14 +1466,14 @@ importers:
   polotno-preflight:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1491,14 +1491,14 @@ importers:
   polotno-prodigi-framed-print:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1519,11 +1519,11 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0(react@19.3.1)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1541,11 +1541,11 @@ importers:
   polotno-psd-import:
     dependencies:
       '@polotno/psd-import':
-        specifier: ^0.3.3
-        version: 0.3.3(canvas@3.2.3)
+        specifier: ^0.3.4
+        version: 0.3.4(canvas@3.2.3)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1566,11 +1566,11 @@ importers:
         specifier: ^1.0.0
         version: 1.4.1(react@19.3.1)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
@@ -1591,14 +1591,14 @@ importers:
   polotno-real-estate:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
@@ -1619,8 +1619,8 @@ importers:
   polotno-remove-side-panel:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1638,11 +1638,11 @@ importers:
   polotno-resize-panel:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1660,11 +1660,11 @@ importers:
   polotno-rich-text:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1682,8 +1682,8 @@ importers:
   polotno-rotate-page:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1701,8 +1701,8 @@ importers:
   polotno-rulers:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1720,11 +1720,11 @@ importers:
   polotno-select-image-placeholder:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1745,11 +1745,11 @@ importers:
         specifier: ^1.0.0
         version: 1.4.1(react@19.3.1)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1770,8 +1770,8 @@ importers:
   polotno-simple-t-shirt-demo:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1789,11 +1789,11 @@ importers:
   polotno-spine-web-player:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1817,11 +1817,11 @@ importers:
   polotno-sup-sub:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       quill:
         specifier: ^2.0.0
         version: 2.0.3
@@ -1842,11 +1842,11 @@ importers:
   polotno-svg-import:
     dependencies:
       '@polotno/svg-import':
-        specifier: ^0.2.4
-        version: 0.2.4(canvas@3.2.3)
+        specifier: ^0.2.5
+        version: 0.2.5(canvas@3.2.3)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1867,11 +1867,11 @@ importers:
         specifier: ^1.0.0
         version: 1.4.1(react@19.3.1)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1889,11 +1889,11 @@ importers:
   polotno-t-shirt:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1911,14 +1911,14 @@ importers:
   polotno-t-shirt-minimal:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1951,11 +1951,11 @@ importers:
         specifier: ^15.3.0
         version: 15.3.0
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1979,11 +1979,11 @@ importers:
         specifier: ^1.0.0
         version: 1.4.1(react@19.3.1)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2001,11 +2001,11 @@ importers:
   polotno-text-overflow:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2023,11 +2023,11 @@ importers:
   polotno-text-sizing:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2048,8 +2048,8 @@ importers:
         specifier: ^1.72.0
         version: 1.72.0(@types/react@19.2.17)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2067,8 +2067,8 @@ importers:
   polotno-toolbar-actions:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2086,11 +2086,11 @@ importers:
   polotno-toolbar-overwrite:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2108,11 +2108,11 @@ importers:
   polotno-tooltip:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2130,11 +2130,11 @@ importers:
   polotno-upload-section:
     dependencies:
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2152,8 +2152,8 @@ importers:
   polotno-variables:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2171,14 +2171,14 @@ importers:
   polotno-vector-pdf-export:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.16.0
-        version: 0.16.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+        specifier: ^0.17.1
+        version: 0.17.1(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2196,8 +2196,8 @@ importers:
   polotno-vertical-text-resize:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2215,11 +2215,11 @@ importers:
   polotno-video-export:
     dependencies:
       '@polotno/video-export':
-        specifier: 0.5.2
-        version: 0.5.2(canvas@3.2.3)(polotno@4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))
+        specifier: 0.6.0
+        version: 0.6.0(canvas@3.2.3)(polotno@4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2237,14 +2237,14 @@ importers:
   polotno-vue:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-vue-lite:
         specifier: ^0.4.3
-        version: 0.4.3(mobx@7.1.5)(vue@3.5.31(typescript@5.5.4))
+        version: 0.4.3(mobx@7.1.7)(vue@3.5.31(typescript@5.5.4))
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2265,14 +2265,14 @@ importers:
   polotno-watermark:
     dependencies:
       mobx:
-        specifier: 7.1.5
-        version: 7.1.5
+        specifier: 7.1.7
+        version: 7.1.7
       mobx-react-lite:
-        specifier: ^5.1.2
-        version: 5.1.2(mobx@7.1.5)(react@19.3.1)
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2290,8 +2290,8 @@ importers:
   polotno-workspace-layout:
     dependencies:
       polotno:
-        specifier: ^4.20.1
-        version: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -3581,8 +3581,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@lottiefiles/dotlottie-web@0.82.1':
-    resolution: {integrity: sha512-hLPdAL0dUeHKvQvXqw1p3FtvzZUHRtBsTMt3FLLgphFThsUPNUj2+U+GyttJ5H5qSt5JreLzoaD+IaKO8H/VnA==}
+  '@lottiefiles/dotlottie-web@0.83.2':
+    resolution: {integrity: sha512-MMI4RVcFtB5Vjv9mwbP8oWsSqy4N7GO2P+jwHVLo4GjbYAdR4Z7seK3rR7YefpcfayWrsQogaORMBzv6YFWntQ==}
     engines: {node: '>=18.17.0', npm: '>=9.5.0'}
 
   '@meronex/icons@1.4.1':
@@ -3639,8 +3639,20 @@ packages:
     cpu: [arm64]
     os: [android]
 
+  '@napi-rs/canvas-android-arm64@1.1.1':
+    resolution: {integrity: sha512-rSEp3y+/YXw6TxSx4/NHSAFxumZrkMoXy2WiVqpKGT8oF5GHOUDzTKj45e5cvzophX4iFaxwKs3+/gNkJ7FmzQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [android]
+
   '@napi-rs/canvas-darwin-arm64@1.1.0':
     resolution: {integrity: sha512-iqwST4g0oH+x8VCpBIYh+MYokv/mVvkM+v9oJGB0d9A3P2qBh42ogJlVyWq9SpPCrAjS7tplMb1D3OIfxl+utw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@napi-rs/canvas-darwin-arm64@1.1.1':
+    resolution: {integrity: sha512-NrPTZWpu0ywOGdp9JBDi46gABUzDJK6IzlP7cOEwaAuVVFM8KRakUWk12RK3YQ/Ea5FrNVTWUFTmkXVk4RfHqg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -3651,14 +3663,33 @@ packages:
     cpu: [x64]
     os: [darwin]
 
+  '@napi-rs/canvas-darwin-x64@1.1.1':
+    resolution: {integrity: sha512-p3DOT8VBfu8cR3SVBUs6cEzJmzwOUQkNfo1S4nKLgeKDsSlvn2oZsRaa9m0lfMccn1WbwtgKCEpJXmHhp++Zrg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
   '@napi-rs/canvas-linux-arm-gnueabihf@1.1.0':
     resolution: {integrity: sha512-Y4YkKG1ijoqkgUdTEEBNG4k+2BK5bR5jGL6S56YxCXYPwGfUd5nED8/74xyc7z+bpixPasCjSYoP3xYPOIGNxw==}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [linux]
 
+  '@napi-rs/canvas-linux-arm-gnueabihf@1.1.1':
+    resolution: {integrity: sha512-YWGJfMa8TtEhsHd/kDiyBFwT/dAbRQiXwsm0tDev4H5cJiyOk08CC83JihrwnUsePGjIvxC8/8g/zqKKuqjpQA==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [linux]
+
   '@napi-rs/canvas-linux-arm64-gnu@1.1.0':
     resolution: {integrity: sha512-dE/XthqYkiWcBVtKFlZbUXwAYfDuQGqDWixznipJNmevLGpprNnTVQZyftm1RZJudkIOn2EkzYZDMMETM08Row==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@napi-rs/canvas-linux-arm64-gnu@1.1.1':
+    resolution: {integrity: sha512-q1HBkNmB9mc6SF6uSz2492qSgsB46MqS+n3bPbPCE0kUXmWAPkH9vDADeawbhepQYn8RhlV2V/P5u6nykFXbuQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -3671,8 +3702,22 @@ packages:
     os: [linux]
     libc: [musl]
 
+  '@napi-rs/canvas-linux-arm64-musl@1.1.1':
+    resolution: {integrity: sha512-aF4RkTp2T45fERFPCIqbxeKVhvhHuXeyyk5/jdJ+N0tGLZy4NvMkIrBWt6GOCmAQ7H0G3M/O03hAsc4Li52q4A==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
   '@napi-rs/canvas-linux-riscv64-gnu@1.1.0':
     resolution: {integrity: sha512-kJ7m5n2VffxWXM5QGa5lfq8ZN4LdOJEoz3aAJAmIqYvKiZw1gRdXqpucnRXsF6D9nLYiiIlevaAtAclR7c5ilg==}
+    engines: {node: '>= 10'}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [glibc]
+
+  '@napi-rs/canvas-linux-riscv64-gnu@1.1.1':
+    resolution: {integrity: sha512-rCU4Xo5h0AQFEaa9dNr7Kxbk4gke9Uyi/I6ZXuBGYPSNWxYmWRS6DkrxaSKUJyCgA7c8l6lZBYfx/FtbJo3fMA==}
     engines: {node: '>= 10'}
     cpu: [riscv64]
     os: [linux]
@@ -3685,8 +3730,22 @@ packages:
     os: [linux]
     libc: [glibc]
 
+  '@napi-rs/canvas-linux-x64-gnu@1.1.1':
+    resolution: {integrity: sha512-7bZfDI9lxKqj9wJRHiSQBimCRanxDGHYE7TugnOmFJ9ScpgFSsLHFQtOH9wvmbQvBwv5nBuDBGJlG0+7iGkN+w==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
   '@napi-rs/canvas-linux-x64-musl@1.1.0':
     resolution: {integrity: sha512-has4CPPAkkCac/LZ13VAw5p+MJLdaKVoyrhumN/A7uJd6960xYkJNDZgUebyxiha82AFzXx6RV+QJg5qGG079g==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@napi-rs/canvas-linux-x64-musl@1.1.1':
+    resolution: {integrity: sha512-xaFof2p0aO7C7ziMCLeueve09PVEKYCebljLTL3nyxoaRsYpEnBrUBP1aVpfD1Nk464dc7/wPV23fkHdOBie2g==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -3698,14 +3757,30 @@ packages:
     cpu: [arm64]
     os: [win32]
 
+  '@napi-rs/canvas-win32-arm64-msvc@1.1.1':
+    resolution: {integrity: sha512-wOLX/WRwWr0xGj2hnDf/t3tZfPlzzL9rGPsO1UnYSuNbRzwas/hC8JXnuhaEs8eCw+J+W4zxOJiVF4RxkvcMfw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+
   '@napi-rs/canvas-win32-x64-msvc@1.1.0':
     resolution: {integrity: sha512-08575bFk7iiadxap4h+JxgGut9xDCHAGum6wh0eInN53zEMImkmEHi5MushX2FOmNO7qRNX7BPiDC5ZYBwHeEg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
 
+  '@napi-rs/canvas-win32-x64-msvc@1.1.1':
+    resolution: {integrity: sha512-6Ge1AF1SVO+Ypjaw9IPcApm95krR3GQ32HgVqlIckbN/WqUlWYS0hnb8ZIdu3e0IbutbJgd8D2qSeb2/Cdpbdw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
   '@napi-rs/canvas@1.1.0':
     resolution: {integrity: sha512-k+ph/D8H9GS8ZZ48okvHrKeJynkqAA1kMUZRuzRWNlQUDHXngq7oRaWMZBdmSfd9ZhVy9bwNKei/7wMboI/uMg==}
+    engines: {node: '>= 10'}
+
+  '@napi-rs/canvas@1.1.1':
+    resolution: {integrity: sha512-UyNspnx0rXclATMOBXiWgy1xtWUSUDm4UOO6+YO8xzyVKaZRpvK+SlJSCtRoSI9J/mEqklJiPYtroN1B+hgLXg==}
     engines: {node: '>= 10'}
 
   '@napi-rs/wasm-runtime@1.2.6':
@@ -3715,63 +3790,57 @@ packages:
       '@emnapi/core': ^1.7.1 || 2.0.0-beta.2
       '@emnapi/runtime': ^1.7.1 || 2.0.0-beta.2
 
-  '@next/env@14.2.35':
-    resolution: {integrity: sha512-DuhvCtj4t9Gwrx80dmz2F4t/zKQ4ktN8WrMwOuVzkJfBilwAwGr6v16M5eI8yCuZ63H9TTuEU09Iu2HqkzFPVQ==}
+  '@next/env@16.4.6':
+    resolution: {integrity: sha512-SunBjJ6t+oBtecS3dTjdVuMhUogP5wD/vrGL5EVuQYM1iS4O5ilL51HkiJ3sPjMzRHiCChvr4dbaSJbR7F3lxA==}
 
-  '@next/swc-darwin-arm64@14.2.33':
-    resolution: {integrity: sha512-HqYnb6pxlsshoSTubdXKu15g3iivcbsMXg4bYpjL2iS/V6aQot+iyF4BUc2qA/J/n55YtvE4PHMKWBKGCF/+wA==}
+  '@next/swc-darwin-arm64@16.4.6':
+    resolution: {integrity: sha512-kJ4VVZkley17xKaJx72QN2IBqjrj7zenCQZaUF0l9ShS/1Mt2kW4+Z5KGG6vgr3L/J562xTOizVyM1iA/u5nlg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@14.2.33':
-    resolution: {integrity: sha512-8HGBeAE5rX3jzKvF593XTTFg3gxeU4f+UWnswa6JPhzaR6+zblO5+fjltJWIZc4aUalqTclvN2QtTC37LxvZAA==}
+  '@next/swc-darwin-x64@16.4.6':
+    resolution: {integrity: sha512-eIPGZIqC+8JKaeZmvnCANJQF4xWkkHqSnAAajtFxgwDMAOnCgxNvP52SeWZ41PyVwoe+Le/NQuZSaQ8j7YshSA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-linux-arm64-gnu@14.2.33':
-    resolution: {integrity: sha512-JXMBka6lNNmqbkvcTtaX8Gu5by9547bukHQvPoLe9VRBx1gHwzf5tdt4AaezW85HAB3pikcvyqBToRTDA4DeLw==}
+  '@next/swc-linux-arm64-gnu@16.4.6':
+    resolution: {integrity: sha512-9nI6O8vvczH2D9ZNdMGqb/3NuT15T9ksOZnAmx9/gjF2cOi74+xxyf1Hk96uIMfm14c9y6wHeBq6SH8g6udvcA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@next/swc-linux-arm64-musl@14.2.33':
-    resolution: {integrity: sha512-Bm+QulsAItD/x6Ih8wGIMfRJy4G73tu1HJsrccPW6AfqdZd0Sfm5Imhgkgq2+kly065rYMnCOxTBvmvFY1BKfg==}
+  '@next/swc-linux-arm64-musl@16.4.6':
+    resolution: {integrity: sha512-7/qPhTxDp2ScluOJOhLuhWmlA17o1yZ0SIgpISBCpBxXgtnK4+KGywBpFkfLPiU1rnSM1faFGzYkH6i7JdTrqA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@next/swc-linux-x64-gnu@14.2.33':
-    resolution: {integrity: sha512-FnFn+ZBgsVMbGDsTqo8zsnRzydvsGV8vfiWwUo1LD8FTmPTdV+otGSWKc4LJec0oSexFnCYVO4hX8P8qQKaSlg==}
+  '@next/swc-linux-x64-gnu@16.4.6':
+    resolution: {integrity: sha512-oOpbNa8XOW1qCGd9VvzC4fbkkRxEls7/WI6tz+YHC0xRA7KpV1U7DrAnCPjzVyOk/karzWEepCOcTIDmwK8FwQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@next/swc-linux-x64-musl@14.2.33':
-    resolution: {integrity: sha512-345tsIWMzoXaQndUTDv1qypDRiebFxGYx9pYkhwY4hBRaOLt8UGfiWKr9FSSHs25dFIf8ZqIFaPdy5MljdoawA==}
+  '@next/swc-linux-x64-musl@16.4.6':
+    resolution: {integrity: sha512-aM8CZ+OR2EwXaAYw7KGkW2GDmNDsLBIRe1MMRZCJPTdw/xhTD0IMUVO4sf3KqrzuRouGzwwLZn34+gFeVXiUQA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@next/swc-win32-arm64-msvc@14.2.33':
-    resolution: {integrity: sha512-nscpt0G6UCTkrT2ppnJnFsYbPDQwmum4GNXYTeoTIdsmMydSKFz9Iny2jpaRupTb+Wl298+Rh82WKzt9LCcqSQ==}
+  '@next/swc-win32-arm64-msvc@16.4.6':
+    resolution: {integrity: sha512-U0p7/tEtqvHX2crhd841CDwKtp5CFkKXVjOhmfccR3Pvp64sj8KBwRqsvltqLOwVBbj0NtkxwXSDpEHYGbxeXQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-ia32-msvc@14.2.33':
-    resolution: {integrity: sha512-pc9LpGNKhJ0dXQhZ5QMmYxtARwwmWLpeocFmVG5Z0DzWq5Uf0izcI8tLc+qOpqxO1PWqZ5A7J1blrUIKrIFc7Q==}
-    engines: {node: '>= 10'}
-    cpu: [ia32]
-    os: [win32]
-
-  '@next/swc-win32-x64-msvc@14.2.33':
-    resolution: {integrity: sha512-nOjfZMy8B94MdisuzZo9/57xuFVLHJaDj5e/xrduJp9CV2/HrfxTRH2fbyLe+K9QT41WBLUd4iXX3R7jBp0EUg==}
+  '@next/swc-win32-x64-msvc@16.4.6':
+    resolution: {integrity: sha512-3ZG15/5WIdlTQsIEvc9sPTTSL5XFrlLklIKmfF4fwsDnoAhu6NcBDXsk3mbGxNyo6aVLEGex+fHCv2MahY7a9g==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -4245,11 +4314,11 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@polotno/core@0.21.0':
-    resolution: {integrity: sha512-wD9OBV2k0rfMn1tKt08eN193h2ebPI/dM25VeUpgAk5l6LslLVbA0Nq2QLzuG/tx8p0stLPYmROqaqQbiYcksQ==}
+  '@polotno/core@0.22.0':
+    resolution: {integrity: sha512-NmC2wZsFB9jZu38JRzRQcdWhov9eiEMNNkO3HVJMChYFLK8sb7YKypK+m7FBa57co7Iop0RLAEumLPh3X1i2xg==}
 
-  '@polotno/html-export@0.11.0':
-    resolution: {integrity: sha512-b3rs/GDJ+E8mWEXXqbLtCQMJfNwqlvQu3+X0l4WBazwsqI0g6nvrwAoCBrbyztY0zVaUlMQQYXGiWmL8NQFtZg==}
+  '@polotno/html-export@0.12.0':
+    resolution: {integrity: sha512-tHiGRsn7oy0G5rr/3yrnxvpr67LKYqlngoQru3JwYn+OlNvTRGa0+OIIs0AKm/6iiY/jakMJQPZmT279X2ihqg==}
     peerDependencies:
       '@napi-rs/canvas': ^1.1.0
       linkedom: ^0.18.15
@@ -4259,26 +4328,26 @@ packages:
       linkedom:
         optional: true
 
-  '@polotno/pdf-export@0.16.0':
-    resolution: {integrity: sha512-Q6/v1+3I+X/DaqO6/l8RmhiAMUpRRBg0TQjtR0AtVtSQjpKFesW3uhP0Hw90aeFt/ZBTCYtJ943fugLyHX65Nw==}
+  '@polotno/pdf-export@0.17.1':
+    resolution: {integrity: sha512-LzhQy9kZ+ojKLmlNtAlxz0DEIbj7v7xBzGPNqcWmrZ/NZuB6J+a/U0n1lf/icB4hm75uW9tC5LiHr+tGDmm6ww==}
     engines: {node: '>=22.13.0'}
 
-  '@polotno/pdf-import@0.13.0':
-    resolution: {integrity: sha512-RQKfHAi4M/OQAJ121Cyt2xv0iq3POlqShVhxS84Wjg0alOcq2nDyWxeYZ1upSc1DEY/ZKzbk9TnbR2k3yHjM+A==}
+  '@polotno/pdf-import@0.13.1':
+    resolution: {integrity: sha512-bcKp4kMfLvT69YCWhdGPZhsp0jh9pQeQTgzpsrRgnetRHuCAd019n151z/tzn3rvn3wT9L+EryPCuk+6KQ4KlA==}
     engines: {node: '>=22.13.0'}
 
-  '@polotno/pptx-export@0.12.0':
-    resolution: {integrity: sha512-Tc/16niJI7uS2mMoSCG6pBAmKGKbw2QppLJ8RHAK+Sc1JgpbuHmnBi1YeeuHRbV5DXKihi+FXTocA2v+iOlITg==}
+  '@polotno/pptx-export@0.13.0':
+    resolution: {integrity: sha512-rDgZozbJBgyh2JI1ImjlkQMwNE5pYt/zsugaFdFpLW0ghqhv6OrUsZy2Bdcam9lu84AP/vX6mmSe+aIyRxq5xg==}
     engines: {node: '>=22.13.0'}
 
-  '@polotno/psd-import@0.3.3':
-    resolution: {integrity: sha512-IoEpq3WY+5xHarSS86wdE8DdGHhB5YUmY3UvvHRPv5YP9CfzERs17pbiRjEJhNUur9/F0GDETAusPDGRR/IOTQ==}
+  '@polotno/psd-import@0.3.4':
+    resolution: {integrity: sha512-i509xIak4dZg/UJz9rflXgRBM6ooCOD7THBbFlBFdqi+bEfTaUcFvNe+vBw6USe895SArJlskWa7hAxwQBeXkQ==}
 
-  '@polotno/schema@0.12.0':
-    resolution: {integrity: sha512-oH7CDi1gCDWz6+RS6/Fg7jehSlDa4wOtHlTASYdluFqsMSOBeqfUoNFLYppGelEw6onTE/fALiFmOccVN3tahA==}
+  '@polotno/schema@0.13.0':
+    resolution: {integrity: sha512-1vafR/OaF0/hWE1qAtL7Qi+dqU7+7FRsW1NhOnD4yolTTa9cebqYlSrgLRv5SO0mV2DW0DImUf7xG/jKr+qdog==}
 
-  '@polotno/svg-export@0.12.0':
-    resolution: {integrity: sha512-2EcymQTz2Z2u6vsCDn8If+qSHCj9MG/8u8Zxuyxi+pBEUL/pzU9iG+oK4WkyBGdtcw/feAkAic8zd8lLE2GW5A==}
+  '@polotno/svg-export@0.13.0':
+    resolution: {integrity: sha512-OgiNlb12DzR36dihxw9NDiddYLI4+kM3wMCJiZhCFK+NJgy+CsjsW2rcpN7IHPp8VtDHKMwxyeGQgEfubdszug==}
     peerDependencies:
       '@napi-rs/canvas': ^1.1.0
       linkedom: ^0.18.15
@@ -4288,13 +4357,13 @@ packages:
       linkedom:
         optional: true
 
-  '@polotno/svg-import@0.2.4':
-    resolution: {integrity: sha512-B76JGt7kQ6h7iJ150zJbQnw/Yxco0RbUgkj/8B9hEUUWssPWvRU9AXs2YitjEMrkfiHYfrLuzcBfBLpGCSmz8g==}
+  '@polotno/svg-import@0.2.5':
+    resolution: {integrity: sha512-Z+zpAKKQBQmQiPZ/GGDkc3jh6JKrNElTlkU3nc4sZyspYVpm59Dr3uixrsyllFESPTVpJaOrRGHFRcsmnUChKA==}
 
-  '@polotno/video-export@0.5.2':
-    resolution: {integrity: sha512-e68DqStj6fWK0rhhpFdMzkXA5INOSb4sQpv/ov4i+hSPZPka4ceqmuOhaObIM7UJoEOltOJLr9fO1mV/3goH3g==}
+  '@polotno/video-export@0.6.0':
+    resolution: {integrity: sha512-Zd7KnlhsSfdRIiC2TrMfww8TnvWerdcbW3SQrbdzNx/a4t1WqephQ+/DmqcuP2xgGuFPBz+EBURh/EBOdHl8Ag==}
     peerDependencies:
-      polotno: ^4.17.0
+      polotno: ^4.21.0
 
   '@rolldown/binding-android-arm-eabi@1.2.19':
     resolution: {integrity: sha512-e+Ebe0WT+9tbXmNKPIiC8YrWAHYwug3m6i4p3rZGGulfZri1jtI4HslT+OZnFf/OIHowWF71DTlHwXBP2SiA7A==}
@@ -4616,8 +4685,8 @@ packages:
   '@swc/helpers@0.5.20':
     resolution: {integrity: sha512-2egEBHUMasdypIzrprsu8g+OEVd7Vp2MM3a2eVlM/cyFYto0nGz5BX5BTgh/ShZZI9ed+ozEq+Ngt+rgmUs8tw==}
 
-  '@swc/helpers@0.5.5':
-    resolution: {integrity: sha512-KGYxvIOXcceOAbEk4bi/dVLEK9z8sZ0uBB3Il5b1rhfClSpcX0yfRO0KmTkqR2cnQDymwLB+25ZyMzICg/cm/A==}
+  '@swc/helpers@0.5.23':
+    resolution: {integrity: sha512-5lSsMOTXURePglDfvuAQUqkGek9Hg2kksOYay2m0+XR++b2NWYL/4sWyuvVBIs8oKnJaxkdi9whaL/sqN13afw==}
 
   '@swc/types@0.1.26':
     resolution: {integrity: sha512-lyMwd7WGgG79RS7EERZV3T8wMdmPq3xwyg+1nmAM64kIhx5yl+juO2PYIHb7vTiPgPCj8LYjsNV2T5wiQHUEaw==}
@@ -5391,8 +5460,8 @@ packages:
   brorand@1.1.0:
     resolution: {integrity: sha512-cKV8tMCEpQs4hK/ik71d6LrPOnpkpGBR0wzxqr68g2m/LB2GxVYQroAjMJZRVM1Y4BCjCKc3vAamxSzOY2RP+w==}
 
-  brotli@1.3.3:
-    resolution: {integrity: sha512-oTKjJdShmDuGW94SyyaoQvAjf30dZaHnjJ8uAF+u2/vGJkJbJPJAT1gDiOJP5v1Zb6f9KEyW/1HpuaWIXtGHPg==}
+  brotli@2.1.0:
+    resolution: {integrity: sha512-4KAtOr4Z3jaIQlXy9AeuaVz1vPWTyZ6eiQYu4SsSz6VcUsV6Epz6kA3Vf7eTGTaspaqlnQLBqvkozKP5WyQMZQ==}
 
   browser-process-hrtime@1.0.0:
     resolution: {integrity: sha512-9o5UecI3GhkpM6DrXr69PblIuWxPKk9Y0jHBRhdocZ2y7YECBFCsHm79Pr3OyR2AvjhDkabFJaDJMYRazHgsow==}
@@ -5446,10 +5515,6 @@ packages:
 
   builtin-status-codes@3.0.0:
     resolution: {integrity: sha512-HpGFw18DgFWlncDfjTa2rcQ4W88O1mC8e8yZ2AvQY5KDaktSTwo+KRf6nHK6FRI5FyRyb/5T6+TSxfP7QyGsmQ==}
-
-  busboy@1.6.0:
-    resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
-    engines: {node: '>=10.16.0'}
 
   bytes@3.1.2:
     resolution: {integrity: sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==}
@@ -6261,8 +6326,8 @@ packages:
   detect-node@2.1.0:
     resolution: {integrity: sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==}
 
-  dfa@1.2.0:
-    resolution: {integrity: sha512-ED3jP8saaweFTjeGX8HQPjeC1YYyZs98jGNZx6IiBvxW7JG5v492kamAQB3m2wop07CvU/RQmzcKr6bgcC5D/Q==}
+  dfa@2.0.0:
+    resolution: {integrity: sha512-4Z/ig4JY/6CyXaPvkjuJu7q5+6SikugixA/1wf/52A9Z+WOJr8NFKd60pv6KCwsdVdDmCCE3JrGwPFYxNcw8xw==}
 
   diffie-hellman@5.0.3:
     resolution: {integrity: sha512-kqag/Nl+f3GwyK25fhUMYj81BUOrZ9IuJsjIcDE5icNM9FJHAVm3VcUDxdLPoQtTuUylWm6ZIknYJwwaPxsUzg==}
@@ -6832,8 +6897,8 @@ packages:
       debug:
         optional: true
 
-  fontkit@2.0.4:
-    resolution: {integrity: sha512-syetQadaUEDNdxdugga9CpEYVaQIxOwk7GlwZWWZ19//qW4zE5bknOKeMBDYAASwnpaSHKJITRLMF9m1fp3s6g==}
+  fontkit@3.0.0:
+    resolution: {integrity: sha512-sjSkmtEw6RYJcvEbd+LHHLp2HFDaXdAia2RTbaGcBu/5QaDhxz35249eH9G07E0PzrtlkPF9FYXHF6YXxcAa1w==}
 
   for-each@0.3.5:
     resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
@@ -8006,6 +8071,15 @@ packages:
       '@types/react':
         optional: true
 
+  lucide-react@1.74.0:
+    resolution: {integrity: sha512-A1doIs/1fj1WnPbtIT7WRiM6Kvw5NUg+BtkoOh3Shpr4obwSDVt6WxCEcNH56EWprzuCoKle1OF0RqIkojwL1A==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
   magic-string@0.22.5:
     resolution: {integrity: sha512-oreip9rJZkzvA8Qzk9HFs8fZGF/u7H/gtrE8EN6RjKJ9kh2HlC+yQ2QezifqTZfGyiuAV0dRv5a+y/8gBb1m9w==}
 
@@ -8052,8 +8126,8 @@ packages:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
     engines: {node: '>= 0.6'}
 
-  mediabunny@1.65.2:
-    resolution: {integrity: sha512-goZpibvo/5hkc/56WVNm93Ini+o7K4y8aXA20c/BN1B+m3L5aHQa8MTvO+S1APg/YI8kMILtrX6QCqUtxLW7bA==}
+  mediabunny@1.66.0:
+    resolution: {integrity: sha512-0Zff/qLkY1ZRyjBEt2vQjLeMigmU/dFKwJLpiPyCiskIel2f2R2kqMxaLYbeHN+rmyz4PVwwLSnU9anjUHHeJQ==}
 
   memoize-one@5.2.1:
     resolution: {integrity: sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==}
@@ -8231,8 +8305,8 @@ packages:
       '@angular/core': '>=11.1.1'
       mobx: '>=2'
 
-  mobx-react-lite@5.1.2:
-    resolution: {integrity: sha512-40ZukD+RmKT1up5J1rHcPU8wJSB++Wf37lkV6wIHdQtRTt9wCYf9swfYUbfcW+Mz94xImQBwQ7jAr0aP0KeATA==}
+  mobx-react-lite@5.1.3:
+    resolution: {integrity: sha512-/Qh+wwtyNp9zXXns+B2MxVHC/npHsYvnVJNe0ddvHW4rgAxTOgVr0z/6hWSm2mqdT0jv1QWYZuJ6+3dediv+wQ==}
     peerDependencies:
       mobx: ^7.0.0
       react: ^18 || ^19
@@ -8257,8 +8331,8 @@ packages:
   mobx@5.15.7:
     resolution: {integrity: sha512-wyM3FghTkhmC+hQjyPGGFdpehrcX1KOXsDuERhfK2YbJemkUhEB+6wzEN639T21onxlfYBmriA1PFnvxTUhcKw==}
 
-  mobx@7.1.5:
-    resolution: {integrity: sha512-m+fpkdEnE6NYxiFtUxS1xgfx2GG2j960LOCFvCso7EqWgmPkJQZWAVZQ62Xb9if6bbJXGRVQCoKjFmg1b+IwQg==}
+  mobx@7.1.7:
+    resolution: {integrity: sha512-fzFPm0u0xHxrAyjFsjfA/a99JgyvLh8R/bnTe7uD37cwbO5O7OUrv/e6Q4rlYdBGCf3rR/pVvh1OVMPF10ghng==}
 
   moment@2.30.1:
     resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
@@ -8339,20 +8413,23 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  next@14.2.35:
-    resolution: {integrity: sha512-KhYd2Hjt/O1/1aZVX3dCwGXM1QmOV4eNM2UTacK5gipDdPN/oHHK/4oVGy7X8GMfPMsUTUEmGlsy0EY1YGAkig==}
-    engines: {node: '>=18.17.0'}
+  next@16.4.6:
+    resolution: {integrity: sha512-QZJiYhaZLJMo2KpkQGQIwvmd79WVsAWeYIU554a8d7zArS3si/IRy3lBNV/rtYhE70oLwdLYhPAXLPx8HwcwtA==}
+    engines: {node: '>=20.9.0'}
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
-      '@playwright/test': ^1.41.2
-      react: ^18.2.0
-      react-dom: ^18.2.0
+      '@playwright/test': ^1.51.1
+      babel-plugin-react-compiler: '*'
+      react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+      react-dom: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
       sass: ^1.3.0
     peerDependenciesMeta:
       '@opentelemetry/api':
         optional: true
       '@playwright/test':
+        optional: true
+      babel-plugin-react-compiler:
         optional: true
       sass:
         optional: true
@@ -8858,8 +8935,8 @@ packages:
     resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==}
     engines: {node: '>=10.13.0'}
 
-  polotno@4.20.1:
-    resolution: {integrity: sha512-gtlCy5qqYOf/W5E26kZFXqULIaNaD6V2yTT/2Hzx3ue7/1BojgsmiHXADP+Bn+uU6w80GFjzIE2Fbkp/H0B1+w==}
+  polotno@4.21.0:
+    resolution: {integrity: sha512-rlZ0fUSJj0QmJApKJZ1crAbz/PAItL7+HYgKSP1S6Sdb5GPhdkKKz2ybD/ce1AxJuJYkQwawMM0hBe/o0genkw==}
     peerDependencies:
       '@blueprintjs/core': ^6.x
       '@blueprintjs/icons': ^6.x
@@ -9061,8 +9138,8 @@ packages:
     resolution: {integrity: sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA==}
     engines: {node: '>=6.0.0'}
 
-  postcss@8.4.31:
-    resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
+  postcss@8.5.23:
+    resolution: {integrity: sha512-g50586zr4bZmwFiTlflMu8E0bDTb5I5gertgwAKmsdUlTQIhZtunzUlD1WSzwcVWPoAVpsrA6vlfCD7oXvRwgg==}
     engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.5.32:
@@ -9394,8 +9471,8 @@ packages:
   remove-trailing-separator@1.1.0:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==}
 
-  render-tag@0.4.4:
-    resolution: {integrity: sha512-3ptStRZ2z/zAkRCzBv34sLWg96wjdTKvZRre8lj1Hh8VMR2h3oyqed/Jz7G/NX9HLxkFTcZBzHQ5Dh7//sLpQA==}
+  render-tag@0.4.5:
+    resolution: {integrity: sha512-KvmwXnTnXlQqK7BQnyQomI8ZWAntjaq5+VyC7BUT7nTD16sJbCH9w3arsEQ5iPsy43tTHZZOVGy1sc3X7Q7o3g==}
 
   renderkid@2.0.7:
     resolution: {integrity: sha512-oCcFyxaMrKsKcTY59qnCAtmDVSLfPbrv6A3tVbPdFMMrv5jaK10V6m40cKsoPNhAqN6rmHW9sswW4o3ruSrwUQ==}
@@ -9919,10 +9996,6 @@ packages:
   stream-shift@1.0.3:
     resolution: {integrity: sha512-76ORR0DO1o1hlKwTbi/DM3EXWGf3ZJYO8cXX5RJwnul2DEg2oyoZyjLNoQM8WsvZiFKCRfC1O0J7iCvie3RZmQ==}
 
-  streamsearch@1.1.0:
-    resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
-    engines: {node: '>=10.0.0'}
-
   strict-uri-encode@1.1.0:
     resolution: {integrity: sha512-R3f198pcvnB+5IpnBlRkphuE9n46WyVl8I39W/ZUTZLz4nqSP/oLYUrcnJrw462Ds8he4YKMov2efsTIw1BDGQ==}
     engines: {node: '>=0.10.0'}
@@ -10009,13 +10082,13 @@ packages:
     resolution: {integrity: sha512-iAqrCpp7UXD2FZiHWhLXqdJ6CmNeVzRkkHAyyhhKMVtbVm2KtPX3D/bJNonvtcyLTHS4rwqP2pz9fsjK1K4z0Q==}
     engines: {node: '>=18'}
 
-  styled-jsx@5.1.1:
-    resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
+  styled-jsx@5.1.6:
+    resolution: {integrity: sha512-qSVyDTeMotdvQYoHWLNGwRFJHC+i+ZvdBRYosOFgC+Wg1vx4frN2/RG/NA7SYqqvKNLf39P2LSRA2pu6n0XYZA==}
     engines: {node: '>= 12.0.0'}
     peerDependencies:
       '@babel/core': '*'
       babel-plugin-macros: '*'
-      react: '>= 16.8.0 || 17.x.x || ^18.0.0-0'
+      react: '>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0'
     peerDependenciesMeta:
       '@babel/core':
         optional: true
@@ -10347,8 +10420,8 @@ packages:
     resolution: {integrity: sha512-JQ84qTuMg4nVkx8ga4A16a1epI9H6uTXAknqxkGF/aFfRLw1xC/Bp24HNLaZhHSkWd3+84t8iXnp1J0kYcZHhg==}
     engines: {node: '>=4'}
 
-  unicode-properties@1.4.1:
-    resolution: {integrity: sha512-CLjCCLQ6UuMxWnbIylkisbRj31qxHPAurvena/0iwSVbQ2G1VY5/HjV0IRabOEbDHlzZlRdCrD4NhB0JtU40Pg==}
+  unicode-properties@2.0.2:
+    resolution: {integrity: sha512-7MWOxBC6aT/+xeMKjdnp3GEuAMLmu0uRGD3jAN3PrGnjKynnellVkvQ6OYdeSIBwSdo67+zvgs1//7Qenb9iSA==}
 
   unicode-property-aliases-ecmascript@2.2.0:
     resolution: {integrity: sha512-hpbDzxUY9BFwX+UeBnxv3Sh1q7HFxj48DTmXchNgRa46lO8uj3/1iEn3MiNUYTg1g9ctIqXCCERn8gYZhHC5lQ==}
@@ -10357,8 +10430,9 @@ packages:
   unicode-trie@0.3.1:
     resolution: {integrity: sha512-WgVuO0M2jDl7hVfbPgXv2LUrD81HM0bQj/bvLGiw6fJ4Zo8nNFnDrA0/hU2Te/wz6pjxCm5cxJwtLjo2eyV51Q==}
 
-  unicode-trie@2.0.0:
-    resolution: {integrity: sha512-x7bc76x0bm4prf1VLg79uhAzKw8DVboClSN5VxJuQ+LKDOVEW9CdH+VY7SP+vX7xCYQqzzgQpFqz15zeLvAtZQ==}
+  unicode-trie@3.0.0:
+    resolution: {integrity: sha512-Cy+7EIpopVQ7ZCVZ8dFo1fmTk1lHMNxY62SeEhxsVEmISZEryEGgKSLzz6z6pquJXXopamfpi2AzsDCJ7KmAOA==}
+    engines: {node: '>=20.17.0'}
 
   union-value@1.0.1:
     resolution: {integrity: sha512-tJfXmxMeWYnczCVs7XAEvIV7ieppALdyepWMkHkwciRpZraG/xwT+s2JN8+pr1+8jCRf80FFzvr+MpQeeoF4Xg==}
@@ -12901,7 +12975,7 @@ snapshots:
   '@lmdb/lmdb-win32-x64@3.0.13':
     optional: true
 
-  '@lottiefiles/dotlottie-web@0.82.1': {}
+  '@lottiefiles/dotlottie-web@0.83.2': {}
 
   '@meronex/icons@1.4.1(react@19.3.1)':
     dependencies:
@@ -12947,34 +13021,67 @@ snapshots:
   '@napi-rs/canvas-android-arm64@1.1.0':
     optional: true
 
+  '@napi-rs/canvas-android-arm64@1.1.1':
+    optional: true
+
   '@napi-rs/canvas-darwin-arm64@1.1.0':
+    optional: true
+
+  '@napi-rs/canvas-darwin-arm64@1.1.1':
     optional: true
 
   '@napi-rs/canvas-darwin-x64@1.1.0':
     optional: true
 
+  '@napi-rs/canvas-darwin-x64@1.1.1':
+    optional: true
+
   '@napi-rs/canvas-linux-arm-gnueabihf@1.1.0':
+    optional: true
+
+  '@napi-rs/canvas-linux-arm-gnueabihf@1.1.1':
     optional: true
 
   '@napi-rs/canvas-linux-arm64-gnu@1.1.0':
     optional: true
 
+  '@napi-rs/canvas-linux-arm64-gnu@1.1.1':
+    optional: true
+
   '@napi-rs/canvas-linux-arm64-musl@1.1.0':
+    optional: true
+
+  '@napi-rs/canvas-linux-arm64-musl@1.1.1':
     optional: true
 
   '@napi-rs/canvas-linux-riscv64-gnu@1.1.0':
     optional: true
 
+  '@napi-rs/canvas-linux-riscv64-gnu@1.1.1':
+    optional: true
+
   '@napi-rs/canvas-linux-x64-gnu@1.1.0':
+    optional: true
+
+  '@napi-rs/canvas-linux-x64-gnu@1.1.1':
     optional: true
 
   '@napi-rs/canvas-linux-x64-musl@1.1.0':
     optional: true
 
+  '@napi-rs/canvas-linux-x64-musl@1.1.1':
+    optional: true
+
   '@napi-rs/canvas-win32-arm64-msvc@1.1.0':
     optional: true
 
+  '@napi-rs/canvas-win32-arm64-msvc@1.1.1':
+    optional: true
+
   '@napi-rs/canvas-win32-x64-msvc@1.1.0':
+    optional: true
+
+  '@napi-rs/canvas-win32-x64-msvc@1.1.1':
     optional: true
 
   '@napi-rs/canvas@1.1.0':
@@ -12990,6 +13097,21 @@ snapshots:
       '@napi-rs/canvas-linux-x64-musl': 1.1.0
       '@napi-rs/canvas-win32-arm64-msvc': 1.1.0
       '@napi-rs/canvas-win32-x64-msvc': 1.1.0
+    optional: true
+
+  '@napi-rs/canvas@1.1.1':
+    optionalDependencies:
+      '@napi-rs/canvas-android-arm64': 1.1.1
+      '@napi-rs/canvas-darwin-arm64': 1.1.1
+      '@napi-rs/canvas-darwin-x64': 1.1.1
+      '@napi-rs/canvas-linux-arm-gnueabihf': 1.1.1
+      '@napi-rs/canvas-linux-arm64-gnu': 1.1.1
+      '@napi-rs/canvas-linux-arm64-musl': 1.1.1
+      '@napi-rs/canvas-linux-riscv64-gnu': 1.1.1
+      '@napi-rs/canvas-linux-x64-gnu': 1.1.1
+      '@napi-rs/canvas-linux-x64-musl': 1.1.1
+      '@napi-rs/canvas-win32-arm64-msvc': 1.1.1
+      '@napi-rs/canvas-win32-x64-msvc': 1.1.1
 
   '@napi-rs/wasm-runtime@1.2.6(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)':
     dependencies:
@@ -12998,33 +13120,30 @@ snapshots:
       '@tybys/wasm-util': 0.10.4
     optional: true
 
-  '@next/env@14.2.35': {}
+  '@next/env@16.4.6': {}
 
-  '@next/swc-darwin-arm64@14.2.33':
+  '@next/swc-darwin-arm64@16.4.6':
     optional: true
 
-  '@next/swc-darwin-x64@14.2.33':
+  '@next/swc-darwin-x64@16.4.6':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@14.2.33':
+  '@next/swc-linux-arm64-gnu@16.4.6':
     optional: true
 
-  '@next/swc-linux-arm64-musl@14.2.33':
+  '@next/swc-linux-arm64-musl@16.4.6':
     optional: true
 
-  '@next/swc-linux-x64-gnu@14.2.33':
+  '@next/swc-linux-x64-gnu@16.4.6':
     optional: true
 
-  '@next/swc-linux-x64-musl@14.2.33':
+  '@next/swc-linux-x64-musl@16.4.6':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@14.2.33':
+  '@next/swc-win32-arm64-msvc@16.4.6':
     optional: true
 
-  '@next/swc-win32-ia32-msvc@14.2.33':
-    optional: true
-
-  '@next/swc-win32-x64-msvc@14.2.33':
+  '@next/swc-win32-x64-msvc@16.4.6':
     optional: true
 
   '@node-ipc/js-queue@2.0.3':
@@ -13791,23 +13910,23 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@polotno/core@0.21.0(canvas@3.2.3)':
+  '@polotno/core@0.22.0(canvas@3.2.3)':
     dependencies:
-      '@polotno/schema': 0.12.0
+      '@polotno/schema': 0.13.0
       fflate: 0.8.3
       gradient-parser: 1.2.0
       konva: 10.9.1(canvas@3.2.3)
       mensch: 0.3.4
-      render-tag: 0.4.4
+      render-tag: 0.4.5
       tinycolor2: 1.6.0
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/html-export@0.11.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))':
+  '@polotno/html-export@0.12.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))':
     dependencies:
-      '@polotno/core': 0.21.0(canvas@3.2.3)
-      '@polotno/schema': 0.12.0
+      '@polotno/core': 0.22.0(canvas@3.2.3)
+      '@polotno/schema': 0.13.0
     optionalDependencies:
       '@napi-rs/canvas': 1.1.0
       linkedom: 0.18.15(canvas@3.2.3)
@@ -13815,11 +13934,11 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/pdf-export@0.16.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)':
+  '@polotno/pdf-export@0.17.1(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)':
     dependencies:
-      '@napi-rs/canvas': 1.1.0
-      '@polotno/core': 0.21.0(canvas@3.2.3)
-      '@polotno/schema': 0.12.0
+      '@napi-rs/canvas': 1.1.1
+      '@polotno/core': 0.22.0(canvas@3.2.3)
+      '@polotno/schema': 0.13.0
       file-type: 22.3.0(supports-color@7.2.0)
       linkedom: 0.18.15(canvas@3.2.3)
       sharp: 0.35.5(@types/node@25.5.0)
@@ -13829,20 +13948,20 @@ snapshots:
       - skia-canvas
       - supports-color
 
-  '@polotno/pdf-import@0.13.0(canvas@3.2.3)':
+  '@polotno/pdf-import@0.13.1(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.21.0(canvas@3.2.3)
-      '@polotno/schema': 0.12.0
-      render-tag: 0.4.4
+      '@polotno/core': 0.22.0(canvas@3.2.3)
+      '@polotno/schema': 0.13.0
+      render-tag: 0.4.5
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/pptx-export@0.12.0(@types/node@25.5.0)(canvas@3.2.3)':
+  '@polotno/pptx-export@0.13.0(@types/node@25.5.0)(canvas@3.2.3)':
     dependencies:
-      '@napi-rs/canvas': 1.1.0
-      '@polotno/core': 0.21.0(canvas@3.2.3)
-      '@polotno/schema': 0.12.0
+      '@napi-rs/canvas': 1.1.1
+      '@polotno/core': 0.22.0(canvas@3.2.3)
+      '@polotno/schema': 0.13.0
       jszip: 3.10.2
       konva: 10.9.1(canvas@3.2.3)
       linkedom: 0.18.15(canvas@3.2.3)
@@ -13852,23 +13971,23 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/psd-import@0.3.3(canvas@3.2.3)':
+  '@polotno/psd-import@0.3.4(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.21.0(canvas@3.2.3)
-      '@polotno/schema': 0.12.0
-      fontkit: 2.0.4
+      '@polotno/core': 0.22.0(canvas@3.2.3)
+      '@polotno/schema': 0.13.0
+      fontkit: 3.0.0
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/schema@0.12.0':
+  '@polotno/schema@0.13.0':
     dependencies:
       zod: 4.6.7
 
-  '@polotno/svg-export@0.12.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))':
+  '@polotno/svg-export@0.13.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))':
     dependencies:
-      '@polotno/core': 0.21.0(canvas@3.2.3)
-      '@polotno/schema': 0.12.0
+      '@polotno/core': 0.22.0(canvas@3.2.3)
+      '@polotno/schema': 0.13.0
     optionalDependencies:
       '@napi-rs/canvas': 1.1.0
       linkedom: 0.18.15(canvas@3.2.3)
@@ -13876,21 +13995,21 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/svg-import@0.2.4(canvas@3.2.3)':
+  '@polotno/svg-import@0.2.5(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.21.0(canvas@3.2.3)
-      '@polotno/schema': 0.12.0
+      '@polotno/core': 0.22.0(canvas@3.2.3)
+      '@polotno/schema': 0.13.0
       konva: 10.9.1(canvas@3.2.3)
-      render-tag: 0.4.4
+      render-tag: 0.4.5
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/video-export@0.5.2(canvas@3.2.3)(polotno@4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))':
+  '@polotno/video-export@0.6.0(canvas@3.2.3)(polotno@4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))':
     dependencies:
-      '@polotno/core': 0.21.0(canvas@3.2.3)
-      mediabunny: 1.65.2
-      polotno: 4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+      '@polotno/core': 0.22.0(canvas@3.2.3)
+      mediabunny: 1.66.0
+      polotno: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
     transitivePeerDependencies:
       - canvas
       - skia-canvas
@@ -14106,9 +14225,8 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@swc/helpers@0.5.5':
+  '@swc/helpers@0.5.23':
     dependencies:
-      '@swc/counter': 0.1.3
       tslib: 2.8.1
 
   '@swc/types@0.1.26':
@@ -15247,7 +15365,7 @@ snapshots:
 
   brorand@1.1.0: {}
 
-  brotli@1.3.3:
+  brotli@2.1.0:
     dependencies:
       base64-js: 1.5.1
 
@@ -15327,10 +15445,6 @@ snapshots:
       ieee754: 1.2.1
 
   builtin-status-codes@3.0.0: {}
-
-  busboy@1.6.0:
-    dependencies:
-      streamsearch: 1.1.0
 
   bytes@3.1.2: {}
 
@@ -16196,7 +16310,7 @@ snapshots:
 
   detect-node@2.1.0: {}
 
-  dfa@1.2.0: {}
+  dfa@2.0.0: {}
 
   diffie-hellman@5.0.3:
     dependencies:
@@ -16991,17 +17105,14 @@ snapshots:
     optionalDependencies:
       debug: 4.4.3(supports-color@6.1.0)
 
-  fontkit@2.0.4:
+  fontkit@3.0.0:
     dependencies:
-      '@swc/helpers': 0.5.20
-      brotli: 1.3.3
-      clone: 2.1.2
-      dfa: 1.2.0
-      fast-deep-equal: 3.1.3
+      brotli: 2.1.0
+      dfa: 2.0.0
+      fflate: 0.8.3
       restructure: 3.0.2
-      tiny-inflate: 1.0.3
-      unicode-properties: 1.4.1
-      unicode-trie: 2.0.0
+      unicode-properties: 2.0.2
+      unicode-trie: 3.0.0
 
   for-each@0.3.5:
     dependencies:
@@ -18226,6 +18337,12 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.17
 
+  lucide-react@1.74.0(@types/react@19.2.17)(react@19.3.1):
+    dependencies:
+      react: 19.3.1
+    optionalDependencies:
+      '@types/react': 19.2.17
+
   magic-string@0.22.5:
     dependencies:
       vlq: 0.2.3
@@ -18284,7 +18401,7 @@ snapshots:
 
   media-typer@0.3.0: {}
 
-  mediabunny@1.65.2:
+  mediabunny@1.66.0:
     dependencies:
       '@types/dom-mediacapture-transform': 0.1.11
       '@types/dom-webcodecs': 0.1.13
@@ -18480,29 +18597,29 @@ snapshots:
 
   mkdirp@1.0.4: {}
 
-  mobx-angular@4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@7.1.5):
+  mobx-angular@4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@7.1.7):
     dependencies:
       '@angular/common': 18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
       '@angular/core': 18.2.14(rxjs@7.8.1)(zone.js@0.14.10)
-      mobx: 7.1.5
+      mobx: 7.1.7
       tslib: 2.8.1
 
-  mobx-react-lite@5.1.2(mobx@7.1.5)(react@19.3.1):
+  mobx-react-lite@5.1.3(mobx@7.1.7)(react@19.3.1):
     dependencies:
-      mobx: 7.1.5
+      mobx: 7.1.7
       react: 19.3.1
 
-  mobx-state-tree@9.0.1(mobx@7.1.5)(typescript@5.5.4):
+  mobx-state-tree@9.0.1(mobx@7.1.7)(typescript@5.5.4):
     dependencies:
-      mobx: 7.1.5
+      mobx: 7.1.7
       ts-essentials: 9.4.2(typescript@5.5.4)
     transitivePeerDependencies:
       - typescript
 
-  mobx-vue-lite@0.4.3(mobx@7.1.5)(vue@3.5.31(typescript@5.5.4)):
+  mobx-vue-lite@0.4.3(mobx@7.1.7)(vue@3.5.31(typescript@5.5.4)):
     dependencies:
       '@vueuse/core': 10.7.2(vue@3.5.31(typescript@5.5.4))
-      mobx: 7.1.5
+      mobx: 7.1.7
       vue: 3.5.31(typescript@5.5.4)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -18515,7 +18632,7 @@ snapshots:
 
   mobx@5.15.7: {}
 
-  mobx@7.1.5: {}
+  mobx@7.1.7: {}
 
   moment@2.30.1: {}
 
@@ -18619,30 +18736,30 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@14.2.35(@babel/core@7.29.0(supports-color@7.2.0))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sass@1.77.6):
+  next@16.4.6(@babel/core@7.29.0(supports-color@7.2.0))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sass@1.77.6):
     dependencies:
-      '@next/env': 14.2.35
-      '@swc/helpers': 0.5.5
-      busboy: 1.6.0
+      '@next/env': 16.4.6
+      '@swc/helpers': 0.5.23
+      baseline-browser-mapping: 2.10.13
       caniuse-lite: 1.0.30001782
-      graceful-fs: 4.2.11
-      postcss: 8.4.31
+      postcss: 8.5.23
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
-      styled-jsx: 5.1.1(@babel/core@7.29.0(supports-color@7.2.0))(react@19.3.1)
+      styled-jsx: 5.1.6(@babel/core@7.29.0(supports-color@7.2.0))(react@19.3.1)
     optionalDependencies:
-      '@next/swc-darwin-arm64': 14.2.33
-      '@next/swc-darwin-x64': 14.2.33
-      '@next/swc-linux-arm64-gnu': 14.2.33
-      '@next/swc-linux-arm64-musl': 14.2.33
-      '@next/swc-linux-x64-gnu': 14.2.33
-      '@next/swc-linux-x64-musl': 14.2.33
-      '@next/swc-win32-arm64-msvc': 14.2.33
-      '@next/swc-win32-ia32-msvc': 14.2.33
-      '@next/swc-win32-x64-msvc': 14.2.33
+      '@next/swc-darwin-arm64': 16.4.6
+      '@next/swc-darwin-x64': 16.4.6
+      '@next/swc-linux-arm64-gnu': 16.4.6
+      '@next/swc-linux-arm64-musl': 16.4.6
+      '@next/swc-linux-x64-gnu': 16.4.6
+      '@next/swc-linux-x64-musl': 16.4.6
+      '@next/swc-win32-arm64-msvc': 16.4.6
+      '@next/swc-win32-x64-msvc': 16.4.6
       sass: 1.77.6
+      sharp: 0.35.5(@types/node@25.5.0)
     transitivePeerDependencies:
       - '@babel/core'
+      - '@types/node'
       - babel-plugin-macros
 
   nice-napi@1.0.2:
@@ -19276,24 +19393,24 @@ snapshots:
 
   pngjs@5.0.0: {}
 
-  polotno@4.20.1(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4):
+  polotno@4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4):
     dependencies:
       '@base-ui/react': 1.9.0(@types/react@19.2.17)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
-      '@lottiefiles/dotlottie-web': 0.82.1
-      '@polotno/core': 0.21.0(canvas@3.2.3)
-      '@polotno/html-export': 0.11.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))
-      '@polotno/schema': 0.12.0
-      '@polotno/svg-export': 0.12.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))
+      '@lottiefiles/dotlottie-web': 0.83.2
+      '@polotno/core': 0.22.0(canvas@3.2.3)
+      '@polotno/html-export': 0.12.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))
+      '@polotno/schema': 0.13.0
+      '@polotno/svg-export': 0.13.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))
       class-variance-authority: 0.7.1
       clsx: 2.1.1
       gifuct-js: 2.1.2
       konva: 10.9.1(canvas@3.2.3)
       lodash-es: 4.18.1
-      lucide-react: 1.72.0(@types/react@19.2.17)(react@19.3.1)
-      mediabunny: 1.65.2
-      mobx: 7.1.5
-      mobx-react-lite: 5.1.2(mobx@7.1.5)(react@19.3.1)
-      mobx-state-tree: 9.0.1(mobx@7.1.5)(typescript@5.5.4)
+      lucide-react: 1.74.0(@types/react@19.2.17)(react@19.3.1)
+      mediabunny: 1.66.0
+      mobx: 7.1.7
+      mobx-react-lite: 5.1.3(mobx@7.1.7)(react@19.3.1)
+      mobx-state-tree: 9.0.1(mobx@7.1.7)(typescript@5.5.4)
       nanoid: 6.0.2
       quill: 2.0.3
       react: 19.3.1
@@ -19302,7 +19419,7 @@ snapshots:
       react-konva-utils: 2.1.0(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react-konva@19.3.2(@types/react@19.2.17)(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)
       react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sortablejs@1.15.7)
       react-window: 2.5.3(@types/react@19.2.17)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
-      render-tag: 0.4.4
+      render-tag: 0.4.5
       sortablejs: 1.15.7
       svg-round-corners: 0.4.3
       swr: 2.5.1(react@19.3.1)
@@ -19587,7 +19704,7 @@ snapshots:
       picocolors: 0.2.1
       source-map: 0.6.1
 
-  postcss@8.4.31:
+  postcss@8.5.23:
     dependencies:
       nanoid: 3.3.20
       picocolors: 1.1.1
@@ -19971,7 +20088,7 @@ snapshots:
 
   remove-trailing-separator@1.1.0: {}
 
-  render-tag@0.4.4: {}
+  render-tag@0.4.5: {}
 
   renderkid@2.0.7:
     dependencies:
@@ -20695,8 +20812,6 @@ snapshots:
 
   stream-shift@1.0.3: {}
 
-  streamsearch@1.1.0: {}
-
   strict-uri-encode@1.1.0: {}
 
   string-width@3.1.0:
@@ -20796,7 +20911,7 @@ snapshots:
     dependencies:
       '@tokenizer/token': 0.3.0
 
-  styled-jsx@5.1.1(@babel/core@7.29.0(supports-color@7.2.0))(react@19.3.1):
+  styled-jsx@5.1.6(@babel/core@7.29.0(supports-color@7.2.0))(react@19.3.1):
     dependencies:
       client-only: 0.0.1
       react: 19.3.1
@@ -21172,10 +21287,9 @@ snapshots:
 
   unicode-match-property-value-ecmascript@2.2.1: {}
 
-  unicode-properties@1.4.1:
+  unicode-properties@2.0.2:
     dependencies:
-      base64-js: 1.5.1
-      unicode-trie: 2.0.0
+      unicode-trie: 3.0.0
 
   unicode-property-aliases-ecmascript@2.2.0: {}
 
@@ -21184,10 +21298,9 @@ snapshots:
       pako: 0.2.9
       tiny-inflate: 1.0.3
 
-  unicode-trie@2.0.0:
+  unicode-trie@3.0.0:
     dependencies:
-      pako: 0.2.9
-      tiny-inflate: 1.0.3
+      fflate: 0.8.3
 
   union-value@1.0.1:
     dependencies:

@@ -7,7 +7,7 @@ export default function IndexPage() {
   return (
     <div>
       <Editor />
-      <style jsx global>{`
+      <style>{`
         body {
           padding: 0;
           margin: 0;

@@ -9,6 +9,7 @@ import { Workspace } from 'polotno/canvas/workspace';
 import { Button } from 'polotno/primitives';
 
 import { createStore } from 'polotno/model/store';
+import { rotatePages } from './rotate-pages';
 
 const store = createStore({
   key: 'nFA5H9elEytDyPyvKL7T', // you can create it here: https://polotno.com/login
@@ -31,27 +32,7 @@ const PageRotate = ({ store }) => {
   return (
     <Button
       variant="ghost"
-      onClick={() => {
-        // 1. swap page dimensions
-        const [oldW, oldH] = [store.width, store.height];
-        const [newW, newH] = [oldH, oldW];
-        const [cx, cy] = [oldW / 2, oldH / 2];
-        store.setSize(newW, newH);
-
-        // 2. move + rotate every element
-        const [ncx, ncy] = [newW / 2, newH / 2];
-        store.pages.forEach((page) => {
-          page.children.forEach((el) => {
-            const [dx, dy] = [el.x - cx, el.y - cy];
-            const [rx, ry] = [-dy, dx]; // 90° rotation matrix
-            el.set({
-              x: ncx + rx,
-              y: ncy + ry,
-              rotation: (el.rotation || 0) + 90,
-            });
-          });
-        });
-      }}
+      onClick={() => rotatePages(store)}
     >
       Rotate 90°
     </Button>
@@ -65,7 +46,7 @@ export const App = ({ store }) => {
         <SidePanel store={store} />
       </SidePanelWrap>
       <WorkspaceWrap>
-        <Toolbar store={store} components={{ PageRotate }} />
+        <Toolbar store={store} components={{ ActionControls: PageRotate }} />
         <Workspace store={store} />
         <ZoomButtons store={store} />
         <PagesTimeline store={store} />

@@ -17,7 +17,7 @@ const key = 'nFA5H9elEytDyPyvKL7T';
 // WARNING: don't use on production! Use your own proxy and Pexles API key
 const API = 'https://api.polotno.com/api';
 const getPexelsAPI = ({ query, page }) =>
-  `${API}/get-pexels?query=${query}&per_page=20&page=${page}&KEY=${key}`;
+  `${API}/get-pexels?query=${encodeURIComponent(query)}&per_page=20&page=${page}&KEY=${key}`;
 
 export const PexelsPanel = ({ store }) => {
   const { setQuery, loadMore, isReachingEnd, data, isLoading, error } =
@@ -25,7 +25,7 @@ export const PexelsPanel = ({ store }) => {
       defaultQuery: '',
       getAPI: ({ page, query }) => getPexelsAPI({ page, query }),
       getSize: (lastResponse) =>
-        lastResponse.total_results / lastResponse.per_page,
+        Math.max(1, Math.ceil(lastResponse.total_results / lastResponse.per_page)),
     });
 
   return (
@@ -72,8 +72,8 @@ export const PexelsPanel = ({ store }) => {
           }
 
           // otherwise let's create new image
-          const x = (pos?.x || store.width / 2) - width / 2;
-          const y = (pos?.y || store.height / 2) - height / 2;
+          const x = (pos?.x ?? store.width / 2) - width / 2;
+          const y = (pos?.y ?? store.height / 2) - height / 2;
           store.activePage?.addElement({
             type: 'image',
             src,

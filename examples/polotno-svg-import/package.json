@@ -4,8 +4,8 @@
   "description": "Demo of SVG import into Polotno editor",
   "keywords": [],
   "dependencies": {
-    "@polotno/svg-import": "^0.2.4",
-    "polotno": "^4.20.1",
+    "@polotno/svg-import": "^0.2.5",
+    "polotno": "^4.21.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

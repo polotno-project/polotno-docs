@@ -4,9 +4,9 @@
   "description": "30 × 40 cm poster editor that sends the print PDF to Gelato's API and shows where Gelato would print it for buyers in different countries, with price and delivery time",
   "keywords": [],
   "dependencies": {
-    "mobx": "7.1.5",
-    "mobx-react-lite": "^5.1.2",
-    "polotno": "^4.20.1",
+    "mobx": "7.1.7",
+    "mobx-react-lite": "^5.1.3",
+    "polotno": "^4.21.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

@@ -4,8 +4,8 @@
   "description": "Demo of PSD import into Polotno editor",
   "keywords": [],
   "dependencies": {
-    "@polotno/psd-import": "^0.3.3",
-    "polotno": "^4.20.1",
+    "@polotno/psd-import": "^0.3.4",
+    "polotno": "^4.21.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

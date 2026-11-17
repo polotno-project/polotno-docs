@@ -4,12 +4,11 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "post-update": "yarn upgrade --latest"
+    "start": "next start"
   },
   "dependencies": {
-    "next": "^14",
-    "polotno": "^4.20.1",
+    "next": "^16.3.4",
+    "polotno": "^4.21.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

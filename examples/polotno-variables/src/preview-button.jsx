@@ -1,4 +1,5 @@
 import React from 'react';
+import { replaceName } from './replace-name';
 import {
   Button,
   Dialog,
@@ -22,7 +23,6 @@ const ExportModal = ({ isOpen, store, onClose }) => {
   const handleGenerate = async () => {
     setLoading(true);
     const json = store.toJSON();
-    const jsonString = JSON.stringify(json);
 
     // this logic probably should be on the server side
     // it is hard to use client side to generate many images
@@ -34,7 +34,7 @@ const ExportModal = ({ isOpen, store, onClose }) => {
       const newImages = await Promise.all(
         // limit to 5 images
         names.slice(0, 5).map(async (name) => {
-          const newJSON = JSON.parse(jsonString.replace('{name}', name));
+          const newJSON = replaceName(json, name);
           const req = await fetch(
             'https://api.polotno.com/api/render?KEY=' + KEY,
             {

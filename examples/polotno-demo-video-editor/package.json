@@ -4,8 +4,8 @@
   "description": "Live demo of a video editor built on Polotno SDK – photo/stock-image features hidden",
   "keywords": [],
   "dependencies": {
-    "@polotno/video-export": "0.5.2",
-    "polotno": "^4.20.1",
+    "@polotno/video-export": "0.6.0",
+    "polotno": "^4.21.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

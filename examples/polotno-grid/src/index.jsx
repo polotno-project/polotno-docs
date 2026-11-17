@@ -109,10 +109,10 @@ function generateGrid(rows, cols) {
   });
 
   // add fake elements to snap on grid
-  [...Array(rows - 1)].forEach((_, index) => {
+  [...Array(cols - 1)].forEach((_, index) => {
     createDot(dx * (index + 1), 0);
   });
-  [...Array(cols - 1)].forEach((_, index) => {
+  [...Array(rows - 1)].forEach((_, index) => {
     createDot(0, dy * (index + 1));
   });
 }
