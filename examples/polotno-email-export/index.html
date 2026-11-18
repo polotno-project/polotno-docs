@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <style>
+      body { margin: 0; padding: 0; background-color: #ffffff; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; }
+      #root { width: 100vw; height: 100vh; }
+      /* The panel stays open: no collapse button. */
+      .polotno-close-panel, .pn-side-panel-hide-button { display: none !important; }
+      /* Narrow windows (and the embed on polotno.com/demo): a slimmer panel so the toolbar fits. */
+      @media (max-width: 1100px) { .polotno-panel-container { width: 300px !important; } }
+    </style>
+    <title>Email builder – Polotno SDK demo</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+  </body>
+</html>

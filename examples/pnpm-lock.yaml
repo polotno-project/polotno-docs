@@ -1087,6 +1087,37 @@ importers:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
 
+  polotno-email-export:
+    dependencies:
+      '@polotno/email-export':
+        specifier: ^0.1.0
+        version: 0.1.0(canvas@3.2.3)
+      lucide-react:
+        specifier: ^1.74.0
+        version: 1.75.0(@types/react@19.2.17)(react@19.3.1)
+      mobx:
+        specifier: 7.1.7
+        version: 7.1.7
+      mobx-react-lite:
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
+      polotno:
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+      react:
+        specifier: ^19.3.1
+        version: 19.3.1
+      react-dom:
+        specifier: ^19.3.1
+        version: 19.3.1(react@19.3.1)
+    devDependencies:
+      '@vitejs/plugin-react':
+        specifier: ^6
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+      vite:
+        specifier: ^8
+        version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
+
   polotno-frameworkless:
     dependencies:
       parcel-bundler:
@@ -4392,6 +4423,10 @@ packages:
   '@polotno/core@0.22.0':
     resolution: {integrity: sha512-NmC2wZsFB9jZu38JRzRQcdWhov9eiEMNNkO3HVJMChYFLK8sb7YKypK+m7FBa57co7Iop0RLAEumLPh3X1i2xg==}
 
+  '@polotno/email-export@0.1.0':
+    resolution: {integrity: sha512-FL/Q5k7/sGrsHd+K/3H+k6pDkHeYyG5EiVyJi0bqsPoF4l2LQDGHj6jHRTFs3fi2jJkVexvoGHgA9YL+OSjyQQ==}
+    engines: {node: '>=22.13.0'}
+
   '@polotno/html-export@0.12.0':
     resolution: {integrity: sha512-tHiGRsn7oy0G5rr/3yrnxvpr67LKYqlngoQru3JwYn+OlNvTRGa0+OIIs0AKm/6iiY/jakMJQPZmT279X2ihqg==}
     peerDependencies:
@@ -4402,6 +4437,10 @@ packages:
         optional: true
       linkedom:
         optional: true
+
+  '@polotno/image-export@0.2.0':
+    resolution: {integrity: sha512-DtKCbrqmIP/jj4DvULq/TvHGv/Y3KgD/WDCdGX9G15cLr8tCaU2XIOXBokAkHdlVLHP2HoMvl6WxRe7Jil1dKQ==}
+    engines: {node: '>=22.13.0'}
 
   '@polotno/pdf-export@0.17.1':
     resolution: {integrity: sha512-LzhQy9kZ+ojKLmlNtAlxz0DEIbj7v7xBzGPNqcWmrZ/NZuB6J+a/U0n1lf/icB4hm75uW9tC5LiHr+tGDmm6ww==}
@@ -8146,8 +8185,8 @@ packages:
       '@types/react':
         optional: true
 
-  lucide-react@1.74.0:
-    resolution: {integrity: sha512-A1doIs/1fj1WnPbtIT7WRiM6Kvw5NUg+BtkoOh3Shpr4obwSDVt6WxCEcNH56EWprzuCoKle1OF0RqIkojwL1A==}
+  lucide-react@1.75.0:
+    resolution: {integrity: sha512-piesXAZIXru9d5lHBoM6cPHOBs5+QkMx+3EXwG3xWJ7qdViuz92JtYN0u9jMB6jt+2WbQrwhvJGdMwGnL3EOfA==}
     peerDependencies:
       '@types/react': '*'
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -13998,6 +14037,17 @@ snapshots:
       - canvas
       - skia-canvas
 
+  '@polotno/email-export@0.1.0(canvas@3.2.3)':
+    dependencies:
+      '@napi-rs/canvas': 1.1.1
+      '@polotno/core': 0.22.0(canvas@3.2.3)
+      '@polotno/image-export': 0.2.0(canvas@3.2.3)
+      '@polotno/schema': 0.13.0
+      linkedom: 0.18.15(canvas@3.2.3)
+    transitivePeerDependencies:
+      - canvas
+      - skia-canvas
+
   '@polotno/html-export@0.12.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))':
     dependencies:
       '@polotno/core': 0.22.0(canvas@3.2.3)
@@ -14005,6 +14055,17 @@ snapshots:
     optionalDependencies:
       '@napi-rs/canvas': 1.1.0
       linkedom: 0.18.15(canvas@3.2.3)
+    transitivePeerDependencies:
+      - canvas
+      - skia-canvas
+
+  '@polotno/image-export@0.2.0(canvas@3.2.3)':
+    dependencies:
+      '@napi-rs/canvas': 1.1.1
+      '@polotno/core': 0.22.0(canvas@3.2.3)
+      '@polotno/schema': 0.13.0
+      linkedom: 0.18.15(canvas@3.2.3)
+      render-tag: 0.4.5
     transitivePeerDependencies:
       - canvas
       - skia-canvas
@@ -18412,7 +18473,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.17
 
-  lucide-react@1.74.0(@types/react@19.2.17)(react@19.3.1):
+  lucide-react@1.75.0(@types/react@19.2.17)(react@19.3.1):
     dependencies:
       react: 19.3.1
     optionalDependencies:
@@ -19481,7 +19542,7 @@ snapshots:
       gifuct-js: 2.1.2
       konva: 10.9.1(canvas@3.2.3)
       lodash-es: 4.18.1
-      lucide-react: 1.74.0(@types/react@19.2.17)(react@19.3.1)
+      lucide-react: 1.75.0(@types/react@19.2.17)(react@19.3.1)
       mediabunny: 1.66.0
       mobx: 7.1.7
       mobx-react-lite: 5.1.3(mobx@7.1.7)(react@19.3.1)
