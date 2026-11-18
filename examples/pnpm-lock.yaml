@@ -1231,6 +1231,28 @@ importers:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
 
+  polotno-idml-import:
+    dependencies:
+      '@polotno/idml-import':
+        specifier: ^0.1.0
+        version: 0.1.0(canvas@3.2.3)
+      polotno:
+        specifier: ^4.21.0
+        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+      react:
+        specifier: ^19.3.1
+        version: 19.3.1
+      react-dom:
+        specifier: ^19.3.1
+        version: 19.3.1(react@19.3.1)
+    devDependencies:
+      '@vitejs/plugin-react':
+        specifier: ^6
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+      vite:
+        specifier: ^8
+        version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
+
   polotno-load-custom-images:
     dependencies:
       '@meronex/icons':
@@ -4437,6 +4459,10 @@ packages:
         optional: true
       linkedom:
         optional: true
+
+  '@polotno/idml-import@0.1.0':
+    resolution: {integrity: sha512-B7scdpuSx2cNAde2S6Mn35IE89Jqgkq54Bvnk6I5NBld/nBW67lFccg+3+QXnU9XoRdptrgHa8tzT3GdvogtuQ==}
+    engines: {node: '>=22.13.0'}
 
   '@polotno/image-export@0.2.0':
     resolution: {integrity: sha512-DtKCbrqmIP/jj4DvULq/TvHGv/Y3KgD/WDCdGX9G15cLr8tCaU2XIOXBokAkHdlVLHP2HoMvl6WxRe7Jil1dKQ==}
@@ -14055,6 +14081,17 @@ snapshots:
     optionalDependencies:
       '@napi-rs/canvas': 1.1.0
       linkedom: 0.18.15(canvas@3.2.3)
+    transitivePeerDependencies:
+      - canvas
+      - skia-canvas
+
+  '@polotno/idml-import@0.1.0(canvas@3.2.3)':
+    dependencies:
+      '@polotno/core': 0.22.0(canvas@3.2.3)
+      '@polotno/schema': 0.13.0
+      fflate: 0.8.3
+      linkedom: 0.18.15(canvas@3.2.3)
+      render-tag: 0.4.5
     transitivePeerDependencies:
       - canvas
       - skia-canvas
