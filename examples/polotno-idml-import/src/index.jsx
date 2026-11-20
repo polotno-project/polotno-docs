@@ -26,9 +26,10 @@ const App = ({ store }) => {
 
     setLoading(true);
     try {
-      const buffer = await file.arrayBuffer();
       const json = await idmlToJson({
-        idml: buffer,
+        // An .idml, or a .zip of the folder File > Package writes: the
+        // importer then reads the linked pictures and the fonts from it.
+        idml: await file.arrayBuffer(),
         // What the importer approximated or dropped, e.g. a substituted font.
         onWarning: (w) => console.warn(w.code, w.message, w.details),
       });
@@ -54,7 +55,7 @@ const App = ({ store }) => {
                 <input
                   ref={inputRef}
                   type="file"
-                  accept=".idml"
+                  accept=".idml,.zip"
                   style={{ display: 'none' }}
                   onChange={handleFileChange}
                 />

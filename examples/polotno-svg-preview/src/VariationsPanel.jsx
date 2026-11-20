@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { observer } from 'mobx-react-lite';
 import { SectionTab } from 'polotno/side-panel';
-import { jsonToSVG } from 'polotno/utils/to-svg';
+import { jsonToSVG } from '@polotno/svg-export';
 import { svgToURL } from 'polotno/utils/svg';
 import FaShapes from '@meronex/icons/fa/FaShapes';
 import { Button } from 'polotno/primitives';
@@ -30,7 +30,8 @@ export const VariationsSection = {
       const urls = [];
       for (let i = 0; i < 10; i++) {
         const variation = createVariation(json);
-        const svgString = await jsonToSVG({ json: variation });
+        // one page per SVG document
+        const svgString = await jsonToSVG({ ...variation, pages: [variation.pages[0]] });
         const url = svgToURL(svgString);
         urls.push({ name: `Variation ${i + 1}`, url });
       }
