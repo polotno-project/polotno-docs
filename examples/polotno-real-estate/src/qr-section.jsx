@@ -39,6 +39,8 @@ export async function getQR(text) {
       text || 'no-data',
       {
         type: 'svg',
+        // a one-module white border, as the templates' QR codes have
+        margin: 1,
         color: {
           dark: '#000',
           light: '#fff',
@@ -65,7 +67,10 @@ export const QrSection = {
     return (
       <div>
         <h3 style={{ marginBottom: '10px', marginTop: '5px' }}>QR code</h3>
-        <p>Generate QR code with any URL you want.</p>
+        <p>
+          Generate a QR code for any URL. In a PDF download, the code links to
+          the URL too.
+        </p>
         <Input
           placeholder="Paste URL here"
           style={{ width: '100%', marginTop: '10px', marginBottom: '10px' }}
@@ -74,7 +79,8 @@ export const QrSection = {
 
         <Button
           onClick={async () => {
-            const src = await getQR(inputRef.current.value);
+            const url = inputRef.current.value.trim();
+            const src = await getQR(url);
 
             store.activePage.addElement({
               type: 'svg',
@@ -84,6 +90,9 @@ export const QrSection = {
               width: 200,
               height: 200,
               src,
+              // exports make the code clickable; they drop a target that is
+              // not a web, mailto: or tel: link
+              href: url || undefined,
             });
           }}
           style={{ width: '100%' }}

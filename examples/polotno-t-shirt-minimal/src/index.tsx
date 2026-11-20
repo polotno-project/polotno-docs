@@ -118,7 +118,8 @@ const placeholderImage = frontPage.addElement(
     removable: false,
     draggable: false,
     resizable: false,
-    cropY: 0.3,
+    // crop every replacement image to fill the frame, whatever its shape
+    fit: 'cover',
     custom: {
       isPlaceholder: true,
     },
@@ -212,10 +213,6 @@ const ImageReplaceButton = observer(({ element }: { element: any }) => {
     reader.onload = (loadEvent) => {
       const dataURL = loadEvent.target?.result as string;
       element.set({
-        cropX: 0,
-        cropY: 0,
-        cropWidth: 1,
-        cropHeight: 1,
         src: dataURL,
         custom: { isPlaceholder: false },
       });

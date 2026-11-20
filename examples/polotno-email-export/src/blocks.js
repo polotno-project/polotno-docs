@@ -49,7 +49,8 @@ const image = (attrs) => ({ type: 'image', id: id('img'), ...attrs });
 const section = (w, height, fill) => rect({ x: 0, y: 0, width: w, height, fill, name: 'Section' });
 
 // A button is a rounded rect with a label on it, grouped so they move together.
-function button(x, y, label, font, { fill = COLORS.accent, color = '#ffffff', width = 220 } = {}) {
+// The group carries the link, so the email links the whole button.
+function button(x, y, label, font, { fill = COLORS.accent, color = '#ffffff', width = 220, href } = {}) {
   const bg = rect({ x, y, width, height: 48, fill, cornerRadius: 6, name: 'Button' });
   const t = text({
     x,
@@ -64,7 +65,7 @@ function button(x, y, label, font, { fill = COLORS.accent, color = '#ffffff', wi
     fill: color,
     align: 'center',
   });
-  return { elements: [bg, t], group: [bg.id, t.id], height: 48 };
+  return { elements: [bg, t], group: { ids: [bg.id, t.id], href }, height: 48 };
 }
 
 // ---------- Content: one item each ----------
@@ -97,7 +98,7 @@ export const CONTENT = [
     name: 'button',
     label: 'Button',
     build: (w, font) => {
-      const b = button(PAD, 16, 'Call to action', font);
+      const b = button(PAD, 16, 'Call to action', font, { href: 'https://example.com' });
       return { height: 80, elements: b.elements, groups: [b.group] };
     },
   },
@@ -151,12 +152,13 @@ function hero(w, font) {
     x: PAD,
     y: h1.y + h1.height + 16,
     width: inner,
-    text: 'Every headline and paragraph stays real text, so it reads well with images off and is easy to search.',
+    // `{{first_name}}` is a template variable: each recipient gets their own name.
+    text: 'Hi {{first_name}}, every headline and paragraph stays real text, so it reads well with images off and is easy to search.',
     fontSize: 16,
     fill: COLORS.muted,
     fontFamily: font,
   });
-  const b = button(PAD, p.y + p.height + 24, 'Start designing', font);
+  const b = button(PAD, p.y + p.height + 24, 'Start designing', font, { href: 'https://polotno.com' });
   const height = p.y + p.height + 24 + 48 + 40;
   return {
     height,
@@ -173,7 +175,7 @@ function article(w, font) {
     x: PAD,
     y: h2.y + h2.height + 12,
     width: inner,
-    text: 'Drop a photo into any shape. The mask is part of the image, so the email shows exactly what you designed.',
+    text: 'Drop a photo into any shape. The mask is part of the image, so the email {{company}} sends shows exactly what you designed.',
     fontSize: 16,
     fontFamily: font,
   });
@@ -208,7 +210,12 @@ function cta(w, font) {
   const inner = w - 2 * PAD;
   const h = text({ x: PAD, y: 40, width: inner, text: 'Ready to try it?', fontSize: w < 600 ? 24 : 28, lineHeight: 1.25, fill: '#ffffff', fontFamily: font, fontWeight: '600', align: 'center' });
   const bw = 220;
-  const b = button((w - bw) / 2, h.y + h.height + 20, 'Open Polotno Studio', font, { fill: '#ffffff', color: COLORS.dark, width: bw });
+  const b = button((w - bw) / 2, h.y + h.height + 20, 'Open Polotno Studio', font, {
+    fill: '#ffffff',
+    color: COLORS.dark,
+    width: bw,
+    href: 'https://studio.polotno.com',
+  });
   const height = h.y + h.height + 20 + 48 + 40;
   return { height, elements: [section(w, height, COLORS.dark), h, ...b.elements], groups: [b.group] };
 }
@@ -219,8 +226,9 @@ function footer(w, font) {
     x: PAD,
     y: 28,
     width: inner,
-    // Addresses and URLs in live text are linked in the text colour.
-    text: 'You receive this email because you signed up at polotno.com.\nUnsubscribe: https://polotno.com/unsubscribe',
+    // Rich text links the words inside <a href>.
+    text: '<p>You receive this email because you signed up at polotno.com.</p><p><a href="https://polotno.com/unsubscribe"><u>Unsubscribe</u></a></p>',
+    height: textHeight('You receive this email because you signed up at polotno.com.\nUnsubscribe', 14, inner, 1.5),
     fontSize: 14,
     fill: COLORS.muted,
     fontFamily: font,

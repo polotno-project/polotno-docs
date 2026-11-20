@@ -24,7 +24,8 @@ page.addElement({
   y: store.height / 2 - 100,
   width: 600,
   height: 400,
-  text: 'Random number: {number}',
+  // `{{number}}` is a template variable: each variation fills it
+  text: 'Random number: {{number}}',
   selectable: false,
   fontSize: 70,
 });

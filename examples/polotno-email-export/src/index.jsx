@@ -16,8 +16,10 @@ import { SECTIONS } from './sections.jsx';
 import { Preview } from './preview.jsx';
 import { Icons } from './icons.jsx';
 import { EmailOverlay } from './overlay.jsx';
+import { LinkButton } from './link-button.jsx';
 import { BLOCKS, STARTER, COLORS } from './blocks.js';
-import { DESKTOP_WIDTH, MOBILE_WIDTH } from './layout.js';
+import { DESKTOP_WIDTH, MOBILE_WIDTH, groupBlock } from './layout.js';
+import { VARIABLES } from './recipients.js';
 import { KEY, DESKTOP, MOBILE, email, watchStore, openPreview } from './email.js';
 
 const store = createStore({ key: KEY, showCredit: true });
@@ -33,13 +35,15 @@ function addEmailPage(pageId, width) {
   STARTER.forEach((name) => {
     const block = BLOCKS.find((b) => b.name === name).build(width, email.theme);
     block.elements.forEach((el) => page.addElement({ ...el, y: el.y + y }, { skipSelect: true }));
-    (block.groups || []).forEach((ids) => store.groupElements(ids));
+    (block.groups || []).forEach((group) => groupBlock(store, group));
     y += block.height;
   });
   page.set({ height: y });
   return page;
 }
 store.setSize(DESKTOP_WIDTH, 1000);
+// The email is a template: `{{first_name}}` and `{{company}}` in its text.
+store.setVariables(VARIABLES);
 addEmailPage(DESKTOP, DESKTOP_WIDTH);
 addEmailPage(MOBILE, MOBILE_WIDTH);
 store.selectPage(DESKTOP);
@@ -60,8 +64,9 @@ const DeviceToggle = observer(({ store }) => (
   </ToggleGroup>
 ));
 
-const ActionControls = () => (
+const ActionControls = ({ store }) => (
   <div style={{ display: 'flex', gap: 8, marginLeft: 'auto', alignItems: 'center' }}>
+    <LinkButton store={store} />
     <Button variant="outline" onClick={openPreview}>
       {Icons.eye({ size: 16 })}
       Preview

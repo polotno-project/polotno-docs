@@ -16,11 +16,12 @@ const DownloadButton = observer(({ store }) => {
     store.pages.forEach((p) => {
       p.children.forEach((c) => {
         if (c.type === 'text') {
-          texts.push(c.text);
+          // what the canvas draws: a template's values, without markup
+          texts.push((c.filled.text ?? c.text).replace(/<[^>]*>/g, ' '));
         }
       });
     });
-    const allWords = texts.join(' ').split(' ');
+    const allWords = texts.join(' ').split(/\s+/).filter(Boolean);
     const words = allWords.slice(0, 6);
     return words.join(' ').replace(/\s/g, '-').toLowerCase() || 'polotno';
   };

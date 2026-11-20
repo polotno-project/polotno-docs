@@ -42,6 +42,7 @@ const page = store.addPage({
   background: ARTWORK.background,
 });
 ARTWORK.children.forEach((element) => page.addElement(element));
+store.setVariables(ARTWORK.variables);
 store.selectElements([]);
 
 // Bleed guides follow the design: drawn whenever the page has bleed, gone when

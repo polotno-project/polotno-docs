@@ -1,6 +1,7 @@
 import { getImageSize } from 'polotno/utils/image';
 import { getClientRect } from 'polotno/utils/math';
 import { getFontsList, globalFonts } from 'polotno/utils/fonts';
+import { getVariables } from '@polotno/schema/variables';
 
 import { PRODUCT, mmToPx, pxToMm, pxToPt, ptToPx, round1 } from './spec.js';
 
@@ -9,8 +10,8 @@ import { PRODUCT, mmToPx, pxToMm, pxToPt, ptToPx, round1 } from './spec.js';
  *
  * Everything here reads the design the editor already holds — `store.toJSON()`
  * fields plus three helpers Polotno exports (`getImageSize`, `getClientRect`,
- * `getFontsList`). There is no separate document model and no server
- * round-trip.
+ * `getFontsList`) and `getVariables` from `@polotno/schema`. There is no
+ * separate document model and no server round-trip.
  *
  * The file-side counterpart of this engine lives in the website repo at
  * `lib/tools/preflight/` (the checker on polotno.com/tools/pdf-preflight).
@@ -442,31 +443,53 @@ export const RULES = [
   },
 
   {
-    id: 'placeholder',
+    id: 'variables',
     scope: 'element',
     status: 'fail',
-    match: (el) =>
-      el.type === 'text' && /\{\{.+?\}\}|\blorem ipsum\b/i.test(el.text)
-        ? { el }
-        : null,
-    title: () => 'Unfilled merge field',
-    detail: ({ hits }) =>
-      `"${hits[0].el.text.slice(0, 48)}" still contains a template placeholder. In a variable-data run this is the difference between 5,000 postcards and 5,000 apologies.`,
-    // Every field the product knows sample data for, not just one name.
-    fix: ({ hits }) => () =>
-      hits.forEach(({ el }) =>
-        el.set({
-          text: Object.entries(PRODUCT.sampleData).reduce(
-            (text, [field, value]) =>
-              text.replace(new RegExp(`\\{\\{\\s*${field}\\s*\\}\\}`, 'gi'), value),
-            el.text
+    match: (el, { unfilledVariables }) => {
+      const names = unfilledVariables
+        .filter((v) =>
+          v.usages.some((u) => u.property === 'text' && u.elementId === el.id)
+        )
+        .map((v) => v.name);
+      return names.length ? { el, names } : null;
+    },
+    title: ({ hits }) => {
+      const names = [...new Set(hits.flatMap((h) => h.names))];
+      return names.length === 1
+        ? `Template variable with no value: {{${names[0]}}}`
+        : `${plural(names.length, 'template variable')} with no value`;
+    },
+    detail: ({ hits }) => {
+      const { el, names } = hits[0];
+      const tokens = names.map((n) => `{{${n}}}`).join(', ');
+      return `"${label(el)}" prints ${tokens} as typed, because nothing gives ${names.length === 1 ? 'it' : 'them'} a value or a default. The canvas and every export draw the stored value, so a proof or a print run from this design carries the raw token: 5,000 postcards become 5,000 apologies.`;
+    },
+    // Give the variable a value and keep the template: the token stays in the
+    // text, so the next record can still fill it.
+    fix: ({ hits, store }) => {
+      const names = [...new Set(hits.flatMap((h) => h.names))].filter((n) =>
+        Object.hasOwn(PRODUCT.sampleData, n)
+      );
+      if (!names.length) return null;
+      return () => {
+        const registry = store.variables ?? [];
+        const known = registry.map((v) => v.name);
+        store.setVariables([
+          ...registry.map((v) =>
+            names.includes(v.name) ? { ...v, value: PRODUCT.sampleData[v.name] } : v
           ),
-        })
-      ),
+          // A token typed into the copy has no registry entry yet.
+          ...names
+            .filter((n) => !known.includes(n))
+            .map((name) => ({ name, value: PRODUCT.sampleData[name] })),
+        ]);
+      };
+    },
     fixLabel: 'Fill with sample data',
     pass: {
-      title: 'Merge fields',
-      detail: 'No unfilled template placeholders left in the copy.',
+      title: 'Template variables',
+      detail: 'Every template variable in the copy has a value to print.',
     },
   },
 
@@ -676,6 +699,14 @@ export async function runPreflight(store, rules = RULES) {
   const pageW = page.computedWidth ?? store.width;
   const pageH = page.computedHeight ?? store.height;
 
+  // The canvas and every export draw a text variable's stored value, else its
+  // default. A variable with neither, or with a value text cannot print,
+  // prints its `{{token}}`. `getVariables` also lists a token typed into the
+  // copy with no registry entry, which has no value either.
+  const unfilledVariables = getVariables(store.toJSON()).variables.filter(
+    (v) => !['string', 'number', 'boolean'].includes(typeof (v.value ?? v.default))
+  );
+
   const ctx = {
     store,
     page,
@@ -686,6 +717,7 @@ export async function runPreflight(store, rules = RULES) {
     pageH,
     safetyPx: mmToPx(PRODUCT.safetyMm, store.dpi),
     sizeOf: (src) => sizes.get(src) || null,
+    unfilledVariables,
     // Whatever the app declared, plus the font a fix would substitute in —
     // that one has to count as available or the repair would fail its own
     // check. Nothing else: an allow-list with private exceptions is not one.

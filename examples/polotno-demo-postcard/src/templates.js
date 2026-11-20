@@ -1,12 +1,17 @@
 /**
  * Postcard template catalog for the "Custom Postcard UI" demo.
  *
- * Each card is a real Polotno scene JSON (front + back) authored on the layer-name
- * convention so the toolbars can drive it without hard-coded ids:
- *   *-accent      → recoloured by the Accent control
- *   *background*  → recoloured by the Background control
- *   *placeholder* → click-to-replace photo area
+ * Each card is a real Polotno scene JSON (front + back), and a template: its
+ * `variables` registry names the fields your app fills for each card.
+ *   bindings.fill = 'accent' | 'background' → the Accent and Background controls set
+ *                                            the variable, recolouring both sides
+ *   {{recipient_name}}, {{agent_name}}, …   → text filled per recipient, listing and
+ *                                            agent; the canvas draws the sample values
+ * And two layer-name conventions, so the toolbars need no hard-coded ids:
+ *   *placeholder* → click-to-replace photo area; its fit/focus crops each new photo
  *   greeting*     → the message text (Font / Colour / Size on the Back step)
+ *
+ * The agent, brokerage and recipients are invented for this demo.
  *
  * The Style grid shows only a tiny static preview image – the heavy scene JSON is
  * lazy-loaded (dynamic import → its own chunk) the moment a card is picked, so the

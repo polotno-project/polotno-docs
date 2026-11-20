@@ -2,6 +2,8 @@
 // the Audit tab; its HTML feeds the preview, so opening the preview is instant.
 import { observable, action, runInAction } from 'mobx';
 import { jsonToEmailHTML } from '@polotno/email-export';
+import { resolveVariables } from '@polotno/schema/variables';
+import { RECIPIENTS } from './recipients.js';
 
 // Demo key for this project only. Create your own at https://polotno.com/cabinet
 export const KEY = 'HyhTCjrrUThWw9E7dO_y';
@@ -20,6 +22,10 @@ export const email = observable({
   // Text elements per page that stayed live / became images.
   stats: { live: 0, image: 0, bytes: 0 },
   previewOpen: false,
+  // Whose email the export renders: a sample recipient, or 'tags'.
+  recipient: RECIPIENTS[0].id,
+  // What `resolveVariables` reported for that recipient's record.
+  issues: [],
   // Theme for new content and blocks (Body tab): fonts and the content
   // background. Body text in a web font often runs wider in Gmail's fallback
   // and is sent as an image; Arial never does.
@@ -30,6 +36,20 @@ export const setFont = action((role, family) => (email.theme[role] = family));
 export const setCard = action((color) => (email.theme.card = color));
 
 export const openPreview = action(() => (email.previewOpen = true));
+export const setRecipient = action((id) => {
+  email.recipient = id;
+  if (watched) runExport(watched);
+});
+
+// The email a recipient gets: the template filled from their record. With no
+// record ('tags'), a variable keeps its `{{token}}`: with no value and no
+// default, the export prints the token for your email service to fill.
+function emailFor(json) {
+  const { record } = RECIPIENTS.find((r) => r.id === email.recipient);
+  if (record) return resolveVariables(json, record);
+  const variables = (json.variables || []).map(({ value, default: _default, ...v }) => v);
+  return { design: { ...json, variables }, issues: [] };
+}
 export const closePreview = action(() => (email.previewOpen = false));
 
 // A demo has nowhere to host images. Each slice gets a placeholder https URL,
@@ -61,7 +81,7 @@ export async function runExport(store) {
   const uploaded = new Map();
   runInAction(() => (email.running = true));
   try {
-    const json = store.toJSON();
+    const { design: json, issues } = emailFor(store.toJSON());
     const hasMobile = json.pages.some((p) => p.id === MOBILE);
     const exported = await jsonToEmailHTML(json, {
       key: KEY,
@@ -96,6 +116,7 @@ export async function runExport(store) {
       email.previewHtml = previewHtml;
       email.images = images;
       email.warnings = warnings;
+      email.issues = issues;
       email.error = null;
       email.stats = {
         live: texts.filter((t) => !rasterized.has(t.id)).length,
@@ -115,7 +136,9 @@ const collectTexts = (children = []) =>
   children.flatMap((c) => (c.type === 'text' ? [c] : c.type === 'group' ? collectTexts(c.children) : []));
 
 // Re-export after every edit, once the edits settle.
+let watched = null;
 export function watchStore(store) {
+  watched = store;
   let timer;
   runExport(store);
   return store.on('change', () => {

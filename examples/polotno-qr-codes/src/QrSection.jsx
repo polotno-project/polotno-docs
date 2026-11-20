@@ -25,6 +25,18 @@ export async function getQR(text) {
   });
 }
 
+// a QR code for a web address, an email or a phone number links to it too,
+// so it is clickable in PDF, HTML and email exports. Exports drop any other
+// link target, so other content gets none
+export function getQRLink(text) {
+  try {
+    const { protocol } = new URL(text);
+    return ['http:', 'https:', 'mailto:', 'tel:'].includes(protocol) ? text : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
 // define the new custom section
 export const QrSection = {
   name: 'qr',
@@ -53,6 +65,7 @@ export const QrSection = {
         getQR(val).then((src) => {
           el.set({
             src,
+            href: getQRLink(val),
             custom: {
               value: val,
             },
@@ -106,6 +119,7 @@ export const QrSection = {
                 width: 200,
                 height: 200,
                 src,
+                href: getQRLink(val),
                 custom: {
                   value: val,
                 },

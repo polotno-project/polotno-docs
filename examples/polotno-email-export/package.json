@@ -5,6 +5,7 @@
   "keywords": [],
   "dependencies": {
     "@polotno/email-export": "^0.2.0",
+    "@polotno/schema": "^0.14.0",
     "lucide-react": "^1.74.0",
     "mobx": "7.1.7",
     "mobx-react-lite": "^5.1.3",

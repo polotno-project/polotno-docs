@@ -1,37 +1,59 @@
 [
   {
     "listing": "888 W E St",
-    "price": "$1,349,000",
-    "images": ["888-1.png", "888-2.png", "888-3.png", "888-4.png"],
+    "url": "https://polotno.com/demo/real-estate-banners?listing=888",
+    "price": 1349000,
     "address": "888 W E St, San Diego, CA 92101",
     "propertyType": "Condo",
     "listingType": "NEW LISTING",
     "beds": 3,
     "baths": 3,
     "sqft": 1700,
-    "agentName": "Jessica Porter",
-    "agentPhone": "(619) 840-0210",
-    "agentEmail": "jess@coldwell.com",
-    "legalDisclaimer": "© Coldwell Banker Real Estate LLC. All Rights Reserved. Coldwell Banker® and the Coldwell Banker Logo are registered service marks owned by Coldwell Banker Real Estate LLC. Coldwell Banker Real Estate LLC fully supports the principles of the Fair Housing Act and the Equal Opportunity Act. Each office is independently owned"
+    "images": [
+      "888-1.png",
+      "888-2.png",
+      "888-3.png",
+      "888-4.png"
+    ],
+    "agent": {
+      "name": "Maya Ortiz",
+      "phone": "(619) 555-0134",
+      "email": "maya@example.com"
+    }
   },
   {
     "listing": "700 W Harbor Dr Unit 2503",
-    "price": "$1,199,000",
-    "images": ["700-1.png", "700-2.png", "700-3.png", "700-4.png", "700-5.png"],
+    "url": "https://polotno.com/demo/real-estate-banners?listing=700",
+    "price": 1199000,
     "address": "700 W Harbor Dr Unit 2503, San Diego, CA 92101",
     "propertyType": "Condo",
     "listingType": "NEW LISTING",
     "beds": 2,
     "baths": 3,
     "sqft": 1620,
-    "agentName": "Jessica Porter",
-    "agentPhone": "(619) 840-0210",
-    "agentEmail": "jess@coldwell.com",
-    "legalDisclaimer": "© Coldwell Banker Real Estate LLC. All Rights Reserved. Coldwell Banker® and the Coldwell Banker Logo are registered service marks owned by Coldwell Banker Real Estate LLC. Coldwell Banker Real Estate LLC fully supports the principles of the Fair Housing Act and the Equal Opportunity Act. Each office is independently owned"
+    "images": [
+      "700-1.png",
+      "700-2.png",
+      "700-3.png",
+      "700-4.png",
+      "700-5.png"
+    ],
+    "agent": {
+      "name": "Daniel Brooks",
+      "phone": "(619) 555-0172",
+      "email": "dan@example.com"
+    }
   },
   {
     "listing": "1388 Kettner Blvd",
-    "price": "$1,400,000",
+    "url": "https://polotno.com/demo/real-estate-banners?listing=1388",
+    "price": 1400000,
+    "address": "1388 Kettner Blvd Unit 1504, San Diego, CA 92101",
+    "propertyType": "Condo",
+    "listingType": "NEW LISTING",
+    "beds": 3,
+    "baths": 3,
+    "sqft": 1840,
     "images": [
       "1388-1.png",
       "1388-2.png",
@@ -39,20 +61,22 @@
       "1388-4.png",
       "1388-5.png"
     ],
-    "address": "1388 Kettner Blvd Unit 1504, San Diego, CA 92101",
-    "propertyType": "Condo",
-    "listingType": "NEW LISTING",
-    "beds": 3,
-    "baths": 3,
-    "sqft": 1840,
-    "agentName": "Jessica Porter",
-    "agentPhone": "(619) 840-0210",
-    "agentEmail": "jess@coldwell.com",
-    "legalDisclaimer": "© Coldwell Banker Real Estate LLC. All Rights Reserved. Coldwell Banker® and the Coldwell Banker Logo are registered service marks owned by Coldwell Banker Real Estate LLC. Coldwell Banker Real Estate LLC fully supports the principles of the Fair Housing Act and the Equal Opportunity Act. Each office is independently owned"
+    "agent": {
+      "name": "Priya Raman",
+      "phone": "(619) 555-0119",
+      "email": "priya@example.com"
+    }
   },
   {
     "listing": "1199 Pacific Hwy Unit 3904",
-    "price": "$1,659,000",
+    "url": "https://polotno.com/demo/real-estate-banners?listing=1199",
+    "price": 1659000,
+    "address": "1199 Pacific Hwy Unit 3904, San Diego, CA 92101",
+    "propertyType": "Condo",
+    "listingType": "NEW LISTING",
+    "beds": 3,
+    "baths": 4,
+    "sqft": 1600,
     "images": [
       "1199-1.png",
       "1199-2.png",
@@ -60,30 +84,33 @@
       "1199-4.png",
       "1199-5.png"
     ],
-    "address": "1199 Pacific Hwy Unit 3904, San Diego, CA 92101",
-    "propertyType": "Condo",
-    "listingType": "NEW LISTING",
-    "beds": 3,
-    "baths": 4,
-    "sqft": 1600,
-    "agentName": "Jessica Porter",
-    "agentPhone": "(619) 840-0210",
-    "agentEmail": "jess@coldwell.com",
-    "legalDisclaimer": "© Coldwell Banker Real Estate LLC. All Rights Reserved. Coldwell Banker® and the Coldwell Banker Logo are registered service marks owned by Coldwell Banker Real Estate LLC. Coldwell Banker Real Estate LLC fully supports the principles of the Fair Housing Act and the Equal Opportunity Act. Each office is independently owned"
+    "agent": {
+      "name": "Maya Ortiz",
+      "phone": "(619) 555-0134",
+      "email": "maya@example.com"
+    }
   },
   {
     "listing": "100 Harbor Dr Unit 3605",
-    "price": "$1,100,000",
-    "images": ["100-1.png", "100-2.png", "100-3.png", "100-4.png", "100-5.png"],
+    "url": "https://polotno.com/demo/real-estate-banners?listing=100",
+    "price": 1100000,
     "address": "100 Harbor Dr Unit 3605, San Diego, CA 92101",
     "propertyType": "Condo",
     "listingType": "NEW LISTING",
     "beds": 2,
     "baths": 2,
     "sqft": 1190,
-    "agentName": "Jessica Porter",
-    "agentPhone": "(619) 840-0210",
-    "agentEmail": "jess@coldwell.com",
-    "legalDisclaimer": "© Coldwell Banker Real Estate LLC. All Rights Reserved. Coldwell Banker® and the Coldwell Banker Logo are registered service marks owned by Coldwell Banker Real Estate LLC. Coldwell Banker Real Estate LLC fully supports the principles of the Fair Housing Act and the Equal Opportunity Act. Each office is independently owned"
+    "images": [
+      "100-1.png",
+      "100-2.png",
+      "100-3.png",
+      "100-4.png",
+      "100-5.png"
+    ],
+    "agent": {
+      "name": "Daniel Brooks",
+      "phone": "(619) 555-0172",
+      "email": "dan@example.com"
+    }
   }
 ]

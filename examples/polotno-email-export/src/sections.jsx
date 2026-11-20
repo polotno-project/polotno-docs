@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
-import { SectionTab, PhotosSection, UploadSection } from 'polotno/side-panel';
+import { SectionTab, PhotosSection, UploadSection, VariablesSection } from 'polotno/side-panel';
 import { ColorPicker } from 'polotno/toolbar/color-picker';
 import { Button, NumberInput, Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from 'polotno/primitives';
 
@@ -8,6 +8,7 @@ import { Icons } from './icons.jsx';
 import { CONTENT, BLOCKS } from './blocks.js';
 import { insertBlock, fitHeight } from './layout.js';
 import { email, setFont, setCard, DESKTOP, MOBILE } from './email.js';
+import { RECIPIENTS } from './recipients.js';
 import { fixesFor } from './fixes.js';
 import { S, T, BADGE } from './ui.js';
 
@@ -32,35 +33,30 @@ const add = (store, builder) => {
 
 // ---------- Content ----------
 
-const MERGE_TAGS = ['{{first_name}}', '{{company}}', '{{plan}}'];
-
-const ContentPanel = observer(({ store }) => {
-  const text = store.selectedElements.find((el) => el.type === 'text');
-  return (
-    <div style={S.panel}>
-      <div style={grid}>
-        {CONTENT.map((c) => (
-          <Tile key={c.name} icon={Icons[c.name]({ size: 20 })} label={c.label} onClick={() => add(store, c.build)} />
-        ))}
-      </div>
-      <p style={S.muted}>New content goes under the selected element, or at the end. Everything below moves down.</p>
-      <div>
-        <p style={S.title}>Merge tags</p>
-        <p style={{ ...S.muted, marginTop: 4, marginBottom: 8 }}>
-          {text ? 'Click to add to the selected text.' : 'Select a text to add a merge tag.'} Live text keeps the tag in the
-          HTML for your email service to fill in.
-        </p>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-          {MERGE_TAGS.map((tag) => (
-            <Button key={tag} variant="outline" size="sm" disabled={!text} onClick={() => text.set({ text: `${text.text} ${tag}` })}>
-              {tag}
-            </Button>
-          ))}
-        </div>
-      </div>
+const ContentPanel = observer(({ store }) => (
+  <div style={S.panel}>
+    <div style={grid}>
+      {CONTENT.map((c) => (
+        <Tile key={c.name} icon={Icons[c.name]({ size: 20 })} label={c.label} onClick={() => add(store, c.build)} />
+      ))}
     </div>
-  );
-});
+    <p style={S.muted}>New content goes under the selected element, or at the end. Everything below moves down.</p>
+    <div>
+      <p style={S.title}>Personalize</p>
+      <p style={{ ...S.muted, marginTop: 4 }}>
+        A <code>{'{{first_name}}'}</code> in text is a template variable: the text toolbar inserts one, and the Variables tab
+        sets the values the canvas shows. The preview renders the email for each recipient, or keeps the tokens for your
+        email service.
+      </p>
+    </div>
+    <div>
+      <p style={S.title}>Links</p>
+      <p style={{ ...S.muted, marginTop: 4 }}>
+        Select a button or an image and set its link in the toolbar. The email links the element's whole area.
+      </p>
+    </div>
+  </div>
+));
 
 export const ContentSection = {
   name: 'content',
@@ -287,7 +283,11 @@ const AuditPanel = observer(({ store }) => {
         <Stat value={stats.image} label="Texts as images" />
         <Stat value={kb(stats.bytes)} label="of 102 KB" />
       </div>
-      <p style={S.muted}>{email.running ? 'Checking…' : 'Checked against Gmail, Outlook, Apple Mail and Yahoo after every edit.'}</p>
+      <p style={S.muted}>
+        {email.running
+          ? 'Checking…'
+          : `Checked against Gmail, Outlook, Apple Mail and Yahoo after every edit, as ${recipientLabel()} gets it.`}
+      </p>
       {email.error && (
         <p style={{ ...S.muted, color: T.destructive }}>
           Export failed: {email.error.details?.reason || email.error.code || ''} {email.error.message}
@@ -335,13 +335,16 @@ const AuditPanel = observer(({ store }) => {
       </div>
       <div style={{ borderTop: `1px solid ${T.border}`, paddingTop: 12 }}>
         <p style={S.title}>Not in email export yet</p>
-        <p style={{ ...S.muted, marginTop: 4 }}>
-          Links on buttons and images, image alt text and a preheader. URLs typed in text are linked.
-        </p>
+        <p style={{ ...S.muted, marginTop: 4 }}>Image alt text and a preheader.</p>
       </div>
     </div>
   );
 });
+
+const recipientLabel = () => {
+  const r = RECIPIENTS.find((x) => x.id === email.recipient);
+  return r.record ? r.label : 'your email service';
+};
 
 const Stat = ({ value, label }) => (
   <div style={{ ...S.card, gap: 2, padding: '10px 12px' }}>
@@ -383,4 +386,12 @@ const AuditTab = observer((props) => {
 
 export const AuditSection = { name: 'audit', Tab: AuditTab, Panel: AuditPanel };
 
-export const SECTIONS = [ContentSection, BlocksSection, BodySection, { ...PhotosSection }, { ...UploadSection }, AuditSection];
+export const SECTIONS = [
+  ContentSection,
+  BlocksSection,
+  BodySection,
+  VariablesSection,
+  { ...PhotosSection },
+  { ...UploadSection },
+  AuditSection,
+];

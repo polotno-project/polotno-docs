@@ -124,7 +124,7 @@ export const SendPanel = observer(() => {
       <div ref={turnstile.ref} style={{ marginLeft: 'auto' }} />
       <div style={{ flexBasis: '100%' }}>
         {sentTo && !error && <p style={{ ...S.note, color: '#16a34a' }}>Sent to {sentTo}. Check your inbox (and spam).</p>}
-        {!sentTo && !error && <p style={S.note}>The current design, as exported. Up to 3 an hour.</p>}
+        {!sentTo && !error && <p style={S.note}>The email in the preview, for the recipient you chose. Up to 3 an hour.</p>}
         {error && <p style={S.error}>{error}</p>}
         {turnstile.failed && <p style={S.error}>{turnstile.failed}</p>}
       </div>

@@ -16,9 +16,8 @@ import { Button } from 'polotno/primitives';
 import { createStore } from 'polotno/model/store';
 import { setTextOverflow, setAnimationsEnabled } from 'polotno/config';
 
-import { getImageSize, getCrop } from 'polotno/utils/image';
-
 import Topbar from './topbar';
+import { fillTemplate } from './listing';
 import { EditImageSection } from './edit-image-section';
 import { QrSection } from './qr-section';
 import { VideoSection } from './video-section';
@@ -102,94 +101,6 @@ const IconsIcon = () => (
     </g>
   </svg>
 );
-
-async function applyListingToTemplate(templateJson, listing) {
-  const json = JSON.parse(JSON.stringify(templateJson));
-  const imageUpdates = [];
-
-  json.pages.forEach((page) => {
-    page.children.forEach((child) => {
-      const variable = child.custom?.variable;
-      if (!variable) return;
-      switch (variable) {
-        case 'price':
-          child.text = listing.price;
-          break;
-        case 'address':
-          if (child.text?.includes('•')) {
-            child.text = child.text.replace(
-              /^.*?•\s*.*/s,
-              listing.propertyType + ' • ' + listing.address,
-            );
-          } else {
-            child.text = listing.address;
-          }
-          break;
-        case 'listingType':
-          if (child.text?.includes('•')) {
-            child.text = listing.listingType + ' • ' + listing.propertyType;
-          } else {
-            child.text = listing.listingType;
-          }
-          break;
-        case 'beds':
-          child.text = String(listing.beds);
-          break;
-        case 'baths':
-          child.text = String(listing.baths);
-          break;
-        case 'sqft':
-          child.text = listing.sqft.toLocaleString();
-          break;
-        case 'agentName':
-          child.text = listing.agentName;
-          break;
-        case 'agentInfo':
-          child.text = child.text
-            .replace(/Jessica Porter/g, listing.agentName)
-            .replace(/\(619\) 840-0210/g, listing.agentPhone)
-            .replace(/jess@coldwell\.com/g, listing.agentEmail);
-          break;
-        case 'legalDisclaimer':
-          child.text = listing.legalDisclaimer;
-          break;
-        default:
-          if (variable.startsWith('photo')) {
-            const idx = parseInt(variable.replace('photo', '')) - 1;
-            if (listing.images[idx]) {
-              const base = new URL('./listings/', window.location.href).href;
-              const src = base + listing.images[idx];
-              child.src = src;
-              imageUpdates.push({ child, src });
-            }
-          }
-          break;
-      }
-    });
-  });
-
-  // Compute center-focused crops for replaced images
-  await Promise.all(
-    imageUpdates.map(async ({ child, src }) => {
-      try {
-        const { width, height } = await getImageSize(src);
-        const crop = getCrop(
-          { width: child.width, height: child.height },
-          { width, height },
-        );
-        Object.assign(child, crop);
-      } catch (e) {
-        // Fallback: reset crop to show full image
-        child.cropX = 0;
-        child.cropY = 0;
-        child.cropWidth = 1;
-        child.cropHeight = 1;
-      }
-    }),
-  );
-
-  return json;
-}
 
 // Listing picker. A small custom dropdown rather than the base-ui <Select>: it shows the
 // selected listing's address on the trigger (the base-ui SelectValue was surfacing the raw
@@ -341,12 +252,16 @@ const TemplatesPanel = observer(({ store }) => {
             onClick={async () => {
               const listing = listings[parseInt(selectedListingIndex)];
               if (listing && templateJson) {
-                const modified = await applyListingToTemplate(
-                  templateJson,
-                  listing,
-                );
+                let design;
+                try {
+                  design = await fillTemplate(templateJson, listing);
+                } catch (e) {
+                  // strict mode: a listing without a required field fails
+                  alert(e.message);
+                  return;
+                }
                 setTextOverflow('change-font-size');
-                store.loadJSON(modified);
+                store.loadJSON(design);
                 await store.waitLoading();
                 setTextOverflow('resize');
               }

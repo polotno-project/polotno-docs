@@ -49,6 +49,10 @@ export const ARTWORK = {
   // the trim line for the guillotine to take.
   bleed: 0,
   background: INK,
+  // The card is a template for a variable-data run, and its one variable was
+  // registered without a value or a default. The canvas and every export
+  // draw a variable's value, so this one prints as its token.
+  variables: [{ name: 'first_name', label: 'First name', required: true }],
   children: [
     {
       // Full-height photo column, cropped to a portrait slice.
@@ -146,7 +150,7 @@ export const ARTWORK = {
       fill: ACCENT,
     },
     {
-      // Merge field nobody filled in before the run went out.
+      // Prints "{{first_name}}" as typed: see `variables` above.
       type: 'text',
       name: 'Greeting',
       text: 'Hi {{first_name}}, your table is waiting.',

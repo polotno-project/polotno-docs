@@ -52,10 +52,15 @@ export function insertBlock(store, page, block) {
     page.addElement({ ...el, id: elId, y: el.y + y }, { skipSelect: true });
     ids.push(elId);
   });
-  (block.groups || []).forEach((groupIds) => store.groupElements(groupIds));
+  (block.groups || []).forEach((group) => groupBlock(store, group));
   // What landed on the page itself: the new groups, and the elements not in one.
   const isNew = (el) => ids.includes(el.id) || (el.type === 'group' && el.children.some(isNew));
   return page.children.filter(isNew);
+}
+
+// A block's group: its element ids, and the link the whole group carries.
+export function groupBlock(store, { ids, href }) {
+  return store.groupElements(ids, href ? { href } : {});
 }
 
 export function fitHeight(page) {

@@ -13,9 +13,9 @@ export button unlocks — CMYK-ready PDF with bleed and crop marks.
 Document: trim size against the product spec, working resolution, bleed.
 
 Elements: image resolution at placed size, font availability, minimum type
-size, safe-area margins, artwork past the trim, unfilled merge fields, text
-contrast, out-of-gamut colour, large flat blacks, hairline rules, transparency,
-and elements excluded from export.
+size, safe-area margins, artwork past the trim, template variables that print
+as their `{{token}}`, text contrast, out-of-gamut colour, large flat blacks,
+hairline rules, transparency, and elements excluded from export.
 
 Every rule the report publishes lives in `src/spec.js` as a product record — in a real
 integration that comes from your catalogue, so the rules change per SKU without
@@ -33,13 +33,15 @@ was never packaged, and the report says so.
 ## What it reads
 
 No separate document model and no server round-trip. Checks read the design the
-store already holds, plus three helpers the SDK exports:
+store already holds, plus three helpers the SDK exports and one from
+`@polotno/schema`:
 
 | Helper | Used for |
 | --- | --- |
 | `getImageSize` (`polotno/utils/image`) | true pixel dimensions behind an image |
 | `getClientRect` (`polotno/utils/math`) | rotation-aware bounding boxes |
 | `getFontsList` (`polotno/utils/fonts`) | which fonts can actually be loaded |
+| `getVariables` (`@polotno/schema/variables`) | the template variables the copy prints, with their values |
 
 Everything else is a field read: `page.bleed`, `store.dpi`, `element.fontSize`,
 `element.fill`, `element.opacity`, `element.visible`.

@@ -7,7 +7,6 @@ import { Workspace } from 'polotno/canvas/workspace';
 import { Toolbar } from 'polotno/toolbar/toolbar';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
-import { getImageSize, getCrop } from 'polotno/utils/image';
 import { Button } from 'polotno/primitives';
 import { jsonToPDFBlob } from '@polotno/pdf-export/browser';
 import 'polotno/ui.css';
@@ -33,20 +32,21 @@ const templateList = TEMPLATE_IDS.map((id) => ({ id, ...POSTCARD_TEMPLATES[id] }
 const frontPage = () => store.pages[0];
 const backPage = () => store.pages[1];
 
-// Element detection by layer-name convention (with custom.role as a fallback so the
-// older hand-built templates keep working):
-//   *-accent      → recoloured by the Accent control
-//   *background*  → recoloured by the Background control
+// Two layer-name conventions (see templates.js); colours go through template variables.
 //   *placeholder* → click-to-replace photo area
 //   greeting*     → the message text (Font / Colour / Size)
 const lname = (el) => (el.name || '').toLowerCase();
-const isAccent = (el) => lname(el).includes('accent') || el.custom?.role === 'accent';
-const isBackground = (el) => lname(el).includes('background') || el.custom?.role === 'background';
-const isPlaceholder = (el) =>
-  lname(el).includes('placeholder') || el.custom?.isPlaceholder || el.custom?.role === 'photo';
-const isGreeting = (el) => lname(el).startsWith('greeting') || el.custom?.role === 'greeting';
+const isPlaceholder = (el) => lname(el).includes('placeholder');
+const isGreeting = (el) => lname(el).startsWith('greeting');
 
 const pageEls = (page, pred) => (page ? page.children.filter(pred) : []);
+
+// The canvas draws each variable's stored value, so setting it redraws every element
+// bound to it, on both sides of the card.
+const variable = (name) => store.variables?.find((v) => v.name === name)?.value;
+function setVariable(name, value) {
+  store.setVariables((store.variables ?? []).map((v) => (v.name === name ? { ...v, value } : v)));
+}
 
 // Parse any CSS color (#rgb, #rrggbb, rgb(), rgba()) to {r,g,b} for value comparison.
 function parseColor(c) {
@@ -67,13 +67,11 @@ function sameColor(a, b) {
 }
 
 function recolorAccent(color) {
-  // Accent elements can live on either side of the card (e.g. the corner stars sit
-  // on both front and back), so recolour every page – not just the front.
-  const accents = store.pages.flatMap((p) => p.children.filter(isAccent));
-  const old = accents.find((el) => el.fill)?.fill;
-  accents.forEach((el) => el.set({ fill: color }));
-  // Also update inline text spans coloured with the old accent (e.g. a coloured
-  // word inside a headline), matched by colour value so rgb/rgba/hex all work.
+  const old = variable('accent');
+  setVariable('accent', color);
+  // A binding fills a whole text, so a coloured word inside rich text (the
+  // "Location" in "Greetings from Location") has no native equivalent: its spans
+  // are recoloured here, matched by colour value so rgb/rgba/hex all work.
   if (old) {
     store.pages.forEach((page) =>
       page.children.forEach((el) => {
@@ -87,11 +85,6 @@ function recolorAccent(color) {
       })
     );
   }
-}
-function setBackground(color) {
-  const bg = pageEls(frontPage(), isBackground);
-  if (bg.length) bg.forEach((el) => el.set({ fill: color }));
-  else frontPage()?.set({ background: color });
 }
 // All greeting/message elements on the back (a template may tag more than one).
 function greetingEls() {
@@ -153,33 +146,30 @@ function removePlaceholderHints(phId) {
   if (ids.length) store.deleteElements(ids);
 }
 
-async function replaceSelectedWith(src) {
+// The placeholder's `fit: 'cover'` crops any photo shape to the frame when it draws,
+// and its `focus` picks the part kept in view (a headshot holds near the top).
+function replaceSelectedWith(src) {
   const ph = store.selectedElements.find(isPlaceholder) || pageEls(frontPage(), isPlaceholder)[0];
   if (!ph) return;
-  try {
-    const { width, height } = await getImageSize(src);
-    const crop = getCrop(ph, { width, height });
-    // Headshots: bias the vertical crop toward the top so the head isn't cut off
-    // (a centred cover-crop slices the top of the head on portrait photos).
-    if (lname(ph).includes('headshot') && crop.cropHeight < 1) {
-      crop.cropY = (1 - crop.cropHeight) * 0.1;
-    }
-    ph.set({ src, ...crop, custom: { ...ph.custom, replaced: true } });
-  } catch (e) {
-    ph.set({ src, custom: { ...ph.custom, replaced: true } });
-  }
+  ph.set({ src, custom: { ...ph.custom, replaced: true } });
   removePlaceholderHints(ph.id);
 }
 
 // --- toolbars (observer → live active states) ----------------------------
 
 const FrontToolbar = observer(({ palette }) => {
-  const accent = pageEls(frontPage(), isAccent)[0]?.fill;
-  const bg = pageEls(frontPage(), isBackground)[0]?.fill ?? frontPage()?.background;
+  const accent = variable('accent');
+  const bg = variable('background');
   return (
     <>
       <ColorDropdown label="Accent" colors={palette} activeColor={accent} onSelect={recolorAccent} disabledColor={bg} />
-      <ColorDropdown label="Background" colors={palette} activeColor={bg} onSelect={setBackground} disabledColor={accent} />
+      <ColorDropdown
+        label="Background"
+        colors={palette}
+        activeColor={bg}
+        onSelect={(c) => setVariable('background', c)}
+        disabledColor={accent}
+      />
     </>
   );
 });

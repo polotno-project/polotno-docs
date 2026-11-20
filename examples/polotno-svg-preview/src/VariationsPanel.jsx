@@ -6,19 +6,12 @@ import { svgToURL } from 'polotno/utils/svg';
 import FaShapes from '@meronex/icons/fa/FaShapes';
 import { Button } from 'polotno/primitives';
 import { ImagesGrid } from 'polotno/side-panel/images-grid';
+import { resolveVariables } from '@polotno/schema/variables';
 
-const createVariation = (json) => {
-  // Deep clone json to avoid mutating the original
-  const clone = JSON.parse(JSON.stringify(json));
-  for (const page of clone.pages) {
-    for (const el of page.children) {
-      if (el.type === 'text') {
-        el.text = el.text.replace('{number}', Math.random());
-      }
-    }
-  }
-  return clone;
-};
+// Fill the design's `{{number}}` template variable with a new value. It
+// returns a filled copy and leaves the design in the editor as it is.
+const createVariation = (json) =>
+  resolveVariables(json, { number: Math.random() }).design;
 
 export const VariationsSection = {
   name: 'variations',

@@ -8,7 +8,7 @@ import { Toolbar } from 'polotno/toolbar/toolbar';
 import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
-import { QrSection, getQR } from './QrSection';
+import { QrSection, getQR, getQRLink } from './QrSection';
 
 // import all default sections
 import { DEFAULT_SECTIONS } from 'polotno/side-panel';
@@ -40,6 +40,7 @@ getQR(val).then((src) => {
     width: 300,
     height: 300,
     src,
+    href: getQRLink(val),
     custom: {
       value: val,
     },

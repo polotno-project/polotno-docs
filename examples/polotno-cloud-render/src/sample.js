@@ -1,7 +1,10 @@
+// A birthday card template. The big name prints the `{{name}}` template
+// variable: a job draws its stored `value`, or the record sent as `variables`.
 export const DEFAULT_JSON = {
   width: 1080,
   height: 1080,
   fonts: [],
+  variables: [{ name: 'name', label: 'Name', required: true, value: 'Anton' }],
   pages: [
     {
       id: 'w76qNOu-sr',
@@ -183,7 +186,7 @@ export const DEFAULT_JSON = {
           selectable: true,
           alwaysOnTop: false,
           showInExport: true,
-          text: 'Anton',
+          text: '{{name}}',
           placeholder: '',
           fontSize: 184,
           fontFamily: 'Alata',

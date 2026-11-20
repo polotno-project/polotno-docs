@@ -2,13 +2,35 @@ import React from 'react';
 import { observer } from 'mobx-react-lite';
 import { Button, Dialog, DialogContent, DialogHeader, DialogTitle, ToggleGroup, ToggleGroupItem } from 'polotno/primitives';
 
-import { email, closePreview, downloadHTML } from './email.js';
+import { email, closePreview, downloadHTML, setRecipient } from './email.js';
+import { RECIPIENTS, VARIABLES } from './recipients.js';
 import { simulate, CLIENTS } from './simulate.js';
 import { SendPanel } from './send.jsx';
 import { Icons } from './icons.jsx';
 import { T } from './ui.js';
 
 const DEVICES = { desktop: 720, mobile: 375 };
+
+const TOKENS = VARIABLES.map((v) => `{{${v.name}}}`).join(' and ');
+const ISSUE = {
+  'unknown-key': (i) => `unknown field "${i.key}"`,
+  'missing-required': (i) => `missing ${i.variable}`,
+  'type-mismatch': (i) => `wrong type for ${i.variable}`,
+};
+
+// What the export did with the template for the chosen recipient.
+const RecipientNote = observer(() => {
+  const r = RECIPIENTS.find((x) => x.id === email.recipient);
+  if (!r.record) return <>{TOKENS} stay in the HTML for your email service to fill in.</>;
+  const issues = email.issues.map((i) => (ISSUE[i.reason] || ((x) => x.reason))(i));
+  return (
+    <>
+      <code>resolveVariables(template, record)</code> fills the email from the record{' '}
+      <code>{JSON.stringify(r.record)}</code>.
+      {issues.length > 0 && <> Reported: {issues.join(', ')}. A missing field uses the variable's default.</>}
+    </>
+  );
+});
 
 export const Preview = observer(() => {
   const [device, setDevice] = React.useState('desktop');
@@ -54,6 +76,19 @@ export const Preview = observer(() => {
             </Button>
           </div>
         </div>
+        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
+          <span style={{ fontSize: 13, color: T.mutedForeground }}>Recipient</span>
+          <ToggleGroup variant="outline" value={[email.recipient]} onValueChange={(v) => v[0] && setRecipient(v[0])}>
+            {RECIPIENTS.map((r) => (
+              <ToggleGroupItem key={r.id} value={r.id}>
+                {r.label}
+              </ToggleGroupItem>
+            ))}
+          </ToggleGroup>
+        </div>
+        <p style={{ margin: 0, fontSize: 13, color: T.mutedForeground }}>
+          <RecipientNote />
+        </p>
         {sending && <SendPanel />}
         <p style={{ margin: 0, fontSize: 13, color: T.mutedForeground }}>{CLIENTS[client].note}</p>
         <div style={{ flex: 1, minHeight: 0, background: T.muted, borderRadius: T.radius, display: 'flex', justifyContent: 'center', overflow: 'hidden' }}>

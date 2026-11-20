@@ -19,6 +19,17 @@ const KEY = 'nFA5H9elEytDyPyvKL7T';
 
 const FORMATS = ['png', 'jpeg', 'pdf', 'gif', 'mp4', 'pptx'];
 
+// One record for the design's template variables. Empty sends none, and the
+// job draws the values stored in the design.
+const parseVariables = (text) => {
+  if (!text.trim()) return undefined;
+  const record = JSON.parse(text);
+  if (!record || typeof record !== 'object' || Array.isArray(record)) {
+    throw new Error('Variables must be a JSON object, such as { "name": "Ada" }');
+  }
+  return record;
+};
+
 // Small labeled control group for the options bar.
 const Field = ({ label, children }) => (
   <label className="field">
@@ -65,6 +76,16 @@ const App = () => {
   );
   const [jsonError, setJsonError] = React.useState(null);
   const textareaRef = React.useRef(null);
+
+  const [variablesText, setVariablesText] = React.useState(
+    JSON.stringify({ name: 'Ada' }, null, 2)
+  );
+  const [variablesError, setVariablesError] = React.useState(null);
+  const variablesRef = React.useRef(null);
+  const [strict, setStrict] = React.useState(false);
+  // The failed job's `error`, such as
+  // "VARIABLES_INVALID: missing-required (name)." with Strict on.
+  const [renderError, setRenderError] = React.useState(null);
 
   const isPdf = format === 'pdf';
   const isPptx = format === 'pptx';
@@ -119,6 +140,7 @@ const App = () => {
     setLoading(true);
     setImage(null);
     setDownloaded(null);
+    setRenderError(null);
     setProgress(0);
     try {
       let json;
@@ -128,6 +150,16 @@ const App = () => {
       } catch (e) {
         setJsonError(e.message);
         textareaRef.current?.focus();
+        setLoading(false);
+        return;
+      }
+      let variables;
+      try {
+        variables = parseVariables(variablesText);
+        setVariablesError(null);
+      } catch (e) {
+        setVariablesError(e.message);
+        variablesRef.current?.focus();
         setLoading(false);
         return;
       }
@@ -147,12 +179,19 @@ const App = () => {
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Prefer: 'wait' },
-          body: JSON.stringify({ design: json, ...buildRenderOptions() }),
+          body: JSON.stringify({
+            design: json,
+            // fill the template with this record, as resolveVariables does
+            variables,
+            // fail the job on a missing required value or a wrong type
+            strict: strict || undefined,
+            ...buildRenderOptions(),
+          }),
         }
       );
       const job = await req.json();
-      if (job.status === 'error') {
-        alert('Error: ' + job.error);
+      if (!req.ok || job.status === 'error') {
+        setRenderError(job.error || `Request failed with status ${req.status}`);
       } else if (job.status === 'done') {
         finish(job);
       } else {
@@ -163,7 +202,7 @@ const App = () => {
           );
           const polled = await req.json();
           if (polled.status === 'error') {
-            alert('Error: ' + polled.error);
+            setRenderError(polled.error || 'Render failed');
             break;
           }
           if (polled.status === 'progress') {
@@ -178,7 +217,7 @@ const App = () => {
       }
     } catch (e) {
       console.error(e);
-      alert('Something went wrong...');
+      setRenderError('Something went wrong: ' + e.message);
     }
     setLoading(false);
     setProgress(0);
@@ -207,13 +246,43 @@ const App = () => {
               }
             }}
           />
+          <div className="pane-header pane-header--next">
+            <span className="pane-title">Variables (JSON)</span>
+            {variablesError && <span className="error">{variablesError}</span>}
+            <span className="pane-header-end">
+              <Field label="Strict">
+                <Switch checked={strict} onChange={setStrict} />
+              </Field>
+            </span>
+          </div>
+          <textarea
+            ref={variablesRef}
+            className="json-input json-input--variables"
+            spellCheck={false}
+            placeholder="Empty: the job draws the values stored in the design"
+            value={variablesText}
+            onChange={(e) => setVariablesText(e.target.value)}
+            onBlur={() => {
+              try {
+                parseVariables(variablesText);
+                setVariablesError(null);
+              } catch (e) {
+                setVariablesError(e.message);
+              }
+            }}
+          />
         </div>
         <div className="pane">
           <div className="pane-header">
             <span className="pane-title">Preview</span>
           </div>
           <div className="preview">
-            {image ? (
+            {renderError ? (
+              <div className="render-error">
+                <strong>Render failed</strong>
+                <span>{renderError}</span>
+              </div>
+            ) : image ? (
               <img src={image} alt="Rendered output" />
             ) : (
               <span className="preview-hint">
