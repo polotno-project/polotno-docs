@@ -1,13 +1,17 @@
 import React from 'react';
-import { replaceName } from './replace-name';
+import { getVariables, resolveVariables } from '@polotno/schema/variables';
+import { jsonToImageBlob } from '@polotno/image-export';
 import {
   Button,
   Dialog,
   DialogContent,
+  DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogFooter,
+  FieldRow,
   Input,
+  Switch,
 } from 'polotno/primitives';
 
 // this is a demo key just for that project
@@ -15,92 +19,116 @@ import {
 // to create your own API key please go here: https://polotno.com/login
 const KEY = 'nFA5H9elEytDyPyvKL7T';
 
-const ExportModal = ({ isOpen, store, onClose }) => {
-  const [input, setInput] = React.useState('Anton, Olga, Mark, Lavr');
-  const [loading, setLoading] = React.useState(false);
-  const [images, setImages] = React.useState([]);
+// A dotted name reads nested data: `user.city` is `record.user.city`.
+function setPath(record, name, value) {
+  const keys = name.split('.');
+  const last = keys.pop();
+  let node = record;
+  for (const key of keys) {
+    if (typeof node[key] !== 'object') node[key] = {};
+    node = node[key];
+  }
+  node[last] = value;
+}
 
-  const handleGenerate = async () => {
-    setLoading(true);
-    const json = store.toJSON();
+// The record your app would send: the typed values, empty fields left out.
+function toRecord(values) {
+  const record = {};
+  for (const [name, value] of Object.entries(values)) {
+    if (value !== '') setPath(record, name, value);
+  }
+  return record;
+}
 
-    // this logic probably should be on the server side
-    // it is hard to use client side to generate many images
-    // so we will use our cloud render API for that
-    // for more info about cloud render API please go here:
-    // https://polotno.com/docs/cloud-render
-    const names = input.split(',').map((t) => t.trim());
+const PreviewDialog = ({ store, onClose }) => {
+  // The template's fields, with their types, labels and stored values.
+  const [fields] = React.useState(() => getVariables(store.toJSON()).variables);
+  const [values, setValues] = React.useState(() =>
+    Object.fromEntries(
+      fields.map((v) => [
+        v.name,
+        v.type === 'boolean' ? v.value !== false : typeof v.value === 'string' ? v.value : '',
+      ])
+    )
+  );
+  const [preview, setPreview] = React.useState(null);
+  const [issues, setIssues] = React.useState([]);
+  const [busy, setBusy] = React.useState(false);
+  // Each preview is a blob URL; free the old one when it is replaced or the
+  // dialog closes.
+  React.useEffect(() => () => preview && URL.revokeObjectURL(preview), [preview]);
+
+  const render = async () => {
+    setBusy(true);
     try {
-      const newImages = await Promise.all(
-        // limit to 5 images
-        names.slice(0, 5).map(async (name) => {
-          const newJSON = replaceName(json, name);
-          const req = await fetch(
-            'https://api.polotno.com/api/render?KEY=' + KEY,
-            {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                design: newJSON,
-                exportOptions: {
-                  // use pixelRatio < 1 to have much smaller image at the result
-                  pixelRatio: 0.2,
-                },
-                outputFormat: 'dataURL',
-              }),
-            }
-          );
-          if (req.status !== 200) {
-            throw new Error('Failed to generate preview');
-          }
-          const { url } = await req.json();
-          return url;
-        })
-      );
-      setImages(newImages);
-      setLoading(false);
+      // The same call fills a batch on a server: one record per copy.
+      const { design, issues } = resolveVariables(store.toJSON(), toRecord(values));
+      const blob = await jsonToImageBlob(design, {
+        key: KEY,
+        pageId: store.activePage.id,
+      });
+      setPreview(URL.createObjectURL(blob));
+      setIssues(issues);
     } catch (e) {
-      alert('Something went wrong');
       console.error(e);
-      setLoading(false);
+      alert('Something went wrong');
     }
+    setBusy(false);
   };
 
   return (
-    <Dialog
-      open={isOpen}
-      onOpenChange={(open) => {
-        if (!open) onClose();
-      }}
-    >
+    <Dialog open onOpenChange={(open) => !open && onClose()}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Generate Previews</DialogTitle>
+          <DialogTitle>Fill the template</DialogTitle>
+          <DialogDescription>
+            Type a record. An empty field is left out of it: the preview falls
+            back to the variable's default, then to the token or the template's
+            own image.
+          </DialogDescription>
         </DialogHeader>
-        List of names to generate previews:
-        <Input
-          value={input}
-          onChange={(e) => {
-            setInput(e.target.value);
-          }}
-        />
-        <div style={{ display: 'flex', overflow: 'auto' }}>
-          {images.map((url, index) => (
-            <img
-              src={url}
-              key={index}
-              style={{ display: 'inline-block', margin: '10px' }}
-            />
-          ))}
-        </div>
+        {fields.map((v) => (
+          <FieldRow
+            key={v.name}
+            label={(v.label ?? v.name) + (v.required ? ' *' : '')}
+            title={v.description}
+            style={{ gap: 8 }}
+          >
+            {v.type === 'boolean' ? (
+              <Switch
+                checked={values[v.name]}
+                onCheckedChange={(checked) =>
+                  setValues({ ...values, [v.name]: checked })
+                }
+              />
+            ) : (
+              <Input
+                value={values[v.name]}
+                placeholder={typeof v.default === 'string' ? v.default : undefined}
+                onChange={(e) => setValues({ ...values, [v.name]: e.target.value })}
+                style={{ width: 260 }}
+              />
+            )}
+          </FieldRow>
+        ))}
+        {preview && (
+          <img
+            src={preview}
+            alt="Filled design"
+            style={{ width: '100%', maxHeight: 320, objectFit: 'contain' }}
+          />
+        )}
+        {issues.map((issue, i) => (
+          <div key={i} style={{ color: issue.severity === 'error' ? 'crimson' : 'gray' }}>
+            {issue.reason}: {issue.variable ?? issue.key}
+          </div>
+        ))}
         <DialogFooter>
           <Button variant="outline" onClick={onClose}>
             Close
           </Button>
-          <Button onClick={handleGenerate} disabled={loading}>
-            Generate
+          <Button onClick={render} disabled={busy}>
+            Render
           </Button>
         </DialogFooter>
       </DialogContent>
@@ -109,23 +137,11 @@ const ExportModal = ({ isOpen, store, onClose }) => {
 };
 
 export const PreviewButton = ({ store }) => {
-  const [modalVisible, setModalVisible] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
   return (
     <>
-      <Button
-        onClick={() => {
-          setModalVisible(true);
-        }}
-      >
-        Preview
-      </Button>
-      <ExportModal
-        store={store}
-        isOpen={modalVisible}
-        onClose={() => {
-          setModalVisible(false);
-        }}
-      />
+      <Button onClick={() => setOpen(true)}>Preview</Button>
+      {open && <PreviewDialog store={store} onClose={() => setOpen(false)} />}
     </>
   );
 };

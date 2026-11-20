@@ -1,12 +1,13 @@
 // Turning the template plus one donor record into that donor's piece.
 //
 // This runs on the design JSON, not on the canvas, so the same function serves
-// the on-screen proof and the batch export. On a server it would run unchanged
-// before handing each design to the renderer.
+// the on-screen proof and the batch export. resolveVariables fills the template
+// the same way in Node, so on a server it would run unchanged before handing
+// each design to the renderer.
 
 import QRCode from 'qrcode';
-import { ORG, deriveFields, fillTokens, findTokens } from './campaign.js';
-import { coverCrop } from './templates.js';
+import { getVariables, resolveVariables } from '@polotno/schema/variables';
+import { ORG, deriveFields } from './campaign.js';
 
 const svgUrl = (svg) => `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
 
@@ -118,43 +119,38 @@ const forEachElement = (nodes, cb) =>
  */
 export async function mergeDonor(template, donor, campaign, { overlays = true } = {}) {
   const { values, segment, asks, photo, notes } = deriveFields(donor, campaign);
-  const json = structuredClone(template);
+  // The donor's record: every value the texts print, plus the two images the
+  // template binds.
+  const record = { ...values, segment_photo: photo.src, qr: await qrSrc(values.donor_id) };
+  const { design: json } = resolveVariables(template, record);
+  // A token still in the filled design is a field the list had no value for:
+  // it prints as typed.
+  const unfilled = getVariables(json).variables.map((v) => v.name);
   const fitNotes = [];
-  const unfilled = new Set();
   const jobs = [];
 
   json.pages.forEach((page) => {
     if (!overlays) page.children = page.children.filter((el) => !el.custom?.overlay);
     forEachElement(page.children, (el) => {
       el.selectable = false;
-      if (el.type === 'text' && typeof el.text === 'string' && el.text.includes('{{')) {
-        let str = fillTokens(el.text, values);
-        findTokens(str).forEach((k) => unfilled.add(k));
-        if (el.custom?.collapseEmptyLines) str = str.split('\n').filter((l) => l.trim()).join('\n');
-        el.text = str;
-        if (el.custom?.fit) {
-          jobs.push(
-            ensureFont(el).then(() => {
-              const from = el.fontSize;
-              const r = fitText(el, str);
-              el.fontSize = r.size;
-              if (!r.ok) fitNotes.push({ level: 'warn', text: `${el.name} doesn't fit even at its ${toPt(r.size)} pt minimum` });
-              else if (r.changed) fitNotes.push({ level: 'note', text: `${el.name} shrunk from ${toPt(from)} to ${toPt(r.size)} pt to fit` });
-            })
-          );
-        }
-      }
-      const v = el.custom?.variable;
-      if (v === 'segment_photo' && photo) {
-        Object.assign(el, { src: photo.src }, coverCrop(el.width, el.height, photo.width, photo.height));
-      } else if (v === 'qr') {
-        jobs.push(qrSrc(values.donor_id).then((src) => (el.src = src)));
+      if (el.type !== 'text' || typeof el.text !== 'string') return;
+      if (el.custom?.collapseEmptyLines) el.text = el.text.split('\n').filter((l) => l.trim()).join('\n');
+      if (el.custom?.fit) {
+        jobs.push(
+          ensureFont(el).then(() => {
+            const from = el.fontSize;
+            const r = fitText(el, el.text);
+            el.fontSize = r.size;
+            if (!r.ok) fitNotes.push({ level: 'warn', text: `${el.name} doesn't fit even at its ${toPt(r.size)} pt minimum` });
+            else if (r.changed) fitNotes.push({ level: 'note', text: `${el.name} shrunk from ${toPt(from)} to ${toPt(r.size)} pt to fit` });
+          })
+        );
       }
     });
   });
 
   await Promise.all(jobs);
-  return { json, values, segment, asks, notes, fitNotes, unfilled: [...unfilled] };
+  return { json, values, segment, asks, notes, fitNotes, unfilled };
 }
 
 /**

@@ -116,8 +116,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -141,8 +141,8 @@ importers:
   polotno-admin-role:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -152,7 +152,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -166,8 +166,8 @@ importers:
         specifier: ^3.3.11
         version: 3.3.20
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -177,7 +177,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -191,8 +191,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -202,7 +202,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -210,8 +210,8 @@ importers:
   polotno-ai-image-tools:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -227,7 +227,7 @@ importers:
         version: 19.2.3(@types/react@19.2.17)
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       typescript:
         specifier: ^5
         version: 5.5.4
@@ -239,13 +239,13 @@ importers:
     dependencies:
       '@vue/cli-plugin-babel':
         specifier: 4.1.1
-        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(core-js@3.49.0)(supports-color@6.1.0)(vue@2.7.16)
+        version: 4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(supports-color@6.1.0)(vue@2.7.16)
       mobx-vue:
         specifier: 2.0.11
         version: 2.0.11(mobx@5.15.7)(vue@2.7.16)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -279,10 +279,10 @@ importers:
     dependencies:
       parcel:
         specifier: ^2.8.3
-        version: 2.16.4(@swc/helpers@0.5.20)
+        version: 2.16.4(@swc/helpers@0.5.23)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -295,7 +295,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^4.0.0
-        version: 4.6.2(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))(vue@3.5.31(typescript@5.5.4))
+        version: 4.6.2(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))(vue@3.5.31(typescript@5.5.4))
       buffer:
         specifier: ^5.7.1
         version: 5.7.1
@@ -345,8 +345,8 @@ importers:
         specifier: ^4.8.0
         version: 4.8.0(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10))(mobx@7.1.7)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -359,7 +359,7 @@ importers:
     devDependencies:
       '@angular/build':
         specifier: ^18.0.1
-        version: 18.2.21(@angular/compiler-cli@18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(supports-color@7.2.0)(typescript@5.5.4))(@types/node@25.5.0)(chokidar@3.6.0)(postcss@8.5.8)(supports-color@7.2.0)(terser@5.46.1)(typescript@5.5.4)
+        version: 18.2.21(@angular/compiler-cli@18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(supports-color@7.2.0)(typescript@5.5.4))(@types/node@25.5.0)(chokidar@3.6.0)(postcss@8.5.32)(supports-color@7.2.0)(terser@5.46.1)(typescript@5.5.4)
       '@angular/cli':
         specifier: ^18.0.0
         version: 18.2.21(bluebird@3.7.2)(chokidar@3.6.0)(supports-color@7.2.0)
@@ -376,8 +376,8 @@ importers:
   polotno-animations:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -387,7 +387,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -401,8 +401,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -412,7 +412,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -420,8 +420,8 @@ importers:
   polotno-audio:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -431,7 +431,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -439,8 +439,8 @@ importers:
   polotno-background-sidepanel:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -450,7 +450,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -467,8 +467,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -478,7 +478,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -489,8 +489,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -500,7 +500,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -514,8 +514,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -525,7 +525,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -539,8 +539,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -556,7 +556,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -570,8 +570,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -584,7 +584,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -595,8 +595,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -606,7 +606,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -623,8 +623,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
@@ -637,7 +637,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -653,7 +653,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -664,8 +664,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -678,7 +678,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -692,8 +692,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -703,7 +703,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -711,8 +711,8 @@ importers:
   polotno-demo:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -722,7 +722,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -733,8 +733,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -744,7 +744,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -758,8 +758,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -769,7 +769,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -777,8 +777,8 @@ importers:
   polotno-demo-image-editor:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -788,7 +788,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -797,7 +797,7 @@ importers:
     dependencies:
       lucide-react:
         specifier: ^1.72.0
-        version: 1.72.0(@types/react@19.2.17)(react@19.3.1)
+        version: 1.75.0(@types/react@19.2.17)(react@19.3.1)
       mobx:
         specifier: 7.1.7
         version: 7.1.7
@@ -805,8 +805,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -816,7 +816,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -824,11 +824,11 @@ importers:
   polotno-demo-lottie:
     dependencies:
       '@polotno/video-export':
-        specifier: 0.6.0
-        version: 0.6.0(canvas@3.2.3)(polotno@4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))
+        specifier: 0.7.0
+        version: 0.7.0(canvas@3.2.3)(polotno@4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -838,7 +838,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -852,8 +852,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -863,7 +863,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -871,8 +871,8 @@ importers:
   polotno-demo-postcard:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.17.1
-        version: 0.17.1(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+        specifier: ^0.18.0
+        version: 0.18.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
       mobx:
         specifier: 7.1.7
         version: 7.1.7
@@ -880,8 +880,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -891,7 +891,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -905,8 +905,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -916,7 +916,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -930,8 +930,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -941,7 +941,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -949,11 +949,11 @@ importers:
   polotno-demo-video-editor:
     dependencies:
       '@polotno/video-export':
-        specifier: 0.6.0
-        version: 0.6.0(canvas@3.2.3)(polotno@4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))
+        specifier: 0.7.0
+        version: 0.7.0(canvas@3.2.3)(polotno@4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -963,7 +963,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -971,8 +971,8 @@ importers:
   polotno-demo-vite:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -982,7 +982,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -990,8 +990,8 @@ importers:
   polotno-design-validation:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1001,7 +1001,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1009,11 +1009,14 @@ importers:
   polotno-direct-mail:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.17.1
-        version: 0.17.1(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+        specifier: ^0.18.0
+        version: 0.18.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+      '@polotno/schema':
+        specifier: ^0.14.0
+        version: 0.14.0
       lucide-react:
         specifier: ^1.72.0
-        version: 1.72.0(@types/react@19.2.17)(react@19.3.1)
+        version: 1.75.0(@types/react@19.2.17)(react@19.3.1)
       mobx:
         specifier: 7.1.7
         version: 7.1.7
@@ -1021,8 +1024,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
@@ -1035,7 +1038,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1046,8 +1049,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1057,7 +1060,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1071,8 +1074,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1082,7 +1085,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1090,8 +1093,8 @@ importers:
   polotno-email-export:
     dependencies:
       '@polotno/email-export':
-        specifier: ^0.1.0
-        version: 0.1.0(canvas@3.2.3)
+        specifier: ^0.2.0
+        version: 0.2.0(canvas@3.2.3)
       lucide-react:
         specifier: ^1.74.0
         version: 1.75.0(@types/react@19.2.17)(react@19.3.1)
@@ -1102,8 +1105,33 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+      react:
+        specifier: ^19.3.1
+        version: 19.3.1
+      react-dom:
+        specifier: ^19.3.1
+        version: 19.3.1(react@19.3.1)
+    devDependencies:
+      '@vitejs/plugin-react':
+        specifier: ^6
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
+      vite:
+        specifier: ^8
+        version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
+
+  polotno-event-badges:
+    dependencies:
+      '@polotno/image-export':
+        specifier: ^0.3.0
+        version: 0.3.0(canvas@3.2.3)
+      '@polotno/schema':
+        specifier: ^0.14.0
+        version: 0.14.0
+      polotno:
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1137,8 +1165,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1148,7 +1176,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1162,8 +1190,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1173,7 +1201,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1190,8 +1218,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1201,7 +1229,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1215,8 +1243,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1226,7 +1254,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1234,11 +1262,39 @@ importers:
   polotno-idml-import:
     dependencies:
       '@polotno/idml-import':
-        specifier: ^0.1.0
-        version: 0.1.0(canvas@3.2.3)
+        specifier: ^0.2.0
+        version: 0.2.0(canvas@3.2.3)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+      react:
+        specifier: ^19.3.1
+        version: 19.3.1
+      react-dom:
+        specifier: ^19.3.1
+        version: 19.3.1(react@19.3.1)
+    devDependencies:
+      '@vitejs/plugin-react':
+        specifier: ^6
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
+      vite:
+        specifier: ^8
+        version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
+
+  polotno-links:
+    dependencies:
+      '@polotno/html-export':
+        specifier: ^0.13.0
+        version: 0.13.0(@napi-rs/canvas@1.1.1)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))
+      '@polotno/pdf-export':
+        specifier: ^0.18.0
+        version: 0.18.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+      mobx-react-lite:
+        specifier: ^5.1.3
+        version: 5.1.3(mobx@7.1.7)(react@19.3.1)
+      polotno:
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1262,8 +1318,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1273,7 +1329,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1281,8 +1337,8 @@ importers:
   polotno-mobile:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1292,7 +1348,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1301,10 +1357,10 @@ importers:
     dependencies:
       next:
         specifier: ^16.3.4
-        version: 16.4.6(@babel/core@7.29.0(supports-color@7.2.0))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sass@1.77.6)
+        version: 16.4.6(@babel/core@7.29.0(supports-color@7.2.0))(@types/node@25.5.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sass@1.77.6)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1316,10 +1372,10 @@ importers:
     dependencies:
       parcel:
         specifier: ^2.7.0
-        version: 2.16.4(@swc/helpers@0.5.20)
+        version: 2.16.4(@swc/helpers@0.5.23)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1349,8 +1405,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1360,7 +1416,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1368,8 +1424,8 @@ importers:
   polotno-overlay:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1379,7 +1435,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1390,8 +1446,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1401,7 +1457,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1412,8 +1468,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1423,7 +1479,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1431,8 +1487,8 @@ importers:
   polotno-page-numbers:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1442,7 +1498,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1453,8 +1509,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1464,7 +1520,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1472,11 +1528,11 @@ importers:
   polotno-pdf-import:
     dependencies:
       '@polotno/pdf-import':
-        specifier: 0.13.1
-        version: 0.13.1(canvas@3.2.3)
+        specifier: 0.14.0
+        version: 0.14.0(canvas@3.2.3)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1486,7 +1542,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1500,8 +1556,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1511,7 +1567,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1520,10 +1576,10 @@ importers:
     dependencies:
       '@polotno/pptx-export':
         specifier: latest
-        version: 0.13.0(@types/node@25.5.0)(canvas@3.2.3)
+        version: 0.14.0(@types/node@25.5.0)(canvas@3.2.3)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1533,7 +1589,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1547,8 +1603,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1558,7 +1614,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1572,8 +1628,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1583,7 +1639,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1597,8 +1653,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1608,7 +1664,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1622,8 +1678,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1633,7 +1689,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1641,11 +1697,11 @@ importers:
   polotno-psd-import:
     dependencies:
       '@polotno/psd-import':
-        specifier: ^0.3.4
-        version: 0.3.4(canvas@3.2.3)
+        specifier: ^0.4.0
+        version: 0.4.0(canvas@3.2.3)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1655,7 +1711,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1669,8 +1725,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
@@ -1683,7 +1739,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1697,8 +1753,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
@@ -1711,7 +1767,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1719,8 +1775,8 @@ importers:
   polotno-remove-side-panel:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1730,7 +1786,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1741,8 +1797,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1752,7 +1808,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1763,8 +1819,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1774,7 +1830,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1782,8 +1838,8 @@ importers:
   polotno-rotate-page:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1793,7 +1849,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1801,8 +1857,8 @@ importers:
   polotno-rulers:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1812,7 +1868,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1823,8 +1879,8 @@ importers:
         specifier: 7.1.7
         version: 7.1.7
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1834,7 +1890,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1848,8 +1904,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1862,7 +1918,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1870,8 +1926,8 @@ importers:
   polotno-simple-t-shirt-demo:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1881,7 +1937,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1892,8 +1948,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1905,11 +1961,11 @@ importers:
         version: 19.3.2(@types/react@19.2.17)(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       react-konva-utils:
         specifier: ^2.1.0
-        version: 2.1.0(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react-konva@19.3.2(@types/react@19.2.17)(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)
+        version: 2.1.1(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react-konva@19.3.2(@types/react@19.2.17)(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1917,8 +1973,8 @@ importers:
   polotno-sticker-cut-contour:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.17.1
-        version: 0.17.1(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+        specifier: ^0.18.0
+        version: 0.18.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
       mobx:
         specifier: 7.1.7
         version: 7.1.7
@@ -1926,8 +1982,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1937,7 +1993,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1948,8 +2004,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       quill:
         specifier: ^2.0.0
         version: 2.0.3
@@ -1962,7 +2018,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1970,11 +2026,11 @@ importers:
   polotno-svg-import:
     dependencies:
       '@polotno/svg-import':
-        specifier: ^0.2.5
-        version: 0.2.5(canvas@3.2.3)
+        specifier: ^0.3.0
+        version: 0.3.0(canvas@3.2.3)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -1984,7 +2040,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -1998,8 +2054,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2009,7 +2065,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2020,8 +2076,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2031,7 +2087,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2045,8 +2101,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2062,7 +2118,7 @@ importers:
         version: 19.2.3(@types/react@19.2.17)
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       typescript:
         specifier: ^5
         version: 5.5.4
@@ -2082,8 +2138,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2096,7 +2152,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2110,8 +2166,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2121,7 +2177,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2132,8 +2188,8 @@ importers:
         specifier: 7.1.7
         version: 7.1.7
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2143,19 +2199,22 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
 
   polotno-text-sizing:
     dependencies:
+      '@polotno/schema':
+        specifier: ^0.14.0
+        version: 0.14.0
       mobx-react-lite:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2165,7 +2224,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2174,10 +2233,10 @@ importers:
     dependencies:
       lucide-react:
         specifier: ^1.72.0
-        version: 1.72.0(@types/react@19.2.17)(react@19.3.1)
+        version: 1.75.0(@types/react@19.2.17)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2187,7 +2246,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2195,8 +2254,8 @@ importers:
   polotno-toolbar-actions:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2206,7 +2265,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2217,8 +2276,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2228,7 +2287,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2239,8 +2298,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2250,7 +2309,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2261,8 +2320,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2272,16 +2331,22 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
 
   polotno-variables:
     dependencies:
+      '@polotno/image-export':
+        specifier: ^0.3.0
+        version: 0.3.0(canvas@3.2.3)
+      '@polotno/schema':
+        specifier: ^0.14.0
+        version: 0.14.0
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2291,7 +2356,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2299,14 +2364,14 @@ importers:
   polotno-vector-pdf-export:
     dependencies:
       '@polotno/pdf-export':
-        specifier: ^0.17.1
-        version: 0.17.1(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
+        specifier: ^0.18.0
+        version: 0.18.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)
       mobx-react-lite:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2316,7 +2381,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2324,8 +2389,8 @@ importers:
   polotno-vertical-text-resize:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2335,7 +2400,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2343,11 +2408,11 @@ importers:
   polotno-video-export:
     dependencies:
       '@polotno/video-export':
-        specifier: 0.6.0
-        version: 0.6.0(canvas@3.2.3)(polotno@4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))
+        specifier: 0.7.0
+        version: 0.7.0(canvas@3.2.3)(polotno@4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2357,7 +2422,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2371,8 +2436,8 @@ importers:
         specifier: ^0.4.3
         version: 0.4.3(mobx@7.1.7)(vue@3.5.31(typescript@5.5.4))
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2385,7 +2450,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.1.4
-        version: 5.2.4(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))(vue@3.5.31(typescript@5.5.4))
+        version: 5.2.4(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))(vue@3.5.31(typescript@5.5.4))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2399,8 +2464,8 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3(mobx@7.1.7)(react@19.3.1)
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2410,7 +2475,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -2418,8 +2483,8 @@ importers:
   polotno-workspace-layout:
     dependencies:
       polotno:
-        specifier: ^4.21.0
-        version: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+        specifier: ^4.22.1
+        version: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2429,7 +2494,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))
+        version: 6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))
       vite:
         specifier: ^8
         version: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
@@ -3761,34 +3826,16 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@napi-rs/canvas-android-arm64@1.1.0':
-    resolution: {integrity: sha512-mKrSmRyhWK4q699Q1xthbZIZi7JBvLtsRNnOZAeFaLPOFT1yo8y82aRC2nNZbXTGJXU7fVDONgGQPr0vo3kerw==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [android]
-
   '@napi-rs/canvas-android-arm64@1.1.1':
     resolution: {integrity: sha512-rSEp3y+/YXw6TxSx4/NHSAFxumZrkMoXy2WiVqpKGT8oF5GHOUDzTKj45e5cvzophX4iFaxwKs3+/gNkJ7FmzQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [android]
 
-  '@napi-rs/canvas-darwin-arm64@1.1.0':
-    resolution: {integrity: sha512-iqwST4g0oH+x8VCpBIYh+MYokv/mVvkM+v9oJGB0d9A3P2qBh42ogJlVyWq9SpPCrAjS7tplMb1D3OIfxl+utw==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [darwin]
-
   '@napi-rs/canvas-darwin-arm64@1.1.1':
     resolution: {integrity: sha512-NrPTZWpu0ywOGdp9JBDi46gABUzDJK6IzlP7cOEwaAuVVFM8KRakUWk12RK3YQ/Ea5FrNVTWUFTmkXVk4RfHqg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
-    os: [darwin]
-
-  '@napi-rs/canvas-darwin-x64@1.1.0':
-    resolution: {integrity: sha512-jkeA8eVTxDum03LTvc32YJ28F6KB1U0gYwnWMfOAUQZvWWEh/kvONby4iWGJx3+Tw45UqMGMXjtw2GKNVZDhVg==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
     os: [darwin]
 
   '@napi-rs/canvas-darwin-x64@1.1.1':
@@ -3797,24 +3844,11 @@ packages:
     cpu: [x64]
     os: [darwin]
 
-  '@napi-rs/canvas-linux-arm-gnueabihf@1.1.0':
-    resolution: {integrity: sha512-Y4YkKG1ijoqkgUdTEEBNG4k+2BK5bR5jGL6S56YxCXYPwGfUd5nED8/74xyc7z+bpixPasCjSYoP3xYPOIGNxw==}
-    engines: {node: '>= 10'}
-    cpu: [arm]
-    os: [linux]
-
   '@napi-rs/canvas-linux-arm-gnueabihf@1.1.1':
     resolution: {integrity: sha512-YWGJfMa8TtEhsHd/kDiyBFwT/dAbRQiXwsm0tDev4H5cJiyOk08CC83JihrwnUsePGjIvxC8/8g/zqKKuqjpQA==}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [linux]
-
-  '@napi-rs/canvas-linux-arm64-gnu@1.1.0':
-    resolution: {integrity: sha512-dE/XthqYkiWcBVtKFlZbUXwAYfDuQGqDWixznipJNmevLGpprNnTVQZyftm1RZJudkIOn2EkzYZDMMETM08Row==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    libc: [glibc]
 
   '@napi-rs/canvas-linux-arm64-gnu@1.1.1':
     resolution: {integrity: sha512-q1HBkNmB9mc6SF6uSz2492qSgsB46MqS+n3bPbPCE0kUXmWAPkH9vDADeawbhepQYn8RhlV2V/P5u6nykFXbuQ==}
@@ -3823,13 +3857,6 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@napi-rs/canvas-linux-arm64-musl@1.1.0':
-    resolution: {integrity: sha512-DqZ/CMcHlhU56pPjv9AP0h3U7MFQ5LzC1HzMyRMotL+PFsJmZJA/ziApPYVyyz78DaVLhI8t3So3ztqtijbYpg==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    libc: [musl]
-
   '@napi-rs/canvas-linux-arm64-musl@1.1.1':
     resolution: {integrity: sha512-aF4RkTp2T45fERFPCIqbxeKVhvhHuXeyyk5/jdJ+N0tGLZy4NvMkIrBWt6GOCmAQ7H0G3M/O03hAsc4Li52q4A==}
     engines: {node: '>= 10'}
@@ -3837,24 +3864,10 @@ packages:
     os: [linux]
     libc: [musl]
 
-  '@napi-rs/canvas-linux-riscv64-gnu@1.1.0':
-    resolution: {integrity: sha512-kJ7m5n2VffxWXM5QGa5lfq8ZN4LdOJEoz3aAJAmIqYvKiZw1gRdXqpucnRXsF6D9nLYiiIlevaAtAclR7c5ilg==}
-    engines: {node: '>= 10'}
-    cpu: [riscv64]
-    os: [linux]
-    libc: [glibc]
-
   '@napi-rs/canvas-linux-riscv64-gnu@1.1.1':
     resolution: {integrity: sha512-rCU4Xo5h0AQFEaa9dNr7Kxbk4gke9Uyi/I6ZXuBGYPSNWxYmWRS6DkrxaSKUJyCgA7c8l6lZBYfx/FtbJo3fMA==}
     engines: {node: '>= 10'}
     cpu: [riscv64]
-    os: [linux]
-    libc: [glibc]
-
-  '@napi-rs/canvas-linux-x64-gnu@1.1.0':
-    resolution: {integrity: sha512-uQ9JuJlRhQdHyttcMWOiwLkfIqkqaB0YFUVe835LUe12THt2b51HXkTItq0fxWT1jdhUPX2ylWZ1walkJyD6GQ==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
     os: [linux]
     libc: [glibc]
 
@@ -3865,13 +3878,6 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@napi-rs/canvas-linux-x64-musl@1.1.0':
-    resolution: {integrity: sha512-has4CPPAkkCac/LZ13VAw5p+MJLdaKVoyrhumN/A7uJd6960xYkJNDZgUebyxiha82AFzXx6RV+QJg5qGG079g==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    libc: [musl]
-
   '@napi-rs/canvas-linux-x64-musl@1.1.1':
     resolution: {integrity: sha512-xaFof2p0aO7C7ziMCLeueve09PVEKYCebljLTL3nyxoaRsYpEnBrUBP1aVpfD1Nk464dc7/wPV23fkHdOBie2g==}
     engines: {node: '>= 10'}
@@ -3879,22 +3885,10 @@ packages:
     os: [linux]
     libc: [musl]
 
-  '@napi-rs/canvas-win32-arm64-msvc@1.1.0':
-    resolution: {integrity: sha512-MJnktLKNijmXqdjTughHDZ9TDLZ9uUm2hvFXqaOqn0+w7lphXFnft6bpSgQAc9U1exc20UGIBlzGu9+kiCj9Ag==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [win32]
-
   '@napi-rs/canvas-win32-arm64-msvc@1.1.1':
     resolution: {integrity: sha512-wOLX/WRwWr0xGj2hnDf/t3tZfPlzzL9rGPsO1UnYSuNbRzwas/hC8JXnuhaEs8eCw+J+W4zxOJiVF4RxkvcMfw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
-    os: [win32]
-
-  '@napi-rs/canvas-win32-x64-msvc@1.1.0':
-    resolution: {integrity: sha512-08575bFk7iiadxap4h+JxgGut9xDCHAGum6wh0eInN53zEMImkmEHi5MushX2FOmNO7qRNX7BPiDC5ZYBwHeEg==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
     os: [win32]
 
   '@napi-rs/canvas-win32-x64-msvc@1.1.1':
@@ -3902,10 +3896,6 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
-
-  '@napi-rs/canvas@1.1.0':
-    resolution: {integrity: sha512-k+ph/D8H9GS8ZZ48okvHrKeJynkqAA1kMUZRuzRWNlQUDHXngq7oRaWMZBdmSfd9ZhVy9bwNKei/7wMboI/uMg==}
-    engines: {node: '>= 10'}
 
   '@napi-rs/canvas@1.1.1':
     resolution: {integrity: sha512-UyNspnx0rXclATMOBXiWgy1xtWUSUDm4UOO6+YO8xzyVKaZRpvK+SlJSCtRoSI9J/mEqklJiPYtroN1B+hgLXg==}
@@ -4442,15 +4432,15 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@polotno/core@0.22.0':
-    resolution: {integrity: sha512-NmC2wZsFB9jZu38JRzRQcdWhov9eiEMNNkO3HVJMChYFLK8sb7YKypK+m7FBa57co7Iop0RLAEumLPh3X1i2xg==}
+  '@polotno/core@0.23.0':
+    resolution: {integrity: sha512-LVGS139A6XthXN/YQbQvqBsNkOf9iveQRNK9DKa4hu4997O8ID1OS+OgoFg7HniUGit0vRVADAX+sgF113yiuQ==}
 
-  '@polotno/email-export@0.1.0':
-    resolution: {integrity: sha512-FL/Q5k7/sGrsHd+K/3H+k6pDkHeYyG5EiVyJi0bqsPoF4l2LQDGHj6jHRTFs3fi2jJkVexvoGHgA9YL+OSjyQQ==}
+  '@polotno/email-export@0.2.0':
+    resolution: {integrity: sha512-TyE/O8Db2lNR5r2eOP2ITUTdS12NX3qIVMf5XiiEdDud7ezGS/DiZ4o40bw0WdqAJxqK7hofFNIAJ8WrFdiQ3w==}
     engines: {node: '>=22.13.0'}
 
-  '@polotno/html-export@0.12.0':
-    resolution: {integrity: sha512-tHiGRsn7oy0G5rr/3yrnxvpr67LKYqlngoQru3JwYn+OlNvTRGa0+OIIs0AKm/6iiY/jakMJQPZmT279X2ihqg==}
+  '@polotno/html-export@0.13.0':
+    resolution: {integrity: sha512-FagXUvE4bZwDp6l5VC2SmXcNzbkOjNAnDMJNrIsmK566YLQpolSL95Caxwez+mbFSaK69Rm7r/1lFHgj6/ux8Q==}
     peerDependencies:
       '@napi-rs/canvas': ^1.1.0
       linkedom: ^0.18.15
@@ -4460,34 +4450,34 @@ packages:
       linkedom:
         optional: true
 
-  '@polotno/idml-import@0.1.0':
-    resolution: {integrity: sha512-B7scdpuSx2cNAde2S6Mn35IE89Jqgkq54Bvnk6I5NBld/nBW67lFccg+3+QXnU9XoRdptrgHa8tzT3GdvogtuQ==}
+  '@polotno/idml-import@0.2.0':
+    resolution: {integrity: sha512-BfhxaIQ/Enaz4//TqHxmnArwe6EqJV6YwO9d0b87defqSsErQuHe7eLpgGmxNG3WLzM8qtikT/VNNqrfNxxnig==}
     engines: {node: '>=22.13.0'}
 
-  '@polotno/image-export@0.2.0':
-    resolution: {integrity: sha512-DtKCbrqmIP/jj4DvULq/TvHGv/Y3KgD/WDCdGX9G15cLr8tCaU2XIOXBokAkHdlVLHP2HoMvl6WxRe7Jil1dKQ==}
+  '@polotno/image-export@0.3.0':
+    resolution: {integrity: sha512-+zUWyVydumYiIpJ1D51iUnlFqxhRACq0DDs0q1YYd63g8jJ699aXt1virlotK++WXwyitnuYjnqIPuXxR4qmiA==}
     engines: {node: '>=22.13.0'}
 
-  '@polotno/pdf-export@0.17.1':
-    resolution: {integrity: sha512-LzhQy9kZ+ojKLmlNtAlxz0DEIbj7v7xBzGPNqcWmrZ/NZuB6J+a/U0n1lf/icB4hm75uW9tC5LiHr+tGDmm6ww==}
+  '@polotno/pdf-export@0.18.0':
+    resolution: {integrity: sha512-fPDWJ+gMV3G/BzaSa567nqY1ngfyw4xA9j4EecIqW5Ij5Ee06Cx2Se0QzG5hopua8IKfDLtYgkyRyEVLxmUEMA==}
     engines: {node: '>=22.13.0'}
 
-  '@polotno/pdf-import@0.13.1':
-    resolution: {integrity: sha512-bcKp4kMfLvT69YCWhdGPZhsp0jh9pQeQTgzpsrRgnetRHuCAd019n151z/tzn3rvn3wT9L+EryPCuk+6KQ4KlA==}
+  '@polotno/pdf-import@0.14.0':
+    resolution: {integrity: sha512-6T+eaXSBw1CBfW0Q+92K8BMxNI+S4mJOdelKJSDbmuEUuwAUTZl60dwl64rAUV5AVfVNXaHtkBD7IPB5ISnS4Q==}
     engines: {node: '>=22.13.0'}
 
-  '@polotno/pptx-export@0.13.0':
-    resolution: {integrity: sha512-rDgZozbJBgyh2JI1ImjlkQMwNE5pYt/zsugaFdFpLW0ghqhv6OrUsZy2Bdcam9lu84AP/vX6mmSe+aIyRxq5xg==}
+  '@polotno/pptx-export@0.14.0':
+    resolution: {integrity: sha512-pPfPv94D8TQbWZCrowBaNUYYx+/wYaFDiW9H/qMcGERg+oUaXoV9MFEuhkpr8mMd63SFyhBjaKBgvB101z2PJg==}
     engines: {node: '>=22.13.0'}
 
-  '@polotno/psd-import@0.3.4':
-    resolution: {integrity: sha512-i509xIak4dZg/UJz9rflXgRBM6ooCOD7THBbFlBFdqi+bEfTaUcFvNe+vBw6USe895SArJlskWa7hAxwQBeXkQ==}
+  '@polotno/psd-import@0.4.0':
+    resolution: {integrity: sha512-u6vkLMY8pu9IR4dT89XfCzUUUn9zG8+STfSPGm53WbJPpKn7PtpSfWWAuFevFB2UPI1Br4z+D2EgmFnMRIfJeg==}
 
-  '@polotno/schema@0.13.0':
-    resolution: {integrity: sha512-1vafR/OaF0/hWE1qAtL7Qi+dqU7+7FRsW1NhOnD4yolTTa9cebqYlSrgLRv5SO0mV2DW0DImUf7xG/jKr+qdog==}
+  '@polotno/schema@0.14.0':
+    resolution: {integrity: sha512-UB5Nfof3gJAxMTGa2LibvNa4VYgr0T8Ck9aM1Xr7jT1UccJGl63Q1SeF/9YXfIBfdXND4Z0GGrN4L+GEGvnAbQ==}
 
-  '@polotno/svg-export@0.13.0':
-    resolution: {integrity: sha512-OgiNlb12DzR36dihxw9NDiddYLI4+kM3wMCJiZhCFK+NJgy+CsjsW2rcpN7IHPp8VtDHKMwxyeGQgEfubdszug==}
+  '@polotno/svg-export@0.14.0':
+    resolution: {integrity: sha512-oDP78CIez84WUdNbqBFNr3x16ikY6Z7F8GtGOB9+fnLaKO+udEsoGw0162FeQg3Kq7tV2QGn8woYL1zKMcswhA==}
     peerDependencies:
       '@napi-rs/canvas': ^1.1.0
       linkedom: ^0.18.15
@@ -4497,11 +4487,11 @@ packages:
       linkedom:
         optional: true
 
-  '@polotno/svg-import@0.2.5':
-    resolution: {integrity: sha512-Z+zpAKKQBQmQiPZ/GGDkc3jh6JKrNElTlkU3nc4sZyspYVpm59Dr3uixrsyllFESPTVpJaOrRGHFRcsmnUChKA==}
+  '@polotno/svg-import@0.3.0':
+    resolution: {integrity: sha512-+TeiIV+mIdh8Ff8aGc3LeH0DaqAEL7qKOPEV4Pk06XAjw2cFYC4I0OTLIzLnCIxy0zg1kzyQHaDFQkFPsOmKTQ==}
 
-  '@polotno/video-export@0.6.0':
-    resolution: {integrity: sha512-Zd7KnlhsSfdRIiC2TrMfww8TnvWerdcbW3SQrbdzNx/a4t1WqephQ+/DmqcuP2xgGuFPBz+EBURh/EBOdHl8Ag==}
+  '@polotno/video-export@0.7.0':
+    resolution: {integrity: sha512-jB3bxw5CndTYRmei9sTtBezno5A+qynFWWUR2ggS5qw6pKXPJp0Mn2tswuKLjN4ajASFyqumWiwB/xwVL8W41g==}
     peerDependencies:
       polotno: ^4.21.0
 
@@ -4821,9 +4811,6 @@ packages:
 
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
-
-  '@swc/helpers@0.5.20':
-    resolution: {integrity: sha512-2egEBHUMasdypIzrprsu8g+OEVd7Vp2MM3a2eVlM/cyFYto0nGz5BX5BTgh/ShZZI9ed+ozEq+Ngt+rgmUs8tw==}
 
   '@swc/helpers@0.5.23':
     resolution: {integrity: sha512-5lSsMOTXURePglDfvuAQUqkGek9Hg2kksOYay2m0+XR++b2NWYL/4sWyuvVBIs8oKnJaxkdi9whaL/sqN13afw==}
@@ -8202,15 +8189,6 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-react@1.72.0:
-    resolution: {integrity: sha512-fbF5i1GU8GODETa3Q7rXqrJrcx3iPYrQtxthom103zGx+Z0BGwKYAW9s+9435ohYJ7hQm0av0PoZcqI1CRwNrg==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-
   lucide-react@1.75.0:
     resolution: {integrity: sha512-piesXAZIXru9d5lHBoM6cPHOBs5+QkMx+3EXwG3xWJ7qdViuz92JtYN0u9jMB6jt+2WbQrwhvJGdMwGnL3EOfA==}
     peerDependencies:
@@ -8451,8 +8429,8 @@ packages:
       mobx: ^7.0.0
       react: ^18 || ^19
 
-  mobx-state-tree@9.0.1:
-    resolution: {integrity: sha512-G26I7QEertNy0z6js0EJW5BHqVmfmk9U+6J5ainsDA5/J57MyoRWTUJC7Dr4eOO3/66emqc75ZOfdul5pmEbSw==}
+  mobx-state-tree@9.0.2:
+    resolution: {integrity: sha512-eACkW0yasTrnjuOSOUQGURJEn8u6uDvb33DJlhXxIV4NHSX/CdpE8Yfrb6SWKpyhH296tskbsg3d/ecc6pka5A==}
     peerDependencies:
       mobx: ^7.0.0
 
@@ -9075,8 +9053,8 @@ packages:
     resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==}
     engines: {node: '>=10.13.0'}
 
-  polotno@4.21.0:
-    resolution: {integrity: sha512-rlZ0fUSJj0QmJApKJZ1crAbz/PAItL7+HYgKSP1S6Sdb5GPhdkKKz2ybD/ce1AxJuJYkQwawMM0hBe/o0genkw==}
+  polotno@4.22.1:
+    resolution: {integrity: sha512-Ue5I2Lfh99h0abseFt4bQe8T7GU3tbzx+LYTXE/jWyUcV7HGoRyqc6IuwNlpd9b2zYyuPn589LKjG9Kjr/vK1Q==}
     peerDependencies:
       '@blueprintjs/core': ^6.x
       '@blueprintjs/icons': ^6.x
@@ -9286,10 +9264,6 @@ packages:
     resolution: {integrity: sha512-LJlKCCAUFKOuZxipUdYw1NzIITEsPcgyOG9LkvRJvuKj/bRzbuRY0ARXvL0pWGpsZvn8jku+LMep2eU0seHp8g==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.8:
-    resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
-    engines: {node: ^10 || ^12 || >=14}
-
   posthtml-parser@0.4.2:
     resolution: {integrity: sha512-BUIorsYJTvS9UhXxPTzupIztOMVNPa/HtAm9KHni9z6qEfiJ1bpOBL5DfUOL9XAc3XkLIEzBzpph+Zbm4AdRAg==}
 
@@ -9481,8 +9455,8 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  react-konva-utils@2.1.0:
-    resolution: {integrity: sha512-ecCE3U4T0FaDoiHBpKGffAcyOjEPJtVrinFAf9qWG1SQsbQ28qVEVss42WV4uft5oUKrpRou6yVR9uVMRYfUiA==}
+  react-konva-utils@2.1.1:
+    resolution: {integrity: sha512-MrwEpIiXtZzGXjfTCMv2muKq1Pdb0DugYgneJFvWEK9J/IX7YSGQJ1k26PYJghdp7Vx01LywGeYOpPj29c79/Q==}
     peerDependencies:
       konva: ^8.3.5 || ^9.0.0 || ^10.0.0
       react: ^18.2.0 || ^19.0.0
@@ -9611,8 +9585,8 @@ packages:
   remove-trailing-separator@1.1.0:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==}
 
-  render-tag@0.4.5:
-    resolution: {integrity: sha512-KvmwXnTnXlQqK7BQnyQomI8ZWAntjaq5+VyC7BUT7nTD16sJbCH9w3arsEQ5iPsy43tTHZZOVGy1sc3X7Q7o3g==}
+  render-tag@0.4.6:
+    resolution: {integrity: sha512-wDSv24HAoAtg/XGWQ7GGJ7ex2BC9D+GcfJU9MiDUnTdQwy5Ee+qE11oRnhjeFp4lt3A3c/nM9D3M6eh/MBINKQ==}
 
   renderkid@2.0.7:
     resolution: {integrity: sha512-oCcFyxaMrKsKcTY59qnCAtmDVSLfPbrv6A3tVbPdFMMrv5jaK10V6m40cKsoPNhAqN6rmHW9sswW4o3ruSrwUQ==}
@@ -11133,7 +11107,7 @@ snapshots:
       '@angular/core': 18.2.14(rxjs@7.8.1)(zone.js@0.14.10)
       tslib: 2.8.1
 
-  '@angular/build@18.2.21(@angular/compiler-cli@18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(supports-color@7.2.0)(typescript@5.5.4))(@types/node@25.5.0)(chokidar@3.6.0)(postcss@8.5.8)(supports-color@7.2.0)(terser@5.46.1)(typescript@5.5.4)':
+  '@angular/build@18.2.21(@angular/compiler-cli@18.2.14(@angular/compiler@18.2.14(@angular/core@18.2.14(rxjs@7.8.1)(zone.js@0.14.10)))(supports-color@7.2.0)(typescript@5.5.4))(@types/node@25.5.0)(chokidar@3.6.0)(postcss@8.5.32)(supports-color@7.2.0)(terser@5.46.1)(typescript@5.5.4)':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular-devkit/architect': 0.1802.21(chokidar@3.6.0)
@@ -11164,7 +11138,7 @@ snapshots:
       vite: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
       watchpack: 2.4.1
     optionalDependencies:
-      postcss: 8.5.8
+      postcss: 8.5.32
     transitivePeerDependencies:
       - '@types/node'
       - '@vitejs/devtools'
@@ -13158,85 +13132,37 @@ snapshots:
   '@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3':
     optional: true
 
-  '@napi-rs/canvas-android-arm64@1.1.0':
-    optional: true
-
   '@napi-rs/canvas-android-arm64@1.1.1':
-    optional: true
-
-  '@napi-rs/canvas-darwin-arm64@1.1.0':
     optional: true
 
   '@napi-rs/canvas-darwin-arm64@1.1.1':
     optional: true
 
-  '@napi-rs/canvas-darwin-x64@1.1.0':
-    optional: true
-
   '@napi-rs/canvas-darwin-x64@1.1.1':
-    optional: true
-
-  '@napi-rs/canvas-linux-arm-gnueabihf@1.1.0':
     optional: true
 
   '@napi-rs/canvas-linux-arm-gnueabihf@1.1.1':
     optional: true
 
-  '@napi-rs/canvas-linux-arm64-gnu@1.1.0':
-    optional: true
-
   '@napi-rs/canvas-linux-arm64-gnu@1.1.1':
-    optional: true
-
-  '@napi-rs/canvas-linux-arm64-musl@1.1.0':
     optional: true
 
   '@napi-rs/canvas-linux-arm64-musl@1.1.1':
     optional: true
 
-  '@napi-rs/canvas-linux-riscv64-gnu@1.1.0':
-    optional: true
-
   '@napi-rs/canvas-linux-riscv64-gnu@1.1.1':
-    optional: true
-
-  '@napi-rs/canvas-linux-x64-gnu@1.1.0':
     optional: true
 
   '@napi-rs/canvas-linux-x64-gnu@1.1.1':
     optional: true
 
-  '@napi-rs/canvas-linux-x64-musl@1.1.0':
-    optional: true
-
   '@napi-rs/canvas-linux-x64-musl@1.1.1':
-    optional: true
-
-  '@napi-rs/canvas-win32-arm64-msvc@1.1.0':
     optional: true
 
   '@napi-rs/canvas-win32-arm64-msvc@1.1.1':
     optional: true
 
-  '@napi-rs/canvas-win32-x64-msvc@1.1.0':
-    optional: true
-
   '@napi-rs/canvas-win32-x64-msvc@1.1.1':
-    optional: true
-
-  '@napi-rs/canvas@1.1.0':
-    optionalDependencies:
-      '@napi-rs/canvas-android-arm64': 1.1.0
-      '@napi-rs/canvas-darwin-arm64': 1.1.0
-      '@napi-rs/canvas-darwin-x64': 1.1.0
-      '@napi-rs/canvas-linux-arm-gnueabihf': 1.1.0
-      '@napi-rs/canvas-linux-arm64-gnu': 1.1.0
-      '@napi-rs/canvas-linux-arm64-musl': 1.1.0
-      '@napi-rs/canvas-linux-riscv64-gnu': 1.1.0
-      '@napi-rs/canvas-linux-x64-gnu': 1.1.0
-      '@napi-rs/canvas-linux-x64-musl': 1.1.0
-      '@napi-rs/canvas-win32-arm64-msvc': 1.1.0
-      '@napi-rs/canvas-win32-x64-msvc': 1.1.0
     optional: true
 
   '@napi-rs/canvas@1.1.1':
@@ -13371,11 +13297,11 @@ snapshots:
 
   '@oxc-project/types@0.156.0': {}
 
-  '@parcel/bundler-default@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/bundler-default@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/diagnostic': 2.16.4
       '@parcel/graph': 3.6.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
       '@parcel/utils': 2.16.4
       nullthrows: 1.1.1
@@ -13383,10 +13309,10 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/cache@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/cache@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.16.4(@swc/helpers@0.5.20)
-      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/logger': 2.16.4
       '@parcel/utils': 2.16.4
       lmdb: 2.8.5
@@ -13397,70 +13323,70 @@ snapshots:
     dependencies:
       chalk: 4.1.2
 
-  '@parcel/compressor-raw@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/compressor-raw@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/config-default@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))(@swc/helpers@0.5.20)':
+  '@parcel/config-default@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)':
     dependencies:
-      '@parcel/bundler-default': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/compressor-raw': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/core': 2.16.4(@swc/helpers@0.5.20)
-      '@parcel/namer-default': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/optimizer-css': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/optimizer-html': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/optimizer-image': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/optimizer-svg': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/optimizer-swc': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))(@swc/helpers@0.5.20)
-      '@parcel/packager-css': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/packager-html': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/packager-js': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/packager-raw': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/packager-svg': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/packager-wasm': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/reporter-dev-server': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/resolver-default': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/runtime-browser-hmr': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/runtime-js': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/runtime-rsc': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/runtime-service-worker': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/transformer-babel': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/transformer-css': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/transformer-html': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/transformer-image': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/transformer-js': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/transformer-json': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/transformer-node': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/transformer-postcss': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/transformer-posthtml': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/transformer-raw': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/transformer-react-refresh-wrap': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/transformer-svg': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/bundler-default': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/compressor-raw': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/namer-default': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/optimizer-css': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/optimizer-html': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/optimizer-image': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/optimizer-svg': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/optimizer-swc': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)
+      '@parcel/packager-css': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/packager-html': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/packager-js': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/packager-raw': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/packager-svg': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/packager-wasm': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/reporter-dev-server': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/resolver-default': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/runtime-browser-hmr': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/runtime-js': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/runtime-rsc': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/runtime-service-worker': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-babel': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-css': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-html': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-image': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-js': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-json': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-node': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-postcss': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-posthtml': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-raw': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-react-refresh-wrap': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/transformer-svg': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - '@swc/helpers'
       - napi-wasm
 
-  '@parcel/core@2.16.4(@swc/helpers@0.5.20)':
+  '@parcel/core@2.16.4(@swc/helpers@0.5.23)':
     dependencies:
       '@mischnic/json-sourcemap': 0.1.1
-      '@parcel/cache': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/cache': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/diagnostic': 2.16.4
       '@parcel/events': 2.16.4
       '@parcel/feature-flags': 2.16.4
-      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/graph': 3.6.4
       '@parcel/logger': 2.16.4
-      '@parcel/package-manager': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))(@swc/helpers@0.5.20)
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/package-manager': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/profiler': 2.16.4
       '@parcel/rust': 2.16.4
       '@parcel/source-map': 2.1.1
-      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
-      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       base-x: 3.0.11
       browserslist: 4.28.2
       clone: 2.1.2
@@ -13491,15 +13417,15 @@ snapshots:
       mkdirp: 0.5.6
       rimraf: 2.7.1
 
-  '@parcel/fs@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/fs@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.16.4(@swc/helpers@0.5.20)
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
       '@parcel/feature-flags': 2.16.4
       '@parcel/rust': 2.16.4
       '@parcel/types-internal': 2.16.4
       '@parcel/utils': 2.16.4
       '@parcel/watcher': 2.5.6
-      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - napi-wasm
 
@@ -13525,21 +13451,21 @@ snapshots:
     dependencies:
       chalk: 4.1.2
 
-  '@parcel/namer-default@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/namer-default@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/node-resolver-core@3.7.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/node-resolver-core@3.7.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@mischnic/json-sourcemap': 0.1.1
-      '@parcel/core': 2.16.4(@swc/helpers@0.5.20)
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
       '@parcel/diagnostic': 2.16.4
-      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
       '@parcel/utils': 2.16.4
       nullthrows: 1.1.1
@@ -13547,10 +13473,10 @@ snapshots:
     transitivePeerDependencies:
       - napi-wasm
 
-  '@parcel/optimizer-css@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/optimizer-css@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/source-map': 2.1.1
       '@parcel/utils': 2.16.4
       browserslist: 4.28.2
@@ -13560,68 +13486,68 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/optimizer-html@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/optimizer-html@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
       '@parcel/utils': 2.16.4
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/optimizer-image@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/optimizer-image@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.16.4(@swc/helpers@0.5.20)
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
       '@parcel/utils': 2.16.4
-      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - napi-wasm
 
-  '@parcel/optimizer-svg@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/optimizer-svg@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
       '@parcel/utils': 2.16.4
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/optimizer-swc@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))(@swc/helpers@0.5.20)':
+  '@parcel/optimizer-swc@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)':
     dependencies:
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/source-map': 2.1.1
       '@parcel/utils': 2.16.4
-      '@swc/core': 1.15.21(@swc/helpers@0.5.20)
+      '@swc/core': 1.15.21(@swc/helpers@0.5.23)
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - '@parcel/core'
       - '@swc/helpers'
       - napi-wasm
 
-  '@parcel/package-manager@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))(@swc/helpers@0.5.20)':
+  '@parcel/package-manager@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)':
     dependencies:
-      '@parcel/core': 2.16.4(@swc/helpers@0.5.20)
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
       '@parcel/diagnostic': 2.16.4
-      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/logger': 2.16.4
-      '@parcel/node-resolver-core': 3.7.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/node-resolver-core': 3.7.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
-      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@swc/core': 1.15.21(@swc/helpers@0.5.20)
+      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@swc/core': 1.15.21(@swc/helpers@0.5.23)
       semver: 7.8.5
     transitivePeerDependencies:
       - '@swc/helpers'
       - napi-wasm
 
-  '@parcel/packager-css@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/packager-css@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/source-map': 2.1.1
       '@parcel/utils': 2.16.4
       lightningcss: 1.33.0
@@ -13630,23 +13556,23 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/packager-html@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/packager-html@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
-      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/packager-js@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/packager-js@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
       '@parcel/source-map': 2.1.1
-      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
       globals: 13.24.0
       nullthrows: 1.1.1
@@ -13654,33 +13580,33 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/packager-raw@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/packager-raw@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/packager-svg@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/packager-svg@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
-      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/packager-wasm@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/packager-wasm@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/plugin@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/plugin@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
@@ -13692,10 +13618,10 @@ snapshots:
       '@parcel/types-internal': 2.16.4
       chrome-trace-event: 1.0.4
 
-  '@parcel/reporter-cli@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/reporter-cli@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/types': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
       chalk: 4.1.2
       term-size: 2.2.1
@@ -13703,19 +13629,19 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/reporter-dev-server@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/reporter-dev-server@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/codeframe': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/source-map': 2.1.1
       '@parcel/utils': 2.16.4
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/reporter-tracer@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/reporter-tracer@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
       chrome-trace-event: 1.0.4
       nullthrows: 1.1.1
@@ -13723,35 +13649,35 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/resolver-default@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/resolver-default@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.16.4(@swc/helpers@0.5.20)
-      '@parcel/node-resolver-core': 3.7.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/node-resolver-core': 3.7.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - napi-wasm
 
-  '@parcel/runtime-browser-hmr@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/runtime-browser-hmr@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/runtime-js@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/runtime-js@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/runtime-rsc@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/runtime-rsc@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
       '@parcel/utils': 2.16.4
       nullthrows: 1.1.1
@@ -13759,9 +13685,9 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/runtime-service-worker@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/runtime-service-worker@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
       nullthrows: 1.1.1
     transitivePeerDependencies:
@@ -13807,10 +13733,10 @@ snapshots:
     dependencies:
       detect-libc: 1.0.3
 
-  '@parcel/transformer-babel@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/transformer-babel@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/source-map': 2.1.1
       '@parcel/utils': 2.16.4
       browserslist: 4.28.2
@@ -13821,10 +13747,10 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/transformer-css@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/transformer-css@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/source-map': 2.1.1
       '@parcel/utils': 2.16.4
       browserslist: 4.28.2
@@ -13834,35 +13760,35 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/transformer-html@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/transformer-html@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/transformer-image@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/transformer-image@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.16.4(@swc/helpers@0.5.20)
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
-      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       nullthrows: 1.1.1
     transitivePeerDependencies:
       - napi-wasm
 
-  '@parcel/transformer-js@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/transformer-js@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.16.4(@swc/helpers@0.5.20)
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
       '@parcel/source-map': 2.1.1
       '@parcel/utils': 2.16.4
-      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@swc/helpers': 0.5.20
+      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@swc/helpers': 0.5.23
       browserslist: 4.28.2
       nullthrows: 1.1.1
       regenerator-runtime: 0.14.1
@@ -13870,25 +13796,25 @@ snapshots:
     transitivePeerDependencies:
       - napi-wasm
 
-  '@parcel/transformer-json@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/transformer-json@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       json5: 2.2.3
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/transformer-node@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/transformer-node@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/transformer-postcss@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/transformer-postcss@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
       '@parcel/utils': 2.16.4
       clone: 2.1.2
@@ -13899,35 +13825,35 @@ snapshots:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/transformer-posthtml@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/transformer-posthtml@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/transformer-raw@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/transformer-raw@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/transformer-react-refresh-wrap@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/transformer-react-refresh-wrap@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/error-overlay': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
       react-refresh: 0.16.0
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
 
-  '@parcel/transformer-svg@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/transformer-svg@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/diagnostic': 2.16.4
-      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/plugin': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/rust': 2.16.4
     transitivePeerDependencies:
       - '@parcel/core'
@@ -13940,10 +13866,10 @@ snapshots:
       '@parcel/source-map': 2.1.1
       utility-types: 3.11.0
 
-  '@parcel/types@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/types@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
       '@parcel/types-internal': 2.16.4
-      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/workers': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
     transitivePeerDependencies:
       - '@parcel/core'
       - napi-wasm
@@ -14035,9 +13961,9 @@ snapshots:
       '@parcel/utils': 1.11.0
       physical-cpu-count: 2.0.0
 
-  '@parcel/workers@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))':
+  '@parcel/workers@2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))':
     dependencies:
-      '@parcel/core': 2.16.4(@swc/helpers@0.5.20)
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
       '@parcel/diagnostic': 2.16.4
       '@parcel/logger': 2.16.4
       '@parcel/profiler': 2.16.4
@@ -14050,68 +13976,68 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@polotno/core@0.22.0(canvas@3.2.3)':
+  '@polotno/core@0.23.0(canvas@3.2.3)':
     dependencies:
-      '@polotno/schema': 0.13.0
+      '@polotno/schema': 0.14.0
       fflate: 0.8.3
       gradient-parser: 1.2.0
       konva: 10.9.1(canvas@3.2.3)
       mensch: 0.3.4
-      render-tag: 0.4.5
+      render-tag: 0.4.6
       tinycolor2: 1.6.0
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/email-export@0.1.0(canvas@3.2.3)':
+  '@polotno/email-export@0.2.0(canvas@3.2.3)':
     dependencies:
       '@napi-rs/canvas': 1.1.1
-      '@polotno/core': 0.22.0(canvas@3.2.3)
-      '@polotno/image-export': 0.2.0(canvas@3.2.3)
-      '@polotno/schema': 0.13.0
+      '@polotno/core': 0.23.0(canvas@3.2.3)
+      '@polotno/image-export': 0.3.0(canvas@3.2.3)
+      '@polotno/schema': 0.14.0
       linkedom: 0.18.15(canvas@3.2.3)
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/html-export@0.12.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))':
+  '@polotno/html-export@0.13.0(@napi-rs/canvas@1.1.1)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))':
     dependencies:
-      '@polotno/core': 0.22.0(canvas@3.2.3)
-      '@polotno/schema': 0.13.0
+      '@polotno/core': 0.23.0(canvas@3.2.3)
+      '@polotno/schema': 0.14.0
     optionalDependencies:
-      '@napi-rs/canvas': 1.1.0
+      '@napi-rs/canvas': 1.1.1
       linkedom: 0.18.15(canvas@3.2.3)
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/idml-import@0.1.0(canvas@3.2.3)':
+  '@polotno/idml-import@0.2.0(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.22.0(canvas@3.2.3)
-      '@polotno/schema': 0.13.0
+      '@polotno/core': 0.23.0(canvas@3.2.3)
+      '@polotno/schema': 0.14.0
       fflate: 0.8.3
       linkedom: 0.18.15(canvas@3.2.3)
-      render-tag: 0.4.5
+      render-tag: 0.4.6
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/image-export@0.2.0(canvas@3.2.3)':
+  '@polotno/image-export@0.3.0(canvas@3.2.3)':
     dependencies:
       '@napi-rs/canvas': 1.1.1
-      '@polotno/core': 0.22.0(canvas@3.2.3)
-      '@polotno/schema': 0.13.0
+      '@polotno/core': 0.23.0(canvas@3.2.3)
+      '@polotno/schema': 0.14.0
       linkedom: 0.18.15(canvas@3.2.3)
-      render-tag: 0.4.5
+      render-tag: 0.4.6
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/pdf-export@0.17.1(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)':
+  '@polotno/pdf-export@0.18.0(@types/node@25.5.0)(canvas@3.2.3)(supports-color@7.2.0)':
     dependencies:
       '@napi-rs/canvas': 1.1.1
-      '@polotno/core': 0.22.0(canvas@3.2.3)
-      '@polotno/schema': 0.13.0
+      '@polotno/core': 0.23.0(canvas@3.2.3)
+      '@polotno/schema': 0.14.0
       file-type: 22.3.0(supports-color@7.2.0)
       linkedom: 0.18.15(canvas@3.2.3)
       sharp: 0.35.5(@types/node@25.5.0)
@@ -14121,20 +14047,20 @@ snapshots:
       - skia-canvas
       - supports-color
 
-  '@polotno/pdf-import@0.13.1(canvas@3.2.3)':
+  '@polotno/pdf-import@0.14.0(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.22.0(canvas@3.2.3)
-      '@polotno/schema': 0.13.0
-      render-tag: 0.4.5
+      '@polotno/core': 0.23.0(canvas@3.2.3)
+      '@polotno/schema': 0.14.0
+      render-tag: 0.4.6
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/pptx-export@0.13.0(@types/node@25.5.0)(canvas@3.2.3)':
+  '@polotno/pptx-export@0.14.0(@types/node@25.5.0)(canvas@3.2.3)':
     dependencies:
       '@napi-rs/canvas': 1.1.1
-      '@polotno/core': 0.22.0(canvas@3.2.3)
-      '@polotno/schema': 0.13.0
+      '@polotno/core': 0.23.0(canvas@3.2.3)
+      '@polotno/schema': 0.14.0
       jszip: 3.10.2
       konva: 10.9.1(canvas@3.2.3)
       linkedom: 0.18.15(canvas@3.2.3)
@@ -14144,45 +14070,46 @@ snapshots:
       - canvas
       - skia-canvas
 
-  '@polotno/psd-import@0.3.4(canvas@3.2.3)':
+  '@polotno/psd-import@0.4.0(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.22.0(canvas@3.2.3)
-      '@polotno/schema': 0.13.0
+      '@polotno/core': 0.23.0(canvas@3.2.3)
+      '@polotno/schema': 0.14.0
       fontkit: 3.0.0
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/schema@0.13.0':
+  '@polotno/schema@0.14.0':
     dependencies:
       zod: 4.6.7
 
-  '@polotno/svg-export@0.13.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))':
+  '@polotno/svg-export@0.14.0(@napi-rs/canvas@1.1.1)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))':
     dependencies:
-      '@polotno/core': 0.22.0(canvas@3.2.3)
-      '@polotno/schema': 0.13.0
+      '@polotno/core': 0.23.0(canvas@3.2.3)
+      '@polotno/schema': 0.14.0
     optionalDependencies:
-      '@napi-rs/canvas': 1.1.0
+      '@napi-rs/canvas': 1.1.1
       linkedom: 0.18.15(canvas@3.2.3)
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/svg-import@0.2.5(canvas@3.2.3)':
+  '@polotno/svg-import@0.3.0(canvas@3.2.3)':
     dependencies:
-      '@polotno/core': 0.22.0(canvas@3.2.3)
-      '@polotno/schema': 0.13.0
+      '@polotno/core': 0.23.0(canvas@3.2.3)
+      '@polotno/schema': 0.14.0
       konva: 10.9.1(canvas@3.2.3)
-      render-tag: 0.4.5
+      render-tag: 0.4.6
     transitivePeerDependencies:
       - canvas
       - skia-canvas
 
-  '@polotno/video-export@0.6.0(canvas@3.2.3)(polotno@4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))':
+  '@polotno/video-export@0.7.0(canvas@3.2.3)(polotno@4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4))':
     dependencies:
-      '@polotno/core': 0.22.0(canvas@3.2.3)
+      '@polotno/core': 0.23.0(canvas@3.2.3)
+      '@polotno/schema': 0.14.0
       mediabunny: 1.66.0
-      polotno: 4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
+      polotno: 4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4)
     transitivePeerDependencies:
       - canvas
       - skia-canvas
@@ -14373,7 +14300,7 @@ snapshots:
   '@swc/core-win32-x64-msvc@1.15.21':
     optional: true
 
-  '@swc/core@1.15.21(@swc/helpers@0.5.20)':
+  '@swc/core@1.15.21(@swc/helpers@0.5.23)':
     dependencies:
       '@swc/counter': 0.1.3
       '@swc/types': 0.1.26
@@ -14390,13 +14317,9 @@ snapshots:
       '@swc/core-win32-arm64-msvc': 1.15.21
       '@swc/core-win32-ia32-msvc': 1.15.21
       '@swc/core-win32-x64-msvc': 1.15.21
-      '@swc/helpers': 0.5.20
+      '@swc/helpers': 0.5.23
 
   '@swc/counter@0.1.3': {}
-
-  '@swc/helpers@0.5.20':
-    dependencies:
-      tslib: 2.8.1
 
   '@swc/helpers@0.5.23':
     dependencies:
@@ -14492,17 +14415,22 @@ snapshots:
     dependencies:
       vite: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
 
+  '@vitejs/plugin-react@6.3.0(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))':
+    dependencies:
+      '@rolldown/pluginutils': 1.1.0
+      vite: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
+
   '@vitejs/plugin-react@6.3.0(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))':
     dependencies:
       '@rolldown/pluginutils': 1.1.0
       vite: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
 
-  '@vitejs/plugin-vue@4.6.2(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))(vue@3.5.31(typescript@5.5.4))':
+  '@vitejs/plugin-vue@4.6.2(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))(vue@3.5.31(typescript@5.5.4))':
     dependencies:
       vite: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
       vue: 3.5.31(typescript@5.5.4)
 
-  '@vitejs/plugin-vue@5.2.4(vite@8.3.8(@types/node@25.5.0)(sass@1.77.6)(terser@5.46.1))(vue@3.5.31(typescript@5.5.4))':
+  '@vitejs/plugin-vue@5.2.4(vite@8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1))(vue@3.5.31(typescript@5.5.4))':
     dependencies:
       vite: 8.3.8(@types/node@25.5.0)(esbuild@0.23.0)(sass@1.77.6)(terser@5.46.1)
       vue: 3.5.31(typescript@5.5.4)
@@ -14550,7 +14478,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vue/babel-preset-app@4.5.19(@babel/core@7.29.0(supports-color@6.1.0))(core-js@3.49.0)(supports-color@6.1.0)(vue@2.7.16)':
+  '@vue/babel-preset-app@4.5.19(@babel/core@7.29.0(supports-color@6.1.0))(supports-color@6.1.0)(vue@2.7.16)':
     dependencies:
       '@babel/core': 7.29.0(supports-color@6.1.0)
       '@babel/helper-compilation-targets': 7.28.6
@@ -14565,10 +14493,10 @@ snapshots:
       '@vue/babel-plugin-jsx': 1.5.0(@babel/core@7.29.0(supports-color@6.1.0))(supports-color@6.1.0)
       '@vue/babel-preset-jsx': 1.4.0(@babel/core@7.29.0(supports-color@6.1.0))(supports-color@6.1.0)(vue@2.7.16)
       babel-plugin-dynamic-import-node: 2.3.3
+      core-js: 3.49.0
       core-js-compat: 3.49.0
       semver: 6.3.1
     optionalDependencies:
-      core-js: 3.49.0
       vue: 2.7.16
     transitivePeerDependencies:
       - supports-color
@@ -14632,10 +14560,10 @@ snapshots:
 
   '@vue/cli-overlay@4.5.19': {}
 
-  '@vue/cli-plugin-babel@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(core-js@3.49.0)(supports-color@6.1.0)(vue@2.7.16)':
+  '@vue/cli-plugin-babel@4.1.1(@vue/cli-service@4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(supports-color@6.1.0)(vue-template-compiler@2.7.16))(supports-color@6.1.0)(vue@2.7.16)':
     dependencies:
       '@babel/core': 7.29.0(supports-color@6.1.0)
-      '@vue/babel-preset-app': 4.5.19(@babel/core@7.29.0(supports-color@6.1.0))(core-js@3.49.0)(supports-color@6.1.0)(vue@2.7.16)
+      '@vue/babel-preset-app': 4.5.19(@babel/core@7.29.0(supports-color@6.1.0))(supports-color@6.1.0)(vue@2.7.16)
       '@vue/cli-service': 4.1.1(@vue/compiler-sfc@3.5.31)(bluebird@3.7.2)(lodash@4.17.21)(prettier@2.8.8)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(supports-color@6.1.0)(vue-template-compiler@2.7.16)
       '@vue/cli-shared-utils': 4.5.19
       babel-loader: 8.4.1(@babel/core@7.29.0(supports-color@6.1.0))(webpack@4.47.0(supports-color@6.1.0))
@@ -14643,7 +14571,6 @@ snapshots:
       thread-loader: 2.1.3(webpack@4.47.0(supports-color@6.1.0))
       webpack: 4.47.0(supports-color@6.1.0)
     transitivePeerDependencies:
-      - core-js
       - supports-color
       - vue
       - webpack-cli
@@ -18504,12 +18431,6 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-react@1.72.0(@types/react@19.2.17)(react@19.3.1):
-    dependencies:
-      react: 19.3.1
-    optionalDependencies:
-      '@types/react': 19.2.17
-
   lucide-react@1.75.0(@types/react@19.2.17)(react@19.3.1):
     dependencies:
       react: 19.3.1
@@ -18782,7 +18703,7 @@ snapshots:
       mobx: 7.1.7
       react: 19.3.1
 
-  mobx-state-tree@9.0.1(mobx@7.1.7)(typescript@5.5.4):
+  mobx-state-tree@9.0.2(mobx@7.1.7)(typescript@5.5.4):
     dependencies:
       mobx: 7.1.7
       ts-essentials: 9.4.2(typescript@5.5.4)
@@ -18909,7 +18830,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@16.4.6(@babel/core@7.29.0(supports-color@7.2.0))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sass@1.77.6):
+  next@16.4.6(@babel/core@7.29.0(supports-color@7.2.0))(@types/node@25.5.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sass@1.77.6):
     dependencies:
       '@next/env': 16.4.6
       '@swc/helpers': 0.5.23
@@ -19403,19 +19324,19 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  parcel@2.16.4(@swc/helpers@0.5.20):
+  parcel@2.16.4(@swc/helpers@0.5.23):
     dependencies:
-      '@parcel/config-default': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))(@swc/helpers@0.5.20)
-      '@parcel/core': 2.16.4(@swc/helpers@0.5.20)
+      '@parcel/config-default': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)
+      '@parcel/core': 2.16.4(@swc/helpers@0.5.23)
       '@parcel/diagnostic': 2.16.4
       '@parcel/events': 2.16.4
       '@parcel/feature-flags': 2.16.4
-      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/fs': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/logger': 2.16.4
-      '@parcel/package-manager': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))(@swc/helpers@0.5.20)
-      '@parcel/reporter-cli': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/reporter-dev-server': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
-      '@parcel/reporter-tracer': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.20))
+      '@parcel/package-manager': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))(@swc/helpers@0.5.23)
+      '@parcel/reporter-cli': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/reporter-dev-server': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
+      '@parcel/reporter-tracer': 2.16.4(@parcel/core@2.16.4(@swc/helpers@0.5.23))
       '@parcel/utils': 2.16.4
       chalk: 4.1.2
       commander: 12.1.0
@@ -19566,14 +19487,14 @@ snapshots:
 
   pngjs@5.0.0: {}
 
-  polotno@4.21.0(@napi-rs/canvas@1.1.0)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4):
+  polotno@4.22.1(@napi-rs/canvas@1.1.1)(@types/react@19.2.17)(@types/sortablejs@1.15.9)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.5.4):
     dependencies:
       '@base-ui/react': 1.9.0(@types/react@19.2.17)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@lottiefiles/dotlottie-web': 0.83.2
-      '@polotno/core': 0.22.0(canvas@3.2.3)
-      '@polotno/html-export': 0.12.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))
-      '@polotno/schema': 0.13.0
-      '@polotno/svg-export': 0.13.0(@napi-rs/canvas@1.1.0)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))
+      '@polotno/core': 0.23.0(canvas@3.2.3)
+      '@polotno/html-export': 0.13.0(@napi-rs/canvas@1.1.1)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))
+      '@polotno/schema': 0.14.0
+      '@polotno/svg-export': 0.14.0(@napi-rs/canvas@1.1.1)(canvas@3.2.3)(linkedom@0.18.15(canvas@3.2.3))
       class-variance-authority: 0.7.1
       clsx: 2.1.1
       gifuct-js: 2.1.2
@@ -19583,16 +19504,16 @@ snapshots:
       mediabunny: 1.66.0
       mobx: 7.1.7
       mobx-react-lite: 5.1.3(mobx@7.1.7)(react@19.3.1)
-      mobx-state-tree: 9.0.1(mobx@7.1.7)(typescript@5.5.4)
+      mobx-state-tree: 9.0.2(mobx@7.1.7)(typescript@5.5.4)
       nanoid: 6.0.2
       quill: 2.0.3
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
       react-konva: 19.3.2(@types/react@19.2.17)(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
-      react-konva-utils: 2.1.0(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react-konva@19.3.2(@types/react@19.2.17)(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)
+      react-konva-utils: 2.1.1(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react-konva@19.3.2(@types/react@19.2.17)(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)
       react-sortablejs: 6.1.4(@types/sortablejs@1.15.9)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sortablejs@1.15.7)
       react-window: 2.5.3(@types/react@19.2.17)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
-      render-tag: 0.4.5
+      render-tag: 0.4.6
       sortablejs: 1.15.7
       svg-round-corners: 0.4.3
       swr: 2.5.1(react@19.3.1)
@@ -19889,13 +19810,6 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.2
 
-  postcss@8.5.8:
-    dependencies:
-      nanoid: 3.3.20
-      picocolors: 1.1.1
-      source-map-js: 1.2.2
-    optional: true
-
   posthtml-parser@0.4.2:
     dependencies:
       htmlparser2: 3.10.1
@@ -20103,7 +20017,7 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-konva-utils@2.1.0(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react-konva@19.3.2(@types/react@19.2.17)(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1):
+  react-konva-utils@2.1.1(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react-konva@19.3.2(@types/react@19.2.17)(konva@10.9.1(canvas@3.2.3))(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1):
     dependencies:
       konva: 10.9.1(canvas@3.2.3)
       react: 19.3.1
@@ -20261,7 +20175,7 @@ snapshots:
 
   remove-trailing-separator@1.1.0: {}
 
-  render-tag@0.4.5: {}
+  render-tag@0.4.6: {}
 
   renderkid@2.0.7:
     dependencies:

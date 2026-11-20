@@ -1,9 +1,9 @@
-// A template with four variable text fields. Each carries its own sizing
-// policy, so the layout survives any value a user types.
+// A template with four text variables. Each text prints one with a {{token}}
+// and carries its own sizing policy, so the layout survives any value.
 const field = (name, attrs) => ({
   id: name,
   type: 'text',
-  custom: { field: name },
+  text: `{{${name}}}`,
   fontFamily: 'Roboto',
   fill: '#1f2933',
   // a thin border around the text makes the drawn size easy to see
@@ -15,6 +15,21 @@ const field = (name, attrs) => ({
 export const template = {
   width: 1080,
   height: 1080,
+  // Each variable's value is what the design draws now.
+  variables: [
+    { name: 'name', label: 'Name', value: 'Alexandra Konstantinopolsky' },
+    {
+      name: 'description',
+      label: 'Description',
+      value: 'Senior product designer. Speaks at conferences about type.',
+    },
+    { name: 'price', label: 'Price', value: '$19' },
+    {
+      name: 'footer',
+      label: 'Footer',
+      value: 'Terms and conditions apply. Offer valid while supplies last.',
+    },
+  ],
   pages: [
     {
       id: 'page-1',
@@ -22,7 +37,6 @@ export const template = {
         field('name', {
           // 'fit' draws the largest size between 24px and 160px that fits
           // the box. fontSize stays the authored 96px; it is never rewritten.
-          text: 'Alexandra Konstantinopolsky',
           x: 80,
           y: 120,
           width: 920,
@@ -37,7 +51,6 @@ export const template = {
         field('description', {
           // 'resize' keeps the authored size and grows the box, but never
           // past two lines: the rest ends in "…".
-          text: 'Senior product designer. Speaks at conferences about type.',
           x: 80,
           y: 400,
           width: 920,
@@ -48,7 +61,6 @@ export const template = {
         }),
         field('price', {
           // a small fixed box: the price shrinks as the number gets longer
-          text: '$19',
           x: 80,
           y: 620,
           width: 300,
@@ -66,7 +78,6 @@ export const template = {
         }),
         field('footer', {
           // 'ellipsis' keeps the size and the box and cuts the text
-          text: 'Terms and conditions apply. Offer valid while supplies last.',
           x: 440,
           y: 720,
           width: 560,

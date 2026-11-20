@@ -1,0 +1,25 @@
+{
+  "name": "@polotno-docs/polotno-links",
+  "version": "1.0.0",
+  "description": "Links on elements, groups and words, exported to a clickable vector PDF and HTML",
+  "keywords": [],
+  "dependencies": {
+    "@polotno/html-export": "^0.13.0",
+    "@polotno/pdf-export": "^0.18.0",
+    "mobx-react-lite": "^5.1.3",
+    "polotno": "^4.22.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6",
+    "vite": "^8"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}

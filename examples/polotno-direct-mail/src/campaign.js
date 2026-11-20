@@ -3,6 +3,8 @@
 //
 // Larkspur Valley Food Bank is invented for this demo. So is every donor.
 
+import { resolveVariables } from '@polotno/schema/variables';
+
 export const ORG = {
   name: 'Larkspur Valley',
   descriptor: 'FOOD BANK',
@@ -33,29 +35,23 @@ export const FONTS = {
   script: 'Caveat',
 };
 
-// One photo per segment. Sizes are the originals', so a crop can be computed
-// without loading the image first.
+// One photo per segment. The photo frame's `fit` crops each one when it is
+// drawn, so their shapes may differ.
 export const PHOTOS = {
   volunteers: {
     label: 'Volunteers sorting',
     src: 'https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?w=2400&q=80',
     thumb: 'https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?w=240&q=60',
-    width: 5472,
-    height: 3648,
   },
   family: {
     label: 'Family dinner',
     src: 'https://images.unsplash.com/photo-1576089073624-b5751a8f4de9?w=2400&q=80',
     thumb: 'https://images.unsplash.com/photo-1576089073624-b5751a8f4de9?w=240&q=60',
-    width: 3000,
-    height: 2400,
   },
   produce: {
     label: 'Produce crate',
     src: 'https://images.unsplash.com/photo-1635341083777-5f93a755e916?w=2400&q=80',
     thumb: 'https://images.unsplash.com/photo-1635341083777-5f93a755e916?w=240&q=60',
-    width: 3024,
-    height: 4032,
   },
 };
 
@@ -173,13 +169,12 @@ export function askString(lastGift, segment) {
 
 const TITLE = /^(dr|rev|mr|mrs|ms|mx|prof)\.?\s+/i;
 
-const TOKEN = /\{\{\s*([a-zA-Z0-9_]+)\s*\}\}/g;
-
-export const fillTokens = (text, values) =>
-  String(text).replace(TOKEN, (m, key) => (key in values ? values[key] : m));
-
-/** Fields still in the text after filling: ones the list had no column for. */
-export const findTokens = (text) => [...String(text).matchAll(TOKEN)].map((m) => m[1]);
+// A group's copy prints fields too ({{name}}, {{last_gift}}). It is filled the
+// way a text on the card is, before it becomes the card's {{headline}}.
+const fillCopy = (copy, values) => {
+  const design = { pages: [{ children: [{ type: 'text', text: copy }] }] };
+  return resolveVariables(design, values).design.pages[0].children[0].text;
+};
 
 /**
  * Every value a template can print for one donor: the list's own columns, plus
@@ -223,8 +218,8 @@ export function deriveFields(donor, campaign) {
     match_deadline: campaign.matchDeadline,
   };
   const seg = campaign.segments[segment];
-  values.headline = fillTokens(seg.headline, values);
-  values.opening = fillTokens(seg.opening, values);
+  values.headline = fillCopy(seg.headline, values);
+  values.opening = fillCopy(seg.opening, values);
   return { values, segment, asks: [a1, a2, a3], photo: PHOTOS[seg.photo], notes };
 }
 

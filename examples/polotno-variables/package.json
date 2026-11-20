@@ -1,10 +1,12 @@
 {
   "name": "@polotno-docs/polotno-variables",
   "version": "1.0.0",
-  "description": "Demo showing how to use dynamic template variables in Polotno editor",
+  "description": "Template variables: the Variables panel and a preview filled with resolveVariables",
   "keywords": [],
   "dependencies": {
-    "polotno": "^4.21.0",
+    "@polotno/image-export": "^0.3.0",
+    "@polotno/schema": "^0.14.0",
+    "polotno": "^4.22.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

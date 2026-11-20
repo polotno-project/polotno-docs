@@ -5,10 +5,10 @@ import { PolotnoContainer, WorkspaceWrap } from 'polotno';
 import { Workspace } from 'polotno/canvas/workspace';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { Input } from 'polotno/primitives';
+import { resolveVariables } from '@polotno/schema/variables';
 import { app } from './state.js';
 import { FORMATS } from './spec.js';
 import { PHOTOS, SEGMENT_IDS, normalizeSegment, parseGift } from './campaign.js';
-import { coverCrop } from './templates.js';
 import { Label, bar } from './ui.jsx';
 import { PageStrip } from './pages.jsx';
 
@@ -21,33 +21,40 @@ const VERSIONED = ['headline', 'opening'];
 const stripTags = (s) => String(s).replace(/<[^>]+>/g, '');
 
 /**
- * The template with one group's copy and photo in it. Each text holding a
- * versioned field remembers what surrounds the field, so an edit can be read
- * back into the group's copy.
+ * The template with one group's copy and photo in it; every other field still
+ * shows its token. Each text holding a versioned field remembers what
+ * surrounds the field in the template, so an edit can be read back into the
+ * group's copy.
  */
 function versionView(template, seg) {
-  const photo = PHOTOS[seg.photo];
-  const json = structuredClone(template);
-  json.pages.forEach((page) => {
-    page.children = page.children.filter((el) => !el.custom?.overlay);
+  const fields = new Map();
+  template.pages.forEach((page) =>
     page.children.forEach((el) => {
-      el.selectable = false;
-      if (el.custom?.variable === 'segment_photo') {
-        Object.assign(el, { src: photo.src.replace('w=2400', 'w=1200') }, coverCrop(el.width, el.height, photo.width, photo.height));
-        return;
-      }
       if (el.type !== 'text' || typeof el.text !== 'string') return;
       const field = VERSIONED.find((f) => el.text.includes(`{{${f}}}`));
       if (!field) return;
       const [prefix, suffix] = el.text.split(`{{${field}}}`);
+      fields.set(el.id, { field, prefix, suffix });
+    })
+  );
+  const { design: json } = resolveVariables(template, {
+    headline: seg.headline,
+    opening: seg.opening,
+    segment_photo: PHOTOS[seg.photo].src.replace('w=2400', 'w=1200'),
+  });
+  json.pages.forEach((page) => {
+    page.children = page.children.filter((el) => !el.custom?.overlay);
+    page.children.forEach((el) => {
+      el.selectable = false;
+      const version = fields.get(el.id);
+      if (!version) return;
       Object.assign(el, {
-        text: `${prefix}${seg[field]}${suffix}`,
         selectable: true,
         draggable: false,
         resizable: false,
         removable: false,
         styleEditable: false,
-        custom: { ...el.custom, version: { field, prefix, suffix } },
+        custom: { ...el.custom, version },
       });
     });
   });

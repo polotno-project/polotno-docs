@@ -7,7 +7,6 @@ import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 import { reaction } from 'mobx';
-import { getImageSize, getCrop } from 'polotno/utils/image';
 
 import { createStore } from 'polotno/model/store';
 
@@ -22,9 +21,10 @@ const page = store.addPage();
 const width = 600;
 const height = 400;
 
-// Add a placeholder image element
-// you can make you own with your own text
-// placehold.co is just an example, better to use your own image
+// A placeholder is an image bound to a template variable: `bindings.src`
+// names the variable that fills it. The placeholder's own image shows until
+// then. You can make your own with your own text; placehold.co is just an
+// example, better to use your own image.
 store.activePage.addElement(
   {
     type: 'image',
@@ -33,13 +33,16 @@ store.activePage.addElement(
     y: (store.height - height) / 2,
     width,
     height,
-    // custom property to identify placeholder
-    custom: {
-      isPlaceholder: true,
-    },
+    bindings: { src: 'photo' },
+    // 'cover' crops an image of any shape to fill the frame, and `focus`
+    // keeps its upper part in view, where faces usually are
+    fit: 'cover',
+    focus: { x: 0.5, y: 0.3 },
   },
   { skipSelect: true }
 );
+
+const isPlaceholder = (el) => el.type === 'image' && !!el.bindings?.src;
 
 export function usePlaceholderSelection(store) {
   const fileInputRef = React.useRef(null);
@@ -51,9 +54,7 @@ export function usePlaceholderSelection(store) {
       () => store.selectedElements,
       (selectedElements) => {
         // Check if at least one selected element is a placeholder
-        const placeholder = selectedElements.find(
-          (el) => el.custom?.isPlaceholder
-        );
+        const placeholder = selectedElements.find(isPlaceholder);
         if (placeholder) {
           // Trigger the hidden file input
           fileInputRef.current?.click();
@@ -64,33 +65,23 @@ export function usePlaceholderSelection(store) {
   }, [store]);
 
   // handle file change
-  const handleFileChange = async (e) => {
+  const handleFileChange = (e) => {
     const file = e.target.files?.[0];
     if (!file) {
       return;
     }
     const reader = new FileReader();
-    reader.onload = async (loadEvent) => {
+    reader.onload = (loadEvent) => {
       // we will use dataURL to set the image
       // but it is recommended to upload image to the server first
       // for better performance and smaller JSON export
       const dataURL = loadEvent.target.result;
       // Find the currently selected placeholder element
-      const placeholder = store.selectedElements.find(
-        (el) => el.custom?.isPlaceholder
-      );
+      const placeholder = store.selectedElements.find(isPlaceholder);
       if (placeholder) {
-        // Get the new image dimensions
-        const { width, height } = await getImageSize(dataURL);
-        // Calculate proper crop to center the image within placeholder bounds
-        // This provides "cover" behavior - fills the placeholder, may crop edges
-        const crop = getCrop(placeholder, { width, height });
-
-        placeholder.set({
-          src: dataURL,
-          ...crop,
-          custom: { isPlaceholder: false },
-        });
+        // Setting `src` by hand detaches the binding, so the image is no
+        // longer a placeholder. `fit` stays and crops the upload to the frame.
+        placeholder.set({ src: dataURL });
       }
     };
     reader.readAsDataURL(file);

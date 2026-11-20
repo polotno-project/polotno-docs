@@ -1,10 +1,15 @@
 // The three starter designs, built in code rather than shipped as exported
-// JSON, so the layout reads as inches and the merge conventions are visible:
+// JSON, so the layout reads as inches and the merge conventions are visible.
+// Template variables, filled per donor by resolveVariables:
 //
-//   {{field}} in any text            → filled per donor
-//   custom.variable = 'segment_photo' → photo chosen by the donor's segment
-//   custom.variable = 'qr'           → generated per donor
+//   {{field}} in any text             → the donor's value
+//   bindings.src = 'segment_photo'    → photo chosen by the donor's segment
+//   bindings.src = 'qr'               → generated per donor
+//
+// The app's own rules, kept in `custom`:
+//
 //   custom.fit                        → how text shrinks when a value is long
+//   custom.collapseEmptyLines         → an empty address line takes no space
 //   custom.zoneOwner                  → the one element allowed in a USPS zone
 //   custom.overlay                    → guide drawn in the editor, never printed
 
@@ -36,18 +41,6 @@ const placeholder = (label, w = 200, h = 200) =>
   svgUrl(
     `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><rect x="2" y="2" width="${w - 4}" height="${h - 4}" fill="#ffffff" stroke="${COLORS.green}" stroke-width="4" stroke-dasharray="10 8"/><text x="${w / 2}" y="${h / 2 + 8}" font-family="sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="${COLORS.green}">${label}</text></svg>`
   );
-
-export function coverCrop(boxW, boxH, imgW, imgH) {
-  const box = boxW / boxH;
-  const img = imgW / imgH;
-  if (img > box) {
-    const w = box / img;
-    return { cropX: (1 - w) / 2, cropY: 0, cropWidth: w, cropHeight: 1 };
-  }
-  const h = img / box;
-  // Bias toward the top third: people's faces, not the tabletop.
-  return { cropX: 0, cropY: (1 - h) * 0.35, cropWidth: 1, cropHeight: h };
-}
 
 // --- element helpers (inches and points in, pixels out) ------------------
 
@@ -89,13 +82,15 @@ function image({ x, y, w, h, ...rest }) {
 }
 
 function segmentPhoto({ x, y, w, h }) {
-  const photo = PHOTOS[DEFAULT_CAMPAIGN.segments.active.photo];
   return image({
     x, y, w, h,
     name: 'Segment photo',
-    src: photo.src,
-    ...coverCrop(w, h, photo.width, photo.height),
-    custom: { variable: 'segment_photo' },
+    src: PHOTOS[DEFAULT_CAMPAIGN.segments.active.photo].src,
+    bindings: { src: 'segment_photo' },
+    // Every segment's photo, of any shape, is cropped to fill the frame,
+    // biased toward the top third: people's faces, not the tabletop.
+    fit: 'cover',
+    focus: { x: 0.5, y: 0.35 },
   });
 }
 
@@ -122,7 +117,7 @@ function logo({ x, y, size, onDark, word, sub }) {
 }
 
 function qr({ x, y, size }) {
-  return image({ x, y, w: size, h: size, name: 'Give online QR', src: placeholder('QR per donor'), custom: { variable: 'qr' } });
+  return image({ x, y, w: size, h: size, name: 'Give online QR', src: placeholder('QR per donor'), bindings: { src: 'qr' } });
 }
 
 function addressBlock({ x, y, w, h, size, owner }) {

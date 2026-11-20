@@ -3,6 +3,8 @@
 Demo of per-element text sizing in Polotno: a headline that fits its box with
 `textOverflow: 'fit'`, a description capped at two lines, a price that grows
 and shrinks within size bounds, and `measureText` reporting the drawn result.
+Each text prints a template variable, and the panel writes new values with
+`store.setVariables`.
 
 ## Links
 
