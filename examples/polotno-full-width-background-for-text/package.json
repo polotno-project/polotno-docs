@@ -4,8 +4,8 @@
   "description": "Demo showing how to add full-width background fill functionality for text elements",
   "keywords": [],
   "dependencies": {
-    "mobx-react-lite": "^5.1.3",
-    "polotno": "^4.22.1",
+    "mobx-react-lite": "^5.1.4",
+    "polotno": "^4.23.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

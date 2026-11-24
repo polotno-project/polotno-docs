@@ -4,8 +4,8 @@
   "description": "Demo of InDesign IDML import into Polotno editor",
   "keywords": [],
   "dependencies": {
-    "@polotno/idml-import": "^0.2.0",
-    "polotno": "^4.22.1",
+    "@polotno/idml-import": "^0.3.0",
+    "polotno": "^4.23.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

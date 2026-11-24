@@ -4,12 +4,12 @@
   "description": "Email builder on top of Polotno: a 600 px email canvas, content and block panels, an audit of what each email client will show, desktop and mobile pages, and a preview of the exported email HTML",
   "keywords": [],
   "dependencies": {
-    "@polotno/email-export": "^0.2.0",
-    "@polotno/schema": "^0.14.0",
+    "@polotno/email-export": "^0.3.0",
+    "@polotno/schema": "^0.15.0",
     "lucide-react": "^1.74.0",
     "mobx": "7.1.7",
-    "mobx-react-lite": "^5.1.3",
-    "polotno": "^4.22.1",
+    "mobx-react-lite": "^5.1.4",
+    "polotno": "^4.23.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
