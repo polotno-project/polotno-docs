@@ -4,9 +4,9 @@
   "description": "Template variables: the Variables panel and a preview filled with resolveVariables",
   "keywords": [],
   "dependencies": {
-    "@polotno/image-export": "^0.4.0",
+    "@polotno/image-export": "^0.4.1",
     "@polotno/schema": "^0.15.0",
-    "polotno": "^4.23.0",
+    "polotno": "^4.24.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

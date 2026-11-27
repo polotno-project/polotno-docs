@@ -7,7 +7,7 @@
     "@polotno/schema": "^0.15.0",
     "mobx": "7.1.7",
     "mobx-react-lite": "^5.1.4",
-    "polotno": "^4.23.0",
+    "polotno": "^4.24.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
